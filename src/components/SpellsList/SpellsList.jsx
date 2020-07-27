@@ -1,5 +1,6 @@
 import React, { useMemo, Fragment } from 'react';
 import { useTable, useExpanded } from 'react-table';
+import Markdown from 'markdown-to-jsx';
 
 import data from 'content/spells.yaml';
 import Components from './Components';
@@ -100,7 +101,7 @@ export default function SpellsList(props) {
               { Boolean(row.isExpanded) &&
                 <tr>
                   <td colSpan={ visibleColumns.length }>
-                    { row.original.description }
+                    <Markdown>{ row.original.description }</Markdown>
                   </td>
                 </tr>
               }

@@ -13,7 +13,7 @@
     range, or choose two creatures within range that are
     within 5 feet of each other. A target must succeed on a
     Dexterity saving throw or take 1d6 acid damage.
-    This spell’s damage increases by 1d6 when you reach
+  atHigherLevels: This spell’s damage increases by 1d6 when you reach
     5th level (2d6), 11th level (3d6), and 17th level (4d6).
 
 - title: Aid
@@ -56,10 +56,13 @@
     or enters the warded area. When you cast the spell, you
     can designate creatures that won’t set off the alarm. You
     also choose whether the alarm is mental or audible.
-    A mental alarm alerts you with a ping in your mind
+
+
+    * A mental alarm alerts you with a ping in your mind
     if you are within 1 mile of the warded area. This ping
     awakens you if you are sleeping.
-    An audible alarm produces the sound of a hand bell
+
+    * An audible alarm produces the sound of a hand bell
     for 10 seconds within 60 feet.
 
 - title: Alter Self
@@ -78,12 +81,15 @@
     last for the duration of the spell. While the spell lasts,
     you can end one option as an action to gain the benefits
     of a different one.
-    Aquatic Adaptation. You adapt your body to an
+
+
+    * **Aquatic Adaptation.** You adapt your body to an
     aquatic environment, sprouting gills and growing
     webbing between your fingers. You can breathe
     underwater and gain a sw im ming speed equal to your
     walking speed.
-    Change Appearance. You transform your appearance.
+
+    * **Change Appearance.** You transform your appearance.
     You decide what you look like, including your height,
     weight, facial features, sound of your voice, hair length,
     coloration, and distinguishing characteristics, if any.
@@ -95,7 +101,8 @@
     instance. At any time for the duration of the spell, you
     can use your action to change your appearance in
     this way again.
-    Natural Weapons. You grow claws, fangs, spines,
+
+    * **Natural Weapons.** You grow claws, fangs, spines,
     horns, or a different natural weapon of your choice. Your
     unarm ed strikes deal 1d6 bludgeoning, piercing, or
     slashing damage, as appropriate to the natural weapon

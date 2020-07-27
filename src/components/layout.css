@@ -509,7 +509,7 @@ th {
   font-weight: bold;
 }
 li + li {
-  margin-top: 0.5em;
+  margin-top: 0;
 }
 ol li {
   padding-left: 0;
