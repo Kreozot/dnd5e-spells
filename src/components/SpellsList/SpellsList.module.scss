@@ -1,0 +1,24 @@
+.description {
+  padding-bottom: 2em;
+
+  table {
+    width: auto;
+  }
+
+  h2 {
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+
+  p {
+    text-indent: 1em;
+  }
+}
+
+.description > div > * + * {
+  margin-top: 0.2em;
+}
+
+.cellExpanded {
+  border-bottom: none;
+}

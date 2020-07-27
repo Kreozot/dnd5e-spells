@@ -10,6 +10,7 @@ import TableRow from './TableRow';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
 import RitualIcon from 'images/icon-ritual.svg';
+import styles from './SpellsList.module.scss';
 
 export default function SpellsList(props) {
   const columns = useMemo(() => [
@@ -69,7 +70,7 @@ export default function SpellsList(props) {
   } = useTable({ columns, data }, useExpanded);
 
   return (
-    <table {...getTableProps()}>
+    <table { ...getTableProps() }>
       <thead>
         { headerGroups.map((headerGroup) => (
           <tr { ...headerGroup.getHeaderGroupProps() }>
@@ -85,13 +86,16 @@ export default function SpellsList(props) {
         { rows.map((row) => {
           prepareRow(row)
           const mainTR = (
-            <tr { ...row.getRowProps() } onClick={ () => row.toggleRowExpanded(!row.isExpanded) }>
+            <tr
+              { ...row.getRowProps() }
+              onClick={ () => row.toggleRowExpanded(!row.isExpanded) }
+            >
               { row.cells.map((cell) => {
                 return (
-                  <td { ...cell.getCellProps() }>
+                  <td { ...cell.getCellProps() } className={ row.isExpanded && styles.cellExpanded }>
                     { cell.render('Cell') }
                   </td>
-                )
+                );
               }) }
             </tr>
           );
@@ -100,8 +104,14 @@ export default function SpellsList(props) {
               { mainTR }
               { Boolean(row.isExpanded) &&
                 <tr>
-                  <td colSpan={ visibleColumns.length }>
+                  <td colSpan={ visibleColumns.length } className={ styles.description }>
                     <Markdown>{ row.original.description }</Markdown>
+                    { Boolean(row.original.atHigherLevels) &&
+                      <>
+                        <h2>At higher levels</h2>
+                        <Markdown>{ row.original.atHigherLevels }</Markdown>
+                      </>
+                    }
                   </td>
                 </tr>
               }
