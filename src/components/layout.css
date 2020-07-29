@@ -1,3 +1,7 @@
+:root {
+  --color-border-table: hsla(0, 0%, 0%, 0.12);
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -570,7 +574,7 @@ thead {
 td,
 th {
   text-align: left;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+  border-bottom: 1px solid var(--color-border-table);
   font-feature-settings: "tnum";
   -moz-font-feature-settings: "tnum";
   -ms-font-feature-settings: "tnum";

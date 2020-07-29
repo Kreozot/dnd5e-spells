@@ -437,7 +437,7 @@
     fail to work in the sphere, whether the sphere is the
     destination or the departure point for such magical
     travel. A portal to another location, world, or plane of
-    existence, as well as an opening to an extradim ensional
+    existence, as well as an opening to an extradimensional
     space such as that created by the rope trick spell,
     temporarily closes while in the sphere.
 
@@ -595,7 +595,7 @@
     entryway, and it becomes locked for the duration. You
     and the creatures you designate when you cast this
     spell can open the object normally. You can also set a
-    passw ord that, when spoken within 5 feet of the object,
+    password that, when spoken within 5 feet of the object,
     suppresses this spell for 1 minute. Otherwise, it is
     im passable until it is broken or the spell is dispelled or
     suppressed. Casting knock on the object suppresses
@@ -1572,7 +1572,7 @@
   components:
     V: true
     S: true
-    M: a diam ond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes, and a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold a Medium creature, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water
+    M: a diamond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes, and a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold a Medium creature, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water
   duration: Instantaneous
   description: >
     This spell grows an inert duplicate of a living creature
@@ -2381,7 +2381,7 @@
     if it can normally target others. You can use only one
     contingency spell at a time. If you cast this spell again,
     the effect of another contingency spell on you ends. Also,
-    contingency ends on you if its material com ponent is
+    contingency ends on you if its material component is
     ever not on your person.
 
 - title: Continual Flame
@@ -2755,7 +2755,7 @@
 
 
     Using any material created by this spell as another
-    spell’s material com ponent causes that spell to fail.
+    spell’s material component causes that spell to fail.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of 6th level or higher, the cube increases by 5
@@ -3608,7 +3608,7 @@
   duration: Until dispelled
   description: >
     You touch an object weighing 10 pounds or less whose
-    longest dim ension is 6 feet or less. The spell leaves an
+    longest dimension is 6 feet or less. The spell leaves an
     invisible mark on its surface and invisibly inscribes the
     nam e of the item on the sapphire you use as the material
     component. Each time you cast this spell, you must use
@@ -3896,7 +3896,7 @@
     If the target is a creature, everything it is wearing and
     carrying changes size with it. Any item dropped by an
     affected creature returns to normal size at once.
-    Enlarge. The target’s size doubles in all dim ensions,
+    Enlarge. The target’s size doubles in all dimensions,
     and its weight is multiplied by eight. This growth
     increases its size by one category—from Medium to
     Large, for example. If there isn’t enough room for the
@@ -3909,7 +3909,7 @@
     them deal 1d4 extra damage.
 
 
-    Reduce. The target’s size is halved in all dim ensions,
+    Reduce. The target’s size is halved in all dimensions,
     and its weight is reduced to one-eighth of normal. This
     reduction decreases its size by one category—from
     Medium to Small, for example. Until the spell ends,
@@ -4329,13 +4329,17 @@
     an unoccupied space within range, the familiar has the
     statistics of the chosen form, though it is a celestial, fey,
     or fiend (your choice) instead of a beast.
+
+
     Your familiar acts independently of you, but it always
     obeys your commands. In combat, it rolls its own
     initiative and acts on its own turn. A familiar can’t
     attack, but it can take other actions as normal.
     When the familiar drops to 0 hit points, it disappears,
     leaving behind no physical form. It reappears after you
-    cast this spell again
+    cast this spell again.
+
+
     While your familiar is within 100 feet of you, you
     can communicate with it telepathically. Additionally,
     as an action, you can see through your familiar’s eyes
@@ -4343,17 +4347,23 @@
     gaining the benefits of any special senses that the
     familiar has. During this time, you are deaf and blind
     with regard to your ow n senses.
+
+
     As an action, you can temporarily dismiss your
-    familiar. It disappears into a pocket dim ension where it
+    familiar. It disappears into a pocket dimension where it
     awaits your summons. Alternatively, you can dismiss it
     forever. As an action while it is temporarily dismissed,
     you can cause it to reappear in any unoccupied space
     within 30 feet of you.
+
+
     You can’t have more than one familiar at a time. If you
     cast this spell while you already have a familiar, you
     instead cause it to adopt a new form. Choose one of the
     forms from the above list. Your familiar transforms into
     the chosen creature.
+
+
     Finally, when you cast a spell with a range of touch,
     your familiar can deliver the spell as if it had cast the
     spell. Your familiar must be within 100 feet of you, and
@@ -4383,19 +4393,27 @@
     steed has an Intelligence of 5 or less, its Intelligence
     becomes 6, and it gains the ability to understand one
     language of your choice that you speak.
+
+
     Your steed serves you as a mount, both in com bat and
     out, and you have an instinctive bond with it that allows
     you to fight as a seam less unit. While mounted on your
     steed, you can make any spell you cast that targets only
     you also target your steed.
+
+
     When the steed drops to 0 hit points, it disappears,
     leaving behind no physical form. You can also
     dismiss your steed at any time as an action, causing
     it to disappear. In either case, casting this spell
     again summons the same steed, restored to its hit
     point maximum.
+
+
     While your steed is within 1 mile of you, you can
     communicate with it telepathically.
+
+
     You can’t have more than one steed bonded by this
     spell at a time. As an action, you can release the steed
     from its bond at any time, causing it to disappear.
@@ -4419,6 +4437,8 @@
     destination that moves (such as a mobile fortress), or a
     destination that isn’t specific (such as “a green dragon’s
     lair”), the spell fails.
+
+
     For the duration, as long as you are on the same plane
     of existence as the destination, you know how far it is
     and in what direction it lies. While you are traveling
@@ -4446,6 +4466,8 @@
     alarm spell, a glyph of warding, or a mechanical pit trap,
     but it would not reveal a natural weakness in the floor,
     an unstable ceiling, or a hidden sinkhole.
+
+
     This spell merely reveals that a trap is present. You
     don’t learn the location of each trap, but you do learn the
     general nature of the danger posed by a trap you sense.
@@ -4465,6 +4487,8 @@
     The target must make a Constitution saving throw. It
     takes 7d8 + 30 necrotic damage on a failed save, or half
     as much damage on a successful one.
+
+
     A humanoid killed by this spell rises at the start of
     your next turn as a zom bie that is permanently under
     your command, following your verbal orders to the best
@@ -4490,6 +4514,8 @@
     make a Dexterity saving throw. A target takes 8d6 fire
     damage on a failed save, or half as much damage on a
     successful one.
+
+
     The fire spreads around corners. It ignites flammable
     objects in the area that aren't being worn or carried.
   atHigherLevels: >
@@ -4512,6 +4538,8 @@
     target. On a hit, the target takes 1d10 fire damage. A
     flammable object hit by this spell ignites if it isn't being
     worn or carried.
+
+
     This spell’s damage increases by 1d10 when you reach
     5th level (2d10), 11th level (3d10), and 17th level (4d10).
 
@@ -4530,10 +4558,14 @@
     duration, shedding bright light in a 10-foot radius and
     dim light for an additional 10 feet. You can end the spell
     early by using an action to dismiss it.
+
+
     The flames provide you with a warm shield or a chill
     shield, as you choose. The warm shield grants you
     resistance to cold damage, and the chill shield grants
     you resistance to fire damage.
+
+
     In addition, whenever a creature within 5 feet of you
     hits you with a melee attack, the shield erupts with
     flame. The attacker takes 2d8 fire damage from a warm
@@ -4557,6 +4589,8 @@
     in the area must make a Dexterity saving throw. It
     takes 7d10 fire damage on a failed save, or half as much
     damage on a successful one.
+
+
     The fire damages objects in the area and ignites
     flammable objects that aren't being worn or carried.
     If you choose, plant life in the area is unaffected
@@ -4578,9 +4612,13 @@
     similar in size and shape to a scimitar, and it lasts for
     the duration. If you let go of the blade, it disappears, but
     you can evoke the blade again as a bonus action.
+
+
     You can use your action to make a melee spell
     attack with the fiery blade. On a hit, the target takes
     3d6 fire damage.
+
+
     The flaming blade sheds bright light in a 10-foot
     radius and dim light for an additional 10 feet.
   atHigherLevels: >
@@ -4603,6 +4641,8 @@
     heavens in a location you specify. Each creature in
     a 10-foot-radius, 40-foot-high cylinder centered on a
     point within range must make a Dexterity saving throw.
+
+
     A creature takes 4d6 fire damage and 4d6 radiant
     damage on a failed save, or half as much damage on a
     successful one.
@@ -4631,12 +4671,18 @@
     unoccupied space of your choice within range and lasts
     for the duration. Any creature that ends its turn within 5
     feet of the sphere must make a Dexterity saving throw.
+
+
     The creature takes 2d6 fire damage on a failed save, or
     half as much damage on a successful one.
+
+
     As a bonus action, you can move the sphere up to 30
     feet. If you ram the sphere into a creature, that creature
     must make the saving throw against the sphere’s
     damage, and the sphere stops moving this turn.
+
+
     When you move the sphere, you can direct it over
     barriers up to 5 feet tall and jum p it across pits up to
     10 feet wide. The sphere ignites flammable objects not
@@ -4664,6 +4710,8 @@
     creature must make a Constitution saving throw. On a
     failed save, it is restrained as its flesh begins to harden.
     On a successful save, the creature isn’t affected.
+
+
     A creature restrained by this spell must make another
     Constitution saving throw at the end of each of its turns.
     If it successfully saves against this spell three times, the
@@ -4672,9 +4720,13 @@
     duration. The successes and failures don’t need to be
     consecutive; keep track of both until the target collects
     three of a kind.
+
+
     If the creature is physically broken while petrified,
     it suffers from similar deformities if it reverts to its
     original state.
+
+
     If you maintain your concentration on this spell for the
     entire possible duration, the creature is turned to stone
     until the effect is removed.
@@ -4744,6 +4796,8 @@
     prevents creatures from accessing the area by way of
     the Astral Plane, Ethereal Plane, Feywild, Shadowfell,
     or the plane shift spell.
+
+
     In addition, the spell damages types of creatures that
     you choose when you cast it. Choose one or more of the
     following: celestials, elementals, fey, fiends, and undead.
@@ -4751,13 +4805,15 @@
     first time on a turn or starts its turn there, the creature
     takes 5d10 radiant or necrotic damage (your choice
     when you cast this spell).
+
+
     When you cast this spell, you can designate a
-    password. A creature that speaks the passw ord as it
+    password. A creature that speaks the password as it
     enters the area takes no damage from the spell.
     The spell’s area can't overlap with the area of another
     forbiddance spell. If you cast forbiddance every day for
     30 days in the same location, the spell lasts until it is
-    dispelled, and the material com ponents are consumed
+    dispelled, and the material components are consumed
     on the last casting.
 
 - title: Forcecage
@@ -4778,15 +4834,21 @@
     A prison in the shape of a cage can be up to 20 feet on
     a side and is made from 1/2-inch diameter bars spaced
     1/2 inch apart.
+
+
     A prison in the shape of a box can be up to 10 feet on
     a side, creating a solid barrier that prevents any matter
     from passing through it and blocking any spells cast into
     or out from the area.
+
+
     When you cast the spell, any creature that is
     completely inside the cage's area is trapped. Creatures
     only partially within the area, or those too large to fit
     inside the area, are pushed away from the center of the
     area until they are completely outside the area.
+
+
     A creature inside the cage can’t leave it by nonmagical
     means. If the creature tries to use teleportation or
     interplanar travel to leave the cage, it must first make a
@@ -4795,6 +4857,8 @@
     can't exit the cage and wastes the use of the spell or
     effect. The cage also extends into the Ethereal Plane,
     blocking ethereal travel.
+
+
     This spell can’t be dispelled by dispel magic.
 
 - title: Foresight
@@ -4814,6 +4878,8 @@
     rolls, ability checks, and saving throws. Additionally,
     other creatures have disadvantage on attack rolls
     against the target for the duration.
+
+
     This spell immediately ends if you cast it again before
     its duration ends.
 
@@ -4833,6 +4899,8 @@
     spells and other magical effects can neither reduce
     the target’s speed nor cause the target to be paralyzed
     or restrained.
+
+
     The target can also spend 5 feet of movement to
     automatically escape from nonmagical restraints, such
     as manacles or a creature that has it grappled. Finally,
@@ -4877,6 +4945,8 @@
     everything it’s wearing and carrying, into a misty cloud
     for the duration. The spell ends if the creature drops to
     0 hit points. An incorporeal creature isn’t affected.
+
+
     While in this form, the target’s only method of
     movement is a flying speed of 10 feet. The target can
     enter and occupy the space of another creature. The
@@ -4887,6 +4957,8 @@
     liquids as though they were solid surfaces. The target
     can't fall and remains hovering in the air even when
     stunned or otherwise incapacitated.
+
+
     While in the form of a misty cloud, the target can’t talk
     or manipulate objects, and any objects it was carrying or
     holding can’t be dropped, used, or otherwise interacted
@@ -4910,14 +4982,20 @@
     which you can make 5 to 20 feet in diameter. You can
     orient the portal in any direction you choose. The portal
     lasts for the duration.
+
+
     The portal has a front and a back on each plane where
     it appears. Travel through the portal is possible only
     by moving through its front. Anything that does so is
     instantly transported to the other plane, appearing in
     the unoccupied space nearest to the portal.
+
+
     Deities and other planar rulers can prevent portals
     created by this spell from opening in their presence or
     anywhere within their domains.
+
+
     When you cast this spell, you can speak the name
     of a specific creature (a pseudonym, title, or nicknam e
     doesn’t work). If that creature is on a plane other than
@@ -4947,9 +5025,13 @@
     each time it acts in a manner directly counter to your
     instructions, but no more than once each day. A creature
     that can't understand you is unaffected by the spell.
+
+
     You can issue any command you choose, short of an
     activity that would result in certain death. Should you
     issue a suicidal command, the spell ends.
+
+
     You can end the spell early by using an action to
     dismiss it. A remove curse, greater restoration, or wish
     spell also ends it.
@@ -4975,6 +5057,8 @@
     You touch a corpse or other remains. For the
     duration, the target is protected from decay and can’t
     become undead.
+
+
     The spell also effectively extends the time limit on
     raising the target from the dead, since days spent under
     the influence of this spell don’t count against the time
@@ -4997,13 +5081,19 @@
     becomes a giant centipede, a spider becomes a giant
     spider, a wasp becomes a giant wasp, and a scorpion
     becomes a giant scorpion.
+
+
     Each creature obeys your verbal commands, and
     in combat, they act on your turn each round. The DM
     has the statistics for these creatures and resolves their
     actions and movement.
+
+
     A creature remains in its giant size for the duration,
     until it drops to 0 hit points, or until you use an action to
     dismiss the effect on it.
+
+
     The DM might allow you to choose different targets.
     For example, if you transform a bee, its giant version
     might have the same statistics as a giant wasp.
@@ -5038,6 +5128,8 @@
     An im mobile, faintly shim mering barrier springs into
     existence in a 10-foot radius around you and remains for
     the duration.
+
+
     Any spell of 5th level or lower cast from outside the
     barrier can't affect creatures or objects within it, even
     if the spell is cast using a higher level spell slot. Such a
@@ -5076,16 +5168,22 @@
     The glyph is nearly invisible and requires a successful
     Intelligence (Investigation) check against your spell save
     DC to be found.
+
+
     You decide what triggers the glyph when you cast
     the spell. For glyphs inscribed on a surface, the most
     typical triggers include touching or standing on the
     glyph, removing another object covering the glyph,
     approaching within a certain distance of the glyph, or
     manipulating the object on which the glyph is inscribed.
+
+
     For glyphs inscribed within an object, the most common
     triggers include opening that object, approaching within
     a certain distance of the object, or seeing or reading the
     glyph. Once a glyph is triggered, this spell ends.
+
+
     You can further refine the trigger so the spell activates
     only under certain circumstances or according to
     physical characteristics (such as height or weight),
@@ -5093,8 +5191,12 @@
     affect aberrations or drow), or alignment. You can also
     set conditions for creatures that don’t trigger the glyph,
     such as those who say a certain password.
+
+
     When you inscribe the glyph, choose explosive runes
     or a spell glyph.
+
+
     Explosive Runes. When triggered, the glyph erupts
     with magical energy in a 20-foot-radius sphere centered
     on the glyph. The sphere spreads around corners. Each
@@ -5103,6 +5205,8 @@
     thunder damage on a failed saving throw (your choice
     when you create the glyph), or half as much damage on a
     successful one.
+
+
     Spell Glyph. You can store a prepared spell of
     3rd level or lower in the glyph by casting it as part
     of creating the glyph. The spell must target a single
@@ -5110,6 +5214,8 @@
     immediate effect when cast in this way. When the glyph
     is triggered, the stored spell is cast. If the spell has a
     target, it targets the creature that triggered the glyph.
+
+
     If the spell affects an area, the area is centered on
     that creature. If the spell summons hostile creatures
     or creates harmful objects or traps, they appear as
@@ -5140,6 +5246,8 @@
     action to eat one berry. Eating a berry restores 1 hit
     point, and the berry provides enough nourishment to
     sustain a creature for one day.
+
+
     The berries lose their potency if they have not been
     consumed within 24 hours of the casting of this spell.
 
@@ -5160,6 +5268,8 @@
     to lash out at a creature within 30 feet of it that you can
     see. That creature must succeed on a Dexterity saving
     throw or be pulled 20 feet directly toward the vine.
+
+
     Until the spell ends, you can direct the vine to lash out
     at the same creature or another one as a bonus action
     on each of your turns.
@@ -5178,6 +5288,8 @@
     Slick grease covers the ground in a 10-foot square
     centered on a point within range and turns it into
     difficult terrain for the duration.
+
+
     When the grease appears, each creature standing in
     its area must succeed on a Dexterity saving throw or fall
     prone. A creature that enters the area or ends its turn
@@ -5214,11 +5326,16 @@
     undo a debilitating effect. You can reduce the target’s
     exhaustion level by one, or end one of the following
     effects on the target:
-    • One effect that charmed or petrified the target
-    • One curse, including the target’s attunement to a
+
+
+    * One effect that charmed or petrified the target
+
+    * One curse, including the target’s attunement to a
     cursed magic item
-    • Any reduction to one of the target’s ability scores
-    • One effect reducing the target’s hit point maximum
+
+    * Any reduction to one of the target’s ability scores
+
+    * One effect reducing the target’s hit point maximum
 
 - title: Guardian of Faith
   level: 4
@@ -5234,6 +5351,8 @@
     can see within range. The guardian occupies that space
     and is indistinct except for a gleaming sword and shield
     em blazoned with the symbol of your deity.
+
+
     Any creature hostile to you that moves to a space
     within 10 feet of the guardian for the first time on a
     turn must succeed on a Dexterity saving throw. The
@@ -5259,47 +5378,63 @@
     desire. You can ward several stories of a stronghold by
     dividing the area am ong them, as long as you can walk
     into each contiguous area while you are casting the spell.
+
     When you cast this spell, you can specify individuals
     that are unaffected by any or all of the effects that
-    you choose. You can also specify a passw ord that,
+    you choose. You can also specify a password that,
     when spoken aloud, makes the speaker immune to
     these effects.
+
     Guards and wards creates the following effects within
     the warded area.
-    Corridors. Fog fills all the warded corridors, making
+
+    **Corridors.** Fog fills all the warded corridors, making
     them heavily obscured. In addition, at each intersection
     or branching passage offering a choice of direction,
     there is a 50 percent chance that a creature other than
     you will believe it is going in the opposite direction from
     the one it chooses.
-    Doors. All doors in the warded area are magically
+
+    **Doors.** All doors in the warded area are magically
     locked, as if sealed by an arcane lock spell. In addition,
     you can cover up to ten doors with an illusion (equivalent
     to the illusory object function of the minor illusion spell)
     to make them appear as plain sections of wall.
-    Stairs. Webs fill all stairs in the warded area from top
+
+    **Stairs.** Webs fill all stairs in the warded area from top
     to bottom, as the web spell. These strands regrow in 10
     minutes if they are burned or torn away while guards
     and wards lasts.
-    Other Spell Effect. You can place your choice of one
+
+    **Other Spell Effect.** You can place your choice of one
     of the following magical effects within the warded area
     of the stronghold.
-    • Place dancing lights in four corridors. You can
+
+
+    * Place dancing lights in four corridors. You can
     designate a simple program that the lights repeat as long as
     guards and wards lasts.
-    • Place magic mouth in two locations.
-    • Place stinking cloud in two locations. The vapors
+
+    * Place magic mouth in two locations.
+
+    * Place stinking cloud in two locations. The vapors
     appear in the places you designate; they return within
     10 minutes if dispersed by wind while guards and
     wards lasts.
-    • Place a constant gust of wind in one corridor or room .
-    • Place a suggestion in one location. You select an area
+
+    * Place a constant gust of wind in one corridor or room .
+
+    * Place a suggestion in one location. You select an area
     of up to 5 feet square, and any creature that enters
     or passes through the area receives the suggestion
     mentally.
+
+
     The whole warded area radiates magic. A dispel
     magic cast on a specific effect, if successful, removes
     only that effect.
+
+
     You can create a permanently guarded and warded
     structure by casting this spell there every day
     for one year.
@@ -5358,14 +5493,20 @@
     duration. Each creature that starts its turn in the line
     must succeed on a Strength saving throw or be pushed
     15 feet away from you in a direction following the line.
+
+
     Any creature in the line must spend 2 feet of
     movement for every 1 foot it moves when moving
     closer to you.
+
+
     The gust disperses gas or vapor, and it extinguishes
     candles, torches, and similar unprotected flames in
     the area. It causes protected flames, such as those of
     lanterns, to dance wildly and has a 50 percent chance to
     extinguish them.
+
+
     As a bonus action on each of your turns before the
     spell ends, you can change the direction in which the
     line blasts from you.
@@ -5409,6 +5550,8 @@
     feet, and the spell fails if the radius includes an area
     already under the effect a hallow spell. The affected area
     is subject to the following effects.
+
+
     First, celestials, elementals, fey, fiends, and undead
     can’t enter the area, nor can such creatures charm,
     frighten, or p ossess creatures within it. Any creature
@@ -5416,7 +5559,11 @@
     is no longer charmed, frightened, or possessed upon
     entering the area. You can exclude one or more of those
     types of creatures from this effect.
+
+
     Second, you can bind an extra effect to the area.
+
+
     Choose the effect from the following list, or choose an
     effect offered by the DM. Some of these effects apply to
     creatures in the area; you can designate whether the
@@ -5427,31 +5574,51 @@
     turn or starts its turn there, it can make a Charisma
     saving throw. On a success, the creature ignores the
     extra effect until it leaves the area.
-    Courage. Affected creatures can’t be frightened
+
+
+    **Courage.** Affected creatures can’t be frightened
     while in the area.
-    Darkness. D arkness fills the area. Normal light,
+
+
+    **Darkness.** Darkness fills the area. Normal light,
     as well as magical light created by spells of a lower
     level than the slot you used to cast this spell, can’t
     illuminate the area.
-    Daylight. Bright light fills the area. Magical darkness
+
+
+    **Daylight.** Bright light fills the area. Magical darkness
     created by spells of a lower level than the slot you used
     to cast this spell can’t extinguish the light.
-    Energy Protection. Affected creatures in the area
+
+
+    **Energy Protection.** Affected creatures in the area
     have resistance to one damage type of your choice,
     except for bludgeoning, piercing, or slashing.
-    Energy Vulnerability. Affected creatures in the area
+
+
+    **Energy Vulnerability.** Affected creatures in the area
     have vulnerability to one damage type of your choice,
     except for bludgeoning, piercing, or slashing.
-    Everlasting Rest. Dead bodies interred in the area
+
+
+    **Everlasting Rest.** Dead bodies interred in the area
     can’t be turned into undead.
-    Extradimensional Interference. Affected creatures
+
+
+    **Extradimensional Interference.** Affected creatures
     can’t move or travel using teleportation or by
-    extradim ensional or interplanar means.
-    Fear. Affected creatures are frightened
+    extradimensional or interplanar means.
+
+
+    **Fear.** Affected creatures are frightened
     while in the area.
-    Silence. No sound can emanate from within the area,
+
+
+    **Silence.** No sound can emanate from within the area,
     and no sound can reach into it.
-    Tongues. Affected creatures can communicate with
+
+
+    **Tongues.** Affected creatures can communicate with
     any other creature in the area, even if they don’t share a
     common language.
 
@@ -5473,8 +5640,12 @@
     or impassable terrain. A pond can be made to seem
     like a grassy meadow, a precipice like a gentle slope,
     or a rock-strewn gully like a wide and sm ooth road.
-    M anufactured structures, equipment, and creatures
+
+
+    Manufactured structures, equipment, and creatures
     within the area aren’t changed in appearance.
+
+
     The tactile characteristics of the terrain are
     unchanged, so creatures entering the area are likely to
     see through the illusion. If the difference isn’t obvious
@@ -5524,6 +5695,8 @@
     of its turns. That action can be used only to take the
     Attack (one weapon attack only), Dash, Disengage, Hide,
     or Use an Object action.
+
+
     When the spell ends, the target can’t move or take
     actions until after its next turn, as a wave of lethargy
     sw eeps over it.
@@ -5633,6 +5806,8 @@
     disappears at the end of that time, and the beneficial
     effects don’t set in until this hour is over. Up to twelve
     other creatures can partake of the feast.
+
+
     A creature that partakes of the feast gains several
     benefits. The creature is cured of all diseases and
     poison, becomes im mune to poison and being
@@ -5681,9 +5856,13 @@
     an attack. Also, choose one ability when you cast the
     spell. The target has disadvantage on ability checks
     made with the chosen ability.
+
+
     If the target drops to 0 hit points before this spell
     ends, you can use a bonus action on a subsequent turn
     of yours to curse a new creature.
+
+
     A remove curse cast on the target ends this spell early.
   atHigherLevels: >
     When you cast this spell using
@@ -5785,6 +5964,8 @@
     slurping noises that can be heard up to 30 feet away. No
     light, magical or otherwise, can illuminate the area, and
     creatures fully within the area are blinded.
+
+
     The void creates a warp in the fabric of space, and the
     area is difficult terrain. Any creature that starts its turn
     in the area takes 2d6 cold damage. Any creature that
@@ -5836,6 +6017,8 @@
     becomes charmed for the duration. While charmed
     by this spell, the creature is incapacitated and has
     a speed of 0.
+
+
     The spell ends for an affected creature if it takes any
     damage or if someone else uses an action to shake the
     creature out of its stupor.
@@ -5857,6 +6040,8 @@
     make a Dexterity saving throw. A creature takes 2d8
     bludgeoning damage and 4d6 cold damage on a failed
     save, or half as much damage on a successful one.
+
+
     Hailstones turn the storm's area of effect into difficult
     terrain until the end of your next turn.
   atHigherLevels: >
@@ -5884,6 +6069,8 @@
     whether any spells are affecting the item and what they
     are. If the item was created by a spell, you learn which
     spell created it.
+
+
     If you instead touch a creature throughout the casting,
     you learn what spells, if any, are currently affecting it.
 
@@ -5901,6 +6088,8 @@
     You write on parchment, paper, or some other suitable
     writing material and imbue it with a potent illusion that
     lasts for the duration.
+
+
     To you and any creatures you designate when you
     cast the spell, the writing appears normal, written in
     your hand, and conveys whatever meaning you intended
@@ -5910,8 +6099,12 @@
     the writing to appear to be an entirely different message,
     written in a different hand and language, though the
     language must be one you know.
+
+
     Should the spell be dispelled, the original script and
     the illusion both disappear.
+
+
     A creature with truesight can read the
     hidden message.
 
@@ -5923,7 +6116,9 @@
   components:
     V: true
     S: true
-    M: a vellum depiction or a carved statuette in the likeness of the target, and a special com ponent that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target
+    M:
+      - a vellum depiction or a carved statuette in the likeness of the target
+      - a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target
   duration: Until dispelled
   description: >
     You create a magical restraint to hold a creature that
@@ -5933,42 +6128,57 @@
     While affected by this spell, the creature doesn't need
     to breathe, eat, or drink, and it doesn’t age. Divination
     spells can’t locate or perceive the target.
+
+
     When you cast the spell, you choose one of the
     following forms of imprisonment.
-    Burial. The target is entombed far beneath the earth
+
+
+    * **Burial.** The target is entombed far beneath the earth
     in a sphere of magical force that is just large enough to
     contain the target. Nothing can pass through the sphere,
     nor can any creature teleport or use planar travel to get
     into or out of it.
-    The special com ponent for this version of the spell is a
+    <br>
+    The special component for this version of the spell is a
     small mithral orb.
-    Chaining. Heavy chains, firmly rooted in the ground,
+
+    * **Chaining.** Heavy chains, firmly rooted in the ground,
     hold the target in place. The target is restrained until
     the spell ends, and it can’t move or be moved by any
     means until then.
-    The special com ponent for this version of the spell is a
+    <br>
+    The special component for this version of the spell is a
     fine chain of precious metal.
-    Hedged Prison. The spell transports the target into
+
+    * **Hedged Prison.** The spell transports the target into
     a tiny demiplane that is warded against teleportation
     and planar travel. The demiplane can be a labyrinth, a
     cage, a tower, or any similar confined structure or area
     of your choice.
-    The special com ponent for this version of the spell is a
+    <br>
+    The special component for this version of the spell is a
     miniature representation of the prison made from jade.
-    Minimus Containment. The target shrinks to a height
+
+    * **Minimus Containment.** The target shrinks to a height
     of 1 inch and is im prisoned inside a gem stone or similar
     object. Light can pass through the gemstone normally
     (allowing the target to see out and other creatures to see
     in), but nothing else can pass through, even by means of
     teleportation or planar travel. The gemstone can’t be cut
     or broken while the spell remains in effect.
-    The special com ponent for this version of the spell
+    <br>
+    The special component for this version of the spell
     is a large, transparent gemstone, such as a corundum ,
     diamond, or ruby.
-    Slumber. The target falls asleep and can’t be awoken.
-    The special com ponent for this version of the spell
+
+    * **Slumber.** The target falls asleep and can’t be awoken.
+    <br>
+    The special component for this version of the spell
     consists of rare soporific herbs.
-    Ending the Spell. During the casting of the spell,
+
+
+    **Ending the Spell.** During the casting of the spell,
     in any of its versions, you can specify a condition that
     will cause the spell to end and release the target. The
     condition can be as specific or as elaborate as you
@@ -5978,12 +6188,16 @@
     or deity but otherwise must be based on observable
     actions or qualities and not based on intangibles such as
     level, class, or hit points.
+
+
     A dispel magic spell can end the spell only if it is cast
     as a 9th-level spell, targeting either the prison or the
-    special com ponent used to create it.
-    You can use a particular special com ponent to create
+    special component used to create it.
+
+
+    You can use a particular special component to create
     only one prison at a time. If you cast the spell again
-    using the same com ponent, the target of the first casting
+    using the same component, the target of the first casting
     is immediately freed from its binding.
 
 - title: Incendiary Cloud
@@ -6003,12 +6217,16 @@
     and is heavily obscured. It lasts for the duration or until
     a wind of moderate or greater speed (at least 10 miles
     per hour) disperses it.
+
+
     When the cloud appears, each creature in it must
     make a Dexterity saving throw. A creature takes 10d8
     fire damage on a failed save, or half as much damage on
     a successful one. A creature must also make this saving
     throw when it enters the spell’s area for the first time on
     a turn or ends its turn there.
+
+
     The cloud moves 10 feet directly away from you
     in a direction that you choose at the start of each
     of your turns.
@@ -6047,6 +6265,8 @@
     spreads around corners. The sphere remains for the
     duration, and its area is lightly obscured. The sphere’s
     area is difficult terrain.
+
+
     When the area appears, each creature in it must
     make a Constitution saving throw. A creature takes
     4 d10 piercing damage on a failed save, or half as much
@@ -6106,13 +6326,19 @@
     object can be a door, a box, a chest, a set of manacles, a
     padlock, or another object that contains a mundane or
     magical means that prevents access.
+
+
     A target that is held shut by a mundane lock or that
     is stuck or barred becomes unlocked, unstuck, or
     unbarred. If the object has multiple locks, only one of
     them is unlocked.
+
+
     If you choose a target that is held shut with arcane
     lock, that spell is suppressed for 10 minutes, during
     which time the target can be opened and shut normally.
+
+
     When you cast the spell, a loud knock, audible from as
     far away as 300 feet, emanates from the target object.
 
@@ -6136,6 +6362,8 @@
     information. The more information you already have
     about the thing, the more precise and detailed the
     information you receive is.
+
+
     The information you learn is accurate but might be
     couched in figurative language. For example, if you
     have a mysterious magic axe on hand, the spell might
@@ -6158,15 +6386,19 @@
   description: >
     You hide a chest, and all its contents, on the Ethereal
     Plane. You must touch the chest and the miniature
-    replica that serves as a material com ponent for the spell.
+    replica that serves as a material component for the spell.
     The chest can contain up to 12 cubic feet of nonliving
     material (3 feet by 2 feet by 2 feet).
+
+
     While the chest remains on the Ethereal Plane, you
     can use an action and touch the replica to recall the
     chest. It appears in an unoccupied space on the ground
     within 5 feet of you. You can send the chest back to the
     Ethereal Plane by using an action and touching both the
     chest and the replica.
+
+
     After 60 days, there is a cumulative 5 percent chance
     per day that the spell's effect ends. This effect ends if
     you cast this spell again, if the sm aller replica chest is
@@ -6186,20 +6418,22 @@
     M: a sm all crystal bead
   duration: 8 hours
   description: >
-    A 10-foot-radius im mobile dom e of force springs into
+    A 10-foot-radius im mobile dome of force springs into
     existence around and above you and remains stationary
     for the duration. The spell ends if you leave its area.
     Nine creatures of Medium size or smaller can fit inside
-    the dom e with you. The spell fails if its area includes a
+    the dome with you. The spell fails if its area includes a
     larger creature or more than nine creatures. Creatures
-    and objects within the dom e when you cast this spell
+    and objects within the dome when you cast this spell
     can move through it freely. All other creatures and
     objects are barred from passing through it. Spells and
-    other magical effects can’t extend through the dom e or
+    other magical effects can’t extend through the dome or
     be cast through it. The atmosphere inside the space is
     com fortable and dry, regardless of the weather outside.
+
+
     Until the spell ends, you can command the interior to
-    become dimly lit or dark. The dom e is opaque from the
+    become dimly lit or dark. The dome is opaque from the
     outside, of any color you choose, but it is transparent
     from the inside.
 
@@ -6235,6 +6469,8 @@
     a target that weighs up to 500 pounds. An unwilling
     creature that succeeds on a Constitution saving throw
     is unaffected.
+
+
     The target can move only by pushing or pulling
     against a fixed object or surface within reach (such as
     a wall or a ceiling), which allows it to move as if it were
@@ -6243,6 +6479,8 @@
     target, you can move up or down as part of your move.
     Otherwise, you can use your action to move the target,
     which must remain within the spell’s range.
+
+
     When the spell ends, the target floats gently to the
     ground if it is still aloft.
 
@@ -6263,6 +6501,8 @@
     covering the object with something opaque blocks the
     light. The spell ends if you cast it again or dismiss it
     as an action.
+
+
     If you target an object held or worn by a hostile
     creature, that creature must succeed on a Dexterity
     saving throw to avoid the spell.
@@ -6285,7 +6525,9 @@
     target takes 4d8 lightning damage on a hit, or half
     as much damage on a miss, instead of the weapon’s
     normal damage.
-    W hether you hit or miss, each creature within 10 feet
+
+
+    Whether you hit or miss, each creature within 10 feet
     of the target must make a Dexterity saving throw. Each
     of these creatures takes 2d8 lightning damage on a
     failed save, or half as much damage on a successful one.
@@ -6313,6 +6555,8 @@
     Each creature in the line must make a Dexterity saving
     throw. A creature takes 8d6 lightning damage on a
     failed save, or half as much damage on a successful one.
+
+
     The lightning ignites flammable objects in the area
     that aren’t being worn or carried.
   atHigherLevels: >
@@ -6332,7 +6576,7 @@
     M: a bit of fur from a bloodhound
   duration: Instantaneous
   description: >
-    D escribe or name a specific kind of beast or plant.
+    Describe or name a specific kind of beast or plant.
     Concentrating on the voice of nature in your
     surroundings, you learn the direction and distance to
     the closest creature or plant of that kind within 5 miles,
@@ -6350,10 +6594,12 @@
   concentration: true
   duration: ≤ 1 hour
   description: >
-    D escribe or name a creature that is familiar to you. You
+    Describe or name a creature that is familiar to you. You
     sense the direction to the creature’s location, as long as
     that creature is within 1,000 feet of you. If the creature
     is moving, you know the direction of its movement.
+
+
     The spell can locate a specific creature known to
     you, or the nearest creature of a specific kind (such as
     a human or a unicorn), so long as you have seen such a
@@ -6361,6 +6607,8 @@
     creature you described or named is in a different form,
     such as being under the effects of a polymorph spell,
     this spell doesn’t locate the creature.
+
+
     This spell can’t locate a creature if running water at
     least 10 feet wide blocks a direct path between you and
     the creature.
@@ -6377,15 +6625,19 @@
   concentration: true
   duration: ≤ 10 minutes
   description: >
-    D escribe or name an object that is familiar to you. You
+    Describe or name an object that is familiar to you. You
     sense the direction to the object’s location, as long as
     that object is within 1,000 feet of you. If the object is in
     motion, you know the direction of its movement.
+
+
     The spell can locate a specific object known to you,
     as long as you have seen it up close—within 30 feet—at
     least once. Alternatively, the spell can locate the nearest
     object of a particular kind, such as a certain kind of
     apparel, jewelry, furniture, tool, or weapon.
+
+
     This spell can’t locate an object if any thickness of
     lead, even a thin sheet, blocks a direct path between you
     and the object.
@@ -6440,11 +6692,15 @@
     you dismiss it as an action. The hand vanishes if it is
     ever more than 30 feet away from you or if you cast
     this spell again.
+
+
     You can use your action to control the hand. You can
     use the hand to manipulate an object, open an unlocked
     door or container, stow or retrieve an item from an open
     container, or pour the contents out of a vial. You can
     move the hand up to 30 feet each time you use it.
+
+
     The hand can’t attack, activate magic items, or carry
     more than 10 pounds.
 
@@ -6456,7 +6712,9 @@
   components:
     V: true
     S: true
-    M: holy water or powdered silver and iron worth at least 100 gp, which the spell consumes
+    M:
+      - holy water or powdered silver
+      - iron worth at least 100 gp, which the spell consumes
   duration: 1 hour
   description: >
     You create a 10-foot-radius, 20-foot-tall cylinder of
@@ -6464,18 +6722,26 @@
     that you can see within range. Glowing runes appear
     wherever the cylinder intersects with the floor or
     other surface.
+
+
     Choose one or more of the following types of
     creatures: celestials, elementals, fey, fiends, or undead.
     The circle affects a creature of the chosen type in the
     following ways:
-    • The creature can’t willingly enter the cylinder by
+
+
+    * The creature can’t willingly enter the cylinder by
     nonmagical means. If the creature tries to use teleportation
     or interplanar travel to do so, it must first
     succeed on a Charisma saving throw.
-    • The creature has disadvantage on attack rolls against
+
+    * The creature has disadvantage on attack rolls against
     targets within the cylinder.
-    • Targets within the cylinder can’t be charmed, frightened,
+
+    * Targets within the cylinder can’t be charmed, frightened,
     or possessed by the creature.
+
+
     When you cast this spell, you can elect to cause its
     magic to operate in the reverse direction, preventing a
     creature of the specified type from leaving the cylinder
@@ -6505,6 +6771,8 @@
     soul up to 100 feet out of the container, either returning
     to your living body (and ending the spell) or attempting
     to possess a hum anoids body.
+
+
     You can attempt to possess any humanoid within
     100 feet of you that you can see (creatures warded by a
     protection from evil and good or magic circle spell can’t
@@ -6514,6 +6782,8 @@
     container. On a success, the target resists your efforts
     to possess it, and you can’t attempt to possess it again
     for 24 hours.
+
+
     Once you possess a creature’s body, you control it.
     Your game statistics are replaced by the statistics of the
     creature, though you retain your alignment and your
@@ -6523,6 +6793,8 @@
     Meanwhile, the possessed creature’s soul can
     perceive from the container using its own senses, but it
     can’t move or take actions at all.
+
+
     While possessing a body, you can use your action to
     return from the host body to the container if it is within
     100 feet of you, returning the host creature’s soul to
@@ -6531,6 +6803,8 @@
     throw against your ow n spellcasting DC. On a success,
     you return to the container if it is within 100 feet of you.
     Otherwise, you die.
+
+
     If the container is destroyed or the spell ends, your
     soul immediately returns to your body. If your body is
     more than 100 feet away from you or if your body is
@@ -6580,6 +6854,8 @@
     can be delivered over as long as 10 minutes. Finally,
     determine the circumstance that will trigger the spell to
     deliver your message.
+
+
     When that circumstance occurs, a magical mouth
     appears on the object and recites the message in your
     voice and at the same volume you spoke. If the object
@@ -6590,6 +6866,8 @@
     can have the spell end after it delivers its message, or
     it can remain and repeat its message whenever the
     trigger occurs.
+
+
     The triggering circumstance can be as general or as
     detailed as you like, though it must be based on visual
     or audible conditions that occur within 30 feet of the
@@ -6639,6 +6917,8 @@
     sound loud enough to deal thunder damage or deafen a
     creature, or a smell that might sicken a creature (like a
     troglodyte’s stench).
+
+
     As long as you are within range of the illusion, you
     can use your action to cause the image to move to
     any other spot within range. As the im age changes
@@ -6649,6 +6929,8 @@
     Similarly, you can cause the illusion to make different
     sounds at different times, even making it carry on a
     conversation, for example.
+
+
     Physical interaction with the image reveals it to be an
     illusion, because things can pass through it. A creature
     that uses its action to examine the image can determine
@@ -6739,17 +7021,23 @@
     itself, throw itself onto a spear, immolate itself, or do
     some other obviously harmful act automatically negates
     the effect of the spell.
+
+
     Each target must make a Wisdom saving throw. On a
     failed save, it pursues the course of action you described
     to the best of its ability. The suggested course of action
     can continue for the entire duration. If the suggested
     activity can be completed in a shorter time, the spell
     ends when the subject finishes what it was asked to do.
+
+
     You can also specify conditions that will trigger a
     special activity during the duration. For example, you
     might suggest that a group of soldiers give all their
     money to the first beggar they meet. If the condition isn’t
-    met before the spell ends, the activity isn’t perform ed.
+    met before the spell ends, the activity isn’t performed.
+
+
     If you or any of your companions damage a creature
     affected by this spell, the spell ends for that creature.
   atHigherLevels: >
@@ -6773,10 +7061,14 @@
     You banish a creature that you can see within range into
     a labyrinthine demiplane. The target remains there for
     the duration or until it escapes the maze.
+
+
     The target can use its action to attempt to escape.
     When it does so, it makes a DC 20 Intelligence check. If
     it succeeds, it escapes, and the spell ends (a minotaur or
-    goristro dem on automatically succeeds).
+    goristro demon automatically succeeds).
+
+
     When the spell ends, the target reappears in the
     space it left or, if that space is occupied, in the nearest
     unoccupied space.
@@ -6798,6 +7090,8 @@
     Using your movement, you step into the stone at a point
     you can touch. Nothing of your presence remains visible
     or otherwise detectable by nonmagical senses.
+
+
     While merged with the stone, you can’t see what
     occurs outside it, and any Wisdom (Perception) checks
     you make to hear sounds outside it are made with
@@ -6806,6 +7100,8 @@
     the stone. You can use your movement to leave the
     stone where you entered it, which ends the spell. You
     otherwise can’t move.
+
+
     Minor physical damage to the stone doesn’t harm
     you, but its partial destruction or a change in its shape
     (to the extent that you no longer fit within it) expels you
@@ -6855,6 +7151,8 @@
     long as the break or tear is no larger than 1 foot in
     any dimension, you mend it. leaving no trace of the
     former damage.
+
+
     This spell can physically repair a magic item
     or construct, but the spell can’t restore magic to
     such an object.
@@ -6874,6 +7172,8 @@
     and whisper a message. The target (and only the target)
     hears the message and can reply in a whisper that only
     you can hear.
+
+
     You can cast this spell through solid objects if you
     are familiar with the target and know it is beyond
     the barrier. M agical silence. 1 foot of stone, 1 inch of
@@ -6901,6 +7201,8 @@
     save, or half as much damage on a successful one. A
     creature in the area of more than one fiery burst is
     affected only once.
+
+
     The spell damages objects in the area and ignites
     flammable objects that aren’t being worn or carried.
 
@@ -6940,12 +7242,16 @@
     other sound you choose. The sound continues unabated
     throughout the duration, or you can make discrete
     sounds at different times before the spell ends.
+
+
     If you create an im age of an object—such as a chair,
     muddy footprints, or a small chest—it must be no larger
     than a 5-foot cube. The image can’t create sound, light,
     smell, or any other sensory effect. Physical interaction
     with the image reveals it to be an illusion, because
     things can pass through it.
+
+
     If a creature uses its action to examine the sound or
     image, the creature can determine that it is an illusion
     with a successful Intelligence (Investigation) check
@@ -6971,15 +7277,21 @@
     or im passable terrain. A pond can be made to seem like
     a grassy meadow, a precipice like a gentle slope, or a
     rock-strewn gully like a wide and sm ooth road.
+
+
     Similarly, you can alter the appearance of structures,
     or add them where none are present. The spell doesn’t
     disguise, conceal, or add creatures.
+
+
     The illusion includes audible, visual, tactile, and
     olfactory elements, so it can turn clear ground into
     difficult terrain (or vice versa) or otherwise im pede
     movement through the area. Any piece of the illusory
     terrain (such as a rock or stick) that is removed from the
     spell’s area disappears immediately.
+
+
     Creatures with truesight can see through the illusion
     to the terrain’s true form; however, all other elements
     of the illusion remain, so while the creature is aware of
@@ -7001,18 +7313,26 @@
     you and mimic your actions, shifting position so it’s
     im possible to track which im age is real. You can use
     your action to dismiss the illusory duplicates.
+
+
     Each time a creature targets you with an attack during
     the spell’s duration, roll a d20 to determine whether the
     attack instead targets one of your duplicates.
+
+
     If you have three duplicates, you must roll a 6 or
     higher to change the attack’s target to a duplicate. With
     two duplicates, you must roll an 8 or higher. With one
     duplicate, you must roll an 11 or higher.
+
+
     A duplicate’s AC equals 10 + your Dexterity modifier.
     If an attack hits a duplicate, the duplicate is destroyed. A
     duplicate can be destroyed only by an attack that hits it.
     It ignores all other damage and effects. The spell ends
     when all three duplicates are destroyed.
+
+
     A creature is unaffected by this spell if it can’t see, if it
     relies on senses other than sight, such as blindsight, or
     if it can perceive illusions as false, as with truesight.
@@ -7031,9 +7351,13 @@
     double of you appears where you are standing. The
     double lasts for the duration, but the invisibility ends if
     you attack or cast a spell.
+
+
     You can use your action to move your illusory double
     up to twice your speed and make it gesture, speak, and
     behave in whatever way you choose.
+
+
     You can see through its eyes and hear through its ears
     as if you were located where it is. On each of your turns
     as a bonus action, you can switch from using its senses
@@ -7073,6 +7397,8 @@
     surroundings, though it can still hear you. If it takes any
     damage or is targeted by another spell, this spell ends,
     and none of the target’s memories are modified.
+
+
     While this charm lasts, you can affect the target’s
     memory of an event that it experienced within the last
     24 hours and that lasted no more than 10 minutes. You
@@ -7080,6 +7406,8 @@
     allow the target to recall the event with perfect clarity
     and exacting detail, change its memory of the details of
     the event, or create a memory of some other event.
+
+
     You must speak to the target to describe how
     its memories are affected, and it must be able to
     understand your language for the modified memories to
@@ -7088,6 +7416,8 @@
     describing the modified memories, the creature’s
     memory isn’t altered. Otherwise, the modified memories
     take hold when the spell ends.
+
+
     A modified memory doesn’t necessarily affect how a
     creature behaves, particularly if the memory contradicts
     the creature’s natural inclinations, alignment, or beliefs.
@@ -7096,6 +7426,8 @@
     itself in acid, is dismissed, perhaps as a bad dream. The
     DM might deem a modified memory too nonsensical to
     affect a creature in a significant manner.
+
+
     A remove curse or greater restoration spell cast on the
     target restores the creature’s true memory.
   atHigherLevels: >
@@ -7113,23 +7445,31 @@
   components:
     V: true
     S: true
-    M: several seeds of any moonseed plant and a piece of opalescent feldspar
+    M:
+      - several seeds of any moonseed plant
+      - a piece of opalescent feldspar
   concentration: true
   duration: ≤ 1 minute
   description: >
     A silvery beam of pale light shines dow n in a 5-foot
     radius, 40-foot-high cylinder centered on a point within
     range. Until the spell ends, dim light fills the cylinder.
+
+
     When a creature enters the spell’s area for the first
     time on a turn or starts its turn there, it is engulfed
     in ghostly flames that cause searing pain, and it must
     make a Constitution saving throw. It takes 2d10 radiant
     damage on a failed save, or half as much damage on a
     successful one.
+
+
     A shapechanger makes its saving throw with
     disadvantage. If it fails, it also instantly reverts to its
     original form and can’t assume a different form until it
     leaves the spell’s light.
+
+
     On each of your turns after you cast this spell, you can
     use an action to move the beam 60 feet in any direction.
   atHigherLevels: >
@@ -7152,13 +7492,17 @@
     space that you can see within range, where it remains
     for the duration, until you dismiss it as an action, or until
     you move more than 100 feet away from it.
+
+
     The hound is invisible to all creatures except you
     and can't be harmed. When a Small or larger creature
     comes within 30 feet of it without first speaking the
-    passw ord that you specify when you cast this spell, the
+    password that you specify when you cast this spell, the
     hound starts barking loudly. The hound sees invisible
     creatures and can see into the Ethereal Plane. It
     ignores illusions.
+
+
     At the start of each of your turns, the hound attempts
     to bite one creature within 5 feet of it that is hostile
     to you. The hound’s attack bonus is equal to your
@@ -7181,12 +7525,16 @@
     entrance is located. The entrance shim mers faintly
     and is 5 feet wide and 10 feet tall. You and any creature
     you designate when you cast the spell can enter the
-    extradim ensional dwelling as long as the portal remains
+    extradimensional dwelling as long as the portal remains
     open. You can open or close the portal if you are within
     30 feet of it. While closed, the portal is invisible.
+
+
     Beyond the portal is a magnificent foyer with
     num erous cham bers beyond. The atmosphere is clean,
     fresh, and warm.
+
+
     You can create any floor plan you like, but the space
     can’t exceed 50 cubes, each cube being 10 feet on
     each side. The place is furnished and decorated as
@@ -7209,20 +7557,31 @@
     area is a cube that can be as small as 5 feet to as large
     as 100 feet on each side. The spell lasts for the duration
     or until you use an action to dismiss it.
+
+
     When you cast the spell, you decide what sort of
     security the spell provides, choosing any or all of the
     following properties:
-    • Sound can't pass through the barrier at the edge of
+
+
+    * Sound can't pass through the barrier at the edge of
     the warded area.
-    • The barrier of the warded area appears dark and foggy,
+
+    * The barrier of the warded area appears dark and foggy,
     preventing vision (including darkvision) through it.
-    • Sensors created by divination spells can’t appear
+
+    * Sensors created by divination spells can’t appear
     inside the protected area or pass through the barrier
     at its perimeter.
-    • Creatures in the area can’t be targeted by divination
+
+    * Creatures in the area can’t be targeted by divination
     spells.
-    • Nothing can teleport into or out of the warded area.
-    • Planar travel is blocked within the warded area.
+
+    * Nothing can teleport into or out of the warded area.
+
+    * Planar travel is blocked within the warded area.
+
+
     Casting this spell on the same spot every day for a
     year makes this effect permanent.
   atHigherLevels: >
@@ -7246,26 +7605,11 @@
   description: >
     You create a sword-shaped plane of force that hovers
     within range. It lasts for the duration.
+
+
     When the sword appears, you make a melee spell
     attack against a target of your choice within 5 feet of the
     sword. On a hit. the target takes 3d10 force damage.
-    decide the visual appearance of these servants and their
-    attire. They are completely obedient to your orders.
-    Each servant can perform any task a normal human
-    servant could perform , but they can’t attack or take
-    any action that would directly harm another creature.
-    Thus the servants can fetch things, clean, mend, fold
-    clothes, light fires, serve food, pour wine, and so on.
-    The servants can go anywhere in the mansion but
-    can’t leave it. Furnishings and other objects created
-    by this spell dissipate into sm oke if removed from the
-    mansion. When the spell ends, any creatures inside
-    the extradimensional space are expelled into the open
-    spaces nearest to the entrance.
-    Until the spell ends, you can use a bonus action on each
-    of your turns to move the sw ord up to 20 feet to a spot
-    you can see and repeat this attack against the same
-    target or a different one.
 
 - title: Move Earth
   level: 6
@@ -7282,25 +7626,35 @@
     Choose an area of terrain no larger than 40 feet on a
     side within range. You can reshape dirt, sand, or clay
     in the area in any manner you choose for the duration.
+
+
     You can raise or lower the area’s elevation, create or fill
     in a trench, erect or flatten a wall, or form a pillar. The
     extent of any such changes can’t exceed half the area’s
-    largest dim ension. So, if you affect a 40-foot square,
+    largest dimension. So, if you affect a 40-foot square,
     you can create a pillar up to 20 feet high, raise or lower
     the square’s elevation by up to 20 feet, dig a trench up
     to 20 feet deep, and so on. It takes 10 minutes for these
     changes to complete.
+
+
     At the end of every 10 minutes you spend
     concentrating on the spell, you can choose a new area of
     terrain to affect.
+
+
     Because the terrain’s transformation occurs slowly,
     creatures in the area can’t usually be trapped or injured
     by the ground’s movement.
+
+
     This spell can’t manipulate natural stone or
     stone construction. R ocks and structures shift to
     accommodate the new terrain. If the way you shape
     the terrain would make a structure unstable, it
     might collapse.
+
+
     Similarly, this spell doesn’t directly affect plant
     growth. The moved earth carries any plants along with it.
 
@@ -7312,13 +7666,13 @@
   components:
     V: true
     S: true
-    M: a pinch of diam ond dust worth 25 gp sprinkled over the target, which the spell consumes
+    M: a pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes
   duration: 8 hours
   description: >
     For the duration, you hide a target that you touch
     from divination magic. The target can be a willing
     creature or a place or an object no larger than 10
-    feet in any dim ension. The target can’t be targeted by
+    feet in any dimension. The target can’t be targeted by
     any divination magic or perceived through magical
     scrying sensors.
 
@@ -7338,12 +7692,16 @@
     information about it. The target can be a willing
     creature or an object that isn’t being carried or worn by
     another creature.
+
+
     When you cast the spell, choose one or both of the
     following effects. The effect lasts for the duration. If you
     cast this spell on the same creature or object every day
     for 30 days, placing the same effect on it each time, the
     illusion lasts until it is dispelled.
-    False Aura. You change the way the target appears
+
+
+    * **False Aura.** You change the way the target appears
     to spells and magical effects, such as detect magic,
     that detect magical auras. You can make a nonmagical
     object appear magical, a magical object appear
@@ -7352,7 +7710,8 @@
     you choose. When you use this effect on an object, you
     can make the false magic apparent to any creature that
     handles the item.
-    Mask. You change the way the target appears to spells
+
+    * **Mask.** You change the way the target appears to spells
     and magical effects that detect creature types, such as a
     paladin’s Divine Sense or the trigger of a symbol spell.
     You choose a creature type and other spells and magical
@@ -7376,6 +7735,8 @@
     area must make a Constitution saving throw. On a
     failed save, a creature takes 10d6 cold damage. On a
     successful save, it takes half as much damage.
+
+
     If the globe strikes a body of water or a liquid that is
     principally water (not including water-based creatures),
     it freezes the liquid to a depth of 6 inches over an area
@@ -7384,6 +7745,8 @@
     trapped in the ice. A trapped creature can use an action
     to make a Strength check against your spell save DC
     to break free.
+
+
     You can refrain from firing the globe after completing
     the spell, if you wish. A small globe about the size of
     a sling stone, cool to the touch, appears in your hand.
@@ -7416,6 +7779,8 @@
     unwilling creature must make a Dexterity saving
     throw. On a failed save, the creature is enclosed for
     the duration.
+
+
     Nothing—not physical objects, energy, or other spell
     effects—can pass through the barrier, in or out, though
     a creature in the sphere can breathe there. The sphere
@@ -7423,12 +7788,16 @@
     can’t be damaged by attacks or effects originating from
     outside, nor can a creature inside the sphere damage
     anything outside it.
+
+
     The sphere is weightless and just large enough to
     contain the creature or object inside. An enclosed
     creature can use its action to push against the sphere’s
     walls and thus roll the sphere at up to half the creature’s
     speed. Similarly, the globe can be picked up and moved
     by other creatures.
+
+
     A disintegrate spell targeting the globe destroys it
     without harming anything inside it.
 
@@ -7446,6 +7815,8 @@
     target begins a comic dance in place: shuffling, tapping
     its feet, and capering for the duration. Creatures that
     can’t be charmed are immune to this spell.
+
+
     A dancing creature must use all its movement to
     dance without leaving its space and has disadvantage
     on Dexterity saving throws and attack rolls. While
@@ -7489,9 +7860,11 @@
     A passage appears at a point of your choice that you
     can see on a wooden, plaster, or stone surface (such as
     a wall, a ceiling, or a floor) within range, and lasts for
-    the duration. You choose the opening’s dim ensions: up
+    the duration. You choose the opening’s dimensions: up
     to 5 feet wide, 8 feet tall, and 20 feet deep. The passage
     creates no instability in a structure surrounding it.
+
+
     When the opening disappears, any creatures or
     objects still in the passage created by the spell are safely
     ejected to an unoccupied space nearest to the surface on
@@ -7517,12 +7890,18 @@
     10-foot cube and that is perceivable only to the target
     for the duration. This spell has no effect on undead
     or constructs.
+
+
     The phantasm includes sound, temperature, and other
     stimuli, also evident only to the creature.
+
+
     The target can use its action to examine the phantasm
     with an Intelligence (Investigation) check against your
     spell save DC. If the check succeeds, the target realizes
     that the phantasm is an illusion, and the spell ends.
+
+
     While a target is affected by the spell, the target treats
     the phantasm as if it were real. The target rationalizes
     any illogical outcomes from interacting with the
@@ -7532,6 +7911,8 @@
     fall, it still believes that the bridge exists and comes up
     with some other explanation for its fall—it was pushed,
     it slipped, or a strong wind might have knocked it off.
+
+
     An affected target is so convinced of the phantasm’s
     reality that it can even take damage from the illusion. A
     phantasm created to appear as a creature can attack the
@@ -7587,10 +7968,14 @@
     of the equipment created by the spell vanishes in a
     puff of sm oke if it is carried more than 10 feet away
     from the steed.
+
+
     For the duration, you or a creature you choose can
     ride the steed. The creature uses the statistics for a
     riding horse, except it has a speed of 100 feet and can
     travel 10 miles in an hour, or 13 miles at a fast pace.
+
+
     When the spell ends, the steed gradually fades, giving
     the rider 1 minute to dismount. The spell ends if you use
     an action to dismiss it or if the steed takes any damage.
@@ -7606,7 +7991,7 @@
   duration: Instantaneous
   description: >
     You beseech an otherworldly entity for aid. The being
-    must be known to you: a god, a primordial, a dem on
+    must be known to you: a god, a primordial, a demon
     prince, or some other being of cosmic power. That entity
     sends a celestial, an elemental, or a fiend loyal to it to
     aid you, making the creature appear in an unoccupied
@@ -7614,6 +7999,8 @@
     name, you can speak that name when you cast this spell
     to request that creature, though you might get a different
     creature anyway (D M’s choice).
+
+
     When the creature appears, it is under no com pulsion
     to behave in any particular way. You can ask the
     creature to perform a service in exchange for payment,
@@ -7623,11 +8010,15 @@
     us during our foray into the dungeon). You must be
     able to communicate with the creature to bargain for
     its services.
+
+
     Payment can take a variety of forms. A celestial might
     require a sizable donation of gold or magic items to
     an allied temple, while a fiend might demand a living
     sacrifice or a gift of treasure. Some creatures might
     exchange their service for a quest undertaken by you.
+
+
     As a rule of thumb, a task that can be measured in
     minutes requires a payment worth 100 gp per minute. A
     task measured in hours requires 1,000 gp per hour. And
@@ -7639,12 +8030,16 @@
     typically require only half the suggested payment, while
     especially dangerous tasks might require a greater gift.
     Creatures rarely accept tasks that seem suicidal.
+
+
     After the creature completes the task, or when the
     agreed-upon duration of service expires, the creature
     returns to its home plane after reporting back to you,
     if appropriate to the task and if possible. If you are
     unable to agree on a price for the creature’s service, the
     creature immediately returns to its home plane.
+
+
     A creature enlisted to join your group counts as
     a member of it, receiving a full share of experience
     points awarded.
@@ -7671,12 +8066,16 @@
     the creature was summoned or created by another spell,
     that spell’s duration is extended to match the duration
     of this spell.
+
+
     A bound creature must follow your instructions to the
     best of its ability. You might command the creature to
     accom pany you on an adventure, to guard a location, or
     to deliver a message. The creature obeys the letter of
     your instructions, but if the creature is hostile to you, it
     strives to twist your words to achieve its own objectives.
+
+
     If the creature carries out your instructions completely
     before the spell ends, it travels to you to report this fact
     if you are on the same plane of existence. If you are on a
@@ -7886,18 +8285,25 @@
     This spell is a minor magical trick that novice
     spellcasters use for practice. You create one of the
     following magical effects within range:
-    • You create an instantaneous, harm less sensory effect,
+
+
+    * You create an instantaneous, harm less sensory effect,
     such as a shower of sparks, a puff of wind, faint musical
     notes, or an odd odor.
-    • You instantaneously light or snuff out a candle, a
+
+    * You instantaneously light or snuff out a candle, a
     torch, or a small campfire.
-    • You instantaneously clean or soil an object no larger
+
+    * You instantaneously clean or soil an object no larger
     than 1 cubic foot.
-    • You chill, warm, or flavor up to 1 cubic foot of nonliving
+
+    * You chill, warm, or flavor up to 1 cubic foot of nonliving
     material for 1 hour.
-    • You make a color, a small mark, or a sym bol appear
+
+    * You make a color, a small mark, or a sym bol appear
     on an object or a surface for 1 hour.
-    • You create a nonmagical trinket or an illusory im age
+
+    * You create a nonmagical trinket or an illusory im age
     that can fit in your hand and that lasts until the end of
     your next turn.
     If you cast this spell multiple times, you can have up to
@@ -8214,7 +8620,7 @@
   components:
     V: true
     S: true
-    M: a diam ond worth at least 500 gp, which the spell consumes
+    M: a diamond worth at least 500 gp, which the spell consumes
   duration: Instantaneous
   description: >
     You return a dead creature you touch to life, provided
@@ -8361,21 +8767,41 @@
     change. The DM rolls a d100 and consults the following
     table to determine what form the creature takes when
     restored to life, or the DM chooses a form.
-    d100 Race
-    01-04 Dragonborn
-    05-13 Dwarf, hill
-    14-21 Dwarf, mountain
-    22-25 Elf, dark
-    26-34 Elf, high
-    35-42 Elf, wood
-    43-46 Gnome, forest
-    47-52 Gnome, rock
-    53-56 Half-elf
-    57-60 Half-orc
-    61-68 Halfling, lightfoot
-    69-76 Halfling, stout
-    77-96 Human
-    97-00 Tiefling
+
+
+    | d100 | Race |
+
+    |---|---|
+
+    | 01-04 | Dragonborn |
+
+    | 05-13 | Dwarf, hill |
+
+    | 14-21 | Dwarf, mountain |
+
+    | 22-25 | Elf, dark |
+
+    | 26-34 | Elf, high |
+
+    | 35-42 | Elf, wood |
+
+    | 43-46 | Gnome, forest |
+
+    | 47-52 | Gnome, rock |
+
+    | 53-56 | Half-elf |
+
+    | 57-60 | Half-orc |
+
+    | 61-68 | Halfling, lightfoot |
+
+    | 69-76 | Halfling, stout |
+
+    | 77-96 | Human |
+
+    | 97-00 | Tiefling |
+
+
     The reincarnated creature recalls its former life
     and experiences. It retains the capabilities it had in its
     original form, except it exchanges its original race for
@@ -8422,7 +8848,7 @@
   components:
     V: true
     S: true
-    M: a diam ond worth at least 1,000 gp, which the spell consumes
+    M: a diamond worth at least 1,000 gp, which the spell consumes
   duration: Instantaneous
   description: >
     You touch a dead creature that has been dead for no
@@ -8505,14 +8931,14 @@
     One end of the rope then rises into the air until the
     whole rope hangs perpendicular to the ground. At the
     upper end of the rope, an invisible entrance opens to an
-    extradim ensional space that lasts until the spell ends.
-    The extradim ensional space can be reached by
+    extradimensional space that lasts until the spell ends.
+    The extradimensional space can be reached by
     climbing to the top of the rope. The space can hold as
     many as eight Medium or smaller creatures. The rope
     can be pulled into the space, making the rope disappear
     from view outside the space.
     Attacks and spells can’t cross through the entrance
-    into or out of the extradim ensional space, but those
+    into or out of the extradimensional space, but those
     inside can see out of it as if through a 3-foot-by-5-foot
     window centered on the rope.
     Anything inside the extradimensional space drops out
@@ -8917,7 +9343,7 @@
     point you choose within range. Any creature or object
     entirely inside the sphere is im mune to thunder damage,
     and creatures are deafened while entirely inside it.
-    Casting a spell that includes a verbal com ponent is
+    Casting a spell that includes a verbal component is
     im possible there.
 
 - title: Silent Image
@@ -9327,7 +9753,7 @@
   duration: Instantaneous
   description: >
     You touch a stone object of Medium size or smaller or
-    a section of stone no more than 5 feet in any dim ension
+    a section of stone no more than 5 feet in any dimension
     and form it into any shape that suits your purpose. So,
     for example, you could shape a large rock into a weapon,
     idol, or coffer, or make a small passage through a wall,
@@ -9428,7 +9854,7 @@
     special activity during the duration. For example, you
     might suggest that a knight give her warhorse to the
     first beggar she meets. If the condition isn’t met before
-    the spell expires, the activity isn’t perform ed.
+    the spell expires, the activity isn’t performed.
     If you or any of your companions damage the target,
     the spell ends.
 
@@ -9514,7 +9940,7 @@
   components:
     V: true
     S: true
-    M: mercury, phosphorus, and powdered diam ond and opal with a total value of at least 1,000 gp, which the spell consumes
+    M: mercury, phosphorus, and powdered diamond and opal with a total value of at least 1,000 gp, which the spell consumes
   duration: Until dispelled or triggered
   description: >
     When you cast this spell, you inscribe a harmful glyph
@@ -9844,19 +10270,26 @@
     You manifest a minor wonder, a sign of supernatural
     power, within range. You create one of the following
     magical effects within range:
-    • Your voice boom s up to three tim es as loud as normal
+
+
+    * Your voice boom s up to three tim es as loud as normal
     for 1 minute.
-    • You cause flames to flicker, brighten, dim, or change
+
+    * You cause flames to flicker, brighten, dim, or change
     color for 1 minute.
-    • You cause harm less tremors in the ground for 1
+
+    * You cause harm less tremors in the ground for 1
     minute.
-    • You create an instantaneous sound that originates
+
+    * You create an instantaneous sound that originates
     from a point of your choice within range, such as a
     rumble of thunder, the cry of a raven, or ominous
     whispers.
-    • You instantaneously cause an unlocked door or window
+
+    * You instantaneously cause an unlocked door or window
     to fly open or slam shut.
-    • You alter the appearance of your eyes for 1 minute.
+
+    * You alter the appearance of your eyes for 1 minute.
     If you cast this spell multiple times, you can have up to
     three of its 1-minute effects active at a time, and you can
     dismiss such an effect as an action.
@@ -10073,7 +10506,7 @@
   components:
     V: true
     S: true
-    M: a sprinkle of holy water and diam onds worth at least 25,000 gp, which the spell consumes
+    M: a sprinkle of holy water and diamonds worth at least 25,000 gp, which the spell consumes
   duration: Instantaneous
   description: >
     You touch a creature that has been dead for no longer
@@ -10280,7 +10713,7 @@
     any orientation you choose, as a horizontal or vertical
     barrier or at an angle. It can be free floating or resting
     on a solid surface. You can form it into a hemispherical
-    dom e or a sphere with a radius of up to 10 feet, or you
+    dome or a sphere with a radius of up to 10 feet, or you
     can shape a flat surface made up of ten 10-foot-by-
     10-foot panels. Each panel must be contiguous with
     another panel. In any form, the wall is 1/4 inch thick.
@@ -10306,7 +10739,7 @@
   duration: ≤ 10 minutes
   description: >
     You create a wall of ice on a solid surface within range.
-    You can form it into a hemispherical dom e or a sphere
+    You can form it into a hemispherical dome or a sphere
     with a radius of up to 10 feet, or you can shape a flat
     surface made up of ten 10-foot-square panels. Each
     panel must be contiguous with another panel. In any
@@ -10605,24 +11038,30 @@
     foundations of reality in accord with your desires.
     The basic use of this spell is to duplicate any other
     spell of 8th level or lower. You don’t need to meet any
-    requirements in that spell, including costly com ponents.
+    requirements in that spell, including costly components.
     The spell simply takes effect.
     Alternatively, you can create one of the following
     effects of your choice:
-    • You create one object of up to 25,000 gp in value that
+
+
+    * You create one object of up to 25,000 gp in value that
     isn’t a magic item. The object can be no more than
     300 feet in any dimension, and it appears in an unoccupied
     space you can see on the ground.
-    • You allow up to twenty creatures that you can see to
+
+    * You allow up to twenty creatures that you can see to
     regain all hit points, and you end all effects on them
     described in the greater restoration spell.
-    • You grant up to ten creatures that you can see resistance
+
+    * You grant up to ten creatures that you can see resistance
     to a damage type you choose.
-    • You grant up to ten creatures you can see immunity to
+
+    * You grant up to ten creatures you can see immunity to
     a single spell or other magical effect for 8 hours. For
     instance, you could make yourself and all your com ­
     panions im mune to a lich’s life drain attack.
-    • You undo a single recent event by forcing a reroll of
+
+    * You undo a single recent event by forcing a reroll of
     any roll made within the last round (including your
     last turn). Reality reshapes itself to accommodate the
     new result. For example, a wish spell could undo an
