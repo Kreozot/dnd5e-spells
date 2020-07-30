@@ -1,8 +1,7 @@
 import React, { useMemo, Fragment } from 'react';
-import { useTable, useExpanded } from 'react-table';
+import { useTable, useExpanded, useGroupBy } from 'react-table';
 import Markdown from 'markdown-to-jsx';
 
-import data from 'content/spells.yaml';
 import Components from './Components';
 import TextWithHint from './TextWithHint';
 import IconCell from './IconCell';
@@ -12,6 +11,8 @@ import RitualIcon from 'images/icon-ritual.svg';
 import styles from './SpellsList.module.scss';
 
 export default function SpellsList(props) {
+  const { data } = props;
+
   const columns = useMemo(() => [
     {
       Header: 'Level',

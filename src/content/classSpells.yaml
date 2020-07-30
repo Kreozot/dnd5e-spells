@@ -1,0 +1,496 @@
+bard:
+  main:
+    - Blade Ward
+    - Dancing Lights
+    - Friends
+    - Light
+    - Mage Hand
+    - Mending
+    - Message
+    - Minor Illusion
+    - Prestidigitation
+    - True Strike
+    - Vicious Mockery
+    - Animal Friendship
+    - Bane
+    - Charm Person
+    - Comprehend Languages
+    - Cure Wounds
+    - Detect Magic
+    - Disguise Self
+    - Dissonant Whispers
+    - Faerie Fire
+    - Feather Fall
+    - Healing Word
+    - Heroism
+    - Identify
+    - Illusory Script
+    - Longstrider
+    - Silent Image
+    - Sleep
+    - Speak with Animals
+    - Tasha’s Hideous Laughter
+    - Thunderwave
+    - Unseen Servant
+    - Animal Messenger
+    - Blindness/Deafness
+    - Calm Emotions
+    - Cloud of Daggers
+    - Crown of Madness
+    - Detect Thoughts
+    - Enhance Ability
+    - Enthrall
+    - Heat Metal
+    - Hold Person
+    - Invisibility
+    - Knock
+    - Lesser Restoration
+    - Locate Animals or Plants
+    - Locate Object
+    - Magic Mouth
+    - Phantasmal Force
+    - See Invisibility
+    - Shatter
+    - Silence
+    - Suggestion
+    - Zone of Truth
+    - Bestow Curse
+    - Clairvoyance
+    - Dispel Magic
+    - Fear
+    - Feign Death
+    - Glyph of Warding
+    - Hypnotic Pattern
+    - Leomund’s Tiny Hut
+    - Major Image
+    - Nondetection
+    - Plant Growth
+    - Sending
+    - Speak with Dead
+    - Speak with Plants
+    - Stinking Cloud
+    - Tongues
+    - Compulsion
+    - Confusion
+    - Dimension Door
+    - Freedom of Movement
+    - Greater Invisibility
+    - Hallucinatory Terrain
+    - Locate Creature
+    - Polymorph
+    - Animate Objects
+    - Awaken
+    - Dominate Person
+    - Dream
+    - Geas
+    - Greater Restoration
+    - Hold Monster
+    - Legend Lore
+    - Mass Cure Wounds
+    - Mislead
+    - Modify Memory
+    - Planar Binding
+    - Raise Dead
+    - Scrying
+    - Seeming
+    - Teleportation Circle
+    - Eyebite
+    - Find the Path
+    - Guards and Wards
+    - Mass Suggestion
+    - Otto’s Irresistible Dance
+    - Programmed Illusion
+    - True Seeing
+    - Etherealness
+    - Forcecage
+    - Mirage Arcane
+    - Mordenkainen’s
+    - Magnificent Mansion
+    - Mordenkainen’s Sword
+    - Project Image
+    - Regenerate
+    - Resurrection
+    - Symbol
+    - Teleport
+    - Dominate Monster
+    - Feeblemind
+    - Glibness
+    - Mind Blank
+    - Power Word Stun
+    - Foresight
+    - Power Word Heal
+    - Power Word Kill
+    - True Polymorph
+
+cleric:
+  main:
+    - Guidance
+    - Light
+    - Mending
+    - Resistance
+    - Sacred Flame
+    - Spare the Dying
+    - Thaumaturgy
+    - Bane
+    - Bless
+    - Command
+    - Create or Destroy Water
+    - Cure Wounds
+    - Detect Evil and Good
+    - Detect Magic
+    - Detect Poison and Disease
+    - Guiding Bolt
+    - Healing Word
+    - Inflict Wounds
+    - Protection from
+    - Evil and Good
+    - Purify Food and Drink
+    - Sanctuary
+    - Shield of Faith
+    - Aid
+    - Augury
+    - Blindness/Deafness
+    - Calm Emotions
+    - Continual Flame
+    - Enhance Ability
+    - Find Traps
+    - Gentle Repose
+    - Hold Person
+    - Lesser Restoration
+    - Locate Object
+    - Prayer of Healing
+    - Protection from Poison
+    - Silence
+    - Spiritual Weapon
+    - Warding Bond
+    - Zone of Truth
+    - Animate Dead
+    - Beacon of Hope
+    - Bestow Curse
+    - Clairvoyance
+    - Create Food and Water
+    - Daylight
+    - Dispel Magic
+    - Feign Death
+    - Glyph of Warding
+    - Magic Circle
+    - Mass Healing Word
+    - Meld into Stone
+    - Protection from Energy
+    - Remove Curse
+    - Revivify
+    - Sending
+    - Speak with DeadSpirit Guardians
+    - Tongues
+    - Water Walk
+    - Banishment
+    - Control Water
+    - Death Ward
+    - Divination
+    - Freedom of Movement
+    - Guardian of Faith
+    - Locate Creature
+    - Stone Shape
+    - Commune
+    - Contagion
+    - Dispel Evil and Good
+    - Flame Strike
+    - Geas
+    - Greater Restoration
+    - Hallow
+    - Insect Plague
+    - Legend Lore
+    - Mass Cure Wounds
+    - Planar Binding
+    - Raise Dead
+    - Scrying
+    - Blade Barrier
+    - Create Undead
+    - Find the Path
+    - Forbiddance
+    - Harm
+    - Heal
+    - Heroes’ Feast
+    - Planar Ally
+    - True Seeing
+    - Word of Recall
+    - Conjure Celestial
+    - Divine Word
+    - Etherealness
+    - Fire Storm
+    - Plane Shift
+    - Regenerate
+    - Resurrection
+    - Symbol
+    - Antimagic Field
+    - Control Weather
+    - Earthquake
+    - Holy Aura
+    - Astral Projection
+    - Gate
+    - Mass Heal
+    - True Resurrection
+  domains:
+    knowledge:
+      - command
+      - identify
+      - augury
+      - suggestion
+      - nondetection
+      - speak with dead
+      - arcane eye
+      - confusion
+      - legend lore
+      - scrying
+    life:
+      - bless
+      - cure wounds
+      - lesser restoration
+      - spiritual weapon
+      - beacon of hope
+      - revivify
+      - death ward
+      - guardian of faith
+      - mass cure wounds
+      - raise dead
+    light:
+      - burning hands
+      - faerie fire
+      - flaming sphere
+      - scorching ray
+      - daylight
+      - fireball
+      - guardian of faith
+      - wall of fire
+      - flame strike
+      - scrying
+    nature:
+      - animal friendship
+      - speak with animals
+      - barkskin
+      - spike growth
+      - plant growth
+      - wind wall
+      - dominate beast
+      - grasping vine
+      - insect plague
+      - tree stride
+    tempest:
+      - fog cloud
+      - thunderwave
+      - gust of wind
+      - shatter
+      - call lightning
+      - sleet storm
+      - control water
+      - ice storm
+      - destructive wave
+      - insect plague
+    trickery:
+      - charm person
+      - disguise self
+      - mirror image
+      - pass without trace
+      - blink
+      - dispel magic
+      - dimension door
+      - polymorph
+      - dominate person
+      - modify memory
+    war:
+      - divine favor
+      - shield of faith
+      - magic weapon
+      - spiritual weapon
+      - crusader’s mantle
+      - spirit guardians
+      - freedom of movement
+      - stoneskin
+      - flame strike
+      - hold monster
+
+druid:
+  main:
+    - Druidcraft
+    - Guidance
+    - Mending
+    - Poison Spray
+    - Produce Flame
+    - Resistance
+    - Shillelagh
+    - Thorn Whip
+    - Animal Friendship
+    - Charm Person
+    - Create or Destroy Water
+    - Cure Wounds
+    - Detect Magic
+    - Detect Poison and Disease
+    - Entangle
+    - Faerie Fire
+    - Fog Cloud
+    - Goodberry
+    - Healing Word
+    - Jump
+    - Longstrider
+    - Purify Food and Drink
+    - Speak with Animals
+    - Thunderwave
+    - Animal Messenger
+    - Barkskin
+    - Beast Sense
+    - Darkvision
+    - Enhance Ability
+    - Find Traps
+    - Flame Blade
+    - Flaming Sphere
+    - Gust of Wind
+    - Heat Metal
+    - Hold Person
+    - Lesser Restoration
+    - Locate Animals or Plants
+    - Locate Object
+    - Moonbeam
+    - Pass without Trace
+    - Protection from Poison
+    - Spike Growth
+    - Call Lightning
+    - Conjure Animals
+    - Daylight
+    - Dispel Magic
+    - Feign Death
+    - Meld into Stone
+    - Plant Growth
+    - Protection from Energy
+    - Sleet Storm
+    - Speak with Plants
+    - Water Breathing
+    - Water Walk
+    - Wind Wall
+    - Blight
+    - Confusion
+    - Conjure Minor Elementals
+    - Conjure Woodland Beings
+    - Control Water
+    - Dominate Beast
+    - Freedom of Movement
+    - Giant Insect
+    - Grasping Vine
+    - Hallucinatory Terrain
+    - Ice Storm
+    - Locate Creature
+    - Polymorph
+    - Stone Shape
+    - Stoneskin
+    - Wall of Fire
+    - Antilife Shell
+    - Awaken
+    - Commune with Nature
+    - Conjure Elemental
+    - Contagion
+    - Geas
+    - Greater Restoration
+    - Insect Plague
+    - Mass Cure Wounds
+    - Planar Binding
+    - Reincarnate
+    - Scrying
+    - Tree Stride
+    - Wall of Stone
+    - Conjure Fey
+    - Find the Path
+    - Heal
+    - Heroes’ Feast
+    - Move Earth
+    - Sunbeam
+    - Transport via Plants
+    - Wall of Thorns
+    - Wind Walk
+    - Fire Storm
+    - Mirage Arcane
+    - Plane Shift
+    - Regenerate
+    - Reverse Gravity
+    - Animal Shapes
+    - Antipathy/Sympathy
+    - Control Weather
+    - Earthquake
+    - Feeblemind
+    - Sunburst
+    - Tsunami
+    - Foresight
+    - Shapechange
+    - Storm of Vengeance
+    - True Resurrection
+  circle:
+    arctic:
+      - hold person
+      - spike growth
+      - sleet storm
+      - slow
+      - freedom of movement
+      - ice storm
+      - commune with nature
+      - cone of cold
+    coast:
+      - mirror image
+      - misty step
+      - water breathing
+      - water walk
+      - control water
+      - freedom of movement
+      - conjure elemental
+      - scrying
+    D e s e r t:
+      - blur
+      - silence
+      - create food and water
+      - protection from energy
+      - blight
+      - hallucinatory terrain
+      - insect plague
+      - wall of stone
+    forest:
+      - barkskin
+      - spider climb
+      - call lightning
+      - plant growth
+      - divination
+      - freedom of movement
+      - commune with nature
+      - tree stride
+    grassland:
+      - invisibility
+      - pass without trace
+      - daylight
+      - haste
+      - divination
+      - freedom of movement
+      - dream
+      - insect plague
+    mountain:
+      - spider climb
+      - spike growth
+      - lightning bolt
+      - meld into stone
+      - stone shape
+      - stoneskin
+      - passwall
+      - wall of stone
+    swamp:
+      - darkness
+      - Melf’s acid arrow
+      - water walk
+      - stinking cloud
+      - freedom of movement
+      - locate creature
+      - insect plague
+      - scrying
+    underdark:
+      - spider climb
+      - web
+      - gaseous form
+      - stinking cloud
+      - greater invisibility
+      - stone shape
+      - cloudkill
+      - insect plague
