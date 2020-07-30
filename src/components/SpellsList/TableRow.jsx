@@ -1,5 +1,4 @@
-import React, { useMemo } from 'react';
-import { useTable } from 'react-table';
+import React from 'react';
 
 export default function TableRow(props) {
   const { row } = props;

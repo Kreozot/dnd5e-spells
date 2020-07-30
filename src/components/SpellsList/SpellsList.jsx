@@ -6,7 +6,6 @@ import data from 'content/spells.yaml';
 import Components from './Components';
 import TextWithHint from './TextWithHint';
 import IconCell from './IconCell';
-import TableRow from './TableRow';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
 import RitualIcon from 'images/icon-ritual.svg';

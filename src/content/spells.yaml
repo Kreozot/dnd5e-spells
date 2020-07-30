@@ -13,7 +13,8 @@
     range, or choose two creatures within range that are
     within 5 feet of each other. A target must succeed on a
     Dexterity saving throw or take 1d6 acid damage.
-  atHigherLevels: >
+
+  levelUpgrades: >
     This spell’s damage increases by 1d6 when you reach
     5th level (2d6), 11th level (3d6), and 17th level (4d6).
 
@@ -1467,6 +1468,7 @@
 
     If you hit an undead target, it also has disadvantage on
     attack rolls against you until the end of your next turn.
+  levelUpgrades: >
     This spell’s damage increases by 1d8 when you reach
     5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
@@ -4538,8 +4540,7 @@
     target. On a hit, the target takes 1d10 fire damage. A
     flammable object hit by this spell ignites if it isn't being
     worn or carried.
-
-
+  levelUpgrades: >
     This spell’s damage increases by 1d10 when you reach
     5th level (2d10), 11th level (3d10), and 17th level (4d10).
 
@@ -8109,16 +8110,16 @@
     you might arrive in its Street of Steel, before its Gate of
     Ashes, or looking at the city from across the Sea of Fire,
     at the DM’s discretion.
-    
-    
+
+
     Alternatively, if you know the sigil sequence of a
     teleportation circle on another plane of existence, this
     spell can take you to that circle. If the teleportation
     circle is too small to hold all the creatures you
     transported, they appear in the closest unoccupied
     spaces next to the circle.
-    
-    
+
+
     You can use this spell to banish an unwilling creature
     to another plane. Choose a creature within your reach
     and make a melee spell attack against it. On a hit, the
@@ -8141,19 +8142,19 @@
     This spell channels vitality into plants within a specific
     area. There are two possible uses for the spell, granting
     either immediate or long-term benefits.
-    
-    
+
+
     If you cast this spell using 1 action, choose a point
     within range. All normal plants in a 100-foot radius
     centered on that point become thick and overgrown. A
     creature moving through the area must spend 4 feet of
     movement for every 1 foot it moves.
-    
-    
+
+
     You can exclude one or more areas of any size within
     the spell’s area from being affected.
-    
-    
+
+
     If you cast this spell over 8 hours, you enrich the
     land. All plants in a half-mile radius centered on a point
     within range become enriched for 1 year. The plants
@@ -8173,8 +8174,9 @@
     within range and project a puff of noxious gas from your
     palm. The creature must succeed on a Constitution
     saving throw or take 1d12 poison damage.
-    
-  atHigherLevels: This spell’s damage increases by 1d12 when you reach
+
+  levelUpgrades: >
+    This spell’s damage increases by 1d12 when you reach
     5th level (2d12), 11th level (3d12), and 17th level (4d12).
 
 - title: Polymorph
@@ -8194,8 +8196,8 @@
     must make a Wisdom saving throw to avoid the
     effect. A shapechanger automatically succeeds on this
     saving throw.
-    
-    
+
+
     The transformation lasts for the duration, or until
     the target drops to 0 hit points or dies. The new form
     can be any beast whose challenge rating is equal to or
@@ -8204,8 +8206,8 @@
     including mental ability scores, are replaced by the
     statistics of the chosen beast. It retains its alignment
     and personality.
-    
-    
+
+
     The target assumes the hit points of its new form.
     When it reverts to its normal form, the creature
     returns to the number of hit points it had before it
@@ -8214,8 +8216,8 @@
     normal form. As long as the excess damage doesn’t
     reduce the creature’s normal form to 0 hit points, it isn’t
     knocked unconscious.
-    
-    
+
+
     The creature is limited in the actions it can perform by
     the nature of its new form, and it can’t speak, cast spells,
     or take any other action that requires hands or speech.
@@ -8267,8 +8269,8 @@
     mind of one creature you can see within range, leaving
     it dumbfounded. If the target has 150 hit points or fewer,
     it is stunned. Otherwise, the spell has no effect.
-    
-    
+
+
     The stunned target must make a Constitution saving
     throw at the end of each of its turns. On a successful
     save, this stunning effect ends.
@@ -8325,8 +8327,8 @@
     * You create a nonmagical trinket or an illusory im age
     that can fit in your hand and that lasts until the end of
     your next turn.
-    
-    
+
+
     If you cast this spell multiple times, you can have up to
     three of its non-instantaneous effects active at a time,
     and you can dismiss such an effect as an action.
@@ -8346,23 +8348,23 @@
     and purpose. Each creature in a 60-foot cone must
     make a Dexterity saving throw. For each target, roll a d8
     to determine which color ray affects it.
-    
-    
+
+
     1. Red. The target takes 10d6 fire damage on a failed
     save, or half as much damage on a successful one.
-    
+
     2. Orange. The target takes 10d6 acid damage on a
     failed save, or half as much damage on a successful one.
-    
+
     3. Yellow. The target takes 10d6 lightning damage on a
     failed save, or half as much damage on a successful one.
-    
+
     4. Green. The target takes 10d6 poison damage on a
     failed save, or half as much damage on a successful one.
-    
+
     5. Blue. The target takes 10d6 cold damage on a failed
     save, or half as much damage on a successful one.
-    
+
     6. Indigo. On a failed save, the target is restrained.
     It must then make a Constitution saving throw at the
     end of each of its turns. If it successfully saves three
@@ -8371,7 +8373,7 @@
     petrified condition. The successes and failures don’t
     need to be consecutive; keep track of both until the
     target collects three of a kind.
-    
+
     7. Violet. On a failed save, the target is blinded. It
     must then make a Wisdom saving throw at the start of
     your next turn. A successful save ends the blindness. If
@@ -8380,7 +8382,7 @@
     blinded. (Typically, a creature that is on a plane that isn’t
     its home plane is banished home, while other creatures
     are usually cast into the Astral or Ethereal planes.)
-    
+
     8. Special. The target is struck by two rays. Roll twice
     more, rerolling any 8.
 
@@ -8403,8 +8405,8 @@
     the duration. If you position the wall so that it passes
     through a space occupied by a creature, the spell fails,
     and your action and the spell slot are wasted.
-    
-    
+
+
     The wall sheds bright light out to a range of 100
     feet and dim light for an additional 100 feet. You and
     creatures you designate at the time you cast the spell
@@ -8413,8 +8415,8 @@
     within 20 feet of it or starts its turn there, the creature
     must succeed on a Constitution saving throw or become
     blinded for 1 minute.
-    
-    
+
+
     The wall consists of seven layers, each with a different
     color. When a creature attempts to reach into or pass
     through the wall, it does so one layer at a time through
@@ -8422,43 +8424,43 @@
     each layer, the creature must make a Dexterity saving
     throw or be affected by that layer’s properties as
     described below.
-    
-    
+
+
     The wall can be destroyed, also one layer at a time, in
     order from red to violet, by means specific to each layer.
     Once a layer is destroyed, it remains so for the duration
     of the spell. A rod of cancellation destroys a prismatic
     wall, but an antimagic field has no effect on it.
-    
-    
+
+
     1. Red. The creature takes 10d6 fire damage on a
     failed save, or half as much damage on a successful one.
     While this layer is in place, nonmagical ranged attacks
     can’t pass through the wall. The layer can be destroyed
     by dealing at least 25 cold damage to it.
-    
+
     2. Orange. The creature takes 10d6 acid damage on
     a failed save, or half as much damage on a successful
     one. While this layer is in place, magical ranged attacks
     can’t pass through the wall. The layer is destroyed by
     a strong wind.
-    
+
     3. Yellow. The creature takes 10d6 lightning damage
     on a failed save, or half as much damage on a successful
     one. This layer can be destroyed by dealing at least 60
     force damage to it.
-    
+
     4. Green. The creature takes 10d6 poison damage on
     a failed save, or half as much damage on a successful
     one. A passwall spell, or another spell of equal or
     greater level that can open a portal on a solid surface,
     destroys this layer.
-    
+
     5. Blue. The creature takes 10d6 cold damage on a
     failed save, or half as much damage on a successful one.
     This layer can be destroyed by dealing at least 25 fire
     damage to it.
-    
+
     6. Indigo. On a failed save, the creature is restrained.
     It must then make a Constitution saving throw at the
     end of each of its turns. If it successfully saves three
@@ -8472,7 +8474,7 @@
     through the wall. The layer is destroyed by bright light
     shed by a daylight spell or a similar spell of equal or
     higher level.
-    
+
     7. Violet. On a failed save, the creature is blinded. It
     must then make a Wisdom saving throw at the start of
     your next turn. A successful save ends the blindness. If
@@ -8501,15 +8503,16 @@
     10-foot radius and dim light for an additional 10 feet.
     The spell ends if you dismiss it as an action or if you
     cast it again.
-    
-    
+
+
     You can also attack with the flame, although doing so
     ends the spell. When you cast this spell, or as an action
     on a later turn, you can hurl the flame at a creature
     within 30 feet of you. Make a ranged spell attack. On a
     hit, the target takes 1d8 fire damage.
-    
-  atHigherLevels: This spell’s damage increases by 1d8 when you reach
+
+  levelUpgrades: >
+    This spell’s damage increases by 1d8 when you reach
     5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
 - title: Programmed Illusion
@@ -8530,15 +8533,15 @@
     30-foot cube, and you decide when you cast the spell
     how the illusion behaves and what sounds it makes. This
     scripted perform ance can last up to 5 minutes.
-    
-    
+
+
     When the condition you specify occurs, the illusion
     springs into existence and performs in the manner you
     described. Once the illusion finishes performing, it
     disappears and remains dormant for 10 minutes. After
     this time, the illusion can be activated again.
-    
-    
+
+
     The triggering condition can be as general or as
     detailed as you like, though it must be based on visual or
     audible conditions that occur within 30 feet of the area.
@@ -8546,8 +8549,8 @@
     to appear and warn off others who attempt to open a
     trapped door, or you could set the illusion to trigger only
     when a creature says the correct word or phrase.
-    
-    
+
+
     Physical interaction with the image reveals it to be an
     illusion, because things can pass through it. A creature
     that uses its action to examine the image can determine
@@ -8575,22 +8578,22 @@
     intervening obstacles. The illusion looks and sounds
     like you but is intangible. If the illusion takes any
     damage, it disappears, and the spell ends.
-    
-    
+
+
     You can use your action to move this illusion up to
     twice your speed, and make it gesture, speak, and
     behave in whatever way you choose. It mimics your
     mannerism s perfectly.
-    
-    
+
+
     You can see through its eyes and hear through its
     ears as if you were in its space. On your turn as a bonus
     action, you can switch from using its senses to using
     your own, or back again. While you are using its senses,
     you are blinded and deafened in regard to your own
     surroundings.
-    
-    
+
+
     Physical interaction with the image reveals it to be an
     illusion, because things can pass through it. A creature
     that uses its action to examine the image can determine
@@ -8631,8 +8634,8 @@
     touch is protected against certain types of
     creatures: aberrations, celestials, elementals, fey,
     fiends, and undead.
-    
-    
+
+
     The protection grants several benefits. Creatures of
     those types have disadvantage on attack rolls against
     the target. The target also can’t be charmed, frightened,
@@ -8655,8 +8658,8 @@
     poison. If more than one poison afflicts the target, you
     neutralize one poison that you know is present, or you
     neutralize one at random.
-    
-    
+
+
     For the duration, the target has advantage on saving
     throws against being poisoned, and it has resistance to
     poison damage.
@@ -8698,14 +8701,14 @@
     removed prior to casting the spell, they take effect when
     the creature returns to life. The spell can’t return an
     undead creature to life.
-    
-    
+
+
     This spell closes all mortal wounds, but it doesn’t
     restore missing body parts. If the creature is lacking
     body parts or organs integral for its survival—its head,
     for instance—the spell automatically fails.
-    
-    
+
+
     Coming back from the dead is an ordeal. The target
     takes a -4 penalty to all attack rolls, saving throws, and
     ability checks. Every time the target finishes a long rest,
@@ -8728,8 +8731,8 @@
     linking each creature to all the others for the duration.
     Creatures with Intelligence scores of 2 or less aren’t
     affected by this spell.
-    
-    
+
+
     Until the spell ends, the targets can communicate
     telepathically through the bond whether or not they have
     a common language. The communication is possible
@@ -8752,8 +8755,8 @@
     spell attack against the target. On a hit, the target deals
     only half damage with weapon attacks that use Strength
     until the spell ends.
-    
-    
+
+
     At the end of each of the target’s turns, it can make
     a Constitution saving throw against the spell. On a
     success, the spell ends.
@@ -8773,8 +8776,8 @@
     against the target. On a hit, it takes 1d8 cold damage,
     and its speed is reduced by 10 feet until the start of
     your next turn.
-    
-  atHigherLevels: The spell’s damage increases by 1d8 when you reach
+  levelUpgrades: >
+    The spell’s damage increases by 1d8 when you reach
     5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
 - title: Ray of Sickness
@@ -8791,6 +8794,8 @@
     a creature within range. Make a ranged spell attack
     against the target. On a hit, the target takes 2d8 poison
     damage and must make a Constitution saving throw.
+
+
     On a failed save, it is also poisoned until the end of
     your next turn.
   atHigherLevels: >
@@ -8813,8 +8818,12 @@
     ability. The target regains 4d8 + 15 hit points. For the
     duration of the spell, the target regains 1 hit point at the
     start of each of its turns (10 hit points each minute).
+
+
     The target’s severed body members (fingers, legs,
     tails, and so on), if any, are restored after 2 minutes.
+
+
     If you have the severed part and hold it to the stump,
     the spell instantaneously causes the limb to knit
     to the stump.
@@ -8928,25 +8937,25 @@
     more than a century, that didn’t die of old age, and that
     isn’t undead. If its soul is free and willing, the target
     returns to life with all its hit points.
-    
-    
+
+
     This spell neutralizes any poisons and cures normal
     diseases afflicting the creature when it died. It doesn’t,
     however, remove magical diseases, curses, and the like;
     if such effects aren't removed prior to casting the spell,
     they afflict the target on its return to life.
-    
-    
+
+
     This spell closes all mortal wounds and restores any
     missing body parts.
-    
-    
+
+
     Coming back from the dead is an ordeal. The target
     takes a - 4 penalty to all attack rolls, saving throws, and
     ability checks. Every time the target finishes a long rest,
     the penalty is reduced by 1 until it disappears.
-    
-    
+
+
     Casting this spell to restore life to a creature that has
     been dead for one year or longer taxes you greatly. Until
     you finish a long rest, you can’t cast spells again, and
@@ -8972,16 +8981,16 @@
     the area when you cast this spell. A creature can make a
     Dexterity saving throw to grab onto a fixed object it can
     reach, thus avoiding the fall.
-    
-    
+
+
     If some solid object (such as a ceiling) is encountered
     in this fall, falling objects and creatures strike it just as
     they would during a normal downward fall. If an object
     or creature reaches the top of the area without striking
     anything, it remains there, oscillating slightly, for
     the duration.
-    
-    
+
+
     At the end of the duration, affected objects and
     creatures fall back down.
 
@@ -9022,14 +9031,14 @@
     many as eight Medium or smaller creatures. The rope
     can be pulled into the space, making the rope disappear
     from view outside the space.
-    
-    
+
+
     Attacks and spells can’t cross through the entrance
     into or out of the extradimensional space, but those
     inside can see out of it as if through a 3-foot-by-5-foot
     window centered on the rope.
-    
-    
+
+
     Anything inside the extradimensional space drops out
     when the spell ends.
 
@@ -9046,9 +9055,9 @@
     Flame-like radiance descends on a creature that you
     can see within range. The target must succeed on a
     Dexterity saving throw or take 1d8 radiant damage. The
-    target gains no benefit from cover for this saving throw.
-    
-  atHigherLevels: The spell’s damage increases by 1d8 when you reach
+    target gains no benefit fro
+  levelUpgrades: >
+    The spell’s damage increases by 1d8 when you reach
     5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
 - title: Sanctuary
@@ -9069,8 +9078,8 @@
     creature must choose a new target or lose the attack
     or spell. This spell doesn’t protect the warded creature
     from area effects, such as the explosion of a fireball.
-    
-    
+
+
     If the warded creature makes an attack or casts a spell
     that affects an enemy creature, this spell ends.
 
@@ -9112,20 +9121,30 @@
     connection you have to it. If a target knows you're
     casting this spell, it can fail the saving throw voluntarily
     if it wants to be observed.
-    
-    todo
-    Knowledge Save Modifier
-    Secondhand (you have heard of the target) +5
-    Firsthand (you have met the target) +0
-    Familiar (you know the target well) -5
-    
-    
-    Connection Save Modifier
-    Likeness or picture -2
-    Possession or garment -4
-    Body part, lock of hair, bit of nail, or the like -10
-    
-    
+
+
+    | Knowledge | Save Modifier |
+
+    |---|---|
+
+    | Secondhand (you have heard of the target) | +5 |
+
+    | Firsthand (you have met the target) | +0 |
+
+    | Familiar (you know the target well) | -5 |
+
+
+    | Connection | Save Modifier |
+
+    |---|---|
+
+    | Likeness or picture | -2 |
+
+    | Possession or garment | -4 |
+
+    | Body part, lock of hair, bit of nail, or the like | -10 |
+
+
     On a successful save, the target isn’t affected, and you
     can’t use this spell against it again for 24 hours.
     On a failed save, the spell creates an invisible sensor
@@ -9134,8 +9153,8 @@
     the target, remaining within 10 feet of it for the duration.
     A creature that can see invisible objects sees the sensor
     as a luminous orb about the size of your fist.
-    
-    
+
+
     Instead of targeting a creature, you can choose a
     location you have seen before as the target of this spell.
     When you do, the sensor appears at that location and
@@ -9158,6 +9177,8 @@
     ignite in flames. At the start of each of its turns until
     the spell ends, the target must make a Constitution
     saving throw. On a failed save, it takes 1d6 fire damage.
+
+
     On a successful save, the spell ends. If the target or a
     creature within 5 feet of it uses an action to put out the
     flames, or if some other effect douses the flam es (such
@@ -9199,6 +9220,8 @@
     give each target you choose a new, illusory appearance.
     An unwilling target can make a Charisma saving throw,
     and if it succeeds, it is unaffected by this spell.
+
+
     The spell disguises physical appearance as well as
     clothing, armor, weapons, and equipment. You can make
     each creature seem 1 foot shorter or taller and appear
@@ -9207,6 +9230,8 @@
     basic arrangement of limbs. Otherwise, the extent of
     the illusion is up to you. The spell lasts for the duration,
     unless you use your action to dismiss it sooner.
+
+
     The changes wrought by this spell fail to hold up to
     physical inspection. For example, if you use this spell
     to add a hat to a creature’s outfit, objects pass through
@@ -9215,8 +9240,8 @@
     this spell to appear thinner than you are, the hand of
     someone who reaches out to touch you would bump into
     you while it was seemingly still in midair.
-    
-    
+
+
     A creature can use its action to inspect a target and
     make an Intelligence (Investigation) check against your
     spell save DC. If it succeeds, it becomes aware that the
@@ -9240,8 +9265,8 @@
     like manner immediately. The spell enables creatures
     with Intelligence scores of at least 1 to understand the
     meaning of your message.
-    
-    
+
+
     You can send the message across any distance and
     even to other planes of existence, but if the target is on a
     different plane than you, there is a 5 percent chance that
@@ -9264,13 +9289,13 @@
     it becomes invisible and can’t be targeted by divination
     spells or perceived through scrying sensors created by
     divination spells.
-    
-    
+
+
     If the target is a creature, it falls into a state of
     suspended animation. Time ceases to flow for it, and it
     doesn’t grow older.
-    
-    
+
+
     You can set a condition for the spell to end early.
     The condition can be anything you choose, but it
     must occur or be visible within 1 mile of the target.
@@ -9314,16 +9339,16 @@
     normal form. As long as the excess damage doesn’t
     reduce your normal form to 0 hit points, you aren’t
     knocked unconscious.
-    
-    
+
+
     You retain the benefit of any features from your class,
     race, or other source and can use them, provided that
     your new form is physically capable of doing so. You
     can’t use any special senses you have (for example,
     darkvision) unless your new form also has that sense.
     You can only speak if the creature can normally speak.
-    
-    
+
+
     When you transform, you choose whether your
     equipment falls to the ground, merges into the new
     form, or is worn by it. Worn equipment functions as
@@ -9334,8 +9359,8 @@
     equipment that the new form can’t wear must either fall
     to the ground or merge into your new form. Equipment
     that merges has no effect in that state.
-    
-    
+
+
     During this spell’s duration, you can use your action to
     assume a different form following the same restrictions
     and rules for the original form, with one exception: if
@@ -9361,8 +9386,8 @@
     damage on a successful one. A creature made of
     inorganic material such as stone, crystal, or metal has
     disadvantage on this saving throw.
-    
-    
+
+
     A nonmagical object that isn’t being worn or carried
     also takes the damage if it’s in the spell's area.
   atHigherLevels: >
@@ -9439,8 +9464,8 @@
     if the target is wearing arm or made of metal. On a hit,
     the target takes 1d8 lightning damage, and it can’t take
     reactions until the start of its next turn.
-    
-    todo
+
+  levelUpgrades: >
     The spell’s damage increases by 1d8 when you reach
     5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
@@ -9487,8 +9512,8 @@
     appear natural for the image. For example, if you create
     an im age of a creature and move it, you can alter the
     im age so that it appears to be walking.
-    
-    
+
+
     Physical interaction with the im age reveals it to be an
     illusion, because things can pass through it. A creature
     that uses its action to examine the im age can determine
@@ -9517,8 +9542,8 @@
     the creature’s hit point maximum and is form ed without
     any equipment. Otherwise, the illusion uses all the
     statistics of the creature it duplicates.
-    
-    
+
+
     The simulacrum is friendly to you and creatures you
     designate. It obeys your spoken commands, moving
     and acting in accordance with your wishes and acting
@@ -9526,15 +9551,15 @@
     ability to learn or become more powerful, so it never
     increases its level or other abilities, nor can it regain
     expended spell slots.
-    
-    
+
+
     If the sim ulacrum is damaged, you can repair it in an
     alchemical laboratory, using rare herbs and minerals
     worth 100 gp per hit point it regains. The simulacrum
     lasts until it drops to 0 hit points, at which point it
     reverts to snow and melts instantly.
-    
-    
+
+
     If you cast this spell again, any currently
     active duplicates you created with this spell are
     instantly destroyed.
@@ -9556,8 +9581,8 @@
     a point you choose within range are affected in
     ascending order of their current hit points (ignoring
     unconscious creatures).
-    
-    
+
+
     Starting with the creature that has the lowest current
     hit points, each creature affected by this spell falls
     unconscious until the spell ends, the sleeper takes
@@ -9567,8 +9592,8 @@
     lowest hit points. A creature’s hit points must be equal
     to or less than the remaining total for that creature
     to be affected.
-    
-    
+
+
     Undead and creatures immune to being charmed
     aren’t affected by this spell.
   atHigherLevels: >
@@ -9597,8 +9622,8 @@
     spell’s area for the first time on a turn or starts its turn
     there, it must make a Dexterity saving throw. On a failed
     save, it falls prone.
-    
-    
+
+
     If a creature is concentrating in the spell’s area, the
     creature must make a successful Constitution saving
     throw against your spell save DC or lose concentration.
@@ -9619,23 +9644,23 @@
     choice in a 40-foot cube within range. Each target must
     succeed on a Wisdom saving throw or be affected by
     this spell for the duration.
-    
-    
+
+
     An affected target’s speed is halved, it takes a -2
     penalty to AC and Dexterity saving throws, and it can’t
     use reactions. On its turn, it can use either an action or
     a bonus action, not both. Regardless of the creature’s
     abilities or magic items, it can’t make more than one
     melee or ranged attack during its turn.
-    
-    
+
+
     If the creature attempts to cast a spell with a casting
     time of 1 action, roll a d20. On an 11 or higher, the spell
     doesn’t take effect until the creature’s next turn, and the
     creature must use its action on that turn to complete the
     spell. If it can’t, the spell is wasted.
-    
-    
+
+
     A creature affected by this spell makes another
     Wisdom saving throw at the end of its turn. On a
     successful save, the effect ends for it.
@@ -9719,27 +9744,27 @@
     spell’s area within the past day, gaining information
     about creatures that have passed, weather, and other
     circumstances.
-    
-    
+
+
     You can also turn difficult terrain caused by plant
     growth (such as thickets and undergrowth) into ordinary
     terrain that lasts for the duration. Or you can turn
     ordinary terrain where plants are present into difficult
     terrain that lasts for the duration, causing vines and
     branches to hinder pursuers, for example.
-    
-    
+
+
     Plants might be able to perform other tasks on your
     behalf, at the DM’s discretion. The spell doesn’t enable
     plants to uproot themselves and move about, but they
     can freely move branches, tendrils, and stalks.
-    
-    
+
+
     If a plant creature is in the area, you can communicate
     with it as if you shared a common language, but you
     gain no magical ability to influence it.
-    
-    
+
+
     This spell can cause the plants created by the entangle
     spell to release a restrained creature.
 
@@ -9778,8 +9803,8 @@
     The area becomes difficult terrain for the duration.
     When a creature moves into or within the area, it takes
     2d4 piercing damage for every 5 feet it travels.
-    
-    
+
+
     The transformation of the ground is camouflaged to
     look natural. Any creature that can’t see the area at the
     time the spell is cast must make a Wisdom (Perception)
@@ -9832,13 +9857,13 @@
     attack against a creature within 5 feet of the weapon. On
     a hit, the target takes force damage equal to 1d8 + your
     spellcasting ability modifier.
-    
-    
+
+
     As a bonus action on your turn, you can move the
     weapon up to 20 feet and repeat the attack against a
     creature within 5 feet of it.
-    
-    
+
+
     The weapon can take whatever form you choose.
     Clerics of deities who are associated with a particular
     weapon (as St. Cuthbert is known for his mace
@@ -9883,8 +9908,8 @@
     gas centered on a point within range. The cloud spreads
     around corners, and its area is heavily obscured. The
     cloud lingers in the air for the duration.
-    
-    
+
+
     Each creature that is completely within the cloud at
     the start of its turn must make a Constitution saving
     throw against poison. On a failed save, the creature
@@ -9952,17 +9977,17 @@
     Constitution saving throw. On a failed save, a creature
     takes 2d6 thunder damage and becomes deafened
     for 5 minutes.
-    
-    
+
+
     Each round you maintain concentration on this spell,
     the storm produces additional effects on your turn.
-    
-    
+
+
     **Round 2.** Acidic rain falls from the cloud.
     Each creature and object under the cloud takes
     1d6 acid damage.
-    
-    
+
+
     **Round 3.** You call six bolts of lightning from the
     cloud to strike six creatures or objects of your choice
     beneath the cloud. A given creature or object can’t be
@@ -9970,13 +9995,13 @@
     make a Dexterity saving throw. The creature takes
     10d6 lightning damage on a failed save, or half as much
     damage on a successful one.
-    
-    
+
+
     **Round 4.** Hailstones rain down from the
     cloud. Each creature under the cloud takes 2d6
     bludgeoning damage.
-    
-    
+
+
     **Round 5-10.** Gusts and freezing rain assail the
     area under the cloud. The area becomes difficult
     terrain and is heavily obscured. Each creature there
@@ -9995,7 +10020,7 @@
   range: 30 feet
   components:
     V: true
-    M: 
+    M:
       - a snake’s tongue
       - eithera bit of honeycomb or a drop of sweet oil
   concentration: true
@@ -10010,8 +10035,8 @@
     Asking the creature to stab itself, throw itself onto
     a spear, immolate itself, or do some other obviously
     harmful act ends the spell.
-    
-    
+
+
     The target must make a Wisdom saving throw. On a
     failed save, it pursues the course of action you described
     to the best of its ability. The suggested course of action
@@ -10023,8 +10048,8 @@
     might suggest that a knight give her warhorse to the
     first beggar she meets. If the condition isn’t met before
     the spell expires, the activity isn’t performed.
-    
-    
+
+
     If you or any of your companions damage the target,
     the spell ends.
 
@@ -10048,12 +10073,12 @@
     it takes half as much damage and isn’t blinded by this
     spell. Undead and oozes have disadvantage on this
     saving throw.
-    
-    
+
+
     You can create a new line of radiance as your action
     on any turn until the spell ends.
-    
-    
+
+
     For the duration, a mote of brilliant radiance shines in
     your hand. It sheds bright light in a 30-foot radius and
     dim light for an additional 30 feet. This light is sunlight.
@@ -10076,13 +10101,13 @@
     blinded for 1 minute. On a successful save, it takes half
     as much damage and isn’t blinded by this spell. Undead
     and oozes have disadvantage on this saving throw.
-    
-    
+
+
     A creature blinded by this spell makes another
     Constitution saving throw at the end of each of its turns.
     On a successful save, it is no longer blinded.
-    
-    
+
+
     This spell dispels any darkness in its area that was
     created by a spell.
 
@@ -10101,8 +10126,8 @@
     You transmute your quiver so it produces an endless
     supply of nonmagical ammunition, which seem s to leap
     into your hand when you reach for it.
-    
-    
+
+
     On each of your turns until the spell ends, you can use
     a bonus action to make two attacks with a weapon that
     uses ammunition from the quiver. Each time you make
@@ -10133,13 +10158,13 @@
     the object is moved more than 10 feet from where you
     cast this spell, the glyph is broken, and the spell ends
     without being triggered.
-    
-    
+
+
     The glyph is nearly invisible, requiring an Intelligence
     (Investigation) check against your spell save
     DC to find it.
-    
-    
+
+
     You decide what triggers the glyph when you cast the
     spell. For glyphs inscribed on a surface, the most typical
     triggers include touching or stepping on the glyph,
@@ -10149,8 +10174,8 @@
     the most common triggers are opening the object,
     approaching within a certain distance of it, or seeing or
     reading the glyph.
-    
-    
+
+
     You can further refine the trigger so the spell is
     activated only under certain circumstances or according
     to a creature’s physical characteristics (such as height
@@ -10158,8 +10183,8 @@
     be set to affect hags or shapechangers). You can also
     specify creatures that don’t trigger the glyph, such as
     those who say a certain password.
-    
-    
+
+
     When you inscribe the glyph, choose one of the
     options below for its effect. Once triggered, the glyph
     glows, filling a 60-foot-radius sphere with dim light
@@ -10167,27 +10192,27 @@
     creature in the sphere when the glyph activates is
     targeted by its effect, as is a creature that enters the
     sphere for the first time on a turn or ends its turn there.
-    
-    
+
+
     **Death.** Each target must make a Constitution saving
     throw, taking 10d 10 necrotic damage on a failed save, or
     half as much damage on a successful save.
-    
-    
+
+
     **Discord.** Each target must make a Constitution saving
     throw. On a failed save, a target bickers and argues
     with other creatures for 1 minute. During this time,
     it is incapable of meaningful communication and has
     disadvantage on attack rolls and ability checks.
-    
-    
+
+
     **Fear.** Each target must make a Wisdom saving throw
     and becomes frightened for 1 minute on a failed save.
     While frightened, the target drops whatever it is holding
     and must move at least 30 feet away from the glyph on
     each of its turns, if able.
-    
-    
+
+
     **Hopelessness.** Each target must make a Charisma
     saving throw. On a failed save, the target is
     overwhelm ed with despair for 1 minute. During this
@@ -10199,19 +10224,19 @@
     understand what other creatures say, can’t read, and
     speaks only in gibberish. The DM controls its movement,
     which is erratic.
-    
-    
+
+
     **Pain.** Each target must make a Constitution saving
     throw and becomes incapacitated with excruciating pain
     for 1 minute on a failed save.
-    
-    
+
+
     **Sleep.** Each target must make a Wisdom saving throw
     and falls unconscious for 10 minutes on a failed save. A
     creature awakens if it takes damage or if someone uses
     an action to shake or slap it awake.
-    
-    
+
+
     **Stunning.** Each target must make a Wisdom saving
     throw and becomes stunned for 1 minute on a failed save.
 
@@ -10234,8 +10259,8 @@
     becoming incapacitated and unable to stand up for the
     duration. A creature with an Intelligence score of 4 or
     less isn’t affected.
-    
-    
+
+
     At the end of each of its turns, and each time it takes
     damage, the target can make another Wisdom saving
     throw. The target has advantage on the saving throw if
@@ -10260,8 +10285,8 @@
     can affect the same target round after round, or choose
     a new one at any time. If you switch targets, the prior
     target is no longer affected by the spell.
-    
-    
+
+
     Creature. You can try to move a Huge or smaller
     creature. Make an ability check with your spellcasting
     ability contested by the creature’s Strength check. If
@@ -10270,27 +10295,27 @@
     range of this spell. Until the end of your next turn, the
     creature is restrained in your telekinetic grip. A creature
     lifted upward is suspended in mid-air.
-    
-    
+
+
     On subsequent rounds, you can use your action to
     attempt to maintain your telekinetic grip on the creature
     by repeating the contest.
-    
-    
+
+
     **Object.** You can try to move an object that weighs
     up to 1,000 pounds. If the object isn’t being worn or
     carried, you automatically move it up to 30 feet in any
     direction, but not beyond the range of this spell.
-    
-    
+
+
     If the object is worn or carried by a creature, you must
     make an ability check with your spellcasting ability
     contested by that creature’s Strength check. If you
     succeed, you pull the object away from that creature and
     can move it up to 30 feet in any direction but not beyond
     the range of this spell.
-    
-    
+
+
     You can exert fine control on objects with your
     telekinetic grip, such as manipulating a simple tool,
     opening a door or a container, stowing or retrieving
@@ -10313,8 +10338,8 @@
     creature can be anywhere on the same plane of
     existence as you. The spell ends if you or the target are
     no longer on the same plane.
-    
-    
+
+
     Until the spell ends, you and the target can
     instantaneously share words, im ages, sounds, and
     other sensory messages with one another through the
@@ -10344,33 +10369,36 @@
     you. Your familiarity with the destination determines
     whether you arrive there successfully. The DM rolls
     d 100 and consults the table.
-    
-    todo
-    Familiarity Mishap
-    Similar
-    Area
-    Off
-    Target
-    On
-    Target
-    Permanent circle — — — 01-100
-    Associated object — — — 01-100
-    Very familiar 01-05 06-13 14-24 25-100
-    Seen casually 01-33 34-43 44-53 54-100
-    Viewed once 01-43 44-53 54-73 74-100
-    Description 01-43 44-53 54-73 74-100
-    False destination 01-50 51-100 — —
-    
-    
-    Familiarity. “Permanent circle” means a permanent
+
+
+    | Familiarity | Mishap | Similar Area | Off Target | On Target |
+
+    |---|---|---|---|---|
+
+    | Permanent circle | — | — | — | 01-100 |
+
+    | Associated object | — | — | — | 01-100 |
+
+    | Very familiar | 01-05 | 06-13 | 14-24 | 25-100 |
+
+    | Seen casually | 01-33 | 34-43 | 44-53 | 54-100 |
+
+    | Viewed once | 01-43 | 44-53 | 54-73 | 74-100 |
+
+    | Description | 01-43 | 44-53 | 54-73 | 74-100 |
+
+    | False destination | 01-50 | 51-100 | — | — |
+
+
+    **Familiarity.** “Permanent circle” means a permanent
     teleportation circle whose sigil sequence you know.
     “Associated object” means that you possess an object
     taken from the desired destination within the last six
     months, such as a book from a wizard’s library, bed
     linen from a royal suite, or a chunk of marble from a
     lich’s secret tomb.
-    
-    
+
+
     “Very familiar” is a place you have been very often, a
     place you have carefully studied, or a place you can see
     when you cast the spell. “Seen casually” is someplace
@@ -10383,18 +10411,18 @@
     Perhaps you tried to scry an enem y’s sanctum but
     instead viewed an illusion, or you are attempting to
     teleport to a familiar location that no longer exists.
-    
-    
-    On Target. You and your group (or the target object)
+
+
+    **On Target.** You and your group (or the target object)
     appear where you want to.
-    
-    
-    Off Target. You and your group (or the target object)
+
+
+    **Off Target.** You and your group (or the target object)
     appear a random distance away from the destination
     in a random direction. Distance off target is 1d10 x
     1d10 percent of the distance that was to be traveled.
-    
-    
+
+
     For example, if you tried to travel 120 miles, landed off
     target, and rolled a 5 and 3 on the two d 10s, then you
     would be off target by 15 percent, or 18 miles. The DM
@@ -10403,9 +10431,9 @@
     and so on around the points of the com pass. If you were
     teleporting to a coastal city and wound up 18 miles out
     at sea, you could be in trouble.
-    
-    
-    Similar Area. You and your group (or the target
+
+
+    **Similar Area.** You and your group (or the target
     object) wind up in a different area that’s visually or
     thematically similar to the target area. If you are
     heading for your home laboratory, for example, you
@@ -10415,9 +10443,9 @@
     you appear in the closest similar place, but since the
     spell has no range limit, you could conceivably wind up
     anywhere on the plane.
-    
-    
-    Mishap. The spell’s unpredictable magic results in a
+
+
+    **Mishap.** The spell’s unpredictable magic results in a
     difficult journey. Each teleporting creature (or the target
     object) takes 3d10 force damage, and the DM rerolls on
     the table to see where you wind up (multiple mishaps
@@ -10443,8 +10471,8 @@
     enters the portal instantly appears within 5 feet of the
     destination circle or in the nearest unoccupied space if
     that space is occupied.
-    
-    
+
+
     Many major temples, guilds, and other important
     places have permanent teleportation circles inscribed
     somewhere within their confines. Each such circle
@@ -10456,8 +10484,8 @@
     sequences during your adventures. You can commit
     a new sigil sequence to memory after studying it
     for 1 minute.
-    
-    
+
+
     You can create a permanent teleportation circle by
     casting this spell in the same location every day for one
     year. You need not use the circle to teleport when you
@@ -10482,8 +10510,8 @@
     duration, and can hold up to 500 pounds. If more weight
     is placed on it, the spell ends, and everything on the disk
     falls to the ground.
-    
-    
+
+
     The disk is im mobile while you are within 20 feet of
     it. If you move more than 20 feet away from it, the disk
     follows you so that it remains within 20 feet of you. It
@@ -10492,8 +10520,8 @@
     of 10 feet or more. For example, the disk can’t move
     across a 10-foot-deep pit, nor could it leave such a pit if it
     was created at the bottom.
-    
-    
+
+
     If you move more than 100 feet from the disk (typically
     because it can’t move around an obstacle to follow you),
     the spell ends.
@@ -10530,8 +10558,8 @@
     to fly open or slam shut.
 
     * You alter the appearance of your eyes for 1 minute.
-    
-    
+
+
     If you cast this spell multiple times, you can have up to
     three of its 1-minute effects active at a time, and you can
     dismiss such an effect as an action.
@@ -10553,8 +10581,8 @@
     attack hits, the creature takes 1d6 piercing damage, and
     if the creature is Large or smaller, you pull the creature
     up to 10 feet closer to you.
-    
-    todo
+
+  levelUpgrades: >
     This spell’s damage increases by 1d6 when you reach
     5th level (2d6), 11th level (3d6), and 17th level (4d6).
 
@@ -10592,8 +10620,8 @@
     creature takes 2d8 thunder damage and is pushed 10
     feet away from you. On a successful save, the creature
     takes half as much damage and isn’t pushed.
-    
-    
+
+
     In addition, unsecured objects that are completely
     within the area of effect are automatically pushed 10 feet
     away from you by the spell’s effect, and the spell emits a
@@ -10616,8 +10644,8 @@
     yourself. No time passes for other creatures, while you
     take 1d4 + 1 turns in a row, during which you can use
     actions and move as normal.
-    
-    
+
+
     This spell ends if one of the actions you use during
     this period, or any effects that you create during this
     period, affects a creature other than you or an object
@@ -10707,13 +10735,17 @@
     Shapechangers aren’t affected by this spell. An
     unwilling creature can make a Wisdom saving throw,
     and if it succeeds, it isn’t affected by this spell.
-    Creature into Creature. If you turn a creature into
+
+
+    **Creature into Creature.** If you turn a creature into
     another kind of creature, the new form can be any kind
     you choose whose challenge rating is equal to or less
     than the target’s (or its level, if the target doesn’t have a
     challenge rating). The target’s game statistics, including
     mental ability scores, are replaced by the statistics of
     the new form. It retains its alignment and personality.
+
+
     The target assumes the hit points of its new form,
     and when it reverts to its normal form, the creature
     returns to the number of hit points it had before it
@@ -10722,15 +10754,20 @@
     normal form. As long as the excess damage doesn’t
     reduce the creature’s normal form to 0 hit points, it isn’t
     knocked unconscious.
-    
-    
+
+
     The creature is limited in the actions it can perform by
     the nature of its new form, and it can’t speak, cast spells,
     or take any other action that requires hands or speech
     unless its new form is capable of such actions.
+
+
     The target’s gear melds into the new form. The
     creature can’t activate, use, wield, or otherwise benefit
-    from any of its equipment.O bject into Creature. You can turn an object into
+    from any of its equipment.
+
+
+    **Object into Creature.** You can turn an object into
     any kind of creature, as long as the creature’s size
     is no larger than the object’s size and the creature’s
     challenge rating is 9 or lower. The creature is friendly to
@@ -10738,13 +10775,13 @@
     You decide what action it takes and how it moves. The
     DM has the creature’s statistics and resolves all of its
     actions and movement.
-    
-    
+
+
     If the spell becomes permanent, you no longer control
     the creature. It might remain friendly to you, depending
     on how you have treated it.
-    
-    
+
+
     **Creature into Object.** If you turn a creature into an
     object, it transforms along with whatever it is wearing
     and carrying into that form. The creature’s statistics
@@ -10771,6 +10808,8 @@
     cures all diseases, and lifts any curses affecting the
     creature when it died. The spell replaces damaged or
     missing organs and limbs.
+
+
     The spell can even provide a new body if the original
     no longer exists, in which case you must speak the
     creature’s name. The creature then appears in an
@@ -10824,10 +10863,14 @@
     choose within range. You can make the wall up to 300
     feet long, 300 feet high, and 50 feet thick. The wall lasts
     for the duration.
+
+
     When the wall appears, each creature within its area
     must make a Strength saving throw. On a failed save,
     a creature takes 6 d10 bludgeoning damage, or half as
     much damage on a successful save.
+
+
     At the start of each of your turns after the wall
     appears, the wall, along with any creatures in it, moves
     50 feet away from you. Any Huge or smaller creature
@@ -10839,6 +10882,8 @@
     creatures take from the spell on subsequent rounds is
     reduced by 1d10. When the wall reaches 0 feet in height,
     the spell ends.
+
+
     A creature caught in the wall can move by swim ming.
     Because of the force of the wave, though, the creature
     must make a successful Strength (Athletics) check
@@ -10915,6 +10960,7 @@
     you), it must succeed on a Wisdom saving throw or take
     1d4 psychic damage and have disadvantage on the next
     attack roll it makes before the end of its next turn.
+  levelUpgrades: >
     This spell’s damage increases by 1d4 when you reach
     5th level (2d4), 11th level (3d4), and 17th level (4d4).
 
@@ -10935,10 +10981,14 @@
     feet high, and 1 foot thick, or a ringed wall up to 20 feet
     in diameter, 20 feet high, and 1 foot thick. The wall is
     opaque and lasts for the duration.
+
+
     When the wall appears, each creature within its area
     must make a Dexterity saving throw. On a failed save, a
     creature takes 5d8 fire damage, or half as much damage
     on a successful save.
+
+
     One side of the wall, selected by you when you cast
     this spell, deals 5d8 fire damage to each creature that
     ends its turn within 10 feet of that side or inside the
@@ -10974,6 +11024,8 @@
     It lasts for the duration. If the wall cuts through a
     creature’s space when it appears, the creature is pushed
     to one side of the wall (your choice which side).
+
+
     Nothing can physically pass through the wall. It is
     immune to all damage and can’t be dispelled by dispel
     magic. A disintegrate spell destroys the wall instantly,
@@ -10998,11 +11050,15 @@
     surface made up of ten 10-foot-square panels. Each
     panel must be contiguous with another panel. In any
     form, the wall is 1 foot thick and lasts for the duration.
+
+
     If the wall cuts through a creature’s space when it
     appears, the creature within its area is pushed to one
     side of the wall and must make a Dexterity saving throw.
     On a failed save, the creature takes 10d6 cold damage,
     or half as much damage on a successful save.
+
+
     The wall is an object that can be damaged and thus
     breached. It has AC 12 and 30 hit points per 10-foot
     section, and it is vulnerable to fire damage. Reducing
@@ -11037,6 +11093,8 @@
     Each panel must be contiguous with at least one other
     panel. Alternatively, you can create 10-foot-by-20-foot
     panels that are only 3 inches thick.
+
+
     If the wall cuts through a creature’s space when it
     appears, the creature is pushed to one side of the wall
     (your choice). If a creature would be surrounded on all
@@ -11044,21 +11102,29 @@
     that creature can make a Dexterity saving throw. On a
     success, it can use its reaction to move up to its speed so
     that it is no longer enclosed by the wall.
+
+
     The wall can have any shape you desire, though it
     can’t occupy the same space as a creature or object.
     The wall doesn’t need to be vertical or rest on any firm
     foundation. It must, however, merge with and be solidly
     supported by existing stone. Thus, you can use this spell
     to bridge a chasm or create a ramp.
+
+
     If you create a span greater than 20 feet in length, you
     must halve the size of each panel to create supports.
     You can crudely shape the wall to create crenellations,
     battlements, and so on.
+
+
     The wall is an object made of stone that can be
     damaged and thus breached. Each panel has AC 15 and
     30 hit points per inch of thickness. Reducing a panel
     to 0 hit points destroys it and might cause connected
     panels to collapse at the DM’s discretion.
+
+
     If you maintain your concentration on this spell for
     its whole duration, the wall becomes permanent and
     can’t be dispelled. Otherwise, the wall disappears when
@@ -11083,10 +11149,14 @@
     long, 10 feet high, and 5 feet thick or a circle that has
     a 20-foot diameter and is up to 20 feet high and 5 feet
     thick. The wall blocks line of sight.
+
+
     When the wall appears, each creature within its area
     must make a Dexterity saving throw. On a failed save,
     a creature takes 7d8 piercing damage, or half as much
     damage on a successful save.
+
+
     A creature can move through the wall, albeit slowly
     and painfully. For every 1 foot a creature moves
     through the wall, it must spend 4 feet of movement.
@@ -11117,6 +11187,8 @@
     you, it gains a +1 bonus to AC and saving throws, and
     it has resistance to all damage. Also, each time it takes
     damage, you take the same amount of damage.
+
+
     The spell ends if you drop to 0 hit points or if you
     and the target become separated by more than 60 feet.
     It also ends if the spell is cast again on either of the
@@ -11158,6 +11230,8 @@
     crossing molten lava can still take damage from the
     heat). Up to ten willing creatures you can see within
     range gain this ability for the duration.
+
+
     If you target a creature subm erged in a liquid, the
     spell carries the target to the surface of the liquid at a
     rate of 60 feet per round.
@@ -11179,11 +11253,15 @@
     your choice within range. The webs fill a 20-foot cube
     from that point for the duration. The webs are difficult
     terrain and lightly obscure their area.
+
+
     If the webs aren’t anchored between two solid masses
     (such as walls or trees) or layered across a floor, wall,
     or ceiling, the conjured web collapses on itself, and the
     spell ends at the start of your next turn. Webs layered
     over a flat surface have a depth of 5 feet.
+
+
     Each creature that starts its turn in the webs or that
     enters them during its turn must make a Dexterity
     saving throw. On a failed save, the creature is restrained
@@ -11191,6 +11269,8 @@
     A creature restrained by the webs can use its action to
     make a Strength check against your spell save DC. If it
     succeeds, it is no longer restrained.
+
+
     The webs are flammable. Any 5-foot cube of webs
     exposed to fire burns away in 1 round, dealing 2d4 fire
     damage to any creature that starts its turn in the fire.
@@ -11241,6 +11321,8 @@
     incapacitated and can’t move. Until the spell ends, a
     creature can revert to cloud form, which also requires
     the 1-minute transformation.
+
+
     If a creature is in cloud form and flying when the effect
     ends, the creature descends 60 feet per round for 1
     minute until it lands, which it does safely. If it can’t land
@@ -11264,10 +11346,14 @@
     shape the wall in any way you choose so long as it
     makes one continuous path along the ground. The wall
     lasts for the duration.
+
+
     When the wall appears, each creature within its area
     must make a Strength saving throw. A creature takes
     3d8 bludgeoning damage on a failed save, or half as
     much damage on a successful one.
+
+
     The strong wind keeps fog, sm oke, and other gases at
     bay. Small or smaller flying creatures or objects can’t
     pass through the wall. Loose, lightweight materials
@@ -11294,6 +11380,8 @@
     spell of 8th level or lower. You don’t need to meet any
     requirements in that spell, including costly components.
     The spell simply takes effect.
+
+
     Alternatively, you can create one of the following
     effects of your choice:
 
@@ -11323,6 +11411,8 @@
     friend’s failed save. You can force the reroll to be made
     with advantage or disadvantage, and you can choose
     whether to use the reroll or the original roll.
+
+
     You might be able to achieve something beyond the
     scope of the above examples. State your wish to the DM
     as precisely as possible. The DM has great latitude in
@@ -11337,6 +11427,8 @@
     the game. Similarly, wishing for a legendary magic item
     or artifact might instantly transport you to the presence
     of the item’s current owner.
+
+
     The stress of casting this spell to produce any effect
     other than duplicating another spell weakens you. After
     enduring that stress, each time you cast a spell until
@@ -11393,6 +11485,8 @@
     when you prepared your sanctuary (see below). If you
     cast this spell without first preparing a sanctuary, the
     spell has no effect.
+
+
     You must designate a sanctuary by casting this spell
     within a location, such as a temple, dedicated to or
     strongly linked to your deity. If you attempt to cast the
@@ -11435,6 +11529,8 @@
     throw. On a failed save, a creature can’t speak a
     deliberate lie while in the radius. You know whether
     each creature succeeds or fails on its saving throw.
+
+
     An affected creature is aware of the spell and can thus
     avoid answering questions to which it would normally
     respond with a lie. Such a creature can be evasive in
