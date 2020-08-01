@@ -1,5 +1,6 @@
 :root {
   --color-border-table: hsla(0, 0%, 0%, 0.12);
+  --color-background-light: rgb(225, 239, 248);
 }
 
 html {
@@ -414,8 +415,10 @@ pre {
   padding: 1.45rem;
 }
 table {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  /* margin-left: 0;
+  margin-right: 0; */
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
@@ -579,19 +582,19 @@ th {
   -moz-font-feature-settings: "tnum";
   -ms-font-feature-settings: "tnum";
   -webkit-font-feature-settings: "tnum";
-  padding-left: 0.96667rem;
-  padding-right: 0.96667rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
 }
-th:first-child,
+/* th:first-child,
 td:first-child {
   padding-left: 0;
 }
 th:last-child,
 td:last-child {
   padding-right: 0;
-}
+} */
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);

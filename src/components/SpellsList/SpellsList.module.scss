@@ -24,6 +24,14 @@
   margin-top: 0.2em;
 }
 
+.row:hover {
+  .cell {
+    background-color: var(--color-background-light);
+  }
+}
+
 .cellExpanded {
+  @extend .cell;
+
   border-bottom: none;
 }

@@ -89,10 +89,14 @@ export default function SpellsList(props) {
             <tr
               { ...row.getRowProps() }
               onClick={ () => row.toggleRowExpanded(!row.isExpanded) }
+              className={ styles.row }
             >
               { row.cells.map((cell) => {
                 return (
-                  <td { ...cell.getCellProps() } className={ row.isExpanded && styles.cellExpanded }>
+                  <td
+                    { ...cell.getCellProps() }
+                    className={ row.isExpanded ? styles.cellExpanded : styles.cell }
+                  >
                     { cell.render('Cell') }
                   </td>
                 );

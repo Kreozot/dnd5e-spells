@@ -1,10 +1,5 @@
-import React, { useMemo, useState } from 'react';
-import groupBy from 'lodash/groupBy';
-import sortBy from 'lodash/sortBy';
+import React from 'react';
 import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-
-import data from 'content/spells.yaml';
 
 export default function LevelFilterButton(props) {
   const {
@@ -17,6 +12,7 @@ export default function LevelFilterButton(props) {
     <Button
       onClick={ () => setLevelFilter(level) }
       variant={ level === levelFilter ? 'contained' : null }
+      color="primary"
     >
       { level === null ? 'All levels' : level }
     </Button>
