@@ -1,5 +1,5 @@
 import React, { useMemo, Fragment } from 'react';
-import { useTable, useExpanded, useGroupBy } from 'react-table';
+import { useTable, useExpanded } from 'react-table';
 import Markdown from 'markdown-to-jsx';
 
 import Components from './Components';

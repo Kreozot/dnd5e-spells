@@ -1,35 +1,12 @@
-import React, { useMemo } from 'react';
-import groupBy from 'lodash/groupBy';
-import sortBy from 'lodash/sortBy';
+import React from 'react';
 
-import data from 'content/spells.yaml';
 import Layout from 'components/layout';
-import SpellsList from 'components/SpellsList';
+import Spells from 'components/Spells';
 
-const IndexPage = () => {
-  const filteredData = data;
-
-  const groupedData = useMemo(() => {
-    return groupBy(filteredData, 'level');
-  }, [filteredData]);
-
-  const list = useMemo(() => {
-    const levels = sortBy(Object.keys(groupedData), (level) => {
-      return level === 'cantrip' ? 0 : level;
-    });
-    return levels.map((level) => (
-      <div key={ level }>
-        <h2>{ level }</h2>
-        <SpellsList data={ groupedData[level] }/>
-      </div>
-    ));
-  }, [groupedData]);
-
+export default function IndexPage() {
   return (
     <Layout>
-      { list }
+      <Spells/>
     </Layout>
   );
 }
-
-export default IndexPage
