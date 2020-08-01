@@ -17,7 +17,11 @@ export default function Spells(props) {
     if (!classSpells.length) {
       return data;
     }
-    return data.filter((spell) => classSpells.includes(spell.title));
+    return data.filter(
+      (spell) => classSpells.some(
+        (title) => title.toLowerCase() === spell.title.toLowerCase()
+      )
+    );
   }, [classSpells]);
 
   const groupedData = useMemo(() => {

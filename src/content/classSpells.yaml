@@ -228,8 +228,8 @@ cleric:
     - Gate
     - Mass Heal
     - True Resurrection
-  domains:
-    knowledge:
+  Divine Domain:
+    Knowledge:
       - command
       - identify
       - augury
@@ -240,7 +240,7 @@ cleric:
       - confusion
       - legend lore
       - scrying
-    life:
+    Life:
       - bless
       - cure wounds
       - lesser restoration
@@ -251,7 +251,7 @@ cleric:
       - guardian of faith
       - mass cure wounds
       - raise dead
-    light:
+    Light:
       - burning hands
       - faerie fire
       - flaming sphere
@@ -262,7 +262,7 @@ cleric:
       - wall of fire
       - flame strike
       - scrying
-    nature:
+    Nature:
       - animal friendship
       - speak with animals
       - barkskin
@@ -273,7 +273,7 @@ cleric:
       - grasping vine
       - insect plague
       - tree stride
-    tempest:
+    Tempest:
       - fog cloud
       - thunderwave
       - gust of wind
@@ -284,7 +284,7 @@ cleric:
       - ice storm
       - destructive wave
       - insect plague
-    trickery:
+    Trickery:
       - charm person
       - disguise self
       - mirror image
@@ -295,7 +295,7 @@ cleric:
       - polymorph
       - dominate person
       - modify memory
-    war:
+    War:
       - divine favor
       - shield of faith
       - magic weapon
@@ -419,8 +419,8 @@ druid:
     - Shapechange
     - Storm of Vengeance
     - True Resurrection
-  circle:
-    arctic:
+  Circle:
+    Arctic:
       - hold person
       - spike growth
       - sleet storm
@@ -429,7 +429,7 @@ druid:
       - ice storm
       - commune with nature
       - cone of cold
-    coast:
+    Coast:
       - mirror image
       - misty step
       - water breathing
@@ -438,7 +438,7 @@ druid:
       - freedom of movement
       - conjure elemental
       - scrying
-    desert:
+    Desert:
       - blur
       - silence
       - create food and water
@@ -447,7 +447,7 @@ druid:
       - hallucinatory terrain
       - insect plague
       - wall of stone
-    forest:
+    Forest:
       - barkskin
       - spider climb
       - call lightning
@@ -456,7 +456,7 @@ druid:
       - freedom of movement
       - commune with nature
       - tree stride
-    grassland:
+    Grassland:
       - invisibility
       - pass without trace
       - daylight
@@ -465,7 +465,7 @@ druid:
       - freedom of movement
       - dream
       - insect plague
-    mountain:
+    Mountain:
       - spider climb
       - spike growth
       - lightning bolt
@@ -474,7 +474,7 @@ druid:
       - stoneskin
       - passwall
       - wall of stone
-    swamp:
+    Swamp:
       - darkness
       - Melf’s acid arrow
       - water walk
@@ -483,7 +483,7 @@ druid:
       - locate creature
       - insect plague
       - scrying
-    underdark:
+    Underdark:
       - spider climb
       - web
       - gaseous form
