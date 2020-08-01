@@ -14,7 +14,7 @@ export default function LevelFilterSelector(props) {
     <ButtonGroup color="primary">
       <LevelFilterButton level={ null } levelFilter={ levelFilter } setLevelFilter={ setLevelFilter }/>
       { levels.map((level) => (
-        <LevelFilterButton level={ level } levelFilter={ levelFilter } setLevelFilter={ setLevelFilter }/>
+        <LevelFilterButton level={ level } levelFilter={ levelFilter } setLevelFilter={ setLevelFilter } key={ level }/>
       )) }
     </ButtonGroup>
   );

@@ -1,20 +1,34 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState, useMemo, useEffect } from 'react';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 
+import classSpells from 'content/classSpells.yaml';
+
 import styles from './ClassFilterSelector.module.scss';
 
 export default function ClassFilterSelector(props) {
   const {
-    classFilter,
-    setClassFilter,
+    setClassSpells,
   } = props;
 
-  const handleChange = (event) => {
+  const [classFilter, setClassFilter] = useState('');
+
+  const spells = useMemo(() => {
+    if (!classFilter) {
+      return [];
+    }
+    return classSpells[classFilter].main;
+  }, [classFilter]);
+
+  useEffect(() => {
+    setClassSpells(spells);
+  }, [spells]);
+
+  const handleChange = useCallback((event) => {
     setClassFilter(event.target.value);
-  };
+  }, [spells]);
 
   return (
     <FormControl className={ styles.container }>
@@ -25,7 +39,7 @@ export default function ClassFilterSelector(props) {
         onChange={ handleChange }
         className={ styles.select }
       >
-        <MenuItem value={ null }>
+        <MenuItem value="">
           <em>All</em>
         </MenuItem>
         <MenuItem value="bard">Bard</MenuItem>

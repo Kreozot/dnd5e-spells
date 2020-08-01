@@ -3,7 +3,6 @@ import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
 
 import data from 'content/spells.yaml';
-import classSpells from 'content/classSpells.yaml';
 import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import ClassFilterSelector from 'components/ClassFilterSelector';
@@ -11,15 +10,15 @@ import ClassFilterSelector from 'components/ClassFilterSelector';
 import styles from './Spells.module.scss'
 
 export default function Spells(props) {
-  const [classFilter, setClassFilter] = useState(null);
+  const [classSpells, setClassSpells] = useState([]);
   const [levelFilter, setLevelFilter] = useState(null);
 
   const filteredData = useMemo(() => {
-    if (!classFilter) {
+    if (!classSpells.length) {
       return data;
     }
-    return data.filter((spell) => classSpells[classFilter].main.includes(spell.title));
-  }, [classFilter]);
+    return data.filter((spell) => classSpells.includes(spell.title));
+  }, [classSpells]);
 
   const groupedData = useMemo(() => {
     return groupBy(filteredData, 'level');
@@ -53,10 +52,7 @@ export default function Spells(props) {
   return (
     <>
       <div className={ styles.classSelector }>
-        <ClassFilterSelector
-          classFilter={ classFilter }
-          setClassFilter={ setClassFilter }
-        />
+        <ClassFilterSelector setClassSpells={ setClassSpells }/>
       </div>
       <LevelFilterSelector
         levels={ levels }
