@@ -23,6 +23,10 @@ export default function SpellsList(props) {
       accessor: 'title',
     },
     {
+      Header: 'School',
+      accessor: 'school',
+    },
+    {
       Header: () => <div className={ styles.headerCenter }>Ritual</div>,
       accessor: 'ritual',
       Cell: ({ value }) => (

@@ -33,7 +33,7 @@ bard:
     - Thunderwave
     - Unseen Servant
     - Animal Messenger
-    - Blindness/Deafness
+    - Blindness / Deafness
     - Calm Emotions
     - Cloud of Daggers
     - Crown of Madness
@@ -147,7 +147,7 @@ cleric:
     - Shield of Faith
     - Aid
     - Augury
-    - Blindness/Deafness
+    - Blindness / Deafness
     - Calm Emotions
     - Continual Flame
     - Enhance Ability
@@ -409,7 +409,7 @@ druid:
     - Regenerate
     - Reverse Gravity
     - Animal Shapes
-    - Antipathy/Sympathy
+    - Antipathy / Sympathy
     - Control Weather
     - Earthquake
     - Feeblemind
@@ -492,3 +492,599 @@ druid:
       - stone shape
       - cloudkill
       - insect plague
+
+paladin:
+  main:
+    - Bless
+    - Command
+    - Compelled Duel
+    - Cure Wounds
+    - Detect Evil and Good
+    - Detect Magic
+    - Detect Poison and Disease
+    - Divine Favor
+    - Heroism
+    - Protection from Evil and Good
+    - Purify Food and Drink
+    - Searing Smite
+    - Shield of Faith
+    - Thunderous Smite
+    - Wrathful Smite
+    - Aid
+    - Branding Smite
+    - Find Steed
+    - Lesser Restoration
+    - Locate Object
+    - Magic Weapon
+    - Protection from Poison
+    - Zone of Truth
+    - Aura of Vitality
+    - Blinding Smite
+    - Create Food and Water
+    - Crusader's Mantle
+    - Daylight
+    - Dispel Magic
+    - Elemental WeaponMagic Circle
+    - Remove Curse
+    - Revivify
+    - Aura of Life
+    - Aura of Purity
+    - Banishment
+    - Death Ward
+    - Locate Creature
+    - Staggering Smite
+    - Banishing Smite
+    - Circle of Power
+    - Destructive Smite
+    - Dispel Evil and Good
+    - Geas
+    - Raise Dead
+  Sacred Oath:
+    Oath of Devotion:
+      - protection from evil and good
+      - sanctuary
+      - lesser restoration
+      - zone of truth
+      - beacon of hope
+      - dispel magic
+      - freedom of movement
+      - guardian of faith
+      - commune
+      - flam e strike
+    Oath of the Ancients:
+      - ensnaring strike
+      - speak with animals
+      - moonbeam
+      - misty step
+      - plant growth
+      - protection from energy
+      - ice storm
+      - stoneskin
+      - commune with nature
+      - tree stride
+    Oath of Vengeance:
+      - bane
+      - hunter’s mark
+      - hold person
+      - misty step
+      - haste
+      - protection from energy
+      - banishment
+      - dimension door
+      - hold monster
+      - scrying
+
+ranger:
+  main:
+    - Alarm
+    - Animal Friendship
+    - Cure Wounds
+    - Detect Magic
+    - Detect Poison and Disease
+    - Ensnaring Strike
+    - Fog Cloud
+    - Goodberry
+    - Hail of Thorns
+    - Hunter’s Mark
+    - Jump
+    - Longstrider
+    - Speak with Animals
+    - Animal Messenger
+    - Barkskin
+    - Beast Sense
+    - Cordon of Arrows
+    - Darkvision
+    - Find Traps
+    - Lesser Restoration
+    - Locate Animals or Plants
+    - Locate Object
+    - Pass without Trace
+    - Protection from Poison
+    - Silence
+    - Spike Growth
+    - Conjure Animals
+    - Conjure Barrage
+    - Daylight
+    - Lightning Arrow
+    - Nondetection
+    - Plant Growth
+    - Protection from Energy
+    - Speak with Plants
+    - Water Breathing
+    - Water Walk
+    - Wind Wall
+    - Conjure Woodland Beings
+    - Freedom of Movement
+    - Grasping Vine
+    - Locate Creature
+    - Stoneskin
+    - Commune with Nature
+    - Conjure Volley
+    - Swift Quiver
+    - Tree Stride
+
+sorcerer:
+  main:
+    - Acid Splash
+    - Blade Ward
+    - Chill Touch
+    - Dancing Lights
+    - Fire Bolt
+    - Friends
+    - Light
+    - Mage Hand
+    - Mending
+    - Message
+    - Minor Illusion
+    - Poison Spray
+    - Prestidigitation
+    - Ray of Frost
+    - Shocking Grasp
+    - True Strike
+    - Burning Hands
+    - Charm Person
+    - Chromatic Orb
+    - Color Spray
+    - Comprehend Languages
+    - Detect Magic
+    - Disguise Self
+    - Expeditious Retreat
+    - False Life
+    - Feather Fall
+    - Fog Cloud
+    - Jump
+    - Mage Armor
+    - Magic Missile
+    - Ray of Sickness
+    - Shield
+    - Silent Image
+    - Sleep
+    - Thunderwave
+    - Witch Bolt
+    - Alter Self
+    - Blindness / Deafness
+    - Blur
+    - Cloud of Daggers
+    - Crown of Madness
+    - Darkness
+    - Darkvision
+    - Detect Thoughts
+    - Enhance Ability
+    - Enlarge / Reduce
+    - Gust of Wind
+    - Hold Person
+    - Invisibility
+    - Knock
+    - Levitate
+    - Mirror Image
+    - Misty Step
+    - Phantasmal Force
+    - Scorching Ray
+    - See Invisibility
+    - Shatter
+    - Spider Climb
+    - Suggestion
+    - Web
+    - Blink
+    - Clairvoyance
+    - Counterspell
+    - Daylight
+    - Dispel Magic
+    - Fear
+    - Fireball
+    - Fly
+    - Gaseous Form
+    - Haste
+    - Hypnotic Pattern
+    - Lightning Bolt
+    - Major Image
+    - Protection from Energy
+    - Sleet Storm
+    - Slow
+    - Stinking Cloud
+    - Tongues
+    - Water Breathing
+    - Water Walk
+    - Banishment
+    - Blight
+    - Confusion
+    - Dimension Door
+    - Dominate Beast
+    - Greater Invisibility
+    - Ice Storm
+    - Polymorph
+    - Stoneskin
+    - Wall of Fire
+    - Animate Objects
+    - Cloudkill
+    - Cone of Cold
+    - Creation
+    - Dominate Person
+    - Hold Monster
+    - Insect Plague
+    - Seeming
+    - Telekinesis
+    - Teleportation Circle
+    - Wall of Stone
+    - Arcane Gate
+    - Chain Lightning
+    - Circle of Death
+    - Disintegrate
+    - Eyebite
+    - Globe of Invulnerability
+    - Mass Suggestion
+    - Move Earth
+    - Sunbeam
+    - True Seeing
+    - Delayed Blast Fireball
+    - Etherealness
+    - Finger of Death
+    - Fire Storm
+    - Plane Shift
+    - Prismatic Spray
+    - Reverse Gravity
+    - Teleport
+    - Dominate Monster
+    - Earthquake
+    - Incendiary Cloud
+    - Power Word Stun
+    - Sunburst
+    - Gate
+    - Meteor Swarm
+    - Power Word Kill
+    - Time Stop
+    - Wish
+  Otherworldly Patron:
+    The Archfey:
+      - faerie fire
+      - sleep
+      - calm emotions
+      - phantasmal force
+      - blink
+      - plant growth
+      - dominate beast
+      - greater invisibility
+      - dominate person
+      - seeming
+    The Fiend:
+      - burning hands
+      - command
+      - blindness / deafness
+      - scorching ray
+      - fireball
+      - stinking cloud
+      - fire shield
+      - wall of fire
+      - flame strike
+      - hallow
+    The Great Old One:
+      - dissonant whispers
+      - Tasha's hideous laughter
+      - detect thoughts
+      - phantasmal force
+      - clairvoyance
+      - sending
+      - dominate beast
+      - Evard’s black tentacles
+      - dominate person
+      - telekinesis
+
+warlock:
+  main:
+    - Blade Ward
+    - Chill Touch
+    - Eldritch Blast
+    - Friends
+    - Mage Hand
+    - Minor Illusion
+    - Poison Spray
+    - Prestidigitation
+    - True Strike
+    - Armor of Agathys
+    - Arms of Hadar
+    - Charm Person
+    - Comprehend Languages
+    - Expeditious Retreat
+    - Hellish Rebuke
+    - Hex
+    - Illusory Script
+    - Protection from Evil and Good
+    - Unseen Servant
+    - Witch Bolt
+    - Cloud of Daggers
+    - Crown of Madness
+    - Darkness
+    - Enthrall
+    - Hold Person
+    - Invisibility
+    - Mirror Image
+    - Misty Step
+    - Ray of Enfeeblement
+    - Shatter
+    - Spider Climb
+    - Suggestion
+    - Counterspell
+    - Dispel Magic
+    - Fear
+    - Fly
+    - Gaseous Form
+    - Hunger of Hadar
+    - Hypnotic Pattern
+    - Magic Circle
+    - Major Image
+    - Remove Curse
+    - Tongues
+    - Vampiric Touch
+    - Banishment
+    - Blight
+    - Dimension Door
+    - Hallucinatory Terrain
+    - Contact Other Plane
+    - Dream
+    - Hold Monster
+    - Scrying
+    - Arcane Gate
+    - Circle of Death
+    - Conjure Fey
+    - Create Undead
+    - Eyebite
+    - Flesh to Stone
+    - Mass Suggestion
+    - True Seeing
+    - Etherealness
+    - Finger of Death
+    - Forcecage
+    - Plane Shift
+    - Demiplane
+    - Dominate Monster
+    - Feeblemind
+    - Glibness
+    - Power Word Stun
+    - Astral Projection
+    - Foresight
+    - Imprisonment
+    - Power Word Kill
+    - True Polymorph
+
+wizard:
+  main:
+    - Acid Splash
+    - Blade Ward
+    - Chill Touch
+    - Dancing Lights
+    - Fire Bolt
+    - Friends
+    - Light
+    - Mage Hand
+    - Mending
+    - Message
+    - Minor Illusion
+    - Poison Spray
+    - Prestidigitation
+    - Ray of Frost
+    - Shocking Grasp
+    - True Strike
+    - Alarm
+    - Burning Hands
+    - Charm Person
+    - Chromatic Orb
+    - Color Spray
+    - Comprehend Languages
+    - Detect Magic
+    - Disguise Self
+    - Expeditious Retreat
+    - False Life
+    - Feather Fall
+    - Find Familiar
+    - Fog Cloud
+    - Grease
+    - Identify
+    - Illusory Script
+    - Jump
+    - Longstrider
+    - Mage Armor
+    - Magic Missile
+    - Protection from
+    - Evil and Good
+    - Ray of Sickness
+    - Shield
+    - Silent Image
+    - Sleep
+    - Tasha’s Hideous Laughter
+    - Tenser’s Floating Disk
+    - Thunderwave
+    - Unseen Servant
+    - Witch Bolt
+    - Alter Self
+    - Arcane Lock
+    - Blindness / Deafness
+    - Blur
+    - Cloud of Daggers
+    - Continual Flame
+    - Crown of Madness
+    - Darkness
+    - Darkvision
+    - Detect Thoughts
+    - Enlarge / Reduce
+    - Flaming Sphere
+    - Gentle Repose
+    - Gust of Wind
+    - Hold Person
+    - Invisibility
+    - Knock
+    - Levitate
+    - Locate Object
+    - Magic Mouth
+    - Magic Weapon
+    - Melf’s Acid Arrow
+    - Mirror Image
+    - Misty Step
+    - Nystul’s Magic Aura
+    - Phantasmal Force
+    - Ray of Enfeeblement
+    - Rope Trick
+    - Scorching Ray
+    - See Invisibility
+    - Shatter
+    - Spider Climb
+    - Suggestion
+    - Web
+    - Animate Dead
+    - Bestow Curse
+    - Blink
+    - Clairvoyance
+    - Counterspell
+    - Dispel Magic
+    - Fear
+    - Feign Death
+    - Fireball
+    - Fly
+    - Gaseous Form
+    - Glyph of Warding
+    - Haste
+    - Hypnotic Pattern
+    - Leomund’s Tiny Hut
+    - Lightning Bolt
+    - Magic Circle
+    - Major Image
+    - Nondetection
+    - Phantom Steed
+    - Protection from Energy
+    - Remove Curse
+    - Sending
+    - Sleet Storm
+    - Slow
+    - Stinking Cloud
+    - Tongues
+    - Vampiric Touch
+    - Water Breathing
+    - Arcane Eye
+    - Banishment
+    - Blight
+    - Confusion
+    - Conjure Minor Elementals
+    - Control Water
+    - Dimension Door
+    - Evard's Black Tentacles
+    - Fabricate
+    - Fire Shield
+    - Greater Invisibility
+    - Hallucinatory Terrain
+    - Ice Storm
+    - Leomund’s Secret ChestLocate Creature
+    - Mordenkainen’s
+    - Faithful Hound
+    - Mordenkainen’s
+    - Private Sanctum
+    - Otiluke’s Resilient Sphere
+    - Phantasmal Killer
+    - Polymorph
+    - Stone Shape
+    - Stoneskin
+    - Wall of Fire
+    - Animate Objects
+    - Bigby’s Hand
+    - CloudkilI
+    - Cone of Cold
+    - Conjure Elemental
+    - Contact Other Plane
+    - Creation
+    - Dominate Person
+    - Dream
+    - Geas
+    - Hold Monster
+    - Legend Lore
+    - Mislead
+    - Modify Memory
+    - Passwall
+    - Planar Binding
+    - Rary’s Telepathic Bond
+    - Scrying
+    - Seeming
+    - Telekinesis
+    - Teleportation Circle
+    - Wall of Force
+    - Wall of Stone
+    - Arcane Gate
+    - Chain Lightning
+    - Circle of Death
+    - Contingency
+    - Create Undead
+    - Disintegrate
+    - Drawmij’s Instant
+    - Summons
+    - Eyebite
+    - Flesh to Stone
+    - Globe of Invulnerability
+    - Guards and Wards
+    - Magic Jar
+    - Mass Suggestion
+    - Move Earth
+    - Otiluke’s Freezing Sphere
+    - Otto’s Irresistible Dance
+    - Programmed Illusion
+    - Sunbeam
+    - True Seeing
+    - Wall of Ice
+    - Delayed Blast Fireball
+    - Etherealness
+    - Finger of Death
+    - Forcecage
+    - Mirage Arcane
+    - Mordenkainen's
+    - Magnificent Mansion
+    - Mordenkainen’s Sword
+    - Plane Shift
+    - Prismatic Spray
+    - Project Image
+    - Reverse Gravity
+    - Sequester
+    - Simulacrum
+    - Symbol
+    - Teleport
+    - Antimagic Field
+    - Antipathy / Sympathy
+    - Clone
+    - Control Weather
+    - Demiplane
+    - Dominate Monster
+    - Feeblemind
+    - Incendiary Cloud
+    - Maze
+    - Mind Blank
+    - Power Word Stun
+    - Sunburst
+    - Telepathy
+    - Trap the Soul
+    - Astral Projection
+    - Foresight
+    - Gate
+    - Imprisonment
+    - Meteor Swarm
+    - Power Word Kill
+    - Prismatic Wall
+    - Shapechange
+    - Time Stop
+    - True Polymorph
+    - Weird
+    - Wish
