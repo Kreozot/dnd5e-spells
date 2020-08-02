@@ -14,16 +14,16 @@ export default function SpellsList(props) {
   const { data } = props;
 
   const columns = useMemo(() => [
-    {
-      Header: 'Level',
-      accessor: 'level',
-    },
+    // {
+    //   Header: 'Level',
+    //   accessor: 'level',
+    // },
     {
       Header: 'Title',
       accessor: 'title',
     },
     {
-      Header: 'Ritual',
+      Header: () => <div className={ styles.headerCenter }>Ritual</div>,
       accessor: 'ritual',
       Cell: ({ value }) => (
         value
@@ -32,12 +32,12 @@ export default function SpellsList(props) {
       )
     },
     {
-      Header: 'Components',
+      Header: () => <div className={ styles.headerCenter }>Components</div>,
       accessor: 'components',
       Cell: ({ value }) => (<Components components={ value }/>)
     },
     {
-      Header: 'Casting time',
+      Header: () => 'Casting time',
       accessor: 'castingTime',
       Cell: ({ value }) => (<TextWithHint>{ value }</TextWithHint>)
     },
@@ -46,7 +46,7 @@ export default function SpellsList(props) {
       accessor: 'range',
     },
     {
-      Header: 'Conc.',
+      Header: () => <div className={ styles.headerCenter } title="Concentration">Conc.</div>,
       accessor: 'concentration',
       Cell: ({ value }) => (
         value

@@ -57,7 +57,7 @@ export default function ClassFilterSelector(props) {
   const additionalSelector = useMemo(() => {
     if (additionalOptions) {
       return (
-        <FormControl className={ styles.container }>
+        <FormControl className={ styles.field }>
           <InputLabel id="class-select-label">{ additionalKey }</InputLabel>
           <Select
             labelId="class-select-label"
@@ -80,7 +80,7 @@ export default function ClassFilterSelector(props) {
 
   return (
     <>
-      <FormControl className={ styles.container }>
+      <FormControl className={ styles.field }>
         <InputLabel id="class-select-label">Class</InputLabel>
         <Select
           labelId="class-select-label"
