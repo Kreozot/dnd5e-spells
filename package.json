@@ -28,7 +28,8 @@
     "react-helmet": "^6.1.0",
     "react-table": "^7.3.2",
     "react-tippy": "^1.4.0",
-    "typograf": "^6.11.1"
+    "typograf": "^6.11.1",
+    "validate.js": "^0.13.1"
   },
   "devDependencies": {
     "prettier": "2.0.5"

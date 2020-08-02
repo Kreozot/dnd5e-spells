@@ -20,7 +20,7 @@
 
 - title: Aid
   level: 2
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: 30 feet
   components:
@@ -40,7 +40,7 @@
 
 - title: Alarm
   level: 1
-  school: abjuration
+  school: Abjuration
   ritual: true
   castingTime: 1 minute
   range: 30 feet
@@ -70,7 +70,7 @@
 
 - title: Alter Self
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Self
   components:
@@ -116,7 +116,7 @@
 
 - title: Animal Friendship
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -139,7 +139,7 @@
 
 - title: Animal Messenger
   level: 2
-  school: enchantment
+  school: Enchantment
   ritual: true
   castingTime: 1 action
   range: 30 feet
@@ -176,7 +176,7 @@
 
 - title: Animal Shapes
   level: 8
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -218,7 +218,7 @@
 
 - title: Animate Dead
   level: 3
-  school: necromancy
+  school: Necromancy
   castingTime: 1 minute
   range: 10 feet
   components:
@@ -270,7 +270,7 @@
 
 - title: Animate Objects
   level: 5
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -349,7 +349,7 @@
 
 - title: Antilife Shell
   level: 5
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self (10-foot radius)
   components:
@@ -373,7 +373,7 @@
 
 - title: Antimagic Field
   level: 8
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self (10-foot-radius sphere)
   components:
@@ -457,7 +457,7 @@
 
 - title: Antipathy / Sympathy
   level: 8
-  school: enchantment
+  school: Enchantment
   castingTime: 1 hour
   range: 60 feet
   components:
@@ -522,7 +522,7 @@
 
 - title: Arcane Eye
   level: 4
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: 30 feet
   components:
@@ -548,7 +548,7 @@
 
 - title: Arcane Gate
   level: 6
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 500 feet
   components:
@@ -583,7 +583,7 @@
 
 - title: Arcane Lock
   level: 2
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -609,7 +609,7 @@
 
 - title: Armor of Agathys
   level: 1
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self
   components:
@@ -631,7 +631,7 @@
 
 - title: Arms of Hadar
   level: 1
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Self (10-foot radius)
   components:
@@ -653,7 +653,7 @@
 
 - title: Astral Projection
   level: 9
-  school: necromancy
+  school: Necromancy
   castingTime: 1 hour
   range: 10 feet
   components:
@@ -712,7 +712,7 @@
 
 - title: Augury
   level: 2
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 minute
   range: Self
@@ -752,7 +752,7 @@
 
 - title: Aura of Life
   level: 4
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self (30-foot radius)
   components:
@@ -770,7 +770,7 @@
 
 - title: Aura of Purity
   level: 4
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self (30-foot radius)
   components:
@@ -789,7 +789,7 @@
 
 - title: Aura of Vitality
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (30-foot radius)
   components:
@@ -805,7 +805,7 @@
 
 - title: Awaken
   level: 5
-  school: transmutation
+  school: Transmutation
   castingTime: 8 hours
   range: Touch
   components:
@@ -836,7 +836,7 @@
 
 - title: Bane
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -861,7 +861,7 @@
 
 - title: Banishing Smite
   level: 5
-  school: abjuration
+  school: Abjuration
   castingTime: 1 bonus action
   range: Self
   components:
@@ -885,7 +885,7 @@
 
 - title: Banishment
   level: 4
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -925,7 +925,7 @@
 
 - title: Barkskin
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -942,7 +942,7 @@
 
 - title: Beacon of Hope
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: 30 feet
   components:
@@ -959,7 +959,7 @@
 
 - title: Beast Sense
   level: 2
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: Touch
@@ -979,7 +979,7 @@
 
 - title: Bestow Curse
   level: 3
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: Touch
   components:
@@ -1025,7 +1025,7 @@
 
 - title: Bigby’s Hand
   level: 5
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -1096,7 +1096,7 @@
 
 - title: Blade Barrier
   level: 6
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 90 feet
   components:
@@ -1135,7 +1135,7 @@
 
 - title: Bless
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -1157,7 +1157,7 @@
 
 - title: Blight
   level: 4
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 30 feet
   components:
@@ -1188,7 +1188,7 @@
 
 - title: Blinding Smite
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -1210,7 +1210,7 @@
 
 - title: Blindness / Deafness
   level: 2
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 30 feet
   components:
@@ -1230,7 +1230,7 @@
 
 - title: Blink
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Self
   components:
@@ -1262,7 +1262,7 @@
 
 - title: Blur
   level: 2
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Self
   components:
@@ -1279,7 +1279,7 @@
 
 - title: Branding Smite
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -1300,7 +1300,7 @@
 
 - title: Burning Hands
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (15-foot cone)
   components:
@@ -1325,7 +1325,7 @@
 
 - title: Call Lightning
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 120 feet
   components:
@@ -1364,7 +1364,7 @@
 
 - title: Calm Emotions
   level: 2
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -1394,7 +1394,7 @@
 
 - title: Chain Lightning
   level: 6
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 150 feet
   components:
@@ -1425,7 +1425,7 @@
 
 - title: Charm Person
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -1474,7 +1474,7 @@
 
 - title: Chromatic Orb
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 90 feet
   components:
@@ -1496,7 +1496,7 @@
 
 - title: Circle of Death
   level: 6
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 150 feet
   components:
@@ -1517,7 +1517,7 @@
 
 - title: Circle of Power
   level: 5
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self (30-foot radius)
   components:
@@ -1538,7 +1538,7 @@
 
 - title: Clairvoyance
   level: 3
-  school: divination
+  school: Divination
   castingTime: 10 minutes
   range: 1 mile
   components:
@@ -1568,7 +1568,7 @@
 
 - title: Clone
   level: 8
-  school: necromancy
+  school: Necromancy
   castingTime: 1 hour
   range: Touch
   components:
@@ -1598,7 +1598,7 @@
 
 - title: Cloud of Daggers
   level: 2
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -1620,7 +1620,7 @@
 
 - title: Cloudkill
   level: 5
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 120 feet
   components:
@@ -1653,7 +1653,7 @@
 
 - title: Color Spray
   level: 1
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Self (15-foot cone)
   components:
@@ -1684,7 +1684,7 @@
 
 - title: Command
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -1730,7 +1730,7 @@
 
 - title: Commune
   level: 5
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 minute
   range: Self
@@ -1763,7 +1763,7 @@
 
 - title: Commune with Nature
   level: 5
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 minute
   range: Self
@@ -1804,7 +1804,7 @@
 
 - title: Compelled Duel
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 bonus action
   range: 30 feet
   components:
@@ -1832,7 +1832,7 @@
 
 - title: Comprehend Languages
   level: 1
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: Self
@@ -1855,7 +1855,7 @@
 
 - title: Compulsion
   level: 4
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -1883,7 +1883,7 @@
 
 - title: Cone of Cold
   level: 5
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (60-foot cone)
   components:
@@ -1907,7 +1907,7 @@
 
 - title: Confusion
   level: 4
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 90 feet
   components:
@@ -1940,7 +1940,7 @@
 
 - title: Conjure Animals
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -1986,7 +1986,7 @@
 
 - title: Conjure Barrage
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Self (60-foot cone)
   components:
@@ -2006,7 +2006,7 @@
 
 - title: Conjure Celestial
   level: 7
-  school: conjuration
+  school: Conjuration
   castingTime: 1 minute
   range: 90 feet
   components:
@@ -2038,7 +2038,7 @@
 
 - title: Conjure Elemental
   level: 5
-  school: conjuration
+  school: Conjuration
   castingTime: 1 minute
   range: 90 feet
   components:
@@ -2103,7 +2103,7 @@
 
 - title: Conjure Fey
   level: 6
-  school: conjuration
+  school: Conjuration
   castingTime: 1 minute
   range: 90 feet
   components:
@@ -2146,7 +2146,7 @@
 
 - title: Conjure Minor Elementals
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 minute
   range: 90 feet
   components:
@@ -2190,7 +2190,7 @@
 
 - title: Conjure Volley
   level: 5
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 150 feet
   components:
@@ -2212,7 +2212,7 @@
 
 - title: Conjure Woodland Beings
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -2259,7 +2259,7 @@
 
 - title: Contact Other Plane
   level: 5
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 minute
   range: Self
@@ -2289,7 +2289,7 @@
 
 - title: Contagion
   level: 5
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: Touch
   components:
@@ -2351,7 +2351,7 @@
 
 - title: Contingency
   level: 6
-  school: evocation
+  school: Evocation
   castingTime: 10 minutes
   range: Self
   components:
@@ -2388,7 +2388,7 @@
 
 - title: Continual Flame
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Touch
   components:
@@ -2405,7 +2405,7 @@
 
 - title: Control Water
   level: 4
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 300 feet
   components:
@@ -2485,7 +2485,7 @@
 
 - title: Control Weather
   level: 8
-  school: transmutation
+  school: Transmutation
   castingTime: 10 minutes
   range: Self (5-mile radius)
   components:
@@ -2573,7 +2573,7 @@
 
 - title: Cordon of Arrows
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 5 feet
   components:
@@ -2604,7 +2604,7 @@
 
 - title: Counterspell
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime:
     value: 1 reaction
     hint: which you take when you see a creature within 60 feet of you casting a spell
@@ -2628,7 +2628,7 @@
 
 - title: Create Food and Water
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 30 feet
   components:
@@ -2645,7 +2645,7 @@
 
 - title: Create or Destroy Water
   level: 1
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -2676,7 +2676,7 @@
 
 - title: Create Undead
   level: 6
-  school: necromancy
+  school: Necromancy
   castingTime: 1 minute
   range: 10 feet
   components:
@@ -2733,7 +2733,7 @@
 
 - title: Creation
   level: 5
-  school: illusion
+  school: Illusion
   castingTime: 1 minute
   range: 30 feet
   components:
@@ -2765,7 +2765,7 @@
 
 - title: Crown of Madness
   level: 2
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 120 feet
   components:
@@ -2813,7 +2813,7 @@
 
 - title: Crusader’s Mantle
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self
   components:
@@ -2830,7 +2830,7 @@
 
 - title: Cure Wounds
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Touch
   components:
@@ -2873,7 +2873,7 @@
 
 - title: Darkness
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -2904,7 +2904,7 @@
 
 - title: Darkvision
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -2919,7 +2919,7 @@
 
 - title: Daylight
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -2945,7 +2945,7 @@
 
 - title: Death Ward
   level: 4
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -2969,7 +2969,7 @@
 
 - title: Delayed Blast Fireball
   level: 7
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 150 feet
   components:
@@ -3017,7 +3017,7 @@
 
 - title: Demiplane
   level: 8
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -3045,7 +3045,7 @@
 
 - title: Destructive Wave
   level: 5
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (30-foot radius)
   components:
@@ -3063,7 +3063,7 @@
 
 - title: Detect Evil and Good
   level: 1
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: Self
   components:
@@ -3086,7 +3086,7 @@
 
 - title: Detect Magic
   level: 1
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: Self
@@ -3109,7 +3109,7 @@
 
 - title: Detect Poison and Disease
   level: 1
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: Self
@@ -3132,7 +3132,7 @@
 
 - title: Detect Thoughts
   level: 2
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: Self
   components:
@@ -3190,7 +3190,7 @@
 
 - title: Dimension Door
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 500 feet
   components:
@@ -3219,7 +3219,7 @@
 
 - title: Disguise Self
   level: 1
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Self
   components:
@@ -3254,7 +3254,7 @@
 
 - title: Disintegrate
   level: 6
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -3295,7 +3295,7 @@
 
 - title: Dispel Evil and Good
   level: 5
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self
   components:
@@ -3334,7 +3334,7 @@
 
 - title: Dispel Magic
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: 120 feet
   components:
@@ -3356,7 +3356,7 @@
 
 - title: Dissonant Whispers
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -3380,7 +3380,7 @@
 
 - title: Divination
   level: 4
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: Self
@@ -3408,7 +3408,7 @@
 
 - title: Divine Favor
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -3423,7 +3423,7 @@
 
 - title: Divine Word
   level: 7
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: 30 feet
   components:
@@ -3457,7 +3457,7 @@
 
 - title: Dominate Beast
   level: 4
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -3506,7 +3506,7 @@
 
 - title: Dominate Monster
   level: 8
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -3550,7 +3550,7 @@
 
 - title: Dominate Person
   level: 5
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -3599,7 +3599,7 @@
 
 - title: Drawmij’s Instant Summons
   level: 6
-  school: conjuration
+  school: Conjuration
   ritual: true
   castingTime: 1 minute
   range: Touch
@@ -3635,7 +3635,7 @@
 
 - title: Dream
   level: 5
-  school: illusion
+  school: Illusion
   castingTime: 1 minute
   range: Special
   components:
@@ -3719,7 +3719,7 @@
 
 - title: Earthquake
   level: 8
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 500 feet
   components:
@@ -3806,7 +3806,7 @@
 
 - title: Elemental Weapon
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -3830,7 +3830,7 @@
 
 - title: Enhance Ability
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -3877,7 +3877,7 @@
 
 - title: Enlarge / Reduce
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -3923,7 +3923,7 @@
 
 - title: Ensnaring Strike
   level: 1
-  school: conjuration
+  school: Conjuration
   castingTime: 1 bonus action
   range: Self
   components:
@@ -3952,7 +3952,7 @@
 
 - title: Entangle
   level: 1
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 90 feet
   components:
@@ -3979,7 +3979,7 @@
 
 - title: Enthrall
   level: 2
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -4001,7 +4001,7 @@
 
 - title: Etherealness
   level: 7
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Self
   components:
@@ -4053,7 +4053,7 @@
 
 - title: Evard’s Black Tentacles
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 90 feet
   components:
@@ -4084,7 +4084,7 @@
 
 - title: Expeditious Retreat
   level: 1
-  school: transmutation
+  school: Transmutation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -4100,7 +4100,7 @@
 
 - title: Eyebite
   level: 6
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: Self
   components:
@@ -4139,7 +4139,7 @@
 
 - title: Fabricate
   level: 4
-  school: transmutation
+  school: Transmutation
   castingTime: 10 minutes
   range: 120 feet
   components:
@@ -4171,7 +4171,7 @@
 
 - title: Faerie Fire
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -4190,7 +4190,7 @@
 
 - title: False Life
   level: 1
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: Self
   components:
@@ -4208,7 +4208,7 @@
 
 - title: Fear
   level: 3
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Self (30-foot cone)
   components:
@@ -4234,7 +4234,7 @@
 
 - title: Feather Fall
   level: 1
-  school: transmutation
+  school: Transmutation
   castingTime:
     value: 1 reaction
     hint: which you take when you or a creature within 60 feet of you falls
@@ -4252,7 +4252,7 @@
 
 - title: Feeblemind
   level: 8
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 150 feet
   components:
@@ -4285,7 +4285,7 @@
 
 - title: Feign Death
   level: 3
-  school: necromancy
+  school: Necromancy
   ritual: true
   castingTime: 1 action
   range: Touch
@@ -4314,7 +4314,7 @@
 
 - title: Find Familiar
   level: 1
-  school: conjuration
+  school: Conjuration
   ritual: true
   castingTime: 1 hour
   range: 10 feet
@@ -4375,7 +4375,7 @@
 
 - title: Find Steed
   level: 2
-  school: conjuration
+  school: Conjuration
   castingTime: 10 minutes
   range: 30 feet
   components:
@@ -4422,7 +4422,7 @@
 
 - title: Find the Path
   level: 6
-  school: divination
+  school: Divination
   castingTime: 1 minute
   range: Self
   components:
@@ -4451,7 +4451,7 @@
 
 - title: Find Traps
   level: 2
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: 120 feet
   components:
@@ -4476,7 +4476,7 @@
 
 - title: Finger of Death
   level: 7
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 60 feet
   components:
@@ -4498,7 +4498,7 @@
 
 - title: Fireball
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 150 feet
   components:
@@ -4546,7 +4546,7 @@
 
 - title: Fire Shield
   level: 4
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self
   components:
@@ -4574,7 +4574,7 @@
 
 - title: Fire Storm
   level: 7
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 150 feet
   components:
@@ -4599,7 +4599,7 @@
 
 - title: Flame Blade
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -4629,7 +4629,7 @@
 
 - title: Flame Strike
   level: 5
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -4655,7 +4655,7 @@
 
 - title: Flaming Sphere
   level: 2
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -4696,7 +4696,7 @@
 
 - title: Flesh to Stone
   level: 6
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -4734,7 +4734,7 @@
 
 - title: Fly
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -4754,7 +4754,7 @@
 
 - title: Fog Cloud
   level: 1
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 120 feet
   components:
@@ -4775,7 +4775,7 @@
 
 - title: Forbiddance
   level: 6
-  school: abjuration
+  school: Abjuration
   ritual: true
   castingTime: 10 minutes
   range: Touch
@@ -4819,7 +4819,7 @@
 
 - title: Forcecage
   level: 7
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 100 feet
   components:
@@ -4864,7 +4864,7 @@
 
 - title: Foresight
   level: 9
-  school: divination
+  school: Divination
   castingTime: 1 minute
   range: Touch
   components:
@@ -4886,7 +4886,7 @@
 
 - title: Freedom of Movement
   level: 4
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -4930,7 +4930,7 @@
 
 - title: Gaseous Form
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -4967,7 +4967,7 @@
 
 - title: Gate
   level: 9
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -5009,7 +5009,7 @@
 
 - title: Geas
   level: 5
-  school: enchantment
+  school: Enchantment
   castingTime: 1 minute
   range: 60 feet
   components:
@@ -5045,7 +5045,7 @@
 
 - title: Gentle Repose
   level: 2
-  school: necromancy
+  school: Necromancy
   ritual: true
   castingTime: 1 action
   range: Touch
@@ -5067,7 +5067,7 @@
 
 - title: Giant Insect
   level: 4
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -5101,7 +5101,7 @@
 
 - title: Glibness
   level: 8
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Self
   components:
@@ -5116,7 +5116,7 @@
 
 - title: Globe of Invulnerability
   level: 6
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self (10-foot radius)
   components:
@@ -5145,7 +5145,7 @@
 
 - title: Glyph of Warding
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime: 1 hour
   range: Touch
   components:
@@ -5233,7 +5233,7 @@
 
 - title: Goodberry
   level: 1
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -5254,7 +5254,7 @@
 
 - title: Grasping Vine
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 bonus action
   range: 30 feet
   components:
@@ -5277,7 +5277,7 @@
 
 - title: Grease
   level: 1
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -5299,7 +5299,7 @@
 
 - title: Greater Invisibility
   level: 4
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Touch
   components:
@@ -5314,7 +5314,7 @@
 
 - title: Greater Restoration
   level: 5
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -5340,7 +5340,7 @@
 
 - title: Guardian of Faith
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 30 feet
   components:
@@ -5363,7 +5363,7 @@
 
 - title: Guards and Wards
   level: 6
-  school: abjuration
+  school: Abjuration
   castingTime: 10 minutes
   range: Touch
   components:
@@ -5458,7 +5458,7 @@
 
 - title: Guiding Bolt
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -5479,7 +5479,7 @@
 
 - title: Gust of Wind
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (60-foot line)
   components:
@@ -5514,7 +5514,7 @@
 
 - title: Hail of Thorns
   level: 1
-  school: conjuration
+  school: Conjuration
   castingTime: 1 bonus action
   range: Self
   components:
@@ -5537,7 +5537,7 @@
 
 - title: Hallow
   level: 5
-  school: evocation
+  school: Evocation
   castingTime: 24 hours
   range: Touch
   components:
@@ -5625,7 +5625,7 @@
 
 - title: Hallucinatory Terrain
   level: 4
-  school: illusion
+  school: Illusion
   castingTime: 10 minutes
   range: 300 feet
   components:
@@ -5658,7 +5658,7 @@
 
 - title: Harm
   level: 6
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 60 feet
   components:
@@ -5679,7 +5679,7 @@
 
 - title: Haste
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -5704,7 +5704,7 @@
 
 - title: Heal
   level: 6
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -5724,7 +5724,7 @@
 
 - title: Healing Word
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: 60 feet
   components:
@@ -5742,7 +5742,7 @@
 
 - title: Heat Metal
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -5771,7 +5771,7 @@
 
 - title: Hellish Rebuke
   level: 1
-  school: evocation
+  school: Evocation
   castingTime:
     value: 1 reaction
     hint: which you take in response to being damaged by a creature within 60 feet of you that you can see
@@ -5793,7 +5793,7 @@
 
 - title: Heroes’ Feast
   level: 6
-  school: conjuration
+  school: Conjuration
   castingTime: 10 minutes
   range: 30 feet
   components:
@@ -5819,7 +5819,7 @@
 
 - title: Heroism
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: Touch
   components:
@@ -5841,7 +5841,7 @@
 
 - title: Hex
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 bonus action
   range: 90 feet
   components:
@@ -5874,7 +5874,7 @@
 
 - title: Hold Monster
   level: 5
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 90 feet
   components:
@@ -5899,7 +5899,7 @@
 
 - title: Hold Person
   level: 2
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -5923,7 +5923,7 @@
 
 - title: Holy Aura
   level: 8
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self
   components:
@@ -5947,7 +5947,7 @@
 
 - title: Hunger of Hadar
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 150 feet
   components:
@@ -5976,7 +5976,7 @@
 
 - title: Hunter’s Mark
   level: 1
-  school: divination
+  school: Divination
   castingTime: 1 bonus action
   range: 90 feet
   components:
@@ -6001,7 +6001,7 @@
 
 - title: Hypnotic Pattern
   level: 3
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 120 feet
   components:
@@ -6026,7 +6026,7 @@
 
 - title: Ice Storm
   level: 4
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 300 feet
   components:
@@ -6052,7 +6052,7 @@
 
 - title: Identify
   level: 1
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 minute
   range: Touch
@@ -6077,7 +6077,7 @@
 
 - title: Illusory Script
   level: 1
-  school: illusion
+  school: Illusion
   ritual: true
   castingTime: 1 minute
   range: Touch
@@ -6111,7 +6111,7 @@
 
 - title: Imprisonment
   level: 9
-  school: abjuration
+  school: Abjuration
   castingTime: 1 minute
   range: 30 feet
   components:
@@ -6203,7 +6203,7 @@
 
 - title: Incendiary Cloud
   level: 8
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 150 feet
   components:
@@ -6234,7 +6234,7 @@
 
 - title: Inflict Wounds
   level: 1
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: Touch
   components:
@@ -6251,7 +6251,7 @@
 
 - title: Insect Plague
   level: 5
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 300 feet
   components:
@@ -6281,7 +6281,7 @@
 
 - title: Invisibility
   level: 2
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Touch
   components:
@@ -6302,7 +6302,7 @@
 
 - title: Jump
   level: 1
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -6316,7 +6316,7 @@
 
 - title: Knock
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -6345,7 +6345,7 @@
 
 - title: Legend Lore
   level: 5
-  school: divination
+  school: Divination
   castingTime: 10 minutes
   range: Self
   components:
@@ -6376,7 +6376,7 @@
 
 - title: Leomund’s Secret Chest
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -6409,7 +6409,7 @@
 
 - title: Leomund’s Tiny Hut
   level: 3
-  school: evocation
+  school: Evocation
   ritual: true
   castingTime: 1 minute
   range: Self (10-foot-radius hemisphere)
@@ -6440,7 +6440,7 @@
 
 - title: Lesser Restoration
   level: 2
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -6454,7 +6454,7 @@
 
 - title: Levitate
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -6510,7 +6510,7 @@
 
 - title: Lightning Arrow
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -6542,7 +6542,7 @@
 
 - title: Lightning Bolt
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (100-foot line)
   components:
@@ -6567,7 +6567,7 @@
 
 - title: Locate Animals or Plants
   level: 2
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: Self
@@ -6585,7 +6585,7 @@
 
 - title: Locate Creature
   level: 4
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: Self
   components:
@@ -6616,7 +6616,7 @@
 
 - title: Locate Object
   level: 2
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: Self
   components:
@@ -6645,7 +6645,7 @@
 
 - title: Longstrider
   level: 1
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -6663,7 +6663,7 @@
 
 - title: Mage Armor
   level: 1
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -6707,7 +6707,7 @@
 
 - title: Magic Circle
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime: 1 minute
   range: 10 feet
   components:
@@ -6754,7 +6754,7 @@
 
 - title: Magic Jar
   level: 6
-  school: necromancy
+  school: Necromancy
   castingTime: 1 minute
   range: Self
   components:
@@ -6817,7 +6817,7 @@
 
 - title: Magic Missile
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -6837,7 +6837,7 @@
 
 - title: Magic Mouth
   level: 2
-  school: illusion
+  school: Illusion
   ritual: true
   castingTime: 1 minute
   range: 30 feet
@@ -6878,7 +6878,7 @@
 
 - title: Magic Weapon
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 bonus action
   range: Touch
   components:
@@ -6898,7 +6898,7 @@
 
 - title: Major Image
   level: 3
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 120 feet
   components:
@@ -6947,7 +6947,7 @@
 
 - title: Mass Cure Wounds
   level: 5
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -6968,7 +6968,7 @@
 
 - title: Mass Heal
   level: 9
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -6986,7 +6986,7 @@
 
 - title: Mass Healing Word
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: 60 feet
   components:
@@ -7004,7 +7004,7 @@
 
 - title: Mass Suggestion
   level: 6
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -7050,7 +7050,7 @@
 
 - title: Maze
   level: 8
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -7076,7 +7076,7 @@
 
 - title: Meld into Stone
   level: 3
-  school: transmutation
+  school: Transmutation
   ritual: true
   castingTime: 1 action
   range: Touch
@@ -7114,7 +7114,7 @@
 
 - title: Melf’s Acid Arrow
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 90 feet
   components:
@@ -7185,7 +7185,7 @@
 
 - title: Meteor Swarm
   level: 9
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 1 mile
   components:
@@ -7209,7 +7209,7 @@
 
 - title: Mind Blank
   level: 8
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -7262,7 +7262,7 @@
 
 - title: Mirage Arcane
   level: 7
-  school: illusion
+  school: Illusion
   castingTime: 10 minutes
   range: Sight
   components:
@@ -7301,7 +7301,7 @@
 
 - title: Mirror Image
   level: 2
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Self
   components:
@@ -7340,7 +7340,7 @@
 
 - title: Mislead
   level: 5
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Self
   components:
@@ -7368,7 +7368,7 @@
 
 - title: Misty Step
   level: 2
-  school: conjuration
+  school: Conjuration
   castingTime: 1 bonus action
   range: Self
   components:
@@ -7380,7 +7380,7 @@
 
 - title: Modify Memory
   level: 5
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -7440,7 +7440,7 @@
 
 - title: Moonbeam
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -7480,7 +7480,7 @@
 
 - title: Mordenkainen’s Faithful Hound
   level: 4
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 30 feet
   components:
@@ -7512,7 +7512,7 @@
 
 - title: Mordenkainen’s Magnificent Mansion
   level: 7
-  school: conjuration
+  school: Conjuration
   castingTime: 1 minute
   range: 300 feet
   components:
@@ -7545,7 +7545,7 @@
 
 - title: Mordenkainen’s Private Sanctum
   level: 4
-  school: abjuration
+  school: Abjuration
   castingTime: 10 minutes
   range: 120 feet
   components:
@@ -7594,7 +7594,7 @@
 
 - title: Mordenkainen’s Sword
   level: 7
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -7614,7 +7614,7 @@
 
 - title: Move Earth
   level: 6
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -7661,7 +7661,7 @@
 
 - title: Nondetection
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -7679,7 +7679,7 @@
 
 - title: Nystul’s Magic Aura
   level: 2
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: Touch
   components:
@@ -7721,7 +7721,7 @@
 
 - title: Otiluke’s Freezing Sphere
   level: 6
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 300 feet
   components:
@@ -7765,7 +7765,7 @@
 
 - title: Otiluke’s Resilient Sphere
   level: 4
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -7804,7 +7804,7 @@
 
 - title: Otto’s Irresistible Dance
   level: 6
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -7829,7 +7829,7 @@
 
 - title: Pass without Trace
   level: 2
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Self
   components:
@@ -7849,7 +7849,7 @@
 
 - title: Passwall
   level: 5
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -7873,7 +7873,7 @@
 
 - title: Phantasmal Force
   level: 2
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 60 feet
   components:
@@ -7928,7 +7928,7 @@
 
 - title: Phantasmal Killer
   level: 4
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 120 feet
   components:
@@ -7953,7 +7953,7 @@
 
 - title: Phantom Steed
   level: 3
-  school: illusion
+  school: Illusion
   ritual: true
   castingTime: 1 minute
   range: 30 feet
@@ -7983,7 +7983,7 @@
 
 - title: Planar Ally
   level: 6
-  school: conjuration
+  school: Conjuration
   castingTime: 10 minutes
   range: 60 feet
   components:
@@ -8047,7 +8047,7 @@
 
 - title: Planar Binding
   level: 5
-  school: abjuration
+  school: Abjuration
   castingTime: 1 hour
   range: 60 feet
   components:
@@ -8091,7 +8091,7 @@
 
 - title: Plane Shift
   level: 7
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -8131,7 +8131,7 @@
 
 - title: Plant Growth
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action or 8 hours
   range: 150 feet
   components:
@@ -8181,7 +8181,7 @@
 
 - title: Polymorph
   level: 4
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -8227,7 +8227,7 @@
 
 - title: Power Word Heal
   level: 9
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Touch
   components:
@@ -8244,7 +8244,7 @@
 
 - title: Power Word Kill
   level: 9
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -8258,7 +8258,7 @@
 
 - title: Power Word Stun
   level: 8
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
@@ -8277,7 +8277,7 @@
 
 - title: Prayer of Healing
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 10 minutes
   range: 30 feet
   components:
@@ -8335,7 +8335,7 @@
 
 - title: Prismatic Spray
   level: 7
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (60-foot cone)
   components:
@@ -8388,7 +8388,7 @@
 
 - title: Prismatic Wall
   level: 9
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -8517,7 +8517,7 @@
 
 - title: Programmed Illusion
   level: 6
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 120 feet
   components:
@@ -8562,7 +8562,7 @@
 
 - title: Project Image
   level: 7
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 500 miles
   components:
@@ -8605,7 +8605,7 @@
 
 - title: Protection from Energy
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -8620,7 +8620,7 @@
 
 - title: Protection from Evil and Good
   level: 1
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -8646,7 +8646,7 @@
 
 - title: Protection from Poison
   level: 2
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -8666,7 +8666,7 @@
 
 - title: Purify Food and Drink
   level: 1
-  school: transmutation
+  school: Transmutation
   ritual: true
   castingTime: 1 action
   range: 10 feet
@@ -8681,7 +8681,7 @@
 
 - title: Raise Dead
   level: 5
-  school: necromancy
+  school: Necromancy
   castingTime: 1 hour
   range: Touch
   components:
@@ -8716,7 +8716,7 @@
 
 - title: Rary’s Telepathic Bond
   level: 5
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: 30 feet
@@ -8741,7 +8741,7 @@
 
 - title: Ray of Enfeeblement
   level: 2
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 60 feet
   components:
@@ -8782,7 +8782,7 @@
 
 - title: Ray of Sickness
   level: 1
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 60 feet
   components:
@@ -8805,7 +8805,7 @@
 
 - title: Regenerate
   level: 7
-  school: transmutation
+  school: Transmutation
   castingTime: 1 minute
   range: Touch
   components:
@@ -8830,7 +8830,7 @@
 
 - title: Reincarnate
   level: 5
-  school: transmutation
+  school: Transmutation
   castingTime: 1 hour
   range: Touch
   components:
@@ -8891,7 +8891,7 @@
 
 - title: Remove Curse
   level: 3
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -8924,7 +8924,7 @@
 
 - title: Resurrection
   level: 7
-  school: necromancy
+  school: Necromancy
   castingTime: 1 hour
   range: Touch
   components:
@@ -8964,7 +8964,7 @@
 
 - title: Reverse Gravity
   level: 7
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 100 feet
   components:
@@ -8996,7 +8996,7 @@
 
 - title: Revivify
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -9012,7 +9012,7 @@
 
 - title: Rope Trick
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -9062,7 +9062,7 @@
 
 - title: Sanctuary
   level: 1
-  school: abjuration
+  school: Abjuration
   castingTime: 1 bonus action
   range: 30 feet
   components:
@@ -9085,7 +9085,7 @@
 
 - title: Scorching Ray
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -9104,7 +9104,7 @@
 
 - title: Scrying
   level: 5
-  school: divination
+  school: Divination
   castingTime: 10 minutes
   range: Self
   components:
@@ -9162,7 +9162,7 @@
 
 - title: Searing Smite
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -9191,7 +9191,7 @@
 
 - title: See Invisibility
   level: 2
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: Self
   components:
@@ -9207,7 +9207,7 @@
 
 - title: Seeming
   level: 5
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 30 feet
   components:
@@ -9249,7 +9249,7 @@
 
 - title: Sending
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Unlimited
   components:
@@ -9274,7 +9274,7 @@
 
 - title: Sequester
   level: 7
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -9305,7 +9305,7 @@
 
 - title: Shapechange
   level: 9
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Self
   components:
@@ -9369,7 +9369,7 @@
 
 - title: Shatter
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -9397,7 +9397,7 @@
 
 - title: Shield
   level: 1
-  school: abjuration
+  school: Abjuration
   castingTime:
     value: 1 reaction
     hint: which you take when you are hit by an attack or targeted by the magic missile spell
@@ -9414,7 +9414,7 @@
 
 - title: Shield of Faith
   level: 1
-  school: abjuration
+  school: Abjuration
   castingTime: 1 bonus action
   range: 60 feet
   components:
@@ -9471,7 +9471,7 @@
 
 - title: Silence
   level: 2
-  school: illusion
+  school: Illusion
   ritual: true
   castingTime: 1 action
   range: 120 feet
@@ -9491,7 +9491,7 @@
 
 - title: Silent Image
   level: 1
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 60 feet
   components:
@@ -9524,7 +9524,7 @@
 
 - title: Simulacrum
   level: 7
-  school: illusion
+  school: Illusion
   castingTime: 12 hours
   range: Touch
   components:
@@ -9566,7 +9566,7 @@
 
 - title: Sleep
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 90 feet
   components:
@@ -9603,7 +9603,7 @@
 
 - title: Sleet Storm
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 150 feet
   components:
@@ -9630,7 +9630,7 @@
 
 - title: Slow
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -9681,7 +9681,7 @@
 
 - title: Speak with Animals
   level: 1
-  school: divination
+  school: Divination
   ritual: true
   castingTime: 1 action
   range: Self
@@ -9702,7 +9702,7 @@
 
 - title: Speak with Dead
   level: 3
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: 10 feet
   components:
@@ -9729,7 +9729,7 @@
 
 - title: Speak with Plants
   level: 3
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Self (30-foot radius)
   components:
@@ -9770,7 +9770,7 @@
 
 - title: Spider Climb
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -9788,7 +9788,7 @@
 
 - title: Spike Growth
   level: 2
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 150 feet
   components:
@@ -9813,7 +9813,7 @@
 
 - title: Spirit Guardians
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Self (15-foot radius)
   components:
@@ -9843,7 +9843,7 @@
 
 - title: Spiritual Weapon
   level: 2
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: 60 feet
   components:
@@ -9876,7 +9876,7 @@
 
 - title: Staggering Smite
   level: 4
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -9894,7 +9894,7 @@
 
 - title: Stinking Cloud
   level: 3
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 90 feet
   components:
@@ -9922,7 +9922,7 @@
 
 - title: Stone Shape
   level: 4
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Touch
   components:
@@ -9943,7 +9943,7 @@
 
 - title: Stoneskin
   level: 4
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -9960,7 +9960,7 @@
 
 - title: Storm of Vengeance
   level: 9
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Sight
   components:
@@ -10015,7 +10015,7 @@
 
 - title: Suggestion
   level: 2
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -10055,7 +10055,7 @@
 
 - title: Sunbeam
   level: 6
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (60-foot line)
   components:
@@ -10085,7 +10085,7 @@
 
 - title: Sunburst
   level: 8
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 150 feet
   components:
@@ -10113,7 +10113,7 @@
 
 - title: Swift Quiver
   level: 5
-  school: transmutation
+  school: Transmutation
   castingTime: 1 bonus action
   range: Touch
   components:
@@ -10139,7 +10139,7 @@
 
 - title: Symbol
   level: 7
-  school: abjuration
+  school: Abjuration
   castingTime: 1 minute
   range: Touch
   components:
@@ -10242,7 +10242,7 @@
 
 - title: Tasha’s Hideous Laughter
   level: 1
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 30 feet
   components:
@@ -10268,7 +10268,7 @@
 
 - title: Telekinesis
   level: 5
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 60 feet
   components:
@@ -10324,7 +10324,7 @@
 
 - title: Telepathy
   level: 8
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Unlimited
   components:
@@ -10351,7 +10351,7 @@
 
 - title: Teleport
   level: 7
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 10 feet
   components:
@@ -10453,7 +10453,7 @@
 
 - title: Teleportation Circle
   level: 5
-  school: conjuration
+  school: Conjuration
   castingTime: 1 minute
   range: 10 feet
   components:
@@ -10493,7 +10493,7 @@
 
 - title: Tenser’s Floating Disk
   level: 1
-  school: conjuration
+  school: Conjuration
   ritual: true
   castingTime: 1 action
   range: 30 feet
@@ -10588,7 +10588,7 @@
 
 - title: Thunderous Smite
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -10606,7 +10606,7 @@
 
 - title: Thunderwave
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: Self (15-foot cube)
   components:
@@ -10633,7 +10633,7 @@
 
 - title: Time Stop
   level: 9
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: Self
   components:
@@ -10655,7 +10655,7 @@
 
 - title: Tongues
   level: 3
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: Touch
   components:
@@ -10671,7 +10671,7 @@
 
 - title: Transport via Plants
   level: 6
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 10 feet
   components:
@@ -10689,7 +10689,7 @@
 
 - title: Tree Stride
   level: 5
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Self
   components:
@@ -10714,7 +10714,7 @@
 
 - title: True Polymorph
   level: 9
-  school: transmutation
+  school: Transmutation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -10791,7 +10791,7 @@
 
 - title: True Resurrection
   level: 9
-  school: necromancy
+  school: Necromancy
   castingTime: 1 hour
   range: Touch
   components:
@@ -10817,7 +10817,7 @@
 
 - title: True Seeing
   level: 6
-  school: divination
+  school: Divination
   castingTime: 1 action
   range: Touch
   components:
@@ -10850,7 +10850,7 @@
 
 - title: Tsunami
   level: 8
-  school: conjuration
+  school: Conjuration
   castingTime: 1 minute
   range: Sight
   components:
@@ -10893,7 +10893,7 @@
 
 - title: Unseen Servant
   level: 1
-  school: conjuration
+  school: Conjuration
   ritual: true
   castingTime: 1 action
   range: 60 feet
@@ -10924,7 +10924,7 @@
 
 - title: Vampiric Touch
   level: 3
-  school: necromancy
+  school: Necromancy
   castingTime: 1 action
   range: Self
   components:
@@ -10966,7 +10966,7 @@
 
 - title: Wall of Fire
   level: 4
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -11002,7 +11002,7 @@
 
 - title: Wall of Force
   level: 5
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -11034,7 +11034,7 @@
 
 - title: Wall of Ice
   level: 6
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -11077,7 +11077,7 @@
 
 - title: Wall of Stone
   level: 5
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -11132,7 +11132,7 @@
 
 - title: Wall of Thorns
   level: 6
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 120 feet
   components:
@@ -11172,7 +11172,7 @@
 
 - title: Warding Bond
   level: 2
-  school: abjuration
+  school: Abjuration
   castingTime: 1 action
   range: Touch
   components:
@@ -11197,7 +11197,7 @@
 
 - title: Water Breathing
   level: 3
-  school: transmutation
+  school: Transmutation
   ritual: true
   castingTime: 1 action
   range: 30 feet
@@ -11214,7 +11214,7 @@
 
 - title: Water Walk
   level: 3
-  school: transmutation
+  school: Transmutation
   ritual: true
   castingTime: 1 action
   range: 30 feet
@@ -11239,7 +11239,7 @@
 
 - title: Web
   level: 2
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 60 feet
   components:
@@ -11277,7 +11277,7 @@
 
 - title: Weird
   level: 9
-  school: illusion
+  school: Illusion
   castingTime: 1 action
   range: 120 feet
   components:
@@ -11301,7 +11301,7 @@
 
 - title: Wind Walk
   level: 6
-  school: transmutation
+  school: Transmutation
   castingTime: 1 minute
   range: 30 feet
   components:
@@ -11330,7 +11330,7 @@
 
 - title: Wind Wall
   level: 3
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 120 feet
   components:
@@ -11366,7 +11366,7 @@
 
 - title: Wish
   level: 9
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: Self
   components:
@@ -11444,7 +11444,7 @@
 
 - title: Witch Bolt
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 action
   range: 30 feet
   components:
@@ -11471,7 +11471,7 @@
 
 - title: Word of Recall
   level: 6
-  school: conjuration
+  school: Conjuration
   castingTime: 1 action
   range: 5 feet
   components:
@@ -11495,7 +11495,7 @@
 
 - title: Wrathful Smite
   level: 1
-  school: evocation
+  school: Evocation
   castingTime: 1 bonus action
   range: Self
   components:
@@ -11513,7 +11513,7 @@
 
 - title: Zone of Truth
   level: 2
-  school: enchantment
+  school: Enchantment
   castingTime: 1 action
   range: 60 feet
   components:
