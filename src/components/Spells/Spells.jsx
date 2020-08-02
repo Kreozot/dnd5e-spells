@@ -17,6 +17,7 @@ export default function Spells(props) {
     if (!classSpells.length) {
       return data;
     }
+    console.log(classSpells);
     return data.filter(
       (spell) => classSpells.some(
         (title) => title.toLowerCase() === spell.title.toLowerCase()

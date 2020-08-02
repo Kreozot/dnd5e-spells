@@ -48,6 +48,7 @@ export default function ClassFilterSelector(props) {
 
   const handleClassChange = useCallback((event) => {
     setClassFilter(event.target.value);
+    setAdditionalFilter('');
   }, []);
 
   const handleAdditionalChange = useCallback((event) => {
