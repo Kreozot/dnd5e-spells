@@ -178,7 +178,8 @@ cleric:
     - Remove Curse
     - Revivify
     - Sending
-    - Speak with DeadSpirit Guardians
+    - Speak with Dead
+    - Spirit Guardians
     - Tongues
     - Water Walk
     - Banishment
@@ -521,10 +522,11 @@ paladin:
     - Aura of Vitality
     - Blinding Smite
     - Create Food and Water
-    - Crusader's Mantle
+    - Crusader’s Mantle
     - Daylight
     - Dispel Magic
-    - Elemental WeaponMagic Circle
+    - Elemental Weapon
+    - Magic Circle
     - Remove Curse
     - Revivify
     - Aura of Life
@@ -535,7 +537,7 @@ paladin:
     - Staggering Smite
     - Banishing Smite
     - Circle of Power
-    - Destructive Smite
+    - Destructive Wave # fixed from Desctructive Smite
     - Dispel Evil and Good
     - Geas
     - Raise Dead
@@ -779,7 +781,7 @@ sorcerer:
       - hallow
     The Great Old One:
       - dissonant whispers
-      - Tasha's hideous laughter
+      - Tasha’s hideous laughter
       - detect thoughts
       - phantasmal force
       - clairvoyance
@@ -904,8 +906,7 @@ wizard:
     - Longstrider
     - Mage Armor
     - Magic Missile
-    - Protection from
-    - Evil and Good
+    - Protection from Evil and Good
     - Ray of Sickness
     - Shield
     - Silent Image
@@ -985,17 +986,16 @@ wizard:
     - Conjure Minor Elementals
     - Control Water
     - Dimension Door
-    - Evard's Black Tentacles
+    - Evard’s Black Tentacles
     - Fabricate
     - Fire Shield
     - Greater Invisibility
     - Hallucinatory Terrain
     - Ice Storm
-    - Leomund’s Secret ChestLocate Creature
-    - Mordenkainen’s
-    - Faithful Hound
-    - Mordenkainen’s
-    - Private Sanctum
+    - Leomund’s Secret Chest
+    - Locate Creature
+    - Mordenkainen’s Faithful Hound
+    - Mordenkainen’s Private Sanctum
     - Otiluke’s Resilient Sphere
     - Phantasmal Killer
     - Polymorph
@@ -1004,7 +1004,7 @@ wizard:
     - Wall of Fire
     - Animate Objects
     - Bigby’s Hand
-    - CloudkilI
+    - Cloudkill
     - Cone of Cold
     - Conjure Elemental
     - Contact Other Plane
@@ -1031,8 +1031,7 @@ wizard:
     - Contingency
     - Create Undead
     - Disintegrate
-    - Drawmij’s Instant
-    - Summons
+    - Drawmij’s Instant Summons
     - Eyebite
     - Flesh to Stone
     - Globe of Invulnerability
@@ -1051,8 +1050,7 @@ wizard:
     - Finger of Death
     - Forcecage
     - Mirage Arcane
-    - Mordenkainen's
-    - Magnificent Mansion
+    - Mordenkainen’s Magnificent Mansion
     - Mordenkainen’s Sword
     - Plane Shift
     - Prismatic Spray
@@ -1075,7 +1073,7 @@ wizard:
     - Power Word Stun
     - Sunburst
     - Telepathy
-    - Trap the Soul
+    # - Trap the Soul # Not found in spells list in PHB
     - Astral Projection
     - Foresight
     - Gate

@@ -4694,7 +4694,7 @@
     spell slot of 3rd level or higher, the damage increases by
     1d6 for each slot level above 2nd.
 
-- title: Fleshto Stone
+- title: Flesh to Stone
   level: 6
   school: transmutation
   castingTime: 1 action
@@ -5361,7 +5361,7 @@
     half as much damage on a successful one. The guardian
     vanishes when it has dealt a total of 60 damage.
 
-- title: Guardsand Wards
+- title: Guards and Wards
   level: 6
   school: abjuration
   castingTime: 10 minutes
@@ -6565,7 +6565,7 @@
     spell slot of 4th level or higher, the damage increases by
     1d6 for each slot level above 3rd.
 
-- title: Locate Animalsor Plants
+- title: Locate Animals or Plants
   level: 2
   school: divination
   ritual: true
@@ -7074,7 +7074,7 @@
     space it left or, if that space is occupied, in the nearest
     unoccupied space.
 
-- title: Meldinto Stone
+- title: Meld into Stone
   level: 3
   school: transmutation
   ritual: true
@@ -8603,7 +8603,7 @@
     can see through the image, and any noise it makes
     sounds hollow to the creature.
 
-- title: Protectionfrom Energy
+- title: Protection from Energy
   level: 3
   school: abjuration
   castingTime: 1 action
@@ -8618,7 +8618,7 @@
     resistance to one damage type of your choice: acid, cold,
     fire, lightning, or thunder.
 
-- title: Protectionfrom Evil and Good
+- title: Protection from Evil and Good
   level: 1
   school: abjuration
   castingTime: 1 action
@@ -8644,7 +8644,7 @@
     has advantage on any new saving throw against the
     relevant effect.
 
-- title: Protectionfrom Poison
+- title: Protection from Poison
   level: 2
   school: abjuration
   castingTime: 1 action
@@ -8664,7 +8664,7 @@
     throws against being poisoned, and it has resistance to
     poison damage.
 
-- title: Purify Foodand Drink
+- title: Purify Food and Drink
   level: 1
   school: transmutation
   ritual: true
@@ -9665,7 +9665,7 @@
     Wisdom saving throw at the end of its turn. On a
     successful save, the effect ends for it.
 
-- title: Sparethe Dying
+- title: Spare the Dying
   level: cantrip
   school: Necromancy
   castingTime: 1 action
@@ -9679,7 +9679,7 @@
     creature becomes stable. This spell has no effect on
     undead or constructs.
 
-- title: Speakwith Animals
+- title: Speak with Animals
   level: 1
   school: divination
   ritual: true
@@ -9700,7 +9700,7 @@
     persuade a beast to perform a small favor for you, at the
     D M’s discretion.
 
-- title: Speakwith Dead
+- title: Speak with Dead
   level: 3
   school: necromancy
   castingTime: 1 action
@@ -9727,7 +9727,7 @@
     doesn’t com prehend anything that has happened since it
     died, and can’t speculate about future events.
 
-- title: Speakwith Plants
+- title: Speak with Plants
   level: 3
   school: transmutation
   castingTime: 1 action
@@ -9920,7 +9920,7 @@
     the cloud after 4 rounds. A strong wind (at least 20
     miles per hour) disperses it after 1 round.
 
-- title: Stone Shape.
+- title: Stone Shape
   level: 4
   school: transmutation
   castingTime: 1 action
@@ -10669,7 +10669,7 @@
     least one language and can hear the target understands
     what it says.
 
-- title: Transportvia Plants
+- title: Transport via Plants
   level: 6
   school: conjuration
   castingTime: 1 action
