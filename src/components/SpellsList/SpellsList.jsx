@@ -33,17 +33,17 @@ export default function SpellsList(props) {
         value
           ? <IconCell title="Ritual"><RitualIcon/></IconCell>
           : null
-      )
+      ),
     },
     {
       Header: () => <div className={ styles.headerCenter }>Components</div>,
       accessor: 'components',
-      Cell: ({ value }) => (<Components components={ value }/>)
+      Cell: ({ value }) => (<Components components={ value }/>),
     },
     {
       Header: () => 'Casting time',
       accessor: 'castingTime',
-      Cell: ({ value }) => (<TextWithHint>{ value }</TextWithHint>)
+      Cell: ({ value }) => (<TextWithHint>{ value }</TextWithHint>),
     },
     {
       Header: 'Range',
@@ -56,7 +56,7 @@ export default function SpellsList(props) {
         value
           ? <IconCell title="Concentration"><ConcentrateIcon/></IconCell>
           : null
-      )
+      ),
     },
     {
       Header: 'Duration',

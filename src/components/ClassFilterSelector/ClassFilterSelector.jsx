@@ -67,7 +67,7 @@ export default function ClassFilterSelector(props) {
             className={ styles.select }
           >
             <MenuItem value="">
-              <em>All</em>
+              <em>None</em>
             </MenuItem>
             { additionalOptions.map((option) => (
               <MenuItem value={ option } key={ option }>{ option }</MenuItem>
