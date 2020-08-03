@@ -41,7 +41,7 @@ export default function Components(props) {
         { materialText }
       </>
     );
-  }, [components.M]);
+  }, [components]);
 
   return (
     <div className={ styles.container }>

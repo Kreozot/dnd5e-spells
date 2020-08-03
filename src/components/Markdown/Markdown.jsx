@@ -1,7 +1,7 @@
 import React from 'react';
 import MarkdownToJsx from 'markdown-to-jsx';
 
-import LevelUpgrades from 'components/LevelUpgrades';
+import LevelUpgrades from './LevelUpgrades';
 
 export default function Markdown(props) {
   const { children, currentLevel } = props;

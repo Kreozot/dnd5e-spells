@@ -1,6 +1,5 @@
 import React, { useMemo, Fragment } from 'react';
 import { useTable, useExpanded } from 'react-table';
-import Markdown from 'markdown-to-jsx';
 
 import Components from './Components';
 import TextWithHint from './TextWithHint';

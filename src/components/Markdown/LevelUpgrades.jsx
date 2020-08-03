@@ -14,7 +14,7 @@ export default function LevelUpgrades(props) {
         result.push({ level: parseInt(level), value });
         return result;
       }, [])
-  }, [upgrades, currentLevel]);
+  }, [upgrades]);
 
   const currentValue = useMemo(() => {
     const availableUpgrades = upgradesMap.filter(({ level }) => level <= currentLevel);
@@ -31,7 +31,7 @@ export default function LevelUpgrades(props) {
         { upgradesMap.map(({ level, value }) => <li>{ value } after you reach { level } level</li>) }
       </ul>
     )
-  }, [upgrades]);
+  }, [initial, upgradesMap]);
 
   return (
     <Tooltip text={ tooltipText }>

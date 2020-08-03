@@ -1,5 +1,4 @@
-import React, { useMemo, Fragment } from 'react';
-import { useTable, useExpanded } from 'react-table';
+import React from 'react';
 
 import Markdown from 'components/Markdown';
 

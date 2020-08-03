@@ -1,7 +1,5 @@
 import React, { useCallback } from 'react';
 import TextField from '@material-ui/core/TextField';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
 
 import styles from './CurrentLevelSelector.module.scss';
 
