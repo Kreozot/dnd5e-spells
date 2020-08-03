@@ -19,6 +19,10 @@
   p {
     text-indent: 1em;
   }
+
+  strong {
+    white-space: pre-wrap;
+  }
 }
 
 .description > div > * + * {
