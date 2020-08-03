@@ -2607,7 +2607,7 @@
   school: Abjuration
   castingTime:
     value: 1 reaction
-    hint: which you take when you see a creature within **60 feet** of you casting a spell
+    hint: which you take when you see a creature within 60 feet of you casting a spell
   range: 60 feet
   components:
     S: true
@@ -4237,7 +4237,7 @@
   school: Transmutation
   castingTime:
     value: 1 reaction
-    hint: which you take when you or a creature within **60 feet** of you falls
+    hint: which you take when you or a creature within 60 feet of you falls
   range: 60 feet
   components:
     V: true
@@ -5774,7 +5774,7 @@
   school: Evocation
   castingTime:
     value: 1 reaction
-    hint: which you take in response to being damaged by a creature within **60 feet** of you that you can see
+    hint: which you take in response to being damaged by a creature within 60 feet of you that you can see
   range: 60 feet
   components:
     V: true
@@ -9436,7 +9436,10 @@
   components:
     V: true
     S: true
-    M: mistletoe, a sham rock leaf, and a club or quarterstaff
+    M:
+      - mistletoe
+      - a sham rock leaf
+      - a club or quarterstaff
   duration: 1 minute
   description: >
     The wood of a club or quarterstaff you are holding is
