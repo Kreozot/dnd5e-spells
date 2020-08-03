@@ -25,8 +25,7 @@ function format(text) {
 }
 
 function formatSpells(data) {
-  return data.filter((data)=>data.title==='Chill Touch')
-  .map((spell) => {
+  return data.map((spell) => {
     spell.description = format(spell.description);
     if (spell.atHigherLevels) {
       spell.atHigherLevels = format(spell.atHigherLevels);
