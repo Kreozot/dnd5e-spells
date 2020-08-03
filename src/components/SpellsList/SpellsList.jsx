@@ -4,6 +4,7 @@ import Markdown from 'markdown-to-jsx';
 
 import Components from './Components';
 import TextWithHint from './TextWithHint';
+import Description from './Description';
 import IconCell from './IconCell';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
@@ -112,20 +113,8 @@ export default function SpellsList(props) {
               { mainTR }
               { Boolean(row.isExpanded) &&
                 <tr>
-                  <td colSpan={ visibleColumns.length } className={ styles.description }>
-                    <Markdown>{ row.original.description }</Markdown>
-                    { Boolean(row.original.atHigherLevels) &&
-                      <>
-                        <h2>At higher levels</h2>
-                        <Markdown>{ row.original.atHigherLevels }</Markdown>
-                      </>
-                    }
-                    { Boolean(row.original.levelUpgrades) &&
-                      <>
-                        <h2>Level upgrades</h2>
-                        <Markdown>{ row.original.levelUpgrades }</Markdown>
-                      </>
-                    }
+                  <td colSpan={ visibleColumns.length }>
+                    <Description item={ row.original }/>
                   </td>
                 </tr>
               }
