@@ -1,6 +1,8 @@
 import React, { useMemo } from 'react';
 import maxBy from 'lodash/maxBy';
 
+import Tooltip from 'components/Tooltip';
+
 // Translates <LevelUpdgrades initial="1d6" upgrades="5:2d6;11:3d6;17:4d6"/> into value relevant for current level
 export default function LevelUpgrades(props) {
   const { initial, upgrades, currentLevel } = props;
@@ -22,11 +24,18 @@ export default function LevelUpgrades(props) {
       : initial;
   }, [initial, upgradesMap, currentLevel]);
 
-  console.log(upgradesMap, currentLevel);
+  const tooltipText = useMemo(() => {
+    return (
+      <ul>
+        <li>{ initial } by default</li>
+        { upgradesMap.map(({ level, value }) => <li>{ value } after you reach { level } level</li>) }
+      </ul>
+    )
+  }, [upgrades]);
 
   return (
-    <span>
+    <Tooltip text={ tooltipText }>
       { currentValue }
-    </span>
+    </Tooltip>
   );
 }

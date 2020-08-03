@@ -11,6 +11,7 @@ export default function Tooltip(props) {
       position="right"
       html={ <div className={ styles.tooltip }>{ text }</div> }
       className={ styles.container }
+      tag="span"
     >
       { children }
     </TippyTooltip>
