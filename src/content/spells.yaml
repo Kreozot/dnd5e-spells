@@ -666,7 +666,7 @@
     project your astral bodies into the Astral Plane (the
     spell fails and the casting is wasted if you are already
     on that plane). The material body you leave behind is
-    u nconscious and in a state of suspended animation; it
+    unconscious and in a state of suspended animation; it
     doesn’t need food or air and doesn’t age.
 
 
@@ -1041,7 +1041,7 @@
     force in an unoccupied space that you can see within
     range. The hand lasts for the spell’s duration, and it
     moves at your command, mimicking the movements of
-    your ow n hand.
+    your own hand.
 
 
     The hand is an object that has AC 20 and hit points
@@ -1968,7 +1968,7 @@
     when it drops to 0 hit points or when the spell ends.
     The summoned creatures are friendly to you and your
     companions. Roll initiative for the summoned creatures
-    as a group, which has its ow n turns. They obey any
+    as a group, which has its own turns. They obey any
     verbal commands that you issue to them (no action
     required by you). If you don’t issue any commands to
     them, they defend themselves from hostile creatures,
@@ -2064,7 +2064,7 @@
 
     The elemental is friendly to you and your companions
     for the duration. Roll initiative for the elemental, which
-    has its ow n turns. It obeys any verbal commands that
+    has its own turns. It obeys any verbal commands that
     you issue to it (no action required by you). If you don’t
     issue any commands to the elemental, it defends itself
     from hostile creatures but otherwise takes no actions.
@@ -2173,7 +2173,7 @@
     it drops to 0 hit points or when the spell ends.
     The summoned creatures are friendly to you and your
     companions. Roll initiative for the summoned creatures
-    as a group, which has its ow n turns. They obey any
+    as a group, which has its own turns. They obey any
     verbal commands that you issue to them (no action
     required by you). If you don’t issue any commands to
     them, they defend themselves from hostile creatures,
@@ -2242,7 +2242,7 @@
 
     The summoned creatures are friendly to you and your
     companions. Roll initiative for the summoned creatures
-    as a group, which have their ow n turns. They obey any
+    as a group, which have their own turns. They obey any
     verbal commands that you issue to them (no action
     required by you). If you don't issue any commands to
     them, they defend themselves from hostile creatures,
@@ -2499,7 +2499,7 @@
   description: >
     You take control of the weather within 5 miles of you
     for the duration. You must be outdoors to cast this spell.
-    M oving to a place where you don’t have a clear path to
+    Moving to a place where you don’t have a clear path to
     the sky ends the spell early.
 
 
@@ -2882,7 +2882,7 @@
   concentration: true
   duration: ≤ 10 minutes
   description: >
-    M agical darkness spreads from a point you choose
+    Magical darkness spreads from a point you choose
     within range to fill a 15-foot-radius sphere for the
     duration. The darkness spreads around corners.
 
@@ -2895,7 +2895,7 @@
     or one that isn’t being worn or carried, the darkness
     emanates from the object and moves with it. Completely
     covering the source of the darkness with an opaque
-    object, such as a bow l or a helm, blocks the darkness.
+    object, such as a bowl or a helm, blocks the darkness.
 
 
     If any of this spell’s area overlaps with an area of light
@@ -3490,7 +3490,7 @@
     creature takes only the actions you choose, and doesn’t
     do anything that you don’t allow it to do. During this
     time, you can also cause the creature to use a reaction,
-    but this requires you to use your ow n reaction as well.
+    but this requires you to use your own reaction as well.
 
 
     Each time the target takes damage, it makes a new
@@ -3612,7 +3612,7 @@
     You touch an object weighing 10 pounds or less whose
     longest dimension is 6 feet or less. The spell leaves an
     invisible mark on its surface and invisibly inscribes the
-    nam e of the item on the sapphire you use as the material
+    name of the item on the sapphire you use as the material
     component. Each time you cast this spell, you must use
     a different sapphire.
 
@@ -4348,7 +4348,7 @@
     and hear what it hears until the start of your next turn,
     gaining the benefits of any special senses that the
     familiar has. During this time, you are deaf and blind
-    with regard to your ow n senses.
+    with regard to your own senses.
 
 
     As an action, you can temporarily dismiss your
@@ -4638,7 +4638,7 @@
     M: pinch of sulfur
   duration: Instantaneous
   description: >
-    A vertical colum n of divine fire roars dow n from the
+    A vertical column of divine fire roars down from the
     heavens in a location you specify. Each creature in
     a 10-foot-radius, 40-foot-high cylinder centered on a
     point within range must make a Dexterity saving throw.
@@ -4685,7 +4685,7 @@
 
 
     When you move the sphere, you can direct it over
-    barriers up to 5 feet tall and jum p it across pits up to
+    barriers up to 5 feet tall and jum pit across pits up to
     10 feet wide. The sphere ignites flammable objects not
     being worn or carried, and it sheds bright light in a
     20-foot radius and dim light for an additional 20 feet.
@@ -5485,7 +5485,7 @@
   components:
     V: true
     S: true
-    M: a legum e seed
+    M: a legume seed
   concentration: true
   duration: ≤ 1 minute
   description: >
@@ -5555,7 +5555,7 @@
 
     First, celestials, elementals, fey, fiends, and undead
     can’t enter the area, nor can such creatures charm,
-    frighten, or p ossess creatures within it. Any creature
+    frighten, or possess creatures within it. Any creature
     charmed, frightened, or possessed by such a creature
     is no longer charmed, frightened, or possessed upon
     entering the area. You can exclude one or more of those
@@ -5799,7 +5799,7 @@
   components:
     V: true
     S: true
-    M: a gem -encrusted bow l worth at least 1,000 gp, which the spell consumes
+    M: a gem -encrusted bowl worth at least 1,000 gp, which the spell consumes
   duration: Instantaneous
   description: >
     You bring forth a great feast, including magnificent
@@ -6311,7 +6311,7 @@
     M: a grasshopper’s hind leg
   duration: 1 minute
   description: >
-    You touch a creature. The creature’s jum p distance is
+    You touch a creature. The creature’s jump distance is
     tripled until the spell ends.
 
 - title: Knock
@@ -6801,7 +6801,7 @@
     100 feet of you, returning the host creature’s soul to
     its body. If the host body dies while you’re in it, the
     creature dies, and you must make a Charisma saving
-    throw against your ow n spellcasting DC. On a success,
+    throw against your own spellcasting DC. On a success,
     you return to the container if it is within 100 feet of you.
     Otherwise, you die.
 
@@ -6844,7 +6844,7 @@
   components:
     V: true
     S: true
-    M: a small bit of honeycom b and jade dust worth at least 10 gp, which the spell consumes
+    M: a small bit of honeycomb and jade dust worth at least 10 gp, which the spell consumes
   duration: Until dispelled
   description: >
     You implant a message within an object in range, a
@@ -7009,7 +7009,7 @@
   range: 60 feet
   components:
     V: true
-    M: a snake’s tongue and either a bit of honeycom b or a drop of sweet oil
+    M: a snake’s tongue and either a bit of honeycomb or a drop of sweet oil
   duration: 24 hours
   description: >
     You suggest a course of activity (limited to a sentence
@@ -7177,7 +7177,7 @@
 
     You can cast this spell through solid objects if you
     are familiar with the target and know it is beyond
-    the barrier. M agical silence. 1 foot of stone, 1 inch of
+    the barrier. Magical silence. 1 foot of stone, 1 inch of
     common metal, a thin sheet of lead, or 3 feet of wood
     blocks the spell. The spell doesn’t have to follow a
     straight line and can travel freely around corners or
@@ -7237,7 +7237,7 @@
     You create a sound or an image of an object within
     range that lasts for the duration. The illusion also ends if
     you dismiss it as an action or cast this spell again.
-    If you create a sound, its volum e can range from a
+    If you create a sound, its volume can range from a
     whisper to a scream . It can be your voice, someone
     else’s voice, a lion’s roar, a beating of drums, or any
     other sound you choose. The sound continues unabated
@@ -7364,7 +7364,7 @@
     as a bonus action, you can switch from using its senses
     to using your own, or back again. While you are using its
     senses, you are blinded and deafened in regard to your
-    ow n surroundings.
+    own surroundings.
 
 - title: Misty Step
   level: 2
@@ -7452,7 +7452,7 @@
   concentration: true
   duration: ≤ 1 minute
   description: >
-    A silvery beam of pale light shines dow n in a 5-foot
+    A silvery beam of pale light shines down in a 5-foot
     radius, 40-foot-high cylinder centered on a point within
     range. Until the spell ends, dim light fills the cylinder.
 
@@ -7650,7 +7650,7 @@
 
 
     This spell can’t manipulate natural stone or
-    stone construction. R ocks and structures shift to
+    stone construction. Rocks and structures shift to
     accommodate the new terrain. If the way you shape
     the terrain would make a structure unstable, it
     might collapse.
@@ -8639,8 +8639,8 @@
     The protection grants several benefits. Creatures of
     those types have disadvantage on attack rolls against
     the target. The target also can’t be charmed, frightened,
-    or p ossessed by them. If the target is already charmed,
-    frightened, or p ossessed by such a creature, the target
+    or possessed by them. If the target is already charmed,
+    frightened, or possessed by such a creature, the target
     has advantage on any new saving throw against the
     relevant effect.
 
@@ -9331,7 +9331,7 @@
     and the bonus listed in its statistics is higher than yours,
     use the creature’s bonus in place of yours. You can’t use
     any legendary actions or lair actions of the new form.
-    You assume the hit points and Hit D ice of the new
+    You assume the hit points and Hit Dice of the new
     form. When you revert to your normal form, you
     return to the number of hit points you had before you
     transformed. If you revert as a result of dropping to
@@ -9698,7 +9698,7 @@
     monsters, including whatever they can perceive or have
     perceived within the past day. You might be able to
     persuade a beast to perform a small favor for you, at the
-    D M’s discretion.
+    DM’s discretion.
 
 - title: Speak with Dead
   level: 3
@@ -10368,7 +10368,7 @@
     and it must be on the same plane of existence as
     you. Your familiarity with the destination determines
     whether you arrive there successfully. The DM rolls
-    d 100 and consults the table.
+    d100 and consults the table.
 
 
     | Familiarity | Mishap | Similar Area | Off Target | On Target |
@@ -10424,7 +10424,7 @@
 
 
     For example, if you tried to travel 120 miles, landed off
-    target, and rolled a 5 and 3 on the two d 10s, then you
+    target, and rolled a 5 and 3 on the two d10s, then you
     would be off target by 15 percent, or 18 miles. The DM
     determines the direction off target randomly by rolling a
     d8 and designating 1 as north, 2 as northeast, 3 as east,
@@ -10515,7 +10515,7 @@
     The disk is im mobile while you are within 20 feet of
     it. If you move more than 20 feet away from it, the disk
     follows you so that it remains within 20 feet of you. It
-    can move across uneven terrain, up or dow n stairs,
+    can move across uneven terrain, up or down stairs,
     slopes and the like, but it can’t cross an elevation change
     of 10 feet or more. For example, the disk can’t move
     across a 10-foot-deep pit, nor could it leave such a pit if it
