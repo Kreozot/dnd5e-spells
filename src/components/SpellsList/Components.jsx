@@ -27,7 +27,9 @@ export default function SpellsList(props) {
         { Boolean(components.M) &&
           <IconCell>
             <Tooltip text={ components.M }>
+              <div  className={ components.materialConsumed ? styles.consumed : '' }>
               <DiamondIcon/>
+              </div>
             </Tooltip>
           </IconCell>
         }

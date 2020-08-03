@@ -8,3 +8,14 @@
   height: 1em;
   display: inline-block;
 }
+
+.consumed {
+  position: relative;
+
+  &:after {
+    content: '*';
+    position: absolute;
+    right: -8px;
+    top: -6px;
+  }
+}
