@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 import Tooltip from 'components/Tooltip';
 import IconCell from './IconCell';
@@ -10,6 +10,38 @@ import styles from './Components.module.scss';
 
 export default function Components(props) {
   const { components } = props;
+
+  const materialHtml = useMemo(() => {
+    const materialPrices = Boolean(components.materialConsumed || components.materialSpecial)
+      ? (
+        <div className={ styles.specialTooltipBlock }>
+          { Boolean(components.materialConsumed) &&
+            <div>Consumable: <strong>{ components.materialConsumed } GP</strong> worth</div>
+          }
+          { Boolean(components.materialSpecial) &&
+            <div>Pemanent: <strong>{ components.materialSpecial } GP</strong> worth</div>
+          }
+        </div>
+      )
+      : null;
+
+    const materialText = typeof components.M === 'object'
+      ? (
+        <ul>
+          { components.M.map((item) =>
+            (<li key={ item }>{ item }</li>)
+          ) }
+        </ul>
+      )
+      : <div>{ components.M }</div>;
+
+    return (
+      <>
+        { materialPrices }
+        { materialText }
+      </>
+    );
+  }, [components.M]);
 
   return (
     <div className={ styles.container }>
@@ -26,9 +58,9 @@ export default function Components(props) {
       <span>
         { Boolean(components.M) &&
           <IconCell>
-            <Tooltip text={ components.M }>
-              <div  className={ components.materialConsumed ? styles.consumed : '' }>
-              <DiamondIcon/>
+            <Tooltip text={ materialHtml }>
+              <div className={ components.materialConsumed || components.materialSpecial ? styles.special : '' }>
+                <DiamondIcon/>
               </div>
             </Tooltip>
           </IconCell>

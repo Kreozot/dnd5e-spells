@@ -9,7 +9,7 @@
   display: inline-block;
 }
 
-.consumed {
+.special {
   position: relative;
 
   &:after {
@@ -20,4 +20,8 @@
     right: -10px;
     top: -6px;
   }
+}
+
+.specialTooltipBlock {
+  margin-bottom: 1em;
 }

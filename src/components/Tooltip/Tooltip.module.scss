@@ -7,3 +7,7 @@
   text-decoration: underline;
   text-decoration-style: dotted;
 }
+
+:global(.tippy-tooltip [x-circle]) {
+  border-radius: 10px !important;
+}
