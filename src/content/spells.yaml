@@ -828,7 +828,7 @@
 
 
     The awakened beast or plant is charmed by you for
-    30 days or until you or your companions do anything
+    **30 days** or until you or your companions do anything
     harmful to it. When the charmed condition ends,
     the awakened creature chooses whether to remain
     friendly to you, based on how you treated it while
@@ -1580,7 +1580,7 @@
     This spell grows an inert duplicate of a living creature
     as a safeguard against death. This clone forms inside
     a sealed vessel and grows to full size and maturity
-    after 120 days; you can also choose to have the clone
+    after **120 days**; you can also choose to have the clone
     be a younger version of the same creature. It remains
     inert and endures indefinitely, as long as its vessel
     remains undisturbed.
@@ -3393,7 +3393,7 @@
     Your magic and an offering put you in contact with
     a god or a god’s servants. You ask a single question
     concerning a specific goal, event, or activity to occur
-    within 7 days. The DM offers a truthful reply. The reply
+    within **7 days**. The DM offers a truthful reply. The reply
     might be a short phrase, a cryptic rhyme, or an omen.
     The spell doesn’t take into account any possible
     circumstances that might change the outcome, such
@@ -4275,7 +4275,7 @@
     protect them.
 
 
-    At the end of every 30 days, the creature can repeat
+    At the end of every **30 days**, the creature can repeat
     its saving throw against this spell. If it succeeds on its
     saving throw, the spell ends.
 
@@ -4813,7 +4813,7 @@
     enters the area takes no damage from the spell.
     The spell’s area can't overlap with the area of another
     forbiddance spell. If you cast forbiddance every day for
-    30 days in the same location, the spell lasts until it is
+    **30 days** in the same location, the spell lasts until it is
     dispelled, and the material components are consumed
     on the last casting.
 
@@ -5038,7 +5038,7 @@
     spell also ends it.
   atHigherLevels: >
     When you cast this spell using
-    a spell slot of 7th or **8th level**, the duration is 1 year.
+    a spell slot of 7th or **8th level**, the duration is **1 year**.
     When you cast this spell using a spell slot of **9th level**,
     the spell lasts until it is ended by one of the spells
     mentioned above.
@@ -5438,7 +5438,7 @@
 
     You can create a permanently guarded and warded
     structure by casting this spell there every day
-    for one year.
+    for **one year**.
 
 - title: Guidance
   level: cantrip
@@ -6400,7 +6400,7 @@
     chest and the replica.
 
 
-    After 60 days, there is a cumulative 5 percent chance
+    After **60 days**, there is a cumulative 5 percent chance
     per day that the spell's effect ends. This effect ends if
     you cast this spell again, if the sm aller replica chest is
     destroyed, or if you choose to end the spell as an action.
@@ -7043,10 +7043,10 @@
     affected by this spell, the spell ends for that creature.
   atHigherLevels: >
     When you cast this spell using
-    a **7th-level** spell slot, the duration is 10 days. When
-    you use an **8th-level** spell slot, the duration is 30 days.
+    a **7th-level** spell slot, the duration is **10 days**. When
+    you use an **8th-level** spell slot, the duration is **30 days**.
     When you use a **9th-level** spell slot, the duration is a
-    year and a day.
+    **year and a day**.
 
 - title: Maze
   level: 8
@@ -7434,8 +7434,8 @@
   atHigherLevels: >
     If you cast this spell using a spell
     slot of **6th level** or higher, you can alter the target’s
-    memories of an event that took place up to 7 days ago
-    (**6th level**), 30 days ago (**7th level**), 1 year ago (**8th level**),
+    memories of an event that took place up to **7 days** ago
+    (**6th level**), **30 days** ago (**7th level**), **1 year** ago (**8th level**),
     or any time in the creature’s past (**9th level**).
 
 - title: Moonbeam
@@ -7583,8 +7583,8 @@
     * Planar travel is blocked within the warded area.
 
 
-    Casting this spell on the same spot every day for a
-    year makes this effect permanent.
+    Casting this spell on the same spot every day for **a
+    year** makes this effect permanent.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **5th level** or higher, you can increase the size
@@ -7698,7 +7698,7 @@
     When you cast the spell, choose one or both of the
     following effects. The effect lasts for the duration. If you
     cast this spell on the same creature or object every day
-    for 30 days, placing the same effect on it each time, the
+    for **30 days**, placing the same effect on it each time, the
     illusion lasts until it is dispelled.
 
 
@@ -8084,10 +8084,10 @@
     you bound it and remains there until the spell ends.
   atHigherLevels: >
     When you cast this spell using a
-    spell slot of a higher level, the duration increases to 10
-    days with a **6th-level** slot, to 30 days with a **7th-level** slot,
-    to 180 days with an **8th-level** slot, and to a year and a
-    day with a **9th-level** spell slot.
+    spell slot of a higher level, the duration increases to **10
+    days** with a **6th-level** slot, to **30 days** with a **7th-level** slot,
+    to **180 days** with an **8th-level** slot, and to a **year and a
+    day** with a **9th-level** spell slot.
 
 - title: Plane Shift
   level: 7
@@ -8157,7 +8157,7 @@
 
     If you cast this spell over **8 hours**, you enrich the
     land. All plants in a half-mile radius centered on a point
-    within range become enriched for 1 year. The plants
+    within range become enriched for **1 year**. The plants
     yield twice the normal amount of food when harvested.
 
 - title: Poison Spray
@@ -8691,7 +8691,7 @@
   duration: Instantaneous
   description: >
     You return a dead creature you touch to life, provided
-    that it has been dead no longer than 10 days. If the
+    that it has been dead no longer than **10 days**. If the
     creature’s soul is both willing and at liberty to rejoin the
     body, the creature returns to life with **1 hit point**.
     This spell also neutralizes any poisons and cures
@@ -8841,7 +8841,7 @@
   description: >
     You touch a dead humanoid or a piece of a dead
     humanoid. Provided that the creature has been dead no
-    longer than 10 days, the spell forms a new adult body
+    longer than **10 days**, the spell forms a new adult body
     for it and then calls the soul to enter that body. If the
     target’s soul isn’t free or willing to do so, the spell fails.
     The magic fashions a new body for the creature
@@ -8957,7 +8957,7 @@
 
 
     Casting this spell to restore life to a creature that has
-    been dead for one year or longer taxes you greatly. Until
+    been dead for **one year** or longer taxes you greatly. Until
     you finish a long rest, you can’t cast spells again, and
     you have disadvantage on all attack rolls, ability checks,
     and saving throws.
@@ -9715,7 +9715,7 @@
     corpse of your choice within range, allowing it to answer
     the questions you pose. The corpse must still have a
     mouth and can’t be undead. The spell fails if the corpse
-    was the target of this spell within the last 10 days.
+    was the target of this spell within the last **10 days**.
     Until the spell ends, you can ask the corpse up to five
     questions. The corpse knows only what it knew in life,
     including the languages it knew. Answers are usually
@@ -10489,8 +10489,8 @@
 
 
     You can create a permanent teleportation circle by
-    casting this spell in the same location every day for one
-    year. You need not use the circle to teleport when you
+    casting this spell in the same location every day for **one
+    year**. You need not use the circle to teleport when you
     cast the spell in this way.
 
 - title: Tenser’s Floating Disk
@@ -10803,7 +10803,7 @@
   duration: Instantaneous
   description: >
     You touch a creature that has been dead for no longer
-    than 200 years and that died for any reason except
+    than **200 years** and that died for any reason except
     old age. If the creature’s soul is free and willing, the
     creature is restored to life with all its hit points.
     This spell closes all wounds, neutralizes any poison,
@@ -11437,10 +11437,10 @@
     you finish a long rest, you take **1d10** **necrotic damage**
     per level of that spell. This damage can’t be reduced or
     prevented in any way. In addition, your Strength drops
-    to 3, if it isn’t 3 or lower already, for **2d4** days. For each
+    to 3, if it isn’t 3 or lower already, for **2d4** **days**. For each
     of those days that you spend resting and doing nothing
     more than light activity, your remaining recovery time
-    decreases by 2 days. Finally, there is a 33 percent
+    decreases by **2 days**. Finally, there is a 33 percent
     chance that you are unable to cast wish ever again if you
     suffer this stress.
 
