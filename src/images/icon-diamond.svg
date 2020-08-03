@@ -1,12 +1,11 @@
-<?xml version="1.0" ?>
-<svg id="Icons" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve"
+<svg
+  viewBox="0 0 491.203 491.203"
   xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
-  <style type="text/css">
-	.diamond-st0{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-  </style>
-  <polygon class="diamond-st0" points="31,10 1,10 5,4 27,4 "/>
-  <polyline class="diamond-st0" points="1,10 16,28 31,10 "/>
-  <polyline class="diamond-st0" points="11,4 9,10 16,28 "/>
-  <polyline class="diamond-st0" points="21,4 23,10 16,28 "/>
+>
+  <path fill="currentColor" d="m326.309 128.277-39.769-120h-82.175l-39.532 120z"/>
+  <path fill="currentColor" d="m88 8.277-88 120h133.248l39.53-120z"/>
+  <path fill="currentColor" d="m491.203 128.277-88-120h-85.058l39.769 120z"/>
+  <path fill="currentColor" d="m365.07 158.277-73.522 263.709 199.54-263.709z"/>
+  <path fill="currentColor" d="m245.602 482.926 87.52-324.078h-176.253z"/>
+  <path fill="currentColor" d="m.154 158.277 198.415 262.267-72.436-262.267z"/>
 </svg>
