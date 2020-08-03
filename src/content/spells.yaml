@@ -4200,11 +4200,11 @@
   duration: 1 hour
   description: >
     Bolstering yourself with a necrom antic facsimile of life,
-    you gain **1d4** + **4 temporary hit points** for the duration.
+    you gain **1d4 + 4** **temporary hit points** for the duration.
   atHigherLevels: >
     When you cast this spell using a
-    spell slot of **2nd level** or higher, you gain 5 additional
-    temporary hit points for each slot level above **1st**.
+    spell slot of **2nd level** or higher, you gain **5 additional
+    temporary hit points** for each slot level above **1st**.
 
 - title: Fear
   level: 3
@@ -4487,7 +4487,7 @@
     You send negative energy coursing through a creature
     that you can see within range, causing it searing pain.
     The target must make a **Constitution saving throw**. It
-    takes **7d8** + 30 **necrotic damage** on a failed save, or half
+    takes **7d8 + 30** **necrotic damage** on a failed save, or half
     as much damage on a successful one.
 
 
@@ -6674,7 +6674,7 @@
   description: >
     You touch a willing creature who isn’t wearing armor,
     and a protective magical force surrounds it until the
-    spell ends. The target’s base AC becomes 13 + its
+    spell ends. The target’s base AC becomes **13** + its
     Dexterity modifier. The spell ends if the target dons
     arm or or if you dismiss the spell as an action.
 
@@ -6827,7 +6827,7 @@
   description: >
     You create three glowing darts of magical force. Each
     dart hits a creature of your choice that you can see
-    within range. A dart deals **1d4** + 1 **force damage** to its
+    within range. A dart deals **1d4 + 1** **force damage** to its
     target. The darts all strike simultaneously, and you can
     direct them to hit one creature or several.
   atHigherLevels: >
@@ -7999,7 +7999,7 @@
     space within range. If you know a specific creature’s
     name, you can speak that name when you cast this spell
     to request that creature, though you might get a different
-    creature anyway (D M’s choice).
+    creature anyway (DM’s choice).
 
 
     When the creature appears, it is under no com pulsion
@@ -8021,10 +8021,10 @@
 
 
     As a rule of thumb, a task that can be measured in
-    minutes requires a payment worth 100 gp per minute. A
-    task measured in hours requires 1,000 gp per hour. And
-    a task measured in days (up to 10 days) requires 10,000
-    gp per day. The DM can adjust these payments based on
+    minutes requires a payment worth **100 gp** per minute. A
+    task measured in hours requires **1,000 gp** per hour. And
+    a task measured in days (up to **10 days**) requires **10,000
+    gp** per day. The DM can adjust these payments based on
     the circumstances under which you cast the spell. If the
     task is aligned with the creature’s ethos, the payment
     might be halved or even waived. Nonhazardous tasks
@@ -8815,7 +8815,7 @@
   duration: 1 hour
   description: >
     You touch a creature and stimulate its natural healing
-    ability. The target regains **4d8** + **15 hit points**. For the
+    ability. The target regains **4d8 + 15** **hit points**. For the
     duration of the spell, the target regains **1 hit point** at the
     start of each of its turns (**10 hit points** each minute).
 
@@ -9555,7 +9555,7 @@
 
     If the sim ulacrum is damaged, you can repair it in an
     alchemical laboratory, using rare herbs and minerals
-    worth 100 gp per hit point it regains. The simulacrum
+    worth **100 gp** per hit point it regains. The simulacrum
     lasts until it drops to **0 hit points**, at which point it
     reverts to snow and melts instantly.
 
@@ -11388,7 +11388,7 @@
     effects of your choice:
 
 
-    * You create one object of up to 25,000 gp in value that
+    * You create one object of up to **25,000 gp** in value that
     isn’t a magic item. The object can be no more than
     **300 feet** in any dimension, and it appears in an unoccupied
     space you can see on the ground.
