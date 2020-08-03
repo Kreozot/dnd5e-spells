@@ -16,10 +16,10 @@ export default function Components(props) {
       ? (
         <div className={ styles.specialTooltipBlock }>
           { Boolean(components.materialConsumed) &&
-            <div>Consumable: <strong>{ components.materialConsumed } GP</strong> worth</div>
+            <div>Consumable: <strong>{ components.materialConsumed } gp</strong></div>
           }
           { Boolean(components.materialSpecial) &&
-            <div>Pemanent: <strong>{ components.materialSpecial } GP</strong> worth</div>
+            <div>Pemanent: <strong>{ components.materialSpecial } gp</strong></div>
           }
         </div>
       )
