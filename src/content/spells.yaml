@@ -111,7 +111,7 @@
     **slashing damage**, as appropriate to the natural weapon
     you chose, and you are proficient with your unarmed
     strikes. Finally, the natural weapon is magic and you
-    have a +1 bonus to the attack and damage rolls you
+    have a **+1** bonus to the attack and damage rolls you
     make using it.
 
 - title: Animal Friendship
@@ -310,15 +310,15 @@
 
     |------|----|----|--------|-----|-----|
 
-    | Tiny | 20 | 18 | +8 to hit, **1d4** + 4 damage | 4 | 18 |
+    | Tiny | 20 | 18 | +8 to hit, 1d4 + 4 damage | 4 | 18 |
 
-    | Small | 25 | 16 | +6 to hit, **1d8** + 2 damage | 6 | 14 |
+    | Small | 25 | 16 | +6 to hit, 1d8 + 2 damage | 6 | 14 |
 
-    | Medium | 40 | 13 | +5 to hit, **2d6** + 1 damage | 10 | 12 |
+    | Medium | 40 | 13 | +5 to hit, 2d6 + 1 damage | 10 | 12 |
 
-    | Large | 50 | 10 | +6 to hit, **2d10** + 2 damage | 14 | 10 |
+    | Large | 50 | 10 | +6 to hit, 2d10 + 2 damage | 14 | 10 |
 
-    | Huge | 80 | 10 | +8 to hit, **2d12** + 4 damage | 18 | 6 |
+    | Huge | 80 | 10 | +8 to hit, 2d12 + 4 damage | 18 | 6 |
 
 
     An animated object is a construct with AC, hit points,
@@ -2083,7 +2083,7 @@
     increases by 1 for each slot level above **5th**.
 
 
-    | **d10** | Behavior |
+    | d10 | Behavior |
 
     |---|---|
 
@@ -3818,14 +3818,14 @@
     A nonmagical weapon you touch becomes a magic
     weapon. Choose one of the following damage types:
     **acid**, **cold**, **fire**, **lightning**, or **thunder**. For the duration,
-    the weapon has a +1 bonus to attack rolls and deals an
+    the weapon has a **+1** bonus to attack rolls and deals an
     extra **1d4** damage of the chosen type when it hits.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of 5th or **6th level**, the bonus to attack rolls
-    increases to +2 and the extra damage increases to
+    increases to **+2** and the extra damage increases to
     **2d4**. When you use a spell slot of **7th level** or higher,
-    the bonus increases to +3 and the extra damage
+    the bonus increases to **+3** and the extra damage
     increases to **3d4**.
 
 - title: Enhance Ability
@@ -5691,7 +5691,7 @@
   description: >
     Choose a willing creature that you can see within range.
     Until the spell ends, the target’s speed is doubled, it
-    gains a +2 bonus to AC, it has advantage on **Dexterity
+    gains a **+2** bonus to AC, it has advantage on **Dexterity
     saving throw**s, and it gains an additional action on each
     of its turns. That action can be used only to take the
     Attack (one weapon attack only), Dash, Disengage, Hide,
@@ -6888,7 +6888,7 @@
   duration: ≤ 1 hour
   description: >
     You touch a nonmagical weapon. Until the spell ends,
-    that weapon becomes a magic weapon with a +1 bonus
+    that weapon becomes a magic weapon with a **+1** bonus
     to attack rolls and damage rolls.
   atHigherLevels: >
     When you cast this spell using a
@@ -7842,7 +7842,7 @@
     A veil of shadows and silence radiates from you,
     masking you and your companions from detection.
     For the duration, each creature you choose within 30
-    feet of you (including you) has a +10 bonus to Dexterity
+    feet of you (including you) has a **+10** bonus to Dexterity
     (Stealth) checks and can’t be tracked except by magical
     means. A creature that receives this bonus leaves
     behind no tracks or other traces of its passage.
@@ -8851,7 +8851,7 @@
     restored to life, or the DM chooses a form.
 
 
-    | **d100** | Race |
+    | d100 | Race |
 
     |---|---|
 
@@ -9409,7 +9409,7 @@
   description: >
     An invisible barrier of magical force appears and
     protects you. Until the start of your next turn, you have a
-    +5 bonus to AC, including against the triggering attack,
+    **+5** bonus to AC, including against the triggering attack,
     and you take no damage from magic missile.
 
 - title: Shield of Faith
@@ -9425,7 +9425,7 @@
   duration: ≤ 10 minutes
   description: >
     A shim mering field appears and surrounds a creature
-    of your choice within range, granting it a +2 bonus to AC
+    of your choice within range, granting it a **+2** bonus to AC
     for the duration.
 
 - title: Shillelagh
@@ -11186,7 +11186,7 @@
     This spell wards a willing creature you touch and
     creates a mystic connection between you and the target
     until the spell ends. While the target is within 60 feet of
-    you, it gains a +1 bonus to AC and saving throws, and
+    you, it gains a **+1** bonus to AC and saving throws, and
     it has resistance to all damage. Also, each time it takes
     damage, you take the same amount of damage.
 
