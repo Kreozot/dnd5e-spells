@@ -120,6 +120,12 @@ export default function SpellsList(props) {
                         <Markdown>{ row.original.atHigherLevels }</Markdown>
                       </>
                     }
+                    { Boolean(row.original.levelUpgrades) &&
+                      <>
+                        <h2>Level upgrades</h2>
+                        <Markdown>{ row.original.levelUpgrades }</Markdown>
+                      </>
+                    }
                   </td>
                 </tr>
               }
