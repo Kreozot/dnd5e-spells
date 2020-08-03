@@ -16,7 +16,7 @@
 
   levelUpgrades: >
     This spell’s damage increases by **1d6** when you reach
-    **5th level** (**2d6**), 1**1th level** (**3d6**), and 1**7th level** (**4d6**).
+    **5th level** (**2d6**), **11th level** (**3d6**), and **17th level** (**4d6**).
 
 - title: Aid
   level: 2
@@ -1470,7 +1470,7 @@
     attack rolls against you until the end of your next turn.
   levelUpgrades: >
     This spell’s damage increases by **1d8** when you reach
-    **5th level** (**2d8**), 1**1th level** (**3d8**), and 1**7th level** (**4d8**).
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Chromatic Orb
   level: 1
@@ -2271,7 +2271,7 @@
     sage, or some other mysterious entity from another
     plane. Contacting this extraplanar intelligence can
     strain or even break your mind. When you cast this
-    spell, make a DC 15 **Intelligence saving throw**. On a
+    spell, make a **DC 15** **Intelligence saving throw**. On a
     failure, you take **6d6** **psychic damage** and are insane
     until you finish a long rest. While insane, you can’t take
     actions, can’t understand what other creatures say, can’t
@@ -2317,7 +2317,7 @@
     **Blinding Sickness.** Pain grips the creature’s mind,
     and its eyes turn milky white. The creature has
     disadvantage on Wisdom checks and **Wisdom saving
-    throw**s and is blinded.
+    throws** and is blinded.
 
 
     **Filth Fever.** A raging fever sw eeps through the
@@ -3778,7 +3778,7 @@
     structure’s height must make a **Dexterity saving throw**.
     On a failed save, the creature takes **5d6** **bludgeoning
     damage**, is knocked prone, and is buried in the rubble,
-    requiring a DC 20 Strength (Athletics) check as an
+    requiring a **DC 20** **Strength (Athletics) check** as an
     action to escape. The DM can adjust the DC higher
     or lower, depending on the nature of the rubble. On
     a successful save, the creature takes half as much
@@ -3800,7 +3800,7 @@
     The spell creates more than one beam when you reach
   atHigherLevels: >
     Two beams at **5th level**, three beams at
-    1**1th level**, and four beams at 1**7th level**. You can direct
+    **11th level**, and four beams at **17th level**. You can direct
     the beams at the same target or at different ones. Make
     a separate attack roll for each beam.
 
@@ -4542,7 +4542,7 @@
     worn or carried.
   levelUpgrades: >
     This spell’s damage increases by **1d10** when you reach
-    **5th level** (**2d10**), 1**1th level** (**3d10**), and 1**7th level** (**4d10**).
+    **5th level** (**2d10**), **11th level** (**3d10**), and **17th level** (**4d10**).
 
 - title: Fire Shield
   level: 4
@@ -4833,8 +4833,8 @@
     choose within range. The prison can be a cage or a solid
     box, as you choose.
     A prison in the shape of a cage can be up to **20 feet** on
-    a side and is made from 1/**2-inch** diameter bars spaced
-    1/**2 inch** apart.
+    a side and is made from **1/2-inch** diameter bars spaced
+    **1/2 inch** apart.
 
 
     A prison in the shape of a box can be up to **10 feet** on
@@ -7065,7 +7065,7 @@
 
 
     The target can use its action to attempt to escape.
-    When it does so, it makes a DC 20 Intelligence check. If
+    When it does so, it makes a **DC 20** **Intelligence check**. If
     it succeeds, it escapes, and the spell ends (a minotaur or
     goristro demon automatically succeeds).
 
@@ -7094,7 +7094,7 @@
 
 
     While merged with the stone, you can’t see what
-    occurs outside it, and any Wisdom (Perception) checks
+    occurs outside it, and any **Wisdom (Perception) checks**
     you make to hear sounds outside it are made with
     disadvantage. You remain aware of the passage of
     time and can cast spells on yourself while merged in
@@ -8177,7 +8177,7 @@
 
   levelUpgrades: >
     This spell’s damage increases by **1d12** when you reach
-    **5th level** (**2d12**), 1**1th level** (**3d12**), and 1**7th level** (**4d12**).
+    **5th level** (**2d12**), **11th level** (**3d12**), and **17th level** (**4d12**).
 
 - title: Polymorph
   level: 4
@@ -8350,22 +8350,22 @@
     to determine which color ray affects it.
 
 
-    1. Red. The target takes **10d6** **fire damage** on a failed
+    1. **Red.** The target takes **10d6** **fire damage** on a failed
     save, or half as much damage on a successful one.
 
-    2. Orange. The target takes **10d6** **acid damage** on a
+    2. **Orange.** The target takes **10d6** **acid damage** on a
     failed save, or half as much damage on a successful one.
 
-    3. Yellow. The target takes **10d6** **lightning damage** on a
+    3. **Yellow.** The target takes **10d6** **lightning damage** on a
     failed save, or half as much damage on a successful one.
 
-    4. Green. The target takes **10d6** **poison damage** on a
+    4. **Green.** The target takes **10d6** **poison damage** on a
     failed save, or half as much damage on a successful one.
 
-    5. Blue. The target takes **10d6** **cold damage** on a failed
+    5. **Blue.** The target takes **10d6** **cold damage** on a failed
     save, or half as much damage on a successful one.
 
-    6. Indigo. On a failed save, the target is restrained.
+    6. **Indigo.** On a failed save, the target is restrained.
     It must then make a **Constitution saving throw** at the
     end of each of its turns. If it successfully saves three
     times, the spell ends. If it fails its save three times,
@@ -8374,7 +8374,7 @@
     need to be consecutive; keep track of both until the
     target collects three of a kind.
 
-    7. Violet. On a failed save, the target is blinded. It
+    7. **Violet.** On a failed save, the target is blinded. It
     must then make a **Wisdom saving throw** at the start of
     your next turn. A successful save ends the blindness. If
     it fails that save, the creature is transported to another
@@ -8383,7 +8383,7 @@
     its home plane is banished home, while other creatures
     are usually cast into the Astral or Ethereal planes.)
 
-    8. Special. The target is struck by two rays. Roll twice
+    8. **Special.** The target is struck by two rays. Roll twice
     more, rerolling any 8.
 
 - title: Prismatic Wall
@@ -8513,7 +8513,7 @@
 
   levelUpgrades: >
     This spell’s damage increases by **1d8** when you reach
-    **5th level** (**2d8**), 1**1th level** (**3d8**), and 1**7th level** (**4d8**).
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Programmed Illusion
   level: 6
@@ -8778,7 +8778,7 @@
     your next turn.
   levelUpgrades: >
     The spell’s damage increases by **1d8** when you reach
-    **5th level** (**2d8**), 1**1th level** (**3d8**), and 1**7th level** (**4d8**).
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Ray of Sickness
   level: 1
@@ -9058,7 +9058,7 @@
     target gains no benefit fro
   levelUpgrades: >
     The spell’s damage increases by **1d8** when you reach
-    **5th level** (**2d8**), 1**1th level** (**3d8**), and 1**7th level** (**4d8**).
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Sanctuary
   level: 1
@@ -9467,7 +9467,7 @@
 
   levelUpgrades: >
     The spell’s damage increases by **1d8** when you reach
-    **5th level** (**2d8**), 1**1th level** (**3d8**), and 1**7th level** (**4d8**).
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Silence
   level: 2
@@ -10586,7 +10586,7 @@
 
   levelUpgrades: >
     This spell’s damage increases by **1d6** when you reach
-    **5th level** (**2d6**), 1**1th level** (**3d6**), and 1**7th level** (**4d6**).
+    **5th level** (**2d6**), **11th level** (**3d6**), and **17th level** (**4d6**).
 
 - title: Thunderous Smite
   level: 1
@@ -10964,7 +10964,7 @@
     attack roll it makes before the end of its next turn.
   levelUpgrades: >
     This spell’s damage increases by **1d4** when you reach
-    **5th level** (**2d4**), 1**1th level** (**3d4**), and 1**7th level** (**4d4**).
+    **5th level** (**2d4**), **11th level** (**3d4**), and **17th level** (**4d4**).
 
 - title: Wall of Fire
   level: 4

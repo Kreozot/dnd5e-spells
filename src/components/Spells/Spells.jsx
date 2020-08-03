@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
 
@@ -17,7 +17,6 @@ export default function Spells(props) {
     if (!classSpells.length) {
       return data;
     }
-    console.log(classSpells);
     return data.filter(
       (spell) => classSpells.some(
         (title) => title.toLowerCase() === spell.title.toLowerCase()
@@ -35,8 +34,17 @@ export default function Spells(props) {
     });
   }, [groupedData]);
 
+  useEffect(() => {
+    if (levelFilter && !levels.includes(levelFilter)) {
+      setLevelFilter(null);
+    }
+  }, [levels, levelFilter, setLevelFilter]);
+
   const spellsList = useMemo(() => {
     if (levelFilter !== null) {
+      if (!groupedData[levelFilter]) {
+        return null;
+      }
       return (
         <div className={ styles.container }>
           <SpellsList data={ groupedData[levelFilter] }/>
