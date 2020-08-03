@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
 
-import data from 'content/spells.yaml';
+import data from 'content/spells';
 import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import ClassFilterSelector from 'components/ClassFilterSelector';
