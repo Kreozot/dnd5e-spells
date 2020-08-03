@@ -12,7 +12,7 @@ import RitualIcon from 'images/icon-ritual.svg';
 import styles from './SpellsList.module.scss';
 
 export default function SpellsList(props) {
-  const { data } = props;
+  const { data, currentLevel } = props;
 
   const columns = useMemo(() => [
     // {
@@ -114,7 +114,7 @@ export default function SpellsList(props) {
               { Boolean(row.isExpanded) &&
                 <tr>
                   <td colSpan={ visibleColumns.length }>
-                    <Description item={ row.original }/>
+                    <Description item={ row.original } currentLevel={ currentLevel }/>
                   </td>
                 </tr>
               }

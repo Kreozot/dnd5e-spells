@@ -6,12 +6,14 @@ import data from 'content/spells';
 import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import ClassFilterSelector from 'components/ClassFilterSelector';
+import CurrentLevelSelector from 'components/CurrentLevelSelector';
 
 import styles from './Spells.module.scss'
 
 export default function Spells(props) {
   const [classSpells, setClassSpells] = useState([]);
   const [levelFilter, setLevelFilter] = useState(null);
+  const [currentLevel, setCurrentLevel] = useState('');
 
   const filteredData = useMemo(() => {
     if (!classSpells.length) {
@@ -47,7 +49,7 @@ export default function Spells(props) {
       }
       return (
         <div className={ styles.container }>
-          <SpellsList data={ groupedData[levelFilter] }/>
+          <SpellsList data={ groupedData[levelFilter] } currentLevel={ currentLevel }/>
         </div>
       );
     }
@@ -57,15 +59,16 @@ export default function Spells(props) {
         <h2 className={ styles.levelHeader }>
           { level === 'cantrip' ? 'Cantrips' : `Level ${ level }` }
         </h2>
-        <SpellsList data={ groupedData[level] }/>
+        <SpellsList data={ groupedData[level] } currentLevel={ currentLevel }/>
       </div>
     ));
-  }, [levels, groupedData, levelFilter]);
+  }, [levels, groupedData, levelFilter, currentLevel]);
 
   return (
     <>
       <div className={ styles.classSelector }>
         <ClassFilterSelector setClassSpells={ setClassSpells }/>
+        <CurrentLevelSelector currentLevel={ currentLevel } setCurrentLevel={ setCurrentLevel }/>
       </div>
       <LevelFilterSelector
         levels={ levels }
