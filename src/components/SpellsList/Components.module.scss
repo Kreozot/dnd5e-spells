@@ -14,8 +14,10 @@
 
   &:after {
     content: '*';
+    font-weight: bold;
+    font-size: 1.1em;
     position: absolute;
-    right: -8px;
+    right: -10px;
     top: -6px;
   }
 }

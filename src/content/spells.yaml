@@ -590,7 +590,7 @@
     V: true
     S: true
     M: gold dust worth at least 25 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 25
   duration: Until dispelled
   description: >
     You touch a closed door, window, gate, chest, or other
@@ -661,7 +661,7 @@
     V: true
     S: true
     M: for each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100 gp, all of which the spell consumes
-    materialConsumed: true
+    materialConsumed: 100
   duration: Special
   description: >
     You and up to eight willing creatures within range
@@ -722,6 +722,7 @@
     V: true
     S: true
     M: specially marked sticks, bones, or similar tokens worth at least 25 gp
+    materialSpecial: 25
   duration: Instantaneous
   description: >
     By casting gem-inlaid sticks, rolling dragon bones,
@@ -814,7 +815,7 @@
     V: true
     S: true
     M: an agate worth at least 1,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 1000
   duration: Instantaneous
   description: >
     After spending the casting time tracing magical
@@ -1484,6 +1485,7 @@
     V: true
     S: true
     M: a diamond worth at least 50 gp
+    materialSpecial: 50
   duration: Instantaneous
   description: >
     You hurl a **4-inch**-diameter sphere of energy at a
@@ -1506,6 +1508,7 @@
     V: true
     S: true
     M: the powder of a crushed black pearl worth at least 500 gp
+    materialSpecial: 500
   duration: Instantaneous
   description: >
     A sphere of negative energy ripples out in a **60-foot**
@@ -1548,6 +1551,7 @@
     V: true
     S: true
     M: a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing
+    materialSpecial: 100
   concentration: true
   duration: ≤ 10 minutes
   description: >
@@ -1578,10 +1582,10 @@
     V: true
     S: true
     M:
-      - a diamond worth at least 1,000 gp
-      - at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes
+      - a diamond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes
       - a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold a Medium creature, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water
-    materialConsumed: true
+    materialConsumed: 1000
+    materialSpecial: 2000
   duration: Instantaneous
   description: >
     This spell grows an inert duplicate of a living creature
@@ -2365,6 +2369,7 @@
     V: true
     S: true
     M: a statuette of yourself carved from ivory and decorated with gems worth at least 1,500 gp
+    materialSpecial: 1500
   duration: 10 days
   description: >
     Choose a spell of **5th level** or lower that you can cast, that
@@ -2402,7 +2407,7 @@
     V: true
     S: true
     M: ruby dust worth 50 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 50
   duration: Until dispelled
   description: >
     A flame, equivalent in brightness to a torch, springs
@@ -3400,7 +3405,7 @@
     M:
       - incense
       - a sacrificial offering appropriate to your religion, together worth at least 25 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 25
   duration: Instantaneous
   description: >
     Your magic and an offering put you in contact with
@@ -3620,6 +3625,7 @@
     V: true
     S: true
     M: a sapphire worth 1,000 gp
+    materialSpecial: 1000
   duration: Until dispelled
   description: >
     You touch an object weighing **10 pounds** or less whose
@@ -4335,6 +4341,7 @@
     V: true
     S: true
     M: 10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier
+    materialConsumed: 10
   duration: Instantaneous
   description: >
     You gain the service of a familiar, a spirit that takes an
@@ -4841,6 +4848,7 @@
     V: true
     S: true
     M: ruby dust worth 1,500 gp
+    materialSpecial: 1500
   duration: 1 hour
   description: >
     An immobile, invisible, cube-shaped prison composed of
@@ -4989,6 +4997,7 @@
     V: true
     S: true
     M: a diamond worth at least 5,000 gp
+    materialSpecial: 5000
   concentration: true
   duration: ≤ 1 minute
   description: >
@@ -5169,7 +5178,7 @@
     M:
       - incense
       - powdered diamond worth at least 200 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 200
   duration: Until dispelled or triggered
   description: >
     When you cast this spell, you inscribe a glyph that
@@ -5337,7 +5346,7 @@
     V: true
     S: true
     M: diamond dust worth at least 100 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 100
   duration: Instantaneous
   description: >
     You imbue a creature you touch with positive energy to
@@ -5566,7 +5575,7 @@
     V: true
     S: true
     M: herbs, oils, and incense worth at least 1,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 1000
   duration: Until dispelled
   description: >
     You touch a point and infuse an area around it with holy
@@ -5827,8 +5836,8 @@
   components:
     V: true
     S: true
-    M: a gem -encrusted bowl worth at least 1,000 gp, which the spell consumes
-    materialConsumed: true
+    M: a gem-encrusted bowl worth at least 1,000 gp, which the spell consumes
+    materialConsumed: 1000
   duration: Instantaneous
   description: >
     You bring forth a great feast, including magnificent
@@ -5959,6 +5968,7 @@
     V: true
     S: true
     M: a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint’s robe or a piece of parchment from a religious text
+    materialSpecial: 1000
   concentration: true
   duration: ≤ 1 minute
   description: >
@@ -6117,7 +6127,7 @@
   components:
     S: true
     M: a lead-based ink worth at least 10 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 10
   duration: 10 days
   description: >
     You write on parchment, paper, or some other suitable
@@ -6391,7 +6401,8 @@
     M:
       - incense worth at least 250 gp, which the spell consumes
       - four ivory strips worth at least 50 gp each
-    materialConsumed: true
+    materialConsumed: 250
+    materialSpecial: 200
   duration: Instantaneous
   description: >
     Name or describe a person, place, or object. The spell
@@ -6760,7 +6771,7 @@
     M:
       - holy water or powdered silver
       - iron worth at least 100 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 100
   duration: 1 hour
   description: >
     You create a **10-foot**-radius, **20-foot**-tall cylinder of
@@ -6806,6 +6817,7 @@
     V: true
     S: true
     M: a gem, crystal, reliquary, or some other ornamental container worth at least 500 gp
+    materialSpecial: 500
   duration: Until dispelled
   description: >
     Your body falls into a catatonic state as your soul leaves
@@ -6892,7 +6904,7 @@
     M:
       - a small bit of honeycomb
       - jade dust worth at least 10 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 10
   duration: Until dispelled
   description: >
     You implant a message within an object in range, a
@@ -7663,6 +7675,7 @@
     V: true
     S: true
     M: a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp
+    materialSpecial: 250
   concentration: true
   duration: ≤ 1 minute
   description: >
@@ -7732,7 +7745,7 @@
     V: true
     S: true
     M: a pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 25
   duration: 8 hours
   description: >
     For the duration, you hide a target that you touch
@@ -8123,7 +8136,7 @@
     V: true
     S: true
     M: a jewel worth at least 1,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 1000
   duration: 24 hours
   description: >
     With this spell, you attempt to bind a celestial, an
@@ -8168,6 +8181,7 @@
     V: true
     S: true
     M: a forked, metal rod worth at least 250 gp, attuned to a particular plane of existence
+    materialSpecial: 250
   duration: Instantaneous
   description: >
     You and up to eight willing creatures who link hands in
@@ -8641,6 +8655,7 @@
     V: true
     S: true
     M: a small replica of you made from materials worth at least 5 gp
+    materialSpecial: 5
   concentration: true
   duration: ≤ 1 day
   description: >
@@ -8761,7 +8776,7 @@
     V: true
     S: true
     M: a diamond worth at least 500 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 500
   duration: Instantaneous
   description: >
     You return a dead creature you touch to life, provided
@@ -8913,7 +8928,7 @@
     V: true
     S: true
     M: rare oils and unguents worth at least 1,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 1000
   duration: Instantaneous
   description: >
     You touch a dead humanoid or a piece of a dead
@@ -9008,7 +9023,7 @@
     V: true
     S: true
     M: a diamond worth at least 1,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 1000
   duration: Instantaneous
   description: >
     You touch a dead creature that has been dead for no
@@ -9081,7 +9096,7 @@
     V: true
     S: true
     M: diamonds worth 300 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 300
   duration: Instantaneous
   description: >
     You touch a creature that has died within the last
@@ -9192,6 +9207,7 @@
     V: true
     S: true
     M: a focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water
+    materialSpecial: 1000
   concentration: true
   duration: ≤ 10 minutes
   description: >
@@ -9364,7 +9380,7 @@
     V: true
     S: true
     M: a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 5000
   duration: Until dispelled
   description: >
     By means of this spell, a willing creature or an object
@@ -9396,6 +9412,7 @@
     V: true
     S: true
     M: a jade circlet worth at least 1,500 gp, which you must place on your head before you cast the spell
+    materialSpecial: 1500
   concentration: true
   duration: ≤ 1 hour
   description: >
@@ -10044,7 +10061,7 @@
     V: true
     S: true
     M: diamond dust worth 100 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 100
   concentration: true
   duration: ≤ 1 hour
   description: >
@@ -10243,7 +10260,7 @@
     V: true
     S: true
     M: mercury, phosphorus, and powdered diamond and opal with a total value of at least 1,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 1000
   duration: Until dispelled or triggered
   description: >
     When you cast this spell, you inscribe a harmful glyph
@@ -10559,7 +10576,7 @@
   components:
     V: true
     M: rare chalks and inks infused with precious gems with 50 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 50
   duration: 1 round
   description: >
     As you cast the spell, you draw a **10-foot**-diameter
@@ -10904,7 +10921,7 @@
     M:
       - a sprinkle of holy water
       - diamonds worth at least 25,000 gp, which the spell consumes
-    materialConsumed: true
+    materialConsumed: 25000
   duration: Instantaneous
   description: >
     You touch a creature that has been dead for no longer
@@ -10931,6 +10948,7 @@
     V: true
     S: true
     M: an ointment for the eyes that costs 25 gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell
+    materialConsumed: 25
   duration: 1 hour
   description: >
     This spell gives the willing creature you touch the ability
@@ -11288,6 +11306,7 @@
     V: true
     S: true
     M: a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration
+    materialSpecial: 100
   duration: 1 hour
   description: >
     This spell wards a willing creature you touch and

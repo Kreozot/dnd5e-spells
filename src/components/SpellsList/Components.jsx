@@ -8,7 +8,7 @@ import VoiceIcon from 'images/icon-voice.svg';
 import HandIcon from 'images/icon-hand.svg';
 import styles from './Components.module.scss';
 
-export default function SpellsList(props) {
+export default function Components(props) {
   const { components } = props;
 
   return (
