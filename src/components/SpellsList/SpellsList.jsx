@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import { useTable, useExpanded } from 'react-table';
-import useTraceUpdate from 'use-trace-update';
 
 import Components from './Components';
 import TextWithHint from './TextWithHint';
@@ -13,8 +12,6 @@ import styles from './SpellsList.module.scss';
 
 export default function SpellsList(props) {
   const { data } = props;
-
-  useTraceUpdate(props);
 
   const columns = useMemo(() => [
     // {

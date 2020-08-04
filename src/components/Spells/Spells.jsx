@@ -1,11 +1,10 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import data from 'content/spells';
-import { filtersSlice } from 'common/store';
+import { filtersSlice, getAvailableSpells } from 'common/store';
 import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import ClassFilterSelector from 'components/ClassFilterSelector';
@@ -17,24 +16,12 @@ function Spells(props) {
   const {
     filters,
     selectLevel,
+    availableSpells,
   } = props;
 
-  const [classSpells, setClassSpells] = useState([]);
-
-  const filteredData = useMemo(() => {
-    if (!classSpells.length) {
-      return data;
-    }
-    return data.filter(
-      (spell) => classSpells.some(
-        (title) => title.toLowerCase() === spell.title.toLowerCase()
-      )
-    );
-  }, [classSpells]);
-
   const groupedData = useMemo(() => {
-    return groupBy(filteredData, 'level');
-  }, [filteredData]);
+    return groupBy(availableSpells, 'level');
+  }, [availableSpells]);
 
   const levels = useMemo(() => {
     return sortBy(Object.keys(groupedData), (level) => {
@@ -73,7 +60,7 @@ function Spells(props) {
   return (
     <>
       <div className={ styles.classSelector }>
-        <ClassFilterSelector setClassSpells={ setClassSpells }/>
+        <ClassFilterSelector/>
         <CurrentLevelSelector/>
       </div>
       <LevelFilterSelector levels={ levels }/>
@@ -83,7 +70,10 @@ function Spells(props) {
 }
 
 
-const mapStateToProps = (state) => ({ filters: state.filters });
+const mapStateToProps = (state) => ({
+  filters: state.filters,
+  availableSpells: getAvailableSpells(state)
+});
 const mapDispatchToProps = (dispatch) => bindActionCreators({ selectLevel: filtersSlice.actions.selectLevel }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Spells);

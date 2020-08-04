@@ -3,7 +3,9 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { createSelector } from 'reselect';
 
-import classSpells from 'content/classSpells.yaml';
+import spellsData from 'content/spells';
+import classSpellsData from 'content/classSpells.yaml';
+import classRestrictionsData from 'content/classRestrictions.yaml';
 
 const persistConfig = {
   key: 'root',
@@ -48,10 +50,21 @@ export const filtersSlice = createSlice({
 
 function getClassAdditionalKey(classFilter) {
   if (classFilter) {
-    const keys = Object.keys(classSpells[classFilter]);
+    const keys = Object.keys(classSpellsData[classFilter]);
     if (keys.length > 1) {
       return keys.filter((key) => key !== 'main')[0];
     }
+  }
+}
+
+function getAvailableSpellLevel(classFilter, currentLevel) {
+  if (classFilter && currentLevel) {
+    let levelIndex = parseInt(currentLevel) - 1;
+    if (levelIndex > classRestrictionsData[classFilter].length - 1) {
+      levelIndex = classRestrictionsData[classFilter].length - 1;
+    }
+    const levelRestrictions = classRestrictionsData[classFilter].levels[levelIndex];
+    return levelRestrictions.spellSlots.length;
   }
 }
 
@@ -60,7 +73,7 @@ export const getClassAdditionalOptions = createSelector(
   (classFilter) => {
     const additionalKey = getClassAdditionalKey(classFilter);
     if (additionalKey) {
-      return Object.keys(classSpells[classFilter][additionalKey]);
+      return Object.keys(classSpellsData[classFilter][additionalKey]);
     }
   }
 );
@@ -70,16 +83,26 @@ export const getAvailableSpells = createSelector(
   (state) => state.filters.classAdditional,
   (state) => state.filters.currentLevel,
   (classFilter, classAdditionalFilter, currentLevel) => {
+    if (!classFilter) {
+      return spellsData;
+    }
+
     const additionalKey = getClassAdditionalKey(classFilter);
 
-    let result = [];
+    let availableSpellList = [];
     if (classFilter) {
-      result = classSpells[classFilter].main;
+      availableSpellList = [...classSpellsData[classFilter].main];
       if (classAdditionalFilter && additionalKey) {
-        result = result.concat(classSpells[classFilter][additionalKey][classAdditionalFilter]);
+        availableSpellList = availableSpellList.concat(classSpellsData[classFilter][additionalKey][classAdditionalFilter]);
       }
     }
-    return result;
+    const availableSpellLevel = getAvailableSpellLevel(classFilter, currentLevel);
+
+    return spellsData
+      .filter((spell) => !currentLevel || spell.level === 'cantrip' || spell.level <= availableSpellLevel)
+      .filter((spell) => availableSpellList.some(
+        (title) => title.toLowerCase() === spell.title.toLowerCase()
+      ));
   }
 );
 

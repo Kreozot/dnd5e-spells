@@ -14,7 +14,8 @@ function CurrentLevelSelector(props) {
   } = props;
 
   const handleChange = useCallback(({ target: { value } }) => {
-    setCurrentLevel(value);
+    let intValue = parseInt(value);
+    setCurrentLevel(isNaN(intValue) || (intValue < 1) ? '' : intValue);
   }, [setCurrentLevel]);
 
   return (

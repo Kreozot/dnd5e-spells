@@ -13,10 +13,8 @@ import styles from './ClassFilterSelector.module.scss';
 
 function ClassFilterSelector(props) {
   const {
-    setClassSpells,
     classFilter,
     classAdditionalFilter,
-    spells,
     setClass,
     setClassAdditional,
     additionalOptions,
@@ -30,28 +28,6 @@ function ClassFilterSelector(props) {
       }
     }
   }, [classFilter]);
-
-  // TODO: Export this logic to the reducer
-  // const spells = useMemo(() => {
-  //   let result = [];
-  //   if (classFilter) {
-  //     result = classSpells[classFilter].main;
-  //     if (classAdditionalFilter && additionalKey) {
-  //       result = result.concat(classSpells[classFilter][additionalKey][classAdditionalFilter]);
-  //     }
-  //   }
-  //   return result;
-  // }, [classFilter, classAdditionalFilter, additionalKey]);
-
-  // const additionalOptions = useMemo(() => {
-  //   if (additionalKey) {
-  //     return Object.keys(classSpells[classFilter][additionalKey]);
-  //   }
-  // }, [classFilter, additionalKey]);
-
-  useEffect(() => {
-    setClassSpells(spells);
-  }, [setClassSpells, spells]);
 
   const handleClassChange = useCallback((event) => {
     setClass(event.target.value);
