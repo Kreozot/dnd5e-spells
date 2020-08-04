@@ -1,10 +1,12 @@
 import React, { useMemo, Fragment } from 'react';
 import { useTable, useExpanded } from 'react-table';
+import useTraceUpdate from 'use-trace-update';
 
 import Components from './Components';
 import TextWithHint from './TextWithHint';
 import Description from './Description';
 import IconCell from './IconCell';
+import TableRow from './TableRow';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
 import RitualIcon from 'images/icon-ritual.svg';
@@ -12,6 +14,8 @@ import styles from './SpellsList.module.scss';
 
 export default function SpellsList(props) {
   const { data, currentLevel } = props;
+
+  useTraceUpdate(props);
 
   const columns = useMemo(() => [
     // {
@@ -88,37 +92,39 @@ export default function SpellsList(props) {
       </thead>
       <tbody { ...getTableBodyProps() }>
         { rows.map((row) => {
-          prepareRow(row)
-          const mainTR = (
-            <tr
-              { ...row.getRowProps() }
-              onClick={ () => row.toggleRowExpanded(!row.isExpanded) }
-              className={ styles.row }
-            >
-              { row.cells.map((cell) => {
-                return (
-                  <td
-                    { ...cell.getCellProps() }
-                    className={ row.isExpanded ? styles.cellExpanded : styles.cell }
-                  >
-                    { cell.render('Cell') }
-                  </td>
-                );
-              }) }
-            </tr>
-          );
-          return (
-            <Fragment key={ row.getRowProps().key }>
-              { mainTR }
-              { Boolean(row.isExpanded) &&
-                <tr>
-                  <td colSpan={ visibleColumns.length }>
-                    <Description item={ row.original } currentLevel={ currentLevel }/>
-                  </td>
-                </tr>
-              }
-            </Fragment>
-          )
+          prepareRow(row);
+          return <TableRow key={ row.original.title } visibleColumns={ visibleColumns } currentLevel={ currentLevel } row={ row }/>
+          // prepareRow(row)
+          // const mainTR = (
+          //   <tr
+          //     { ...row.getRowProps() }
+          //     onClick={ () => row.toggleRowExpanded(!row.isExpanded) }
+          //     className={ styles.row }
+          //   >
+          //     { row.cells.map((cell) => {
+          //       return (
+          //         <td
+          //           { ...cell.getCellProps() }
+          //           className={ row.isExpanded ? styles.cellExpanded : styles.cell }
+          //         >
+          //           { cell.render('Cell') }
+          //         </td>
+          //       );
+          //     }) }
+          //   </tr>
+          // );
+          // return (
+          //   <Fragment key={ row.getRowProps().key }>
+          //     { mainTR }
+          //     { Boolean(row.isExpanded) &&
+          //       <tr>
+          //         <td colSpan={ visibleColumns.length }>
+          //           <Description item={ row.original } currentLevel={ currentLevel }/>
+          //         </td>
+          //       </tr>
+          //     }
+          //   </Fragment>
+          // )
         }) }
       </tbody>
     </table>

@@ -14,7 +14,6 @@ export const filtersSlice = createSlice({
   },
   reducers: {
     selectLevel(state, action) {
-      console.log(action.payload);
       return {
         ...state,
         level: action.payload

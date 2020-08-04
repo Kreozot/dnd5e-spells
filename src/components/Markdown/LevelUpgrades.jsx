@@ -28,7 +28,7 @@ export default function LevelUpgrades(props) {
     return (
       <ul>
         <li>{ initial } by default</li>
-        { upgradesMap.map(({ level, value }) => <li>{ value } after you reach { level } level</li>) }
+        { upgradesMap.map(({ level, value }) => <li key={ level }>{ value } after you reach { level } level</li>) }
       </ul>
     )
   }, [initial, upgradesMap]);
