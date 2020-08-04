@@ -128,7 +128,7 @@
     This spell lets you convince a beast that you mean it no
     harm. Choose a beast that you can see within range.
     It must see and hear you. If the beast’s Intelligence is
-    4 or higher, the spell fails. Otherwise, the beast must
+    **4 or higher**, the spell fails. Otherwise, the beast must
     succeed on a **Wisdom saving throw** or be charmed
     by you for the spell’s duration. If you or one of your
     companions harms the target, the spells ends.
@@ -1243,7 +1243,7 @@
   duration: 1 minute
   description: >
     Roll a **d20** at the end of each of your turns for the
-    duration of the spell. On a roll of 11 or higher, you
+    duration of the spell. On a roll of **11 or higher**, you
     vanish from your current plane of existence and appear
     in the Ethereal Plane (the spell fails and the casting is
     wasted if you were already on that plane). At the start of
@@ -5133,7 +5133,7 @@
   duration: 1 hour
   description: >
     Until the spell ends, when you make a Charisma
-    check, you can replace the number you roll with a 15.
+    check, you can replace the number you roll with a **15**.
     Additionally, no matter what you say, magic that would
     determine if you are telling the truth indicates that you
     are being truthful.
@@ -5484,7 +5484,7 @@
   description: >
     You touch one willing creature. Once before the spell
     ends, the target can roll a **d4** and add the number rolled
-    to one ability check of its choice. It can roll the die before
+    to one ability check of its choice. It can roll the dice before
     or after making the ability check. The spell then ends.
 
 - title: Guiding Bolt
@@ -7385,13 +7385,13 @@
     attack instead targets one of your duplicates.
 
 
-    If you have three duplicates, you must roll a 6 or
-    higher to change the attack’s target to a duplicate. With
-    two duplicates, you must roll an 8 or higher. With one
-    duplicate, you must roll an 11 or higher.
+    If you have three duplicates, you must roll a **6 or
+    higher** to change the attack’s target to a duplicate. With
+    two duplicates, you must roll an **8 or higher**. With one
+    duplicate, you must roll an **11 or higher**.
 
 
-    A duplicate’s AC equals 10 + your Dexterity modifier.
+    A duplicate’s AC equals **10** + your Dexterity modifier.
     If an attack hits a duplicate, the duplicate is destroyed. A
     duplicate can be destroyed only by an attack that hits it.
     It ignores all other damage and effects. The spell ends
@@ -9755,7 +9755,7 @@
     this spell for the duration.
 
 
-    An affected target’s speed is halved, it takes a -2
+    An affected target’s speed is halved, it takes a **-2**
     penalty to AC and **Dexterity saving throws**, and it can’t
     use reactions. On its turn, it can use either an action or
     a bonus action, not both. Regardless of the creature’s
@@ -9764,7 +9764,7 @@
 
 
     If the creature attempts to cast a spell with a casting
-    time of 1 action, roll a **d20**. On an 11 or higher, the spell
+    time of 1 action, roll a **d20**. On an **11 or higher**, the spell
     doesn’t take effect until the creature’s next turn, and the
     creature must use its action on that turn to complete the
     spell. If it can’t, the spell is wasted.
