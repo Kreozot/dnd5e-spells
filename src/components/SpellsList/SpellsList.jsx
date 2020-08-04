@@ -13,7 +13,7 @@ import RitualIcon from 'images/icon-ritual.svg';
 import styles from './SpellsList.module.scss';
 
 export default function SpellsList(props) {
-  const { data, currentLevel } = props;
+  const { data } = props;
 
   useTraceUpdate(props);
 
@@ -93,38 +93,13 @@ export default function SpellsList(props) {
       <tbody { ...getTableBodyProps() }>
         { rows.map((row) => {
           prepareRow(row);
-          return <TableRow key={ row.original.title } visibleColumns={ visibleColumns } currentLevel={ currentLevel } row={ row }/>
-          // prepareRow(row)
-          // const mainTR = (
-          //   <tr
-          //     { ...row.getRowProps() }
-          //     onClick={ () => row.toggleRowExpanded(!row.isExpanded) }
-          //     className={ styles.row }
-          //   >
-          //     { row.cells.map((cell) => {
-          //       return (
-          //         <td
-          //           { ...cell.getCellProps() }
-          //           className={ row.isExpanded ? styles.cellExpanded : styles.cell }
-          //         >
-          //           { cell.render('Cell') }
-          //         </td>
-          //       );
-          //     }) }
-          //   </tr>
-          // );
-          // return (
-          //   <Fragment key={ row.getRowProps().key }>
-          //     { mainTR }
-          //     { Boolean(row.isExpanded) &&
-          //       <tr>
-          //         <td colSpan={ visibleColumns.length }>
-          //           <Description item={ row.original } currentLevel={ currentLevel }/>
-          //         </td>
-          //       </tr>
-          //     }
-          //   </Fragment>
-          // )
+          return (
+            <TableRow
+              key={ row.original.title }
+              visibleColumns={ visibleColumns }
+              row={ row }
+            />
+          );
         }) }
       </tbody>
     </table>

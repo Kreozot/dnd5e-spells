@@ -11,12 +11,19 @@ export const filtersSlice = createSlice({
   name: 'filters',
   initialState: {
     level: null,
+    currentLevel: '',
   },
   reducers: {
     selectLevel(state, action) {
       return {
         ...state,
         level: action.payload
+      };
+    },
+    setCurrentLevel(state, action) {
+      return {
+        ...state,
+        currentLevel: action.payload
       };
     },
   },

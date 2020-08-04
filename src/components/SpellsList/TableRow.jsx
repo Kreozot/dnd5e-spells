@@ -1,12 +1,11 @@
 import React, { useMemo, useCallback } from 'react';
-import useTraceUpdate from 'use-trace-update';
 
 import Description from './Description';
 
 import styles from './SpellsList.module.scss';
 
 export default function TableRow(props) {
-  const { row, visibleColumns, currentLevel } = props;
+  const { row, visibleColumns } = props;
 
   const handleClick = useCallback(
     () => row.toggleRowExpanded(!row.isExpanded),
@@ -38,7 +37,7 @@ export default function TableRow(props) {
       { Boolean(row.isExpanded) &&
         <tr>
           <td colSpan={ visibleColumns.length }>
-            <Description item={ row.original } currentLevel={ currentLevel }/>
+            <Description item={ row.original }/>
           </td>
         </tr>
       }

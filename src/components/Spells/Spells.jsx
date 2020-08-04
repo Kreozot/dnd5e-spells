@@ -20,7 +20,6 @@ function Spells(props) {
   } = props;
 
   const [classSpells, setClassSpells] = useState([]);
-  const [currentLevel, setCurrentLevel] = useState('');
 
   const filteredData = useMemo(() => {
     if (!classSpells.length) {
@@ -56,7 +55,7 @@ function Spells(props) {
       }
       return (
         <div className={ styles.container }>
-          <SpellsList data={ groupedData[filters.level] } currentLevel={ currentLevel }/>
+          <SpellsList data={ groupedData[filters.level] }/>
         </div>
       );
     }
@@ -66,16 +65,16 @@ function Spells(props) {
         <h2 className={ styles.levelHeader }>
           { level === 'cantrip' ? 'Cantrips' : `Level ${ level }` }
         </h2>
-        <SpellsList data={ groupedData[level] } currentLevel={ currentLevel }/>
+        <SpellsList data={ groupedData[level] }/>
       </div>
     ));
-  }, [levels, groupedData, filters.level, currentLevel]);
+  }, [levels, groupedData, filters.level]);
 
   return (
     <>
       <div className={ styles.classSelector }>
         <ClassFilterSelector setClassSpells={ setClassSpells }/>
-        <CurrentLevelSelector currentLevel={ currentLevel } setCurrentLevel={ setCurrentLevel }/>
+        <CurrentLevelSelector/>
       </div>
       <LevelFilterSelector levels={ levels }/>
       { spellsList }

@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import maxBy from 'lodash/maxBy';
+import { connect } from 'react-redux';
 
 import Tooltip from 'components/Tooltip';
 
 // Translates <LevelUpdgrades initial="1d6" upgrades="5:2d6;11:3d6;17:4d6"/> into value relevant for current level
-export default function LevelUpgrades(props) {
+function LevelUpgrades(props) {
   const { initial, upgrades, currentLevel } = props;
 
   const upgradesMap = useMemo(() => {
@@ -39,3 +40,7 @@ export default function LevelUpgrades(props) {
     </Tooltip>
   );
 }
+
+const mapStateToProps = (state) => ({ currentLevel: state.filters.currentLevel });
+
+export default connect(mapStateToProps)(LevelUpgrades);

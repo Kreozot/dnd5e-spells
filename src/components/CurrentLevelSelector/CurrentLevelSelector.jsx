@@ -1,9 +1,13 @@
 import React, { useCallback } from 'react';
 import TextField from '@material-ui/core/TextField';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+import { filtersSlice } from 'common/store';
 
 import styles from './CurrentLevelSelector.module.scss';
 
-export default function CurrentLevelSelector(props) {
+function CurrentLevelSelector(props) {
   const {
     currentLevel,
     setCurrentLevel,
@@ -26,3 +30,7 @@ export default function CurrentLevelSelector(props) {
   );
 }
 
+const mapStateToProps = (state) => ({ currentLevel: state.filters.currentLevel });
+const mapDispatchToProps = (dispatch) => bindActionCreators({ setCurrentLevel: filtersSlice.actions.setCurrentLevel }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(CurrentLevelSelector);

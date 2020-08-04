@@ -4,7 +4,7 @@ import MarkdownToJsx from 'markdown-to-jsx';
 import LevelUpgrades from './LevelUpgrades';
 
 export default function Markdown(props) {
-  const { children, currentLevel } = props;
+  const { children } = props;
 
   return (
     <MarkdownToJsx
@@ -12,9 +12,6 @@ export default function Markdown(props) {
         overrides: {
           LevelUpdgrades: {
             component: LevelUpgrades,
-            props: {
-              currentLevel,
-            },
           },
         },
       } }
