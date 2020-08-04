@@ -32,7 +32,7 @@
     Your spell bolsters your allies with toughness and
     resolve. Choose up to three creatures within range.
     Each target’s hit point maximum and current hit points
-    increase by 5 for the duration.
+    increase by **5** for the duration.
   atHigherLevels: >
     When you cast this spell using
     a spell slot of **3rd level** or higher, a target’s hit points
@@ -606,7 +606,7 @@
 
     While affected by this spell, the object is more difficult
     to break or force open; the DC to break it or pick any
-    locks on it increases by 10.
+    locks on it increases by **10**.
 
 - title: Armor of Agathys
   level: 1
@@ -627,7 +627,7 @@
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, both the temporary hit
-    points and the **cold damage** increase by 5 for each slot
+    points and the **cold damage** increase by **5** for each slot
     level above **1st**.
 
 - title: Arms of Hadar
@@ -2091,7 +2091,7 @@
   atHigherLevels: >
     When you cast this spell using
     a spell slot of **6th level** or higher, the challenge rating
-    increases by 1 for each slot level above **5th**.
+    increases by **1** for each slot level above **5th**.
 
 
     | d10 | Behavior |
@@ -2153,7 +2153,7 @@
   atHigherLevels: >
     When you cast this spell using
     a spell slot of **7th level** or higher, the challenge rating
-    increases by 1 for each slot level above **6th**.
+    increases by **1** for each slot level above **6th**.
 
 - title: Conjure Minor Elementals
   level: 4
@@ -4811,7 +4811,7 @@
   duration: 1 day
   description: >
     You create a ward against magical travel that protects
-    up to 40,000 square feet of floor space to a height of **30
+    up to **40,000 square feet**of floor space to a height of **30
     feet** above the floor. For the duration, creatures can’t
     teleport into the area or use portals, such as those
     created by the gate spell, to enter the area. The spell
@@ -5403,7 +5403,7 @@
       - a small silver rod worth at least 10 gp
   duration: 24 hours
   description: >
-    You create a ward that protects up to 2,500 square feet
+    You create a ward that protects up to **2,500 square feet**
     of floor space (an area **50 feet** square, or one hundred
     **5-foot** squares or twenty-five **10-foot** squares). The
     warded area can be up to **20 feet** tall, and shaped as you
@@ -5755,7 +5755,7 @@
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **7th level** or higher, the amount of healing
-    increases by 10 for each slot level above **6th**.
+    increases by **10** for each slot level above **6th**.
 
 - title: Healing Word
   level: 1
@@ -6434,14 +6434,14 @@
     V: true
     S: true
     M:
-      - an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp
+      - an exquisite chest, 3 feet by **2** feet by **2** feet, constructed from rare materials worth at least 5,000 gp
       - a Tiny replica made from the same materials worth at least 50 gp
   duration: Instantaneous
   description: >
     You hide a chest, and all its contents, on the Ethereal
     Plane. You must touch the chest and the miniature
     replica that serves as a material component for the spell.
-    The chest can contain up to 12 cubic feet of nonliving
+    The chest can contain up to **12 cubic feet** of nonliving
     material (**3 feet** by **2 feet** by **2 feet**).
 
 
@@ -8400,9 +8400,9 @@
     torch, or a small campfire.
 
     * You instantaneously clean or soil an object no larger
-    than 1 cubic foot.
+    than **1 cubic foot**.
 
-    * You chill, warm, or flavor up to 1 cubic foot of nonliving
+    * You chill, warm, or flavor up to **1 cubic foot** of nonliving
     material for **1 hour**.
 
     * You make a color, a small mark, or a sym bol appear
@@ -8801,7 +8801,7 @@
     Coming back from the dead is an ordeal. The target
     takes a -4 penalty to all attack rolls, saving throws, and
     ability checks. Every time the target finishes a long rest,
-    the penalty is reduced by 1 until it disappears.
+    the penalty is reduced by **1** until it disappears.
 
 - title: Rary’s Telepathic Bond
   level: 5
@@ -9046,7 +9046,7 @@
     Coming back from the dead is an ordeal. The target
     takes a **-4** penalty to all attack rolls, saving throws, and
     ability checks. Every time the target finishes a long rest,
-    the penalty is reduced by 1 until it disappears.
+    the penalty is reduced by **1** until it disappears.
 
 
     Casting this spell to restore life to a creature that has
@@ -9151,7 +9151,7 @@
     Flame-like radiance descends on a creature that you
     can see within range. The target must succeed on a
     **Dexterity saving throw** or take **<LevelUpdgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **radiant damage**. The
-    target gains no benefit fro
+    target gains no benefit from cover for this saving throw.
   # levelUpgrades: >
   #   The spell’s damage increases by **1d8** when you reach
   #   **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).

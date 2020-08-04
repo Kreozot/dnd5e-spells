@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Button from '@material-ui/core/Button';
 
 export default function LevelFilterButton(props) {
@@ -8,9 +8,11 @@ export default function LevelFilterButton(props) {
     setLevelFilter,
   } = props;
 
+  const handleClick = useCallback(() => setLevelFilter(level), [level, setLevelFilter]);
+
   return (
     <Button
-      onClick={ () => setLevelFilter(level) }
+      onClick={ handleClick }
       variant={ level === levelFilter ? 'contained' : null }
       color="primary"
     >

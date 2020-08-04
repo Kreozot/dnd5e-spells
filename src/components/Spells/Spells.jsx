@@ -1,8 +1,11 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 import data from 'content/spells';
+import { filtersSlice } from 'common/store';
 import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import ClassFilterSelector from 'components/ClassFilterSelector';
@@ -10,9 +13,13 @@ import CurrentLevelSelector from 'components/CurrentLevelSelector';
 
 import styles from './Spells.module.scss'
 
-export default function Spells(props) {
+function Spells(props) {
+  const {
+    filters,
+    selectLevel,
+  } = props;
+
   const [classSpells, setClassSpells] = useState([]);
-  const [levelFilter, setLevelFilter] = useState(null);
   const [currentLevel, setCurrentLevel] = useState('');
 
   const filteredData = useMemo(() => {
@@ -37,19 +44,19 @@ export default function Spells(props) {
   }, [groupedData]);
 
   useEffect(() => {
-    if (levelFilter && !levels.includes(levelFilter)) {
-      setLevelFilter(null);
+    if (filters.level && !levels.includes(filters.level)) {
+      selectLevel(null);
     }
-  }, [levels, levelFilter, setLevelFilter]);
+  }, [levels, filters.level, selectLevel]);
 
   const spellsList = useMemo(() => {
-    if (levelFilter !== null) {
-      if (!groupedData[levelFilter]) {
+    if (filters.level !== null) {
+      if (!groupedData[filters.level]) {
         return null;
       }
       return (
         <div className={ styles.container }>
-          <SpellsList data={ groupedData[levelFilter] } currentLevel={ currentLevel }/>
+          <SpellsList data={ groupedData[filters.level] } currentLevel={ currentLevel }/>
         </div>
       );
     }
@@ -62,7 +69,7 @@ export default function Spells(props) {
         <SpellsList data={ groupedData[level] } currentLevel={ currentLevel }/>
       </div>
     ));
-  }, [levels, groupedData, levelFilter, currentLevel]);
+  }, [levels, groupedData, filters.level, currentLevel]);
 
   return (
     <>
@@ -70,13 +77,14 @@ export default function Spells(props) {
         <ClassFilterSelector setClassSpells={ setClassSpells }/>
         <CurrentLevelSelector currentLevel={ currentLevel } setCurrentLevel={ setCurrentLevel }/>
       </div>
-      <LevelFilterSelector
-        levels={ levels }
-        levelFilter={ levelFilter }
-        setLevelFilter={ setLevelFilter }
-      />
+      <LevelFilterSelector levels={ levels }/>
       { spellsList }
     </>
   );
 }
 
+
+const mapStateToProps = (state) => ({ filters: state.filters });
+const mapDispatchToProps = (dispatch) => bindActionCreators({ selectLevel: filtersSlice.actions.selectLevel }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Spells);

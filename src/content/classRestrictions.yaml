@@ -1,0 +1,170 @@
+bard:
+  levels:
+    - cantrips: 2
+      knownSpells: 4
+      spellSlots:
+        - 2
+    - cantrips: 2
+      knownSpells: 5
+      spellSlots:
+        - 3
+    - cantrips: 2
+      knownSpells: 6
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 3
+      knownSpells: 7
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 3
+      knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 3
+      knownSpells: 9
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 3
+      knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - cantrips: 3
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 2
+    - cantrips: 3
+      knownSpells: 12
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
+    - cantrips: 4
+      knownSpells: 14
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+    - cantrips: 4
+      knownSpells: 15
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 4
+      knownSpells: 15
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 4
+      knownSpells: 16
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 4
+      knownSpells: 18
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 4
+      knownSpells: 19
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      knownSpells: 19
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      knownSpells: 20
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      knownSpells: 22
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      knownSpells: 22
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      knownSpells: 22
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 2
+        - 1
+        - 1
