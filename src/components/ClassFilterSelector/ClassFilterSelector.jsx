@@ -1,20 +1,24 @@
-import React, { useCallback, useState, useMemo, useEffect } from 'react';
+import React, { useCallback, useMemo, useEffect } from 'react';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
+import { filtersSlice } from 'common/store';
 import classSpells from 'content/classSpells.yaml';
 
 import styles from './ClassFilterSelector.module.scss';
 
-export default function ClassFilterSelector(props) {
+function ClassFilterSelector(props) {
   const {
     setClassSpells,
+    classFilter,
+    classAdditionalFilter,
+    setClass,
+    setClassAdditional,
   } = props;
-
-  const [classFilter, setClassFilter] = useState('');
-  const [additionalFilter, setAdditionalFilter] = useState('');
 
   const additionalKey = useMemo(() => {
     if (classFilter) {
@@ -29,12 +33,12 @@ export default function ClassFilterSelector(props) {
     let result = [];
     if (classFilter) {
       result = classSpells[classFilter].main;
-      if (additionalFilter && additionalKey) {
-        result = result.concat(classSpells[classFilter][additionalKey][additionalFilter]);
+      if (classAdditionalFilter && additionalKey) {
+        result = result.concat(classSpells[classFilter][additionalKey][classAdditionalFilter]);
       }
     }
     return result;
-  }, [classFilter, additionalFilter, additionalKey]);
+  }, [classFilter, classAdditionalFilter, additionalKey]);
 
   const additionalOptions = useMemo(() => {
     if (additionalKey) {
@@ -47,13 +51,13 @@ export default function ClassFilterSelector(props) {
   }, [setClassSpells, spells]);
 
   const handleClassChange = useCallback((event) => {
-    setClassFilter(event.target.value);
-    setAdditionalFilter('');
-  }, []);
+    setClass(event.target.value);
+    setClassAdditional('');
+  }, [setClass, setClassAdditional]);
 
   const handleAdditionalChange = useCallback((event) => {
-    setAdditionalFilter(event.target.value);
-  }, []);
+    setClassAdditional(event.target.value);
+  }, [setClassAdditional]);
 
   const additionalSelector = useMemo(() => {
     if (additionalOptions) {
@@ -62,7 +66,7 @@ export default function ClassFilterSelector(props) {
           <InputLabel id="class-select-label">{ additionalKey }</InputLabel>
           <Select
             labelId="class-select-label"
-            value={ additionalFilter }
+            value={ classAdditionalFilter }
             onChange={ handleAdditionalChange }
             className={ styles.select }
           >
@@ -77,7 +81,7 @@ export default function ClassFilterSelector(props) {
       );
     }
     return null;
-  }, [additionalOptions, additionalKey, additionalFilter, handleAdditionalChange]);
+  }, [additionalOptions, additionalKey, classAdditionalFilter, handleAdditionalChange]);
 
   return (
     <>
@@ -107,3 +111,13 @@ export default function ClassFilterSelector(props) {
   );
 }
 
+const mapStateToProps = (state) => ({
+  classFilter: state.filters.class,
+  classAdditionalFilter: state.filters.classAdditional,
+});
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  setClass: filtersSlice.actions.setClass,
+  setClassAdditional: filtersSlice.actions.setClassAdditional,
+}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(ClassFilterSelector);

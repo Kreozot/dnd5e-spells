@@ -29,7 +29,7 @@ export default function TableRow(props) {
         );
       }) }
     </tr>
-  ), [row]);
+  ), [row, handleClick]);
 
   return (
     <>

@@ -1,10 +1,9 @@
-import React, { useMemo, Fragment } from 'react';
+import React, { useMemo } from 'react';
 import { useTable, useExpanded } from 'react-table';
 import useTraceUpdate from 'use-trace-update';
 
 import Components from './Components';
 import TextWithHint from './TextWithHint';
-import Description from './Description';
 import IconCell from './IconCell';
 import TableRow from './TableRow';
 
