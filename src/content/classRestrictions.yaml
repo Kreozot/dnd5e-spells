@@ -319,3 +319,1001 @@ cleric:
         - 2
         - 1
         - 1
+
+druid:
+  levels:
+    - cantrips: 2
+      spellSlots:
+        - 2
+    - cantrips: 2
+      spellSlots:
+        - 3
+    - cantrips: 2
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 3
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 3
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 3
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 3
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - cantrips: 3
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 2
+    - cantrips: 3
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 2
+        - 1
+        - 1
+
+fighterEldrichKnight:
+  levels:
+    - cantrips: 2
+      knownSpells: 3
+      spellSlots:
+        - 2
+    - cantrips: 2
+      knownSpells: 4
+      spellSlots:
+        - 3
+    - cantrips: 2
+      knownSpells: 4
+      spellSlots:
+        - 3
+    - cantrips: 2
+      knownSpells: 4
+      spellSlots:
+        - 3
+    - cantrips: 2
+      knownSpells: 5
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 2
+      knownSpells: 6
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 2
+      knownSpells: 6
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 3
+      knownSpells: 7
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 3
+      knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 3
+      knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 3
+      knownSpells: 9
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 3
+      knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 3
+      knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 3
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 3
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 3
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 3
+      knownSpells: 12
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - cantrips: 3
+      knownSpells: 13
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+
+paladin:
+  levels:
+    - spellSlots: []
+    - spellSlots:
+      - 2
+    - spellSlots:
+      - 3
+    - spellSlots:
+      - 3
+    - spellSlots:
+      - 4
+      - 2
+    - spellSlots:
+      - 4
+      - 2
+    - spellSlots:
+      - 4
+      - 3
+    - spellSlots:
+      - 4
+      - 3
+    - spellSlots:
+      - 4
+      - 3
+      - 2
+    - spellSlots:
+      - 4
+      - 3
+      - 2
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 1
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 1
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 2
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 2
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 3
+      - 1
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 3
+      - 1
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 3
+      - 2
+    - spellSlots:
+      - 4
+      - 3
+      - 3
+      - 3
+      - 2
+
+ranger:
+  levels:
+    - knownSpells: 0
+      spellSlots: []
+    - knownSpells: 2
+      spellSlots:
+        - 2
+    - knownSpells: 3
+      spellSlots:
+        - 3
+    - knownSpells: 3
+      spellSlots:
+        - 3
+    - knownSpells: 4
+      spellSlots:
+        - 4
+        - 2
+    - knownSpells: 4
+      spellSlots:
+        - 4
+        - 2
+    - knownSpells: 5
+      spellSlots:
+        - 4
+        - 3
+    - knownSpells: 5
+      spellSlots:
+        - 4
+        - 3
+    - knownSpells: 6
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - knownSpells: 6
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - knownSpells: 7
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - knownSpells: 7
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - knownSpells: 9
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 2
+    - knownSpells: 9
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 2
+    - knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
+    - knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
+    - knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+    - knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+
+rogueArcaneTrickster:
+  levels:
+    - cantrips: 3
+      knownSpells: 3
+      spellSlots:
+        - 2
+    - cantrips: 3
+      knownSpells: 4
+      spellSlots:
+        - 3
+    - cantrips: 3
+      knownSpells: 4
+      spellSlots:
+        - 3
+    - cantrips: 3
+      knownSpells: 4
+      spellSlots:
+        - 3
+    - cantrips: 3
+      knownSpells: 5
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 3
+      knownSpells: 6
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 3
+      knownSpells: 6
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 4
+      knownSpells: 7
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 4
+      knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 4
+      knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 4
+      knownSpells: 9
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 4
+      knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 4
+      knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 4
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 4
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 4
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 4
+      knownSpells: 12
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - cantrips: 4
+      knownSpells: 13
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+
+sorcerer:
+  levels:
+    - cantrips: 4
+      knownSpells: 2
+      spellSlots:
+        - 2
+    - cantrips: 4
+      knownSpells: 3
+      spellSlots:
+        - 3
+    - cantrips: 4
+      knownSpells: 4
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 5
+      knownSpells: 5
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 5
+      knownSpells: 6
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 5
+      knownSpells: 7
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 5
+      knownSpells: 8
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - cantrips: 5
+      knownSpells: 9
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 2
+    - cantrips: 5
+      knownSpells: 10
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
+    - cantrips: 6
+      knownSpells: 11
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+    - cantrips: 6
+      knownSpells: 12
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 6
+      knownSpells: 12
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 6
+      knownSpells: 13
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 6
+      knownSpells: 13
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 6
+      knownSpells: 14
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 6
+      knownSpells: 14
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 6
+      knownSpells: 15
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 6
+      knownSpells: 15
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 6
+      knownSpells: 15
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 6
+      knownSpells: 15
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 2
+        - 1
+        - 1
+
+warlock:
+  levels:
+    - cantrips: 2
+      knownSpells: 2
+      spellSlots:
+        - 1
+    - cantrips: 2
+      knownSpells: 3
+      spellSlots:
+        - 2
+    - cantrips: 2
+      knownSpells: 4
+      spellSlots:
+        - 0
+        - 2
+    - cantrips: 3
+      knownSpells: 5
+      spellSlots:
+        - 0
+        - 2
+    - cantrips: 3
+      knownSpells: 6
+      spellSlots:
+        - 0
+        - 0
+        - 2
+    - cantrips: 3
+      knownSpells: 7
+      spellSlots:
+        - 0
+        - 0
+        - 2
+    - cantrips: 3
+      knownSpells: 8
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 2
+    - cantrips: 3
+      knownSpells: 9
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 2
+    - cantrips: 3
+      knownSpells: 10
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 2
+    - cantrips: 4
+      knownSpells: 10
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 2
+    - cantrips: 4
+      knownSpells: 11
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 3
+    - cantrips: 4
+      knownSpells: 11
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 3
+    - cantrips: 4
+      knownSpells: 12
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 3
+    - cantrips: 4
+      knownSpells: 12
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 3
+    - cantrips: 4
+      knownSpells: 13
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 3
+    - cantrips: 4
+      knownSpells: 13
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 3
+    - cantrips: 4
+      knownSpells: 14
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 4
+    - cantrips: 4
+      knownSpells: 14
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 4
+    - cantrips: 4
+      knownSpells: 15
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 4
+    - cantrips: 4
+      knownSpells: 15
+      spellSlots:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 4
+
+wizard:
+  levels:
+    - cantrips: 3
+      spellSlots:
+        - 2
+    - cantrips: 3
+      spellSlots:
+        - 3
+    - cantrips: 3
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 2
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 1
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 2
+    - cantrips: 4
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 1
+        - 1
+        - 1
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 1
+        - 1
+        - 1
+    - cantrips: 5
+      spellSlots:
+        - 4
+        - 3
+        - 3
+        - 3
+        - 3
+        - 2
+        - 2
+        - 1
+        - 1

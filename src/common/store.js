@@ -57,6 +57,7 @@ function getClassAdditionalKey(classFilter) {
   }
 }
 
+// TODO: Restrictions on cantrips cast (e.g. Paladin)
 function getAvailableSpellLevel(classFilter, currentLevel) {
   if (classFilter && currentLevel) {
     let levelIndex = parseInt(currentLevel) - 1;
