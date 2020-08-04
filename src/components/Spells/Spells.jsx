@@ -14,7 +14,7 @@ import styles from './Spells.module.scss'
 
 function Spells(props) {
   const {
-    filters,
+    levelFilter,
     selectLevel,
     availableSpells,
   } = props;
@@ -30,19 +30,19 @@ function Spells(props) {
   }, [groupedData]);
 
   useEffect(() => {
-    if (filters.level && !levels.includes(filters.level)) {
+    if (levelFilter && !levels.includes(levelFilter)) {
       selectLevel(null);
     }
-  }, [levels, filters.level, selectLevel]);
+  }, [levels, levelFilter, selectLevel]);
 
   const spellsList = useMemo(() => {
-    if (filters.level !== null) {
-      if (!groupedData[filters.level]) {
+    if (levelFilter !== null) {
+      if (!groupedData[levelFilter]) {
         return null;
       }
       return (
         <div className={ styles.container }>
-          <SpellsList data={ groupedData[filters.level] }/>
+          <SpellsList data={ groupedData[levelFilter] }/>
         </div>
       );
     }
@@ -55,7 +55,7 @@ function Spells(props) {
         <SpellsList data={ groupedData[level] }/>
       </div>
     ));
-  }, [levels, groupedData, filters.level]);
+  }, [levels, groupedData, levelFilter]);
 
   return (
     <>
@@ -69,9 +69,8 @@ function Spells(props) {
   );
 }
 
-
 const mapStateToProps = (state) => ({
-  filters: state.filters,
+  levelFilter: state.filters.level,
   availableSpells: getAvailableSpells(state)
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ selectLevel: filtersSlice.actions.selectLevel }, dispatch);
