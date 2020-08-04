@@ -9,9 +9,12 @@ const persistConfig = {
 
 export const filtersSlice = createSlice({
   name: 'filters',
-  initialState: {},
+  initialState: {
+    level: null,
+  },
   reducers: {
     selectLevel(state, action) {
+      console.log(action.payload);
       return {
         ...state,
         level: action.payload
