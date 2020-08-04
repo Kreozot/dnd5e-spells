@@ -6,7 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { filtersSlice } from 'common/store';
+import { filtersSlice, getAvailableSpells, getClassAdditionalOptions } from 'common/store';
 import classSpells from 'content/classSpells.yaml';
 
 import styles from './ClassFilterSelector.module.scss';
@@ -16,8 +16,10 @@ function ClassFilterSelector(props) {
     setClassSpells,
     classFilter,
     classAdditionalFilter,
+    spells,
     setClass,
     setClassAdditional,
+    additionalOptions,
   } = props;
 
   const additionalKey = useMemo(() => {
@@ -29,22 +31,23 @@ function ClassFilterSelector(props) {
     }
   }, [classFilter]);
 
-  const spells = useMemo(() => {
-    let result = [];
-    if (classFilter) {
-      result = classSpells[classFilter].main;
-      if (classAdditionalFilter && additionalKey) {
-        result = result.concat(classSpells[classFilter][additionalKey][classAdditionalFilter]);
-      }
-    }
-    return result;
-  }, [classFilter, classAdditionalFilter, additionalKey]);
+  // TODO: Export this logic to the reducer
+  // const spells = useMemo(() => {
+  //   let result = [];
+  //   if (classFilter) {
+  //     result = classSpells[classFilter].main;
+  //     if (classAdditionalFilter && additionalKey) {
+  //       result = result.concat(classSpells[classFilter][additionalKey][classAdditionalFilter]);
+  //     }
+  //   }
+  //   return result;
+  // }, [classFilter, classAdditionalFilter, additionalKey]);
 
-  const additionalOptions = useMemo(() => {
-    if (additionalKey) {
-      return Object.keys(classSpells[classFilter][additionalKey]);
-    }
-  }, [classFilter, additionalKey]);
+  // const additionalOptions = useMemo(() => {
+  //   if (additionalKey) {
+  //     return Object.keys(classSpells[classFilter][additionalKey]);
+  //   }
+  // }, [classFilter, additionalKey]);
 
   useEffect(() => {
     setClassSpells(spells);
@@ -114,6 +117,8 @@ function ClassFilterSelector(props) {
 const mapStateToProps = (state) => ({
   classFilter: state.filters.class,
   classAdditionalFilter: state.filters.classAdditional,
+  spells: getAvailableSpells(state),
+  additionalOptions: getClassAdditionalOptions(state),
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   setClass: filtersSlice.actions.setClass,
