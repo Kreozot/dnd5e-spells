@@ -3,6 +3,10 @@
   position: relative;
   top: -0.6em;
   margin-left: 4px;
+
+  & > span {
+    text-decoration: none;
+  }
 }
 
 .spellSlotsBadge {
