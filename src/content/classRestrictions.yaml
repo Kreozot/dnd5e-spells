@@ -1,4 +1,5 @@
 bard:
+  spellcastingAbility: Charisma
   levels:
     - cantrips: 2
       knownSpells: 4
@@ -170,6 +171,7 @@ bard:
         - 1
 
 cleric:
+  spellcastingAbility: Wisdom
   levels:
     - cantrips: 3
       spellSlots:
@@ -321,6 +323,7 @@ cleric:
         - 1
 
 druid:
+  spellcastingAbility: Wisdom
   levels:
     - cantrips: 2
       spellSlots:
@@ -472,7 +475,14 @@ druid:
         - 1
 
 fighterEldrichKnight:
+  spellcastingAbility: Intelligence
   levels:
+    - cantrips: 0
+      knownSpells: 0
+      spellSlots: []
+    - cantrips: 0
+      knownSpells: 0
+      spellSlots: []
     - cantrips: 2
       knownSpells: 3
       spellSlots:
@@ -571,6 +581,7 @@ fighterEldrichKnight:
         - 1
 
 paladin:
+  spellcastingAbility: Charisma
   levels:
     - spellSlots: []
     - spellSlots:
@@ -653,6 +664,7 @@ paladin:
       - 2
 
 ranger:
+  spellcastingAbility: Wisdom
   levels:
     - knownSpells: 0
       spellSlots: []
@@ -755,6 +767,7 @@ ranger:
         - 2
 
 rogueArcaneTrickster:
+  spellcastingAbility: Intelligence
   levels:
     - cantrips: 3
       knownSpells: 3
@@ -854,6 +867,7 @@ rogueArcaneTrickster:
         - 1
 
 sorcerer:
+  spellcastingAbility: Charisma
   levels:
     - cantrips: 4
       knownSpells: 2
@@ -1025,6 +1039,7 @@ sorcerer:
         - 1
 
 warlock:
+  spellcastingAbility: Charisma
   levels:
     - cantrips: 2
       knownSpells: 2
@@ -1168,6 +1183,7 @@ warlock:
         - 4
 
 wizard:
+  spellcastingAbility: Intelligence
   levels:
     - cantrips: 3
       spellSlots:
