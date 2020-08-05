@@ -476,6 +476,9 @@ druid:
 
 fighterEldrichKnight:
   spellcastingAbility: Intelligence
+  schoolsEmphasis:
+    - Abjuration
+    - Evocation
   levels:
     - cantrips: 0
       knownSpells: 0
@@ -768,6 +771,9 @@ ranger:
 
 rogueArcaneTrickster:
   spellcastingAbility: Intelligence
+  schoolsEmphasis:
+    - Enchantment
+    - Illusion
   levels:
     - cantrips: 0
       knownSpells: 0

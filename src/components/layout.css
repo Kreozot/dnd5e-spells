@@ -4,6 +4,9 @@
 
   --color-background-badge: rgb(102, 138, 255);
   --color-font-badge: white;
+
+  --color-font-secondary: rgb(185, 185, 185);
+  --color-font-primary: #000;
 }
 
 html {

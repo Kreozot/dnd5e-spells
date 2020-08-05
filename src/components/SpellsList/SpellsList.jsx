@@ -4,6 +4,7 @@ import { useTable, useExpanded } from 'react-table';
 import Components from './Components';
 import TextWithHint from './TextWithHint';
 import IconCell from './IconCell';
+import SchoolCell from './SchoolCell';
 import TableRow from './TableRow';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
@@ -25,6 +26,7 @@ export default function SpellsList(props) {
     {
       Header: 'School',
       accessor: 'school',
+      Cell: SchoolCell,
     },
     {
       Header: () => <div className={ styles.headerCenter }>Ritual</div>,

@@ -10,3 +10,4 @@ https://dnd5e.netlify.app/
 * Automaticaly change spell parameters which depends of current level (some cantrips).
 * Material components detailed in tooltips.
 * If spell needed valuable material components, it will be highlighted with asterisk and explained in the tooltip.
+* Showing amount of spells slots available on current level
