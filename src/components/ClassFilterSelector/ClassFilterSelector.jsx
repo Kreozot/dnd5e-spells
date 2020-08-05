@@ -74,6 +74,8 @@ function ClassFilterSelector(props) {
           <MenuItem value="sorcerer">Sorcerer</MenuItem>
           <MenuItem value="warlock">Warlock</MenuItem>
           <MenuItem value="wizard">Wizard</MenuItem>
+          <MenuItem value="fighterEldrichKnight">Fighter (Eldrich Knight)</MenuItem>
+          <MenuItem value="rogueArcaneTrickster">Rogue (Arcane Trickster)</MenuItem>
         </Select>
       </FormControl>
       { additionalSelector }

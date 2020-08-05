@@ -868,7 +868,7 @@ warlock:
     - Power Word Kill
     - True Polymorph
 
-wizard:
+wizard: &wizard
   main:
     - Acid Splash
     - Blade Ward
@@ -1086,3 +1086,6 @@ wizard:
     - True Polymorph
     - Weird
     - Wish
+
+fighterEldrichKnight: *wizard
+rogueArcaneTrickster: *wizard

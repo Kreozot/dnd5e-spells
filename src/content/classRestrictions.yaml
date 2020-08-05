@@ -769,6 +769,12 @@ ranger:
 rogueArcaneTrickster:
   spellcastingAbility: Intelligence
   levels:
+    - cantrips: 0
+      knownSpells: 0
+      spellSlots: []
+    - cantrips: 0
+      knownSpells: 0
+      spellSlots: []
     - cantrips: 3
       knownSpells: 3
       spellSlots:
