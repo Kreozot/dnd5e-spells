@@ -21,6 +21,16 @@ function LevelFilterButton(props) {
     selectLevel(level);
   }, [level, selectLevel]);
 
+  const text = useMemo(() => {
+    if (level === null) {
+      return 'All levels';
+    }
+    if (level === 'cantrip') {
+      return 'Cantrips';
+    }
+    return level;
+  }, [level]);
+
   const availableBadge = useMemo(() => {
     if (currentLevelClassRestrictions && currentLevel && level) {
       const value = level === 'cantrip'
@@ -45,7 +55,7 @@ function LevelFilterButton(props) {
       variant={ level === levelFilter ? 'contained' : null }
       color="primary"
     >
-      { level === null ? 'All levels' : level }
+      { text }
       { availableBadge }
     </Button>
   );
