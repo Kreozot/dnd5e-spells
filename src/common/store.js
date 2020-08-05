@@ -22,32 +22,21 @@ export const filtersSlice = createSlice({
   },
   reducers: {
     selectLevel(state, action) {
-      return {
-        ...state,
-        level: action.payload
-      };
+      return { ...state, level: action.payload };
     },
     setCurrentLevel(state, action) {
-      return {
-        ...state,
-        currentLevel: action.payload
-      };
+      return { ...state, currentLevel: action.payload };
     },
     setClass(state, action) {
-      return {
-        ...state,
-        class: action.payload
-      };
+      return { ...state, class: action.payload };
     },
     setClassAdditional(state, action) {
-      return {
-        ...state,
-        classAdditional: action.payload
-      };
+      return { ...state, classAdditional: action.payload };
     },
   },
 });
 
+// Get key (name) of class additional options (e.g. "Divine Domains" for Cleric)
 export const getClassAdditionalKey = createSelector(
   (state) => state.filters.class,
   (classFilter) => {
@@ -60,16 +49,31 @@ export const getClassAdditionalKey = createSelector(
   }
 );
 
-const getAvailableSpellLevel = (classFilter, currentLevel) => {
-  if (classFilter && currentLevel) {
-    const lastIndex = classRestrictionsData[classFilter].levels.length - 1;
-    const levelIndex = Math.min(parseInt(currentLevel) - 1, lastIndex);
-    const levelRestrictions = classRestrictionsData[classFilter].levels[levelIndex];
-    return levelRestrictions.spellSlots.length;
+// Get spell casting restrictions params for current class
+export const getClassRestrictions = createSelector(
+  (state) => state.filters.class,
+  (classFilter) => {
+    if (classFilter) {
+      return classRestrictionsData[classFilter];
+    }
   }
-}
+);
 
+// Get maximum spell slot's level for current class and level
+const getAvailableSpellLevel = createSelector(
+  getClassRestrictions,
+  (state) => state.filters.currentLevel,
+  (classRestrictions, currentLevel) => {
+    if (classRestrictions && currentLevel) {
+      const lastIndex = classRestrictions.levels.length - 1;
+      const levelIndex = Math.min(parseInt(currentLevel) - 1, lastIndex);
+      const levelRestrictions = classRestrictions.levels[levelIndex];
+      return levelRestrictions.spellSlots.length;
+    }
+  }
+);
 
+// Get additional class options (like Cleric's Divine Domains list)
 export const getClassAdditionalOptions = createSelector(
   (state) => state.filters.class,
   getClassAdditionalKey,
@@ -86,7 +90,8 @@ export const getAvailableSpells = createSelector(
   (state) => state.filters.classAdditional,
   (state) => state.filters.currentLevel,
   getClassAdditionalKey,
-  (classFilter, classAdditionalFilter, currentLevel, additionalKey) => {
+  getAvailableSpellLevel,
+  (classFilter, classAdditionalFilter, currentLevel, additionalKey, availableSpellLevel) => {
     if (!classFilter) {
       return spellsData;
     }
@@ -98,7 +103,6 @@ export const getAvailableSpells = createSelector(
         availableSpellList = availableSpellList.concat(classSpellsData[classFilter][additionalKey][classAdditionalFilter]);
       }
     }
-    const availableSpellLevel = getAvailableSpellLevel(classFilter, currentLevel);
 
     return spellsData
       .filter((spell) => !currentLevel || spell.level === 'cantrip' || spell.level <= availableSpellLevel)
