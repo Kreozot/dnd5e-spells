@@ -62,10 +62,8 @@ export const getClassAdditionalKey = createSelector(
 
 const getAvailableSpellLevel = (classFilter, currentLevel) => {
   if (classFilter && currentLevel) {
-    let levelIndex = parseInt(currentLevel) - 1;
-    if (levelIndex > classRestrictionsData[classFilter].length - 1) {
-      levelIndex = classRestrictionsData[classFilter].length - 1;
-    }
+    const lastIndex = classRestrictionsData[classFilter].levels.length - 1;
+    const levelIndex = Math.min(parseInt(currentLevel) - 1, lastIndex);
     const levelRestrictions = classRestrictionsData[classFilter].levels[levelIndex];
     return levelRestrictions.spellSlots.length;
   }
