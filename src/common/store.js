@@ -48,16 +48,19 @@ export const filtersSlice = createSlice({
   },
 });
 
-function getClassAdditionalKey(classFilter) {
-  if (classFilter) {
-    const keys = Object.keys(classSpellsData[classFilter]);
-    if (keys.length > 1) {
-      return keys.filter((key) => key !== 'main')[0];
+export const getClassAdditionalKey = createSelector(
+  (state) => state.filters.class,
+  (classFilter) => {
+    if (classFilter) {
+      const keys = Object.keys(classSpellsData[classFilter]);
+      if (keys.length > 1) {
+        return keys.filter((key) => key !== 'main')[0];
+      }
     }
   }
-}
+);
 
-function getAvailableSpellLevel(classFilter, currentLevel) {
+const getAvailableSpellLevel = (classFilter, currentLevel) => {
   if (classFilter && currentLevel) {
     let levelIndex = parseInt(currentLevel) - 1;
     if (levelIndex > classRestrictionsData[classFilter].length - 1) {
@@ -68,26 +71,27 @@ function getAvailableSpellLevel(classFilter, currentLevel) {
   }
 }
 
+
 export const getClassAdditionalOptions = createSelector(
   (state) => state.filters.class,
-  (classFilter) => {
-    const additionalKey = getClassAdditionalKey(classFilter);
+  getClassAdditionalKey,
+  (classFilter, additionalKey) => {
     if (additionalKey) {
       return Object.keys(classSpellsData[classFilter][additionalKey]);
     }
   }
 );
 
+// Get all spells objects available to current class (including additional options) and level
 export const getAvailableSpells = createSelector(
   (state) => state.filters.class,
   (state) => state.filters.classAdditional,
   (state) => state.filters.currentLevel,
-  (classFilter, classAdditionalFilter, currentLevel) => {
+  getClassAdditionalKey,
+  (classFilter, classAdditionalFilter, currentLevel, additionalKey) => {
     if (!classFilter) {
       return spellsData;
     }
-
-    const additionalKey = getClassAdditionalKey(classFilter);
 
     let availableSpellList = [];
     if (classFilter) {

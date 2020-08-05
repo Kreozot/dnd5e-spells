@@ -6,8 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { filtersSlice, getAvailableSpells, getClassAdditionalOptions } from 'common/store';
-import classSpells from 'content/classSpells.yaml';
+import { filtersSlice, getAvailableSpells, getClassAdditionalOptions, getClassAdditionalKey } from 'common/store';
 
 import styles from './ClassFilterSelector.module.scss';
 
@@ -18,16 +17,8 @@ function ClassFilterSelector(props) {
     setClass,
     setClassAdditional,
     additionalOptions,
+    additionalKey,
   } = props;
-
-  const additionalKey = useMemo(() => {
-    if (classFilter) {
-      const keys = Object.keys(classSpells[classFilter]);
-      if (keys.length > 1) {
-        return keys.filter((key) => key !== 'main')[0];
-      }
-    }
-  }, [classFilter]);
 
   const handleClassChange = useCallback((event) => {
     setClass(event.target.value);
@@ -95,6 +86,7 @@ const mapStateToProps = (state) => ({
   classAdditionalFilter: state.filters.classAdditional,
   spells: getAvailableSpells(state),
   additionalOptions: getClassAdditionalOptions(state),
+  additionalKey: getClassAdditionalKey(state),
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   setClass: filtersSlice.actions.setClass,
