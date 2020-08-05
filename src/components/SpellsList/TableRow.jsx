@@ -29,7 +29,8 @@ export default function TableRow(props) {
         );
       }) }
     </tr>
-  ), [row, handleClick]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  ), [row, row.isExpanded, handleClick]);
 
   return (
     <>
