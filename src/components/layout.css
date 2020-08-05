@@ -1,6 +1,9 @@
 :root {
   --color-border-table: hsla(0, 0%, 0%, 0.12);
   --color-background-light: rgb(225, 239, 248);
+
+  --color-background-badge: rgb(102, 138, 255);
+  --color-font-badge: white;
 }
 
 html {

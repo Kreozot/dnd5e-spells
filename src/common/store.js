@@ -59,16 +59,25 @@ export const getClassRestrictions = createSelector(
   }
 );
 
-// Get maximum spell slot's level for current class and level
-const getAvailableSpellLevel = createSelector(
+// Get spell casting restrictions params for current class and level
+export const getCurrentLevelClassRestrictions = createSelector(
   getClassRestrictions,
   (state) => state.filters.currentLevel,
   (classRestrictions, currentLevel) => {
     if (classRestrictions && currentLevel) {
       const lastIndex = classRestrictions.levels.length - 1;
       const levelIndex = Math.min(parseInt(currentLevel) - 1, lastIndex);
-      const levelRestrictions = classRestrictions.levels[levelIndex];
-      return levelRestrictions.spellSlots.length;
+      return classRestrictions.levels[levelIndex];
+    }
+  }
+);
+
+// Get maximum spell slot's level for current class and level
+const getAvailableSpellLevel = createSelector(
+  getCurrentLevelClassRestrictions,
+  (currentLevelClassRestrictions) => {
+    if (currentLevelClassRestrictions) {
+      return currentLevelClassRestrictions.spellSlots.length;
     }
   }
 );
