@@ -881,7 +881,7 @@
     native to a different plane of existence than the one
     you’re on, the target disappears, returning to its home
     plane. If the target is native to the plane you’re on, the
-    creature vanishes into a harm less demiplane. While
+    creature vanishes into a harmless demiplane. While
     there, the target is incapacitated. It remains there until
     the spell ends, at which point the target reappears in the
     space it left or in the nearest unoccupied space if that
@@ -906,7 +906,7 @@
 
 
     If the target is native to the plane of existence you’re
-    on, you banish the target to a harm less demiplane.
+    on, you banish the target to a harmless demiplane.
     While there, the target is incapacitated. The target
     remains there until the spell ends, at which point the
     target reappears in the space it left or in the nearest
@@ -3718,7 +3718,7 @@
     following effects within range:
 
 
-    * You create a tiny, harm less sensory effect that predicts
+    * You create a tiny, harmless sensory effect that predicts
     what the weather will be at your location for the next
     **24 hours**. The effect might manifest as a golden orb
     for clear skies, a cloud for rain, falling snowflakes for
@@ -3727,7 +3727,7 @@
     * You instantly make a flower blossom, a seed pod open,
     or a leaf bud bloom.
 
-    * You create an instantaneous, harm less sensory effect,
+    * You create an instantaneous, harmless sensory effect,
     such as falling leaves, a puff of wind, the sound of a
     small animal, or the faint odor of skunk. The effect
     must fit in a **5-foot** cube.
@@ -8387,7 +8387,7 @@
     following magical effects within range:
 
 
-    * You create an instantaneous, harm less sensory effect,
+    * You create an instantaneous, harmless sensory effect,
     such as a shower of sparks, a puff of wind, faint musical
     notes, or an odd odor.
 
@@ -10656,7 +10656,7 @@
     * You cause flames to flicker, brighten, dim, or change
     color for **1 minute**.
 
-    * You cause harm less tremors in the ground for **1
+    * You cause harmless tremors in the ground for **1
     minute**.
 
     * You create an instantaneous sound that originates
@@ -11346,7 +11346,7 @@
   description: >
     This spell grants the ability to move across any liquid
     surface — such as water, acid, mud, snow, quicksand,
-    or lava — as if it were harm less solid ground (creatures
+    or lava — as if it were harmless solid ground (creatures
     crossing molten lava can still take damage from the
     heat). Up to ten willing creatures you can see within
     range gain this ability for the duration.
