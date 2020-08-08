@@ -136,6 +136,24 @@ export const getSpellcastingAbilityModifier = createSelector(
   }
 );
 
+export const getKnownSpellsCount = createSelector(
+  (state) => state.filters.class,
+  (state) => state.filters.currentLevel,
+  getSpellcastingAbilityModifier,
+  getCurrentLevelClassRestrictions,
+  (classFilter, currentLevel, spellcastingAbilityModifier, currentLevelClassRestrictions) => {
+    if (currentLevelClassRestrictions.knownSpells) {
+      return currentLevelClassRestrictions.knownSpells;
+    }
+    switch (classFilter) {
+      case 'paladin':
+        return Math.max(1, Math.floor(spellcastingAbilityModifier + currentLevel / 2));
+      default:
+        return Math.max(1, spellcastingAbilityModifier + currentLevel);
+    }
+  }
+);
+
 export const store = configureStore({
   reducer: persistReducer(persistConfig, combineReducers({
     filters: filtersSlice.reducer,

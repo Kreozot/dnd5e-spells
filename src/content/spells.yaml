@@ -5558,7 +5558,7 @@
     ammunition. In addition to the normal effect of the
     attack, the target of the attack and each creature within
     **5 feet** of it must make a **Dexterity saving throw**. A
-    creature takes 1dlO **piercing damage** on a failed save, or
+    creature takes **1d10** **piercing damage** on a failed save, or
     half as much damage on a successful one.
   atHigherLevels: >
     If you cast this spell using a spell
@@ -5824,7 +5824,7 @@
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, the damage increases by
-    1dlO for each slot level above **1st**.
+    **1d10** for each slot level above **1st**.
 
 - title: Heroes’ Feast
   level: 6
@@ -7537,7 +7537,7 @@
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **3rd level** or higher, the damage increases by
-    1dlO for each slot level above **2nd**.
+    **1d10** for each slot level above **2nd**.
 
 - title: Mordenkainen’s Faithful Hound
   level: 4
@@ -8027,7 +8027,7 @@
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **5th level** or higher, the damage increases by
-    1dlO for each slot level above **4th**.
+    **1d10** for each slot level above **4th**.
 
 - title: Phantom Steed
   level: 3
