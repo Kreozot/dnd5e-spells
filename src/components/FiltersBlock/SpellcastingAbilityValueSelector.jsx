@@ -12,7 +12,7 @@ import {
   filtersSlice,
 } from 'common/store';
 
-import styles from './SpellcastingAbilityValueSelector.module.scss';
+import styles from './FiltersBlock.module.scss';
 
 function SpellcastingAbilityValueSelector(props) {
   const {
@@ -39,7 +39,7 @@ function SpellcastingAbilityValueSelector(props) {
         type="number"
         value={ spellcastingAbilityValue }
         onChange={ handleChange }
-        className={ styles.input }
+        className={ styles.spellcastingAbilityValueInput }
         endAdornment={ <InputAdornment position="end">mod { spellcastingAbilityModifier }</InputAdornment> }
       />
     </FormControl>

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import { filtersSlice } from 'common/store';
 
-import styles from './CurrentLevelSelector.module.scss';
+import styles from './FiltersBlock.module.scss';
 
 function CurrentLevelSelector(props) {
   const {
@@ -19,13 +19,13 @@ function CurrentLevelSelector(props) {
   }, [setCurrentLevel]);
 
   return (
-    <div className={ styles.container }>
+    <div className={ styles.field }>
       <TextField
         label="Current level"
         type="number"
         value={ currentLevel }
         onChange={ handleChange }
-        className={ styles.input }
+        className={ styles.currentLevelInput }
       />
     </div>
   );

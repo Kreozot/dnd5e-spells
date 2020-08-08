@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 
 import { filtersSlice, getAvailableSpells, getClassAdditionalOptions, getClassAdditionalKey } from 'common/store';
 
-import styles from './ClassFilterSelector.module.scss';
+import styles from './FiltersBlock.module.scss';
 
 function ClassFilterSelector(props) {
   const {
@@ -38,7 +38,7 @@ function ClassFilterSelector(props) {
             labelId="class-select-label"
             value={ classAdditionalFilter }
             onChange={ handleAdditionalChange }
-            className={ styles.select }
+            className={ styles.classFilterSelect }
           >
             <MenuItem value="">
               <em>None</em>
@@ -61,7 +61,7 @@ function ClassFilterSelector(props) {
           labelId="class-select-label"
           value={ classFilter }
           onChange={ handleClassChange }
-          className={ styles.select }
+          className={ styles.classFilterSelect }
         >
           <MenuItem value="">
             <em>All</em>

@@ -1,0 +1,23 @@
+.classFilterSelect {
+  min-width: 200px;
+}
+
+.currentLevelInput {
+  max-width: 130px;
+}
+
+.spellcastingAbilityValueInput {
+  max-width: 130px;
+}
+
+.field {
+  display: inline-block;
+
+  & + & {
+    margin-left: 1em;
+  }
+}
+
+.container {
+  margin-bottom: 1em;
+}

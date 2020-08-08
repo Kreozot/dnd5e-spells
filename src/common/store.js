@@ -6,7 +6,6 @@ import { createSelector } from 'reselect';
 import spellsData from 'content/spells';
 import classSpellsData from 'content/classSpells.yaml';
 import classRestrictionsData from 'content/classRestrictions.yaml';
-import SpellcastingAbilityValueSelector from '../components/SpellcastingAbilityValueSelector';
 
 const persistConfig = {
   key: 'root',

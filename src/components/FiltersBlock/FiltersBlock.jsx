@@ -5,13 +5,13 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { filtersSlice, getAvailableSpells } from 'common/store';
-import SpellsList from 'components/SpellsList';
-import LevelFilterSelector from 'components/LevelFilterSelector';
-import FiltersBlock from 'components/FiltersBlock';
+import ClassFilterSelector from './ClassFilterSelector';
+import CurrentLevelSelector from './CurrentLevelSelector';
+import SpellcastingAbilityValueSelector from './SpellcastingAbilityValueSelector';
 
-import styles from './Spells.module.scss'
+import styles from './FiltersBlock.module.scss'
 
-function Spells(props) {
+function FiltersBlock(props) {
   const {
     levelFilter,
     selectLevel,
@@ -34,34 +34,12 @@ function Spells(props) {
     }
   }, [levels, levelFilter, selectLevel]);
 
-  const spellsList = useMemo(() => {
-    if (levelFilter !== null) {
-      if (!groupedData[levelFilter]) {
-        return null;
-      }
-      return (
-        <div className={ styles.container }>
-          <SpellsList data={ groupedData[levelFilter] }/>
-        </div>
-      );
-    }
-
-    return levels.map((level) => (
-      <div key={ level } className={ styles.container }>
-        <h2 className={ styles.levelHeader }>
-          { level === 'cantrip' ? 'Cantrips' : `Level ${ level }` }
-        </h2>
-        <SpellsList data={ groupedData[level] }/>
-      </div>
-    ));
-  }, [levels, groupedData, levelFilter]);
-
   return (
-    <>
-      <FiltersBlock/>
-      <LevelFilterSelector levels={ levels }/>
-      { spellsList }
-    </>
+    <div className={ styles.container }>
+      <ClassFilterSelector/>
+      <CurrentLevelSelector/>
+      <SpellcastingAbilityValueSelector/>
+    </div>
   );
 }
 
@@ -71,4 +49,4 @@ const mapStateToProps = (state) => ({
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ selectLevel: filtersSlice.actions.selectLevel }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Spells);
+export default connect(mapStateToProps, mapDispatchToProps)(FiltersBlock);
