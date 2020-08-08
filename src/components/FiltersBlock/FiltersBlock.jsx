@@ -9,6 +9,7 @@ import ClassFilterSelector from './ClassFilterSelector';
 import ClassAdditionalSelector from './ClassAdditionalSelector';
 import CurrentLevelSelector from './CurrentLevelSelector';
 import SpellcastingAbilityValueSelector from './SpellcastingAbilityValueSelector';
+import KnownSpellsCount from './KnownSpellsCount';
 
 import styles from './FiltersBlock.module.scss'
 
@@ -41,6 +42,7 @@ function FiltersBlock(props) {
       <ClassAdditionalSelector/>
       <CurrentLevelSelector/>
       <SpellcastingAbilityValueSelector/>
+      <KnownSpellsCount/>
     </div>
   );
 }

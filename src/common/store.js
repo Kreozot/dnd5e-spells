@@ -141,6 +141,9 @@ export const getKnownSpellsCount = createSelector(
   getSpellcastingAbilityModifier,
   getCurrentLevelClassRestrictions,
   (classFilter, currentLevel, spellcastingAbilityModifier, currentLevelClassRestrictions) => {
+    if (!currentLevelClassRestrictions) {
+      return null;
+    }
     if (currentLevelClassRestrictions.knownSpells) {
       return currentLevelClassRestrictions.knownSpells;
     }

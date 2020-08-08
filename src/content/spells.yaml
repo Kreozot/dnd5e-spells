@@ -3863,30 +3863,25 @@
     target gains that effect until the spell ends.
 
 
-    Bear’s Endurance. The target has advantage on
+    * **Bear’s Endurance.** The target has advantage on
     Constitution checks. It also gains **2d6** temporary hit
     points, which are lost when the spell ends.
 
-
-    Bull’s Strength. The target has advantage
+    * **Bull’s Strength.** The target has advantage
     on Strength checks, and his or her carrying
     capacity doubles.
 
-
-    Cat’s Grace. The target has advantage on Dexterity
+    * **Cat’s Grace.** The target has advantage on Dexterity
     checks. It also doesn’t take damage from falling **20 feet**
     or less if it isn’t incapacitated.
 
-
-    Eagle’s Splendor. The target has advantage on
+    * **Eagle’s Splendor.** The target has advantage on
     Charisma checks.
 
-
-    Fox’s Cunning. The target has advantage on
+    * **Fox’s Cunning.** The target has advantage on
     Intelligence checks.
 
-
-    Owl’s Wisdom. The target has advantage on
+    * **Owl’s Wisdom.** The target has advantage on
     Wisdom checks.
   atHigherLevels: >
     When you cast this spell using
@@ -4138,19 +4133,18 @@
     against this casting of eyebite.
 
 
-    **A sleep.** The target falls unconscious. It wakes up if it
+    * **A sleep.** The target falls unconscious. It wakes up if it
     takes any damage or if another creature uses its action
     to shake the sleeper awake.
 
-
-    **Panicked.** The target is frightened of you. On each
+    * **Panicked.** The target is frightened of you. On each
     of its turns, the frightened creature must take the
     Dash action and move away from you by the safest and
     shortest available route, unless there is nowhere to
     move. If the target moves to a place at least **60 feet** away
     from you where it can no longer see you, this effect ends.
 
-    **Sickened.** The target has disadvantage on attack rolls
+    * **Sickened.** The target has disadvantage on attack rolls
     and ability checks. At the end of each of its turns, it can
     make another **Wisdom saving throw**. If it succeeds,
     the effect ends.
@@ -4180,6 +4174,8 @@
     larger than Medium (contained within a single **5-foot**
     cube). The quality of objects made by the spell is
     commensurate with the quality of the raw materials.
+
+
     Creatures or magic items can’t be created or
     transmuted by this spell. You also can’t use it to
     create items that ordinarily require a high degree of
