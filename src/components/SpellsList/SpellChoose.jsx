@@ -13,6 +13,7 @@ import {
 function SpellChoose(props) {
   const {
     value,
+    row, // TODO: handle cantrips with different logic
     isSpellActive,
     toggleSpellChosen,
     isSpellAlwaysActive,
@@ -23,19 +24,19 @@ function SpellChoose(props) {
     (event) => {
       event.preventDefault();
       event.stopPropagation();
-      if (!isSpellAlwaysActive) {
-        if (isSpellActive || canChooseMoreSpells) {
-          toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
-        }
+      if (isSpellActive || canChooseMoreSpells) {
+        toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
       }
+      // TODO: Show hint about why you can't choose more spells
     },
-    [value, isSpellActive, toggleSpellChosen, isSpellAlwaysActive, canChooseMoreSpells]
+    [value, isSpellActive, toggleSpellChosen, canChooseMoreSpells]
   );
 
   return (
     <Checkbox
       checked={ isSpellActive }
       onClick={ handleClick }
+      disabled={ isSpellAlwaysActive }
     />
   )
 }
