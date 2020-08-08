@@ -1077,8 +1077,8 @@
     Medium or smaller, you have advantage on the check.
     While the hand is grappling the target, you can use a
     bonus action to have the hand crush it. When you do
-    so, the target takes **bludgeoning damage** equal to **2d6** +
-    <SpellcastingAbilityModifier/>.
+    so, the target takes **bludgeoning damage** equal to **2d6 +
+    <SpellcastingAbilityModifier/>**.
 
     * **Interposing Hand.** The hand interposes itself
     between you and a creature you choose until you give
@@ -2629,8 +2629,8 @@
     casting a spell. If the creature is casting a spell of **3rd
     level** or lower, its spell fails and has no effect. If it is
     casting a spell of **4th level** or higher, make an ability
-    check using your spellcasting ability. The DC equals 10
-    + the spell’s level. On a success, the creature’s spell fails
+    check using <SpellcastingAbility/>. The DC equals **10
+    + the spell’s level**. On a success, the creature’s spell fails
     and has no effect.
   atHigherLevels: >
     When you cast this spell using a
@@ -2851,7 +2851,7 @@
   duration: Instantaneous
   description: >
     A creature you touch regains a number of hit points
-    equal to **1d8** + <SpellcastingAbilityModifier/>. This
+    equal to **1d8 + <SpellcastingAbilityModifier/>**. This
     spell has no effect on undead or constructs.
   atHigherLevels: >
     When you cast this spell using a
@@ -3359,8 +3359,8 @@
     Choose one creature, object, or magical effect within
     range. Any spell of **3rd level** or lower on the target ends.
     For each spell of **4th level** or higher on the target, make
-    an ability check using your spellcasting ability. The
-    DC equals 10 + the spell’s level. On a successful check,
+    an ability check using <SpellcastingAbility/>. The
+    DC equals **10 + the spell’s level**. On a successful check,
     the spell ends.
   atHigherLevels: >
     When you cast this spell using a
@@ -5766,7 +5766,7 @@
   duration: Instantaneous
   description: >
     A creature of your choice that you can see within range
-    regains hit points equal to **1d4** + <SpellcastingAbilityModifier/>. This spell has no effect on undead
+    regains hit points equal to **1d4 + <SpellcastingAbilityModifier/>**. This spell has no effect on undead
     or constructs.
   atHigherLevels: >
     When you cast this spell using a
@@ -7016,7 +7016,7 @@
     A wave of healing energy washes out from a point of
     your choice within range. Choose up to six creatures
     in a **30-foot**-radius sphere centered on that point. Each
-    target regains hit points equal to **3d8** + <SpellcastingAbilityModifier/>. This spell has no effect on undead
+    target regains hit points equal to **3d8 + <SpellcastingAbilityModifier/>**. This spell has no effect on undead
     or constructs.
   atHigherLevels: >
     When you cast this spell using a
@@ -7052,7 +7052,7 @@
   description: >
     As you call out words of restoration, up to six creatures
     of your choice that you can see within range regain hit
-    points equal to **1d4** + <SpellcastingAbilityModifier/>.
+    points equal to **1d4 + <SpellcastingAbilityModifier/>**.
     This spell has no effect on undead or constructs.
   atHigherLevels: >
     When you cast this spell using a
@@ -7570,7 +7570,7 @@
 
     At the start of each of your turns, the hound attempts
     to bite one creature within **5 feet** of it that is hostile
-    to you. The hound’s attack bonus is equal to <SpellcastingAbilityModifier/> + your proficiency bonus.
+    to you. The hound’s attack bonus is equal to **<SpellcastingAbilityModifier/> + your proficiency bonus**.
     On a hit, it deals **4d8** **piercing damage**.
 
 - title: Mordenkainen’s Magnificent Mansion
@@ -8365,7 +8365,7 @@
   duration: Instantaneous
   description: >
     Up to six creatures of your choice that you can see
-    within range each regain hit points equal to **2d8** + <SpellcastingAbilityModifier/>. This spell has no effect on
+    within range each regain hit points equal to **2d8 + <SpellcastingAbilityModifier/>**. This spell has no effect on
     undead or constructs.
   atHigherLevels: >
     When you cast this spell using a
@@ -9539,7 +9539,7 @@
   description: >
     The wood of a club or quarterstaff you are holding is
     imbued with nature’s power. For the duration, you can
-    use your spellcasting ability instead of Strength for
+    use <SpellcastingAbility/> instead of Strength for
     the attack and damage rolls of melee attacks using
     that weapon, and the weapon's damage die becomes
     a **d8**. The weapon also becomes magical, if it isn’t
@@ -9960,7 +9960,7 @@
     lasts for the duration or until you cast this spell again.
     When you cast the spell, you can make a melee spell
     attack against a creature within **5 feet** of the weapon. On
-    a hit, the target takes **force damage** equal to **1d8** + <SpellcastingAbilityModifier/>.
+    a hit, the target takes **force damage** equal to **1d8 + <SpellcastingAbilityModifier/>**.
 
 
     As a bonus action on your turn, you can move the
@@ -10398,8 +10398,7 @@
 
 
     Creature. You can try to move a Huge or smaller
-    creature. Make an ability check with your spellcasting
-    ability contested by the creature’s Strength check. If
+    creature. Make an ability check with <SpellcastingAbility/> contested by the creature’s Strength check. If
     you win the contest, you move the creature up to **30 feet**
     in any direction, including upward but not beyond the
     range of this spell. Until the end of your next turn, the
@@ -10419,7 +10418,7 @@
 
 
     If the object is worn or carried by a creature, you must
-    make an ability check with your spellcasting ability
+    make an ability check with <SpellcastingAbility/>
     contested by that creature’s Strength check. If you
     succeed, you pull the object away from that creature and
     can move it up to **30 feet** in any direction but not beyond
