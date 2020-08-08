@@ -35,7 +35,6 @@ function SpellcastingAbilityValueSelector(props) {
     <FormControl className={ styles.field }>
       <InputLabel id="spellcasting-ability-label">{ classRestrictions.spellcastingAbility }</InputLabel>
       <Input
-        labelId="spellcasting-ability-label"
         type="number"
         value={ spellcastingAbilityValue }
         onChange={ handleChange }

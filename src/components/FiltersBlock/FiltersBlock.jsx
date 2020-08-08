@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 
 import { filtersSlice, getAvailableSpells } from 'common/store';
 import ClassFilterSelector from './ClassFilterSelector';
+import ClassAdditionalSelector from './ClassAdditionalSelector';
 import CurrentLevelSelector from './CurrentLevelSelector';
 import SpellcastingAbilityValueSelector from './SpellcastingAbilityValueSelector';
 
@@ -37,6 +38,7 @@ function FiltersBlock(props) {
   return (
     <div className={ styles.container }>
       <ClassFilterSelector/>
+      <ClassAdditionalSelector/>
       <CurrentLevelSelector/>
       <SpellcastingAbilityValueSelector/>
     </div>

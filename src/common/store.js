@@ -29,7 +29,7 @@ export const filtersSlice = createSlice({
       return { ...state, currentLevel: action.payload };
     },
     setClass(state, action) {
-      return { ...state, class: action.payload };
+      return { ...state, class: action.payload, classAdditional: '' };
     },
     setClassAdditional(state, action) {
       return { ...state, classAdditional: action.payload };
