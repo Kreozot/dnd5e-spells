@@ -4,34 +4,41 @@ import { bindActionCreators } from 'redux';
 import Checkbox from '@material-ui/core/Checkbox';
 
 import {
-  getIsSpellChosen,
+  getIsSpellActive,
   chosenSpellsSlice,
+  getIsSpellAlwaysActive,
 } from 'common/store';
 
-import styles from './SpellsList.module.scss';
-
 function SpellChoose(props) {
-  const { title, isSpellChosen, toggleSpellChosen } = props;
+  const {
+    value,
+    isSpellActive,
+    toggleSpellChosen,
+    isSpellAlwaysActive,
+  } = props;
 
   const handleClick = useCallback(
     (event) => {
       event.preventDefault();
       event.stopPropagation();
-      toggleSpellChosen({ title, isSpellChosen });
+      if (!isSpellAlwaysActive) {
+        toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
+      }
     },
-    [title, isSpellChosen, toggleSpellChosen]
+    [value, isSpellActive, toggleSpellChosen, isSpellAlwaysActive]
   );
 
   return (
     <Checkbox
-      checked={ isSpellChosen }
+      checked={ isSpellActive }
       onClick={ handleClick }
     />
   )
 }
 
 const mapStateToProps = (state, props) => ({
-  isSpellChosen: getIsSpellChosen(state, props),
+  isSpellActive: getIsSpellActive(state, props),
+  isSpellAlwaysActive: getIsSpellAlwaysActive(state, props),
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   toggleSpellChosen: chosenSpellsSlice.actions.toggleSpellChosen

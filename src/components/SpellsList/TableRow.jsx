@@ -19,11 +19,6 @@ export default function TableRow(props) {
       onClick={ handleClick }
       className={ styles.row }
     >
-      <td
-        className={ row.isExpanded ? styles.cellExpanded : styles.cell }
-      >
-        <SpellChoose title={ row.original.title }/>
-      </td>
       { row.cells.map((cell) => {
         return (
           <td

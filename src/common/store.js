@@ -198,10 +198,17 @@ export const getAllActiveSpells = createSelector(
   }
 );
 
-export const getIsSpellChosen = createSelector(
+// Is the spell is always active because of class additional option value
+export const getIsSpellAlwaysActive = createSelector(
+  (state, props) => getAdditionalClassSpells(state)
+    .some((title) => props.value.toLowerCase() === title.toLowerCase()),
+  (isAlwaysActive) => isAlwaysActive
+);
+
+export const getIsSpellActive = createSelector(
   (state, props) => getAllActiveSpells(state)
-    .some((title) => props.title.toLowerCase() === title.toLowerCase()),
-  (isChosen) => isChosen
+    .some((title) => props.value.toLowerCase() === title.toLowerCase()),
+  (isActive) => isActive
 );
 
 export const store = configureStore({

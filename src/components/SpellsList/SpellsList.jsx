@@ -6,6 +6,7 @@ import TextWithHint from './TextWithHint';
 import IconCell from './IconCell';
 import SchoolCell from './SchoolCell';
 import TableRow from './TableRow';
+import SpellChoose from './SpellChoose';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
 import RitualIcon from 'images/icon-ritual.svg';
@@ -15,10 +16,12 @@ export default function SpellsList(props) {
   const { data } = props;
 
   const columns = useMemo(() => [
-    // {
-    //   Header: 'Level',
-    //   accessor: 'level',
-    // },
+    {
+      Header: 'Active',
+      accessor: 'title',
+      Cell: SpellChoose,
+      id: 'isActive'
+    },
     {
       Header: 'Title',
       accessor: 'title',
