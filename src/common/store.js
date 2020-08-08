@@ -2,6 +2,7 @@ import { createSlice, configureStore, combineReducers } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { createSelector } from 'reselect';
+import without from 'lodash/without';
 
 import spellsData from 'content/spells';
 import classSpellsData from 'content/classSpells.yaml';
@@ -97,14 +98,24 @@ export const getClassAdditionalOptions = createSelector(
   }
 );
 
+const getAdditionalClassSpells = createSelector(
+  (state) => state.filters.class,
+  (state) => state.filters.classAdditional,
+  getClassAdditionalKey,
+  (classFilter, classAdditionalFilter, additionalKey) => {
+    if (classFilter && additionalKey && classAdditionalFilter) {
+      return classSpellsData[classFilter][additionalKey][classAdditionalFilter];
+    }
+  }
+);
+
 // Get all spells objects available to current class (including additional options) and level
 export const getAvailableSpells = createSelector(
   (state) => state.filters.class,
-  (state) => state.filters.classAdditional,
   (state) => state.filters.currentLevel,
-  getClassAdditionalKey,
   getAvailableSpellLevel,
-  (classFilter, classAdditionalFilter, currentLevel, additionalKey, availableSpellLevel) => {
+  getAdditionalClassSpells,
+  (classFilter, currentLevel, availableSpellLevel, additionalClassSpells) => {
     if (!classFilter) {
       return spellsData;
     }
@@ -112,8 +123,8 @@ export const getAvailableSpells = createSelector(
     let availableSpellList = [];
     if (classFilter) {
       availableSpellList = [...classSpellsData[classFilter].main];
-      if (classAdditionalFilter && additionalKey) {
-        availableSpellList = availableSpellList.concat(classSpellsData[classFilter][additionalKey][classAdditionalFilter]);
+      if (additionalClassSpells) {
+        availableSpellList = availableSpellList.concat(additionalClassSpells);
       }
     }
 
@@ -125,6 +136,7 @@ export const getAvailableSpells = createSelector(
   }
 );
 
+// Get modifier by value of spellcasting ability for current class
 export const getSpellcastingAbilityModifier = createSelector(
   (state) => state.filters.spellcastingAbilityValue,
   (spellcastingAbilityValue) => {
@@ -135,6 +147,7 @@ export const getSpellcastingAbilityModifier = createSelector(
   }
 );
 
+// Get known spells count for current class and spellcasting ability modifier
 export const getKnownSpellsCount = createSelector(
   (state) => state.filters.class,
   (state) => state.filters.currentLevel,
@@ -156,9 +169,45 @@ export const getKnownSpellsCount = createSelector(
   }
 );
 
+export const chosenSpellsSlice = createSlice({
+  name: 'chosenSpells',
+  initialState: [],
+  reducers: {
+    toggleSpellChosen(state, action) {
+      const { title, isSpellChosen } = action.payload;
+      if (isSpellChosen) {
+        return without(state, title);
+      }
+      return [ ...state, title ];
+    },
+    clearSpells(state) {
+      return [];
+    }
+  },
+});
+
+// Get chosen spells plus always active spells for current class additional
+export const getAllActiveSpells = createSelector(
+  (state) => state.chosenSpells,
+  getAdditionalClassSpells,
+  (chosenSpells, additionalClassSpells) => {
+    if (additionalClassSpells) {
+      return chosenSpells.concat(additionalClassSpells);
+    }
+    return chosenSpells;
+  }
+);
+
+export const getIsSpellChosen = createSelector(
+  (state, props) => getAllActiveSpells(state)
+    .some((title) => props.title.toLowerCase() === title.toLowerCase()),
+  (isChosen) => isChosen
+);
+
 export const store = configureStore({
   reducer: persistReducer(persistConfig, combineReducers({
     filters: filtersSlice.reducer,
+    chosenSpells: chosenSpellsSlice.reducer,
   })),
   middleware: [],
 });

@@ -1,6 +1,7 @@
 import React, { useMemo, useCallback } from 'react';
 
 import Description from './Description';
+import SpellChoose from './SpellChoose';
 
 import styles from './SpellsList.module.scss';
 
@@ -18,6 +19,11 @@ export default function TableRow(props) {
       onClick={ handleClick }
       className={ styles.row }
     >
+      <td
+        className={ row.isExpanded ? styles.cellExpanded : styles.cell }
+      >
+        <SpellChoose title={ row.original.title }/>
+      </td>
       { row.cells.map((cell) => {
         return (
           <td
@@ -37,7 +43,7 @@ export default function TableRow(props) {
       { mainTR }
       { Boolean(row.isExpanded) &&
         <tr>
-          <td colSpan={ visibleColumns.length }>
+          <td colSpan={ visibleColumns.length + 1 }>
             <Description item={ row.original }/>
           </td>
         </tr>
