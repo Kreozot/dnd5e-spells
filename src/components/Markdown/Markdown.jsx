@@ -2,6 +2,7 @@ import React from 'react';
 import MarkdownToJsx from 'markdown-to-jsx';
 
 import LevelUpgrades from './LevelUpgrades';
+import SpellcastingAbility from './SpellcastingAbility';
 import SpellcastingAbilityModifier from './SpellcastingAbilityModifier';
 
 export default function Markdown(props) {
@@ -16,6 +17,9 @@ export default function Markdown(props) {
           },
           SpellcastingAbilityModifier: {
             component: SpellcastingAbilityModifier,
+          },
+          SpellcastingAbility: {
+            component: SpellcastingAbility,
           },
         },
       } }
