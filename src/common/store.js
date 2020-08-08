@@ -180,7 +180,7 @@ export const chosenSpellsSlice = createSlice({
       }
       return [ ...state, title ];
     },
-    clearSpells(state) {
+    clearChosenSpells(state) {
       return [];
     }
   },
@@ -200,8 +200,12 @@ export const getAllActiveSpells = createSelector(
 
 // Is the spell is always active because of class additional option value
 export const getIsSpellAlwaysActive = createSelector(
-  (state, props) => getAdditionalClassSpells(state)
-    .some((title) => props.value.toLowerCase() === title.toLowerCase()),
+  (state, props) => {
+    const additionalClassSpells = getAdditionalClassSpells(state);
+    if (additionalClassSpells) {
+      return additionalClassSpells.some((title) => props.value.toLowerCase() === title.toLowerCase());
+    }
+  },
   (isAlwaysActive) => isAlwaysActive
 );
 
@@ -209,6 +213,12 @@ export const getIsSpellActive = createSelector(
   (state, props) => getAllActiveSpells(state)
     .some((title) => props.value.toLowerCase() === title.toLowerCase()),
   (isActive) => isActive
+);
+
+export const getCanChooseMoreSpells = createSelector(
+  getKnownSpellsCount,
+  (state) => state.chosenSpells.length,
+  (knownSpellsCount, chosenSpellsCount) => chosenSpellsCount < knownSpellsCount
 );
 
 export const store = configureStore({

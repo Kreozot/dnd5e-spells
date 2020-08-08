@@ -6,7 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { filtersSlice } from 'common/store';
+import { filtersSlice, chosenSpellsSlice } from 'common/store';
 
 import styles from './FiltersBlock.module.scss';
 
@@ -14,11 +14,13 @@ function ClassFilterSelector(props) {
   const {
     classFilter,
     setClass,
+    clearChosenSpells,
   } = props;
 
   const handleClassChange = useCallback((event) => {
     setClass(event.target.value);
-  }, [setClass]);
+    clearChosenSpells();
+  }, [setClass, clearChosenSpells]);
 
   return (
     <FormControl className={ styles.field }>
@@ -52,6 +54,7 @@ const mapStateToProps = (state) => ({
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   setClass: filtersSlice.actions.setClass,
+  clearChosenSpells: chosenSpellsSlice.actions.clearChosenSpells,
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(ClassFilterSelector);

@@ -7,6 +7,7 @@ import {
   getIsSpellActive,
   chosenSpellsSlice,
   getIsSpellAlwaysActive,
+  getCanChooseMoreSpells,
 } from 'common/store';
 
 function SpellChoose(props) {
@@ -15,6 +16,7 @@ function SpellChoose(props) {
     isSpellActive,
     toggleSpellChosen,
     isSpellAlwaysActive,
+    canChooseMoreSpells,
   } = props;
 
   const handleClick = useCallback(
@@ -22,10 +24,12 @@ function SpellChoose(props) {
       event.preventDefault();
       event.stopPropagation();
       if (!isSpellAlwaysActive) {
-        toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
+        if (isSpellActive || canChooseMoreSpells) {
+          toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
+        }
       }
     },
-    [value, isSpellActive, toggleSpellChosen, isSpellAlwaysActive]
+    [value, isSpellActive, toggleSpellChosen, isSpellAlwaysActive, canChooseMoreSpells]
   );
 
   return (
@@ -39,6 +43,7 @@ function SpellChoose(props) {
 const mapStateToProps = (state, props) => ({
   isSpellActive: getIsSpellActive(state, props),
   isSpellAlwaysActive: getIsSpellAlwaysActive(state, props),
+  canChooseMoreSpells: getCanChooseMoreSpells(state),
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   toggleSpellChosen: chosenSpellsSlice.actions.toggleSpellChosen
