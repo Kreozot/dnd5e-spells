@@ -5688,7 +5688,7 @@
     attempt an Intelligence (Investigation) check against
     your spell save DC to disbelieve it. A creature who
     discerns the illusion for what it is, sees it as a vague
-    im age superim posed on the terrain.
+    image superim posed on the terrain.
 
 - title: Harm
   level: 6
@@ -6980,11 +6980,11 @@
 
     As long as you are within range of the illusion, you
     can use your action to cause the image to move to
-    any other spot within range. As the im age changes
+    any other spot within range. As the image changes
     location, you can alter its appearance so that its
     movements appear natural for the image. For example,
-    if you create an im age of a creature and move it, you
-    can alter the im age so that it appears to be walking.
+    if you create an image of a creature and move it, you
+    can alter the image so that it appears to be walking.
     Similarly, you can cause the illusion to make different
     sounds at different times, even making it carry on a
     conversation, for example.
@@ -7306,7 +7306,7 @@
     sounds at different times before the spell ends.
 
 
-    If you create an im age of an object — such as a chair,
+    If you create an image of an object — such as a chair,
     muddy footprints, or a small chest — it must be no larger
     than a **5-foot** cube. The image can’t create sound, light,
     smell, or any other sensory effect. Physical interaction
@@ -7373,7 +7373,7 @@
     Three illusory duplicates of yourself appear in your
     space. Until the spell ends, the duplicates move with
     you and mimic your actions, shifting position so it’s
-    im possible to track which im age is real. You can use
+    im possible to track which image is real. You can use
     your action to dismiss the illusory duplicates.
 
 
@@ -8400,10 +8400,10 @@
     * You chill, warm, or flavor up to **1 cubic foot** of nonliving
     material for **1 hour**.
 
-    * You make a color, a small mark, or a sym bol appear
+    * You make a color, a small mark, or a symbol appear
     on an object or a surface for **1 hour**.
 
-    * You create a nonmagical trinket or an illusory im age
+    * You create a nonmagical trinket or an illusory image
     that can fit in your hand and that lasts until the end of
     your next turn.
 
@@ -9599,22 +9599,22 @@
   concentration: true
   duration: ≤ 10 minutes
   description: >
-    You create the im age of an object, a creature, or some
+    You create the image of an object, a creature, or some
     other visible phenom enon that is no larger than a **15-foot**
     cube. The image appears at a spot within range and
     lasts for the duration. The image is purely visual; it isn't
     accom panied by sound, smell, or other sensory effects.
     You can use your action to cause the image to move to
-    any spot within range. As the im age changes location,
+    any spot within range. As the image changes location,
     you can alter its appearance so that its movements
     appear natural for the image. For example, if you create
-    an im age of a creature and move it, you can alter the
-    im age so that it appears to be walking.
+    an image of a creature and move it, you can alter the
+    image so that it appears to be walking.
 
 
-    Physical interaction with the im age reveals it to be an
+    Physical interaction with the image reveals it to be an
     illusion, because things can pass through it. A creature
-    that uses its action to examine the im age can determine
+    that uses its action to examine the image can determine
     that it is an illusion with a successful Intelligence
     (Investigation) check against your spell save DC. If a
     creature discerns the illusion for what it is, the creature
@@ -10450,7 +10450,7 @@
 
 
     Until the spell ends, you and the target can
-    instantaneously share words, im ages, sounds, and
+    instantaneously share words, images, sounds, and
     other sensory messages with one another through the
     link, and the target recognizes you as the creature it
     is communicating with. The spell enables a creature
