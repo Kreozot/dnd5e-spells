@@ -6,6 +6,7 @@ import { createSelector } from 'reselect';
 import spellsData from 'content/spells';
 import classSpellsData from 'content/classSpells.yaml';
 import classRestrictionsData from 'content/classRestrictions.yaml';
+import SpellcastingAbilityValueSelector from '../components/SpellcastingAbilityValueSelector';
 
 const persistConfig = {
   key: 'root',
@@ -19,6 +20,7 @@ export const filtersSlice = createSlice({
     currentLevel: '',
     class: '',
     classAdditional: '',
+    spellcastingAbilityValue: '',
   },
   reducers: {
     selectLevel(state, action) {
@@ -32,6 +34,9 @@ export const filtersSlice = createSlice({
     },
     setClassAdditional(state, action) {
       return { ...state, classAdditional: action.payload };
+    },
+    setSpellcastingAbilityValue(state, action) {
+      return { ...state, spellcastingAbilityValue: action.payload };
     },
   },
 });
@@ -118,6 +123,16 @@ export const getAvailableSpells = createSelector(
       .filter((spell) => availableSpellList.some(
         (title) => title.toLowerCase() === spell.title.toLowerCase()
       ));
+  }
+);
+
+export const getSpellcastingAbilityModifier = createSelector(
+  (state) => state.filters.spellcastingAbilityValue,
+  (spellcastingAbilityValue) => {
+    if (!spellcastingAbilityValue) {
+      return null;
+    }
+    return Math.floor((spellcastingAbilityValue - 10) / 2);
   }
 );
 

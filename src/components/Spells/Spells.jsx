@@ -9,6 +9,7 @@ import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import ClassFilterSelector from 'components/ClassFilterSelector';
 import CurrentLevelSelector from 'components/CurrentLevelSelector';
+import SpellcastingAbilityValueSelector from 'components/SpellcastingAbilityValueSelector';
 
 import styles from './Spells.module.scss'
 
@@ -62,6 +63,7 @@ function Spells(props) {
       <div className={ styles.classSelector }>
         <ClassFilterSelector/>
         <CurrentLevelSelector/>
+        <SpellcastingAbilityValueSelector/>
       </div>
       <LevelFilterSelector levels={ levels }/>
       { spellsList }
