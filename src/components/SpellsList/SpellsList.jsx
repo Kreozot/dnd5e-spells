@@ -15,10 +15,10 @@ import RitualIcon from 'images/icon-ritual.svg';
 import styles from './SpellsList.module.scss';
 
 function SpellsList(props) {
-  const { data, hasSpellsCount } = props;
+  const { data, haveSpellsCount } = props;
 
   const columns = useMemo(() => [
-    ...(hasSpellsCount
+    ...(haveSpellsCount
       ? [{
         Header: 'Active',
         accessor: 'title',
@@ -72,7 +72,7 @@ function SpellsList(props) {
       Header: 'Duration',
       accessor: 'duration',
     },
-  ], [hasSpellsCount]);
+  ], [haveSpellsCount]);
 
   const {
     getTableProps,
@@ -113,7 +113,7 @@ function SpellsList(props) {
 }
 
 const mapStateToProps = (state) => ({
-  hasSpellsCount: Boolean(getKnownSpellsCount(state)),
+  haveSpellsCount: Boolean(getKnownSpellsCount(state)),
 });
 
 export default connect(mapStateToProps)(SpellsList);
