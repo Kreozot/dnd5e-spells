@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { useTable, useExpanded } from 'react-table';
+import { connect } from 'react-redux';
 
 import Components from './Components';
 import TextWithHint from './TextWithHint';
@@ -7,21 +8,25 @@ import IconCell from './IconCell';
 import SchoolCell from './SchoolCell';
 import TableRow from './TableRow';
 import SpellChoose from './SpellChoose';
+import { getKnownSpellsCount } from 'common/store';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
 import RitualIcon from 'images/icon-ritual.svg';
 import styles from './SpellsList.module.scss';
 
-export default function SpellsList(props) {
-  const { data } = props;
+function SpellsList(props) {
+  const { data, knownSpellsCount } = props;
 
   const columns = useMemo(() => [
-    {
-      Header: 'Active',
-      accessor: 'title',
-      Cell: SpellChoose,
-      id: 'isActive'
-    },
+    ...(knownSpellsCount
+      ? [{
+        Header: 'Active',
+        accessor: 'title',
+        Cell: SpellChoose,
+        id: 'isActive',
+      }]
+      : []
+    ),
     {
       Header: 'Title',
       accessor: 'title',
@@ -67,7 +72,7 @@ export default function SpellsList(props) {
       Header: 'Duration',
       accessor: 'duration',
     },
-  ], []);
+  ], [knownSpellsCount]);
 
   const {
     getTableProps,
@@ -106,3 +111,9 @@ export default function SpellsList(props) {
     </table>
   );
 }
+
+const mapStateToProps = (state) => ({
+  knownSpellsCount: getKnownSpellsCount(state),
+});
+
+export default connect(mapStateToProps)(SpellsList);

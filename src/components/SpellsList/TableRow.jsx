@@ -38,7 +38,7 @@ export default function TableRow(props) {
     }
     return (
       <tr>
-        <td colSpan={ visibleColumns.length }>
+        <td colSpan={ visibleColumns.length } className={ styles.descriptionCell }>
           <Description item={ row.original }/>
         </td>
       </tr>
