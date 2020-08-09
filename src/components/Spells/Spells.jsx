@@ -4,7 +4,12 @@ import sortBy from 'lodash/sortBy';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { filtersSlice, getAvailableSpells } from 'common/store';
+import {
+  filtersSlice,
+  getAvailableSpells,
+  getAllActiveSpells,
+  getKnownSpellsCount,
+} from 'common/store';
 import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import FiltersBlock from 'components/FiltersBlock';
@@ -16,17 +21,37 @@ function Spells(props) {
     levelFilter,
     selectLevel,
     availableSpells,
+    activeFilter,
+    allActiveSpells,
+    haveSpellsCount,
   } = props;
 
-  const groupedData = useMemo(() => {
+  const groupedSpells = useMemo(() => {
     return groupBy(availableSpells, 'level');
   }, [availableSpells]);
 
+  const groupedActiveSpells = useMemo(() => {
+    const spells = availableSpells.filter(({ title }) =>
+      allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
+    );
+    return groupBy(spells, 'level');
+  }, [allActiveSpells, availableSpells]);
+
   const levels = useMemo(() => {
-    return sortBy(Object.keys(groupedData), (level) => {
+    return sortBy(Object.keys(groupedSpells), (level) => {
       return level === 'cantrip' ? 0 : level;
     });
-  }, [groupedData]);
+  }, [groupedSpells]);
+
+  const activeLevels = useMemo(() => {
+    if (activeFilter) {
+      return sortBy(Object.keys(groupedActiveSpells), (level) => {
+        return level === 'cantrip' ? 0 : level;
+      });
+    } else {
+      return levels;
+    }
+  }, [levels, activeFilter, groupedActiveSpells]);
 
   useEffect(() => {
     if (levelFilter && !levels.includes(levelFilter)) {
@@ -34,27 +59,33 @@ function Spells(props) {
     }
   }, [levels, levelFilter, selectLevel]);
 
+  useEffect(() => {
+    if (activeFilter && !haveSpellsCount) {
+      selectLevel(null);
+    }
+  }, [haveSpellsCount, activeFilter, selectLevel]);
+
   const spellsList = useMemo(() => {
     if (levelFilter !== null) {
-      if (!groupedData[levelFilter]) {
+      if (!groupedSpells[levelFilter]) {
         return null;
       }
       return (
         <div className={ styles.container }>
-          <SpellsList data={ groupedData[levelFilter] }/>
+          <SpellsList data={ groupedSpells[levelFilter] }/>
         </div>
       );
     }
 
-    return levels.map((level) => (
+    return activeLevels.map((level) => (
       <div key={ level } className={ styles.container }>
         <h2 className={ styles.levelHeader }>
           { level === 'cantrip' ? 'Cantrips' : `Level ${ level }` }
         </h2>
-        <SpellsList data={ groupedData[level] }/>
+        <SpellsList data={ activeFilter ? groupedActiveSpells[level] : groupedSpells[level] }/>
       </div>
     ));
-  }, [levels, groupedData, levelFilter]);
+  }, [activeLevels, groupedSpells, levelFilter, activeFilter, groupedActiveSpells]);
 
   return (
     <>
@@ -69,7 +100,10 @@ function Spells(props) {
 
 const mapStateToProps = (state) => ({
   levelFilter: state.filters.level,
-  availableSpells: getAvailableSpells(state)
+  activeFilter: state.filters.activeFilter,
+  availableSpells: getAvailableSpells(state),
+  allActiveSpells: getAllActiveSpells(state),
+  haveSpellsCount: Boolean(getKnownSpellsCount(state)),
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({ selectLevel: filtersSlice.actions.selectLevel }, dispatch);
 

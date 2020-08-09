@@ -17,6 +17,7 @@ export const filtersSlice = createSlice({
   name: 'filters',
   initialState: {
     level: null,
+    activeFilter: false,
     currentLevel: '',
     class: '',
     classAdditional: '',
@@ -24,7 +25,10 @@ export const filtersSlice = createSlice({
   },
   reducers: {
     selectLevel(state, action) {
-      return { ...state, level: action.payload };
+      return { ...state, level: action.payload, activeFilter: false };
+    },
+    setActiveFilterOn(state) {
+      return { ...state, activeFilter: true, level: null };
     },
     setCurrentLevel(state, action) {
       return { ...state, currentLevel: action.payload };

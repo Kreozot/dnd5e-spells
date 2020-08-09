@@ -12,18 +12,27 @@ function LevelFilterButton(props) {
   const {
     level,
     levelFilter,
+    activeFilter,
     selectLevel,
+    setActiveFilterOn,
     currentLevel,
     currentLevelClassRestrictions,
   } = props;
 
   const handleClick = useCallback(() => {
-    selectLevel(level);
-  }, [level, selectLevel]);
+    if (level === 'active') {
+      setActiveFilterOn();
+    } else {
+      selectLevel(level);
+    }
+  }, [level, selectLevel, setActiveFilterOn]);
 
   const text = useMemo(() => {
     if (level === null) {
       return 'All levels';
+    }
+    if (level === 'active') {
+      return 'Active';
     }
     if (level === 'cantrip') {
       return 'Cantrips';
@@ -32,7 +41,7 @@ function LevelFilterButton(props) {
   }, [level]);
 
   const availableBadge = useMemo(() => {
-    if (currentLevelClassRestrictions && currentLevel && level) {
+    if (currentLevelClassRestrictions && currentLevel && level && (level !== 'active')) {
       const value = level === 'cantrip'
         ? currentLevelClassRestrictions.cantrips
         : currentLevelClassRestrictions.spellSlots[level - 1];
@@ -49,10 +58,19 @@ function LevelFilterButton(props) {
     return null;
   }, [currentLevelClassRestrictions, level, currentLevel]);
 
+  const isSelected = useMemo(() => {
+    if (level === 'active') {
+      return activeFilter;
+    }
+    if (level === levelFilter) {
+      return !activeFilter;
+    }
+  }, [activeFilter, level, levelFilter]);
+
   return (
     <Button
       onClick={ handleClick }
-      variant={ level === levelFilter ? 'contained' : null }
+      variant={ isSelected ? 'contained' : null }
       color="primary"
     >
       { text }
@@ -64,8 +82,12 @@ function LevelFilterButton(props) {
 const mapStateToProps = (state) => ({
   currentLevel: state.filters.currentLevel,
   levelFilter: state.filters.level,
+  activeFilter: state.filters.activeFilter,
   currentLevelClassRestrictions: getCurrentLevelClassRestrictions(state),
  });
-const mapDispatchToProps = (dispatch) => bindActionCreators({ selectLevel: filtersSlice.actions.selectLevel }, dispatch);
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+  selectLevel: filtersSlice.actions.selectLevel,
+  setActiveFilterOn: filtersSlice.actions.setActiveFilterOn,
+}, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(LevelFilterButton);
