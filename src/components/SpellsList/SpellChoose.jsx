@@ -1,7 +1,8 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Checkbox from '@material-ui/core/Checkbox';
+import { Tooltip } from 'react-tippy';
 
 import {
   getIsSpellActive,
@@ -20,24 +21,43 @@ function SpellChoose(props) {
     canChooseMoreSpells,
   } = props;
 
-  const handleClick = useCallback(
-    (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      if (isSpellActive || canChooseMoreSpells) {
-        toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
-      }
-      // TODO: Show hint about why you can't choose more spells
-    },
-    [value, isSpellActive, toggleSpellChosen, canChooseMoreSpells]
-  );
+  const [isHintOpen, setIsHintOpen] = useState(false);
+
+  const handleClick = useCallback((event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    if (isSpellActive || canChooseMoreSpells) {
+      toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
+    } else {
+      setIsHintOpen(true);
+    }
+  }, [value, isSpellActive, toggleSpellChosen, canChooseMoreSpells]);
+
+  const handleRequestClose = useCallback(() => {
+    setIsHintOpen(false);
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsHintOpen(false);
+    }, 5000);
+  }, [isHintOpen]);
 
   return (
-    <Checkbox
-      checked={ isSpellActive }
-      onClick={ handleClick }
-      disabled={ isSpellAlwaysActive }
-    />
+    <Tooltip
+      title="You have reached your known spells maximum"
+      position="right"
+      trigger="manual"
+      open={ isHintOpen }
+      onRequestClose={ handleRequestClose }
+    >
+      <Checkbox
+        color="primary"
+        checked={ isSpellActive }
+        onClick={ handleClick }
+        disabled={ isSpellAlwaysActive }
+      />
+    </Tooltip>
   )
 }
 
