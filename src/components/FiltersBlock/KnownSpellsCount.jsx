@@ -13,6 +13,7 @@ import styles from './FiltersBlock.module.scss';
 function KnownSpellsCount(props) {
   const {
     knownSpellsCount,
+    activeSpellsCount,
   } = props;
 
   if (!knownSpellsCount) {
@@ -28,8 +29,7 @@ function KnownSpellsCount(props) {
         Known spells
       </InputLabel>
       <Input
-        type="number"
-        value={ knownSpellsCount }
+        value={ `${ activeSpellsCount } / ${ knownSpellsCount }` }
         className={ styles.knownSpellsCount }
         disabled
       />
@@ -39,6 +39,7 @@ function KnownSpellsCount(props) {
 
 const mapStateToProps = (state) => ({
   knownSpellsCount: getKnownSpellsCount(state),
+  activeSpellsCount: state.chosenSpells.length,
 });
 
 export default connect(mapStateToProps)(KnownSpellsCount);
