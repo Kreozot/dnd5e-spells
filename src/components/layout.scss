@@ -12,9 +12,16 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: georgia, serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 18px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+
+  @media (max-height: 600px) {
+    font-size: 16px;
+  }
 }
 body {
   margin: 0;
@@ -196,11 +203,6 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
-}
-html {
-  font: 112.5%/1.45em georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
 }
 * {
   box-sizing: inherit;

@@ -12,9 +12,12 @@
 }
 
 .header {
-  position: sticky;
   top: 0;
   background-color: var(--color-background-main);
   z-index: 1;
   padding: 24px 24px 16px;
+
+  @media (min-width: 880px) {
+    position: sticky;
+  }
 }

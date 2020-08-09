@@ -2,7 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 
 import Description from './Description';
 
-import styles from './SpellsList.module.scss';
+import styles from './TableRow.module.scss';
 
 export default function TableRow(props) {
   const { row, visibleColumns } = props;
@@ -22,7 +22,7 @@ export default function TableRow(props) {
         return (
           <td
             { ...cell.getCellProps() }
-            className={ row.isExpanded ? styles.cellExpanded : styles.cell }
+            className={ `${ row.isExpanded ? styles.cellExpanded : styles.cell } ${ cell.column.id === 'isActive' ? styles.checkboxCell : '' }` }
           >
             { cell.render('Cell') }
           </td>

@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 
 import SEO from './seo';
 
-import "./layout.css"
+import "./layout.scss"
 import 'react-tippy/dist/tippy.css'
 
 const Layout = ({ children }) => {

@@ -11,6 +11,8 @@ import {
   getCanChooseMoreSpells,
 } from 'common/store';
 
+import styles from './SpellChoose.module.scss';
+
 function SpellChoose(props) {
   const {
     value,
@@ -56,6 +58,7 @@ function SpellChoose(props) {
         checked={ isSpellActive }
         onClick={ handleClick }
         disabled={ isSpellAlwaysActive }
+        className={ styles.checkbox }
       />
     </Tooltip>
   )
