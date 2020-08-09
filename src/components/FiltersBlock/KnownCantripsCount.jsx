@@ -5,31 +5,31 @@ import FormControl from '@material-ui/core/FormControl';
 import { connect } from 'react-redux';
 
 import {
-  getKnownSpellsCount,
+  getKnownCantripsCount,
 } from 'common/store';
 
 import styles from './FiltersBlock.module.scss';
 
-function KnownSpellsCount(props) {
+function KnownCantripsCount(props) {
   const {
-    knownSpellsCount,
-    activeSpellsCount,
+    knownCantripsCount,
+    activeCantripsCount,
   } = props;
 
-  if (!knownSpellsCount) {
+  if (!knownCantripsCount) {
     return null;
   }
 
   return (
     <FormControl className={ styles.field }>
       <InputLabel
-        id="known-spells-count-label"
+        id="known-cantrips-count-label"
         className={ styles.knownSpellsCountLabel }
       >
-        Known spells
+        Known cantrips
       </InputLabel>
       <Input
-        value={ `${ activeSpellsCount } / ${ knownSpellsCount }` }
+        value={ `${ activeCantripsCount } / ${ knownCantripsCount }` }
         className={ styles.knownSpellsCount }
         disabled
       />
@@ -38,8 +38,8 @@ function KnownSpellsCount(props) {
 }
 
 const mapStateToProps = (state) => ({
-  knownSpellsCount: getKnownSpellsCount(state),
-  activeSpellsCount: state.chosenSpells.spells.length,
+  knownCantripsCount: getKnownCantripsCount(state),
+  activeCantripsCount: state.chosenSpells.cantrips.length,
 });
 
-export default connect(mapStateToProps)(KnownSpellsCount);
+export default connect(mapStateToProps)(KnownCantripsCount);

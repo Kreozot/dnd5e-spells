@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState, useEffect, useMemo } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -9,6 +9,7 @@ import {
   chosenSpellsSlice,
   getIsSpellAlwaysActive,
   getCanChooseMoreSpells,
+  getCanChooseMoreCantrips,
 } from 'common/store';
 
 function SpellChoose(props) {
@@ -17,8 +18,10 @@ function SpellChoose(props) {
     row, // TODO: handle cantrips with different logic
     isSpellActive,
     toggleSpellChosen,
+    toggleCantripChosen,
     isSpellAlwaysActive,
     canChooseMoreSpells,
+    canChooseMoreCantrips,
   } = props;
 
   const [isHintOpen, setIsHintOpen] = useState(false);
@@ -26,12 +29,20 @@ function SpellChoose(props) {
   const handleClick = useCallback((event) => {
     event.preventDefault();
     event.stopPropagation();
-    if (isSpellActive || canChooseMoreSpells) {
-      toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
+    if (row.original.level === 'cantrip') {
+      if (isSpellActive || canChooseMoreCantrips) {
+        toggleCantripChosen({ title: value, isCantripChosen: isSpellActive });
+      } else {
+        setIsHintOpen(true);
+      }
     } else {
-      setIsHintOpen(true);
+      if (isSpellActive || canChooseMoreSpells) {
+        toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
+      } else {
+        setIsHintOpen(true);
+      }
     }
-  }, [value, isSpellActive, toggleSpellChosen, canChooseMoreSpells]);
+  }, [value, isSpellActive, toggleSpellChosen, toggleCantripChosen, canChooseMoreSpells, canChooseMoreCantrips, row.original.level]);
 
   const handleRequestClose = useCallback(() => {
     setIsHintOpen(false);
@@ -43,9 +54,15 @@ function SpellChoose(props) {
     }, 5000);
   }, [isHintOpen]);
 
+  const hintTitle = useMemo(() => {
+    return row.original.level === 'cantrip'
+      ? 'You have reached your known cantrips maximum'
+      : 'You have reached your known spells maximum';
+  }, [row.original.level]);
+
   return (
     <Tooltip
-      title="You have reached your known spells maximum"
+      title={ hintTitle }
       position="right"
       trigger="manual"
       open={ isHintOpen }
@@ -65,9 +82,11 @@ const mapStateToProps = (state, props) => ({
   isSpellActive: getIsSpellActive(state, props),
   isSpellAlwaysActive: getIsSpellAlwaysActive(state, props),
   canChooseMoreSpells: getCanChooseMoreSpells(state),
+  canChooseMoreCantrips: getCanChooseMoreCantrips(state),
 });
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  toggleSpellChosen: chosenSpellsSlice.actions.toggleSpellChosen
+  toggleSpellChosen: chosenSpellsSlice.actions.toggleSpellChosen,
+  toggleCantripChosen: chosenSpellsSlice.actions.toggleCantripChosen,
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(SpellChoose);

@@ -169,32 +169,70 @@ export const getKnownSpellsCount = createSelector(
   }
 );
 
+// Get known cantrips count for current class and spellcasting ability modifier
+export const getKnownCantripsCount = createSelector(
+  getCurrentLevelClassRestrictions,
+  (currentLevelClassRestrictions) => {
+    if (!currentLevelClassRestrictions) {
+      return null;
+    }
+    return currentLevelClassRestrictions.cantrips;
+  }
+);
+
 export const chosenSpellsSlice = createSlice({
   name: 'chosenSpells',
-  initialState: [],
+  initialState: {
+    spells: [],
+    cantrips: []
+  },
   reducers: {
     toggleSpellChosen(state, action) {
       const { title, isSpellChosen } = action.payload;
       if (isSpellChosen) {
-        return without(state, title);
+        return {
+          ...state,
+          spells: without(state.spells, title)
+        };
       }
-      return [ ...state, title ];
+      return {
+        ...state,
+        spells: [ ...state.spells, title ]
+      };
+    },
+    toggleCantripChosen(state, action) {
+      const { title, isCantripChosen } = action.payload;
+      if (isCantripChosen) {
+        return {
+          ...state,
+          cantrips: without(state.cantrips, title)
+        };
+      }
+      return {
+        ...state,
+        cantrips: [ ...state.cantrips, title ]
+      };
     },
     clearChosenSpells(state) {
-      return [];
-    }
+      return {
+        cantrips: [],
+        spells: []
+      };
+    },
   },
 });
 
 // Get chosen spells plus always active spells for current class additional
 export const getAllActiveSpells = createSelector(
-  (state) => state.chosenSpells,
+  (state) => state.chosenSpells.spells,
+  (state) => state.chosenSpells.cantrips,
   getAdditionalClassSpells,
-  (chosenSpells, additionalClassSpells) => {
-    if (additionalClassSpells) {
-      return chosenSpells.concat(additionalClassSpells);
-    }
-    return chosenSpells;
+  (chosenSpells, chosenCantrips, additionalClassSpells) => {
+    return [
+      ...chosenSpells,
+      ...chosenCantrips,
+      ...(additionalClassSpells || [])
+    ];
   }
 );
 
@@ -217,8 +255,14 @@ export const getIsSpellActive = createSelector(
 
 export const getCanChooseMoreSpells = createSelector(
   getKnownSpellsCount,
-  (state) => state.chosenSpells.length,
+  (state) => state.chosenSpells.spells.length,
   (knownSpellsCount, chosenSpellsCount) => chosenSpellsCount < knownSpellsCount
+);
+
+export const getCanChooseMoreCantrips = createSelector(
+  getKnownCantripsCount,
+  (state) => state.chosenSpells.cantrips.length,
+  (knownCantripsCount, chosenCantripsCount) => chosenCantripsCount < knownCantripsCount
 );
 
 export const store = configureStore({
