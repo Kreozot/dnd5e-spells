@@ -1,7 +1,6 @@
 import React, { useMemo, useCallback } from 'react';
 
 import Description from './Description';
-import SpellChoose from './SpellChoose';
 
 import styles from './SpellsList.module.scss';
 
@@ -33,16 +32,23 @@ export default function TableRow(props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   ), [row, row.isExpanded, handleClick]);
 
+  const descriptionRow = useMemo(() => {
+    if (!row.isExpanded) {
+      return null;
+    }
+    return (
+      <tr>
+        <td colSpan={ visibleColumns.length }>
+          <Description item={ row.original }/>
+        </td>
+      </tr>
+    )
+  }, [row.isExpanded, row.original, visibleColumns.length])
+
   return (
     <>
       { mainTR }
-      { Boolean(row.isExpanded) &&
-        <tr>
-          <td colSpan={ visibleColumns.length }>
-            <Description item={ row.original }/>
-          </td>
-        </tr>
-      }
+      { descriptionRow }
     </>
   )
 }

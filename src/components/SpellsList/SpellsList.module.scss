@@ -1,15 +1,3 @@
-.row:hover {
-  .cell {
-    background-color: var(--color-background-light);
-  }
-}
-
-.cellExpanded {
-  @extend .cell;
-
-  border-bottom: none;
-}
-
 .headerCenter {
   text-align: center;
 }
