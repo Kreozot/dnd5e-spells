@@ -17,9 +17,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO/>
-      <div>
-        <main>{children}</main>
-      </div>
+      { children }
     </>
   )
 }

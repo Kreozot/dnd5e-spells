@@ -58,8 +58,10 @@ function Spells(props) {
 
   return (
     <>
-      <FiltersBlock/>
-      <LevelFilterSelector levels={ levels }/>
+      <div className={ styles.header }>
+        <FiltersBlock/>
+        <LevelFilterSelector levels={ levels }/>
+      </div>
       { spellsList }
     </>
   );

@@ -1,4 +1,6 @@
 :root {
+  --color-background-main: white;
+
   --color-border-table: hsla(0, 0%, 0%, 0.12);
   --color-background-light: rgb(225, 239, 248);
 
@@ -634,6 +636,3 @@ pre tt:after {
   }
 }
 
-main {
-  padding: 24px;
-}
