@@ -8,6 +8,7 @@ export default function LevelFilterSelector(props) {
     levels,
   } = props;
 
+  // TODO: "Active" option
   return (
     <ButtonGroup color="primary">
       <LevelFilterButton level={ null }/>

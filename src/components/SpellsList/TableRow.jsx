@@ -38,7 +38,7 @@ export default function TableRow(props) {
       { mainTR }
       { Boolean(row.isExpanded) &&
         <tr>
-          <td colSpan={ visibleColumns.length + 1 }>
+          <td colSpan={ visibleColumns.length }>
             <Description item={ row.original }/>
           </td>
         </tr>
