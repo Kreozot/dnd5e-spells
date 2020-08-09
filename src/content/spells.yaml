@@ -8,6 +8,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: [attack]
   description: >
     You hurl a bubble of acid. Choose one creature within
     range, or choose two creatures within range that are
@@ -28,6 +29,7 @@
     S: true
     M: a tiny strip of white cloth
   duration: 8 hours
+  tags: [buff, mass]
   description: >
     Your spell bolsters your allies with toughness and
     resolve. Choose up to three creatures within range.
@@ -36,7 +38,7 @@
   atHigherLevels: >
     When you cast this spell using
     a spell slot of **3rd level** or higher, a target’s hit points
-    increase by an additional 5 for each slot level above **2nd**.
+    increase by an additional **5** for each slot level above **2nd**.
 
 - title: Alarm
   level: 1
@@ -51,6 +53,7 @@
       - a tiny bell
       - a piece of fine silver wire
   duration: 8 hours
+  tags: []
   description: >
     You set an alarm against unwanted intrusion. Choose
     a door, a window, or an area within range that is no
@@ -78,6 +81,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You assume a different form. When you cast the spell,
     choose one of the following options, the effects of which
@@ -124,6 +128,7 @@
     S: true
     M: a morsel of food
   duration: 24 hours
+  tags: []
   description: >
     This spell lets you convince a beast that you mean it no
     harm. Choose a beast that you can see within range.
@@ -148,6 +153,7 @@
     S: true
     M: a morsel of food
   duration: 24 hours
+  tags: []
   description: >
     By means of this spell, you use an animal to deliver a
     message. Choose a Tiny beast you can see within range,
@@ -156,7 +162,7 @@
     who matches a general description, such as “a man or
     woman dressed in the uniform of the town guard” or “a
     red-haired dwarf wearing a pointed hat.” You also speak
-    a message of up to twenty-five words. The target beast
+    a message of up to **twenty-five words**. The target beast
     travels for the duration of the spell toward the specified
     location, covering about **50 miles** per **24 hours** for a
     flying messenger, or **25 miles** for other animals.
@@ -184,11 +190,12 @@
     S: true
   concentration: true
   duration: ≤ 24 hours
+  tags: []
   description: >
     Your magic turns others into beasts. Choose any
     number of willing creatures that you can see within
     range. You transform each target into the form of a
-    Large or sm aller beast with a challenge rating of 4 or
+    Large or smaller beast with a challenge rating of 4 or
     lower. On subsequent turns, you can use your action to
     transform affected creatures into new forms.
 
@@ -229,6 +236,7 @@
       - a piece of flesh
       - a pinch of bone dust
   duration: Instantaneous
+  tags: []
   description: >
     This spell creates an undead servant. Choose a pile
     of bones or a corpse of a Medium or Small humanoid
@@ -278,6 +286,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Objects come to life at your command. Choose up to
     ten nonmagical objects within range that are not being
@@ -357,6 +366,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     A shimmering barrier extends out from you in a **10-foot**
     radius and moves with you, remaining centered on
@@ -382,6 +392,7 @@
     M: a pinch of powdered iron or iron filings
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     A **10-foot**-radius invisible sphere of antimagic surrounds
     you. This area is divorced from the magical energy that
@@ -465,10 +476,11 @@
     S: true
     M: either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect
   duration: 10 days
+  tags: []
   description: >
     This spell attracts or repels creatures of your choice.
     You target something within range, either a Huge or
-    sm aller object or creature or an area that is no larger
+    smaller object or creature or an area that is no larger
     than a **200-foot** cube. Then specify a kind of intelligent
     creature, such as red dragons, goblins, or vampires.
     You invest the target with an aura that either attracts or
@@ -531,6 +543,7 @@
     M: a bit of bat fur
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You create an invisible, magical eye within range that
     hovers in the air for the duration.
@@ -556,6 +569,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create linked teleportation portals that remain open
     for the duration. Choose two points on the ground that
@@ -592,6 +606,7 @@
     M: gold dust worth at least 25 gp, which the spell consumes
     materialConsumed: 25
   duration: Until dispelled
+  tags: []
   description: >
     You touch a closed door, window, gate, chest, or other
     entryway, and it becomes locked for the duration. You
@@ -618,6 +633,7 @@
     S: true
     M: a cup of water
   duration: 1 hour
+  tags: []
   description: >
     A protective magical force surrounds you, manifesting
     as a spectral frost that covers you and your gear.
@@ -639,6 +655,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You invoke the power of Hadar, the Dark Hunger.
     Tendrils of dark energy erupt from you and batter all
@@ -663,6 +680,7 @@
     M: for each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100 gp, all of which the spell consumes
     materialConsumed: 100
   duration: Special
+  tags: []
   description: >
     You and up to eight willing creatures within range
     project your astral bodies into the Astral Plane (the
@@ -724,6 +742,7 @@
     M: specially marked sticks, bones, or similar tokens worth at least 25 gp
     materialSpecial: 25
   duration: Instantaneous
+  tags: []
   description: >
     By casting gem-inlaid sticks, rolling dragon bones,
     laying out ornate cards, or employing some other
@@ -762,6 +781,7 @@
     V: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Life-preserving energy radiates from you in an aura with
     a **30-foot** radius. Until the spell ends, the aura moves
@@ -780,6 +800,7 @@
     V: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Purifying energy radiates from you in an aura with a
     **30-foot** radius. Until the spell ends, the aura moves
@@ -799,6 +820,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Healing energy radiates from you in an aura with a
     **30-foot** radius. Until the spell ends, the aura moves with
@@ -817,10 +839,11 @@
     M: an agate worth at least 1,000 gp, which the spell consumes
     materialConsumed: 1000
   duration: Instantaneous
+  tags: []
   description: >
     After spending the casting time tracing magical
     pathways within a precious gemstone, you touch a Huge
-    or sm aller beast or plant. The target must have either
+    or smaller beast or plant. The target must have either
     no Intelligence score or an Intelligence of 3 or less. The
     target gains an Intelligence of 10. The target also gains
     the ability to speak one language you know. If the target
@@ -849,6 +872,7 @@
     M: a drop of blood
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Up to three creatures of your choice that you can see
     within range must make **Charisma saving throws**.
@@ -872,6 +896,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit a creature with a weapon attack
     before this spell ends, your weapon crackles with force,
@@ -898,6 +923,7 @@
     M: an item distasteful to the target
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You attempt to send one creature that you can see
     within range to another plane of existence. The
@@ -938,6 +964,7 @@
     M: a handful of oak bark
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You touch a willing creature. Until the spell ends, the
     target’s skin has a rough, bark-like appearance, and the
@@ -954,6 +981,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     This spell bestows hope and vitality. Choose any
     number of creatures within range. For the duration,
@@ -971,6 +999,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You touch a willing beast. For the duration of the spell,
     you can use your action to see through the beast’s eyes
@@ -991,6 +1020,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You touch a creature, and that creature must succeed
     on a **Wisdom saving throw** or become cursed for the
@@ -1040,6 +1070,7 @@
       - a snakeskin glove
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You create a Large hand of shimmering, translucent
     force in an unoccupied space that you can see within
@@ -1072,7 +1103,7 @@
     remain within **5 feet** of it.
 
     * **Grasping Hand.** The hand attempts to grapple a Huge
-    or sm aller creature within **5 feet** of it. You use the hand’s
+    or smaller creature within **5 feet** of it. You use the hand’s
     Strength score to resolve the grapple. If the target is
     Medium or smaller, you have advantage on the check.
     While the hand is grappling the target, you can use a
@@ -1107,6 +1138,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create a vertical wall of whirling, razor-sharp blades
     made of magical energy. The wall appears within range
@@ -1130,6 +1162,7 @@
     V: true
     S: true
   duration: 1 round
+  tags: []
   description: >
     You extend your hand and trace a sigil of warding in the
     air. Until the end of your next turn, you have resistance
@@ -1147,6 +1180,7 @@
     M: a sprinkling of holy water
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You bless up to three creatures of your choice within
     range. Whenever a target makes an attack roll or a
@@ -1167,6 +1201,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Necrom antic energy washes over a creature of your
     choice that you can see within range, draining moisture
@@ -1198,6 +1233,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit a creature with a melee weapon
     attack during this spell’s duration, your weapon flares
@@ -1219,6 +1255,7 @@
   components:
     V: true
   duration: 1 minute
+  tags: []
   description: >
     You can blind or deafen a foe. Choose one creature that
     you can see within range to make a **Constitution saving
@@ -1240,6 +1277,7 @@
     V: true
     S: true
   duration: 1 minute
+  tags: []
   description: >
     Roll a **d20** at the end of each of your turns for the
     duration of the spell. On a roll of **11 or higher**, you
@@ -1272,6 +1310,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Your body becomes blurred, shifting and wavering to
     all who can see you. For the duration, any creature has
@@ -1289,6 +1328,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit a creature with a weapon attack
     before this spell ends, the weapon gleams with astral
@@ -1310,6 +1350,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     As you hold your hands with thumbs touching and
     fingers spread, a thin sheet of flames shoots forth from
@@ -1336,6 +1377,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     A storm cloud appears in the shape of a cylinder that
     is **10 feet** tall with a **60-foot** radius, centered on a point
@@ -1375,6 +1417,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You attempt to suppress strong emotions in a group
     of people. Each humanoid in a **20-foot**-radius sphere
@@ -1408,6 +1451,7 @@
       - a piece of amber, glass, or a crystal rod
       - three silver pins
   duration: Instantaneous
+  tags: []
   description: >
     You create a bolt of lightning that arcs toward a target of
     your choice that you can see within range. Three bolts
@@ -1435,6 +1479,7 @@
     V: true
     S: true
   duration: 1 hour
+  tags: []
   description: >
     You attempt to charm a humanoid you can see within
     range. It must make a **Wisdom saving throw**, and does
@@ -1460,6 +1505,7 @@
     V: true
     S: true
   duration: 1 round
+  tags: []
   description: >
     You create a ghostly, skeletal hand in the space of a
     creature within range. Make a ranged spell attack
@@ -1486,6 +1532,7 @@
     M: a diamond worth at least 50 gp
     materialSpecial: 50
   duration: Instantaneous
+  tags: []
   description: >
     You hurl a **4-inch**-diameter sphere of energy at a
     creature that you can see within range. You choose
@@ -1509,6 +1556,7 @@
     M: the powder of a crushed black pearl worth at least 500 gp
     materialSpecial: 500
   duration: Instantaneous
+  tags: []
   description: >
     A sphere of negative energy ripples out in a **60-foot**
     radius sphere from a point within range. Each creature
@@ -1529,6 +1577,7 @@
     V: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Divine energy radiates from you, distorting and
     diffusing magical energy within **30 feet** of you. Until
@@ -1553,6 +1602,7 @@
     materialSpecial: 100
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create an invisible sensor within range in a location
     familiar to you (a place you have visited or seen before)
@@ -1586,6 +1636,7 @@
     materialConsumed: 1000
     materialSpecial: 2000
   duration: Instantaneous
+  tags: []
   description: >
     This spell grows an inert duplicate of a living creature
     as a safeguard against death. This clone forms inside
@@ -1617,6 +1668,7 @@
     M: a sliver of glass
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You fill the air with spinning daggers in a cube **5 feet** on
     each side, centered on a point you choose within range.
@@ -1638,6 +1690,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create a **20-foot**-radius sphere of poisonous, yellow
     green fog centered on a point you choose within range.
@@ -1671,6 +1724,7 @@
     S: true
     M: a pinch of powder or sand that is colored red, yellow, and blue
   duration: 1 round
+  tags: []
   description: >
     A dazzling array of flashing, colored light springs from
     your hand. Roll **6d10**; the total is how many hit points
@@ -1700,6 +1754,7 @@
   components:
     V: true
   duration: 1 round
+  tags: []
   description: >
     You speak a one-word command to a creature you can
     see within range. The target must succeed on a **Wisdom
@@ -1751,6 +1806,7 @@
       - incense
       - a vial of holy or unholy water
   duration: 1 minute
+  tags: []
   description: >
     You contact your deity or a divine proxy and ask up to
     three questions that can be answered with a yes or no.
@@ -1781,6 +1837,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You briefly become one with nature and gain knowledge
     of the surrounding territory. In the outdoors, the spell
@@ -1821,6 +1878,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You attempt to compel a creature into a duel. One
     creature that you can see within range must make a
@@ -1851,6 +1909,7 @@
     S: true
     M: a pinch of soot and salt
   duration: 1 hour
+  tags: []
   description: >
     For the duration, you understand the literal meaning of
     any spoken language that you hear. You also understand
@@ -1873,6 +1932,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Creatures of your choice that you can see within range
     and that can hear you must make a **Wisdom saving
@@ -1901,6 +1961,7 @@
     S: true
     M: a small crystal or glass cone
   duration: Instantaneous
+  tags: []
   description: >
     A blast of cold air erupts from your hands. Each
     creature in a **60-foot** cone must make a **Constitution
@@ -1926,6 +1987,7 @@
     M: three nut shells
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     This spell assaults and twists creatures' minds,
     spawning delusions and provoking uncontrolled action.
@@ -1958,6 +2020,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You summon fey spirits that take the form of beasts and
     appear in unoccupied spaces that you can see within
@@ -2004,6 +2067,7 @@
     S: true
     M: one piece of ammunition or a thrown weapon
   duration: Instantaneous
+  tags: []
   description: >
     You throw a nonmagical weapon or fire a piece of
     nonmagical ammunition into the air to create a cone
@@ -2024,6 +2088,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You summon a celestial of challenge rating 4 or lower,
     which appears in an unoccupied space that you can see
@@ -2061,6 +2126,7 @@
       - or water and sand for water
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You call forth an elemental servant. Choose an area of air,
     earth, fire, or water that fills a **10-foot** cube within range.
@@ -2121,6 +2187,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You summon a fey creature of challenge rating 6 or
     lower, or a fey spirit that takes the form of a beast of
@@ -2164,6 +2231,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You summ on elementals that appear in unoccupied
     spaces that you can see within range. You choose one
@@ -2208,6 +2276,7 @@
     S: true
     M: one piece of ammunition or one thrown weapon
   duration: Instantaneous
+  tags: []
   description: >
     You fire a piece of nonmagical ammunition from a
     ranged weapon or throw a nonmagical weapon into
@@ -2231,6 +2300,7 @@
     M: one holly berry per creature summoned
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You summ on fey creatures that appear in unoccupied
     spaces that you can see within range. Choose one of the
@@ -2276,6 +2346,7 @@
   components:
     V: true
   duration: 1 minute
+  tags: []
   description: >
     You mentally contact a demigod, the spirit of a long-dead
     sage, or some other mysterious entity from another
@@ -2306,6 +2377,7 @@
     V: true
     S: true
   duration: 7 days
+  tags: []
   description: >
     Your touch inflicts disease. Make a melee spell attack
     against a creature within your reach. On a hit, you afflict
@@ -2370,6 +2442,7 @@
     M: a statuette of yourself carved from ivory and decorated with gems worth at least 1,500 gp
     materialSpecial: 1500
   duration: 10 days
+  tags: []
   description: >
     Choose a spell of **5th level** or lower that you can cast, that
     has a casting time of 1 action, and that can target you.
@@ -2408,6 +2481,7 @@
     M: ruby dust worth 50 gp, which the spell consumes
     materialConsumed: 50
   duration: Until dispelled
+  tags: []
   description: >
     A flame, equivalent in brightness to a torch, springs
     forth from an object that you touch. The effect looks like
@@ -2428,6 +2502,7 @@
       - a pinch of dust
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Until the spell ends, you control any freestanding water
     inside an area you choose that is a cube up to **100 feet**
@@ -2508,6 +2583,7 @@
       - bits of earth and wood mixed in water
   concentration: true
   duration: ≤ 8 hours
+  tags: []
   description: >
     You take control of the weather within **5 miles** of you
     for the duration. You must be outdoors to cast this spell.
@@ -2593,6 +2669,7 @@
     S: true
     M: four or more arrows or bolts
   duration: 8 hours
+  tags: []
   description: >
     You plant four pieces of nonmagical ammunition—
     arrows or crossbow bolts — in the ground within range
@@ -2624,6 +2701,7 @@
   components:
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You attempt to interrupt a creature in the process of
     casting a spell. If the creature is casting a spell of **3rd
@@ -2647,6 +2725,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You create **45 pounds** of food and 30 gallons of water
     on the ground or in containers within range, enough
@@ -2667,6 +2746,7 @@
       - 'To create water: a drop of water'
       - 'To destroy water: a few grains of sand'
   duration: Instantaneous
+  tags: []
   description: >
     You either create or destroy water.
 
@@ -2699,6 +2779,7 @@
       - one clay pot filled with brackish water
       - one 150 gp black onyx stone for each corpse
   duration: Instantaneous
+  tags: []
   description: >
     You can cast this spell only at night. Choose up to three
     corpses of Medium or Small hum anoids within range.
@@ -2753,6 +2834,7 @@
     S: true
     M: a tiny piece of matter of the same type of the item you plan to create
   duration: Special
+  tags: []
   description: >
     You pull wisps of shadow material from the Shadowfell
     to create a nonliving object of vegetable matter within
@@ -2785,6 +2867,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     One humanoid of your choice that you can see within
     range must succeed on a **Wisdom saving throw** or
@@ -2832,6 +2915,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Holy power radiates from you in an aura with a **30-foot**
     radius, awakening boldness in friendly creatures. Until
@@ -2849,6 +2933,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A creature you touch regains a number of hit points
     equal to **1d8 + <SpellcastingAbilityModifier/>**. This
@@ -2869,6 +2954,7 @@
     M: a bit of phosphorus or wychw ood, or a glowworm
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You create up to four torch-sized lights within range,
     making them appear as torches, lanterns, or glowing
@@ -2895,6 +2981,7 @@
       - a drop of pitch or piece of coal
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Magical darkness spreads from a point you choose
     within range to fill a **15-foot**-radius sphere for the
@@ -2926,6 +3013,7 @@
     S: true
     M: either a pinch of dried carrot or an agate
   duration: 8 hours
+  tags: []
   description: >
     You touch a willing creature to grant it the ability to
     see in the dark. For the duration, that creature has
@@ -2940,6 +3028,7 @@
     V: true
     S: true
   duration: 1 hour
+  tags: []
   description: >
     A **60-foot**-radius sphere of light spreads out from a point
     you choose within range. The sphere is bright light and
@@ -2966,6 +3055,7 @@
     V: true
     S: true
   duration: 8 hours
+  tags: []
   description: >
     You touch a creature and grant it a measure of
     protection from death.
@@ -2994,6 +3084,7 @@
       - sulfur
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A beam of yellow light flashes from your pointing finger,
     then condenses to linger at a chosen point within range
@@ -3037,6 +3128,7 @@
   components:
     S: true
   duration: 1 hour
+  tags: []
   description: >
     You create a shadowy door on a flat solid surface that
     you can see within range. The door is large enough to
@@ -3065,6 +3157,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You strike the ground, creating a burst of divine
     energy that ripples outward from you. Each creature
@@ -3085,6 +3178,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     For the duration, you know if there is an aberration,
     celestial, elemental, fey, fiend, or undead within **30
@@ -3109,6 +3203,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     For the duration, you sense the presence of magic
     within **30 feet** of you. If you sense magic in this way, you
@@ -3133,6 +3228,7 @@
     M: a yew leaf
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     For the duration, you can sense the presence and
     location of poisons, poisonous creatures, and diseases
@@ -3155,6 +3251,7 @@
     M: a copper piece
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     For the duration, you can read the thoughts of certain
     creatures. When you cast the spell and as your action on
@@ -3210,6 +3307,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You teleport yourself from your current location to any
     other spot within range. You arrive at exactly the spot
@@ -3221,7 +3319,7 @@
 
     You can bring along objects as long as their weight
     doesn’t exceed what you can carry. You can also bring
-    one willing creature of your size or sm aller who is
+    one willing creature of your size or smaller who is
     carrying gear up to its carrying capacity. The creature
     must be within **5 feet** of you when you cast this spell.
 
@@ -3240,6 +3338,7 @@
     V: true
     S: true
   duration: 1 hour
+  tags: []
   description: >
     You make yourself — including your clothing, armor,
     weapons, and other belongings on your person — look
@@ -3278,6 +3377,7 @@
       - a lodestone
       - a pinch of dust
   duration: Instantaneous
+  tags: []
   description: >
     A thin green ray springs from your pointing finger to a
     target that you can see within range. The target can be a
@@ -3318,6 +3418,7 @@
     M: holy water or powdered silver and iron
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Shimmering energy surrounds and protects you from
     fey, undead, and creatures originating from beyond the
@@ -3355,6 +3456,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Choose one creature, object, or magical effect within
     range. Any spell of **3rd level** or lower on the target ends.
@@ -3376,6 +3478,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You whisper a discordant melody that only one creature
     of your choice within range can hear, wracking it with
@@ -3406,6 +3509,7 @@
       - a sacrificial offering appropriate to your religion, together worth at least 25 gp, which the spell consumes
     materialConsumed: 25
   duration: Instantaneous
+  tags: []
   description: >
     Your magic and an offering put you in contact with
     a god or a god’s servants. You ask a single question
@@ -3433,6 +3537,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Your prayer em powers you with divine radiance. Until
     the spell ends, your weapon attacks deal an extra **1d4**
@@ -3446,6 +3551,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You utter a divine word, im bued with the power that
     shaped the world at the dawn of creation. Choose any
@@ -3482,6 +3588,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You attempt to beguile a beast that you can see within
     range. It must succeed on a **Wisdom saving throw** or be
@@ -3531,6 +3638,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You attempt to beguile a creature that you can see
     within range. It must succeed on a **Wisdom saving
@@ -3575,6 +3683,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You attempt to beguile a humanoid that you can see
     within range. It must succeed on a **Wisdom saving
@@ -3626,6 +3735,7 @@
     M: a sapphire worth 1,000 gp
     materialSpecial: 1000
   duration: Until dispelled
+  tags: []
   description: >
     You touch an object weighing **10 pounds** or less whose
     longest dimension is **6 feet** or less. The spell leaves an
@@ -3664,6 +3774,7 @@
       - a dab of ink
       - a writing quill plucked from a sleeping bird
   duration: 8 hours
+  tags: []
   description: >
     This spell shapes a creature’s dreams. Choose a
     creature known to you as the target of this spell. The
@@ -3713,6 +3824,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Whispering to the spirits of nature, you create one of the
     following effects within range:
@@ -3749,6 +3861,7 @@
       - a lump of clay
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You create a seismic disturbance at a point on the
     ground that you can see within range. For the duration,
@@ -3811,6 +3924,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A beam of crackling energy streaks toward a creature
     within range. Make a ranged spell attack against the
@@ -3832,6 +3946,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     A nonmagical weapon you touch becomes a magic
     weapon. Choose one of the following damage types:
@@ -3857,6 +3972,7 @@
     M: fur or a feather from a beast
   concentration: true
   duration: ≤ 1 hour.
+  tags: []
   description: >
     You touch a creature and bestow upon it a magical
     enhancement. Choose one of the following effects; the
@@ -3899,6 +4015,7 @@
     M: a pinch of powdered iron
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You cause a creature or an object you can see within
     range to grow larger or smaller for the duration. Choose
@@ -3943,6 +4060,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit a creature with a weapon attack
     before this spell ends, a writhing mass of thorny vines
@@ -3973,6 +4091,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Grasping weeds and vines sprout from the ground in a
     **20-foot** square starting from a point within range. For
@@ -3999,6 +4118,7 @@
     V: true
     S: true
   duration: 1 minute
+  tags: []
   description: >
     You weave a distracting string of words, causing
     creatures of your choice that you can see within range
@@ -4021,6 +4141,7 @@
     V: true
     S: true
   duration: ≤ 8 hours
+  tags: []
   description: >
     You step into the border regions of the Ethereal Plane,
     in the area where it overlaps with your current plane.
@@ -4075,6 +4196,7 @@
     M: a piece of tentacle from a giant octopus or a giant squid
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Squirming, ebony tentacles fill a **20-foot** square on
     ground that you can see within range. For the duration,
@@ -4105,6 +4227,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     This spell allows you to move at an incredible pace.
     When you cast this spell, and then as a bonus action
@@ -4121,6 +4244,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     For the spell’s duration, your eyes become an inky void
     im bued with dread power. One creature of your choice
@@ -4158,6 +4282,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You convert raw materials into products of the same
     material. For example, you can fabricate a wooden
@@ -4192,6 +4317,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Each object in a **20-foot** cube within range is outlined in
     blue, green, or violet light (your choice). Any creature in
@@ -4212,6 +4338,7 @@
     S: true
     M: a small amount of alcohol or distilled spirits
   duration: 1 hour
+  tags: []
   description: >
     Bolstering yourself with a necrom antic facsimile of life,
     you gain **1d4 + 4** **temporary hit points** for the duration.
@@ -4231,6 +4358,7 @@
     M: a white feather or the heart of a hen
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You project a phantasmal image of a creature’s worst
     fears. Each creature in a **30-foot** cone must succeed on
@@ -4257,6 +4385,7 @@
     V: true
     M: a small feather or piece of down
   duration: 1 minute
+  tags: []
   description: >
     Choose up to five falling creatures within range. A
     falling creature's rate of descent slows to **60 feet** per
@@ -4274,6 +4403,7 @@
     S: true
     M: a handful of clay, crystal, glass, or mineral spheres
   duration: Instantaneous
+  tags: []
   description: >
     You blast the mind of a creature that you can see within
     range, attempting to shatter its intellect and personality.
@@ -4308,6 +4438,7 @@
     S: true
     M: a pinch of graveyard dirt
   duration: 1 hour
+  tags: []
   description: >
     You touch a willing creature and put it into a cataleptic
     state that is indistinguishable from death.
@@ -4338,6 +4469,7 @@
     M: 10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier
     materialConsumed: 10
   duration: Instantaneous
+  tags: []
   description: >
     You gain the service of a familiar, a spirit that takes an
     animal form you choose: bat, cat, crab, frog (toad), hawk,
@@ -4397,6 +4529,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You summon a spirit that assumes the form of an
     unusually intelligent, strong, and loyal steed, creating a
@@ -4448,6 +4581,7 @@
       - an object from the location you wish to find
   concentration: true
   duration: ≤ 1 day
+  tags: []
   description: >
     This spell allows you to find the shortest, most direct
     physical route to a specific fixed location that you are
@@ -4475,6 +4609,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You sense the presence of any trap within range that
     is within line of sight. A trap, for the purpose of this
@@ -4500,6 +4635,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You send negative energy coursing through a creature
     that you can see within range, causing it searing pain.
@@ -4525,6 +4661,7 @@
       - a tiny ball of bat guano
       - sulfur
   duration: Instantaneous
+  tags: []
   description: >
     A bright streak flashes from your pointing finger to a
     point you choose within range and then blossoms with
@@ -4551,6 +4688,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You hurl a mote of fire at a creature or object within
     range. Make a ranged spell attack against the
@@ -4571,6 +4709,7 @@
     S: true
     M: a bit of phosphorus or a firefly
   duration: 10 minutes
+  tags: []
   description: >
     Thin and wispy flames wreathe your body for the
     duration, shedding bright light in a **10-foot** radius and
@@ -4598,6 +4737,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A storm made up of sheets of roaring flame appears
     in a location you choose within range. The area of the
@@ -4625,6 +4765,7 @@
     M: leaf of sumac
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You evoke a fiery blade in your free hand. The blade is
     similar in size and shape to a scimitar, and it lasts for
@@ -4654,6 +4795,7 @@
     S: true
     M: pinch of sulfur
   duration: Instantaneous
+  tags: []
   description: >
     A vertical column of divine fire roars down from the
     heavens in a location you specify. Each creature in
@@ -4684,6 +4826,7 @@
       - a dusting of powdered iron
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A **5-foot**-diameter sphere of fire appears in an
     unoccupied space of your choice within range and lasts
@@ -4722,6 +4865,7 @@
     M: a pinch of lime, water, and earth
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You attempt to turn one creature that you can see within
     range into stone. If the target’s body is made of flesh, the
@@ -4760,6 +4904,7 @@
     M: a wing feather from any bird
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You touch a willing creature. The target gains a flying
     speed of **60 feet** for the duration. When the spell ends,
@@ -4779,6 +4924,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You create a **20-foot**-radius sphere of fog centered on a
     point within range. The sphere spreads around corners,
@@ -4804,6 +4950,7 @@
       - rare incense
       - powdered ruby worth at least 1,000 gp
   duration: 1 day
+  tags: []
   description: >
     You create a ward against magical travel that protects
     up to **40,000 square feet** of floor space to a height of **30
@@ -4845,6 +4992,7 @@
     M: ruby dust worth 1,500 gp
     materialSpecial: 1500
   duration: 1 hour
+  tags: []
   description: >
     An immobile, invisible, cube-shaped prison composed of
     magical force springs into existence around an area you
@@ -4890,6 +5038,7 @@
     S: true
     M: a hummingbird feather
   duration: 8 hours
+  tags: []
   description: >
     You touch a willing creature and bestow a limited ability
     to see into the immediate future. For the duration, the
@@ -4912,6 +5061,7 @@
     S: true
     M: a leather strap, bound around the arm or a similar appendage
   duration: 1 hour
+  tags: []
   description: >
     You touch a willing creature. For the duration, the
     target’s movement is unaffected by difficult terrain, and
@@ -4936,6 +5086,7 @@
     M: a small amount of makeup applied to the face as this spell is cast
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     For the duration, you have advantage on all Charisma
     checks directed at one creature of your choice that isn’t
@@ -4959,6 +5110,7 @@
       - a wisp of smoke
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You transform a willing creature you touch, along with
     everything it’s wearing and carrying, into a misty cloud
@@ -4995,6 +5147,7 @@
     materialSpecial: 5000
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You conjure a portal linking an unoccupied space you
     can see within range to a precise location on a different
@@ -5034,6 +5187,7 @@
   components:
     V: true
   duration: 30 days
+  tags: []
   description: >
     You place a magical command on a creature that you
     can see within range, forcing it to carry out some
@@ -5073,6 +5227,7 @@
     S: true
     M: a pinch of salt and one copper piece placed on each of the corpse’s eyes, which must remain there for the duration
   duration: 10 days
+  tags: []
   description: >
     You touch a corpse or other remains. For the
     duration, the target is protected from decay and can’t
@@ -5094,6 +5249,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You transform up to ten centipedes, three spiders, five
     wasps, or one scorpion within range into giant versions
@@ -5126,6 +5282,7 @@
   components:
     V: true
   duration: 1 hour
+  tags: []
   description: >
     Until the spell ends, when you make a Charisma
     check, you can replace the number you roll with a **15**.
@@ -5144,6 +5301,7 @@
     M: a glass or crystal bead that shatters when the spell ends
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     An immobile, faintly shimmering barrier springs into
     existence in a **10-foot** radius around you and remains for
@@ -5175,6 +5333,7 @@
       - powdered diamond worth at least 200 gp, which the spell consumes
     materialConsumed: 200
   duration: Until dispelled or triggered
+  tags: []
   description: >
     When you cast this spell, you inscribe a glyph that
     harms other creatures, either upon a surface (such as
@@ -5261,6 +5420,7 @@
     S: true
     M: a sprig of mistletoe
   duration: Instantaneous
+  tags: []
   description: >
     Up to ten berries appear in your hand and are infused
     with magic for the duration. A creature can use its
@@ -5282,6 +5442,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You conjure a vine that sprouts from the ground in an
     unoccupied space of your choice that you can see within
@@ -5305,6 +5466,7 @@
     S: true
     M: a bit of pork rind or butter
   duration: 1 minute
+  tags: []
   description: >
     Slick grease covers the ground in a **10-foot** square
     centered on a point within range and turns it into
@@ -5327,6 +5489,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You or a creature you touch becomes invisible until the
     spell ends. Anything the target is wearing or carrying is
@@ -5343,6 +5506,7 @@
     M: diamond dust worth at least 100 gp, which the spell consumes
     materialConsumed: 100
   duration: Instantaneous
+  tags: []
   description: >
     You imbue a creature you touch with positive energy to
     undo a debilitating effect. You can reduce the target’s
@@ -5367,6 +5531,7 @@
   components:
     V: true
   duration: 8 hours
+  tags: []
   description: >
     A Large spectral guardian appears and hovers for the
     duration in an unoccupied space of your choice that you
@@ -5397,10 +5562,11 @@
       - a small amount of umber hulk blood
       - a small silver rod worth at least 10 gp
   duration: 24 hours
+  tags: []
   description: >
     You create a ward that protects up to **2,500 square feet**
     of floor space (an area **50 feet** square, or one hundred
-    **5-foot** squares or twenty-five **10-foot** squares). The
+    **5-foot** squares or **twenty-five** **10-foot** squares). The
     warded area can be up to **20 feet** tall, and shaped as you
     desire. You can ward several stories of a stronghold by
     dividing the area am ong them, as long as you can walk
@@ -5476,6 +5642,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You touch one willing creature. Once before the spell
     ends, the target can roll a **d4** and add the number rolled
@@ -5491,6 +5658,7 @@
     V: true
     S: true
   duration: 1 round
+  tags: []
   description: >
     A flash of light streaks toward a creature of your choice
     within range. Make a ranged spell attack against the
@@ -5514,6 +5682,7 @@
     M: a legume seed
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A line of strong wind **60 feet** long and **10 feet** wide
     blasts from you in a direction you choose for the spell’s
@@ -5547,6 +5716,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit a creature with a ranged weapon
     attack before the spell ends, this spell creates a rain
@@ -5572,6 +5742,7 @@
     M: herbs, oils, and incense worth at least 1,000 gp, which the spell consumes
     materialConsumed: 1000
   duration: Until dispelled
+  tags: []
   description: >
     You touch a point and infuse an area around it with holy
     (or unholy) power. The area can have a radius up to **60
@@ -5663,6 +5834,7 @@
       - a twig
       - a bit of green plant
   duration: 24 hours
+  tags: []
   description: >
     You make natural terrain in a **150-foot** cube in range
     look, sound, and smell like some other sort of natural
@@ -5695,6 +5867,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You unleash a virulent disease on a creature that
     you can see within range. The target must make a
@@ -5718,6 +5891,7 @@
     M: a shaving of licorice root
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Choose a willing creature that you can see within range.
     Until the spell ends, the target’s speed is doubled, it
@@ -5741,6 +5915,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Choose a creature that you can see within range. A
     surge of positive energy washes through the creature,
@@ -5760,6 +5935,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     A creature of your choice that you can see within range
     regains hit points equal to **1d4 + <SpellcastingAbilityModifier/>**. This spell has no effect on undead
@@ -5782,6 +5958,7 @@
       - a flame
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Choose a manufactured metal object, such as a metal
     weapon or a suit of heavy or medium metal armor, that
@@ -5811,6 +5988,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You point your finger, and the creature that damaged
     you is momentarily surrounded by hellish flames. The
@@ -5833,6 +6011,7 @@
     M: a gem-encrusted bowl worth at least 1,000 gp, which the spell consumes
     materialConsumed: 1000
   duration: Instantaneous
+  tags: []
   description: >
     You bring forth a great feast, including magnificent
     food and drink. The feast takes **1 hour** to consume and
@@ -5859,6 +6038,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A willing creature you touch is imbued with bravery.
     Until the spell ends, the creature is immune to being
@@ -5882,6 +6062,7 @@
     M: the petrified eye of a newt
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You place a curse on a creature that you can see within
     range. Until the spell ends, you deal an extra **1d6**
@@ -5915,6 +6096,7 @@
     M: a small, straight piece of iron
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Choose a creature that you can see within range. The
     target must succeed on a **Wisdom saving throw** or be
@@ -5940,6 +6122,7 @@
     M: a small, straight piece of iron
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Choose a humanoid that you can see within range.
     The target must succeed on a **Wisdom saving throw**
@@ -5965,6 +6148,7 @@
     materialSpecial: 1000
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Divine light washes out from you and coalesces
     in a soft radiance in a **30-foot** radius around you.
@@ -5989,6 +6173,7 @@
     M: a pickled octopus tentacle
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You open a gateway to the dark between the stars, a
     region infested with unknown horrors. A **20-foot**-radius
@@ -6016,6 +6201,7 @@
     V: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You choose a creature you can see within range and
     mystically mark it as your quarry. Until the spell ends,
@@ -6042,6 +6228,7 @@
     M: a glowing stick of incense or a crystal vial filled with phosphorescent material
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You create a twisting pattern of colors that weaves
     through the air inside a **30-foot** cube within range.
@@ -6069,6 +6256,7 @@
       - a pinch of dust
       - a few drops of water
   duration: Instantaneous
+  tags: []
   description: >
     A hail of rock-hard ice pounds to the ground in a
     **20-foot**-radius, **40-foot**-high cylinder centered on a
@@ -6098,6 +6286,7 @@
       - a pearl worth at least 100 gp
       - an owl feather
   duration: Instantaneous
+  tags: []
   description: >
     You choose one object that you must touch throughout
     the casting of the spell. If it is a magic item or some
@@ -6123,6 +6312,7 @@
     M: a lead-based ink worth at least 10 gp, which the spell consumes
     materialConsumed: 10
   duration: 10 days
+  tags: []
   description: >
     You write on parchment, paper, or some other suitable
     writing material and imbue it with a potent illusion that
@@ -6159,6 +6349,7 @@
       - a vellum depiction or a carved statuette in the likeness of the target
       - a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target
   duration: Until dispelled
+  tags: []
   description: >
     You create a magical restraint to hold a creature that
     you can see within range. The target must succeed on
@@ -6249,6 +6440,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A swirling cloud of sm oke shot through with white-hot
     em bers appears in a **20-foot**-radius sphere centered on
@@ -6279,6 +6471,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Make a melee spell attack against a creature you can
     reach. On a hit, the target takes **3d10** **necrotic damage**.
@@ -6301,6 +6494,7 @@
       - a smear of fat
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Swarming, biting locusts fill a **20-foot**-radius sphere
     centered on a point you choose within range. The sphere
@@ -6331,6 +6525,7 @@
     M: an eyelash encased in gum arabic
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     A creature you touch becomes invisible until the spell
     ends. Anything the target is wearing or carrying is
@@ -6351,6 +6546,7 @@
     S: true
     M: a grasshopper’s hind leg
   duration: 1 minute
+  tags: []
   description: >
     You touch a creature. The creature’s jump distance is
     tripled until the spell ends.
@@ -6363,6 +6559,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     Choose an object that you can see within range. The
     object can be a door, a box, a chest, a set of manacles, a
@@ -6398,6 +6595,7 @@
     materialConsumed: 250
     materialSpecial: 200
   duration: Instantaneous
+  tags: []
   description: >
     Name or describe a person, place, or object. The spell
     brings to your mind a brief sum mary of the significant
@@ -6431,6 +6629,7 @@
       - an exquisite chest, 3 feet by **2** feet by **2** feet, constructed from rare materials worth at least 5,000 gp
       - a Tiny replica made from the same materials worth at least 50 gp
   duration: Instantaneous
+  tags: []
   description: >
     You hide a chest, and all its contents, on the Ethereal
     Plane. You must touch the chest and the miniature
@@ -6449,7 +6648,7 @@
 
     After **60 days**, there is a cumulative **5 percent** chance
     per day that the spell's effect ends. This effect ends if
-    you cast this spell again, if the sm aller replica chest is
+    you cast this spell again, if the smaller replica chest is
     destroyed, or if you choose to end the spell as an action.
     If the spell ends and the larger chest is on the Ethereal
     Plane, it is irretrievably lost.
@@ -6463,8 +6662,9 @@
   components:
     V: true
     S: true
-    M: a sm all crystal bead
+    M: a small crystal bead
   duration: 8 hours
+  tags: []
   description: >
     A **10-foot**-radiusimmobile dome of force springs into
     existence around and above you and remains stationary
@@ -6494,6 +6694,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You touch a creature and can end either one disease or
     one condition afflicting it. The condition can be blinded,
@@ -6510,6 +6711,7 @@
     M: either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     One creature or object of your choice that you can see
     within range rises vertically, up to **20 feet**, and remains
@@ -6541,6 +6743,7 @@
     V: true
     M: a firefly or phosphorescent moss
   duration: 1 hour
+  tags: []
   description: >
     You touch one object that is no larger than **10 feet** in any
     dimension. Until the spell ends, the object sheds bright
@@ -6565,6 +6768,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you make a ranged weapon attack during
     the spell’s duration, the weapon’s ammunition, or the
@@ -6599,6 +6803,7 @@
       - a bit of fur
       - a rod of amber, crystal, or glass
   duration: Instantaneous
+  tags: []
   description: >
     A stroke of lightning forming a line **100 feet** long and **5
     feet** wide blasts out from you in a direction you choose.
@@ -6625,6 +6830,7 @@
     S: true
     M: a bit of fur from a bloodhound
   duration: Instantaneous
+  tags: []
   description: >
     Describe or name a specific kind of beast or plant.
     Concentrating on the voice of nature in your
@@ -6643,6 +6849,7 @@
     M: a bit of fur from a bloodhound
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     Describe or name a creature that is familiar to you. You
     sense the direction to the creature’s location, as long as
@@ -6674,6 +6881,7 @@
     M: a forked twig
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Describe or name an object that is familiar to you. You
     sense the direction to the object’s location, as long as
@@ -6702,6 +6910,7 @@
     S: true
     M: a pinch of dirt
   duration: 1 hour
+  tags: []
   description: >
     You touch a creature. The target’s speed increases by **10
     feet** until the spell ends.
@@ -6720,6 +6929,7 @@
     S: true
     M: a piece of cured leather
   duration: 8 hours
+  tags: []
   description: >
     You touch a willing creature who isn’t wearing armor,
     and a protective magical force surrounds it until the
@@ -6736,6 +6946,7 @@
     V: true
     S: true
   duration: 1 minute
+  tags: []
   description: >
     A spectral, floating hand appears at a point you choose
     within range. The hand lasts for the duration or until
@@ -6767,6 +6978,7 @@
       - iron worth at least 100 gp, which the spell consumes
     materialConsumed: 100
   duration: 1 hour
+  tags: []
   description: >
     You create a **10-foot**-radius, **20-foot**-tall cylinder of
     magical energy centered on a point on the ground
@@ -6813,6 +7025,7 @@
     M: a gem, crystal, reliquary, or some other ornamental container worth at least 500 gp
     materialSpecial: 500
   duration: Until dispelled
+  tags: []
   description: >
     Your body falls into a catatonic state as your soul leaves
     it and enters the container you used for the spell’s
@@ -6875,6 +7088,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You create three glowing darts of magical force. Each
     dart hits a creature of your choice that you can see
@@ -6900,6 +7114,7 @@
       - jade dust worth at least 10 gp, which the spell consumes
     materialConsumed: 10
   duration: Until dispelled
+  tags: []
   description: >
     You implant a message within an object in range, a
     message that is uttered when a trigger condition is met.
@@ -6940,6 +7155,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You touch a nonmagical weapon. Until the spell ends,
     that weapon becomes a magic weapon with a **+1** bonus
@@ -6961,6 +7177,7 @@
     M: a bit of fleece
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create the image of an object, a creature, or some
     other visible phenom enon that is no larger than a
@@ -7008,6 +7225,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A wave of healing energy washes out from a point of
     your choice within range. Choose up to six creatures
@@ -7028,6 +7246,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A flood of healing energy flows from you into injured
     creatures around you. You restore up to **700 hit points**,
@@ -7045,6 +7264,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     As you call out words of restoration, up to six creatures
     of your choice that you can see within range regain hit
@@ -7066,6 +7286,7 @@
       - a snake’s tongue
       - either a bit of honeycomb or a drop of sweet oil
   duration: 24 hours
+  tags: []
   description: >
     You suggest a course of activity (limited to a sentence
     or two) and magically influence up to twelve creatures
@@ -7113,6 +7334,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You banish a creature that you can see within range into
     a labyrinthine demiplane. The target remains there for
@@ -7139,6 +7361,7 @@
     V: true
     S: true
   duration: 8 hours
+  tags: []
   description: >
     You step into a stone object or surface large enough to
     fully contain your body, melding yourself and all the
@@ -7179,6 +7402,7 @@
       - powdered rhubarb leaf
       - an adder’s stomach
   duration: Instantaneous
+  tags: []
   description: >
     A sim mering green arrow streaks toward a target
     within range and bursts in a spray of acid. Make a
@@ -7202,6 +7426,7 @@
     S: true
     M: two lodestones
   duration: Instantaneous
+  tags: []
   description: >
     This spell repairs a single break or tear in an object
     you touch, such as a broken chain link, two halves of
@@ -7225,6 +7450,7 @@
     S: true
     M: a short piece of copper wire
   duration: 1 round
+  tags: []
   description: >
     You point your finger toward a creature within range
     and whisper a message. The target (and only the target)
@@ -7249,6 +7475,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Blazing orbs of fire plummet to the ground at four
     different points you can see within range. Each creature
@@ -7273,6 +7500,7 @@
     V: true
     S: true
   duration: 24 hours
+  tags: []
   description: >
     Until the spell ends, one willing creature you touch is
     immune to **psychic damage**, any effect that would sense
@@ -7290,6 +7518,7 @@
     S: true
     M: a bit of fleece
   duration: 1 minute
+  tags: []
   description: >
     You create a sound or an image of an object within
     range that lasts for the duration. The illusion also ends if
@@ -7326,6 +7555,7 @@
     V: true
     S: true
   duration: 10 days
+  tags: []
   description: >
     You make terrain in an area up to **1 mile** square
     look, sound, smell, and even feel like some other sort
@@ -7365,6 +7595,7 @@
     V: true
     S: true
   duration: 1 minute
+  tags: []
   description: >
     Three illusory duplicates of yourself appear in your
     space. Until the spell ends, the duplicates move with
@@ -7404,6 +7635,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You become invisible at the same time that an illusory
     double of you appears where you are standing. The
@@ -7431,6 +7663,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     Briefly surrounded by silvery mist, you teleport up to **30
     feet** to an unoccupied space that you can see.
@@ -7445,6 +7678,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You attempt to reshape another creature’s memories.
     One creature that you can see must make a **Wisdom
@@ -7508,6 +7742,7 @@
       - a piece of opalescent feldspar
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A silvery beam of pale light shines down in a **5-foot**
     radius, **40-foot**-high cylinder centered on a point within
@@ -7548,6 +7783,7 @@
       - a piece of bone
       - a thread
   duration: 8 hours
+  tags: []
   description: >
     You conjure a phantom watchdog in an unoccupied
     space that you can see within range, where it remains
@@ -7582,6 +7818,7 @@
       - a small piece of polished marble
       - a tiny silver spoon, each item worth at least 5 gp
   duration: 24 hours
+  tags: []
   description: >
     You conjure an extradimensional dwelling in range
     that lasts for the duration. You choose where its one
@@ -7619,6 +7856,7 @@
       - a wad of cotton or cloth
       - powdered chrysolite
   duration: 24 hours
+  tags: []
   description: >
     You make an area within range magically secure. The
     area is a cube that can be as small as **5 feet** to as large
@@ -7670,6 +7908,7 @@
     materialSpecial: 250
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You create a sword-shaped plane of force that hovers
     within range. It lasts for the duration.
@@ -7692,6 +7931,7 @@
       - a small bag containing a mixture of soils — clay, loam, and sand
   concentration: true
   duration: ≤ 2 hours
+  tags: []
   description: >
     Choose an area of terrain no larger than **40 feet** on a
     side within range. You can reshape dirt, sand, or clay
@@ -7739,6 +7979,7 @@
     M: a pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes
     materialConsumed: 25
   duration: 8 hours
+  tags: []
   description: >
     For the duration, you hide a target that you touch
     from divination magic. The target can be a willing
@@ -7757,6 +7998,7 @@
     S: true
     M: a small square of silk
   duration: 24 hours
+  tags: []
   description: >
     You place an illusion on a creature or an object
     you touch so that divination spells reveal false
@@ -7799,6 +8041,7 @@
     S: true
     M: a small crystal sphere
   duration: Instantaneous
+  tags: []
   description: >
     A frigid globe of cold energy streaks from your fingertips
     to a point of your choice within range, where it explodes
@@ -7846,9 +8089,10 @@
       - a matching hemispherical piece of gum arabic
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A sphere of shimmering force encloses a creature
-    or object of Large size or sm aller within range. An
+    or object of Large size or smaller within range. An
     unwilling creature must make a **Dexterity saving
     throw**. On a failed save, the creature is enclosed for
     the duration.
@@ -7883,6 +8127,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Choose one creature that you can see within range. The
     target begins a comic dance in place: shuffling, tapping
@@ -7912,6 +8157,7 @@
       - a sprig of spruce
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     A veil of shadows and silence radiates from you,
     masking you and your companions from detection.
@@ -7931,6 +8177,7 @@
     S: true
     M: a pinch of sesame seeds
   duration: 1 hour
+  tags: []
   description: >
     A passage appears at a point of your choice that you
     can see on a wooden, plaster, or stone surface (such as
@@ -7956,6 +8203,7 @@
     M: a bit of fleece
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You craft an illusion that takes root in the mind of a
     creature that you can see within range. The target must
@@ -8010,6 +8258,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You tap into the nightm ares of a creature you can see
     within range and create an illusory manifestation of its
@@ -8035,6 +8284,7 @@
     V: true
     S: true
   duration: 1 hour
+  tags: []
   description: >
     A Large quasi-real, horselike creature appears on
     the ground in an unoccupied space of your choice
@@ -8064,6 +8314,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You beseech an otherworldly entity for aid. The being
     must be known to you: a god, a primordial, a demon
@@ -8130,6 +8381,7 @@
     M: a jewel worth at least 1,000 gp, which the spell consumes
     materialConsumed: 1000
   duration: 24 hours
+  tags: []
   description: >
     With this spell, you attempt to bind a celestial, an
     elemental, a fey, or a fiend to your service. The creature
@@ -8175,6 +8427,7 @@
     M: a forked, metal rod worth at least 250 gp, attuned to a particular plane of existence
     materialSpecial: 250
   duration: Instantaneous
+  tags: []
   description: >
     You and up to eight willing creatures who link hands in
     a circle are transported to a different plane of existence.
@@ -8214,6 +8467,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     This spell channels vitality into plants within a specific
     area. There are two possible uses for the spell, granting
@@ -8245,6 +8499,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You extend your hand toward a creature you can see
     within range and project a puff of noxious gas from your
@@ -8266,6 +8521,7 @@
     M: a caterpillar cocoon
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     This spell transforms a creature that you can see
     within range into a new form. An unwilling creature
@@ -8310,6 +8566,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A wave of healing energy washes over the creature
     you touch. The target regains all its hit points. If the
@@ -8326,6 +8583,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You utter a word of power that can compel one creature
     you can see within range to die instantly. If the
@@ -8340,6 +8598,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You speak a word of power that can overwhelm the
     mind of one creature you can see within range, leaving
@@ -8359,6 +8618,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     Up to six creatures of your choice that you can see
     within range each regain hit points equal to **2d8 + <SpellcastingAbilityModifier/>**. This spell has no effect on
@@ -8377,6 +8637,7 @@
     V: true
     S: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     This spell is a minor magical trick that novice
     spellcasters use for practice. You create one of the
@@ -8417,6 +8678,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Eight multicolored rays of light flash from your hand.
     Each ray is a different color and has a different power
@@ -8470,6 +8732,7 @@
     V: true
     S: true
   duration: 10 minutes
+  tags: []
   description: >
     A shimmering, multicolored plane of light forms a
     vertical opaque wall — up to **90 feet** long, **30 feet** high,
@@ -8571,6 +8834,7 @@
     V: true
     S: true
   duration: 10 minutes
+  tags: []
   description: >
     A flickering flame appears in your hand. The flame
     remains there for the duration and harms neither you
@@ -8602,6 +8866,7 @@
       - a bit of fleece
       - jade dust worth at least 25 gp
   duration: Until dispelled
+  tags: []
   description: >
     You create an illusion of an object, a creature, or
     some other visible phenom enon within range that
@@ -8649,6 +8914,7 @@
     materialSpecial: 5
   concentration: true
   duration: ≤ 1 day
+  tags: []
   description: >
     You create an illusory copy of yourself that lasts for
     the duration. The copy can appear at any location
@@ -8691,6 +8957,7 @@
     S: true
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     For the duration, the willing creature you touch has
     resistance to one damage type of your choice: **acid**, **cold**,
@@ -8707,6 +8974,7 @@
     M: holy water or powdered silver and iron, which the spell consumes
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     Until the spell ends, one willing creature you
     touch is protected against certain types of
@@ -8731,6 +8999,7 @@
     V: true
     S: true
   duration: 1 hour
+  tags: []
   description: >
     You touch a creature. If it is poisoned, you neutralize the
     poison. If more than one poison afflicts the target, you
@@ -8752,6 +9021,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     All nonmagical food and drink within a **5-foot**-radius
     sphere centered on a point of your choice within range is
@@ -8768,6 +9038,7 @@
     M: a diamond worth at least 500 gp, which the spell consumes
     materialConsumed: 500
   duration: Instantaneous
+  tags: []
   description: >
     You return a dead creature you touch to life, provided
     that it has been dead no longer than **10 days**. If the
@@ -8804,6 +9075,7 @@
     S: true
     M: pieces of eggshell from two different kinds of creatures
   duration: 1 hour
+  tags: []
   description: >
     You forge a telepathic link am ong up to eight willing
     creatures of your choice within range, psychically
@@ -8828,6 +9100,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A black beam of enervating energy springs from your
     finger toward a creature within range. Make a ranged
@@ -8849,6 +9122,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A frigid beam of blue-white light streaks toward a
     creature within range. Make a ranged spell attack
@@ -8868,6 +9142,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A ray of sickening greenish energy lashes out toward
     a creature within range. Make a ranged spell attack
@@ -8894,6 +9169,7 @@
       - a prayer wheel
       - holy water
   duration: 1 hour
+  tags: []
   description: >
     You touch a creature and stimulate its natural healing
     ability. The target regains **4d8 + 15** **hit points**. For the
@@ -8920,6 +9196,7 @@
     M: rare oils and unguents worth at least 1,000 gp, which the spell consumes
     materialConsumed: 1000
   duration: Instantaneous
+  tags: []
   description: >
     You touch a dead humanoid or a piece of a dead
     humanoid. Provided that the creature has been dead no
@@ -8980,6 +9257,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     At your touch, all curses affecting one creature or
     object end. If the object is a cursed magic item, its curse
@@ -8997,6 +9275,7 @@
     M: a miniature cloak
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You touch one willing creature. Once before the spell
     ends, the target can roll a **d4** and add the number
@@ -9015,6 +9294,7 @@
     M: a diamond worth at least 1,000 gp, which the spell consumes
     materialConsumed: 1000
   duration: Instantaneous
+  tags: []
   description: >
     You touch a dead creature that has been dead for no
     more than a century, that didn’t die of old age, and that
@@ -9056,6 +9336,7 @@
     M: a lodestone and iron filings
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     This spell reverses gravity in a **50-foot**-radius, **100-
     foot** high cylinder centered on a point within range. All
@@ -9088,6 +9369,7 @@
     M: diamonds worth 300 gp, which the spell consumes
     materialConsumed: 300
   duration: Instantaneous
+  tags: []
   description: >
     You touch a creature that has died within the last
     minute. That creature returns to life with **1 hit point**.
@@ -9106,6 +9388,7 @@
       - powdered corn extract
       - a twisted loop of parchment
   duration: 1 hour
+  tags: []
   description: >
     You touch a length of rope that is up to **60 feet** long.
     One end of the rope then rises into the air until the
@@ -9137,6 +9420,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Flame-like radiance descends on a creature that you
     can see within range. The target must succeed on a
@@ -9156,6 +9440,7 @@
     S: true
     M: a small silver mirror
   duration: 1 minute
+  tags: []
   description: >
     You ward a creature within range against attack. Until
     the spell ends, any creature who targets the warded
@@ -9178,6 +9463,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You create three rays of fire and hurl them at targets
     within range. You can hurl them at one target or several.
@@ -9200,6 +9486,7 @@
     materialSpecial: 1000
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You can see and hear a particular creature you choose
     that is on the same plane of existence as you. The target
@@ -9256,6 +9543,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit a creature with a melee weapon
     attack during the spell’s duration, your weapon flares
@@ -9288,6 +9576,7 @@
       - a pinch of talc
       - a small sprinkling of powdered silver
   duration: 1 hour
+  tags: []
   description: >
     For the duration, you see invisible creatures and objects
     as if they were visible, and you can see into the Ethereal
@@ -9303,6 +9592,7 @@
     V: true
     S: true
   duration: 8 hours
+  tags: []
   description: >
     This spell allows you to change the appearance of any
     number of creatures that you can see within range. You
@@ -9346,8 +9636,9 @@
     S: true
     M: a short piece of fine copper wire
   duration: 1 round
+  tags: []
   description: >
-    You send a short message of twenty-five words or
+    You send a short message of **twenty-five words** or
     less to a creature with which you are familiar. The
     creature hears the message in its mind, recognizes
     you as the sender if it knows you, and can answer in a
@@ -9372,6 +9663,7 @@
     M: a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes
     materialConsumed: 5000
   duration: Until dispelled
+  tags: []
   description: >
     By means of this spell, a willing creature or an object
     can be hidden away, safe from detection for the
@@ -9405,6 +9697,7 @@
     materialSpecial: 1500
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You assume the form of a different creature for the
     duration. The new form can be of any creature with
@@ -9468,6 +9761,7 @@
     S: true
     M: a chip of mica
   duration: Instantaneous
+  tags: []
   description: >
     A sudden loud ringing noise, painfully intense, erupts
     from a point of your choice within range. Each creature
@@ -9497,6 +9791,7 @@
     V: true
     S: true
   duration: 1 round
+  tags: []
   description: >
     An invisible barrier of magical force appears and
     protects you. Until the start of your next turn, you have a
@@ -9514,6 +9809,7 @@
     M: a small parchment with a bit of holy text written on it
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     A shimmering field appears and surrounds a creature
     of your choice within range, granting it a **+2** bonus to AC
@@ -9532,6 +9828,7 @@
       - a sham rock leaf
       - a club or quarterstaff
   duration: 1 minute
+  tags: []
   description: >
     The wood of a club or quarterstaff you are holding is
     imbued with nature’s power. For the duration, you can
@@ -9551,6 +9848,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     Lightning springs from your hand to deliver a shock to
     a creature you try to touch. Make a melee spell attack
@@ -9574,6 +9872,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     For the duration, no sound can be created within or
     pass through a **20-foot**-radius sphere centered on a
@@ -9594,6 +9893,7 @@
     M: a bit of fleece
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create the image of an object, a creature, or some
     other visible phenom enon that is no larger than a **15-foot**
@@ -9629,6 +9929,7 @@
       - some hair, fingernail clippings, or other piece of that creature’s body placed inside the snow or ice
       - and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell
   duration: Until dispelled
+  tags: []
   description: >
     You shape an illusory duplicate of one beast or
     humanoid that is within range for the entire casting
@@ -9671,6 +9972,7 @@
     S: true
     M: a pinch of fine sand, rose petals, or a cricket
   duration: 1 minute
+  tags: []
   description: >
     This spell sends creatures into a magical slumber.
     Roll **5d8**; the total is how many hit points of creatures
@@ -9711,6 +10013,7 @@
       - a few drops of water
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     Until the spell ends, freezing rain and sleet fall in a
     **20-foot**-tall cylinder with a **40-foot** radius centered on
@@ -9738,6 +10041,7 @@
     M: a drop of molasses
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You alter time around up to six creatures of your
     choice in a **40-foot** cube within range. Each target must
@@ -9773,6 +10077,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     You touch a living creature that has **0 hit points**. The
     creature becomes stable. This spell has no effect on
@@ -9788,6 +10093,7 @@
     V: true
     S: true
   duration: 10 minutes
+  tags: []
   description: >
     You gain the ability to com prehend and verbally
     communicate with beasts for the duration. The
@@ -9809,6 +10115,7 @@
     S: true
     M: burning incense
   duration: 10 minutes
+  tags: []
   description: >
     You grant the sem blance of life and intelligence to a
     corpse of your choice within range, allowing it to answer
@@ -9835,6 +10142,7 @@
     V: true
     S: true
   duration: 10 minutes
+  tags: []
   description: >
     You imbue plants within **30 feet** of you with limited
     sentience and animation, giving them the ability
@@ -9880,6 +10188,7 @@
       - a spider
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     Until the spell ends, one willing creature you touch
     gains the ability to move up, down, and across vertical
@@ -9898,6 +10207,7 @@
     M: seven sharp thorns or seven small twigs, each sharpened to a point
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     The ground in a **20-foot** radius centered on a point
     within range twists and sprouts hard spikes and thorns.
@@ -9923,6 +10233,7 @@
     M: a holy symbol
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You call forth spirits to protect you. They flit around you
     to a distance of **15 feet** for the duration. If you are good
@@ -9951,6 +10262,7 @@
     V: true
     S: true
   duration: 1 minute
+  tags: []
   description: >
     You create a floating, spectral weapon within range that
     lasts for the duration or until you cast this spell again.
@@ -9983,6 +10295,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit a creature with a melee weapon
     attack during this spell’s duration, your weapon pierces
@@ -10003,6 +10316,7 @@
     M: a rotten egg or several skunk cabbage leaves
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You create a **20-foot**-radius sphere of yellow, nauseating
     gas centered on a point within range. The cloud spreads
@@ -10030,6 +10344,7 @@
     S: true
     M: soft clay, which must be worked into roughly the desired shape of the stone object
   duration: Instantaneous
+  tags: []
   description: >
     You touch a stone object of Medium size or smaller or
     a section of stone no more than **5 feet** in any dimension
@@ -10053,6 +10368,7 @@
     materialConsumed: 100
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     This spell turns the flesh of a willing creature you touch
     as hard as stone. Until the spell ends, the target has
@@ -10069,6 +10385,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A churning storm cloud forms, centered on a point you
     can see and spreading to a radius of **360 feet**. Lightning
@@ -10126,6 +10443,7 @@
       - eithera bit of honeycomb or a drop of sweet oil
   concentration: true
   duration: ≤ 8 hours
+  tags: []
   description: >
     You suggest a course of activity (limited to a sentence
     or two) and magically influence a creature you can
@@ -10165,6 +10483,7 @@
     M: a magnifying glass
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A beam of brilliant light flashes out from your hand
     in a **5-foot**-wide, **60-foot**-long line. Each creature in
@@ -10196,6 +10515,7 @@
       - fire
       - a piece of sunstone
   duration: Instantaneous
+  tags: []
   description: >
     Brilliant sunlight flashes in a **60-foot** radius centered
     on a point you choose within range. Each creature in
@@ -10225,6 +10545,7 @@
     M: a quiver containing at least one piece of ammunition
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You transmute your quiver so it produces an endless
     supply of nonmagical ammunition, which seems to leap
@@ -10251,6 +10572,7 @@
     M: mercury, phosphorus, and powdered diamond and opal with a total value of at least 1,000 gp, which the spell consumes
     materialConsumed: 1000
   duration: Until dispelled or triggered
+  tags: []
   description: >
     When you cast this spell, you inscribe a harmful glyph
     either on a surface (such as a section of floor, a wall, or
@@ -10357,6 +10679,7 @@
       - a feather that is waved in the air
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A creature of your choice that you can see within range
     perceives everything as hilariously funny and falls
@@ -10382,6 +10705,7 @@
     S: true
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You gain the ability to move or manipulate creatures
     or objects by thought. When you cast the spell, and as
@@ -10437,6 +10761,7 @@
     S: true
     M: a pair of linked silver rings
   duration: 24 hours
+  tags: []
   description: >
     You create a telepathic link between yourself and
     a willing creature with which you are familiar. The
@@ -10462,6 +10787,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     This spell instantly transports you and up to eight
     willing creatures of your choice that you can see within
@@ -10566,6 +10892,7 @@
     M: rare chalks and inks infused with precious gems with 50 gp, which the spell consumes
     materialConsumed: 50
   duration: 1 round
+  tags: []
   description: >
     As you cast the spell, you draw a **10-foot**-diameter
     circle on the ground inscribed with sigils that link
@@ -10608,6 +10935,7 @@
     S: true
     M: a drop of mercury
   duration: 1 hour
+  tags: []
   description: >
     This spell creates a circular, horizontal plane of force,
     **3 feet** in diameter and **1 inch** thick, that floats **3 feet**
@@ -10640,6 +10968,7 @@
   components:
     V: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You manifest a minor wonder, a sign of supernatural
     power, within range. You create one of the following
@@ -10680,6 +11009,7 @@
     S: true
     M: the stem of a plant with thorns
   duration: Instantaneous
+  tags: []
   description: >
     You create a long, vine-like whip covered in thorns that
     lashes out at your command toward a creature in range.
@@ -10701,6 +11031,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The first time you hit with a melee weapon attack
     during this spell’s duration, your weapon rings with
@@ -10719,6 +11050,7 @@
     V: true
     S: true
   duration: Instantaneous
+  tags: []
   description: >
     A wave of thunderous force sweeps out from you. Each
     creature in a **15-foot** cube originating from you must
@@ -10745,6 +11077,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You briefly stop the flow of time for everyone but
     yourself. No time passes for other creatures, while you
@@ -10768,6 +11101,7 @@
     V: true
     M: a small clay model of a ziggurat
   duration: 1 hour
+  tags: []
   description: >
     This spell grants the creature you touch the ability to
     understand any spoken language it hears. Moreover,
@@ -10784,6 +11118,7 @@
     V: true
     S: true
   duration: 1 round
+  tags: []
   description: >
     This spell creates a magical link between a Large or
     larger inanimate plant within range and another plant,
@@ -10803,6 +11138,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You gain the ability to enter a tree and move from inside
     it to inside another tree of the same kind within **500
@@ -10832,6 +11168,7 @@
       - a wisp of smoke
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     Choose one creature or nonmagical object that you
     can see within range. You transform the creature into
@@ -10911,6 +11248,7 @@
       - diamonds worth at least 25,000 gp, which the spell consumes
     materialConsumed: 25000
   duration: Instantaneous
+  tags: []
   description: >
     You touch a creature that has been dead for no longer
     than **200 years** and that died for any reason except
@@ -10938,6 +11276,7 @@
     M: an ointment for the eyes that costs 25 gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell
     materialConsumed: 25
   duration: 1 hour
+  tags: []
   description: >
     This spell gives the willing creature you touch the ability
     to see things as they actually are. For the duration, the
@@ -10954,6 +11293,7 @@
     S: true
   concentration: true
   duration: ≤ 1 round
+  tags: []
   description: >
     You extend your hand and point a finger at a target in
     range. Your magic grants you a brief insight into the
@@ -10971,6 +11311,7 @@
     S: true
   concentration: true
   duration: ≤ 6 rounds
+  tags: []
   description: >
     A wall of water springs into existence at a point you
     choose within range. You can make the wall up to **300
@@ -11017,6 +11358,7 @@
       - a piece of string
       - a bit of wood
   duration: 1 hour
+  tags: []
   description: >
     This spell creates an invisible, mindless, shapeless
     force that performs simple tasks at your command until
@@ -11047,6 +11389,7 @@
     S: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The touch of your shadow-wreathed hand can siphon life
     force from others to heal your wounds. Make a melee
@@ -11068,6 +11411,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You unleash a string of insults laced with subtle
     enchantments at a creature you can see within range. If
@@ -11090,6 +11434,7 @@
     M: a small piece of phosphorus
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     You create a wall of fire on a solid surface within
     range. You can make the wall up to **60 feet** long, **20
@@ -11126,6 +11471,7 @@
     M: a pinch of powder made by crushing a clear gemstone
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     An invisible wall of force springs into existence at a
     point you choose within range. The wall appears in
@@ -11158,6 +11504,7 @@
     M: a small piece of quartz
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create a wall of ice on a solid surface within range.
     You can form it into a hemispherical dome or a sphere
@@ -11201,6 +11548,7 @@
     M: a small block of granite
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     A nonmagical wall of solid stone springs into existence
     at a point you choose within range. The wall is **6 inches**
@@ -11256,6 +11604,7 @@
     M: a handful of thorns
   concentration: true
   duration: ≤ 10 minutes
+  tags: []
   description: >
     You create a wall of tough, pliable, tangled brush
     bristling with needle-sharp thorns. The wall appears
@@ -11296,6 +11645,7 @@
     M: a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration
     materialSpecial: 100
   duration: 1 hour
+  tags: []
   description: >
     This spell wards a willing creature you touch and
     creates a mystic connection between you and the target
@@ -11322,6 +11672,7 @@
     S: true
     M: a short reed or piece of straw
   duration: 24 hours
+  tags: []
   description: >
     This spell grants up to ten willing creatures you can see
     within range the ability to breathe underwater until the
@@ -11339,6 +11690,7 @@
     S: true
     M: a piece of cork
   duration: 1 hour
+  tags: []
   description: >
     This spell grants the ability to move across any liquid
     surface — such as water, acid, mud, snow, quicksand,
@@ -11364,6 +11716,7 @@
     M: a bit of spiderweb
   concentration: true
   duration: ≤ 1 hour
+  tags: []
   description: >
     You conjure a mass of thick, sticky webbing at a point of
     your choice within range. The webs fill a **20-foot** cube
@@ -11401,6 +11754,7 @@
     S: true
   concentration: true
   duration: ≤ one minute
+  tags: []
   description: >
     Drawing on the deepest fears of a group of creatures,
     you create illusory creatures in their minds, visible
@@ -11427,6 +11781,7 @@
       - fire
       - holy water
   duration: 8 hours
+  tags: []
   description: >
     You and up to ten willing creatures you can see
     within range assume a gaseous form for the duration,
@@ -11459,6 +11814,7 @@
       - a feather of exotic origin
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A wall of strong wind rises from the ground at a point
     you choose within range. You can make the wall up
@@ -11492,6 +11848,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     Wish is the mightiest spell a mortal creature can
     cast. By simply speaking aloud, you can alter the very
@@ -11573,6 +11930,7 @@
     M: a twig from a tree that has been struck by lightning
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     A beam of crackling, blue energy lances out toward
     a creature within range, forming a sustained arc of
@@ -11597,6 +11955,7 @@
   components:
     V: true
   duration: Instantaneous
+  tags: []
   description: >
     You and up to five willing creatures within **5 feet** of you
     instantly teleport to a previously designated sanctuary.
@@ -11622,6 +11981,7 @@
     V: true
   concentration: true
   duration: ≤ 1 minute
+  tags: []
   description: >
     The next time you hit with a melee weapon attack
     during this spell’s duration, your attack deals an extra
@@ -11640,6 +12000,7 @@
     V: true
     S: true
   duration: 10 minutes
+  tags: []
   description: >
     You create a magical zone that guards against deception
     in a **15-foot**-radius sphere centered on a point of your
