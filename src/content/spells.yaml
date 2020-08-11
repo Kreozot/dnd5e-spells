@@ -238,12 +238,11 @@
   duration: Instantaneous
   tags: []
   description: >
-    This spell creates an undead servant. Choose a pile
-    of bones or a corpse of a Medium or Small humanoid
-    within range. Your spell im bues the target with a foul
+    This spell creates an undead servants. Choose <AtHigherLevels initial="1" eachLevelInc="2" postfix=" pile of bones| piles of bones"/> or <AtHigherLevels initial="1" eachLevelInc="2" postfix=" corpse| corpses"/> of a Medium or Small humanoid
+    within range. Your spell imbues the target with a foul
     mimicry of life, raising it as an undead creature. The
     target becomes a skeleton if you chose bones or a
-    zom bie if you chose a corpse (the DM has the creature’s
+    zombie if you chose a corpse (the DM has the creature’s
     game statistics).
 
 
@@ -266,8 +265,7 @@
     it. To maintain control of the creature for another
     **24 hours**, you must cast this spell on the creature
     again before the current **24-hour** period ends. This
-    use of the spell reasserts your control over up to four
-    creatures you have animated with this spell, rather than
+    use of the spell reasserts your control over up to <AtHigherLevels initial="4" eachLevelInc="2" postfix=" creatures"/> you have animated with this spell, rather than
     animating a new one.
   atHigherLevels: >
     When you cast this spell using a
@@ -289,7 +287,7 @@
   tags: []
   description: >
     Objects come to life at your command. Choose up to
-    ten nonmagical objects within range that are not being
+    <AtHigherLevels initial="10" eachLevelInc="2" postfix=" nonmagical objects"/> within range that are not being
     worn or carried. Medium targets count as two objects,
     Large targets count as four objects, Huge targets
     count as eight objects. You can’t animate any object
@@ -637,9 +635,9 @@
   description: >
     A protective magical force surrounds you, manifesting
     as a spectral frost that covers you and your gear.
-    You gain **5 temporary hit points** for the duration. If a
+    You gain <AtHigherLevels initial="5" eachLevelInc="5" postfix=" temporary hit points"/> for the duration. If a
     creature hits you with a melee attack while you have
-    these hit points, the creature takes **5** **cold damage**.
+    these hit points, the creature takes <AtHigherLevels initial="5" eachLevelInc="5" postfix=" cold damage"/>.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, both the temporary hit
@@ -661,7 +659,7 @@
     Tendrils of dark energy erupt from you and batter all
     creatures within **10 feet** of you. Each creature in that
     area must make a **Strength saving throw**. On a failed
-    save, a target takes **2d6** **necrotic damage** and can’t take
+    save, a target takes <AtHigherLevels initial="2" eachLevelInc="1" postfix="d6"/> **necrotic damage** and can’t take
     reactions until its next turn. On a successful save, the
     creature takes half damage, but suffers no other effect.
   atHigherLevels: >
@@ -874,7 +872,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    Up to three creatures of your choice that you can see
+    Up to <AtHigherLevels initial="3" eachLevelInc="1" postfix=" creatures"/> of your choice that you can see
     within range must make **Charisma saving throws**.
 
 
@@ -4645,7 +4643,7 @@
 
 
     A humanoid killed by this spell rises at the start of
-    your next turn as a zom bie that is permanently under
+    your next turn as a zombie that is permanently under
     your command, following your verbal orders to the best
     of its ability.
 
