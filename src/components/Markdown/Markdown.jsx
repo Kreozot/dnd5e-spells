@@ -4,16 +4,21 @@ import MarkdownToJsx from 'markdown-to-jsx';
 import LevelUpgrades from './LevelUpgrades';
 import SpellcastingAbility from './SpellcastingAbility';
 import SpellcastingAbilityModifier from './SpellcastingAbilityModifier';
+import AtHigherLevels from './AtHigherLevels';
 
 export default function Markdown(props) {
-  const { children } = props;
+  const { children, spellLevel, spellTitle } = props;
 
   return (
     <MarkdownToJsx
       options={ {
         overrides: {
-          LevelUpdgrades: {
+          LevelUpgrades: {
             component: LevelUpgrades,
+          },
+          AtHigherLevels: {
+            component: AtHigherLevels,
+            props: { spellLevel, spellTitle }
           },
           SpellcastingAbilityModifier: {
             component: SpellcastingAbilityModifier,

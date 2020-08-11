@@ -1,49 +1,21 @@
-import { createSlice, configureStore, combineReducers } from '@reduxjs/toolkit';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { createSelector } from 'reselect';
-import without from 'lodash/without';
 
 import spellsData from 'content/spells';
 import classSpellsData from 'content/classSpells.yaml';
 import classRestrictionsData from 'content/classRestrictions.yaml';
+import chosenSpellsSlice from './chosenSpellsSlice';
+import filtersSlice from './filtersSlice';
+import spellsLevelsSlice from './spellsLevelsSlice';
 
 const persistConfig = {
   key: 'root',
   storage,
 };
 
-export const filtersSlice = createSlice({
-  name: 'filters',
-  initialState: {
-    level: null,
-    activeFilter: false,
-    currentLevel: '',
-    class: '',
-    classAdditional: '',
-    spellcastingAbilityValue: '',
-  },
-  reducers: {
-    selectLevel(state, action) {
-      return { ...state, level: action.payload, activeFilter: false };
-    },
-    setActiveFilterOn(state) {
-      return { ...state, activeFilter: true, level: null };
-    },
-    setCurrentLevel(state, action) {
-      return { ...state, currentLevel: action.payload };
-    },
-    setClass(state, action) {
-      return { ...state, class: action.payload, classAdditional: '' };
-    },
-    setClassAdditional(state, action) {
-      return { ...state, classAdditional: action.payload };
-    },
-    setSpellcastingAbilityValue(state, action) {
-      return { ...state, spellcastingAbilityValue: action.payload };
-    },
-  },
-});
+export { filtersSlice, chosenSpellsSlice, spellsLevelsSlice };
 
 // Get key (name) of class additional options (e.g. "Divine Domains" for Cleric)
 export const getClassAdditionalKey = createSelector(
@@ -184,48 +156,6 @@ export const getKnownCantripsCount = createSelector(
   }
 );
 
-export const chosenSpellsSlice = createSlice({
-  name: 'chosenSpells',
-  initialState: {
-    spells: [],
-    cantrips: []
-  },
-  reducers: {
-    toggleSpellChosen(state, action) {
-      const { title, isSpellChosen } = action.payload;
-      if (isSpellChosen) {
-        return {
-          ...state,
-          spells: without(state.spells, title)
-        };
-      }
-      return {
-        ...state,
-        spells: [ ...state.spells, title ]
-      };
-    },
-    toggleCantripChosen(state, action) {
-      const { title, isCantripChosen } = action.payload;
-      if (isCantripChosen) {
-        return {
-          ...state,
-          cantrips: without(state.cantrips, title)
-        };
-      }
-      return {
-        ...state,
-        cantrips: [ ...state.cantrips, title ]
-      };
-    },
-    clearChosenSpells(state) {
-      return {
-        cantrips: [],
-        spells: []
-      };
-    },
-  },
-});
-
 // Get chosen spells plus always active spells for current class additional
 export const getAllActiveSpells = createSelector(
   (state) => state.chosenSpells.spells,
@@ -269,10 +199,20 @@ export const getCanChooseMoreCantrips = createSelector(
   (knownCantripsCount, chosenCantripsCount) => chosenCantripsCount < knownCantripsCount
 );
 
+// Is spell level selected (in spell level select)
+export const isSpellLevelSelected = createSelector(
+  (state, props) => {
+    const selectedSpellLevel = state.spellsLevels[props.item.title] || props.item.level;
+    return selectedSpellLevel === props.level;
+  },
+  (isSelected) => isSelected,
+);
+
 export const store = configureStore({
   reducer: persistReducer(persistConfig, combineReducers({
     filters: filtersSlice.reducer,
     chosenSpells: chosenSpellsSlice.reducer,
+    spellsLevels: spellsLevelsSlice.reducer,
   })),
   middleware: [],
 });

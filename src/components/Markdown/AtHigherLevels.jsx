@@ -1,37 +1,26 @@
 import React, { useMemo } from 'react';
-import maxBy from 'lodash/maxBy';
+import { connect } from 'react-redux';
 
 import Tooltip from 'components/Tooltip';
+import { declension } from 'common/format';
 
-// Translates <AtHigherLevels initial="1d6" upgrades="5:2d6;11:3d6;17:4d6"/> into value relevant for current spell slot level
-export default function AtHigherLevels(props) {
-  const { initial, upgrades, spellLevel } = props;
-
-  const upgradesMap = useMemo(() => {
-    return upgrades.split(';')
-      .reduce((result, part) => {
-        const [level, value] = part.split(':');
-        result.push({ level: parseInt(level), value });
-        return result;
-      }, [])
-  }, [upgrades]);
+// Translates <AtHigherLevels initial="5" eachLevelInc="1" postfix="d8"/> into value relevant for current level
+function LevelUpgrades(props) {
+  const { initial, eachLevelInc, postfix = '', spellLevel, currentLevel } = props;
 
   const currentValue = useMemo(() => {
-    const availableUpgrades = upgradesMap.filter(({ level }) => level <= spellLevel);
-    const closestUpgrade = maxBy(availableUpgrades, ({ level }) => level);
-    return closestUpgrade
-      ? closestUpgrade.value
-      : initial;
-  }, [initial, upgradesMap, spellLevel]);
+    if (eachLevelInc) {
+      const levelsDiff = currentLevel - spellLevel;
+      const resultValue = parseInt(initial) + parseInt(eachLevelInc) * levelsDiff;
+      return declension(resultValue, postfix);
+    }
+  }, [currentLevel, eachLevelInc, initial, spellLevel, postfix]);
 
   const tooltipText = useMemo(() => {
-    return (
-      <ul>
-        <li>{ initial } by default</li>
-        { upgradesMap.map(({ level, value }) => <li>{ value } after you reach { level } level</li>) }
-      </ul>
-    )
-  }, [initial, upgradesMap]);
+    if (eachLevelInc) {
+      return `${ declension(initial, postfix) } at ${ spellLevel } level, on each next spell slot level increases by ${ declension(eachLevelInc, postfix) }`;
+    }
+  }, [eachLevelInc, initial, spellLevel, postfix]);
 
   return (
     <Tooltip text={ tooltipText }>
@@ -39,3 +28,9 @@ export default function AtHigherLevels(props) {
     </Tooltip>
   );
 }
+
+const mapStateToProps = (state, props) => ({
+  currentLevel: state.spellsLevels[props.spellTitle] || props.spellLevel,
+});
+
+export default connect(mapStateToProps)(LevelUpgrades);

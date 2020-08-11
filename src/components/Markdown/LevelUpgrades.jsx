@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import Tooltip from 'components/Tooltip';
 
-// Translates <LevelUpdgrades initial="1d6" upgrades="5:2d6;11:3d6;17:4d6"/> into value relevant for current level
+// Translates <LevelUpgrades initial="1d6" upgrades="5:2d6;11:3d6;17:4d6"/> into value relevant for current level
 function LevelUpgrades(props) {
   const { initial, upgrades, currentLevel } = props;
 
