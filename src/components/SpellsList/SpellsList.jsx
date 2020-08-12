@@ -2,10 +2,10 @@ import React, { useMemo } from 'react';
 import { useTable, useExpanded } from 'react-table';
 import { connect } from 'react-redux';
 
-import Components from './Components';
+import ComponentsCell from './cells/ComponentsCell';
 import TextWithHint from './TextWithHint';
-import IconCell from './IconCell';
-import SchoolCell from './SchoolCell';
+import IconCell from './cells/IconCell';
+import SchoolCell from './cells/SchoolCell';
 import TableRow from './TableRow';
 import SpellChoose from './SpellChoose';
 import { getKnownSpellsCount } from 'common/store';
@@ -48,7 +48,7 @@ function SpellsList(props) {
     {
       Header: () => <div className={ styles.headerCenter }>Components</div>,
       accessor: 'components',
-      Cell: ({ value }) => (<Components components={ value }/>),
+      Cell: ComponentsCell,
     },
     {
       Header: () => 'Casting time',

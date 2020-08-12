@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { getClassRestrictions } from 'common/store';
 
-import styles from './School.module.scss';
+import styles from './SchoolCell.module.scss';
 
 function SchoolCell(props) {
   const { value, classRestrictions } = props;

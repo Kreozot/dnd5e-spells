@@ -6,10 +6,10 @@ import IconCell from './IconCell';
 import DiamondIcon from 'images/icon-diamond.svg';
 import VoiceIcon from 'images/icon-voice.svg';
 import HandIcon from 'images/icon-hand.svg';
-import styles from './Components.module.scss';
+import styles from './ComponentsCell.module.scss';
 
-export default function Components(props) {
-  const { components } = props;
+export default function ComponentsCell(props) {
+  const { value: components } = props;
 
   const materialHtml = useMemo(() => {
     const materialPrices = Boolean(components.materialConsumed || components.materialSpecial)
