@@ -155,7 +155,7 @@
   duration:
     initial: 24
     eachLevelInc: 48
-    postfix: hours
+    postfix: ' hours'
   tags: []
   description: >
     By means of this spell, you use an animal to deliver a

@@ -6,12 +6,14 @@ export default function DurationCell(props) {
   const { value, row } = props;
 
   if (typeof value === 'object') {
-    const { initial, ...rest } = value;
+    const { initial, eachLevelInc, postfix, ...rest } = value;
     return (
       <AtHigherLevels
         spellTitle={ row.original.title }
         spellLevel={ row.original.level }
         initial={ initial }
+        eachLevelInc={ eachLevelInc }
+        postfix={ postfix }
         upgrades={ Object.keys(rest).reduce((result, key) => ({ ...result, [key]: rest[key] }), {}) }
       />
     )
