@@ -14,7 +14,7 @@ function LevelUpgrades(props) {
         const [level, value] = part.split(':');
         result.push({ level: parseInt(level), value });
         return result;
-      }, [])
+      }, []);
   }, [upgrades]);
 
   const currentValue = useMemo(() => {

@@ -152,7 +152,10 @@
     V: true
     S: true
     M: a morsel of food
-  duration: 24 hours
+  duration:
+    initial: 24
+    eachLevelInc: 48
+    postfix: hours
   tags: []
   description: >
     By means of this spell, you use an animal to deliver a
@@ -923,7 +926,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    You attempt to send one creature that you can see
+    You attempt to send <AtHigherLevels initial="1" eachLevelInc="1" postfix=" creature| creatures"/> that you can see
     within range to another plane of existence. The
     target must succeed on a **Charisma saving throw**
     or be banished.
@@ -1016,8 +1019,15 @@
   components:
     V: true
     S: true
-  concentration: true
-  duration: ≤ 1 minute
+  concentration:
+    initial: true
+    5: false
+  duration:
+    initial: ≤ 1 minute
+    4: ≤ 10 minutes
+    5: 8 hours
+    7: 24 hours
+    9: until dispelled
   tags: []
   description: >
     You touch a creature, and that creature must succeed

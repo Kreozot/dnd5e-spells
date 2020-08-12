@@ -3,14 +3,15 @@ import { useTable, useExpanded } from 'react-table';
 import { connect } from 'react-redux';
 
 import ComponentsCell from './cells/ComponentsCell';
-import TextWithHint from './TextWithHint';
+import ConcentrationCell from './cells/ConcentrationCell';
+import DurationCell from './cells/DurationCell';
 import IconCell from './cells/IconCell';
 import SchoolCell from './cells/SchoolCell';
+import TextWithHint from './TextWithHint';
 import TableRow from './TableRow';
 import SpellChoose from './SpellChoose';
 import { getKnownSpellsCount } from 'common/store';
 
-import ConcentrateIcon from 'images/icon-concentrate.svg';
 import RitualIcon from 'images/icon-ritual.svg';
 import styles from './SpellsList.module.scss';
 
@@ -62,15 +63,12 @@ function SpellsList(props) {
     {
       Header: () => <div className={ styles.headerCenter } title="Concentration">Conc.</div>,
       accessor: 'concentration',
-      Cell: ({ value }) => (
-        value
-          ? <IconCell title="Concentration"><ConcentrateIcon/></IconCell>
-          : null
-      ),
+      Cell: ConcentrationCell,
     },
     {
       Header: 'Duration',
       accessor: 'duration',
+      Cell: DurationCell,
     },
   ], [haveSpellsCount]);
 

@@ -84,7 +84,7 @@ const mapStateToProps = (state) => ({
   levelFilter: state.filters.level,
   activeFilter: state.filters.activeFilter,
   currentLevelClassRestrictions: getCurrentLevelClassRestrictions(state),
- });
+});
 const mapDispatchToProps = (dispatch) => bindActionCreators({
   selectLevel: filtersSlice.actions.selectLevel,
   setActiveFilterOn: filtersSlice.actions.setActiveFilterOn,

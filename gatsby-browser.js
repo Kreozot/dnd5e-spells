@@ -13,9 +13,9 @@ const { store, persistor } = require('./src/common/store');
 
 exports.wrapRootElement = ({ element }) => {
   return (
-    <Provider store={store}>
+    <Provider store={ store }>
       <PersistGate persistor={ persistor }>
-        {element}
+        { element }
         </PersistGate>
     </Provider>
   )
