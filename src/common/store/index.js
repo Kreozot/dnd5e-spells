@@ -13,6 +13,7 @@ import spellsLevelsSlice from './spellsLevelsSlice';
 const persistConfig = {
   key: 'root',
   storage,
+  blacklist: ['spellsLevels']
 };
 
 export { filtersSlice, chosenSpellsSlice, spellsLevelsSlice };
@@ -115,8 +116,9 @@ export const getAvailableSpells = createSelector(
 // Get modifier by value of spellcasting ability for current class
 export const getSpellcastingAbilityModifier = createSelector(
   (state) => state.filters.spellcastingAbilityValue,
-  (spellcastingAbilityValue) => {
-    if (!spellcastingAbilityValue) {
+  (state) => state.filters.class,
+  (spellcastingAbilityValue, classFilter) => {
+    if (!spellcastingAbilityValue || !classFilter) {
       return null;
     }
     return Math.floor((spellcastingAbilityValue - 10) / 2);
