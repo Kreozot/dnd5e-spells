@@ -34,14 +34,13 @@ function AtHigherLevels(props) {
 
   const tooltipText = useMemo(() => {
     if (eachLevelInc) {
-      return `${ declension(initial, postfix) } at ${ spellLevel } level, on each next spell slot level increases by ${ declension(eachLevelInc, postfix) }`;
+      return `${ declension(initial, postfix) } at ${ spellLevel } spell slot level, on each next spell slot level increases by ${ declension(eachLevelInc, postfix) }`;
     } else {
-      console.log(upgradesMap);
       return (
         <ul>
-          <li>{ initial } by default</li>
+          <li>{ initial } at { spellLevel } spell slot level</li>
           { Object.keys(upgradesMap)
-            .map((level) => <li key={ level }>{ upgradesMap[level] } after you reach { level } level</li>)
+            .map((level) => <li key={ level }>{ upgradesMap[level] } at { level } spell slot level</li>)
           }
         </ul>
       )
