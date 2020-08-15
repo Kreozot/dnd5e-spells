@@ -15,9 +15,9 @@
     within **5 feet** of each other. A target must succeed on a
     **Dexterity saving throw** or take **<LevelUpgrades initial="1d6" upgrades="5:2d6;11:3d6;17:4d6"/>** **acid damage**.
 
-  # levelUpgrades: >
-  #   This spell’s damage increases by **1d6** when you reach
-  #   **5th level** (**2d6**), **11th level** (**3d6**), and **17th level** (**4d6**).
+  levelUpgrades: >
+    This spell’s damage increases by **1d6** when you reach
+    **5th level** (**2d6**), **11th level** (**3d6**), and **17th level** (**4d6**).
 
 - title: Aid
   level: 2
@@ -875,7 +875,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    Up to <AtHigherLevels initial="3" eachLevelInc="1" postfix=" creatures"/> of your choice that you can see
+    Up to <AtHigherLevels initial="3" eachLevelInc="1" postfix=" creature| creatures"/> of your choice that you can see
     within range must make **Charisma saving throws**.
 
 
@@ -1190,8 +1190,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    You bless up to three creatures of your choice within
-    range. Whenever a target makes an attack roll or a
+    You bless up to <AtHigherLevels initial="3" eachLevelInc="1" postfix=" creature| creatures"/> of your choice within range. Whenever a target makes an attack roll or a
     saving throw before the spell ends, the target can roll
     a **d4** and add the number rolled to the attack roll or
     saving throw.
@@ -1211,10 +1210,10 @@
   duration: Instantaneous
   tags: []
   description: >
-    Necrom antic energy washes over a creature of your
+    Necromantic energy washes over a creature of your
     choice that you can see within range, draining moisture
     and vitality from it. The target must make a **Constitution
-    saving throw**. The target takes **8d8** **necrotic damage** on
+    saving throw**. The target takes <AtHigherLevels initial="8" eachLevelInc="1" postfix="d8"/> **necrotic damage** on
     a failed save, or half as much damage on a successful
     one. This spell has no effect on undead or constructs.
 
@@ -1265,7 +1264,7 @@
   duration: 1 minute
   tags: []
   description: >
-    You can blind or deafen a foe. Choose one creature that
+    You can blind or deafen a foe. Choose <AtHigherLevels initial="1" eachLevelInc="1" postfix=" creature| creatures"/> that
     you can see within range to make a **Constitution saving
     throw**. If it fails, the target is either blinded or deafened
     (your choice) for the duration. At the end of each of its
@@ -1340,7 +1339,7 @@
   description: >
     The next time you hit a creature with a weapon attack
     before this spell ends, the weapon gleams with astral
-    radiance as you strike. The attack deals an extra **2d6**
+    radiance as you strike. The attack deals an extra <AtHigherLevels initial="2" eachLevelInc="1" postfix="d6"/>
     **radiant damage** to the target, which becomes visible if
     it’s invisible, and the target sheds dim light in a **5-foot**
     radius and can’t become invisible until the spell ends.
@@ -1364,7 +1363,7 @@
     fingers spread, a thin sheet of flames shoots forth from
     your outstretched fingertips. Each creature in a **15-foot**
     cone must make a **Dexterity saving throw**. A creature
-    takes **3d6** **fire damage** on a failed save, or half as much
+    takes <AtHigherLevels initial="3" eachLevelInc="1" postfix="d6"/> **fire damage** on a failed save, or half as much
     damage on a successful one.
 
 
@@ -1399,7 +1398,8 @@
     within range. A bolt of lightning flashes down from the
     cloud to that point. Each creature within **5 feet** of that
     point must make a **Dexterity saving throw**. A creature
-    takes **3d10** **lightning damage** on a failed save, or half
+    takes <AtHigherLevels initial="3" eachLevelInc="1" postfix="d10"/>
+    **lightning damage** on a failed save, or half
     as much damage on a successful one. On each of your
     turns until the spell ends, you can use your action to call
     down lightning in this way again, targeting the same
@@ -1462,9 +1462,8 @@
   tags: []
   description: >
     You create a bolt of lightning that arcs toward a target of
-    your choice that you can see within range. Three bolts
-    then leap from that target to as many as three other
-    targets, each of which must be within **30 feet** of the first
+    your choice that you can see within range. <AtHigherLevels initial="3" eachLevelInc="1" postfix=" bolt| bolts"/>
+    then leap from that target to as many as <AtHigherLevels initial="3" eachLevelInc="1" postfix=" other target| other targets"/>, each of which must be within **30 feet** of the first
     target. A target can be a creature or an object and can
     be targeted by only one of the bolts.
 
@@ -1489,7 +1488,7 @@
   duration: 1 hour
   tags: []
   description: >
-    You attempt to charm a humanoid you can see within
+    You attempt to charm <AtHigherLevels initial="1" eachLevelInc="1" postfix=" humanoid| humanoids"/> you can see within
     range. It must make a **Wisdom saving throw**, and does
     so with advantage if you or your companions are fighting
     it. If it fails the saving throw, it is charmed by you until
@@ -1525,9 +1524,9 @@
 
     If you hit an undead target, it also has disadvantage on
     attack rolls against you until the end of your next turn.
-  # levelUpgrades: >
-  #   This spell’s damage increases by **1d8** when you reach
-  #   **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
+  levelUpgrades: >
+    This spell’s damage increases by **1d8** when you reach
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Chromatic Orb
   level: 1
@@ -1547,7 +1546,7 @@
     **acid**, **cold**, **fire**, **lightning**, **poison**, or **thunder** for the type
     of orb you create, and then make a ranged spell attack
     against the target. If the attack hits, the creature takes
-    **3d8** damage of the type you chose.
+    <AtHigherLevels initial="3" eachLevelInc="1" postfix="d8"/> damage of the type you chose.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, the damage increases by
@@ -1569,7 +1568,7 @@
     A sphere of negative energy ripples out in a **60-foot**
     radius sphere from a point within range. Each creature
     in that area must make a **Constitution saving throw**. A
-    target takes **8d6** **necrotic damage** on a failed save, or
+    target takes <AtHigherLevels initial="8" eachLevelInc="2" postfix="d6"/> **necrotic damage** on a failed save, or
     half as much damage on a successful one.
   atHigherLevels: >
     When you cast this spell using a
@@ -1680,7 +1679,7 @@
   description: >
     You fill the air with spinning daggers in a cube **5 feet** on
     each side, centered on a point you choose within range.
-    A creature takes **4d4** **slashing damage** when it enters
+    A creature takes <AtHigherLevels initial="4" eachLevelInc="2" postfix="d4"/> **slashing damage** when it enters
     the spell’s area for the first time on a turn or starts
     its turn there.
   atHigherLevels: >
@@ -1710,7 +1709,7 @@
     When a creature enters the spell’s area for the first
     time on a turn or starts its turn there, that creature must
     make a **Constitution saving throw**. The creature takes
-    **5d8** **poison damage** on a failed save, or half as much
+    <AtHigherLevels initial="5" eachLevelInc="1" postfix="d8"/> **poison damage** on a failed save, or half as much
     damage on a successful one. Creatures are affected
     even if they hold their breath or don’t need to breathe.
     The fog moves **10 feet** away from you at the start
@@ -1735,7 +1734,8 @@
   tags: []
   description: >
     A dazzling array of flashing, colored light springs from
-    your hand. Roll **6d10**; the total is how many hit points
+    your hand. Roll <AtHigherLevels initial="6" eachLevelInc="2" postfix="d10"/>;
+    the total is how many hit points
     of creatures this spell can effect. Creatures in a **15-foot**
     cone originating from you are affected in ascending
     order of their current hit points (ignoring unconscious
@@ -1764,7 +1764,7 @@
   duration: 1 round
   tags: []
   description: >
-    You speak a one-word command to a creature you can
+    You speak a one-word command to <AtHigherLevels initial="1" eachLevelInc="1" postfix=" creature| creatures"/> you can
     see within range. The target must succeed on a **Wisdom
     saving throw** or follow the command on its next turn.
     The spell has no effect if the target is undead, if it
@@ -1973,7 +1973,7 @@
   description: >
     A blast of cold air erupts from your hands. Each
     creature in a **60-foot** cone must make a **Constitution
-    saving throw**. A creature takes **8d8** **cold damage** on a
+    saving throw**. A creature takes <AtHigherLevels initial="8" eachLevelInc="1" postfix="d8"/> **cold damage** on a
     failed save, or half as much damage on a successful one.
 
 
@@ -1999,7 +1999,7 @@
   description: >
     This spell assaults and twists creatures' minds,
     spawning delusions and provoking uncontrolled action.
-    Each creature in a **10-foot**-radius sphere centered on
+    Each creature in a <AtHigherLevels initial="10" eachLevelInc="5" postfix="-feet"/>-radius sphere centered on
     a point you choose within range must succeed on a
     **Wisdom saving throw** when you cast this spell or be
     affected by it.
@@ -2008,6 +2008,25 @@
     An affected target can’t take reactions and must roll
     a **d10** at the start of each of its turns to determine its
     behavior for that turn.
+
+
+    | d10 | Behavior |
+
+    |---|---|
+
+    | 1 | The creature uses all its movement to move in a
+    random direction. To determine the direction, roll
+    a **d8** and assign a direction to each die face. The
+    creature doesn’t take an action this turn. |
+
+    | 2-6 | The creature doesn’t move or take actions this turn. |
+
+    | 7-8 | The creature uses its action to make a melee attack
+    against a randomly determined creature within its
+    reach. If there is no creature within its reach, the
+    creature does nothing this turn. |
+
+    | <nobr>9-10</nobr> | The creature can act and move normally. |
 
 
     At the end of each of its turns, an affected target can
@@ -2036,13 +2055,13 @@
     appears:
 
 
-    * One beast of challenge rating 2 or lower
+    * <AtHigherLevels initial="1 beast" upgrades="5:2 beasts;7:3 beasts;9:4 beasts"/> of challenge rating 2 or lower
 
-    * Two beasts of challenge rating 1 or lower
+    * <AtHigherLevels initial="2 beasts" upgrades="5:4 beasts;7:6 beasts;9:8 beasts"/> of challenge rating 1 or lower
 
-    * Four beasts of challenge rating 1/2 or lower
+    * <AtHigherLevels initial="4 beasts" upgrades="5:8 beasts;7:12 beasts;9:16 beasts"/> of challenge rating 1/2 or lower
 
-    * Eight beasts of challenge rating 1/4 or lower
+    * <AtHigherLevels initial="8 beasts" upgrades="5:16 beasts;7:24 beasts;9:32 beasts"/> of challenge rating 1/4 or lower
 
 
     Each beast is also considered fey, and it disappears
@@ -2098,7 +2117,7 @@
   duration: ≤ 1 hour
   tags: []
   description: >
-    You summon a celestial of challenge rating 4 or lower,
+    You summon a celestial of challenge rating <AtHigherLevels initial="4" upgrades="9:5"/> or lower,
     which appears in an unoccupied space that you can see
     within range. The celestial disappears when it drops to
     **0 hit points** or when the spell ends.
@@ -2138,7 +2157,7 @@
   description: >
     You call forth an elemental servant. Choose an area of air,
     earth, fire, or water that fills a **10-foot** cube within range.
-    An elemental of challenge rating 5 or lower appropriate
+    An elemental of challenge rating <AtHigherLevels initial="5" eachLevelInc="1"/> or lower appropriate
     to the area you chose appears in an unoccupied space
     within **10 feet** of it. For example, a fire elemental
     em erges from a bonfire, and an earth elemental rises
@@ -2167,24 +2186,6 @@
     increases by **1** for each slot level above **5th**.
 
 
-    | d10 | Behavior |
-
-    |---|---|
-
-    | 1 | The creature uses all its movement to move in a
-    random direction. To determine the direction, roll
-    a **d8** and assign a direction to each die face. The
-    creature doesn’t take an action this turn. |
-
-    | 2-6 | The creature doesn’t move or take actions this turn. |
-
-    | 7-8 | The creature uses its action to make a melee attack
-    against a randomly determined creature within its
-    reach. If there is no creature within its reach, the
-    creature does nothing this turn. |
-
-    | 9-10 | The creature can act and move normally. |
-
 - title: Conjure Fey
   level: 6
   school: Conjuration
@@ -2199,7 +2200,7 @@
   description: >
     You summon a fey creature of challenge rating 6 or
     lower, or a fey spirit that takes the form of a beast of
-    challenge rating 6 or lower. It appears in an unoccupied
+    challenge rating <AtHigherLevels initial="6" eachLevelInc="1"/> or lower. It appears in an unoccupied
     space that you can see within range. The fey creature
     disappears when it drops to **0 hit points** or when
     the spell ends.
@@ -2246,13 +2247,13 @@
     the following options for what appears:
 
 
-    * One elemental of challenge rating 2 or lower
+    * <AtHigherLevels initial="1 elemental" upgrades="6:2 elementals;8:3 elementals"/> of challenge rating 2 or lower
 
-    * Two elementals of challenge rating 1 or lower
+    * <AtHigherLevels initial="2 elementals" upgrades="6:4 elementals;8:6 elementals"/> of challenge rating 1 or lower
 
-    * Four elementals of challenge rating 1/2 or lower
+    * <AtHigherLevels initial="4 elementals" upgrades="6:8 elementals;8:12 elementals"/> of challenge rating 1/2 or lower
 
-    * Eight elementals of challenge rating 1/4 or lower.
+    * <AtHigherLevels initial="8 elementals" upgrades="6:16 elementals;8:24 elementals"/> of challenge rating 1/4 or lower.
 
 
     An elemental summoned by this spell disappears when
@@ -2315,13 +2316,13 @@
     following options for what appears:
 
 
-    * One fey creature of challenge rating 2 or lower
+    * <AtHigherLevels initial="1 fey creature" upgrades="6:2 fey creatures;8:3 fey creatures"/> of challenge rating 2 or lower
 
-    * Two fey creatures of challenge rating 1 or lower
+    * <AtHigherLevels initial="2 fey creatures" upgrades="6:4 fey creatures;8:6 fey creatures"/> of challenge rating 1 or lower
 
-    * Four fey creatures of challenge rating 1/2 or lower
+    * <AtHigherLevels initial="4 fey creatures" upgrades="6:8 fey creatures;8:12 fey creatures"/> of challenge rating 1/2 or lower
 
-    * Eight fey creatures of challenge rating 1/4 or lower
+    * <AtHigherLevels initial="8 fey creatures" upgrades="6:16 fey creatures;8:24 fey creatures"/> of challenge rating 1/4 or lower.
 
 
     A summoned creature disappears when it drops to 0 hit
@@ -2602,7 +2603,7 @@
     When you cast the spell, you change the current
     weather conditions, which are determined by the DM
     based on the climate and season. You can change
-    precipitation, temperature, and wind. It takes **1d4** x **10
+    precipitation, temperature, and wind. It takes **1d4 x 10
     minutes** for the new conditions to take effect. Once they
     do so, you can change the conditions again. When the
     spell ends, the weather gradually returns to normal.
@@ -2679,7 +2680,7 @@
   duration: 8 hours
   tags: []
   description: >
-    You plant four pieces of nonmagical ammunition—
+    You plant <AtHigherLevels initial="4" eachLevelInc="2" postfix=" pieces"/> of nonmagical ammunition —
     arrows or crossbow bolts — in the ground within range
     and lay magic upon them to protect an area. Until the
     spell ends, whenever a creature other than you comes
@@ -4348,7 +4349,7 @@
   duration: 1 hour
   tags: []
   description: >
-    Bolstering yourself with a necrom antic facsimile of life,
+    Bolstering yourself with a necromantic facsimile of life,
     you gain **1d4 + 4** **temporary hit points** for the duration.
   atHigherLevels: >
     When you cast this spell using a
@@ -4703,9 +4704,9 @@
     target. On a hit, the target takes **<LevelUpgrades initial="1d10" upgrades="5:2d10;11:3d10;17:4d10"/>** **fire damage**. A
     flammable object hit by this spell ignites if it isn't being
     worn or carried.
-  # levelUpgrades: >
-  #   This spell’s damage increases by **1d10** when you reach
-  #   **5th level** (**2d10**), **11th level** (**3d10**), and **17th level** (**4d10**).
+  levelUpgrades: >
+    This spell’s damage increases by **1d10** when you reach
+    **5th level** (**2d10**), **11th level** (**3d10**), and **17th level** (**4d10**).
 
 - title: Fire Shield
   level: 4
@@ -8514,9 +8515,9 @@
     palm. The creature must succeed on a **Constitution
     saving throw** or take **<LevelUpgrades initial="1d12" upgrades="5:2d12;11:3d12;17:4d12"/>** **poison damage**.
 
-  # levelUpgrades: >
-  #   This spell’s damage increases by **1d12** when you reach
-  #   **5th level** (**2d12**), **11th level** (**3d12**), and **17th level** (**4d12**).
+  levelUpgrades: >
+    This spell’s damage increases by **1d12** when you reach
+    **5th level** (**2d12**), **11th level** (**3d12**), and **17th level** (**4d12**).
 
 - title: Polymorph
   level: 4
@@ -8858,9 +8859,9 @@
     within **30 feet** of you. Make a ranged spell attack. On a
     hit, the target takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **fire damage**.
 
-  # levelUpgrades: >
-  #   This spell’s damage increases by **1d8** when you reach
-  #   **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
+  levelUpgrades: >
+    This spell’s damage increases by **1d8** when you reach
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Programmed Illusion
   level: 6
@@ -9137,9 +9138,9 @@
     against the target. On a hit, it takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **cold damage**,
     and its speed is reduced by **10 feet** until the start of
     your next turn.
-  # levelUpgrades: >
-  #   The spell’s damage increases by **1d8** when you reach
-  #   **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
+  levelUpgrades: >
+    The spell’s damage increases by **1d8** when you reach
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Ray of Sickness
   level: 1
@@ -9434,9 +9435,9 @@
     can see within range. The target must succeed on a
     **Dexterity saving throw** or take **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **radiant damage**. The
     target gains no benefit from cover for this saving throw.
-  # levelUpgrades: >
-  #   The spell’s damage increases by **1d8** when you reach
-  #   **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
+  levelUpgrades: >
+    The spell’s damage increases by **1d8** when you reach
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Sanctuary
   level: 1
@@ -9865,9 +9866,9 @@
     the target takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **lightning damage**, and it can’t take
     reactions until the start of its next turn.
 
-  # levelUpgrades: >
-  #   The spell’s damage increases by **1d8** when you reach
-  #   **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
+  levelUpgrades: >
+    The spell’s damage increases by **1d8** when you reach
+    **5th level** (**2d8**), **11th level** (**3d8**), and **17th level** (**4d8**).
 
 - title: Silence
   level: 2
@@ -11026,9 +11027,9 @@
     if the creature is Large or smaller, you pull the creature
     up to **10 feet** closer to you.
 
-  # levelUpgrades: >
-  #   This spell’s damage increases by **1d6** when you reach
-  #   **5th level** (**2d6**), **11th level** (**3d6**), and **17th level** (**4d6**).
+  levelUpgrades: >
+    This spell’s damage increases by **1d6** when you reach
+    **5th level** (**2d6**), **11th level** (**3d6**), and **17th level** (**4d6**).
 
 - title: Thunderous Smite
   level: 1
@@ -11427,9 +11428,9 @@
     you), it must succeed on a **Wisdom saving throw** or take
     **<LevelUpgrades initial="1d4" upgrades="5:2d4;11:3d4;17:4d4"/>** **psychic damage** and have disadvantage on the next
     attack roll it makes before the end of its next turn.
-  # levelUpgrades: >
-  #   This spell’s damage increases by **1d4** when you reach
-  #   **5th level** (**2d4**), **11th level** (**3d4**), and **17th level** (**4d4**).
+  levelUpgrades: >
+    This spell’s damage increases by **1d4** when you reach
+    **5th level** (**2d4**), **11th level** (**3d4**), and **17th level** (**4d4**).
 
 - title: Wall of Fire
   level: 4
