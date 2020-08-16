@@ -257,7 +257,7 @@
     each one). You decide what action the creature will take
     and where it will move during its next turn, or you can
     issue a general command, such as to guard a particular
-    cham ber or corridor. If you issue no commands, the
+    chamber or corridor. If you issue no commands, the
     creature only defends itself against hostile creatures.
     Once given an order, the creature continues to follow it
     until its task is complete.
@@ -306,7 +306,7 @@
     issuing the same command to each one). You decide
     what action the creature will take and where it will
     move during its next turn, or you can issue a general
-    command, such as to guard a particular cham ber or
+    command, such as to guard a particular chamber or
     corridor. If you issue no commands, the creature only
     defends itself against hostile creatures. Once given
     an order, the creature continues to follow it until its
@@ -1999,7 +1999,7 @@
   description: >
     This spell assaults and twists creatures' minds,
     spawning delusions and provoking uncontrolled action.
-    Each creature in a <AtHigherLevels initial="10" eachLevelInc="5" postfix="-feet"/>-radius sphere centered on
+    Each creature in a <AtHigherLevels initial="10" eachLevelInc="5" postfix="-foot"/>-radius sphere centered on
     a point you choose within range must succeed on a
     **Wisdom saving throw** when you cast this spell or be
     affected by it.
@@ -2713,8 +2713,8 @@
   tags: []
   description: >
     You attempt to interrupt a creature in the process of
-    casting a spell. If the creature is casting a spell of **3rd
-    level** or lower, its spell fails and has no effect. If it is
+    casting a spell. If the creature is casting a spell of <AtHigherLevels initial="3" eachLevelInc="1" postfix=" level"/>
+    or lower, its spell fails and has no effect. If it is
     casting a spell of **4th level** or higher, make an ability
     check using <SpellcastingAbility/>. The DC equals **10
     + the spell’s level**. On a success, the creature’s spell fails
@@ -2738,7 +2738,7 @@
   description: >
     You create **45 pounds** of food and 30 gallons of water
     on the ground or in containers within range, enough
-    to sustain up to fifteen hum anoids or five steeds for
+    to sustain up to fifteen humanoids or five steeds for
     **24 hours**. The food is bland but nourishing, and spoils
     if uneaten after **24 hours**. The water is clean and
     doesn’t go bad.
@@ -2760,15 +2760,15 @@
     You either create or destroy water.
 
 
-    **Create Water.** You create up to 10 gallons of clean
+    **Create Water.** You create up to <AtHigherLevels initial="10" eachLevelInc="10" postfix=" gallons"/> of clean
     water within range in an open container. Alternatively,
-    the water falls as rain in a **30-foot** cube within range,
+    the water falls as rain in a <AtHigherLevels initial="30" eachLevelInc="5" postfix="-foot"/> cube within range,
     extinguishing exposed flames in the area.
 
 
-    **Destroy Water.** You destroy up to 10 gallons of water
+    **Destroy Water.** You destroy up to <AtHigherLevels initial="10" eachLevelInc="10" postfix=" gallons"/> of water
     in an open container within range. Alternatively, you
-    destroy fog in a **30-foot** cube within range.
+    destroy fog in a <AtHigherLevels initial="30" eachLevelInc="5" postfix="-foot"/> cube within range.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, you create or destroy
@@ -2790,9 +2790,10 @@
   duration: Instantaneous
   tags: []
   description: >
-    You can cast this spell only at night. Choose up to three
-    corpses of Medium or Small hum anoids within range.
-    Each corpse becomes a ghoul under your control. (The
+    You can cast this spell only at night. You create up to
+    <AtHigherLevels initial="3 ghouls" upgrades="7:4 ghouls;8:5 ghouls or 2 ghasts or wights;9:6 ghouls, 3 ghasts or wights, or 2 mummies"/>.
+    For each creature choose a corpse of Medium or Small humanoids within range.
+    Each corpse becomes a chosen creature under your control. (The
     DM has game statistics for these creatures.)
 
 
@@ -2804,7 +2805,7 @@
     each one). You decide what action the creature will take
     and where it will move during its next turn, or you can
     issue a general command, such as to guard a particular
-    cham ber or corridor. If you issue no commands, the
+    chamber or corridor. If you issue no commands, the
     creature only defends itself against hostile creatures.
     Once given an order, the creature continues to follow it
     until its task is complete.
@@ -2815,19 +2816,18 @@
     given it. To maintain control of the creature for another
     **24 hours**, you must cast this spell on the creature
     before the current **24-hour** period ends. This use
-    of the spell reasserts your control over up to three
-    creatures you have animated with this spell, rather than
+    of the spell reasserts your control over up to
+    <AtHigherLevels initial="3 ghouls" upgrades="7:4 ghouls;8:5 ghouls or 2 ghasts or wights;9:6 ghouls, 3 ghasts or wights, or 2 mummies"/>
+     you have animated with this spell, rather than
     animating new ones.
   atHigherLevels: >
-    When you cast this spell using a
+    When you cast this spell using a **7th-level** spell slot, you can animate or reassert control
+    over four ghouls.
 
 
-    **7th-level** spell slot, you can animate or reassert control
-    over four ghouls. When you cast this spell using an
-
-
-    **8th-level** spell slot, you can animate or reassert control
+    When you cast this spell using an **8th-level** spell slot, you can animate or reassert control
     over five ghouls or two ghasts or wights.
+
 
     When you cast this spell using a **9th-level** spell slot, you can animate or
     reassert control over six ghouls, three ghasts or wights,
@@ -2850,7 +2850,7 @@
     range: soft goods, rope, wood, or something similar. You
     can also use this spell to create mineral objects such as
     stone, crystal, or metal. The object created must be no
-    larger than a **5-foot** cube, and the object must be of a
+    larger than a <AtHigherLevels initial="5" eachLevelInc="5" postfix="-foot"/> cube, and the object must be of a
     form and material that you have seen before.
 
 
@@ -2945,7 +2945,7 @@
   tags: []
   description: >
     A creature you touch regains a number of hit points
-    equal to **1d8 + <SpellcastingAbilityModifier/>**. This
+    equal to <AtHigherLevels initial="1" eachLevelInc="1" postfix="d8"/>** + **<SpellcastingAbilityModifier/>. This
     spell has no effect on undead or constructs.
   atHigherLevels: >
     When you cast this spell using a
@@ -3108,7 +3108,7 @@
     damage on a successful one.
 
 
-    The spell’s base damage is **12d6**. If at the end of
+    The spell’s base damage is <AtHigherLevels initial="12" eachLevelInc="1" postfix="d6"/>. If at the end of
     your turn the bead has not yet detonated, the damage
     increases by **1d6**.
 
@@ -3396,7 +3396,7 @@
 
     A creature targeted by this spell must make a
     **Dexterity saving throw**. On a failed save, the target takes
-    **10d6** + 40 **force damage**. If this damage reduces the
+    <AtHigherLevels initial="10" eachLevelInc="3" postfix="d6"/>** + 40 force damage**. If this damage reduces the
     target to **0 hit points**, it is disintegrated.
 
 
@@ -3409,7 +3409,7 @@
     This spell automatically disintegrates a Large or
     smaller nonmagical object or a creation of magical
     force. If the target is a Huge or larger object or creation
-    of force, this spell disintegrates a **10-foot**-cube portion of
+    of force, this spell disintegrates a **10-foot-cube** portion of
     it. A magic item is unaffected by this spell.
   atHigherLevels: >
     When you cast this spell using a
@@ -3468,8 +3468,8 @@
   tags: []
   description: >
     Choose one creature, object, or magical effect within
-    range. Any spell of **3rd level** or lower on the target ends.
-    For each spell of **4th level** or higher on the target, make
+    range. Any spell of <AtHigherLevels initial="3" eachLevelInc="1" postfix=" level"/> or lower on the target ends.
+    For each higher levels spell on the target, make
     an ability check using <SpellcastingAbility/>. The
     DC equals **10 + the spell’s level**. On a successful check,
     the spell ends.
@@ -3492,7 +3492,7 @@
     You whisper a discordant melody that only one creature
     of your choice within range can hear, wracking it with
     terrible pain. The target must make a **Wisdom saving
-    throw**. On a failed save, it takes **3d6** **psychic damage** and
+    throw**. On a failed save, it takes <AtHigherLevels initial="3" eachLevelInc="1" postfix="d6"/> **psychic damage** and
     must immediately use its reaction, if available, to move
     as far as its speed allows away from you. The creature
     doesn’t move into obviously dangerous ground, such
@@ -3596,7 +3596,11 @@
     V: true
     S: true
   concentration: true
-  duration: ≤ 1 minute
+  duration:
+    initial: ≤ 1 minute
+    5: ≤ 10 minutes
+    6: ≤ 1 hour
+    7: ≤ 8 hours
   tags: []
   description: >
     You attempt to beguile a beast that you can see within
@@ -3612,8 +3616,8 @@
     commands to the creature while you are conscious (no
     action required), which it does its best to obey. You can
     specify a simple and general course of action, such as
-    “Attack that creature,” “Run over there,” or “Fetch that
-    object.” If the creature completes the order and doesn’t
+    “Attack that creature”, “Run over there”, or “Fetch that
+    object”. If the creature completes the order and doesn’t
     receive further direction from you, it defends and
     preserves itself to the best of its ability.
 
@@ -3630,12 +3634,14 @@
     **Wisdom saving throw** against the spell. If the saving
     throw succeeds, the spell ends.
   atHigherLevels: >
-    When you cast this spell with a
-    **5th-level** spell slot, the duration is concentration, up
-    to **10 minutes**. When you use a **6th-level** spell slot,
-    the duration is concentration, up to **1 hour**. When you
-    use a spell slot of **7th level** or higher, the duration is
-    concentration, up to **8 hours**.
+    When you cast this spell with a **5th-level** spell slot,
+    the duration is concentration, up to **10 minutes**.
+
+    When you use a **6th-level** spell slot,
+    the duration is concentration, up to **1 hour**.
+
+    When you use a spell slot of **7th level** or higher, the
+    duration is concentration, up to **8 hours**.
 
 - title: Dominate Monster
   level: 8
@@ -3646,7 +3652,9 @@
     V: true
     S: true
   concentration: true
-  duration: ≤ 1 hour
+  duration:
+    initial: ≤ 1 hour
+    9: ≤ 8 hours
   tags: []
   description: >
     You attempt to beguile a creature that you can see
@@ -3662,8 +3670,8 @@
     issue commands to the creature while you are conscious
     (no action required), which it does its best to obey. You
     can specify a simple and general course of action, such
-    as “Attack that creature,” “Run over there,” or “Fetch
-    that object.” If the creature completes the order and
+    as “Attack that creature”, “Run over there”, or “Fetch
+    that object”. If the creature completes the order and
     doesn’t receive further direction from you, it defends
     and preserves itself to the best of its ability.
 
@@ -3691,7 +3699,11 @@
     V: true
     S: true
   concentration: true
-  duration: ≤ 1 minute
+  duration:
+    initial: ≤ 1 minute
+    6: ≤ 10 minutes
+    7: ≤ 1 hour
+    8: ≤ 8 hours
   tags: []
   description: >
     You attempt to beguile a humanoid that you can see
@@ -3707,8 +3719,8 @@
     commands to the creature while you are conscious (no
     action required), which it does its best to obey. You can
     specify a simple and general course of action, such as
-    “Attack that creature,” “Run over there,” or “Fetch that
-    object.” If the creature completes the order and doesn’t
+    “Attack that creature”, “Run over there”, or “Fetch that
+    object”. If the creature completes the order and doesn’t
     receive further direction from you, it defends and
     preserves itself to the best of its ability.
 
@@ -3725,11 +3737,13 @@
     **Wisdom saving throw** against the spell. If the saving
     throw succeeds, the spell ends.
   atHigherLevels: >
-    When you cast this spell using
-    a **6th-level** spell slot, the duration is concentration,
-    up to **10 minutes**. When you use a **7th-level** spell slot,
-    the duration is concentration, up to **1 hour**. When you
-    use a spell slot of **8th level** or higher, the duration is
+    When you cast this spell using a **6th-level** spell slot,
+    the duration is concentration, up to **10 minutes**.
+
+    When you use a **7th-level** spell slot,
+    the duration is concentration, up to **1 hour**.
+
+    When you use a spell slot of **8th level** or higher, the duration is
     concentration, up to **8 hours**.
 
 - title: Drawmij’s Instant Summons
@@ -3934,12 +3948,13 @@
     S: true
   duration: Instantaneous
   tags: []
+  # ** down here replaced by __ to prevent handling the following text as a separate paragraph
   description: >
-    A beam of crackling energy streaks toward a creature
+    __<LevelUpgrades initial="A beam" upgrades="5:2 beams;11:3 beams;17:4 beams"/>__ of crackling energy streaks toward <LevelUpgrades initial="a creature" upgrades="5:chosen creatures"/>
     within range. Make a ranged spell attack against the
     target. On a hit, the target takes **1d10** **force damage**.
     The spell creates more than one beam when you reach
-  atHigherLevels: >
+  levelUpgrades: >
     Two beams at **5th level**, three beams at
     **11th level**, and four beams at **17th level**. You can direct
     the beams at the same target or at different ones. Make
@@ -3960,8 +3975,8 @@
     A nonmagical weapon you touch becomes a magic
     weapon. Choose one of the following damage types:
     **acid**, **cold**, **fire**, **lightning**, or **thunder**. For the duration,
-    the weapon has a **+1** bonus to attack rolls and deals an
-    extra **1d4** damage of the chosen type when it hits.
+    the weapon has a <AtHigherLevels initial="+1" upgrades="5:+2;7:+3"/> bonus to attack rolls and deals an
+    extra <AtHigherLevels initial="1d4" upgrades="5:2d4;7:3d4"/> damage of the chosen type when it hits.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **5th** or **6th level**, the bonus to attack rolls
@@ -3983,7 +3998,7 @@
   duration: ≤ 1 hour.
   tags: []
   description: >
-    You touch a creature and bestow upon it a magical
+    You touch <AtHigherLevels initial="1" eachLevelInc="1" postfix=" creature| creatures"/> and bestow upon it a magical
     enhancement. Choose one of the following effects; the
     target gains that effect until the spell ends.
 
@@ -4080,7 +4095,7 @@
     target succeeds on the save, the vines shrivel away.
 
 
-    While restrained by this spell, the target takes **1d6**
+    While restrained by this spell, the target takes <AtHigherLevels initial="1" eachLevelInc="1" postfix="d6"/>
     **piercing damage** at the start of each of its turns. A creature
     restrained by the vines or one that can touch the creature
     can use its action to make a Strength check against your
@@ -4145,13 +4160,20 @@
   level: 7
   school: Transmutation
   castingTime: 1 action
-  range: Self
+  range:
+    initial: Self
+    8: 10 feet
   components:
     V: true
     S: true
   duration: ≤ 8 hours
   tags: []
   description: >
+    __<AtHigherLevels initial="" upgrades="8:You can target up to
+    3 willing creatures (including you).;9:You can target up to
+    6 willing creatures (including you)."/>__
+
+
     You step into the border regions of the Ethereal Plane,
     in the area where it overlaps with your current plane.
     You remain in the Border Ethereal for the duration or
@@ -6142,7 +6164,7 @@
     When you cast this spell using
     a spell slot of **3rd level** or higher, you can target one
     additional humanoid for each slot level above **2nd**. The
-    hum anoids must be within **30 feet** of each other when
+    humanoids must be within **30 feet** of each other when
     you target them.
 
 - title: Holy Aura
@@ -7044,7 +7066,7 @@
     reactions. The only action you can take is to project your
     soul up to **100 feet** out of the container, either returning
     to your living body (and ending the spell) or attempting
-    to possess a hum anoids body.
+    to possess a humanoids body.
 
 
     You can attempt to possess any humanoid within
@@ -7840,7 +7862,7 @@
 
 
     Beyond the portal is a magnificent foyer with
-    num erous cham bers beyond. The atmosphere is clean,
+    num erous chambers beyond. The atmosphere is clean,
     fresh, and warm.
 
 
