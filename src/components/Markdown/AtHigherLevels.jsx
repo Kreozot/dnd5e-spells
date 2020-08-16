@@ -5,10 +5,12 @@ import Tooltip from 'components/Tooltip';
 import { declension } from 'common/format';
 import { getCurrentValue } from 'common/higherLevel';
 
+import styles from './AtHigherLevels.module.scss';
+
 // Translates <AtHigherLevels initial="5" eachLevelInc="1" postfix="d8"/> into value relevant for spell slot level
 // Translates <AtHigherLevels initial="1 beast" upgrades="5:2 beasts;7:3 beasts;9:4 beasts"/> into value relevant for spell slot level
 function AtHigherLevels(props) {
-  const { initial, eachLevelInc, postfix = '', spellLevel, currentLevel, upgrades } = props;
+  const { initial, eachLevelInc, postfix = '', spellLevel, currentLevel, upgrades, hint } = props;
 
   const upgradesMap = useMemo(() => {
     if (typeof upgrades === 'string') {
@@ -35,20 +37,34 @@ function AtHigherLevels(props) {
 
   const tooltipText = useMemo(() => {
     if (eachLevelInc) {
-      return `${ declension(initial, postfix) } at ${ spellLevel } spell slot level, on each next spell slot level increases by ${ declension(eachLevelInc, postfix) }`;
+      return (
+        <>
+          <span>
+            { declension(initial, postfix) } at { spellLevel } spell slot level, on each next spell slot level increases by { declension(eachLevelInc, postfix) }
+          </span>
+          { Boolean(hint) &&
+            <p className={ styles.hint }>{ hint }</p>
+          }
+        </>
+      );
     } else {
       return (
-        <ul>
-          { Boolean(initial) &&
-            <li>{ initial } at { spellLevel } spell slot level</li>
+        <>
+          <ul>
+            { Boolean(initial) &&
+              <li>{ initial } at { spellLevel } spell slot level</li>
+            }
+            { Object.keys(upgradesMap)
+              .map((level) => <li key={ level }>{ upgradesMap[level] } at { level } spell slot level</li>)
+            }
+          </ul>
+          { Boolean(hint) &&
+            <p className={ styles.hint }>{ hint }</p>
           }
-          { Object.keys(upgradesMap)
-            .map((level) => <li key={ level }>{ upgradesMap[level] } at { level } spell slot level</li>)
-          }
-        </ul>
+        </>
       )
     }
-  }, [eachLevelInc, initial, spellLevel, postfix, upgradesMap]);
+  }, [eachLevelInc, initial, spellLevel, postfix, upgradesMap, hint]);
 
   return (
     <Tooltip text={ tooltipText }>
