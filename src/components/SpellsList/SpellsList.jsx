@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import ComponentsCell from './cells/ComponentsCell';
 import ConcentrationCell from './cells/ConcentrationCell';
-import DurationCell from './cells/DurationCell';
+import TextCell from './cells/TextCell';
 import IconCell from './cells/IconCell';
 import SchoolCell from './cells/SchoolCell';
 import TextWithHint from './TextWithHint';
@@ -59,6 +59,7 @@ function SpellsList(props) {
     {
       Header: 'Range',
       accessor: 'range',
+      Cell: TextCell,
     },
     {
       Header: () => <div className={ styles.headerCenter } title="Concentration">Conc.</div>,
@@ -68,7 +69,7 @@ function SpellsList(props) {
     {
       Header: 'Duration',
       accessor: 'duration',
-      Cell: DurationCell,
+      Cell: TextCell,
     },
   ], [haveSpellsCount]);
 

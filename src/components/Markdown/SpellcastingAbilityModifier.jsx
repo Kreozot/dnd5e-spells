@@ -14,7 +14,7 @@ function SpellcastingAbilityModifier(props) {
 
   return (
     <Tooltip text={ 'your spellcasting ability modifier' }>
-      { spellcastingAbilityModifier }
+      <strong>{ spellcastingAbilityModifier }</strong>
     </Tooltip>
   );
 }

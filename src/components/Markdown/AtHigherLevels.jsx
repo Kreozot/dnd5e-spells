@@ -39,7 +39,9 @@ function AtHigherLevels(props) {
     } else {
       return (
         <ul>
-          <li>{ initial } at { spellLevel } spell slot level</li>
+          { Boolean(initial) &&
+            <li>{ initial } at { spellLevel } spell slot level</li>
+          }
           { Object.keys(upgradesMap)
             .map((level) => <li key={ level }>{ upgradesMap[level] } at { level } spell slot level</li>)
           }

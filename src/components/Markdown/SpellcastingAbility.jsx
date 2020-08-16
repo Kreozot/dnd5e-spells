@@ -14,7 +14,7 @@ function SpellcastingAbility(props) {
 
   return (
     <Tooltip text={ 'your spellcasting ability' }>
-      your { classRestrictions.spellcastingAbility }
+      <strong>your { classRestrictions.spellcastingAbility }</strong>
     </Tooltip>
   );
 }

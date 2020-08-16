@@ -36,7 +36,7 @@ function LevelUpgrades(props) {
 
   return (
     <Tooltip text={ tooltipText }>
-      { currentValue }
+      <strong>{ currentValue }</strong>
     </Tooltip>
   );
 }
