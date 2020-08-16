@@ -395,7 +395,7 @@
   duration: ≤ 1 hour
   tags: []
   description: >
-    A **10-foot**-radius invisible sphere of antimagic surrounds
+    A **10-foot-radius** invisible sphere of antimagic surrounds
     you. This area is divorced from the magical energy that
     suffuses the multiverse. Within the sphere, spells can’t
     be cast, summoned creatures disappear, and even magic
@@ -1428,7 +1428,7 @@
   tags: []
   description: >
     You attempt to suppress strong emotions in a group
-    of people. Each humanoid in a **20-foot**-radius sphere
+    of people. Each humanoid in a **20-foot-radius** sphere
     centered on a point you choose within range must make
     a **Charisma saving throw**; a creature can choose to
     fail this saving throw if it wishes. If a creature fails its
@@ -1541,7 +1541,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    You hurl a **4-inch**-diameter sphere of energy at a
+    You hurl a **4-inch-diameter** sphere of energy at a
     creature that you can see within range. You choose
     **acid**, **cold**, **fire**, **lightning**, **poison**, or **thunder** for the type
     of orb you create, and then make a ranged spell attack
@@ -1699,7 +1699,7 @@
   duration: ≤ 10 minutes
   tags: []
   description: >
-    You create a **20-foot**-radius sphere of poisonous, yellow
+    You create a **20-foot-radius** sphere of poisonous, yellow
     green fog centered on a point you choose within range.
     The fog spreads around corners. It lasts for the duration
     or until strong wind disperses the fog, ending the spell.
@@ -2292,7 +2292,7 @@
     the air and choose a point within range. Hundreds of
     duplicates of the ammunition or weapon fall in a volley
     from above and then disappear. Each creature in a
-    **40-foot**-radius. **20-foot**-high cylinder centered on that
+    **40-foot-radius**. **20-foot-high** cylinder centered on that
     point must make a **Dexterity saving throw**. A creature
     takes **8d8** damage on a failed save, or half as much
     damage on a successful one. The damage type is the
@@ -2993,7 +2993,7 @@
   tags: []
   description: >
     Magical darkness spreads from a point you choose
-    within range to fill a **15-foot**-radius sphere for the
+    within range to fill a **15-foot-radius** sphere for the
     duration. The darkness spreads around corners.
 
 
@@ -3039,7 +3039,7 @@
   duration: 1 hour
   tags: []
   description: >
-    A **60-foot**-radius sphere of light spreads out from a point
+    A **60-foot-radius** sphere of light spreads out from a point
     you choose within range. The sphere is bright light and
     sheds dim light for an additional **60 feet**.
 
@@ -3101,7 +3101,7 @@
     ends, either because your concentration is broken or
     because you decide to end it, the bead blossoms with a
     low roar into an explosion of flame that spreads around
-    corners. Each creature in a **20-foot**-radius sphere
+    corners. Each creature in a **20-foot-radius** sphere
     centered on that point must make a **Dexterity saving
     throw**. A creature takes **fire damage** equal to the total
     accumulated damage on a failed save, or half as much
@@ -3889,7 +3889,7 @@
     You create a seismic disturbance at a point on the
     ground that you can see within range. For the duration,
     an intense trem or rips through the ground in a
-    **100-foot**-radius circle centered on that point and shakes
+    **100-foot-radius** circle centered on that point and shakes
     creatures and structures in contact with the ground
     in that area.
 
@@ -4372,7 +4372,7 @@
   tags: []
   description: >
     Bolstering yourself with a necromantic facsimile of life,
-    you gain **1d4 + 4** **temporary hit points** for the duration.
+    you gain **1d4 + **<AtHigherLevels initial="4" eachLevelInc="5"/> **temporary hit points** for the duration.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, you gain **5 additional
@@ -4610,6 +4610,7 @@
     M:
       - a set of divinatory tools — such as bones, ivory sticks, cards, teeth, or carved runes — worth 100 gp
       - an object from the location you wish to find
+    materialSpecial: 100
   concentration: true
   duration: ≤ 1 day
   tags: []
@@ -4697,8 +4698,8 @@
     A bright streak flashes from your pointing finger to a
     point you choose within range and then blossoms with
     a low roar into an explosion of flame. Each creature
-    in a **20-foot**-radius sphere centered on that point must
-    make a **Dexterity saving throw**. A target takes **8d6** **fire
+    in a **20-foot-radius** sphere centered on that point must
+    make a **Dexterity saving throw**. A target takes <AtHigherLevels initial="8" eachLevelInc="1" postfix="d6"/> **fire
     damage** on a failed save, or half as much damage on a
     successful one.
 
@@ -4723,7 +4724,7 @@
   description: >
     You hurl a mote of fire at a creature or object within
     range. Make a ranged spell attack against the
-    target. On a hit, the target takes **<LevelUpgrades initial="1d10" upgrades="5:2d10;11:3d10;17:4d10"/>** **fire damage**. A
+    target. On a hit, the target takes <LevelUpgrades initial="1d10" upgrades="5:2d10;11:3d10;17:4d10"/> **fire damage**. A
     flammable object hit by this spell ignites if it isn't being
     worn or carried.
   levelUpgrades: >
@@ -4806,11 +4807,11 @@
 
     You can use your action to make a melee spell
     attack with the fiery blade. On a hit, the target takes
-    **3d6** **fire damage**.
+    <AtHigherLevels initial="3d6" upgrades="4:4d6;6:5d6;8:6d6"/> **fire damage**.
 
 
-    The flaming blade sheds bright light in a **10-foot**
-    radius and dim light for an additional **10 feet**.
+    The flaming blade sheds bright light in a **10-foot-radius**
+    and dim light for an additional **10 feet**.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **4th level** or higher, the damage increases by
@@ -4827,10 +4828,11 @@
     M: pinch of sulfur
   duration: Instantaneous
   tags: []
+  # TODO: Come up with tags for this different damage types
   description: >
     A vertical column of divine fire roars down from the
     heavens in a location you specify. Each creature in
-    a **10-foot**-radius, **40-foot**-high cylinder centered on a
+    a **10-foot-radius**, **40-foot-high** cylinder centered on a
     point within range must make a **Dexterity saving throw**.
 
 
@@ -4859,13 +4861,13 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    A **5-foot**-diameter sphere of fire appears in an
+    A **5-foot-diameter** sphere of fire appears in an
     unoccupied space of your choice within range and lasts
     for the duration. Any creature that ends its turn within **5
     feet** of the sphere must make a **Dexterity saving throw**.
 
 
-    The creature takes **2d6** **fire damage** on a failed save, or
+    The creature takes <AtHigherLevels initial="2" eachLevelInc="1" postfix="d6"/> **fire damage** on a failed save, or
     half as much damage on a successful one.
 
 
@@ -4879,7 +4881,7 @@
     barriers up to **5 feet** tall and jum pit across pits up to
     **10 feet** wide. The sphere ignites flammable objects not
     being worn or carried, and it sheds bright light in a
-    **20-foot** radius and dim light for an additional **20 feet**.
+    **20-foot-radius** and dim light for an additional **20 feet**.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **3rd level** or higher, the damage increases by
@@ -4937,7 +4939,7 @@
   duration: ≤ 10 minutes
   tags: []
   description: >
-    You touch a willing creature. The target gains a flying
+    You touch <AtHigherLevels initial="1" eachLevelInc="1" postfix=" willing creature| willing creatures"/>. The target gains a flying
     speed of **60 feet** for the duration. When the spell ends,
     the target falls if it is still aloft, unless it can stop the fall.
   atHigherLevels: >
@@ -4957,7 +4959,7 @@
   duration: ≤ 1 hour
   tags: []
   description: >
-    You create a **20-foot**-radius sphere of fog centered on a
+    You create a **<AtHigherLevels initial="20" eachLevelInc="20" postfix="-foot"/>-radius** sphere of fog centered on a
     point within range. The sphere spreads around corners,
     and its area is heavily obscured. It lasts for the duration
     or until a wind of moderate or greater speed (at least **10
@@ -5217,7 +5219,10 @@
   range: 60 feet
   components:
     V: true
-  duration: 30 days
+  duration:
+    initial: 30 days
+    7: 1 year
+    9: Until ended
   tags: []
   description: >
     You place a magical command on a creature that you
@@ -5339,7 +5344,7 @@
     the duration.
 
 
-    Any spell of **5th level** or lower cast from outside the
+    Any spell of <AtHigherLevels initial="5" eachLevelInc="1" postfix=" level"/> or lower cast from outside the
     barrier can't affect creatures or objects within it, even
     if the spell is cast using a higher level spell slot. Such a
     spell can target creatures and objects within the barrier,
@@ -5409,17 +5414,18 @@
 
 
     Explosive Runes. When triggered, the glyph erupts
-    with magical energy in a **20-foot**-radius sphere centered
+    with magical energy in a **20-foot-radius** sphere centered
     on the glyph. The sphere spreads around corners. Each
     creature in the area must make a **Dexterity saving
-    throw**. A creature takes **5d8** **acid**, **cold**, **fire**, **lightning**, or
+    throw**. A creature takes <AtHigherLevels initial="5" eachLevelInc="1" postfix="d8"/>
+    **acid**, **cold**, **fire**, **lightning**, or
     **thunder damage** on a failed saving throw (your choice
     when you create the glyph), or half as much damage on a
     successful one.
 
 
     Spell Glyph. You can store a prepared spell of
-    **3rd level** or lower in the glyph by casting it as part
+    <AtHigherLevels initial="3" eachLevelInc="1" postfix=" level"/> or lower in the glyph by casting it as part
     of creating the glyph. The spell must target a single
     creature or an area. The spell being stored has no
     immediate effect when cast in this way. When the glyph
@@ -5437,9 +5443,9 @@
     When you cast this spell using
     a spell slot of **4th level** or higher, the damage of an
     explosive runes glyph increases by **1d8** for each slot
-    level above **3rd**. If you create a spell glyph, you can store
+    level above **3rd**. If you create a Spell Glyph, you can store
     any spell of up to the same level as the slot you use for
-    the glyph of warding.
+    the Glyph of Warding.
 
 - title: Goodberry
   level: 1
@@ -5693,7 +5699,7 @@
   description: >
     A flash of light streaks toward a creature of your choice
     within range. Make a ranged spell attack against the
-    target. On a hit, the target takes **4d6** **radiant damage**,
+    target. On a hit, the target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d6"/> **radiant damage**,
     and the next attack roll made against this target before
     the end of your next turn has advantage, thanks to the
     mystical dim light glittering on the target until then.
@@ -6207,7 +6213,7 @@
   tags: []
   description: >
     You open a gateway to the dark between the stars, a
-    region infested with unknown horrors. A **20-foot**-radius
+    region infested with unknown horrors. A **20-foot-radius**
     sphere of blackness and bitter cold appears, centered
     on a point with range and lasting for the duration. This
     void is filled with a cacophony of soft whispers and
@@ -6290,7 +6296,7 @@
   tags: []
   description: >
     A hail of rock-hard ice pounds to the ground in a
-    **20-foot**-radius, **40-foot**-high cylinder centered on a
+    **20-foot-radius**, **40-foot-high** cylinder centered on a
     point within range. Each creature in the cylinder must
     make a **Dexterity saving throw**. A creature takes **2d8**
     **bludgeoning damage** and **4d6** **cold damage** on a failed
@@ -6474,7 +6480,7 @@
   tags: []
   description: >
     A swirling cloud of sm oke shot through with white-hot
-    em bers appears in a **20-foot**-radius sphere centered on
+    em bers appears in a **20-foot-radius** sphere centered on
     a point within range. The cloud spreads around corners
     and is heavily obscured. It lasts for the duration or until
     a wind of moderate or greater speed (at least **10 miles**
@@ -6527,7 +6533,7 @@
   duration: ≤ 10 minutes
   tags: []
   description: >
-    Swarming, biting locusts fill a **20-foot**-radius sphere
+    Swarming, biting locusts fill a **20-foot-radius** sphere
     centered on a point you choose within range. The sphere
     spreads around corners. The sphere remains for the
     duration, and its area is lightly obscured. The sphere’s
@@ -6697,7 +6703,7 @@
   duration: 8 hours
   tags: []
   description: >
-    A **10-foot**-radiusimmobile dome of force springs into
+    A **10-foot-radius**immobile dome of force springs into
     existence around and above you and remains stationary
     for the duration. The spell ends if you leave its area.
     Nine creatures of Medium size or smaller can fit inside
@@ -7011,7 +7017,7 @@
   duration: 1 hour
   tags: []
   description: >
-    You create a **10-foot**-radius, **20-foot**-tall cylinder of
+    You create a **10-foot-radius**, **20-foot**-tall cylinder of
     magical energy centered on a point on the ground
     that you can see within range. Glowing runes appear
     wherever the cylinder intersects with the floor or
@@ -7260,7 +7266,7 @@
   description: >
     A wave of healing energy washes out from a point of
     your choice within range. Choose up to six creatures
-    in a **30-foot**-radius sphere centered on that point. Each
+    in a **30-foot-radius** sphere centered on that point. Each
     target regains hit points equal to **3d8 + <SpellcastingAbilityModifier/>**. This spell has no effect on undead
     or constructs.
   atHigherLevels: >
@@ -7510,7 +7516,7 @@
   description: >
     Blazing orbs of fire plummet to the ground at four
     different points you can see within range. Each creature
-    in a **40-foot**-radius sphere centered on each point you
+    in a **40-foot-radius** sphere centered on each point you
     choose must make a **Dexterity saving throw**. The sphere
     spreads around corners. A creature takes **20d6** **fire
     damage** and **20d6** **bludgeoning damage** on a failed
@@ -7776,7 +7782,7 @@
   tags: []
   description: >
     A silvery beam of pale light shines down in a **5-foot**
-    radius, **40-foot**-high cylinder centered on a point within
+    radius, **40-foot-high** cylinder centered on a point within
     range. Until the spell ends, dim light fills the cylinder.
 
 
@@ -8076,7 +8082,7 @@
   description: >
     A frigid globe of cold energy streaks from your fingertips
     to a point of your choice within range, where it explodes
-    in a **60-foot**-radius sphere. Each creature within the
+    in a **60-foot-radius** sphere. Each creature within the
     area must make a **Constitution saving throw**. On a
     failed save, a creature takes **10d6** **cold damage**. On a
     successful save, it takes half as much damage.
@@ -9054,7 +9060,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    All nonmagical food and drink within a **5-foot**-radius
+    All nonmagical food and drink within a **5-foot-radius**
     sphere centered on a point of your choice within range is
     purified and rendered free of poison and disease.
 
@@ -9369,7 +9375,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    This spell reverses gravity in a **50-foot**-radius, **100-
+    This spell reverses gravity in a **50-foot-radius**, **100-
     foot** high cylinder centered on a point within range. All
     creatures and objects that aren’t somehow anchored to
     the ground in the area fall upward and reach the top of
@@ -9796,7 +9802,7 @@
   description: >
     A sudden loud ringing noise, painfully intense, erupts
     from a point of your choice within range. Each creature
-    in a **10-foot**-radius sphere centered on that point must
+    in a **10-foot-radius** sphere centered on that point must
     make a **Constitution saving throw**. A creature takes
     **3d8** **thunder damage** on a failed save, or half as much
     damage on a successful one. A creature made of
@@ -9906,7 +9912,7 @@
   tags: []
   description: >
     For the duration, no sound can be created within or
-    pass through a **20-foot**-radius sphere centered on a
+    pass through a **20-foot-radius** sphere centered on a
     point you choose within range. Any creature or object
     entirely inside the sphere is immune to **thunder damage**,
     and creatures are deafened while entirely inside it.
@@ -10349,7 +10355,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    You create a **20-foot**-radius sphere of yellow, nauseating
+    You create a **20-foot-radius** sphere of yellow, nauseating
     gas centered on a point within range. The cloud spreads
     around corners, and its area is heavily obscured. The
     cloud lingers in the air for the duration.
@@ -10644,7 +10650,7 @@
 
     When you inscribe the glyph, choose one of the
     options below for its effect. Once triggered, the glyph
-    glows, filling a **60-foot**-radius sphere with dim light
+    glows, filling a **60-foot-radius** sphere with dim light
     for **10 minutes**, after which time the spell ends. Each
     creature in the sphere when the glyph activates is
     targeted by its effect, as is a creature that enters the
@@ -10925,7 +10931,7 @@
   duration: 1 round
   tags: []
   description: >
-    As you cast the spell, you draw a **10-foot**-diameter
+    As you cast the spell, you draw a **10-foot-diameter**
     circle on the ground inscribed with sigils that link
     your location to a permanent teleportation circle of
     your choice whose sigil sequence you know and that is
@@ -11789,7 +11795,7 @@
   description: >
     Drawing on the deepest fears of a group of creatures,
     you create illusory creatures in their minds, visible
-    only to them. Each creature in a **30-foot**-radius
+    only to them. Each creature in a **30-foot-radius**
     sphere centered on a point of your choice within
     range must make a **Wisdom saving throw**. On a failed
     save, a creature becomes frightened for the duration.
@@ -12034,7 +12040,7 @@
   tags: []
   description: >
     You create a magical zone that guards against deception
-    in a **15-foot**-radius sphere centered on a point of your
+    in a **15-foot-radius** sphere centered on a point of your
     choice within range. Until the spell ends, a creature
     that enters the spell’s area for the first time on a turn
     or starts its turn there must make a **Charisma saving
