@@ -2498,7 +2498,7 @@
     forth from an object that you touch. The effect looks like
     a regular flame, but it creates no heat and doesn’t use
     oxygen. A continual flame can be covered or hidden but
-    not sm othered or quenched.
+    not smothered or quenched.
 
 - title: Control Water
   level: 4
@@ -4421,7 +4421,7 @@
   tags: []
   description: >
     Choose up to five falling creatures within range. A
-    falling creature's rate of descent slows to **60 feet** per
+    falling creature’s rate of descent slows to **60 feet** per
     round until the spell ends. If the creature lands before
     the spell ends, it takes no falling damage and can land
     on its feet, and the spell ends for that creature.
@@ -4830,7 +4830,6 @@
     M: pinch of sulfur
   duration: Instantaneous
   tags: []
-  # TODO: Come up with tags for this different damage types
   description: >
     A vertical column of divine fire roars down from the
     heavens in a location you specify. Each creature in
@@ -4838,8 +4837,8 @@
     point within range must make a **Dexterity saving throw**.
 
 
-    A creature takes **4d6** **fire damage** and **4d6** **radiant
-    damage** on a failed save, or half as much damage on a
+    A creature takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d6"/> **fire damage** and **4d6** **radiant
+    damage**  <AtHigherLevels initial="" upgrades="6: (you can switch damage types)"/> on a failed save, or half as much damage on a
     successful one.
   atHigherLevels: >
     When you cast this spell using a
@@ -5045,7 +5044,7 @@
 
 
     When you cast the spell, any creature that is
-    completely inside the cage's area is trapped. Creatures
+    completely inside the cage’s area is trapped. Creatures
     only partially within the area, or those too large to fit
     inside the area, are pushed away from the center of the
     area until they are completely outside the area.
@@ -5108,7 +5107,7 @@
     The target can also spend **5 feet** of movement to
     automatically escape from nonmagical restraints, such
     as manacles or a creature that has it grappled. Finally,
-    being underwater im poses no penalties on the target's
+    being underwater im poses no penalties on the target’s
     movement or attacks.
 
 - title: Friends
@@ -6313,7 +6312,7 @@
     save, or half as much damage on a successful one.
 
 
-    Hailstones turn the storm's area of effect into difficult
+    Hailstones turn the storm’s area of effect into difficult
     terrain until the end of your next turn.
   atHigherLevels: >
     When you cast this spell using a
@@ -6694,7 +6693,7 @@
 
 
     After **60 days**, there is a cumulative **5 percent** chance
-    per day that the spell's effect ends. This effect ends if
+    per day that the spell’s effect ends. This effect ends if
     you cast this spell again, if the smaller replica chest is
     destroyed, or if you choose to end the spell as an action.
     If the spell ends and the larger chest is on the Ethereal
@@ -9407,8 +9406,8 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    This spell reverses gravity in a **50-foot-radius**, **100-
-    foot** high cylinder centered on a point within range. All
+    This spell reverses gravity in a **50-foot-radius**, **100-foot-high**
+    cylinder centered on a point within range. All
     creatures and objects that aren’t somehow anchored to
     the ground in the area fall upward and reach the top of
     the area when you cast this spell. A creature can make a
@@ -9843,7 +9842,7 @@
 
 
     A nonmagical object that isn’t being worn or carried
-    also takes the damage if it’s in the spell's area.
+    also takes the damage if it’s in the spell’s area.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **3rd level** or higher, the damage increases by
@@ -9903,7 +9902,7 @@
     imbued with nature’s power. For the duration, you can
     use <SpellcastingAbility/> instead of Strength for
     the attack and damage rolls of melee attacks using
-    that weapon, and the weapon's damage die becomes
+    that weapon, and the weapon’s damage die becomes
     a **d8**. The weapon also becomes magical, if it isn’t
     already. The spell ends if you cast it again or if you let go
     of the weapon.
@@ -11548,8 +11547,7 @@
     barrier or at an angle. It can be free floating or resting
     on a solid surface. You can form it into a hemispherical
     dome or a sphere with a radius of up to **10 feet**, or you
-    can shape a flat surface made up of ten **10-foot**-by-
-    **10-foot** panels. Each panel must be contiguous with
+    can shape a flat surface made up of ten **10-foot**-by-**10-foot** panels. Each panel must be contiguous with
     another panel. In any form, the wall is **1/4 inch** thick.
     It lasts for the duration. If the wall cuts through a
     creature’s space when it appears, the creature is pushed
