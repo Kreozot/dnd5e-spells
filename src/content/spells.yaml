@@ -10336,7 +10336,7 @@
     lasts for the duration or until you cast this spell again.
     When you cast the spell, you can make a melee spell
     attack against a creature within **5 feet** of the weapon. On
-    a hit, the target takes **force damage** equal to <AtHigherLevels initial="1" eachLevelInc="1" postfix="d8"/>** + **<SpellcastingAbilityModifier/>.
+    a hit, the target takes **force damage** equal to <AtHigherLevels initial="1d8" upgrades="4:2d8;6:3d8;8:4d8"/>** + **<SpellcastingAbilityModifier/>.
 
 
     As a bonus action on your turn, you can move the
