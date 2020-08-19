@@ -16,7 +16,7 @@ exports.wrapRootElement = ({ element }) => {
     <Provider store={ store }>
       <PersistGate persistor={ persistor }>
         { element }
-        </PersistGate>
+      </PersistGate>
     </Provider>
   )
 };
