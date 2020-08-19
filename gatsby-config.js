@@ -23,6 +23,12 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-minify-classnames`,
+      options: {
+        enableOnDevelopment: false,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
