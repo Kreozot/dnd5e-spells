@@ -29,10 +29,6 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={site.siteMetadata.title}
       meta={[
         {
           name: `description`,
@@ -67,7 +63,21 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <html lang="en" />
+      <title itemProp="name" lang="en">{ site.siteMetadata.title }</title>
+      <script async="true" src="https://www.googletagmanager.com/gtag/js?id=UA-148393017-1"></script>
+      <script>
+        { `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148393017-1');
+        ` }
+      </script>
+
+    </Helmet>
   )
 }
 
