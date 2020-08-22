@@ -11,6 +11,8 @@ import CurrentLevelSelector from './CurrentLevelSelector';
 import SpellcastingAbilityValueSelector from './SpellcastingAbilityValueSelector';
 import KnownSpellsCount from './KnownSpellsCount';
 import KnownCantripsCount from './KnownCantripsCount';
+import SpellSaveDC from './SpellSaveDC';
+import SpellAttackModifier from './SpellAttackModifier';
 
 import styles from './FiltersBlock.module.scss'
 
@@ -45,6 +47,8 @@ function FiltersBlock(props) {
       <SpellcastingAbilityValueSelector/>
       <KnownCantripsCount/>
       <KnownSpellsCount/>
+      <SpellSaveDC/>
+      <SpellAttackModifier/>
     </div>
   );
 }

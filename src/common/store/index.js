@@ -210,6 +210,51 @@ export const isSpellLevelSelected = createSelector(
   (isSelected) => isSelected,
 );
 
+// Proficiensy bonus value for current level
+export const getProficiencyBonus = createSelector(
+  (state) => state.filters.currentLevel,
+  (currentLevel) => {
+    if (currentLevel >= 17) {
+      return 6;
+    }
+    if (currentLevel >= 13) {
+      return 5;
+    }
+    if (currentLevel >= 9) {
+      return 4;
+    }
+    if (currentLevel >= 5) {
+      return 3;
+    }
+    if (currentLevel >= 1) {
+      return 2;
+    }
+    return null;
+  }
+);
+
+export const getSpellSaveDC = createSelector(
+  getProficiencyBonus,
+  getSpellcastingAbilityModifier,
+  (proficiencyBonus, abilityModifier) => {
+    if (proficiencyBonus === null || abilityModifier === null) {
+      return null;
+    }
+    return 8 + proficiencyBonus + abilityModifier;
+  }
+)
+
+export const getSpellAttackModifier = createSelector(
+  getProficiencyBonus,
+  getSpellcastingAbilityModifier,
+  (proficiencyBonus, abilityModifier) => {
+    if (proficiencyBonus === null || abilityModifier === null) {
+      return null;
+    }
+    return proficiencyBonus + abilityModifier;
+  }
+)
+
 export const store = configureStore({
   reducer: persistReducer(persistConfig, combineReducers({
     filters: filtersSlice.reducer,
