@@ -336,7 +336,7 @@
     Its Constitution is 10 and its Intelligence and Wisdom
     are 3, and its Charisma is 1. Its speed is **30 feet**; if the
     object lacks legs or other appendages it can use for
-    locom otion, it instead has a flying speed of **30 feet** and
+    locomotion, it instead has a flying speed of **30 feet** and
     can hover. If the object is securely attached to a surface
     or a larger object, such as a chain bolted to a wall, its
     speed is 0. It has blindsight with a radius of **30 feet** and
@@ -691,7 +691,7 @@
     doesn’t need food or air and doesn’t age.
 
 
-    Your astral body resem bles your mortal form in
+    Your astral body resembles your mortal form in
     alm ost every way, replicating your game statistics and
     possessions. The principal difference is the addition of
     a silvery cord that extends from between your shoulder
@@ -2162,7 +2162,7 @@
     An elemental of challenge rating <AtHigherLevels initial="5" eachLevelInc="1"/> or lower appropriate
     to the area you chose appears in an unoccupied space
     within **10 feet** of it. For example, a fire elemental
-    em erges from a bonfire, and an earth elemental rises
+    emerges from a bonfire, and an earth elemental rises
     up from the ground. The elemental disappears when it
     drops to **0 hit points** or when the spell ends.
 
@@ -2244,7 +2244,7 @@
   duration: ≤ 1 hour
   tags: []
   description: >
-    You summ on elementals that appear in unoccupied
+    You summon elementals that appear in unoccupied
     spaces that you can see within range. You choose one
     the following options for what appears:
 
@@ -2313,7 +2313,7 @@
   duration: ≤ 1 hour
   tags: []
   description: >
-    You summ on fey creatures that appear in unoccupied
+    You summon fey creatures that appear in unoccupied
     spaces that you can see within range. Choose one of the
     following options for what appears:
 
@@ -2403,8 +2403,8 @@
     After succeeding on three of these saving throws, the
     creature recovers from the disease, and the spell ends.
     Since this spell induces a natural disease in its
-    target, any effect that rem oves a disease or otherwise
-    am eliorates a disease’s effects apply to it.
+    target, any effect that removes a disease or otherwise
+    ameliorates a disease’s effects apply to it.
 
 
     **Blinding Sickness.** Pain grips the creature’s mind,
@@ -2413,7 +2413,7 @@
     throws** and is blinded.
 
 
-    **Filth Fever.** A raging fever sw eeps through the
+    **Filth Fever.** A raging fever sweeps through the
     creature’s body. The creature has disadvantage on
     Strength checks, **Strength saving throws**, and attack
     rolls that use Strength.
@@ -2498,7 +2498,7 @@
     forth from an object that you touch. The effect looks like
     a regular flame, but it creates no heat and doesn’t use
     oxygen. A continual flame can be covered or hidden but
-    not sm othered or quenched.
+    not smothered or quenched.
 
 - title: Control Water
   level: 4
@@ -2962,7 +2962,7 @@
   components:
     V: true
     S: true
-    M: a bit of phosphorus or wychw ood, or a glowworm
+    M: a bit of phosphorus or wychwood, or a glowworm
   concentration: true
   duration: ≤ 1 minute
   tags: []
@@ -3030,7 +3030,7 @@
     see in the dark. For the duration, that creature has
     darkvision out to a range of **60 feet**.
 
-- title: Daylight
+- title: D
   level: 3
   school: Evocation
   castingTime: 1 action
@@ -4421,7 +4421,7 @@
   tags: []
   description: >
     Choose up to five falling creatures within range. A
-    falling creature's rate of descent slows to **60 feet** per
+    falling creature’s rate of descent slows to **60 feet** per
     round until the spell ends. If the creature lands before
     the spell ends, it takes no falling damage and can land
     on its feet, and the spell ends for that creature.
@@ -4830,7 +4830,6 @@
     M: pinch of sulfur
   duration: Instantaneous
   tags: []
-  # TODO: Come up with tags for this different damage types
   description: >
     A vertical column of divine fire roars down from the
     heavens in a location you specify. Each creature in
@@ -4838,8 +4837,8 @@
     point within range must make a **Dexterity saving throw**.
 
 
-    A creature takes **4d6** **fire damage** and **4d6** **radiant
-    damage** on a failed save, or half as much damage on a
+    A creature takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d6"/> **fire damage** and **4d6** **radiant
+    damage**  <AtHigherLevels initial="" upgrades="6: (you can switch damage types)"/> on a failed save, or half as much damage on a
     successful one.
   atHigherLevels: >
     When you cast this spell using a
@@ -5045,7 +5044,7 @@
 
 
     When you cast the spell, any creature that is
-    completely inside the cage's area is trapped. Creatures
+    completely inside the cage’s area is trapped. Creatures
     only partially within the area, or those too large to fit
     inside the area, are pushed away from the center of the
     area until they are completely outside the area.
@@ -5108,7 +5107,7 @@
     The target can also spend **5 feet** of movement to
     automatically escape from nonmagical restraints, such
     as manacles or a creature that has it grappled. Finally,
-    being underwater im poses no penalties on the target's
+    being underwater im poses no penalties on the target’s
     movement or attacks.
 
 - title: Friends
@@ -5205,7 +5204,7 @@
 
 
     When you cast this spell, you can speak the name
-    of a specific creature (a pseudonym, title, or nicknam e
+    of a specific creature (a pseudonym, title, or nickname
     doesn’t work). If that creature is on a plane other than
     the one you are on, the portal opens in the named
     creature’s immediate vicinity and draws the creature
@@ -5824,7 +5823,7 @@
     illuminate the area.
 
 
-    **Daylight.** Bright light fills the area. Magical darkness
+    **D.** Bright light fills the area. Magical darkness
     created by spells of a lower level than the slot you used
     to cast this spell can’t extinguish the light.
 
@@ -5878,10 +5877,10 @@
     You make natural terrain in a **150-foot** cube in range
     look, sound, and smell like some other sort of natural
     terrain. Thus, open fields or a road can be made to
-    resem ble a swamp, hill, crevasse, or some other difficult
+    resemble a swamp, hill, crevasse, or some other difficult
     or impassable terrain. A pond can be made to seem
     like a grassy meadow, a precipice like a gentle slope,
-    or a rock-strewn gully like a wide and sm ooth road.
+    or a rock-strewn gully like a wide and smooth road.
 
 
     Manufactured structures, equipment, and creatures
@@ -5895,7 +5894,7 @@
     attempt an Intelligence (Investigation) check against
     your spell save DC to disbelieve it. A creature who
     discerns the illusion for what it is, sees it as a vague
-    image superim posed on the terrain.
+    image superimposed on the terrain.
 
 - title: Harm
   level: 6
@@ -5916,7 +5915,7 @@
     hit points below 1. If the target fails the saving throw,
     its hit point maximum is reduced for **1 hour** by an
     amount equal to the **necrotic damage** it took. Any effect
-    that rem oves a disease allows a creature’s hit point
+    that removes a disease allows a creature’s hit point
     maximum to return to normal before that time passes.
 
 - title: Haste
@@ -5943,7 +5942,7 @@
 
     When the spell ends, the target can’t move or take
     actions until after its next turn, as a wave of lethargy
-    sw eeps over it.
+    sweeps over it.
 
 - title: Heal
   level: 6
@@ -6313,7 +6312,7 @@
     save, or half as much damage on a successful one.
 
 
-    Hailstones turn the storm's area of effect into difficult
+    Hailstones turn the storm’s area of effect into difficult
     terrain until the end of your next turn.
   atHigherLevels: >
     When you cast this spell using a
@@ -6490,7 +6489,7 @@
   tags: []
   description: >
     A swirling cloud of sm oke shot through with white-hot
-    em bers appears in a **20-foot-radius** sphere centered on
+    embers appears in a **20-foot-radius** sphere centered on
     a point within range. The cloud spreads around corners
     and is heavily obscured. It lasts for the duration or until
     a wind of moderate or greater speed (at least **10 miles**
@@ -6649,7 +6648,7 @@
     lore about the thing you named. The lore might consist
     of current tales, forgotten stories, or even secret lore
     that has never been widely known. If the thing you
-    named isn’t of legendary im portance, you gain no
+    named isn’t of legendary importance, you gain no
     information. The more information you already have
     about the thing, the more precise and detailed the
     information you receive is.
@@ -6694,7 +6693,7 @@
 
 
     After **60 days**, there is a cumulative **5 percent** chance
-    per day that the spell's effect ends. This effect ends if
+    per day that the spell’s effect ends. This effect ends if
     you cast this spell again, if the smaller replica chest is
     destroyed, or if you choose to end the spell as an action.
     If the spell ends and the larger chest is on the Ethereal
@@ -6724,7 +6723,7 @@
     objects are barred from passing through it. Spells and
     other magical effects can’t extend through the dome or
     be cast through it. The atmosphere inside the space is
-    com fortable and dry, regardless of the weather outside.
+    comfortable and dry, regardless of the weather outside.
 
 
     Until the spell ends, you can command the interior to
@@ -6819,7 +6818,7 @@
   description: >
     The next time you make a ranged weapon attack during
     the spell’s duration, the weapon’s ammunition, or the
-    weapon itself if it’s athrown weapon, transforms into
+    weapon itself if it’s a thrown weapon, transforms into
     a bolt of lightning. Make the attack roll as normal. The
     target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d8"/> **lightning damage** on a hit, or half
     as much damage on a miss, instead of the weapon’s
@@ -7350,7 +7349,7 @@
     or two) and magically influence up to twelve creatures
     of your choice that you can see within range and that
     can hear and understand you. Creatures that can’t be
-    charmed areimmune to this effect. The suggestion must
+    charmed are immune to this effect. The suggestion must
     be worded in such a manner as to make the course of
     action sound reasonable. Asking the creature to stab
     itself, throw itself onto a spear, immolate itself, or do
@@ -7623,10 +7622,10 @@
     look, sound, smell, and even feel like some other sort
     of terrain. The terrain’s general shape remains the
     same, however. Open fields or a road could be made to
-    resem ble a swamp, hill, crevasse, or some other difficult
+    resemble a swamp, hill, crevasse, or some other difficult
     or im passable terrain. A pond can be made to seem like
     a grassy meadow, a precipice like a gentle slope, or a
-    rock-strewn gully like a wide and sm ooth road.
+    rock-strewn gully like a wide and smooth road.
 
 
     Similarly, you can alter the appearance of structures,
@@ -7636,7 +7635,7 @@
 
     The illusion includes audible, visual, tactile, and
     olfactory elements, so it can turn clear ground into
-    difficult terrain (or vice versa) or otherwise im pede
+    difficult terrain (or vice versa) or otherwise impede
     movement through the area. Any piece of the illusory
     terrain (such as a rock or stick) that is removed from the
     spell’s area disappears immediately.
@@ -7894,7 +7893,7 @@
 
 
     Beyond the portal is a magnificent foyer with
-    num erous chambers beyond. The atmosphere is clean,
+    numerous chambers beyond. The atmosphere is clean,
     fresh, and warm.
 
 
@@ -8230,7 +8229,7 @@
     means. A creature that receives this bonus leaves
     behind no tracks or other traces of its passage.
 
-- title: Passwall
+- title: P
   level: 5
   school: Transmutation
   castingTime: 1 action
@@ -8323,7 +8322,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    You tap into the nightm ares of a creature you can see
+    You tap into the nightmares of a creature you can see
     within range and create an illusory manifestation of its
     deepest fears, visible only to that creature. The target
     must make a **Wisdom saving throw**. On a failed save,
@@ -8390,12 +8389,12 @@
     creature anyway (DM’s choice).
 
 
-    When the creature appears, it is under no com pulsion
+    When the creature appears, it is under no compulsion
     to behave in any particular way. You can ask the
     creature to perform a service in exchange for payment,
     but it isn’t obliged to do so. The requested task could
     range from simple (fly us across the chasm, or help us
-    fight a battle) to com plex (spy on our enemies, or protect
+    fight a battle) to complex (spy on our enemies, or protect
     us during our foray into the dungeon). You must be
     able to communicate with the creature to bargain for
     its services.
@@ -8466,7 +8465,7 @@
 
     A bound creature must follow your instructions to the
     best of its ability. You might command the creature to
-    accom pany you on an adventure, to guard a location, or
+    accompany you on an adventure, to guard a location, or
     to deliver a message. The creature obeys the letter of
     your instructions, but if the creature is hostile to you, it
     strives to twist your words to achieve its own objectives.
@@ -8859,7 +8858,7 @@
 
     4. Green. The creature takes **10d6** **poison damage** on
     a failed save, or half as much damage on a successful
-    one. A passwall spell, or another spell of equal or
+    one. A Passwall spell, or another spell of equal or
     greater level that can open a portal on a solid surface,
     destroys this layer.
 
@@ -8879,7 +8878,7 @@
     <br>
     While this layer is in place, spells can’t be cast
     through the wall. The layer is destroyed by bright light
-    shed by a daylight spell or a similar spell of equal or
+    shed by a Daylight spell or a similar spell of equal or
     higher level.
 
     7. Violet. On a failed save, the creature is blinded. It
@@ -8943,7 +8942,7 @@
     is imperceptible until then. It must be no larger than a
     **30-foot** cube, and you decide when you cast the spell
     how the illusion behaves and what sounds it makes. This
-    scripted perform ance can last up to **5 minutes**.
+    scripted performance can last up to **5 minutes**.
 
 
     When the condition you specify occurs, the illusion
@@ -9330,7 +9329,7 @@
   description: >
     At your touch, all curses affecting one creature or
     object end. If the object is a cursed magic item, its curse
-    remains, but the spell breaks its ow ner’s attunement to
+    remains, but the spell breaks its owner’s attunement to
     the object so it can be removed or discarded.
 
 - title: Resistance
@@ -9407,8 +9406,8 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    This spell reverses gravity in a **50-foot-radius**, **100-
-    foot** high cylinder centered on a point within range. All
+    This spell reverses gravity in a **50-foot-radius**, **100-foot-high**
+    cylinder centered on a point within range. All
     creatures and objects that aren’t somehow anchored to
     the ground in the area fall upward and reach the top of
     the area when you cast this spell. A creature can make a
@@ -9626,7 +9625,7 @@
     On a successful save, the spell ends. If the target or a
     creature within **5 feet** of it uses an action to put out the
     flames, or if some other effect douses the flam es (such
-    as the target being subm erged in water), the spell ends.
+    as the target being submerged in water), the spell ends.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, the initial extra damage
@@ -9750,7 +9749,7 @@
     You can set a condition for the spell to end early.
     The condition can be anything you choose, but it
     must occur or be visible within **1 mile** of the target.
-    Exam ples include “after 1,000 years” for “when the
+    Examples include “after 1,000 years” for “when the
     tarrasque awakens.” This spell also ends if the target
     takes any damage.
 
@@ -9843,7 +9842,7 @@
 
 
     A nonmagical object that isn’t being worn or carried
-    also takes the damage if it’s in the spell's area.
+    also takes the damage if it’s in the spell’s area.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **3rd level** or higher, the damage increases by
@@ -9903,7 +9902,7 @@
     imbued with nature’s power. For the duration, you can
     use <SpellcastingAbility/> instead of Strength for
     the attack and damage rolls of melee attacks using
-    that weapon, and the weapon's damage die becomes
+    that weapon, and the weapon’s damage die becomes
     a **d8**. The weapon also becomes magical, if it isn’t
     already. The spell ends if you cast it again or if you let go
     of the weapon.
@@ -9968,7 +9967,7 @@
     other visible phenomenon that is no larger than a **15-foot**
     cube. The image appears at a spot within range and
     lasts for the duration. The image is purely visual; it isn't
-    accom panied by sound, smell, or other sensory effects.
+    accompanied by sound, smell, or other sensory effects.
     You can use your action to cause the image to move to
     any spot within range. As the image changes location,
     you can alter its appearance so that its movements
@@ -10020,7 +10019,7 @@
     expended spell slots.
 
 
-    If the sim ulacrum is damaged, you can repair it in an
+    If the simulacrum is damaged, you can repair it in an
     alchemical laboratory, using rare herbs and minerals
     worth **100 gp** per hit point it regains. The simulacrum
     lasts until it drops to **0 hit points**, at which point it
@@ -10164,7 +10163,7 @@
   duration: 10 minutes
   tags: []
   description: >
-    You gain the ability to com prehend and verbally
+    You gain the ability to comprehend and verbally
     communicate with beasts for the duration. The
     knowledge and awareness of many beasts is limited
     by their intelligence, but at minimum, beasts can
@@ -10186,7 +10185,7 @@
   duration: 10 minutes
   tags: []
   description: >
-    You grant the sem blance of life and intelligence to a
+    You grant the semblance of life and intelligence to a
     corpse of your choice within range, allowing it to answer
     the questions you pose. The corpse must still have a
     mouth and can’t be undead. The spell fails if the corpse
@@ -10195,11 +10194,11 @@
     questions. The corpse knows only what it knew in life,
     including the languages it knew. Answers are usually
     brief, cryptic, or repetitive, and the corpse is under no
-    com pulsion to offer a truthful answer if you are hostile
+    compulsion to offer a truthful answer if you are hostile
     to it or it recognizes you as an enemy. This spell doesn’t
     return the creature’s soul to its body, only its animating
     spirit. Thus, the corpse can’t learn new information,
-    doesn’t com prehend anything that has happened since it
+    doesn’t comprehend anything that has happened since it
     died, and can’t speculate about future events.
 
 - title: Speak with Plants
@@ -10262,7 +10261,7 @@
     Until the spell ends, one willing creature you touch
     gains the ability to move up, down, and across vertical
     surfaces and upside down along ceilings, while leaving
-    its hands free. The target also gains a clim bing speed
+    its hands free. The target also gains a climbing speed
     equal to its walking speed.
 
 - title: Spike Growth
@@ -10337,7 +10336,7 @@
     lasts for the duration or until you cast this spell again.
     When you cast the spell, you can make a melee spell
     attack against a creature within **5 feet** of the weapon. On
-    a hit, the target takes **force damage** equal to <AtHigherLevels initial="1" eachLevelInc="1" postfix="d8"/>** + **<SpellcastingAbilityModifier/>.
+    a hit, the target takes **force damage** equal to <AtHigherLevels initial="1d8" upgrades="4:2d8;6:3d8;8:4d8"/>** + **<SpellcastingAbilityModifier/>.
 
 
     As a bonus action on your turn, you can move the
@@ -10349,7 +10348,7 @@
     Clerics of deities who are associated with a particular
     weapon (as St. Cuthbert is known for his mace
     and Thor for his hammer) make this spell’s effect
-    resem ble that weapon.
+    resemble that weapon.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **3rd level** or higher, the damage increases by
@@ -10509,7 +10508,7 @@
     V: true
     M:
       - a snake’s tongue
-      - eithera bit of honeycomb or a drop of sweet oil
+      - either a bit of honeycomb or a drop of sweet oil
   concentration: true
   duration: ≤ 8 hours
   tags: []
@@ -10904,11 +10903,11 @@
     when you cast the spell. “Seen casually” is someplace
     you have seen more than once but with which you aren’t
     very familiar. “Viewed on ce” is a place you have seen
-    once, possibly using magic. “D escription” is a place
+    once, possibly using magic. “Description” is a place
     whose location and appearance you know through
     someone else’s description, perhaps from a map.
     “False destination” is a place that doesn’t exist.
-    Perhaps you tried to scry an enem y’s sanctum but
+    Perhaps you tried to scry an enemy’s sanctum but
     instead viewed an illusion, or you are attempting to
     teleport to a familiar location that no longer exists.
 
@@ -11548,8 +11547,7 @@
     barrier or at an angle. It can be free floating or resting
     on a solid surface. You can form it into a hemispherical
     dome or a sphere with a radius of up to **10 feet**, or you
-    can shape a flat surface made up of ten **10-foot**-by-
-    **10-foot** panels. Each panel must be contiguous with
+    can shape a flat surface made up of ten **10-foot**-by-**10-foot** panels. Each panel must be contiguous with
     another panel. In any form, the wall is **1/4 inch** thick.
     It lasts for the duration. If the wall cuts through a
     creature’s space when it appears, the creature is pushed
@@ -11769,7 +11767,7 @@
     range gain this ability for the duration.
 
 
-    If you target a creature subm erged in a liquid, the
+    If you target a creature submerged in a liquid, the
     spell carries the target to the surface of the liquid at a
     rate of **60 feet** per round.
 
@@ -11946,8 +11944,8 @@
 
     * You grant up to ten creatures you can see immunity to
     a single spell or other magical effect for **8 hours**. For
-    instance, you could make yourself and all your com ­
-    panions immune to a lich’s life drain attack.
+    instance, you could make yourself and all your companions
+    immune to a lich’s life drain attack.
 
     * You undo a single recent event by forcing a reroll of
     any roll made within the last round (including your

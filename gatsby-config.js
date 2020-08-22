@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `DND 5e Spells List`,
-    description: `Interactive Spells List for "Dungeons & Dragons 5th edition" game`,
+    title: `D&D 5e Spell List`,
+    description: `Interactive Spell List for "Dungeons & Dragons 5th edition" game`,
     author: `Sergey Sharov`,
   },
   plugins: [
@@ -22,7 +22,14 @@ module.exports = {
         }
       }
     },
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-minify-classnames`,
+      options: {
+        enableOnDevelopment: false,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
