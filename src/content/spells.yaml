@@ -1097,7 +1097,7 @@
 
 
     * **Clenched Fist.** The hand strikes one creature or
-    object within **5 feet** of it. Make a melee spell attack for
+    object within **5 feet** of it. Make a melee spell attack <SpellAttackModifier/> for
     the hand using your game statistics. On a hit, the target
     takes <AtHigherLevels initial="4" eachLevelInc="2" postfix="d8"/> **force damage**.
 
@@ -1516,7 +1516,7 @@
   tags: []
   description: >
     You create a ghostly, skeletal hand in the space of a
-    creature within range. Make a ranged spell attack
+    creature within range. Make a ranged spell attack <SpellAttackModifier/>
     against the creature to assail it with the chill of the
     grave. On a hit, the target takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **necrotic damage**,
     and it can’t regain hit points until the start of your next
@@ -1545,7 +1545,7 @@
     You hurl a **4-inch-diameter** sphere of energy at a
     creature that you can see within range. You choose
     **acid**, **cold**, **fire**, **lightning**, **poison**, or **thunder** for the type
-    of orb you create, and then make a ranged spell attack
+    of orb you create, and then make a ranged spell attack <SpellAttackModifier/>
     against the target. If the attack hits, the creature takes
     <AtHigherLevels initial="3" eachLevelInc="1" postfix="d8"/> damage of the type you chose.
   atHigherLevels: >
@@ -2390,7 +2390,7 @@
   duration: 7 days
   tags: []
   description: >
-    Your touch inflicts disease. Make a melee spell attack
+    Your touch inflicts disease. Make a melee spell attack <SpellAttackModifier/>
     against a creature within your reach. On a hit, you afflict
     the creature with a disease of your choice from any of
     the ones described below.
@@ -2565,7 +2565,7 @@
     creature or object in the water and within **25 feet** of the
     vortex is pulled **10 feet** toward it. A creature can swim
     away from the vortex by making a Strength (Athletics)
-    check against your spell save DC.
+    check against <SpellSaveDC/>.
 
 
     When a creature enters the vortex for the first time on
@@ -3373,8 +3373,7 @@
 
     To discern that you are disguised, a creature can use
     its action to inspect your appearance and must succeed
-    on an Intelligence (Investigation) check against your
-    spell save DC.
+    on an Intelligence (Investigation) check against <SpellSaveDC/>.
 
 - title: Disintegrate
   level: 6
@@ -3449,7 +3448,7 @@
     charmed, frightened, or possessed by such creatures.
 
 
-    **Dismissal.** As your action, make a melee spell attack
+    **Dismissal.** As your action, make a melee spell attack <SpellAttackModifier/>
     against a celestial, an elemental, a fey, a fiend, or an
     undead you can reach. On a hit, you attempt to drive
     the creature back to its home plane. The creature must
@@ -3953,7 +3952,7 @@
   # ** down here replaced by __ to prevent handling the following text as a separate paragraph
   description: >
     __<LevelUpgrades initial="A beam" upgrades="5:2 beams;11:3 beams;17:4 beams"/>__ of crackling energy streaks toward <LevelUpgrades initial="a creature" upgrades="5:chosen creatures"/>
-    within range. Make a ranged spell attack against the
+    within range. Make a ranged spell attack <SpellAttackModifier/> against the
     target. On a hit, the target takes **1d10** **force damage**.
     The spell creates more than one beam when you reach
   levelUpgrades: >
@@ -4100,8 +4099,7 @@
     While restrained by this spell, the target takes <AtHigherLevels initial="1" eachLevelInc="1" postfix="d6"/>
     **piercing damage** at the start of each of its turns. A creature
     restrained by the vines or one that can touch the creature
-    can use its action to make a Strength check against your
-    spell save DC. On a success, the target is freed.
+    can use its action to make a Strength check against <SpellSaveDC/>. On a success, the target is freed.
   atHigherLevels: >
     If you cast this spell using a spell
     slot of **2nd level** or higher, the damage increases by **1d6**
@@ -4129,7 +4127,7 @@
     succeed on a **Strength saving throw** or be restrained
     by the entangling plants until the spell ends. A creature
     restrained by the plants can use its action to make
-    a Strength check against your spell save DC. On a
+    a Strength check against <SpellSaveDC/>. On a
     success, it frees itself.
 
 
@@ -4248,7 +4246,7 @@
 
     A creature restrained by the tentacles can use its
     action to make a Strength or Dexterity check (its choice)
-    against your spell save DC. On a success, it frees itself.
+    against <SpellSaveDC/>. On a success, it frees itself.
 
 - title: Expeditious Retreat
   level: 1
@@ -4725,7 +4723,7 @@
   tags: []
   description: >
     You hurl a mote of fire at a creature or object within
-    range. Make a ranged spell attack against the
+    range. Make a ranged spell attack <SpellAttackModifier/> against the
     target. On a hit, the target takes <LevelUpgrades initial="1d10" upgrades="5:2d10;11:3d10;17:4d10"/> **fire damage**. A
     flammable object hit by this spell ignites if it isn't being
     worn or carried.
@@ -4808,7 +4806,7 @@
 
 
     You can use your action to make a melee spell
-    attack with the fiery blade. On a hit, the target takes
+    attack <SpellAttackModifier/> with the fiery blade. On a hit, the target takes
     <AtHigherLevels initial="3d6" upgrades="4:4d6;6:5d6;8:6d6"/> **fire damage**.
 
 
@@ -5383,8 +5381,7 @@
     than **10 feet** from where you cast this spell, the glyph is
     broken, and the spell ends without being triggered.
     The glyph is nearly invisible and requires a successful
-    Intelligence (Investigation) check against your spell save
-    DC to be found.
+    Intelligence (Investigation) check against <SpellSaveDC/> to be found.
 
 
     You decide what triggers the glyph when you cast
@@ -5699,7 +5696,7 @@
   tags: []
   description: >
     A flash of light streaks toward a creature of your choice
-    within range. Make a ranged spell attack against the
+    within range. Make a ranged spell attack <SpellAttackModifier/> against the
     target. On a hit, the target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d6"/> **radiant damage**,
     and the next attack roll made against this target before
     the end of your next turn has advantage, thanks to the
@@ -5892,7 +5889,7 @@
     see through the illusion. If the difference isn’t obvious
     by touch, a creature carefully examining the illusion can
     attempt an Intelligence (Investigation) check against
-    your spell save DC to disbelieve it. A creature who
+    <SpellSaveDC/> to disbelieve it. A creature who
     discerns the illusion for what it is, sees it as a vague
     image superimposed on the terrain.
 
@@ -6519,7 +6516,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    Make a melee spell attack against a creature you can
+    Make a melee spell attack <SpellAttackModifier/> against a creature you can
     reach. On a hit, the target takes <AtHigherLevels initial="3" eachLevelInc="1" postfix="d10"/> **necrotic damage**.
   atHigherLevels: >
     When you cast this spell using a
@@ -7260,7 +7257,7 @@
     illusion, because things can pass through it. A creature
     that uses its action to examine the image can determine
     that it is an illusion with a successful Intelligence
-    (Investigation) check against your spell save DC. If a
+    (Investigation) check against <SpellSaveDC/>. If a
     creature discerns the illusion for what it is, the creature
     can see through the image, and its other sensory
     qualities become faint to the creature.
@@ -7467,7 +7464,7 @@
   description: >
     A simmering green arrow streaks toward a target
     within range and bursts in a spray of acid. Make a
-    ranged spell attack against the target. On a hit, the
+    ranged spell attack <SpellAttackModifier/> against the target. On a hit, the
     target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d4"/> **acid damage** immediately and **2d4** **acid
     damage** at the end of its next turn. On a miss, the arrow
     splashes the target with acid for half as much of the
@@ -7603,7 +7600,7 @@
     If a creature uses its action to examine the sound or
     image, the creature can determine that it is an illusion
     with a successful Intelligence (Investigation) check
-    against your spell save DC. If a creature discerns the
+    against <SpellSaveDC/>. If a creature discerns the
     illusion for what it is, the illusion becomes faint to
     the creature.
 
@@ -7977,7 +7974,7 @@
 
 
     When the sword appears, you make a melee spell
-    attack against a target of your choice within **5 feet** of the
+    attack <SpellAttackModifier/> against a target of your choice within **5 feet** of the
     sword. On a hit. the target takes **3d10** **force damage**.
 
 - title: Move Earth
@@ -8119,7 +8116,7 @@
     **30 feet** square. This ice lasts for **1 minute**. Creatures
     that were swimming on the surface of frozen water are
     trapped in the ice. A trapped creature can use an action
-    to make a Strength check against your spell save DC
+    to make a Strength check against <SpellSaveDC/>
     to break free.
 
 
@@ -8282,8 +8279,7 @@
 
 
     The target can use its action to examine the phantasm
-    with an Intelligence (Investigation) check against your
-    spell save DC. If the check succeeds, the target realizes
+    with an Intelligence (Investigation) check against <SpellSaveDC/>. If the check succeeds, the target realizes
     that the phantasm is an illusion, and the spell ends.
 
 
@@ -8518,7 +8514,7 @@
 
     You can use this spell to banish an unwilling creature
     to another plane. Choose a creature within your reach
-    and make a melee spell attack against it. On a hit, the
+    and make a melee spell attack <SpellAttackModifier/> against it. On a hit, the
     creature must make a **Charisma saving throw**. If the
     creature fails this save, it is transported to a random
     location on the plane of existence you specify. A creature
@@ -8915,7 +8911,7 @@
     You can also attack with the flame, although doing so
     ends the spell. When you cast this spell, or as an action
     on a later turn, you can hurl the flame at a creature
-    within **30 feet** of you. Make a ranged spell attack. On a
+    within **30 feet** of you. Make a ranged spell attack <SpellAttackModifier/>. On a
     hit, the target takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **fire damage**.
 
   levelUpgrades: >
@@ -8965,7 +8961,7 @@
     illusion, because things can pass through it. A creature
     that uses its action to examine the image can determine
     that it is an illusion with a successful Intelligence
-    (Investigation) check against your spell save DC. If a
+    (Investigation) check against <SpellSaveDC/>. If a
     creature discerns the illusion for what it is, the creature
     can see through the image, and any noise it makes
     sounds hollow to the creature.
@@ -9010,7 +9006,7 @@
     illusion, because things can pass through it. A creature
     that uses its action to examine the image can determine
     that it is an illusion with a successful Intelligence
-    (Investigation) check against your spell save DC. If a
+    (Investigation) check against <SpellSaveDC/>. If a
     creature discerns the illusion for what it is, the creature
     can see through the image, and any noise it makes
     sounds hollow to the creature.
@@ -9172,7 +9168,7 @@
   description: >
     A black beam of enervating energy springs from your
     finger toward a creature within range. Make a ranged
-    spell attack against the target. On a hit, the target deals
+    spell attack <SpellAttackModifier/> against the target. On a hit, the target deals
     only half damage with weapon attacks that use Strength
     until the spell ends.
 
@@ -9193,7 +9189,7 @@
   tags: []
   description: >
     A frigid beam of blue-white light streaks toward a
-    creature within range. Make a ranged spell attack
+    creature within range. Make a ranged spell attack <SpellAttackModifier/>
     against the target. On a hit, it takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **cold damage**,
     and its speed is reduced by **10 feet** until the start of
     your next turn.
@@ -9213,7 +9209,7 @@
   tags: []
   description: >
     A ray of sickening greenish energy lashes out toward
-    a creature within range. Make a ranged spell attack
+    a creature within range. Make a ranged spell attack <SpellAttackModifier/>
     against the target. On a hit, the target takes <AtHigherLevels initial="2" eachLevelInc="1" postfix="d8"/> **poison
     damage** and must make a **Constitution saving throw**.
 
@@ -9535,7 +9531,7 @@
   description: >
     You create <AtHigherLevels initial="3" eachLevelInc="1" postfix=" ray| rays"/> of fire and hurl them at targets
     within range. You can hurl them at one target or several.
-    Make a ranged spell attack for each ray. On a hit, the
+    Make a ranged spell attack <SpellAttackModifier/> for each ray. On a hit, the
     target takes **2d6** **fire damage**.
   atHigherLevels: >
     When you cast this spell using a
@@ -9690,8 +9686,7 @@
 
 
     A creature can use its action to inspect a target and
-    make an Intelligence (Investigation) check against your
-    spell save DC. If it succeeds, it becomes aware that the
+    make an Intelligence (Investigation) check against <SpellSaveDC/>. If it succeeds, it becomes aware that the
     target is disguised.
 
 - title: Sending
@@ -9919,7 +9914,7 @@
   tags: []
   description: >
     Lightning springs from your hand to deliver a shock to
-    a creature you try to touch. Make a melee spell attack
+    a creature you try to touch. Make a melee spell attack <SpellAttackModifier/>
     against the target. You have advantage on the attack roll
     if the target is wearing arm or made of metal. On a hit,
     the target takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **lightning damage**, and it can’t take
@@ -9980,7 +9975,7 @@
     illusion, because things can pass through it. A creature
     that uses its action to examine the image can determine
     that it is an illusion with a successful Intelligence
-    (Investigation) check against your spell save DC. If a
+    (Investigation) check against <SpellSaveDC/>. If a
     creature discerns the illusion for what it is, the creature
     can see through the image.
 
@@ -10096,7 +10091,7 @@
 
     If a creature is concentrating in the spell’s area, the
     creature must make a successful **Constitution saving
-    throw** against your spell save DC or lose concentration.
+    throw** against <SpellSaveDC/> or lose concentration.
 
 - title: Slow
   level: 3
@@ -10287,7 +10282,7 @@
     The transformation of the ground is camouflaged to
     look natural. Any creature that can’t see the area at the
     time the spell is cast must make a Wisdom (Perception)
-    check against your spell save DC to recognize the
+    check against <SpellSaveDC/> to recognize the
     terrain as hazardous before entering it.
 
 - title: Spirit Guardians
@@ -10335,7 +10330,7 @@
     You create a floating, spectral weapon within range that
     lasts for the duration or until you cast this spell again.
     When you cast the spell, you can make a melee spell
-    attack against a creature within **5 feet** of the weapon. On
+    attack <SpellAttackModifier/> against a creature within **5 feet** of the weapon. On
     a hit, the target takes **force damage** equal to <AtHigherLevels initial="1d8" upgrades="4:2d8;6:3d8;8:4d8"/>** + **<SpellcastingAbilityModifier/>.
 
 
@@ -10655,8 +10650,7 @@
 
 
     The glyph is nearly invisible, requiring an Intelligence
-    (Investigation) check against your spell save
-    DC to find it.
+    (Investigation) check against <SpellSaveDC/> to find it.
 
 
     You decide what triggers the glyph when you cast the
@@ -11081,7 +11075,7 @@
   description: >
     You create a long, vine-like whip covered in thorns that
     lashes out at your command toward a creature in range.
-    Make a melee spell attack against the target. If the
+    Make a melee spell attack <SpellAttackModifier/> against the target. If the
     attack hits, the creature takes **<LevelUpgrades initial="1d6" upgrades="5:2d6;11:3d6;17:4d6"/>** **piercing damage**, and
     if the creature is Large or smaller, you pull the creature
     up to **10 feet** closer to you.
@@ -11409,7 +11403,7 @@
     A creature caught in the wall can move by swimming.
     Because of the force of the wave, though, the creature
     must make a successful Strength (Athletics) check
-    against your spell save DC in order to move at all. If it
+    against <SpellSaveDC/> in order to move at all. If it
     fails the check, it can’t move. A creature that moves out
     of the area falls to the ground.
 
@@ -11461,7 +11455,7 @@
   description: >
     The touch of your shadow-wreathed hand can siphon life
     force from others to heal your wounds. Make a melee
-    spell attack against a creature within your reach. On
+    spell attack <SpellAttackModifier/> against a creature within your reach. On
     a hit, the target takes <AtHigherLevels initial="3" eachLevelInc="1" postfix="d6"/> **necrotic damage**, and you
     regain hit points equal to half the amount of **necrotic
     damage** dealt. Until the spell ends, you can make the
@@ -11803,7 +11797,7 @@
     saving throw**. On a failed save, the creature is restrained
     as long as it remains in the webs or until it breaks free.
     A creature restrained by the webs can use its action to
-    make a Strength check against your spell save DC. If it
+    make a Strength check against <SpellSaveDC/>. If it
     succeeds, it is no longer restrained.
 
 
@@ -12002,7 +11996,7 @@
     A beam of crackling, blue energy lances out toward
     a creature within range, forming a sustained arc of
     lightning between you and the target. Make a ranged
-    spell attack against that creature. On a hit, the target
+    spell attack <SpellAttackModifier/> against that creature. On a hit, the target
     takes <AtHigherLevels initial="1" eachLevelInc="1" postfix="d12"/> **lightning damage**, and on each of your turns
     for the duration, you can use your action to deal **1d12**
     **lightning damage** to the target automatically. The spell
@@ -12055,8 +12049,7 @@
     **1d6** **psychic damage**. Additionally, if the target is a
     creature, it must make a **Wisdom saving throw** or be
     frightened of you until the spell ends. As an action, the
-    creature can make a Wisdom check against your spell
-    save DC to steel its resolve and end this spell.
+    creature can make a Wisdom check against <SpellSaveDC/> to steel its resolve and end this spell.
 
 - title: Zone of Truth
   level: 2

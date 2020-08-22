@@ -5,6 +5,8 @@ import LevelUpgrades from './LevelUpgrades';
 import SpellcastingAbility from './SpellcastingAbility';
 import SpellcastingAbilityModifier from './SpellcastingAbilityModifier';
 import AtHigherLevels from './AtHigherLevels';
+import SpellSaveDC from './SpellSaveDC';
+import SpellAttackModifier from './SpellAttackModifier';
 
 export default function Markdown(props) {
   const { children, spellLevel, spellTitle } = props;
@@ -25,6 +27,12 @@ export default function Markdown(props) {
           },
           SpellcastingAbility: {
             component: SpellcastingAbility,
+          },
+          SpellSaveDC: {
+            component: SpellSaveDC,
+          },
+          SpellAttackModifier: {
+            component: SpellAttackModifier,
           },
         },
       } }
