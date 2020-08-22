@@ -33,4 +33,8 @@
   color: var(--color-font-secondary);
   font-size: 0.9em;
   line-height: 1.2em;
+
+  strong {
+    font-weight: normal;
+  }
 }
