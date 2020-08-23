@@ -1,11 +1,9 @@
-import React, { useMemo, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import groupBy from 'lodash/groupBy';
 import sortBy from 'lodash/sortBy';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import {
-  filtersSlice,
   getAvailableSpells,
   getAllActiveSpells,
   getKnownSpellsCount,
@@ -19,11 +17,9 @@ import styles from './Spells.module.scss'
 function Spells(props) {
   const {
     levelFilter,
-    selectLevel,
     availableSpells,
     activeFilter,
     allActiveSpells,
-    haveSpellsCount,
   } = props;
 
   // Available spells grouped by level
@@ -57,20 +53,6 @@ function Spells(props) {
     }
   }, [levels, activeFilter, groupedActiveSpells]);
 
-  useEffect(() => {
-    // Turn off level filter if we don't have any spells for this level
-    if (levelFilter && !levels.includes(levelFilter)) {
-      selectLevel(null);
-    }
-  }, [levels, levelFilter, selectLevel]);
-
-  useEffect(() => {
-    // Turn off active filter if we don't able to mark spells as active
-    if (activeFilter && !haveSpellsCount) {
-      selectLevel(null);
-    }
-  }, [haveSpellsCount, activeFilter, selectLevel]);
-
   const spellsList = useMemo(() => {
     if (levelFilter !== null) {
       if (!groupedSpells[levelFilter]) {
@@ -97,7 +79,7 @@ function Spells(props) {
     <>
       <div className={ styles.header }>
         <FiltersBlock/>
-        <LevelFilterSelector levels={ levels }/>
+        <LevelFilterSelector/>
       </div>
       { spellsList }
     </>
@@ -111,6 +93,5 @@ const mapStateToProps = (state) => ({
   allActiveSpells: getAllActiveSpells(state),
   haveSpellsCount: Boolean(getKnownSpellsCount(state)),
 });
-const mapDispatchToProps = (dispatch) => bindActionCreators({ selectLevel: filtersSlice.actions.selectLevel }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Spells);
+export default connect(mapStateToProps)(Spells);

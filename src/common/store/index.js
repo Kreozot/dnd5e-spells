@@ -9,6 +9,8 @@ import classRestrictionsData from 'content/classRestrictions.yaml';
 import chosenSpellsSlice from './chosenSpellsSlice';
 import filtersSlice from './filtersSlice';
 import spellsLevelsSlice from './spellsLevelsSlice';
+import uniqBy from 'lodash/uniqBy';
+import sortBy from 'lodash/sortBy';
 
 const persistConfig = {
   key: 'root',
@@ -110,6 +112,17 @@ export const getAvailableSpells = createSelector(
       .filter((spell) => availableSpellList.some(
         (title) => title.toLowerCase() === spell.title.toLowerCase()
       ));
+  }
+);
+
+// Get a sorted list of available spell levels for current class (including additional options) and level
+export const getAvailableSpellLevels = createSelector(
+  getAvailableSpells,
+  (availableSpells) => {
+    const availableLevels = uniqBy(availableSpells, 'level').map(({ level }) => level);
+    return sortBy(availableLevels, (level) => {
+      return level === 'cantrip' ? 0 : level;
+    });
   }
 );
 
