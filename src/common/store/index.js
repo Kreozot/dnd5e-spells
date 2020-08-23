@@ -151,12 +151,10 @@ export const getKnownSpellsCount = createSelector(
     if (currentLevelClassRestrictions.knownSpells) {
       return currentLevelClassRestrictions.knownSpells;
     }
-    switch (classFilter) {
-      case 'paladin':
-        return Math.max(1, Math.floor(spellcastingAbilityModifier + currentLevel / 2));
-      default:
-        return Math.max(1, spellcastingAbilityModifier + currentLevel);
+    if (classFilter === 'paladin') {
+      return Math.max(1, Math.floor(spellcastingAbilityModifier + currentLevel / 2));
     }
+    return Math.max(1, spellcastingAbilityModifier + currentLevel);
   }
 );
 

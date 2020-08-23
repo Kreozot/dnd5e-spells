@@ -2,8 +2,8 @@ import { formatText } from 'common/format';
 import data from 'content/spells.yaml';
 import { getSpellId } from 'common/format';
 
-function formatSpells(data) {
-  return data.map((spell) => {
+function formatSpells(spells) {
+  return spells.map((spell) => {
     spell.description = formatText(spell.description) + '\n';
     if (spell.atHigherLevels) {
       spell.atHigherLevels = formatText(spell.atHigherLevels) + '\n';

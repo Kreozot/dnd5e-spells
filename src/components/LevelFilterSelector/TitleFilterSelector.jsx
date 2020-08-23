@@ -20,23 +20,23 @@ function TitleFilterSelector(props) {
     setTitleFilter,
   } = props;
 
-  const [value, setValue] = useState(titleFilter);
+  const [fieldValue, setFieldValue] = useState(titleFilter);
   const setTitleFilterDebounced = useCallback(debounce(setTitleFilter, 500), [setTitleFilter]);
 
   const handleChange = useCallback(({ target: { value } }) => {
-    setValue(value.toLowerCase());
+    setFieldValue(value.toLowerCase());
     setTitleFilterDebounced(value.toLowerCase());
-  }, [setValue, setTitleFilterDebounced]);
+  }, [setFieldValue, setTitleFilterDebounced]);
 
   useEffect(() => {
-    setValue(titleFilter);
+    setFieldValue(titleFilter);
   }, [titleFilter]);
 
   return (
     <FormControl className={ styles.container }>
       <InputLabel id="title-filter-label">Search</InputLabel>
       <Input
-        value={ value }
+        value={ fieldValue }
         onChange={ handleChange }
         className={ styles.input }
         endAdornment={

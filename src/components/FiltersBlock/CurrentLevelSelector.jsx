@@ -14,13 +14,13 @@ function CurrentLevelSelector(props) {
     setCurrentLevel,
   } = props;
 
-  const [value, setValue] = useState(currentLevel);
+  const [fieldValue, setFieldValue] = useState(currentLevel);
   const setCurrentLevelDebounced = useCallback(debounce(setCurrentLevel, 500), [setCurrentLevel]);
 
   const handleChange = useCallback(({ target: { value } }) => {
     const intValue = parseInt(value);
     const newValue = isNaN(intValue) || (intValue < 1) ? '' : intValue;
-    setValue(newValue);
+    setFieldValue(newValue);
     setCurrentLevelDebounced(newValue);
   }, [setCurrentLevelDebounced]);
 
@@ -29,7 +29,7 @@ function CurrentLevelSelector(props) {
       <TextField
         label="Current level"
         type="number"
-        value={ value }
+        value={ fieldValue }
         onChange={ handleChange }
         className={ styles.currentLevelInput }
       />

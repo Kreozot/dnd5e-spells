@@ -2,7 +2,7 @@ import React from 'react';
 
 import AtHigherLevels from 'components/Markdown/AtHigherLevels';
 
-export default function DurationCell(props) {
+export default function TextCell(props) {
   const { value, row } = props;
 
   if (typeof value === 'object') {
