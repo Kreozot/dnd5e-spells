@@ -1,12 +1,11 @@
 import React, { useMemo } from 'react';
 import groupBy from 'lodash/groupBy';
-import sortBy from 'lodash/sortBy';
 import { connect } from 'react-redux';
 
 import {
   getAvailableSpells,
   getAllActiveSpells,
-  getKnownSpellsCount,
+  getAvailableSpellLevels,
 } from 'common/store';
 import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
@@ -16,42 +15,32 @@ import styles from './Spells.module.scss'
 
 function Spells(props) {
   const {
+    levels,
     levelFilter,
     availableSpells,
     activeFilter,
     allActiveSpells,
   } = props;
 
-  // Available spells grouped by level
+  // List of spells displayed on current spell list page
+  const displayedSpells = useMemo(() => {
+    if (activeFilter) {
+      return availableSpells.filter(({ title }) =>
+        allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
+      );
+    }
+    return availableSpells;
+  }, [activeFilter, allActiveSpells, availableSpells]);
+
+  // Displayed spells grouped by level
   const groupedSpells = useMemo(() => {
-    return groupBy(availableSpells, 'level');
-  }, [availableSpells]);
-
-  // Active spells grouped by level
-  const groupedActiveSpells = useMemo(() => {
-    const spells = availableSpells.filter(({ title }) =>
-      allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
-    );
-    return groupBy(spells, 'level');
-  }, [allActiveSpells, availableSpells]);
-
-  // List of available spell levels
-  const levels = useMemo(() => {
-    return sortBy(Object.keys(groupedSpells), (level) => {
-      return level === 'cantrip' ? 0 : level;
-    });
-  }, [groupedSpells]);
+    return groupBy(displayedSpells, 'level');
+  }, [displayedSpells]);
 
   // List of levels displayed on current spell list page
   const displayedLevels = useMemo(() => {
-    if (activeFilter) {
-      return sortBy(Object.keys(groupedActiveSpells), (level) => {
-        return level === 'cantrip' ? 0 : level;
-      });
-    } else {
-      return levels;
-    }
-  }, [levels, activeFilter, groupedActiveSpells]);
+    return levels.filter((level) => displayedSpells.some((spell) => spell.level === level));
+  }, [levels, displayedSpells]);
 
   const spellsList = useMemo(() => {
     if (levelFilter !== null) {
@@ -70,10 +59,10 @@ function Spells(props) {
         <h2 className={ styles.levelHeader }>
           { level === 'cantrip' ? 'Cantrips' : `Level ${ level }` }
         </h2>
-        <SpellsList data={ activeFilter ? groupedActiveSpells[level] : groupedSpells[level] }/>
+        <SpellsList data={ groupedSpells[level] }/>
       </div>
     ));
-  }, [displayedLevels, groupedSpells, levelFilter, activeFilter, groupedActiveSpells]);
+  }, [displayedLevels, groupedSpells, levelFilter]);
 
   return (
     <>
@@ -87,11 +76,11 @@ function Spells(props) {
 }
 
 const mapStateToProps = (state) => ({
+  levels: getAvailableSpellLevels(state),
   levelFilter: state.filters.level,
   activeFilter: state.filters.activeFilter,
   availableSpells: getAvailableSpells(state),
   allActiveSpells: getAllActiveSpells(state),
-  haveSpellsCount: Boolean(getKnownSpellsCount(state)),
 });
 
 export default connect(mapStateToProps)(Spells);
