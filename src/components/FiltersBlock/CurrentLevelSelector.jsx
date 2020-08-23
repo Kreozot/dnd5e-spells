@@ -1,7 +1,8 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import debounce from 'lodash/debounce';
 
 import { filtersSlice } from 'common/store';
 
@@ -13,17 +14,22 @@ function CurrentLevelSelector(props) {
     setCurrentLevel,
   } = props;
 
+  const [value, setValue] = useState(currentLevel);
+  const setCurrentLevelDebounced = useCallback(debounce(setCurrentLevel, 500), [setCurrentLevel]);
+
   const handleChange = useCallback(({ target: { value } }) => {
-    let intValue = parseInt(value);
-    setCurrentLevel(isNaN(intValue) || (intValue < 1) ? '' : intValue);
-  }, [setCurrentLevel]);
+    const intValue = parseInt(value);
+    const newValue = isNaN(intValue) || (intValue < 1) ? '' : intValue;
+    setValue(newValue);
+    setCurrentLevelDebounced(newValue);
+  }, [setCurrentLevelDebounced]);
 
   return (
     <div className={ styles.field }>
       <TextField
         label="Current level"
         type="number"
-        value={ currentLevel }
+        value={ value }
         onChange={ handleChange }
         className={ styles.currentLevelInput }
       />
