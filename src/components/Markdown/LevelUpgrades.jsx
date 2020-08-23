@@ -35,7 +35,7 @@ function LevelUpgrades(props) {
   }, [initial, upgradesMap]);
 
   return (
-    <Tooltip text={ tooltipText }>
+    <Tooltip text={ tooltipText } dataTag="LevelUpgrades">
       <strong>{ currentValue }</strong>
     </Tooltip>
   );

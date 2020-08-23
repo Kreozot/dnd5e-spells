@@ -1,5 +1,6 @@
 import { formatText } from 'common/format';
 import data from 'content/spells.yaml';
+import { getSpellRowId } from 'common/format';
 
 function formatSpells(data) {
   return data.map((spell) => {
@@ -19,6 +20,8 @@ function formatSpells(data) {
     if (typeof spell.castingTime.hint === 'string') {
       spell.castingTime.hint = formatText(spell.castingTime.hint);
     }
+
+    spell.id = getSpellRowId(spell.title);
 
     return spell;
   });

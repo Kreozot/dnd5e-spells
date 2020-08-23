@@ -17,6 +17,7 @@ export default function TableRow(props) {
       { ...row.getRowProps() }
       onClick={ handleClick }
       className={ styles.row }
+      id={ `spell_row__${ row.original.id }` }
     >
       { row.cells.map((cell) => {
         return (
