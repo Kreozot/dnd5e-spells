@@ -26,10 +26,12 @@ function Spells(props) {
     haveSpellsCount,
   } = props;
 
+  // Available spells grouped by level
   const groupedSpells = useMemo(() => {
     return groupBy(availableSpells, 'level');
   }, [availableSpells]);
 
+  // Active spells grouped by level
   const groupedActiveSpells = useMemo(() => {
     const spells = availableSpells.filter(({ title }) =>
       allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
@@ -37,13 +39,15 @@ function Spells(props) {
     return groupBy(spells, 'level');
   }, [allActiveSpells, availableSpells]);
 
+  // List of available spell levels
   const levels = useMemo(() => {
     return sortBy(Object.keys(groupedSpells), (level) => {
       return level === 'cantrip' ? 0 : level;
     });
   }, [groupedSpells]);
 
-  const activeLevels = useMemo(() => {
+  // List of levels displayed on current spell list page
+  const displayedLevels = useMemo(() => {
     if (activeFilter) {
       return sortBy(Object.keys(groupedActiveSpells), (level) => {
         return level === 'cantrip' ? 0 : level;
@@ -54,12 +58,14 @@ function Spells(props) {
   }, [levels, activeFilter, groupedActiveSpells]);
 
   useEffect(() => {
+    // Turn off level filter if we don't have any spells for this level
     if (levelFilter && !levels.includes(levelFilter)) {
       selectLevel(null);
     }
   }, [levels, levelFilter, selectLevel]);
 
   useEffect(() => {
+    // Turn off active filter if we don't able to mark spells as active
     if (activeFilter && !haveSpellsCount) {
       selectLevel(null);
     }
@@ -77,7 +83,7 @@ function Spells(props) {
       );
     }
 
-    return activeLevels.map((level) => (
+    return displayedLevels.map((level) => (
       <div key={ level } className={ styles.container }>
         <h2 className={ styles.levelHeader }>
           { level === 'cantrip' ? 'Cantrips' : `Level ${ level }` }
@@ -85,7 +91,7 @@ function Spells(props) {
         <SpellsList data={ activeFilter ? groupedActiveSpells[level] : groupedSpells[level] }/>
       </div>
     ));
-  }, [activeLevels, groupedSpells, levelFilter, activeFilter, groupedActiveSpells]);
+  }, [displayedLevels, groupedSpells, levelFilter, activeFilter, groupedActiveSpells]);
 
   return (
     <>
