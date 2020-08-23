@@ -5,6 +5,7 @@ export default createSlice({
   initialState: {
     level: null,
     activeFilter: false,
+    titleFilter: '',
     currentLevel: '',
     class: '',
     classAdditional: '',
@@ -12,10 +13,13 @@ export default createSlice({
   },
   reducers: {
     selectLevel(state, action) {
-      return { ...state, level: action.payload, activeFilter: false };
+      return { ...state, level: action.payload, activeFilter: false, titleFilter: '' };
+    },
+    setTitleFilter(state, action) {
+      return { ...state, titleFilter: action.payload.toLowerCase(), level: null, activeFilter: false };
     },
     setActiveFilterOn(state) {
-      return { ...state, activeFilter: true, level: null };
+      return { ...state, activeFilter: true, level: null, titleFilter: '' };
     },
     setCurrentLevel(state, action) {
       return { ...state, currentLevel: action.payload };

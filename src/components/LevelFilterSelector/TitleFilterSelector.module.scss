@@ -1,0 +1,19 @@
+.icon {
+  width: 1em;
+  color: var(--color-font-secondary);
+}
+
+.input {
+  width: 80px;
+  transition: width 0.5s;
+
+  &:global(.Mui-focused) {
+    width: 160px;
+  }
+
+  &:hover, &:global(.Mui-focused) {
+    .icon {
+      color: var(--color-font-primary);
+    }
+  }
+}

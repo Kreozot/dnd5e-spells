@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { getKnownSpellsCount, getAvailableSpellLevels, filtersSlice } from 'common/store';
 
 import LevelFilterButton from './LevelFilterButton';
+import TitleFilterSelector from './TitleFilterSelector';
 import { bindActionCreators } from '@reduxjs/toolkit';
 
 function LevelFilterSelector(props) {
@@ -40,6 +41,7 @@ function LevelFilterSelector(props) {
       { levels.map((level) => (
         <LevelFilterButton level={ level } key={ level }/>
       )) }
+      <TitleFilterSelector/>
     </ButtonGroup>
   );
 }

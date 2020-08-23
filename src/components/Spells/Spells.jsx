@@ -19,6 +19,7 @@ function Spells(props) {
     levelFilter,
     availableSpells,
     activeFilter,
+    titleFilter,
     allActiveSpells,
   } = props;
 
@@ -29,8 +30,11 @@ function Spells(props) {
         allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
       );
     }
+    if (titleFilter) {
+      return availableSpells.filter(({ title }) => title.toLowerCase().includes(titleFilter));
+    }
     return availableSpells;
-  }, [activeFilter, allActiveSpells, availableSpells]);
+  }, [activeFilter, allActiveSpells, availableSpells, titleFilter]);
 
   // Displayed spells grouped by level
   const groupedSpells = useMemo(() => {
@@ -79,6 +83,7 @@ const mapStateToProps = (state) => ({
   levels: getAvailableSpellLevels(state),
   levelFilter: state.filters.level,
   activeFilter: state.filters.activeFilter,
+  titleFilter: state.filters.titleFilter,
   availableSpells: getAvailableSpells(state),
   allActiveSpells: getAllActiveSpells(state),
 });
