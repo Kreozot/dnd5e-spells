@@ -33,7 +33,7 @@ function TitleFilterSelector(props) {
   }, [titleFilter]);
 
   return (
-    <FormControl>
+    <FormControl className={ styles.container }>
       <InputLabel id="title-filter-label">Search</InputLabel>
       <Input
         value={ value }
