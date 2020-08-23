@@ -3030,7 +3030,7 @@
     see in the dark. For the duration, that creature has
     darkvision out to a range of **60 feet**.
 
-- title: D
+- title: Daylight
   level: 3
   school: Evocation
   castingTime: 1 action
@@ -8226,7 +8226,7 @@
     means. A creature that receives this bonus leaves
     behind no tracks or other traces of its passage.
 
-- title: P
+- title: Passwall
   level: 5
   school: Transmutation
   castingTime: 1 action

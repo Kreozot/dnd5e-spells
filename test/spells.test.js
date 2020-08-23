@@ -64,6 +64,12 @@ test('All class spells found in spells list', async t => {
       } else {
         for (const additionalKey in classSpells[classKey][key]) {
           const spells = classSpells[classKey][key][additionalKey];
+          spells.forEach((title) => {
+            const found = spellsList.some(
+              (spell) => title.toLowerCase() === spell.title.toLowerCase()
+            );
+            t.is(found, true, `Spell "${ title }" of ${ classKey } (${ key }: ${ additionalKey }) not found in spells list!`);
+          })
         }
       }
     }
