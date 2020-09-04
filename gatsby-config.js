@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `D&D 5e Spell List`,
+    title: `D&D 5e Interactive Spell List`,
     description: `Interactive Spell List for "Dungeons & Dragons 5th edition" game`,
     author: `Sergey Sharov`,
   },
