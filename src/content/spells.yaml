@@ -1999,7 +1999,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    This spell assaults and twists creatures' minds,
+    This spell assaults and twists creatures’ minds,
     spawning delusions and provoking uncontrolled action.
     Each creature in a <AtHigherLevels initial="10" eachLevelInc="5" postfix="-foot"/>-radius sphere centered on
     a point you choose within range must succeed on a
@@ -2269,7 +2269,7 @@
     but otherwise take no actions.
 
 
-    The DM has the creatures' statistics.
+    The DM has the creatures’ statistics.
   atHigherLevels: >
     When you cast this spell using
     certain higher-level spell slots, you choose one of the
