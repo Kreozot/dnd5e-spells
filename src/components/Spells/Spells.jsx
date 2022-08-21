@@ -11,7 +11,7 @@ import SpellsList from 'components/SpellsList';
 import LevelFilterSelector from 'components/LevelFilterSelector';
 import FiltersBlock from 'components/FiltersBlock';
 
-import styles from './Spells.module.scss'
+import * as styles from './Spells.module.scss'
 
 function Spells(props) {
   const {
@@ -53,7 +53,7 @@ function Spells(props) {
       }
       return (
         <div className={ styles.container }>
-          <SpellsList data={ groupedSpells[levelFilter] }/>
+          <SpellsList data={ groupedSpells[levelFilter] } />
         </div>
       );
     }
@@ -61,9 +61,9 @@ function Spells(props) {
     return displayedLevels.map((level) => (
       <div key={ level } className={ styles.container }>
         <h2 className={ styles.levelHeader }>
-          { level === 'cantrip' ? 'Cantrips' : `Level ${ level }` }
+          { level === 'cantrip' ? 'Cantrips' : `Level ${level}` }
         </h2>
-        <SpellsList data={ groupedSpells[level] }/>
+        <SpellsList data={ groupedSpells[level] } />
       </div>
     ));
   }, [displayedLevels, groupedSpells, levelFilter]);
@@ -71,8 +71,8 @@ function Spells(props) {
   return (
     <>
       <div className={ styles.header }>
-        <FiltersBlock/>
-        <LevelFilterSelector/>
+        <FiltersBlock />
+        <LevelFilterSelector />
       </div>
       { spellsList }
     </>

@@ -6,7 +6,7 @@ import IconCell from './IconCell';
 import DiamondIcon from 'images/icon-diamond.svg';
 import VoiceIcon from 'images/icon-voice.svg';
 import HandIcon from 'images/icon-hand.svg';
-import styles from './ComponentsCell.module.scss';
+import * as styles from './ComponentsCell.module.scss';
 
 export default function ComponentsCell(props) {
   const { value: components } = props;
@@ -47,12 +47,12 @@ export default function ComponentsCell(props) {
     <div className={ styles.container }>
       <span>
         { Boolean(components.V) &&
-          <IconCell title="Verbal component"><VoiceIcon/></IconCell>
+          <IconCell title="Verbal component"><VoiceIcon /></IconCell>
         }
       </span>
       <span>
         { Boolean(components.S) &&
-          <IconCell title="Somatic component"><HandIcon/></IconCell>
+          <IconCell title="Somatic component"><HandIcon /></IconCell>
         }
       </span>
       <span>
@@ -60,7 +60,7 @@ export default function ComponentsCell(props) {
           <IconCell>
             <Tooltip text={ materialHtml }>
               <div className={ components.materialConsumed || components.materialSpecial ? styles.special : '' }>
-                <DiamondIcon/>
+                <DiamondIcon />
               </div>
             </Tooltip>
           </IconCell>

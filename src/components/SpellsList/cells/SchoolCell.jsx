@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { getClassRestrictions } from 'common/store';
 
-import styles from './SchoolCell.module.scss';
+import * as styles from './SchoolCell.module.scss';
 
 function SchoolCell(props) {
   const { value, classRestrictions } = props;
@@ -24,6 +24,6 @@ function SchoolCell(props) {
 
 const mapStateToProps = (state) => ({
   classRestrictions: getClassRestrictions(state),
- });
+});
 
 export default connect(mapStateToProps)(SchoolCell);

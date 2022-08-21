@@ -11,7 +11,7 @@ import {
   filtersSlice,
 } from 'common/store';
 
-import styles from './TitleFilterSelector.module.scss';
+import * as styles from './TitleFilterSelector.module.scss';
 import FilterIcon from 'images/icon-filter.svg';
 
 function TitleFilterSelector(props) {
@@ -42,7 +42,7 @@ function TitleFilterSelector(props) {
         endAdornment={
           <InputAdornment position="end">
             <div className={ styles.icon }>
-              <FilterIcon/>
+              <FilterIcon />
             </div>
           </InputAdornment>
         }

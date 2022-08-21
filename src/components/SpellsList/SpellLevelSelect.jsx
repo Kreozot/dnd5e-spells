@@ -3,7 +3,7 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 import SpellLevelSelectButton from './SpellLevelSelectButton';
 
-import styles from './SpellLevelSelect.module.scss';
+import * as styles from './SpellLevelSelect.module.scss';
 
 export default function SpellLevelSelect(props) {
   const {
@@ -23,7 +23,7 @@ export default function SpellLevelSelect(props) {
       Higher level spell slot:
       <ButtonGroup color="primary" size="small" className={ styles.group }>
         { levels.map((level) => (
-          <SpellLevelSelectButton level={ level } item={ item } key={ level }/>
+          <SpellLevelSelectButton level={ level } item={ item } key={ level } />
         )) }
       </ButtonGroup>
     </div>

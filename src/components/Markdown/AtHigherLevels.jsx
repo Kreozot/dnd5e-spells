@@ -5,7 +5,7 @@ import Tooltip from 'components/Tooltip';
 import { declension } from 'common/format';
 import { getCurrentValue } from 'common/higherLevel';
 
-import styles from './AtHigherLevels.module.scss';
+import * as styles from './AtHigherLevels.module.scss';
 
 // Translates <AtHigherLevels initial="5" eachLevelInc="1" postfix="d8"/> into value relevant for spell slot level
 // Translates <AtHigherLevels initial="1 beast" upgrades="5:2 beasts;7:3 beasts;9:4 beasts"/> into value relevant for spell slot level

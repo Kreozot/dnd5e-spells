@@ -12,7 +12,7 @@ import {
   filtersSlice,
 } from 'common/store';
 
-import styles from './FiltersBlock.module.scss';
+import * as styles from './FiltersBlock.module.scss';
 
 function SpellcastingAbilityValueSelector(props) {
   const {

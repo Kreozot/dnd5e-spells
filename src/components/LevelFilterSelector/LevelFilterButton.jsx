@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { filtersSlice, getCurrentLevelClassRestrictions } from 'common/store';
 import Tooltip from 'components/Tooltip';
 
-import styles from './LevelFilterButton.module.scss';
+import * as styles from './LevelFilterButton.module.scss';
 
 function LevelFilterButton(props) {
   const {

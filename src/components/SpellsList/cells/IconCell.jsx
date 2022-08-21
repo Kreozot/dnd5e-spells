@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './IconCell.module.scss';
+import * as styles from './IconCell.module.scss';
 
 export default function IconCell(props) {
   const { title, children } = props;

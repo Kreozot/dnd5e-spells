@@ -3,7 +3,7 @@ import React from 'react';
 import Markdown from 'components/Markdown';
 import SpellLevelSelect from './SpellLevelSelect';
 
-import styles from './Description.module.scss';
+import * as styles from './Description.module.scss';
 
 export default function Description(props) {
   const { item } = props;
@@ -11,7 +11,7 @@ export default function Description(props) {
   return (
     <div className={ styles.description }>
       { Boolean(item.atHigherLevels) &&
-        <SpellLevelSelect item={ item }/>
+        <SpellLevelSelect item={ item } />
       }
       <Markdown spellLevel={ item.level } spellTitle={ item.title }>{ item.description }</Markdown>
       { Boolean(item.atHigherLevels) &&

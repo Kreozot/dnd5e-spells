@@ -1,5 +1,5 @@
 import React from 'react';
-import Input  from '@material-ui/core/Input';
+import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import { connect } from 'react-redux';
@@ -8,7 +8,7 @@ import {
   getSpellAttackModifier,
 } from 'common/store';
 
-import styles from './FiltersBlock.module.scss';
+import * as styles from './FiltersBlock.module.scss';
 
 function SpellAttackModifier(props) {
   const {

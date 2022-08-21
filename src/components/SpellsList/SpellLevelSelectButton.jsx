@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import { spellsLevelsSlice, isSpellLevelSelected } from 'common/store';
 
-import styles from './SpellLevelSelect.module.scss';
+import * as styles from './SpellLevelSelect.module.scss';
 
 function SpellLevelSelectButton(props) {
   const {

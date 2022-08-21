@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 
 import { filtersSlice, getClassAdditionalOptions, getClassAdditionalKey } from 'common/store';
 
-import styles from './FiltersBlock.module.scss';
+import * as styles from './FiltersBlock.module.scss';
 
 function ClassAdditionalSelector(props) {
   const {

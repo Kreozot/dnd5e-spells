@@ -2,7 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 
 import Description from './Description';
 
-import styles from './TableRow.module.scss';
+import * as styles from './TableRow.module.scss';
 
 export default function TableRow(props) {
   const { row, visibleColumns } = props;
@@ -22,14 +22,14 @@ export default function TableRow(props) {
         return (
           <td
             { ...cell.getCellProps() }
-            className={ `${ row.isExpanded ? styles.cellExpanded : styles.cell } ${ cell.column.id === 'isActive' ? styles.checkboxCell : '' }` }
+            className={ `${row.isExpanded ? styles.cellExpanded : styles.cell} ${cell.column.id === 'isActive' ? styles.checkboxCell : ''}` }
           >
             { cell.render('Cell') }
           </td>
         );
       }) }
     </tr>
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   ), [row, row.isExpanded, handleClick]);
 
   const descriptionRow = useMemo(() => {
@@ -39,7 +39,7 @@ export default function TableRow(props) {
     return (
       <tr>
         <td colSpan={ visibleColumns.length } className={ styles.descriptionCell }>
-          <Description item={ row.original }/>
+          <Description item={ row.original } />
         </td>
       </tr>
     )

@@ -13,7 +13,7 @@ import SpellChoose from './SpellChoose';
 import { getKnownSpellsCount } from 'common/store';
 
 import RitualIcon from 'images/icon-ritual.svg';
-import styles from './SpellsList.module.scss';
+import * as styles from './SpellsList.module.scss';
 
 function SpellsList(props) {
   const { data, haveSpellsCount } = props;
@@ -42,7 +42,7 @@ function SpellsList(props) {
       accessor: 'ritual',
       Cell: ({ value }) => (
         value
-          ? <IconCell title="Ritual"><RitualIcon/></IconCell>
+          ? <IconCell title="Ritual"><RitualIcon /></IconCell>
           : null
       ),
     },

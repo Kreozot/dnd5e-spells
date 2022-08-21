@@ -9,19 +9,19 @@ import KnownCantripsCount from './KnownCantripsCount';
 import SpellSaveDC from './SpellSaveDC';
 import SpellAttackModifier from './SpellAttackModifier';
 
-import styles from './FiltersBlock.module.scss'
+import * as styles from './FiltersBlock.module.scss'
 
 function FiltersBlock() {
   return (
     <div className={ styles.container }>
-      <ClassFilterSelector/>
-      <ClassAdditionalSelector/>
-      <CurrentLevelSelector/>
-      <SpellcastingAbilityValueSelector/>
-      <KnownCantripsCount/>
-      <KnownSpellsCount/>
-      <SpellSaveDC/>
-      <SpellAttackModifier/>
+      <ClassFilterSelector />
+      <ClassAdditionalSelector />
+      <CurrentLevelSelector />
+      <SpellcastingAbilityValueSelector />
+      <KnownCantripsCount />
+      <KnownSpellsCount />
+      <SpellSaveDC />
+      <SpellAttackModifier />
     </div>
   );
 }
