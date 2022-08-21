@@ -41,7 +41,7 @@
     "gatsby-plugin-sharp": "^4.21.0",
     "gatsby-source-filesystem": "^4.21.1",
     "gatsby-transformer-sharp": "^4.21.0",
-    "husky": "^4.2.5",
+    "husky": "^4.3.8",
     "lint-staged": "^10.2.11",
     "lodash": "^4.17.19",
     "markdown-to-jsx": "^6.11.4",
