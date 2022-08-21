@@ -43,7 +43,7 @@
     "gatsby-transformer-sharp": "^4.21.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "markdown-to-jsx": "^6.11.4",
     "sass": "^1.54.5",
     "prop-types": "^15.7.2",
