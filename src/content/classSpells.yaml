@@ -778,40 +778,6 @@ sorcerer:
     - Power Word Kill
     - Time Stop
     - Wish
-  Otherworldly Patron:
-    The Archfey:
-      - faerie fire
-      - sleep
-      - calm emotions
-      - phantasmal force
-      - blink
-      - plant growth
-      - dominate beast
-      - greater invisibility
-      - dominate person
-      - seeming
-    The Fiend:
-      - burning hands
-      - command
-      - blindness / deafness
-      - scorching ray
-      - fireball
-      - stinking cloud
-      - fire shield
-      - wall of fire
-      - flame strike
-      - hallow
-    The Great Old One:
-      - dissonant whispers
-      - Tasha’s hideous laughter
-      - detect thoughts
-      - phantasmal force
-      - clairvoyance
-      - sending
-      - dominate beast
-      - Evard’s black tentacles
-      - dominate person
-      - telekinesis
 
 warlock:
   main:
@@ -889,6 +855,40 @@ warlock:
     - Imprisonment
     - Power Word Kill
     - True Polymorph
+  Otherworldly Patron:
+    The Archfey:
+      - faerie fire
+      - sleep
+      - calm emotions
+      - phantasmal force
+      - blink
+      - plant growth
+      - dominate beast
+      - greater invisibility
+      - dominate person
+      - seeming
+    The Fiend:
+      - burning hands
+      - command
+      - blindness / deafness
+      - scorching ray
+      - fireball
+      - stinking cloud
+      - fire shield
+      - wall of fire
+      - flame strike
+      - hallow
+    The Great Old One:
+      - dissonant whispers
+      - Tasha’s hideous laughter
+      - detect thoughts
+      - phantasmal force
+      - clairvoyance
+      - sending
+      - dominate beast
+      - Evard’s black tentacles
+      - dominate person
+      - telekinesis
 
 wizard: &wizard
   main:
