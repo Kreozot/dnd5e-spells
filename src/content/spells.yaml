@@ -6667,7 +6667,7 @@
     V: true
     S: true
     M:
-      - an exquisite chest, 3 feet by **2** feet by **2** feet, constructed from rare materials worth at least 5,000 gp
+      - an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp
       - a Tiny replica made from the same materials worth at least 50 gp
   duration: Instantaneous
   tags: []
@@ -6707,7 +6707,7 @@
   duration: 8 hours
   tags: []
   description: >
-    A **10-foot-radius**immobile dome of force springs into
+    A **10-foot-radius** immobile dome of force springs into
     existence around and above you and remains stationary
     for the duration. The spell ends if you leave its area.
     Nine creatures of Medium size or smaller can fit inside
@@ -6894,7 +6894,7 @@
   description: >
     Describe or name a creature that is familiar to you. You
     sense the direction to the creature’s location, as long as
-    that creature is within 1,**000 feet** of you. If the creature
+    that creature is within **1,000 feet** of you. If the creature
     is moving, you know the direction of its movement.
 
 
@@ -6926,7 +6926,7 @@
   description: >
     Describe or name an object that is familiar to you. You
     sense the direction to the object’s location, as long as
-    that object is within 1,**000 feet** of you. If the object is in
+    that object is within **1,000 feet** of you. If the object is in
     motion, you know the direction of its movement.
 
 
@@ -10451,7 +10451,7 @@
     A churning storm cloud forms, centered on a point you
     can see and spreading to a radius of **360 feet**. Lightning
     flashes in the area, thunder boom s, and strong winds
-    roar. Each creature under the cloud (no more than 5,**000
+    roar. Each creature under the cloud (no more than **5,000
     feet** beneath the cloud) when it appears must make a
     **Constitution saving throw**. On a failed save, a creature
     takes **2d6** **thunder damage** and becomes deafened
@@ -10488,7 +10488,7 @@
     the area are im possible. The wind and rain count as
     a severe distraction for the purposes of maintaining
     concentration on spells. Finally, gusts of strong wind
-    (ranging from 20 to **50 miles** per hour) automatically
+    (ranging from **20** to **50 miles** per hour) automatically
     disperse fog, mists, and similar phenom ena in the area,
     whether mundane or magical.
 
@@ -10792,7 +10792,7 @@
 
 
     **Object.** You can try to move an object that weighs
-    up to 1,**000 pounds**. If the object isn’t being worn or
+    up to **1,000 pounds**. If the object isn’t being worn or
     carried, you automatically move it up to **30 feet** in any
     direction, but not beyond the range of this spell.
 
@@ -10881,24 +10881,34 @@
     | False destination | 01-50 | 51-100 | — | — |
 
 
-    **Familiarity.** “Permanent circle” means a permanent
+    **Familiarity.**
+
+
+    * “Permanent circle” means a permanent
     teleportation circle whose sigil sequence you know.
-    “Associated object” means that you possess an object
+
+    * “Associated object” means that you possess an object
     taken from the desired destination within the last six
     months, such as a book from a wizard’s library, bed
     linen from a royal suite, or a chunk of marble from a
     lich’s secret tomb.
 
-
-    “Very familiar” is a place you have been very often, a
+    * “Very familiar” is a place you have been very often, a
     place you have carefully studied, or a place you can see
-    when you cast the spell. “Seen casually” is someplace
+    when you cast the spell.
+
+    * “Seen casually” is someplace
     you have seen more than once but with which you aren’t
-    very familiar. “Viewed on ce” is a place you have seen
-    once, possibly using magic. “Description” is a place
+    very familiar.
+
+    * “Viewed once” is a place you have seen
+    once, possibly using magic.
+
+    * “Description” is a place
     whose location and appearance you know through
     someone else’s description, perhaps from a map.
-    “False destination” is a place that doesn’t exist.
+
+    * “False destination” is a place that doesn’t exist.
     Perhaps you tried to scry an enemy’s sanctum but
     instead viewed an illusion, or you are attempting to
     teleport to a familiar location that no longer exists.
@@ -10915,7 +10925,7 @@
 
 
     For example, if you tried to travel **120 miles**, landed off
-    target, and rolled a 5 and 3 on the two **d10s**, then you
+    target, and rolled a **5** and **3** on the two **d10s**, then you
     would be off target by **15 percent**, or **18 miles**. The DM
     determines the direction off target randomly by rolling a
     **d8** and designating 1 as north, 2 as northeast, 3 as east,
@@ -11150,7 +11160,7 @@
     period, affects a creature other than you or an object
     being worn or carried by someone other than you. In
     addition, the spell ends if you move to a place more than
-    1,**000 feet** from the location where you cast it.
+    **1,000 feet** from the location where you cast it.
 
 - title: Tongues
   level: 3
