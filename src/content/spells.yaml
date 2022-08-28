@@ -1,3 +1,4 @@
+# TODO: Highlight AC 123
 - title: Acid Splash
   level: cantrip
   school: Conjuration
@@ -1832,7 +1833,7 @@
 
 
     If you cast the spell two or more times before finishing
-    your next long rest, there is a cumulative 25 percent
+    your next long rest, there is a cumulative **25 percent**
     chance for each casting after the first that you get no
     answer. The DM makes this roll in secret.
 
@@ -3531,7 +3532,7 @@
 
 
     If you cast the spell two or more times before finishing
-    your next long rest, there is a cumulative 25 percent
+    your next long rest, there is a cumulative **25 percent**
     chance for each casting after the first that you get a
     random reading. The DM makes this roll in secret.
 
@@ -5598,7 +5599,7 @@
   tags: []
   description: >
     You create a ward that protects up to **2,500 square feet**
-    of floor space (an area **50 feet** square, or one hundred
+    of floor space (an area **50 feet** square, or **one hundred**
     **5-foot** squares or **twenty-five** **10-foot** squares). The
     warded area can be up to **20 feet** tall, and shaped as you
     desire. You can ward several stories of a stronghold by
@@ -9466,7 +9467,7 @@
 
     Attacks and spells can’t cross through the entrance
     into or out of the extradimensional space, but those
-    inside can see out of it as if through a **3-foot**-by-**5-foot**
+    inside can see out of it as if through a **3-foot-by-5-foot**
     window centered on the rope.
 
 
@@ -10929,7 +10930,7 @@
     would be off target by **15 percent**, or **18 miles**. The DM
     determines the direction off target randomly by rolling a
     **d8** and designating 1 as north, 2 as northeast, 3 as east,
-    and so on around the points of the com pass. If you were
+    and so on around the points of the compass. If you were
     teleporting to a coastal city and wound up **18 miles** out
     at sea, you could be in trouble.
 
@@ -11221,6 +11222,8 @@
     your choice within **5 feet** of the destination tree, using
     another **5 feet** of movement. If you have no movement
     left, you appear within **5 feet** of the tree you entered.
+
+
     You can use this transportation ability once per round
     for the duration. You must end each turn outside a tree.
 
@@ -11433,9 +11436,11 @@
     This spell creates an invisible, mindless, shapeless
     force that performs simple tasks at your command until
     the spell ends. The servant springs into existence in an
-    unoccupied space on the ground within range. It has AC
-    10, **1 hit point**, and a Strength of 2, and it can’t attack. If
+    unoccupied space on the ground within range. It has **AC
+    10**, **1 hit point**, and a **Strength of 2**, and it can’t attack. If
     it drops to **0 hit points**, the spell ends.
+
+
     Once on each of your turns as a bonus action, you can
     mentally command the servant to move up to **15 feet** and
     interact with an object. The servant can perform simple
@@ -11445,6 +11450,8 @@
     command, the servant performs the task to the best of
     its ability until it completes the task, then waits for your
     next command.
+
+
     If you command the servant to perform a task that
     would move it more than **60 feet** away from you,
     the spell ends.
@@ -11549,7 +11556,7 @@
     barrier or at an angle. It can be free floating or resting
     on a solid surface. You can form it into a hemispherical
     dome or a sphere with a radius of up to **10 feet**, or you
-    can shape a flat surface made up of ten **10-foot**-by-**10-foot** panels. Each panel must be contiguous with
+    can shape a flat surface made up of ten **10-foot-by-10-foot** panels. Each panel must be contiguous with
     another panel. In any form, the wall is **1/4 inch** thick.
     It lasts for the duration. If the wall cuts through a
     creature’s space when it appears, the creature is pushed
@@ -11591,7 +11598,7 @@
 
 
     The wall is an object that can be damaged and thus
-    breached. It has AC 12 and **30 hit points** per **10-foot**
+    breached. It has **AC 12** and **30 hit points** per **10-foot**
     section, and it is vulnerable to **fire damage**. Reducing
     a **10-foot** section of wall to **0 hit points** destroys it and
     leaves behind a sheet of frigid air in the space the wall
@@ -11621,9 +11628,9 @@
   description: >
     A nonmagical wall of solid stone springs into existence
     at a point you choose within range. The wall is **6 inches**
-    thick and is composed of ten **10-foot**-by-**10-foot** panels.
+    thick and is composed of ten **10-foot-by-10-foot** panels.
     Each panel must be contiguous with at least one other
-    panel. Alternatively, you can create **10-foot**-by-**20-foot**
+    panel. Alternatively, you can create **10-foot-by-20-foot**
     panels that are only **3 inches** thick.
 
 
@@ -11651,7 +11658,7 @@
 
 
     The wall is an object made of stone that can be
-    damaged and thus breached. Each panel has AC 15 and
+    damaged and thus breached. Each panel has **AC 15** and
     **30 hit points** per inch of thickness. Reducing a panel
     to **0 hit points** destroys it and might cause connected
     panels to collapse at the DM’s discretion.
@@ -11983,7 +11990,7 @@
     to 3, if it isn’t 3 or lower already, for **2d4** **days**. For each
     of those days that you spend resting and doing nothing
     more than light activity, your remaining recovery time
-    decreases by **2 days**. Finally, there is a 33 percent
+    decreases by **2 days**. Finally, there is a **33 percent**
     chance that you are unable to cast wish ever again if you
     suffer this stress.
 
