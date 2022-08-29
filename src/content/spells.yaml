@@ -1244,7 +1244,7 @@
   description: >
     The next time you hit a creature with a melee weapon
     attack during this spell’s duration, your weapon flares
-    with bright light, and the attack deals an extra **3d8**
+    with **bright light**, and the attack deals an extra **3d8**
     **radiant damage** to the target. Additionally, the target
     must succeed on a **Constitution saving throw** or be
     blinded until the spell ends.
@@ -1341,7 +1341,7 @@
     before this spell ends, the weapon gleams with astral
     radiance as you strike. The attack deals an extra <AtHigherLevels initial="2" eachLevelInc="1" postfix="d6"/>
     **radiant damage** to the target, which becomes visible if
-    it’s invisible, and the target sheds dim light in a **5-foot**
+    it’s invisible, and the target sheds **dim light** in a **5-foot**
     radius and can’t become invisible until the spell ends.
   atHigherLevels: >
     When you cast this spell using
@@ -2970,8 +2970,8 @@
     making them appear as torches, lanterns, or glowing
     orbs that hover in the air for the duration. You can
     also combine the four lights into one glowing vaguely
-    humanoid form of Medium size. Whichever form you
-    choose, each light sheds dim light in a **10-foot** radius.
+    humanoid form of **Medium size**. Whichever form you
+    choose, each light sheds **dim light** in a **10-foot** radius.
 
 
     As a bonus action on your turn, you can move the
@@ -3041,8 +3041,8 @@
   tags: []
   description: >
     A **60-foot-radius** sphere of light spreads out from a point
-    you choose within range. The sphere is bright light and
-    sheds dim light for an additional **60 feet**.
+    you choose within range. The sphere is **bright light** and
+    sheds **dim light** for an additional **60 feet**.
 
 
     If you chose a point on an object you are holding or
@@ -4353,7 +4353,7 @@
     blue, green, or violet light (your choice). Any creature in
     the area when the spell is cast is also outlined in light if
     it fails a **Dexterity saving throw**. For the duration, objects
-    and affected creatures shed dim light in a **10-foot** radius.
+    and affected creatures shed **dim light** in a **10-foot** radius.
     Any attack roll against an affected creature or object
     has advantage if the attacker can see it, and the affected
     creature or object can’t benefit from being invisible.
@@ -4743,8 +4743,8 @@
   tags: []
   description: >
     Thin and wispy flames wreathe your body for the
-    duration, shedding bright light in a **10-foot** radius and
-    dim light for an additional **10 feet**. You can end the spell
+    duration, shedding **bright light** in a **10-foot** radius and
+    **dim light** for an additional **10 feet**. You can end the spell
     early by using an action to dismiss it.
 
 
@@ -4809,8 +4809,8 @@
     <AtHigherLevels initial="3d6" upgrades="4:4d6;6:5d6;8:6d6"/> **fire damage**.
 
 
-    The flaming blade sheds bright light in a **10-foot-radius**
-    and dim light for an additional **10 feet**.
+    The flaming blade sheds **bright light** in a **10-foot-radius**
+    and **dim light** for an additional **10 feet**.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **4th level** or higher, the damage increases by
@@ -4878,8 +4878,8 @@
     When you move the sphere, you can direct it over
     barriers up to **5 feet** tall and jum pit across pits up to
     **10 feet** wide. The sphere ignites flammable objects not
-    being worn or carried, and it sheds bright light in a
-    **20-foot-radius** and dim light for an additional **20 feet**.
+    being worn or carried, and it sheds **bright light** in a
+    **20-foot-radius** and **dim light** for an additional **20 feet**.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **3rd level** or higher, the damage increases by
@@ -4961,7 +4961,7 @@
     point within range. The sphere spreads around corners,
     and its area is heavily obscured. It lasts for the duration
     or until a wind of moderate or greater speed (at least **10
-    miles** per hour) disperses it.
+    miles per hour**) disperses it.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, the radius of the fog
@@ -5699,7 +5699,7 @@
     target. On a hit, the target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d6"/> **radiant damage**,
     and the next attack roll made against this target before
     the end of your next turn has advantage, thanks to the
-    mystical dim light glittering on the target until then.
+    mystical **dim light** glittering on the target until then.
   atHigherLevels: >
     When you cast this spell using a
     spell slot of **2nd level** or higher, the damage increases by
@@ -5819,7 +5819,7 @@
     illuminate the area.
 
 
-    **D.** Bright light fills the area. Magical darkness
+    **D.** **Bright light** fills the area. Magical darkness
     created by spells of a lower level than the slot you used
     to cast this spell can’t extinguish the light.
 
@@ -6195,7 +6195,7 @@
     Divine light washes out from you and coalesces
     in a soft radiance in a **30-foot** radius around you.
     Creatures of your choice in that radius when you cast
-    this spell shed dim light in a **5-foot** radius and have
+    this spell shed **dim light** in a **5-foot** radius and have
     advantage on all saving throws, and other creatures
     have disadvantage on attack rolls against them until
     the spell ends. In addition, when a fiend or an undead
@@ -6488,8 +6488,8 @@
     embers appears in a **20-foot-radius** sphere centered on
     a point within range. The cloud spreads around corners
     and is heavily obscured. It lasts for the duration or until
-    a wind of moderate or greater speed (at least **10 miles**
-    per hour) disperses it.
+    a wind of moderate or greater speed (at least **10 miles
+    per hour**) disperses it.
 
 
     When the cloud appears, each creature in it must
@@ -6711,7 +6711,7 @@
     A **10-foot-radius** immobile dome of force springs into
     existence around and above you and remains stationary
     for the duration. The spell ends if you leave its area.
-    Nine creatures of Medium size or smaller can fit inside
+    **Nine creatures** of **Medium size or smaller** can fit inside
     the dome with you. The spell fails if its area includes a
     larger creature or more than nine creatures. Creatures
     and objects within the dome when you cast this spell
@@ -6789,7 +6789,7 @@
   description: >
     You touch one object that is no larger than **10 feet** in any
     dimension. Until the spell ends, the object sheds bright
-    light in a **20-foot** radius and dim light for an additional
+    light in a **20-foot** radius and **dim light** for an additional
     **20 feet**. The light can be colored as you like. Completely
     covering the object with something opaque blocks the
     light. The spell ends if you cast it again or dismiss it
@@ -7110,7 +7110,7 @@
     **100 feet** of you, returning the host creature’s soul to
     its body. If the host body dies while you’re in it, the
     creature dies, and you must make a **Charisma saving
-    throw** against your own spellcasting DC. On a success,
+    throw** against <SpellSaveDC/>. On a success,
     you return to the container if it is within **100 feet** of you.
     Otherwise, you die.
 
@@ -7165,7 +7165,7 @@
     message that is uttered when a trigger condition is met.
     Choose an object that you can see and that isn’t being
     worn or carried by another creature. Then speak the
-    message, which must be 25 words or less, though it
+    message, which must be **25 words** or less, though it
     can be delivered over as long as **10 minutes**. Finally,
     determine the circumstance that will trigger the spell to
     deliver your message.
@@ -7804,7 +7804,7 @@
   description: >
     A silvery beam of pale light shines down in a **5-foot**
     radius, **40-foot-high** cylinder centered on a point within
-    range. Until the spell ends, dim light fills the cylinder.
+    range. Until the spell ends, **dim light** fills the cylinder.
 
 
     When a creature enters the spell’s area for the first
@@ -8150,7 +8150,7 @@
   tags: []
   description: >
     A sphere of shimmering force encloses a creature
-    or object of Large size or smaller within range. An
+    or object of **Large size or smaller** within range. An
     unwilling creature must make a **Dexterity saving
     throw**. On a failed save, the creature is enclosed for
     the duration.
@@ -8808,8 +8808,8 @@
     and your action and the spell slot are wasted.
 
 
-    The wall sheds bright light out to a range of **100
-    feet** and dim light for an additional **100 feet**. You and
+    The wall sheds **bright light** out to a range of **100
+    feet** and **dim light** for an additional **100 feet**. You and
     creatures you designate at the time you cast the spell
     can pass through and remain near the wall without
     harm. If another creature that can see the wall moves to
@@ -8872,7 +8872,7 @@
     creature collects three of a kind.
     <br>
     While this layer is in place, spells can’t be cast
-    through the wall. The layer is destroyed by bright light
+    through the wall. The layer is destroyed by **bright light**
     shed by a Daylight spell or a similar spell of equal or
     higher level.
 
@@ -8901,8 +8901,8 @@
   description: >
     A flickering flame appears in your hand. The flame
     remains there for the duration and harms neither you
-    nor your equipment. The flame sheds bright light in a
-    **10-foot** radius and dim light for an additional **10 feet**.
+    nor your equipment. The flame sheds **bright light** in a
+    **10-foot** radius and **dim light** for an additional **10 feet**.
     The spell ends if you dismiss it as an action or if you
     cast it again.
 
@@ -10392,9 +10392,9 @@
     spends its action that turn retching and reeling.
     Creatures that don’t need to breathe or are immune to
     poison automatically succeed on this saving throw.
-    A moderate wind (at least **10 miles** per hour) disperses
+    A moderate wind (at least **10 miles per hour**) disperses
     the cloud after 4 rounds. A strong wind (at least **20
-    miles** per hour) disperses it after 1 round.
+    miles per hour**) disperses it after 1 round.
 
 - title: Stone Shape
   level: 4
@@ -10408,7 +10408,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    You touch a stone object of Medium size or smaller or
+    You touch a stone object of **Medium size or smaller** or
     a section of stone no more than **5 feet** in any dimension
     and form it into any shape that suits your purpose. So,
     for example, you could shape a large rock into a weapon,
@@ -10489,7 +10489,7 @@
     the area are im possible. The wind and rain count as
     a severe distraction for the purposes of maintaining
     concentration on spells. Finally, gusts of strong wind
-    (ranging from **20** to **50 miles** per hour) automatically
+    (ranging from **20** to **50 miles per hour**) automatically
     disperse fog, mists, and similar phenom ena in the area,
     whether mundane or magical.
 
@@ -10562,8 +10562,8 @@
 
 
     For the duration, a mote of brilliant radiance shines in
-    your hand. It sheds bright light in a **30-foot** radius and
-    dim light for an additional **30 feet**. This light is sunlight.
+    your hand. It sheds **bright light** in a **30-foot** radius and
+    **dim light** for an additional **30 feet**. This light is sunlight.
 
 - title: Sunburst
   level: 8
@@ -10674,7 +10674,7 @@
 
     When you inscribe the glyph, choose one of the
     options below for its effect. Once triggered, the glyph
-    glows, filling a **60-foot-radius** sphere with dim light
+    glows, filling a **60-foot-radius** sphere with **dim light**
     for **10 minutes**, after which time the spell ends. Each
     creature in the sphere when the glyph activates is
     targeted by its effect, as is a creature that enters the
