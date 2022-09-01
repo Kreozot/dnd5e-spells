@@ -318,6 +318,17 @@ cleric:
       - death ward
       - antilife shell
       - cloudkill
+    Grave:
+      - Bane
+      - False Life
+      - Gentle Repose
+      - Ray of Enfeeblement
+      - Revivify
+      - Vampiric Touch
+      - Blight
+      - Death Ward
+      - Antilife Shell
+      - Raise Dead
 
 druid:
   main:
