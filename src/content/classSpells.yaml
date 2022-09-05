@@ -307,6 +307,7 @@ cleric:
       - stoneskin
       - flame strike
       - hold monster
+    # Dungeon Master’s Guide
     Death:
       - false life
       - ray of sickness
@@ -318,6 +319,18 @@ cleric:
       - death ward
       - antilife shell
       - cloudkill
+    # Xanathar’s Guide to Everything
+    Forge:
+      - Identify
+      - Searing Smite
+      - Heat Metal
+      - Magic Weapon
+      - Elemental Weapon
+      - Protection from Energy
+      - Fabricate
+      - Wall of Fire
+      - Animate Objects
+      - Creation
     Grave:
       - Bane
       - False Life
@@ -329,6 +342,52 @@ cleric:
       - Death Ward
       - Antilife Shell
       - Raise Dead
+    # Sword Coast Adventurer’s Guide
+    Arcana:
+      - Detect Magic
+      - Magic Missile
+      - Magic Weapon
+      - Nystul’s Magic Aura
+      - Dispel Magic
+      - Magic Circle
+      - Arcane Eye
+      - Leomund’s Secret Chest
+      - Planar Binding
+      - Teleportation Circle
+    # Tasha’s Cauldron of Everything
+    Order:
+      - Command
+      - Heroism
+      - Hold Person
+      - Zone of Truth
+      - Mass Healing Word
+      - Slow
+      - Compulsion
+      - Locate Creature
+      - Commune
+      - Dominate Person
+    Peace:
+      - Heroism
+      - Sanctuary
+      - Aid
+      - Warding Bond
+      - Beacon of Hope
+      - Sending
+      - Aura of Purity
+      - Otiluke’s Resilient Sphere
+      - Greater Restoration
+      - Rary’s Telepathic Bond
+    Twilight:
+      - Faerie Fire
+      - Sleep
+      - Moonbeam
+      - See Invisibility
+      - Aura of Vitality
+      - Leomund’s Tiny Hut
+      - Aura of Life
+      - Greater Invisibility
+      - Circle of Power
+      - Mislead
 
 druid:
   main:
