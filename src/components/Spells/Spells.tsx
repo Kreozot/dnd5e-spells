@@ -8,9 +8,9 @@ import {
   getAvailableSpellLevels,
   State,
 } from 'common/store';
-import SpellsList from 'components/SpellsList';
-import LevelFilterSelector from 'components/LevelFilterSelector';
-import FiltersBlock from 'components/FiltersBlock';
+import SpellsList from './SpellsList';
+import LevelFilterSelector from './LevelFilterSelector';
+import FiltersBlock from './FiltersBlock';
 
 import * as styles from './Spells.module.scss'
 

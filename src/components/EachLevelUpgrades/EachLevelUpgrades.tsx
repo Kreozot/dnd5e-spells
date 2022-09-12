@@ -12,7 +12,7 @@ import { State } from 'common/store';
 type Props = {
   initial: number;
   eachLevelInc: number;
-  postfix: string;
+  postfix?: string;
   spellLevel: number;
   spellTitle: string;
   hint?: string;
