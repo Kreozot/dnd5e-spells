@@ -7,6 +7,7 @@ import SpellcastingAbilityModifier from './SpellcastingAbilityModifier';
 import AtHigherLevels from './AtHigherLevels';
 import SpellSaveDC from './SpellSaveDC';
 import SpellAttackModifier from './SpellAttackModifier';
+import TenPlusSpellsLevelDC from './TenPlusSpellsLevelDC';
 
 type Props = {
   children: string;
@@ -26,6 +27,10 @@ const Markdown: FC<Props> = (props) => {
           },
           AtHigherLevels: {
             component: AtHigherLevels,
+            props: { spellLevel, spellTitle }
+          },
+          TenPlusSpellsLevelDC: {
+            component: TenPlusSpellsLevelDC,
             props: { spellLevel, spellTitle }
           },
           SpellcastingAbilityModifier: {

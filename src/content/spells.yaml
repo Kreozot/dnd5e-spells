@@ -2712,14 +2712,12 @@
     S: true
   duration: Instantaneous
   tags: []
-  # TODO: Snippet for calculate DC
   description: >
     You attempt to interrupt a creature in the process of
     casting a spell. If the creature is casting a spell of <AtHigherLevels initial="3" eachLevelInc="1" postfix=" level"/>
     or lower, its spell fails and has no effect. If it is
     casting a spell of **4th level** or higher, make an ability
-    check using <SpellcastingAbility/>. The DC equals **10
-    + the spell’s level**. On a success, the creature’s spell fails
+    check using <SpellcastingAbility/>. The DC equals <TenPlusSpellsLevelDC />. On a success, the creature’s spell fails
     and has no effect.
   atHigherLevels: >
     When you cast this spell using a
@@ -3467,7 +3465,6 @@
     S: true
   duration: Instantaneous
   tags: []
-  # TODO: Snippet for calculate DC
   description: >
     Choose one creature, object, or magical effect within
     range. Any spell of <AtHigherLevels initial="3" eachLevelInc="1" postfix=" level"/> or lower on the target ends.
@@ -3475,7 +3472,7 @@
 
     For each higher levels spell on the target, make
     an ability check using <SpellcastingAbility/>. The
-    DC equals **10 + the spell’s level**. On a successful check,
+    DC equals <TenPlusSpellsLevelDC />. On a successful check,
     the spell ends.
   atHigherLevels: >
     When you cast this spell using a
