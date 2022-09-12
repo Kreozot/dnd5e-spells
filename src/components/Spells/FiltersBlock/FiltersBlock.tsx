@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import ClassFilterSelector from './ClassFilterSelector';
 import ClassAdditionalSelector from './ClassAdditionalSelector';
@@ -27,4 +27,4 @@ function FiltersBlock() {
 }
 
 
-export default FiltersBlock;
+export default memo(FiltersBlock);
