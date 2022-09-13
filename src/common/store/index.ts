@@ -120,7 +120,7 @@ export const getAvailableSpells = createSelector(
     }
 
     return spellsData
-      .filter((spell) => !currentLevel || spell.level === 'cantrip' || !availableSpellLevel || spell.level <= availableSpellLevel)
+      .filter((spell) => !currentLevel || spell.level === 'cantrip' || typeof availableSpellLevel === 'undefined' || spell.level <= availableSpellLevel)
       .filter((spell) => availableSpellList.some(
         (title) => title.toLowerCase() === spell.title.toLowerCase()
       ));

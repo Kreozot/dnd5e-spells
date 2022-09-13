@@ -24,6 +24,9 @@ const LevelUpgrades: FC<Props & ReduxProps> = (props) => {
   }, [upgrades]);
 
   const currentValue = useMemo(() => {
+    if (!currentLevel) {
+      return initial;
+    }
     const availableUpgrades = upgradesMap.filter(({ level }) => level <= currentLevel);
     const closestUpgrade = maxBy(availableUpgrades, ({ level }) => level);
     return closestUpgrade

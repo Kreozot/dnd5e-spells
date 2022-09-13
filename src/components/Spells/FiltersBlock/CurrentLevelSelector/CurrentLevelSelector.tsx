@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FC, useCallback, useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+import { connect, ConnectedProps } from 'react-redux';
 import { ActionCreatorWithPayload } from '@reduxjs/toolkit';
 import debounce from 'lodash/debounce';
 
@@ -9,12 +9,7 @@ import { Dispatch, filtersSlice, State } from 'common/store';
 
 import * as styles from '../FiltersBlock.module.scss';
 
-type Props = {
-  currentLevel: number | '';
-  setCurrentLevel: ActionCreatorWithPayload<number | ''>;
-}
-
-const CurrentLevelSelector: FC<Props> = (props) => {
+const CurrentLevelSelector: FC<ReduxProps> = (props) => {
   const {
     currentLevel,
     setCurrentLevel,
@@ -24,8 +19,8 @@ const CurrentLevelSelector: FC<Props> = (props) => {
   const setCurrentLevelDebounced = useCallback(debounce(setCurrentLevel, 500), [setCurrentLevel]);
 
   const handleChange = useCallback(({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
-    const intValue = parseInt(value);
-    const newValue = isNaN(intValue) || (intValue < 1) ? '' : intValue;
+    const intValue = parseInt(value, 10);
+    const newValue = !isNaN(intValue) && (intValue >= 1) ? intValue : undefined;
     setFieldValue(newValue);
     setCurrentLevelDebounced(newValue);
   }, [setCurrentLevelDebounced]);
@@ -35,7 +30,7 @@ const CurrentLevelSelector: FC<Props> = (props) => {
       <TextField
         label="Current level"
         type="number"
-        value={ fieldValue }
+        value={ fieldValue || '' }
         onChange={ handleChange }
         className={ styles.currentLevelInput }
       />
@@ -50,4 +45,8 @@ const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
   setCurrentLevel: filtersSlice.actions.setCurrentLevel,
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(CurrentLevelSelector);
+
+const connector = connect(mapStateToProps, mapDispatchToProps);
+type ReduxProps = ConnectedProps<typeof connector>;
+
+export default connector(CurrentLevelSelector);

@@ -4,7 +4,7 @@ export type FiltersSlice = {
   level: null | '' | number,
   activeFilter: boolean,
   titleFilter: string,
-  currentLevel: '' | number,
+  currentLevel?: number,
   class: '' | Class,
   classAdditional: string,
   spellcastingAbilityValue: '' | number,
@@ -16,7 +16,7 @@ export default createSlice({
     level: null,
     activeFilter: false,
     titleFilter: '',
-    currentLevel: '',
+    currentLevel: undefined,
     class: '',
     classAdditional: '',
     spellcastingAbilityValue: '',
@@ -31,7 +31,7 @@ export default createSlice({
     setActiveFilterOn(state) {
       return { ...state, activeFilter: true, level: null, titleFilter: '' };
     },
-    setCurrentLevel(state, action: PayloadAction<'' | number>) {
+    setCurrentLevel(state, action: PayloadAction<number | undefined>) {
       return { ...state, currentLevel: action.payload };
     },
     setClass(state, action: PayloadAction<Class>) {
