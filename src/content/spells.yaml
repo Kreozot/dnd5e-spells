@@ -2293,7 +2293,7 @@
     the air and choose a point within range. Hundreds of
     duplicates of the ammunition or weapon fall in a volley
     from above and then disappear. Each creature in a
-    **40-foot-radius**. **20-foot-high** cylinder centered on that
+    **40-foot-radius** **20-foot-high** cylinder centered on that
     point must make a **Dexterity saving throw**. A creature
     takes **8d8** damage on a failed save, or half as much
     damage on a successful one. The damage type is the
@@ -2897,13 +2897,13 @@
 
     | Vegetable matter | 1 day |
 
-    | Stone or crystal | **12 hours** |
+    | Stone or crystal | 12 hours |
 
-    | Precious metals | **1 hour** |
+    | Precious metals | 1 hour |
 
-    | Gems | **10 minutes** |
+    | Gems | 10 minutes |
 
-    | Adamantine or mithral | **1 minute** |
+    | Adamantine or mithral | 1 minute |
 
 
     The target can act normally on its turn if you choose no
@@ -7465,7 +7465,7 @@
     A simmering green arrow streaks toward a target
     within range and bursts in a spray of acid. Make a
     ranged spell attack <SpellAttackModifier/> against the target. On a hit, the
-    target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d4"/> **acid damage** immediately and **2d4** **acid
+    target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d4"/> **acid damage** immediately and **<AtHigherLevels initial="2" eachLevelInc="1" postfix="d4"/>** **acid
     damage** at the end of its next turn. On a miss, the arrow
     splashes the target with acid for half as much of the
     initial damage and no damage at the end of its next turn.
