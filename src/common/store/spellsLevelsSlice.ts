@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import omit from 'lodash/omit';
 
 /** Mapping spells to casting levels selected by user (cast spell with higher level slot) */
 type SpellsLevelSlice = {
@@ -9,12 +10,15 @@ export default createSlice({
   name: 'spellsLevelsSlice',
   initialState: <SpellsLevelSlice>{},
   reducers: {
-    chooseSpellLevel(state, action: PayloadAction<{ item: Spell, level: number }>) {
+    chooseSpellLevel(state, action: PayloadAction<{ item: Spell, level: number }>): SpellsLevelSlice {
       const { item, level } = action.payload;
       if (item.level <= level) {
-        state[item.title] = level;
+        return {
+          ...state,
+          [item.title]: level,
+        };
       } else {
-        delete state[item.title];
+        return omit(state, item.title);
       }
     }
   },

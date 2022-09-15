@@ -2,7 +2,6 @@ import React, { ChangeEvent, FC, useCallback, useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { bindActionCreators } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
-import { ActionCreatorWithPayload } from '@reduxjs/toolkit';
 import debounce from 'lodash/debounce';
 
 import { Dispatch, filtersSlice, State } from 'common/store';

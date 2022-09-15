@@ -19,7 +19,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": "echo eslint"
+    "*.{js,jsx}": "eslint"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",

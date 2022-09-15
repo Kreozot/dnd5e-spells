@@ -39,7 +39,7 @@ const SpellLevelSelectButton: FC<Props & ReduxProps> = (props) => {
 }
 
 const isSpellLevelSelected = createSelector(
-  (state: State, props: any): boolean => {
+  (state: State, props: Props): boolean => {
     const selectedSpellLevel = state.spellsLevels[props.item.title] || props.item.level;
     return selectedSpellLevel === props.level;
   },

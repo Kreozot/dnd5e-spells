@@ -1,6 +1,5 @@
-import { formatText } from 'common/format';
+import { formatText, getSpellId } from 'common/format';
 import data from 'content/spells.yaml';
-import { getSpellId } from 'common/format';
 
 function formatSpells(spells: RawSpell[]): Spell[] {
   return spells.map((rawSpell) => {

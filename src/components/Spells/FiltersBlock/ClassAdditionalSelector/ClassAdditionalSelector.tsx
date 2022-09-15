@@ -19,7 +19,7 @@ const ClassAdditionalSelector: FC<ReduxProps> = (props) => {
   } = props;
 
   const handleAdditionalChange = useCallback<ChangeEventHandler<{ name?: string; value: unknown; }>>((event) => {
-    setClassAdditional(event.target.value as string);
+    setClassAdditional(event.target.value as string || undefined);
   }, [setClassAdditional]);
 
   if (additionalOptions) {
@@ -28,7 +28,7 @@ const ClassAdditionalSelector: FC<ReduxProps> = (props) => {
         <InputLabel id="class-select-label">{ additionalKey }</InputLabel>
         <Select
           labelId="class-select-label"
-          value={ classAdditionalFilter }
+          value={ classAdditionalFilter || '' }
           onChange={ handleAdditionalChange }
           className={ styles.classFilterSelect }
         >

@@ -12,7 +12,7 @@ type Props = {
   initial: string;
   spellLevel: number;
   spellTitle: string;
-  upgrades: string | {[level: string]: string} | {[level: string]: string};
+  upgrades: string | {[level: string]: string};
   hint?: string;
 };
 

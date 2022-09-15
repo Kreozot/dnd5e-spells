@@ -26,7 +26,7 @@ const SpellcastingAbilityValueSelector: FC<ReduxProps> = (props) => {
 
   const handleChange = useCallback<ChangeEventHandler<HTMLInputElement>>(({ target: { value } }) => {
     let intValue = parseInt(value, 10);
-    setSpellcastingAbilityValue(isNaN(intValue) || (intValue < 1) ? '' : intValue);
+    setSpellcastingAbilityValue(isNaN(intValue) || (intValue < 1) ? undefined : intValue);
   }, [setSpellcastingAbilityValue]);
 
   if (!classRestrictions) {

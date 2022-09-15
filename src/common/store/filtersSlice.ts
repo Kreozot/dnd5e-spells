@@ -1,47 +1,69 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+export enum SpellsFilterOptions {
+  All = 'all',
+  Active = 'active',
+}
+export type SpellsFilter = SpellLevel | SpellsFilterOptions.All | SpellsFilterOptions.Active;
+
 export type FiltersSlice = {
-  level: null | '' | number,
-  activeFilter: boolean,
+  spellsFilter: SpellsFilter,
   titleFilter: string,
   currentLevel?: number,
-  class: '' | Class,
-  classAdditional: string,
-  spellcastingAbilityValue: '' | number,
+  class?: Class,
+  classAdditional?: string,
+  spellcastingAbilityValue?: number,
 }
 
 export default createSlice({
   name: 'filters',
   initialState: <FiltersSlice>{
-    level: null,
-    activeFilter: false,
+    spellsFilter: SpellsFilterOptions.All,
     titleFilter: '',
     currentLevel: undefined,
-    class: '',
-    classAdditional: '',
-    spellcastingAbilityValue: '',
+    class: undefined,
+    classAdditional: undefined,
+    spellcastingAbilityValue: undefined,
   },
   reducers: {
-    selectLevel(state, action: PayloadAction<number | null>) {
-      return { ...state, level: action.payload, activeFilter: false, titleFilter: '' };
+    setSpellsFilter(state, action: PayloadAction<SpellsFilter>): FiltersSlice {
+      return {
+        ...state,
+        spellsFilter: action.payload,
+        titleFilter: '',
+      };
     },
-    setTitleFilter(state, action: PayloadAction<string>) {
-      return { ...state, titleFilter: action.payload.toLowerCase(), level: null, activeFilter: false };
+    setTitleFilter(state, action: PayloadAction<string>): FiltersSlice {
+      return {
+        ...state,
+        titleFilter: action.payload.toLowerCase(),
+        spellsFilter: SpellsFilterOptions.All,
+      };
     },
-    setActiveFilterOn(state) {
-      return { ...state, activeFilter: true, level: null, titleFilter: '' };
+    setCurrentLevel(state, action: PayloadAction<number | undefined>): FiltersSlice {
+      return {
+        ...state,
+        currentLevel: action.payload,
+      };
     },
-    setCurrentLevel(state, action: PayloadAction<number | undefined>) {
-      return { ...state, currentLevel: action.payload };
+    setClass(state, action: PayloadAction<Class | undefined>): FiltersSlice {
+      return {
+        ...state,
+        class: action.payload,
+        classAdditional: undefined,
+      };
     },
-    setClass(state, action: PayloadAction<Class>) {
-      return { ...state, class: action.payload, classAdditional: '' };
+    setClassAdditional(state, action: PayloadAction<string | undefined>): FiltersSlice {
+      return {
+        ...state,
+        classAdditional: action.payload,
+      };
     },
-    setClassAdditional(state, action: PayloadAction<string>) {
-      return { ...state, classAdditional: action.payload };
-    },
-    setSpellcastingAbilityValue(state, action: PayloadAction<'' | number>) {
-      return { ...state, spellcastingAbilityValue: action.payload };
+    setSpellcastingAbilityValue(state, action: PayloadAction<number | undefined>): FiltersSlice {
+      return {
+        ...state,
+        spellcastingAbilityValue: action.payload,
+      };
     },
   },
 });

@@ -7,7 +7,7 @@ import spellsData from 'content/spells';
 import classSpellsData from 'content/classSpells.yaml';
 import classRestrictionsData from 'content/classRestrictions.yaml';
 import chosenSpellsSlice from './chosenSpellsSlice';
-import filtersSlice, { FiltersSlice } from './filtersSlice';
+import filtersSlice from './filtersSlice';
 import spellsLevelsSlice from './spellsLevelsSlice';
 import uniqBy from 'lodash/uniqBy';
 import sortBy from 'lodash/sortBy';
@@ -83,7 +83,7 @@ export const getClassAdditionalOptions = createSelector(
   (state: State) => state.filters.class,
   getClassAdditionalKey,
   (classFilter, additionalKey) => {
-    if (additionalKey && classFilter !== '') {
+    if (additionalKey && classFilter) {
       return Object.keys(classSpellsData[classFilter][additionalKey]);
     }
   }
@@ -157,7 +157,7 @@ export const getKnownSpellsCount = createSelector(
   getSpellcastingAbilityModifier,
   getCurrentLevelClassRestrictions,
   (classFilter, currentLevel, spellcastingAbilityModifier, currentLevelClassRestrictions) => {
-    if (!currentLevel || !currentLevelClassRestrictions || !spellcastingAbilityModifier) {
+    if (!currentLevel || !currentLevelClassRestrictions || spellcastingAbilityModifier === null) {
       return null;
     }
     if (currentLevelClassRestrictions.knownSpells) {

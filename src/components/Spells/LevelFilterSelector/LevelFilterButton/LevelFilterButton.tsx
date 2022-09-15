@@ -7,45 +7,41 @@ import { Dispatch, filtersSlice, getCurrentLevelClassRestrictions, State } from 
 import Tooltip from 'components/Tooltip';
 
 import * as styles from './LevelFilterButton.module.scss';
+import { SpellsFilter, SpellsFilterOptions } from 'common/store/filtersSlice';
+
+const levelLabels = {
+  [SpellsFilterOptions.All]: 'All levels',
+  [SpellsFilterOptions.Active]: 'Active',
+  'cantrip': 'Cantrips',
+};
 
 type Props = {
-  level: null | number | 'active' | 'cantrip';
+  level: SpellsFilter;
 };
 
 const LevelFilterButton: FC<Props & ReduxProps> = (props) => {
   const {
     level,
     levelFilter,
-    activeFilter,
     selectLevel,
-    setActiveFilterOn,
     currentLevel,
     currentLevelClassRestrictions,
   } = props;
 
   const handleClick = useCallback(() => {
-    if (level === 'active') {
-      setActiveFilterOn();
-    } else {
-      selectLevel(level as any);
-    }
-  }, [level, selectLevel, setActiveFilterOn]);
+    selectLevel(level);
+  }, [level, selectLevel]);
 
   const text = useMemo(() => {
-    if (level === null) {
-      return 'All levels';
-    }
-    if (level === 'active') {
-      return 'Active';
-    }
-    if (level === 'cantrip') {
-      return 'Cantrips';
-    }
-    return level;
+    return levelLabels[level as (SpellsFilterOptions | 'cantrip')] || level;
   }, [level]);
 
   const availableBadge = useMemo(() => {
-    if (currentLevelClassRestrictions && currentLevel && level && (level !== 'active')) {
+    if (currentLevelClassRestrictions
+      && currentLevel
+      && (level !== SpellsFilterOptions.All)
+      && (level !== SpellsFilterOptions.Active)
+    ) {
       const value = level === 'cantrip'
         ? currentLevelClassRestrictions.cantrips
         : currentLevelClassRestrictions.spellSlots[level - 1];
@@ -63,13 +59,8 @@ const LevelFilterButton: FC<Props & ReduxProps> = (props) => {
   }, [currentLevelClassRestrictions, level, currentLevel]);
 
   const isSelected = useMemo(() => {
-    if (level === 'active') {
-      return activeFilter;
-    }
-    if (level === levelFilter) {
-      return !activeFilter;
-    }
-  }, [activeFilter, level, levelFilter]);
+    return level === levelFilter;
+  }, [level, levelFilter]);
 
   return (
     <Button
@@ -85,13 +76,11 @@ const LevelFilterButton: FC<Props & ReduxProps> = (props) => {
 
 const mapStateToProps = (state: State) => ({
   currentLevel: state.filters.currentLevel,
-  levelFilter: state.filters.level,
-  activeFilter: state.filters.activeFilter,
+  levelFilter: state.filters.spellsFilter,
   currentLevelClassRestrictions: getCurrentLevelClassRestrictions(state),
 });
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
-  selectLevel: filtersSlice.actions.selectLevel,
-  setActiveFilterOn: filtersSlice.actions.setActiveFilterOn,
+  selectLevel: filtersSlice.actions.setSpellsFilter,
 }, dispatch);
 
 const connector = connect(mapStateToProps, mapDispatchToProps);

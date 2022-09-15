@@ -18,7 +18,7 @@ const ClassFilterSelector: FC<ReduxProps> = (props) => {
   } = props;
 
   const handleClassChange = useCallback<ChangeEventHandler<{ name?: string; value: unknown; }>>((event) => {
-    setClass(event.target.value as Class);
+    setClass(event.target.value as Class || undefined);
     clearChosenSpells();
   }, [setClass, clearChosenSpells]);
 
@@ -27,7 +27,7 @@ const ClassFilterSelector: FC<ReduxProps> = (props) => {
       <InputLabel id="class-select-label">Class</InputLabel>
       <Select
         labelId="class-select-label"
-        value={ classFilter }
+        value={ classFilter || '' }
         onChange={ handleClassChange }
         className={ styles.classFilterSelect }
       >

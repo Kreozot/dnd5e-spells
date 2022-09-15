@@ -13,20 +13,20 @@ import LevelFilterSelector from './LevelFilterSelector';
 import FiltersBlock from './FiltersBlock';
 
 import * as styles from './Spells.module.scss'
+import { SpellsFilterOptions } from 'common/store/filtersSlice';
 
 const Spells: FC<ReduxProps> = (props) => {
   const {
     levels,
     levelFilter,
     availableSpells,
-    activeFilter,
     titleFilter,
     allActiveSpells,
   } = props;
 
   /** List of spells displayed on current spell list page */
   const displayedSpells = useMemo(() => {
-    if (activeFilter) {
+    if (levelFilter === SpellsFilterOptions.Active) {
       return availableSpells.filter(({ title }) =>
         allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
       );
@@ -35,7 +35,7 @@ const Spells: FC<ReduxProps> = (props) => {
       return availableSpells.filter(({ title }) => title.toLowerCase().includes(titleFilter));
     }
     return availableSpells;
-  }, [activeFilter, allActiveSpells, availableSpells, titleFilter]);
+  }, [levelFilter, allActiveSpells, availableSpells, titleFilter]);
 
   /** Displayed spells grouped by level */
   const groupedSpells = useMemo(() => {
@@ -48,7 +48,7 @@ const Spells: FC<ReduxProps> = (props) => {
   }, [levels, displayedSpells]);
 
   const spellsList = useMemo(() => {
-    if (levelFilter !== null) {
+    if (levelFilter !== SpellsFilterOptions.All && levelFilter !== SpellsFilterOptions.Active) {
       if (!groupedSpells[levelFilter]) {
         return null;
       }
@@ -82,8 +82,7 @@ const Spells: FC<ReduxProps> = (props) => {
 
 const mapStateToProps = (state: State) => ({
   levels: getAvailableSpellLevels(state),
-  levelFilter: state.filters.level,
-  activeFilter: state.filters.activeFilter,
+  levelFilter: state.filters.spellsFilter,
   titleFilter: state.filters.titleFilter,
   availableSpells: getAvailableSpells(state),
   allActiveSpells: getAllActiveSpells(state),

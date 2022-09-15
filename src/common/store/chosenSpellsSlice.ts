@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import without from 'lodash/without';
 
 type ChosenSpellsSlice = {
@@ -13,7 +13,7 @@ export default createSlice({
     cantrips: []
   },
   reducers: {
-    toggleSpellChosen(state, action) {
+    toggleSpellChosen(state, action: PayloadAction<{title: string, isSpellChosen: boolean}>): ChosenSpellsSlice {
       const { title, isSpellChosen } = action.payload;
       if (isSpellChosen) {
         return {
@@ -26,7 +26,7 @@ export default createSlice({
         spells: [ ...state.spells, title ]
       };
     },
-    toggleCantripChosen(state, action) {
+    toggleCantripChosen(state, action: PayloadAction<{title: string, isCantripChosen: boolean}>): ChosenSpellsSlice {
       const { title, isCantripChosen } = action.payload;
       if (isCantripChosen) {
         return {
@@ -39,7 +39,7 @@ export default createSlice({
         cantrips: [ ...state.cantrips, title ]
       };
     },
-    clearChosenSpells(state) {
+    clearChosenSpells(): ChosenSpellsSlice {
       return {
         cantrips: [],
         spells: []

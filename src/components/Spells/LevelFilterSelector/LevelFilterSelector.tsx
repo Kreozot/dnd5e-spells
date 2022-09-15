@@ -7,40 +7,46 @@ import { getKnownSpellsCount, getAvailableSpellLevels, filtersSlice, State, Disp
 
 import LevelFilterButton from './LevelFilterButton';
 import TitleFilterSelector from './TitleFilterSelector';
+import { SpellsFilterOptions } from 'common/store/filtersSlice';
 
 const LevelFilterSelector: FC<ReduxProps> = (props) => {
   const {
     levels,
     haveSpellsCount,
     levelFilter,
-    activeFilter,
     selectLevel,
   } = props;
 
-
+  // TODO: Move to redux
   useEffect(() => {
     // Turn off level filter if we don't have any spells for this level
-    if (levelFilter && !levels.includes(levelFilter)) {
-      selectLevel(null);
+    if (levelFilter !== SpellsFilterOptions.All
+      && levelFilter !== SpellsFilterOptions.Active
+      && !levels.includes(levelFilter)
+    ) {
+      selectLevel(SpellsFilterOptions.All);
     }
   }, [levels, levelFilter, selectLevel]);
 
+  // TODO: Move to redux
   useEffect(() => {
     // Turn off active filter if we don't able to mark spells as active
-    if (activeFilter && !haveSpellsCount) {
-      selectLevel(null);
+    if (levelFilter === SpellsFilterOptions.Active && !haveSpellsCount) {
+      selectLevel(SpellsFilterOptions.All);
     }
-  }, [haveSpellsCount, activeFilter, selectLevel]);
+  }, [haveSpellsCount, selectLevel]);
 
   return (
     <ButtonGroup color="primary">
-      <LevelFilterButton level={ null } />
+      <LevelFilterButton level={ SpellsFilterOptions.All } />
       { haveSpellsCount &&
-        <LevelFilterButton level={ 'active' } />
+        <LevelFilterButton level={ SpellsFilterOptions.Active } />
       }
-      { levels.map((level) => (
-        <LevelFilterButton level={ level } key={ level } />
-      )) }
+      { levels
+        .map((level) => (
+          <LevelFilterButton level={ level } key={ level } />
+        ))
+      }
       <TitleFilterSelector />
     </ButtonGroup>
   );
@@ -49,11 +55,10 @@ const LevelFilterSelector: FC<ReduxProps> = (props) => {
 const mapStateToProps = (state: State) => ({
   haveSpellsCount: Boolean(getKnownSpellsCount(state)),
   levels: getAvailableSpellLevels(state),
-  levelFilter: state.filters.level,
-  activeFilter: state.filters.activeFilter,
+  levelFilter: state.filters.spellsFilter,
 });
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
-  selectLevel: filtersSlice.actions.selectLevel
+  selectLevel: filtersSlice.actions.setSpellsFilter
 }, dispatch);
 
 const connector = connect(mapStateToProps, mapDispatchToProps);
