@@ -5,6 +5,8 @@ module.exports = {
     author: `Sergey Sharov`,
   },
   plugins: [
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-typescript-checker',
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-react-helmet`,
     {

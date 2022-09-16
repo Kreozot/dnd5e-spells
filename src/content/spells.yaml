@@ -241,7 +241,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    This spell creates an undead servants. Choose <AtHigherLevels initial="1" eachLevelInc="2" postfix=" pile of bones| piles of bones"/> or <AtHigherLevels initial="1" eachLevelInc="2" postfix=" corpse| corpses"/> of a Medium or Small humanoid
+    This spell creates an undead servants. Choose <AtHigherLevels initial="1" eachLevelInc="2" postfix=" pile of bones| piles of bones"/> or <AtHigherLevels initial="1" eachLevelInc="2" postfix=" corpse| corpses"/> of a **Medium or Small humanoid**
     within range. Your spell imbues the target with a foul
     mimicry of life, raising it as an undead creature. The
     target becomes a skeleton if you chose bones or a
@@ -615,7 +615,7 @@
     spell can open the object normally. You can also set a
     password that, when spoken within **5 feet** of the object,
     suppresses this spell for **1 minute**. Otherwise, it is
-    im passable until it is broken or the spell is dispelled or
+    impassable until it is broken or the spell is dispelled or
     suppressed. Casting knock on the object suppresses
     arcane lock for **10 minutes**.
 
@@ -683,7 +683,7 @@
   duration: Special
   tags: []
   description: >
-    You and up to eight willing creatures within range
+    You and up to **eight** willing creatures within range
     project your astral bodies into the Astral Plane (the
     spell fails and the casting is wasted if you are already
     on that plane). The material body you leave behind is
@@ -1105,7 +1105,7 @@
     within **5 feet** of it in a direction you choose. Make
     a check with the hand’s Strength contested by the
     Strength (Athletics) check of the target. If the target is
-    Medium or smaller, you have advantage on the check. If
+    **Medium or smaller**, you have advantage on the check. If
     you succeed, the hand pushes the target up to number of
     **feet** equal to **5 + 5 \* ** <SpellcastingAbilityModifier/>.
     The hand moves with the target to remain within **5 feet** of it.
@@ -1113,7 +1113,7 @@
     * **Grasping Hand.** The hand attempts to grapple a Huge
     or smaller creature within **5 feet** of it. You use the hand’s
     Strength score to resolve the grapple. If the target is
-    Medium or smaller, you have advantage on the check.
+    **Medium or smaller**, you have advantage on the check.
     While the hand is grappling the target, you can use a
     bonus action to have the hand crush it. When you do
     so, the target takes **bludgeoning damage** equal to
@@ -2293,7 +2293,7 @@
     the air and choose a point within range. Hundreds of
     duplicates of the ammunition or weapon fall in a volley
     from above and then disappear. Each creature in a
-    **40-foot-radius**. **20-foot-high** cylinder centered on that
+    **40-foot-radius** **20-foot-high** cylinder centered on that
     point must make a **Dexterity saving throw**. A creature
     takes **8d8** damage on a failed save, or half as much
     damage on a successful one. The damage type is the
@@ -2712,14 +2712,12 @@
     S: true
   duration: Instantaneous
   tags: []
-  # TODO: Snippet for calculate DC
   description: >
     You attempt to interrupt a creature in the process of
     casting a spell. If the creature is casting a spell of <AtHigherLevels initial="3" eachLevelInc="1" postfix=" level"/>
     or lower, its spell fails and has no effect. If it is
     casting a spell of **4th level** or higher, make an ability
-    check using <SpellcastingAbility/>. The DC equals **10
-    + the spell’s level**. On a success, the creature’s spell fails
+    check using <SpellcastingAbility/>. The DC equals <TenPlusSpellsLevelDC />. On a success, the creature’s spell fails
     and has no effect.
   atHigherLevels: >
     When you cast this spell using a
@@ -2794,7 +2792,7 @@
   description: >
     You can cast this spell only at night. You create up to
     <AtHigherLevels initial="3 ghouls" upgrades="7:4 ghouls;8:5 ghouls or 2 ghasts or wights;9:6 ghouls, 3 ghasts or wights, or 2 mummies"/>.
-    For each creature choose a corpse of Medium or Small humanoids within range.
+    For each creature choose a corpse of **Medium or Small humanoids** within range.
     Each corpse becomes a chosen creature under your control. (The
     DM has game statistics for these creatures.)
 
@@ -2899,13 +2897,13 @@
 
     | Vegetable matter | 1 day |
 
-    | Stone or crystal | **12 hours** |
+    | Stone or crystal | 12 hours |
 
-    | Precious metals | **1 hour** |
+    | Precious metals | 1 hour |
 
-    | Gems | **10 minutes** |
+    | Gems | 10 minutes |
 
-    | Adamantine or mithral | **1 minute** |
+    | Adamantine or mithral | 1 minute |
 
 
     The target can act normally on its turn if you choose no
@@ -3143,7 +3141,7 @@
   description: >
     You create a shadowy door on a flat solid surface that
     you can see within range. The door is large enough to
-    allow Medium creatures to pass through unhindered.
+    allow **Medium creatures** to pass through unhindered.
     When opened, the door leads to a demiplane that
     appears to be an empty room **30 feet** in each dimension,
     made of wood or stone. When the spell ends, the door
@@ -3467,7 +3465,6 @@
     S: true
   duration: Instantaneous
   tags: []
-  # TODO: Snippet for calculate DC
   description: >
     Choose one creature, object, or magical effect within
     range. Any spell of <AtHigherLevels initial="3" eachLevelInc="1" postfix=" level"/> or lower on the target ends.
@@ -3475,7 +3472,7 @@
 
     For each higher levels spell on the target, make
     an ability check using <SpellcastingAbility/>. The
-    DC equals **10 + the spell’s level**. On a successful check,
+    DC equals <TenPlusSpellsLevelDC />. On a successful check,
     the spell ends.
   atHigherLevels: >
     When you cast this spell using a
@@ -4326,7 +4323,7 @@
 
     Choose raw materials that you can see within range.
     You can fabricate a Large or smaller object (contained
-    within a **10-foot** cube, or eight connected **5-foot** cubes),
+    within a **10-foot** cube, or **eight** connected **5-foot** cubes),
     given a sufficient quantity of raw material. If you
     are working with metal, stone, or another mineral
     substance, however, the fabricated object can be no
@@ -5108,7 +5105,7 @@
     The target can also spend **5 feet** of movement to
     automatically escape from nonmagical restraints, such
     as manacles or a creature that has it grappled. Finally,
-    being underwater im poses no penalties on the target’s
+    being underwater imposes no penalties on the target’s
     movement or attacks.
 
 - title: Friends
@@ -6437,7 +6434,7 @@
     miniature representation of the prison made from jade.
 
     * **Minimus Containment.** The target shrinks to a height
-    of **1 inch** and is im prisoned inside a gem stone or similar
+    of **1 inch** and is imprisoned inside a gem stone or similar
     object. Light can pass through the gemstone normally
     (allowing the target to see out and other creatures to see
     in), but nothing else can pass through, even by means of
@@ -6488,7 +6485,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    A swirling cloud of sm oke shot through with white-hot
+    A swirling cloud of smoke shot through with white-hot
     embers appears in a **20-foot-radius** sphere centered on
     a point within range. The cloud spreads around corners
     and is heavily obscured. It lasts for the duration or until
@@ -7319,7 +7316,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    As you call out words of restoration, up to six creatures
+    As you call out words of restoration, up to **six creatures**
     of your choice that you can see within range regain hit
     points equal to <AtHigherLevels initial="1" eachLevelInc="1" postfix="d4"/>** + **<SpellcastingAbilityModifier/>.
     This spell has no effect on undead or constructs.
@@ -7468,7 +7465,7 @@
     A simmering green arrow streaks toward a target
     within range and bursts in a spray of acid. Make a
     ranged spell attack <SpellAttackModifier/> against the target. On a hit, the
-    target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d4"/> **acid damage** immediately and **2d4** **acid
+    target takes <AtHigherLevels initial="4" eachLevelInc="1" postfix="d4"/> **acid damage** immediately and **<AtHigherLevels initial="2" eachLevelInc="1" postfix="d4"/>** **acid
     damage** at the end of its next turn. On a miss, the arrow
     splashes the target with acid for half as much of the
     initial damage and no damage at the end of its next turn.
@@ -7623,7 +7620,7 @@
     of terrain. The terrain’s general shape remains the
     same, however. Open fields or a road could be made to
     resemble a swamp, hill, crevasse, or some other difficult
-    or im passable terrain. A pond can be made to seem like
+    or impassable terrain. A pond can be made to seem like
     a grassy meadow, a precipice like a gentle slope, or a
     rock-strewn gully like a wide and smooth road.
 
@@ -7661,7 +7658,7 @@
     Three illusory duplicates of yourself appear in your
     space. Until the spell ends, the duplicates move with
     you and mimic your actions, shifting position so it’s
-    im possible to track which image is real. You can use
+    impossible to track which image is real. You can use
     your action to dismiss the illusory duplicates.
 
 
@@ -8352,7 +8349,7 @@
     within range. You decide the creature’s appearance,
     but it is equipped with a saddle, bit, and bridle. Any
     of the equipment created by the spell vanishes in a
-    puff of sm oke if it is carried more than **10 feet** away
+    puff of smoke if it is carried more than **10 feet** away
     from the steed.
 
 
@@ -8495,7 +8492,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    You and up to eight willing creatures who link hands in
+    You and up to **eight** willing creatures who link hands in
     a circle are transported to a different plane of existence.
     You can specify a target destination in general terms,
     such as the City of Brass on the Elemental Plane of
@@ -8686,7 +8683,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    Up to six creatures of your choice that you can see
+    Up to **six creatures** of your choice that you can see
     within range each regain hit points equal to
     <AtHigherLevels initial="2" eachLevelInc="1" postfix="d8"/>** + **<SpellcastingAbilityModifier/>.
     This spell has no effect on undead or constructs.
@@ -8747,7 +8744,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    Eight multicolored rays of light flash from your hand.
+    **Eight** multicolored rays of light flash from your hand.
     Each ray is a different color and has a different power
     and purpose. Each creature in a **60-foot** cone must
     make a **Dexterity saving throw**. For each target, roll a **d8**
@@ -9144,7 +9141,7 @@
   duration: 1 hour
   tags: []
   description: >
-    You forge a telepathic link among up to eight willing
+    You forge a telepathic link among up to **eight** willing
     creatures of your choice within range, psychically
     linking each creature to all the others for the duration.
     Creatures with Intelligence scores of 2 or less aren’t
@@ -9464,7 +9461,7 @@
     extradimensional space that lasts until the spell ends.
     The extradimensional space can be reached by
     climbing to the top of the rope. The space can hold as
-    many as eight Medium or smaller creatures. The rope
+    many as **eight** **Medium or smaller** creatures. The rope
     can be pulled into the space, making the rope disappear
     from view outside the space.
 
@@ -9946,7 +9943,7 @@
     entirely inside the sphere is immune to **thunder damage**,
     and creatures are deafened while entirely inside it.
     Casting a spell that includes a verbal component is
-    im possible there.
+    impossible there.
 
 - title: Silent Image
   level: 1
@@ -10109,7 +10106,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    You alter time around up to six creatures of your
+    You alter time around up to **six creatures** of your
     choice in a **40-foot** cube within range. Each target must
     succeed on a **Wisdom saving throw** or be affected by
     this spell for the duration.
@@ -10472,8 +10469,8 @@
     **1d6** **acid damage**.
 
 
-    **Round 3.** You call six bolts of lightning from the
-    cloud to strike six creatures or objects of your choice
+    **Round 3.** You call **six bolts** of lightning from the
+    cloud to strike **six creatures** or objects of your choice
     beneath the cloud. A given creature or object can’t be
     struck by more than one bolt. A struck creature must
     make a **Dexterity saving throw**. The creature takes
@@ -10490,7 +10487,7 @@
     area under the cloud. The area becomes difficult
     terrain and is heavily obscured. Each creature there
     takes **1d6** **cold damage**. Ranged weapon attacks in
-    the area are im possible. The wind and rain count as
+    the area are impossible. The wind and rain count as
     a severe distraction for the purposes of maintaining
     concentration on spells. Finally, gusts of strong wind
     (ranging from **20** to **50 miles per hour**) automatically
@@ -10854,7 +10851,7 @@
   duration: Instantaneous
   tags: []
   description: >
-    This spell instantly transports you and up to eight
+    This spell instantly transports you and up to **eight**
     willing creatures of your choice that you can see within
     range, or a single object that you can see within range,
     to a destination you select. If you target an object, it
@@ -11909,7 +11906,7 @@
     much damage on a successful one.
 
 
-    The strong wind keeps fog, sm oke, and other gases at
+    The strong wind keeps fog, smoke, and other gases at
     bay. Small or smaller flying creatures or objects can’t
     pass through the wall. Loose, lightweight materials
     brought into the wall fly upward. Arrows, bolts, and
