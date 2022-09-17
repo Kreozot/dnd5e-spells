@@ -40,7 +40,7 @@ const EachLevelUpgrades: FC<Props & ReduxProps> = (props) => {
 
   return (
     <Tooltip text={ tooltipText }>
-      <strong>{ currentValue }</strong>
+      <span className={styles.value}>{ currentValue }</span>
     </Tooltip>
   );
 }
