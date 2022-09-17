@@ -9,6 +9,8 @@ import LevelFilterButton from './LevelFilterButton';
 import TitleFilterSelector from './TitleFilterSelector';
 import { SpellsFilterOptions } from 'common/store/filtersSlice';
 
+import * as styles from './LevelFilterSelector.module.scss';
+
 const LevelFilterSelector: FC<ReduxProps> = (props) => {
   const {
     levels,
@@ -34,10 +36,10 @@ const LevelFilterSelector: FC<ReduxProps> = (props) => {
     if (levelFilter === SpellsFilterOptions.Active && !haveSpellsCount) {
       selectLevel(SpellsFilterOptions.All);
     }
-  }, [haveSpellsCount, selectLevel]);
+  }, [haveSpellsCount, selectLevel, levelFilter]);
 
   return (
-    <ButtonGroup color="primary">
+    <ButtonGroup color="primary" className={ styles.buttons }>
       <LevelFilterButton level={ SpellsFilterOptions.All } />
       { haveSpellsCount &&
         <LevelFilterButton level={ SpellsFilterOptions.Active } />

@@ -1,4 +1,5 @@
 import React, { FC, useMemo } from 'react';
+import classNames from 'classnames';
 
 import Tooltip from 'components/Tooltip';
 import IconCell from '../IconCell';
@@ -7,12 +8,14 @@ import DiamondIcon from 'images/icon-diamond.svg';
 import VoiceIcon from 'images/icon-voice.svg';
 import HandIcon from 'images/icon-hand.svg';
 import * as styles from './ComponentsCell.module.scss';
-import { CellProps } from 'react-table';
 
-type Props = CellProps<Spell, SpellComponents>;
+type Props = {
+  components: SpellComponents;
+  isMobile?: boolean;
+};
 
 const ComponentsCell: FC<Props> = (props) => {
-  const { value: components } = props;
+  const { components, isMobile } = props;
 
   const materialHtml = useMemo(() => {
     const materialPrices = Boolean(components.materialConsumed || components.materialSpecial)
@@ -47,7 +50,7 @@ const ComponentsCell: FC<Props> = (props) => {
   }, [components]);
 
   return (
-    <div className={ styles.container }>
+    <div className={ classNames(styles.container, { [styles.mobile]: isMobile }) }>
       <span>
         { Boolean(components.V) &&
           <IconCell title="Verbal component"><VoiceIcon /></IconCell>

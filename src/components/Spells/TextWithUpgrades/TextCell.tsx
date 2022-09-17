@@ -1,14 +1,16 @@
 import React, { FC } from 'react';
-import { CellProps } from 'react-table';
 
 import { isCertainLevelUpgrades, isEachLevelUpgrades } from 'types';
 import CertainLevelUpgrades from 'components/CertainLevelUpgrades';
 import EachLevelUpgrades from 'components/EachLevelUpgrades';
 
-type Props = CellProps<Spell, string | CertainLevelUpgrades<string> | EachLevelUpgrades>;
+type Props = {
+  value: string | CertainLevelUpgrades<string> | EachLevelUpgrades;
+  spell: Spell;
+};
 
 const TextCell: FC<Props> = (props) => {
-  const { value, row } = props;
+  const { value, spell } = props;
 
   if (!value) {
     return null;
@@ -24,8 +26,8 @@ const TextCell: FC<Props> = (props) => {
       <CertainLevelUpgrades
         initial={initial}
         upgrades={upgrades}
-        spellLevel={row.original.level as number}
-        spellTitle={row.original.title}
+        spellLevel={spell.level as number}
+        spellTitle={spell.title}
       />
     );
   }
@@ -37,8 +39,8 @@ const TextCell: FC<Props> = (props) => {
         initial={initial}
         eachLevelInc={eachLevelInc}
         postfix={postfix}
-        spellLevel={row.original.level as number}
-        spellTitle={row.original.title}
+        spellLevel={spell.level as number}
+        spellTitle={spell.title}
       />
     );
   }

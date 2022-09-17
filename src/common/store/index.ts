@@ -11,7 +11,6 @@ import filtersSlice from './filtersSlice';
 import spellsLevelsSlice from './spellsLevelsSlice';
 import uniqBy from 'lodash/uniqBy';
 import sortBy from 'lodash/sortBy';
-import { CellProps } from 'react-table';
 
 const persistConfig = {
   key: 'root',
@@ -89,7 +88,7 @@ export const getClassAdditionalOptions = createSelector(
   }
 );
 
-const getAdditionalClassSpells = createSelector(
+export const getAdditionalClassSpells = createSelector(
   (state: State) => state.filters.class,
   (state: State) => state.filters.classAdditional,
   getClassAdditionalKey,
@@ -193,24 +192,6 @@ export const getAllActiveSpells = createSelector(
       ...(additionalClassSpells || [])
     ];
   }
-);
-
-/** Is the spell is always active because of class additional option value */
-export const getIsSpellAlwaysActive = createSelector(
-  (state: State, props: CellProps<Spell>) => {
-    const additionalClassSpells: string[] | undefined = getAdditionalClassSpells(state);
-    if (additionalClassSpells) {
-      return additionalClassSpells.some((title) => props.value.toLowerCase() === title.toLowerCase());
-    }
-    return false;
-  },
-  (isAlwaysActive) => isAlwaysActive
-);
-
-export const getIsSpellActive = createSelector(
-  (state: State, props: CellProps<Spell>) => getAllActiveSpells(state)
-    .some((title) => props.value.toLowerCase() === title.toLowerCase()),
-  (isActive) => isActive
 );
 
 export const getCanChooseMoreSpells = createSelector(

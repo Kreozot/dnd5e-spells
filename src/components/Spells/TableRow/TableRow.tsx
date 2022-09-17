@@ -1,7 +1,10 @@
+import { useMediaQuery, useTheme } from '@mui/material';
 import React, { useMemo, useCallback, FC } from 'react';
 import { ColumnInstance, Row, UseExpandedRowProps } from 'react-table';
+import classNames from 'classnames';
 
 import Description from './Description';
+import SpellDetailsMobile from './SpellDetailsMobile';
 
 import * as styles from './TableRow.module.scss';
 
@@ -12,6 +15,9 @@ type Props = {
 
 const TableRow: FC<Props> = (props) => {
   const { row, visibleColumns } = props;
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleClick = useCallback(
     () => row.toggleRowExpanded(!row.isExpanded),
@@ -28,7 +34,10 @@ const TableRow: FC<Props> = (props) => {
         return (
           <td
             { ...cell.getCellProps() }
-            className={ `${row.isExpanded ? styles.cellExpanded : styles.cell} ${cell.column.id === 'isActive' ? styles.checkboxCell : ''}` }
+            className={ classNames(styles.cell, {
+              [styles.cellExpanded]: row.isExpanded,
+              [styles.checkboxCell]: cell.column.id === 'isActive',
+            }) }
           >
             { cell.render('Cell') }
           </td>
@@ -43,13 +52,22 @@ const TableRow: FC<Props> = (props) => {
       return null;
     }
     return (
-      <tr>
-        <td colSpan={ visibleColumns.length } className={ styles.descriptionCell }>
-          <Description item={ row.original } />
-        </td>
-      </tr>
+      <>
+        {isMobile &&
+          <tr>
+            <td colSpan={ visibleColumns.length } className={ styles.detailsMobileCell }>
+              <SpellDetailsMobile item={ row.original } />
+            </td>
+          </tr>
+        }
+        <tr>
+          <td colSpan={ visibleColumns.length } className={ styles.descriptionCell }>
+            <Description item={ row.original } />
+          </td>
+        </tr>
+      </>
     )
-  }, [row.isExpanded, row.original, visibleColumns.length])
+  }, [row.isExpanded, row.original, visibleColumns.length, isMobile])
 
   return (
     <>
