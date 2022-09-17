@@ -1,8 +1,8 @@
-import React, { ChangeEventHandler, FC, useCallback } from 'react';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
+import React, { FC, useCallback } from 'react';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
 import { bindActionCreators } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
 
@@ -18,8 +18,8 @@ const ClassAdditionalSelector: FC<ReduxProps> = (props) => {
     additionalKey,
   } = props;
 
-  const handleAdditionalChange = useCallback<ChangeEventHandler<{ name?: string; value: unknown; }>>((event) => {
-    setClassAdditional(event.target.value as string || undefined);
+  const handleAdditionalChange = useCallback((event: SelectChangeEvent<string>) => {
+    setClassAdditional(event.target.value || undefined);
   }, [setClassAdditional]);
 
   if (additionalOptions) {
@@ -30,6 +30,7 @@ const ClassAdditionalSelector: FC<ReduxProps> = (props) => {
           labelId="class-select-label"
           value={ classAdditionalFilter || '' }
           onChange={ handleAdditionalChange }
+          label={ additionalKey }
           className={ styles.classFilterSelect }
         >
           <MenuItem value="">

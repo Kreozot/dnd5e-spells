@@ -1,7 +1,4 @@
 import React, { FC } from 'react';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
 import { connect, ConnectedProps } from 'react-redux';
 
 import {
@@ -9,6 +6,7 @@ import {
 } from 'common/store';
 
 import * as styles from '../FiltersBlock.module.scss';
+import { TextField } from '@mui/material';
 
 const KnownSpellsCount: FC<ReduxProps> = (props) => {
   const {
@@ -21,19 +19,16 @@ const KnownSpellsCount: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <FormControl className={ styles.field }>
-      <InputLabel
-        id="known-spells-count-label"
-        className={ styles.knownSpellsCountLabel }
-      >
-        Known spells
-      </InputLabel>
-      <Input
+    <div className={ styles.field }>
+      <TextField
+        label="Known spells"
         value={ `${activeSpellsCount} / ${knownSpellsCount}` }
         className={ styles.knownSpellsCount }
-        disabled
+        InputProps={{
+          disabled: true
+        }}
       />
-    </FormControl>
+    </div>
   );
 }
 

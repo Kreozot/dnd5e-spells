@@ -1,4 +1,5 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Kreozot_dnd5e-spells&metric=alert_status)](https://sonarcloud.io/dashboard?id=Kreozot_dnd5e-spells)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/054e9432-0f59-428d-ba3c-6d5e4d533167/deploy-status)](https://app.netlify.com/sites/dnd5e/deploys)
 
 # D&D 5e Interactive Spell List
 

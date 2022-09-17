@@ -1,5 +1,5 @@
 import React, { FC, useMemo } from 'react';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 import SpellLevelSelectButton from './SpellLevelSelectButton';
 

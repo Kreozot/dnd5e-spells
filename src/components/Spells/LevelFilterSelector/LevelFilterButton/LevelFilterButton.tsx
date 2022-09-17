@@ -1,5 +1,5 @@
 import React, { FC, useCallback, useMemo } from 'react';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import { bindActionCreators } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
 
