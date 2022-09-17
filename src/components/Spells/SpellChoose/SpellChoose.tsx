@@ -3,25 +3,26 @@ import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Checkbox from '@mui/material/Checkbox';
 import { Tooltip } from 'react-tippy';
-import { CellProps } from 'react-table';
 
 import {
-  getIsSpellActive,
   chosenSpellsSlice,
-  getIsSpellAlwaysActive,
   getCanChooseMoreSpells,
   getCanChooseMoreCantrips,
   State,
   Dispatch,
   getKnownSpellsCount,
+  getAllActiveSpells,
+  getAdditionalClassSpells,
 } from 'common/store';
+import { createSelector } from 'reselect';
 
-type Props = CellProps<Spell>;
+type Props = {
+  spell: Spell;
+};
 
 const SpellChoose: FC<Props & ReduxProps> = (props) => {
   const {
-    value,
-    row, // TODO: handle cantrips with different logic
+    spell, // TODO: handle cantrips with different logic
     isSpellActive,
     toggleSpellChosen,
     toggleCantripChosen,
@@ -36,20 +37,20 @@ const SpellChoose: FC<Props & ReduxProps> = (props) => {
   const handleClick = useCallback<MouseEventHandler<HTMLButtonElement>>((event) => {
     event.preventDefault();
     event.stopPropagation();
-    if (row.original.level === 'cantrip') {
+    if (spell.level === 'cantrip') {
       if (isSpellActive || canChooseMoreCantrips) {
-        toggleCantripChosen({ title: value, isCantripChosen: isSpellActive });
+        toggleCantripChosen({ title: spell.title, isCantripChosen: isSpellActive });
       } else {
         setIsHintOpen(true);
       }
     } else {
       if (isSpellActive || canChooseMoreSpells) {
-        toggleSpellChosen({ title: value, isSpellChosen: isSpellActive });
+        toggleSpellChosen({ title: spell.title, isSpellChosen: isSpellActive });
       } else {
         setIsHintOpen(true);
       }
     }
-  }, [value, isSpellActive, toggleSpellChosen, toggleCantripChosen, canChooseMoreSpells, canChooseMoreCantrips, row.original.level]);
+  }, [spell.title, isSpellActive, toggleSpellChosen, toggleCantripChosen, canChooseMoreSpells, canChooseMoreCantrips, spell.level]);
 
   const handleRequestClose = useCallback(() => {
     setIsHintOpen(false);
@@ -62,10 +63,10 @@ const SpellChoose: FC<Props & ReduxProps> = (props) => {
   }, [isHintOpen]);
 
   const hintTitle = useMemo(() => {
-    return row.original.level === 'cantrip'
+    return spell.level === 'cantrip'
       ? 'You have reached your known cantrips maximum'
       : 'You have reached your known spells maximum';
-  }, [row.original.level]);
+  }, [spell.level]);
 
   if (!haveSpellsCount) {
     return null;
@@ -89,7 +90,26 @@ const SpellChoose: FC<Props & ReduxProps> = (props) => {
   )
 }
 
-const mapStateToProps = (state: State, props: CellProps<Spell>) => ({
+/** Is the spell is always active because of class additional option value */
+const getIsSpellAlwaysActive = createSelector(
+  (state: State, props: Props) => {
+    const additionalClassSpells: string[] | undefined = getAdditionalClassSpells(state);
+    if (additionalClassSpells) {
+      return additionalClassSpells.some((title) => props.spell.title.toLowerCase() === title.toLowerCase());
+    }
+    return false;
+  },
+  (isAlwaysActive) => isAlwaysActive
+);
+
+/** Is the spell active for use */
+const getIsSpellActive = createSelector(
+  (state: State, props: Props) => getAllActiveSpells(state)
+    .some((title) => props.spell.title.toLowerCase() === title.toLowerCase()),
+  (isActive) => isActive
+);
+
+const mapStateToProps = (state: State, props: Props) => ({
   isSpellActive: getIsSpellActive(state, props),
   isSpellAlwaysActive: getIsSpellAlwaysActive(state, props),
   canChooseMoreSpells: getCanChooseMoreSpells(state),

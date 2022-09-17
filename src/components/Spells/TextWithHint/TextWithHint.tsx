@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Tooltip from 'components/Tooltip';
 import { CellProps } from 'react-table';
 
-type Props = CellProps<Spell, SpellCastingTime>;
+type Props = Pick<CellProps<Spell, SpellCastingTime>, 'value'>;
 
 const TextWithHint: FC<Props> = (props) => {
   const { value } = props;

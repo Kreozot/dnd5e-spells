@@ -1,6 +1,14 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  &.mobile {
+    display: flex;
+
+    span > * {
+      margin-left: 4px;
+    }
+  }
 }
 
 .item {
@@ -13,7 +21,7 @@
   position: relative;
 
   &:after {
-    content: '*';
+    content: "*";
     font-weight: bold;
     font-size: 1.1em;
     position: absolute;

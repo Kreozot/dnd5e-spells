@@ -12,8 +12,6 @@
 }
 
 .cellExpanded {
-  @extend .cell;
-
   border-bottom: none;
 }
 
@@ -23,5 +21,11 @@
 }
 
 .descriptionCell {
-  width: 100px;
+  width: 100%;
+}
+
+.detailsMobileCell {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }

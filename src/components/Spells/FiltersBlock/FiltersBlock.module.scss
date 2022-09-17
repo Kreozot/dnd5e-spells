@@ -33,12 +33,12 @@
 
 .field {
   display: inline-block;
-
-  & + & {
-    margin-left: 1em;
-  }
 }
 
 .container {
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
 }

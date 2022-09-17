@@ -3,15 +3,15 @@ import { useTable, useExpanded, Column, Row, UseExpandedRowProps } from 'react-t
 
 import ComponentsCell from './cells/ComponentsCell';
 import ConcentrationCell from './cells/ConcentrationCell';
-import TextCell from './cells/TextCell';
+import TextWithUpgrades from '../TextWithUpgrades';
 import IconCell from './cells/IconCell';
-import SchoolCell from './cells/SchoolCell';
-import TextWithHint from './TextWithHint';
-import TableRow from './TableRow';
-import SpellChoose from './SpellChoose';
+import TextWithHint from '../TextWithHint';
+import TableRow from '../TableRow';
+import SpellChoose from '../SpellChoose';
 
 import RitualIcon from 'images/icon-ritual.svg';
 import * as styles from './SpellsList.module.scss';
+import School from '../School';
 
 type Props = {
   data: Spell[];
@@ -24,7 +24,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'Active',
       accessor: 'title',
-      Cell: SpellChoose,
+      Cell: ({ row }) => <SpellChoose spell={ row.original }/>,
       id: 'isActive',
     },
     {
@@ -34,7 +34,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'School',
       accessor: 'school',
-      Cell: SchoolCell,
+      Cell: ({ value }) => <School value={ value } />,
     },
     {
       Header: () => <div className={ styles.headerCenter }>Ritual</div>,
@@ -48,7 +48,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: () => <div className={ styles.headerCenter }>Components</div>,
       accessor: 'components',
-      Cell: ComponentsCell,
+      Cell: ({ value }) => <ComponentsCell components={ value }/>,
     },
     {
       Header: 'Casting time',
@@ -58,7 +58,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'Range',
       accessor: 'range',
-      Cell: TextCell,
+      Cell: ({ value, row }) => <TextWithUpgrades value={ value } spell={ row.original }/>,
     },
     {
       Header: () => <div className={ styles.headerCenter } title="Concentration">Conc.</div>,
@@ -68,7 +68,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'Duration',
       accessor: 'duration',
-      Cell: TextCell,
+      Cell: ({ value, row }) => <TextWithUpgrades value={ value } spell={ row.original }/>,
     },
   ], []);
 

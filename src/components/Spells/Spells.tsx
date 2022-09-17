@@ -1,6 +1,8 @@
 import React, { FC, useMemo } from 'react';
 import groupBy from 'lodash/groupBy';
 import { connect, ConnectedProps } from 'react-redux';
+import { useMediaQuery, useTheme } from '@mui/material';
+import classNames from 'classnames';
 
 import {
   getAvailableSpells,
@@ -9,11 +11,12 @@ import {
   State,
 } from 'common/store';
 import SpellsList from './SpellsList';
+import SpellsListMobile from './SpellsListMobile';
 import LevelFilterSelector from './LevelFilterSelector';
 import FiltersBlock from './FiltersBlock';
+import { SpellsFilterOptions } from 'common/store/filtersSlice';
 
 import * as styles from './Spells.module.scss'
-import { SpellsFilterOptions } from 'common/store/filtersSlice';
 
 const Spells: FC<ReduxProps> = (props) => {
   const {
@@ -23,6 +26,13 @@ const Spells: FC<ReduxProps> = (props) => {
     titleFilter,
     allActiveSpells,
   } = props;
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+  const SpellsListComponent = useMemo(() => {
+    return isMobile ? SpellsListMobile : SpellsList;
+  }, [isMobile]);
 
   /** List of spells displayed on current spell list page */
   const displayedSpells = useMemo(() => {
@@ -54,20 +64,22 @@ const Spells: FC<ReduxProps> = (props) => {
       }
       return (
         <div className={ styles.container }>
-          <SpellsList data={ groupedSpells[levelFilter] } />
+          <SpellsListComponent data={ groupedSpells[levelFilter] } />
         </div>
       );
     }
 
     return displayedLevels.map((level) => (
       <div key={ level } className={ styles.container }>
-        <h2 className={ styles.levelHeader }>
+        <h2 className={ classNames(styles.levelHeader, {
+          [styles.mobile]: isMobile,
+        }) }>
           { level === 'cantrip' ? 'Cantrips' : `Level ${level}` }
         </h2>
-        <SpellsList data={ groupedSpells[level] } />
+        <SpellsListComponent data={ groupedSpells[level] } />
       </div>
     ));
-  }, [displayedLevels, groupedSpells, levelFilter]);
+  }, [displayedLevels, groupedSpells, levelFilter, isMobile]);
 
   return (
     <>
