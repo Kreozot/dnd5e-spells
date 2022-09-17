@@ -10,13 +10,13 @@ import {
   getAvailableSpellLevels,
   State,
 } from 'common/store';
+import { SpellsFilterOptions } from 'common/store/filtersSlice';
 import SpellsList from './SpellsList';
 import SpellsListMobile from './SpellsListMobile';
 import LevelFilterSelector from './LevelFilterSelector';
 import FiltersBlock from './FiltersBlock';
-import { SpellsFilterOptions } from 'common/store/filtersSlice';
 
-import * as styles from './Spells.module.scss'
+import * as styles from './Spells.module.scss';
 
 const Spells: FC<ReduxProps> = (props) => {
   const {
@@ -37,8 +37,8 @@ const Spells: FC<ReduxProps> = (props) => {
   /** List of spells displayed on current spell list page */
   const displayedSpells = useMemo(() => {
     if (levelFilter === SpellsFilterOptions.Active) {
-      return availableSpells.filter(({ title }) =>
-        allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
+      return availableSpells.filter(
+        ({ title }) => allActiveSpells.some((spellTitle) => spellTitle.toLowerCase() === title.toLowerCase())
       );
     }
     if (titleFilter) {
@@ -63,34 +63,35 @@ const Spells: FC<ReduxProps> = (props) => {
         return null;
       }
       return (
-        <div className={ styles.container }>
-          <SpellsListComponent data={ groupedSpells[levelFilter] } />
+        <div className={styles.container}>
+          <SpellsListComponent data={groupedSpells[levelFilter]} />
         </div>
       );
     }
 
     return displayedLevels.map((level) => (
-      <div key={ level } className={ styles.container }>
-        <h2 className={ classNames(styles.levelHeader, {
+      <div key={level} className={styles.container}>
+        <h2 className={classNames(styles.levelHeader, {
           [styles.mobile]: isMobile,
-        }) }>
+        })}
+        >
           { level === 'cantrip' ? 'Cantrips' : `Level ${level}` }
         </h2>
-        <SpellsListComponent data={ groupedSpells[level] } />
+        <SpellsListComponent data={groupedSpells[level]} />
       </div>
     ));
-  }, [displayedLevels, groupedSpells, levelFilter, isMobile]);
+  }, [displayedLevels, groupedSpells, levelFilter, isMobile, SpellsListComponent]);
 
   return (
     <>
-      <div className={ styles.header }>
+      <div className={styles.header}>
         <FiltersBlock />
         <LevelFilterSelector />
       </div>
       { spellsList }
     </>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   levels: getAvailableSpellLevels(state),

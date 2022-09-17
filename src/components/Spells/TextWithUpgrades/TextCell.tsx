@@ -17,6 +17,7 @@ const TextCell: FC<Props> = (props) => {
   }
 
   if (typeof value === 'string') {
+    // eslint-disable-next-line react/jsx-no-useless-fragment
     return <>{value}</>;
   }
 
@@ -46,6 +47,6 @@ const TextCell: FC<Props> = (props) => {
   }
 
   return null;
-}
+};
 
 export default TextCell;

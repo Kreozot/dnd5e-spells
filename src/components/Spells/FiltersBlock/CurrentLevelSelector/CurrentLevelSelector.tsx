@@ -1,6 +1,8 @@
-import React, { ChangeEvent, FC, useCallback, useState } from 'react';
+import React, {
+  ChangeEvent, FC, useCallback, useState,
+} from 'react';
 import TextField from '@mui/material/TextField';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, ConnectedProps } from 'react-redux';
 import debounce from 'lodash/debounce';
 
@@ -15,27 +17,28 @@ const CurrentLevelSelector: FC<ReduxProps> = (props) => {
   } = props;
 
   const [fieldValue, setFieldValue] = useState(currentLevel);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const setCurrentLevelDebounced = useCallback(debounce(setCurrentLevel, 500), [setCurrentLevel]);
 
   const handleChange = useCallback(({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
     const intValue = parseInt(value, 10);
-    const newValue = !isNaN(intValue) && (intValue >= 1) ? intValue : undefined;
+    const newValue = !Number.isNaN(intValue) && (intValue >= 1) ? intValue : undefined;
     setFieldValue(newValue);
     setCurrentLevelDebounced(newValue);
   }, [setCurrentLevelDebounced]);
 
   return (
-    <div className={ styles.field }>
+    <div className={styles.field}>
       <TextField
         label="Current level"
         type="number"
-        value={ fieldValue || '' }
-        onChange={ handleChange }
-        className={ styles.currentLevelInput }
+        value={fieldValue || ''}
+        onChange={handleChange}
+        className={styles.currentLevelInput}
       />
     </div>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   currentLevel: state.filters.currentLevel,
@@ -43,7 +46,6 @@ const mapStateToProps = (state: State) => ({
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
   setCurrentLevel: filtersSlice.actions.setCurrentLevel,
 }, dispatch);
-
 
 const connector = connect(mapStateToProps, mapDispatchToProps);
 type ReduxProps = ConnectedProps<typeof connector>;

@@ -13,10 +13,10 @@ const TextWithHint: FC<Props> = (props) => {
   }
 
   return (
-    <Tooltip text={ value.hint }>
+    <Tooltip text={value.hint}>
       { value.value }
     </Tooltip>
   );
-}
+};
 
 export default TextWithHint;

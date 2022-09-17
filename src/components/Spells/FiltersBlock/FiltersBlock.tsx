@@ -9,11 +9,11 @@ import KnownCantripsCount from './KnownCantripsCount';
 import SpellSaveDC from './SpellSaveDC';
 import SpellAttackModifier from './SpellAttackModifier';
 
-import * as styles from './FiltersBlock.module.scss'
+import * as styles from './FiltersBlock.module.scss';
 
-function FiltersBlock() {
+const FiltersBlock = () => {
   return (
-    <div className={ styles.container }>
+    <div className={styles.container}>
       <ClassFilterSelector />
       <ClassAdditionalSelector />
       <CurrentLevelSelector />
@@ -24,7 +24,6 @@ function FiltersBlock() {
       <SpellAttackModifier />
     </div>
   );
-}
-
+};
 
 export default memo(FiltersBlock);

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { useMediaQuery, useTheme } from '@mui/material';
 import React, { useMemo, useCallback, FC } from 'react';
 import { ColumnInstance, Row, UseExpandedRowProps } from 'react-table';
@@ -26,18 +27,18 @@ const TableRow: FC<Props> = (props) => {
 
   const mainTR = useMemo(() => (
     <tr
-      { ...row.getRowProps() }
-      onClick={ handleClick }
-      className={ styles.row }
+      {...row.getRowProps()}
+      onClick={handleClick}
+      className={styles.row}
     >
       { row.cells.map((cell) => {
         return (
           <td
-            { ...cell.getCellProps() }
-            className={ classNames(styles.cell, {
+            {...cell.getCellProps()}
+            className={classNames(styles.cell, {
               [styles.cellExpanded]: row.isExpanded,
               [styles.checkboxCell]: cell.column.id === 'isActive',
-            }) }
+            })}
           >
             { cell.render('Cell') }
           </td>
@@ -53,28 +54,29 @@ const TableRow: FC<Props> = (props) => {
     }
     return (
       <>
-        {isMobile &&
-          <tr>
-            <td colSpan={ visibleColumns.length } className={ styles.detailsMobileCell }>
-              <SpellDetailsMobile item={ row.original } />
-            </td>
-          </tr>
-        }
+        {isMobile
+          && (
+            <tr>
+              <td colSpan={visibleColumns.length} className={styles.detailsMobileCell}>
+                <SpellDetailsMobile item={row.original} />
+              </td>
+            </tr>
+          )}
         <tr>
-          <td colSpan={ visibleColumns.length } className={ styles.descriptionCell }>
-            <Description item={ row.original } />
+          <td colSpan={visibleColumns.length} className={styles.descriptionCell}>
+            <Description item={row.original} />
           </td>
         </tr>
       </>
-    )
-  }, [row.isExpanded, row.original, visibleColumns.length, isMobile])
+    );
+  }, [row.isExpanded, row.original, visibleColumns.length, isMobile]);
 
   return (
     <>
       { mainTR }
       { descriptionRow }
     </>
-  )
-}
+  );
+};
 
 export default TableRow;

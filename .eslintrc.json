@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "@kreozot/eslint-config"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}

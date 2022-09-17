@@ -6,9 +6,9 @@ import Spells from 'components/Spells';
 const IndexPage: FC = () => {
   return (
     <Layout>
-      <Spells/>
+      <Spells />
     </Layout>
   );
-}
+};
 
 export default IndexPage;

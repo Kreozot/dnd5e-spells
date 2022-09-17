@@ -3,10 +3,12 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { filtersSlice, chosenSpellsSlice, Dispatch, State } from 'common/store';
+import {
+  filtersSlice, chosenSpellsSlice, Dispatch, State,
+} from 'common/store';
 
 import * as styles from '../FiltersBlock.module.scss';
 
@@ -23,14 +25,14 @@ const ClassFilterSelector: FC<ReduxProps> = (props) => {
   }, [setClass, clearChosenSpells]);
 
   return (
-    <FormControl className={ styles.field }>
+    <FormControl className={styles.field}>
       <InputLabel id="class-select-label">Class</InputLabel>
       <Select
         labelId="class-select-label"
-        value={ classFilter || '' }
-        onChange={ handleClassChange }
+        value={classFilter || ''}
+        onChange={handleClassChange}
         label="Class"
-        className={ styles.classFilterSelect }
+        className={styles.classFilterSelect}
       >
         <MenuItem value="">
           <em>All</em>
@@ -48,7 +50,7 @@ const ClassFilterSelector: FC<ReduxProps> = (props) => {
       </Select>
     </FormControl>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   classFilter: state.filters.class,

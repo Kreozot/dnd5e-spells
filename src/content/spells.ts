@@ -5,12 +5,12 @@ function formatSpells(spells: RawSpell[]): Spell[] {
   return spells.map((rawSpell) => {
     const spell: Spell = { ...rawSpell, id: getSpellId(rawSpell.title) };
 
-    spell.description = formatText(spell.description) + '\n';
+    spell.description = `${formatText(spell.description)}\n`;
     if (spell.atHigherLevels) {
-      spell.atHigherLevels = formatText(spell.atHigherLevels) + '\n';
+      spell.atHigherLevels = `${formatText(spell.atHigherLevels)}\n`;
     }
     if (spell.levelUpgrades) {
-      spell.levelUpgrades = formatText(spell.levelUpgrades) + '\n';
+      spell.levelUpgrades = `${formatText(spell.levelUpgrades)}\n`;
     }
     if (typeof spell.components.M === 'string') {
       spell.components.M = formatText(spell.components.M);

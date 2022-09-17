@@ -6,16 +6,16 @@ import { createSelector } from 'reselect';
 import spellsData from 'content/spells';
 import classSpellsData from 'content/classSpells.yaml';
 import classRestrictionsData from 'content/classRestrictions.yaml';
+import uniqBy from 'lodash/uniqBy';
+import sortBy from 'lodash/sortBy';
 import chosenSpellsSlice from './chosenSpellsSlice';
 import filtersSlice from './filtersSlice';
 import spellsLevelsSlice from './spellsLevelsSlice';
-import uniqBy from 'lodash/uniqBy';
-import sortBy from 'lodash/sortBy';
 
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: ['spellsLevels']
+  blacklist: ['spellsLevels'],
 };
 
 export { filtersSlice, chosenSpellsSlice, spellsLevelsSlice };
@@ -41,6 +41,7 @@ export const getClassAdditionalKey = createSelector(
         return keys.filter((key) => key !== 'main')[0];
       }
     }
+    return undefined;
   }
 );
 
@@ -51,6 +52,7 @@ export const getClassRestrictions = createSelector(
     if (classFilter) {
       return classRestrictionsData[classFilter];
     }
+    return undefined;
   }
 );
 
@@ -64,6 +66,7 @@ export const getCurrentLevelClassRestrictions = createSelector(
       const levelIndex = Math.min(currentLevel - 1, lastIndex);
       return classRestrictions.levels[levelIndex];
     }
+    return undefined;
   }
 );
 
@@ -74,6 +77,7 @@ const getAvailableSpellLevel = createSelector(
     if (currentLevelClassRestrictions) {
       return currentLevelClassRestrictions.spellSlots.length;
     }
+    return undefined;
   }
 );
 
@@ -85,6 +89,7 @@ export const getClassAdditionalOptions = createSelector(
     if (additionalKey && classFilter) {
       return Object.keys(classSpellsData[classFilter][additionalKey]);
     }
+    return undefined;
   }
 );
 
@@ -96,6 +101,7 @@ export const getAdditionalClassSpells = createSelector(
     if (classFilter && additionalKey && classAdditionalFilter) {
       return classSpellsData[classFilter][additionalKey][classAdditionalFilter];
     }
+    return undefined;
   }
 );
 
@@ -189,7 +195,7 @@ export const getAllActiveSpells = createSelector(
     return [
       ...chosenSpells,
       ...chosenCantrips,
-      ...(additionalClassSpells || [])
+      ...(additionalClassSpells || []),
     ];
   }
 );
@@ -240,7 +246,7 @@ export const getSpellSaveDC = createSelector(
     }
     return 8 + proficiencyBonus + abilityModifier;
   }
-)
+);
 
 export const getSpellAttackModifier = createSelector(
   getProficiencyBonus,
@@ -251,6 +257,6 @@ export const getSpellAttackModifier = createSelector(
     }
     return proficiencyBonus + abilityModifier;
   }
-)
+);
 
 export const persistor = persistStore(store);

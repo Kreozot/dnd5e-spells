@@ -17,11 +17,11 @@ const SpellcastingAbilityModifier: FC<Props & ReduxProps> = (props) => {
   }
 
   return (
-    <Tooltip text={ 'your spellcasting ability modifier' }>
+    <Tooltip text="your spellcasting ability modifier">
       <strong>{ spellcastingAbilityModifier }</strong>
     </Tooltip>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   spellcastingAbilityModifier: getSpellcastingAbilityModifier(state),

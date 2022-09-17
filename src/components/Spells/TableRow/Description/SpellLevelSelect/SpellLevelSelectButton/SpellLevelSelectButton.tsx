@@ -1,6 +1,6 @@
 import React, { FC, useCallback } from 'react';
 import Button from '@mui/material/Button';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, ConnectedProps } from 'react-redux';
 import { createSelector } from 'reselect';
 
@@ -27,23 +27,23 @@ const SpellLevelSelectButton: FC<Props & ReduxProps> = (props) => {
 
   return (
     <Button
-      onClick={ handleClick }
-      variant={ isSelected ? 'contained' : undefined }
+      onClick={handleClick}
+      variant={isSelected ? 'contained' : undefined}
       color="primary"
       size="small"
-      className={ styles.button }
+      className={styles.button}
     >
       { level }
     </Button>
   );
-}
+};
 
 const isSpellLevelSelected = createSelector(
   (state: State, props: Props): boolean => {
     const selectedSpellLevel = state.spellsLevels[props.item.title] || props.item.level;
     return selectedSpellLevel === props.level;
   },
-  (isSelected): boolean => isSelected,
+  (isSelected): boolean => isSelected
 );
 
 const mapStateToProps = (state: State, props: Props) => ({

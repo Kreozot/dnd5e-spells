@@ -1,8 +1,11 @@
-import React, { useCallback, useState, useEffect, useMemo, FC, MouseEventHandler } from 'react';
+import React, {
+  useCallback, useState, useEffect, useMemo, FC, MouseEventHandler,
+} from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import Checkbox from '@mui/material/Checkbox';
 import { Tooltip } from 'react-tippy';
+import { createSelector } from 'reselect';
+import { bindActionCreators } from '@reduxjs/toolkit';
 
 import {
   chosenSpellsSlice,
@@ -14,7 +17,6 @@ import {
   getAllActiveSpells,
   getAdditionalClassSpells,
 } from 'common/store';
-import { createSelector } from 'reselect';
 
 type Props = {
   spell: Spell;
@@ -43,14 +45,20 @@ const SpellChoose: FC<Props & ReduxProps> = (props) => {
       } else {
         setIsHintOpen(true);
       }
+    } else if (isSpellActive || canChooseMoreSpells) {
+      toggleSpellChosen({ title: spell.title, isSpellChosen: isSpellActive });
     } else {
-      if (isSpellActive || canChooseMoreSpells) {
-        toggleSpellChosen({ title: spell.title, isSpellChosen: isSpellActive });
-      } else {
-        setIsHintOpen(true);
-      }
+      setIsHintOpen(true);
     }
-  }, [spell.title, isSpellActive, toggleSpellChosen, toggleCantripChosen, canChooseMoreSpells, canChooseMoreCantrips, spell.level]);
+  }, [
+    spell.title,
+    isSpellActive,
+    toggleSpellChosen,
+    toggleCantripChosen,
+    canChooseMoreSpells,
+    canChooseMoreCantrips,
+    spell.level
+  ]);
 
   const handleRequestClose = useCallback(() => {
     setIsHintOpen(false);
@@ -74,21 +82,21 @@ const SpellChoose: FC<Props & ReduxProps> = (props) => {
 
   return (
     <Tooltip
-      title={ hintTitle }
+      title={hintTitle}
       position="right"
       trigger="manual"
-      open={ isHintOpen }
-      onRequestClose={ handleRequestClose }
+      open={isHintOpen}
+      onRequestClose={handleRequestClose}
     >
       <Checkbox
         color="primary"
-        checked={ isSpellActive }
-        onClick={ handleClick }
-        disabled={ isSpellAlwaysActive }
+        checked={isSpellActive}
+        onClick={handleClick}
+        disabled={isSpellAlwaysActive}
       />
     </Tooltip>
-  )
-}
+  );
+};
 
 /** Is the spell is always active because of class additional option value */
 const getIsSpellAlwaysActive = createSelector(
