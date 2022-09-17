@@ -5,8 +5,8 @@ import {
   getSpellSaveDC, State,
 } from 'common/store';
 
-import * as styles from '../FiltersBlock.module.scss';
 import { TextField } from '@mui/material';
+import * as styles from '../FiltersBlock.module.scss';
 
 const SpellSaveDC: FC<ReduxProps> = (props) => {
   const {
@@ -18,18 +18,18 @@ const SpellSaveDC: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <div className={ styles.field }>
+    <div className={styles.field}>
       <TextField
         label="Spell save DC"
-        value={ spellSaveDC }
-        className={ styles.spellSaveDC }
+        value={spellSaveDC}
+        className={styles.spellSaveDC}
         InputProps={{
-          disabled: true
+          disabled: true,
         }}
       />
     </div>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   spellSaveDC: getSpellSaveDC(state),

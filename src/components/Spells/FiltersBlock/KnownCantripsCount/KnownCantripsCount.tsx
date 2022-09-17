@@ -5,8 +5,8 @@ import {
   getKnownCantripsCount, State,
 } from 'common/store';
 
-import * as styles from '../FiltersBlock.module.scss';
 import { TextField } from '@mui/material';
+import * as styles from '../FiltersBlock.module.scss';
 
 const KnownCantripsCount: FC<ReduxProps> = (props) => {
   const {
@@ -19,18 +19,18 @@ const KnownCantripsCount: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <div className={ styles.field }>
+    <div className={styles.field}>
       <TextField
         label="Known cantrips"
-        value={ `${activeCantripsCount} / ${knownCantripsCount}` }
-        className={ styles.knownCantripsCount }
+        value={`${activeCantripsCount} / ${knownCantripsCount}`}
+        className={styles.knownCantripsCount}
         InputProps={{
-          disabled: true
+          disabled: true,
         }}
       />
     </div>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   knownCantripsCount: getKnownCantripsCount(state),

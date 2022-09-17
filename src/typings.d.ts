@@ -52,7 +52,7 @@ type Spell = {
   range: string | CertainLevelUpgrades<string> | EachLevelUpgrades;
   duration: string | CertainLevelUpgrades<string> | EachLevelUpgrades;
   tags: string[];
-}
+};
 type RawSpell = Omit<Spell, 'id'>;
 
 type LeveledSpell = Omit<Spell, 'level'> & {
@@ -67,7 +67,7 @@ type ClassRestrictions = {
     spellSlots: number[];
   }[];
   schoolsEmphasis?: MagicSchool[];
-}
+};
 
 type ClassSpells = {
   [className: string]: {
@@ -76,24 +76,24 @@ type ClassSpells = {
       [featureName: string]: string[];
     }
   }
-}
+};
 
-declare module "content/classRestrictions.yaml" {
+declare module 'content/classRestrictions.yaml' {
   const array: {
     [title: string]: ClassRestrictions;
   };
   export default array;
-};
-declare module "content/spells.yaml" {
+}
+declare module 'content/spells.yaml' {
   const array: RawSpell[];
   export default array;
-};
-declare module "content/classSpells.yaml" {
+}
+declare module 'content/classSpells.yaml' {
   const obj: ClassSpells;
   export default obj;
-};
-declare module "*.svg";
-declare module "*.yaml";
-declare module "*.scss";
+}
+declare module '*.svg';
+declare module '*.yaml';
+declare module '*.scss';
 // TODO: Remove this hack after updating version of the library
-declare module "react-tippy";
+declare module 'react-tippy';

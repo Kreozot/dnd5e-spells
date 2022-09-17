@@ -20,18 +20,18 @@ const Markdown: FC<Props> = (props) => {
 
   return (
     <MarkdownToJsx
-      options={ {
+      options={{
         overrides: {
           LevelUpgrades: {
             component: LevelUpgrades,
           },
           AtHigherLevels: {
             component: AtHigherLevels,
-            props: { spellLevel, spellTitle }
+            props: { spellLevel, spellTitle },
           },
           TenPlusSpellsLevelDC: {
             component: TenPlusSpellsLevelDC,
-            props: { spellLevel, spellTitle }
+            props: { spellLevel, spellTitle },
           },
           SpellcastingAbilityModifier: {
             component: SpellcastingAbilityModifier,
@@ -46,11 +46,11 @@ const Markdown: FC<Props> = (props) => {
             component: SpellAttackModifier,
           },
         },
-      } }
+      }}
     >
       { children }
     </MarkdownToJsx>
   );
-}
+};
 
 export default Markdown;

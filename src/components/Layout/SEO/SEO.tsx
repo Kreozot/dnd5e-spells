@@ -22,48 +22,48 @@ const SEO: FC = () => {
         }
       }
     `
-  )
+  );
 
   return (
     <Helmet
       meta={[
         {
-          name: `description`,
+          name: 'description',
           content: site.siteMetadata.description,
         },
         {
-          property: `og:title`,
+          property: 'og:title',
           content: site.siteMetadata.title,
         },
         {
-          property: `og:description`,
+          property: 'og:description',
           content: site.siteMetadata.description,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: 'og:type',
+          content: 'website',
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          name: 'twitter:card',
+          content: 'summary',
         },
         {
-          name: `twitter:creator`,
+          name: 'twitter:creator',
           content: site.siteMetadata.author,
         },
         {
-          name: `twitter:title`,
+          name: 'twitter:title',
           content: site.siteMetadata.title,
         },
         {
-          name: `twitter:description`,
+          name: 'twitter:description',
           content: site.siteMetadata.description,
         },
       ]}
     >
       <html lang="en" />
       <title itemProp="name" lang="en">{ site.siteMetadata.title }</title>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148393017-1"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148393017-1" />
       <script>
         { `
         window.dataLayer = window.dataLayer || [];
@@ -74,7 +74,7 @@ const SEO: FC = () => {
         ` }
       </script>
     </Helmet>
-  )
-}
+  );
+};
 
 export default SEO;

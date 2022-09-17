@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export enum SpellsFilterOptions {
   All = 'all',
-  Active = 'active',
+  Active = 'active'
 }
 export type SpellsFilter = SpellLevel | SpellsFilterOptions.All | SpellsFilterOptions.Active;
 
@@ -13,7 +13,7 @@ export type FiltersSlice = {
   class?: Class,
   classAdditional?: string,
   spellcastingAbilityValue?: number,
-}
+};
 
 export default createSlice({
   name: 'filters',

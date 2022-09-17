@@ -19,7 +19,7 @@ const TenPlusSpellsLevelDC: FC<ReduxProps> = (props) => {
       <strong>{ 10 + currentLevel }</strong>
     </Tooltip>
   );
-}
+};
 
 const mapStateToProps = (state: State, props: Props) => ({
   currentLevel: state.spellsLevels[props.spellTitle] || props.spellLevel,

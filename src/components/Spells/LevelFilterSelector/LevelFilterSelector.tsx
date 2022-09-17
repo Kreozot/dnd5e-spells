@@ -3,11 +3,13 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from '@reduxjs/toolkit';
 
-import { getKnownSpellsCount, getAvailableSpellLevels, filtersSlice, State, Dispatch } from 'common/store';
+import {
+  getKnownSpellsCount, getAvailableSpellLevels, filtersSlice, State, Dispatch,
+} from 'common/store';
 
+import { SpellsFilterOptions } from 'common/store/filtersSlice';
 import LevelFilterButton from './LevelFilterButton';
 import TitleFilterSelector from './TitleFilterSelector';
-import { SpellsFilterOptions } from 'common/store/filtersSlice';
 
 import * as styles from './LevelFilterSelector.module.scss';
 
@@ -39,20 +41,18 @@ const LevelFilterSelector: FC<ReduxProps> = (props) => {
   }, [haveSpellsCount, selectLevel, levelFilter]);
 
   return (
-    <ButtonGroup color="primary" className={ styles.buttons }>
-      <LevelFilterButton level={ SpellsFilterOptions.All } />
-      { haveSpellsCount &&
-        <LevelFilterButton level={ SpellsFilterOptions.Active } />
-      }
+    <ButtonGroup color="primary" className={styles.buttons}>
+      <LevelFilterButton level={SpellsFilterOptions.All} />
+      { haveSpellsCount
+        && <LevelFilterButton level={SpellsFilterOptions.Active} />}
       { levels
         .map((level) => (
-          <LevelFilterButton level={ level } key={ level } />
-        ))
-      }
+          <LevelFilterButton level={level} key={level} />
+        ))}
       <TitleFilterSelector />
     </ButtonGroup>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   haveSpellsCount: Boolean(getKnownSpellsCount(state)),
@@ -60,7 +60,7 @@ const mapStateToProps = (state: State) => ({
   levelFilter: state.filters.spellsFilter,
 });
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
-  selectLevel: filtersSlice.actions.setSpellsFilter
+  selectLevel: filtersSlice.actions.setSpellsFilter,
 }, dispatch);
 
 const connector = connect(mapStateToProps, mapDispatchToProps);

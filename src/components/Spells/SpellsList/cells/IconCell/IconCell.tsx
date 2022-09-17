@@ -10,12 +10,12 @@ const IconCell: FC<Props> = (props) => {
   const { title, children } = props;
 
   return (
-    <div className={ styles.iconCell }>
-      <div className={ styles.icon } title={ title }>
+    <div className={styles.iconCell}>
+      <div className={styles.icon} title={title}>
         { children }
       </div>
     </div>
   );
-}
+};
 
 export default IconCell;

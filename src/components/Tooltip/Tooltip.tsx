@@ -13,13 +13,13 @@ const Tooltip: FC<Props> = (props) => {
   return (
     <TippyTooltip
       position="right"
-      html={ <div className={ styles.tooltip }>{ text }</div> }
-      className={ styles.container }
+      html={<div className={styles.tooltip}>{ text }</div>}
+      className={styles.container}
       tag="span"
     >
       { children }
     </TippyTooltip>
-  )
-}
+  );
+};
 
 export default Tooltip;

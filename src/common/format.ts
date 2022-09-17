@@ -20,9 +20,9 @@ export const formatText = (text: string) => {
 export const declension = (number: number, postfix: string) => {
   const [singular, plural] = postfix.split('|');
   if (plural && number > 1) {
-    return `${ number }${ plural }`;
+    return `${number}${plural}`;
   }
-  return `${ number }${ singular }`;
+  return `${number}${singular}`;
 };
 
 export const getSpellId = (title: string) => {

@@ -21,7 +21,7 @@ const SpellcastingAbility: FC<Props> = (props) => {
       <strong>your { classRestrictions.spellcastingAbility }</strong>
     </Tooltip>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({ classRestrictions: getClassRestrictions(state) });
 

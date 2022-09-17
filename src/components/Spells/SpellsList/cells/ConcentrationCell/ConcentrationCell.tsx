@@ -1,7 +1,6 @@
 import React, { FC, useMemo } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import IconCell from '../IconCell';
 import { getCurrentValueForCertainLevelUpgrade } from 'common/higherLevel';
 import Tooltip from 'components/Tooltip';
 
@@ -9,6 +8,7 @@ import ConcentrateIcon from 'images/icon-concentrate.svg';
 import { CellProps } from 'react-table';
 import { State } from 'common/store';
 import { isCertainLevelUpgrades } from 'types';
+import IconCell from '../IconCell';
 
 type Props = CellProps<Spell, boolean | CertainLevelUpgrades<boolean>>;
 
@@ -35,7 +35,7 @@ const ConcentrationCell: FC<Props & ReduxProps> = (props) => {
   return (
     <IconCell title="Concentration"><ConcentrateIcon /></IconCell>
   );
-}
+};
 
 const mapStateToProps = (state: State, props: Props) => ({
   currentLevel: state.spellsLevels[props.row.original.title] || props.row.original.level,

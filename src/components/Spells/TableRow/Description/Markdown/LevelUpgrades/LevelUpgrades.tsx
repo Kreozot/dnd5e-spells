@@ -16,9 +16,9 @@ const LevelUpgrades: FC<Props & ReduxProps> = (props) => {
 
   const upgradesMap = useMemo(() => {
     return upgrades.split(';')
-      .reduce<{level: number; value: string}[]>((result, part) => {
+      .reduce<{ level: number; value: string }[]>((result, part) => {
         const [level, value] = part.split(':');
-        result.push({ level: parseInt(level), value });
+        result.push({ level: parseInt(level, 10), value });
         return result;
       }, []);
   }, [upgrades]);
@@ -38,17 +38,17 @@ const LevelUpgrades: FC<Props & ReduxProps> = (props) => {
     return (
       <ul>
         <li>{ initial } by default</li>
-        { upgradesMap.map(({ level, value }) => <li key={ level }>{ value } after you reach { level } level</li>) }
+        { upgradesMap.map(({ level, value }) => <li key={level}>{ value } after you reach { level } level</li>) }
       </ul>
-    )
+    );
   }, [initial, upgradesMap]);
 
   return (
-    <Tooltip text={ tooltipText }>
+    <Tooltip text={tooltipText}>
       <strong>{ currentValue }</strong>
     </Tooltip>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({ currentLevel: state.filters.currentLevel });
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
@@ -5,8 +6,8 @@
  */
 
 // You can delete this file if you're not using it
-const React = require("react");
-const { Provider } = require("react-redux");
+const React = require('react');
+const { Provider } = require('react-redux');
 
 const { store } = require('./src/common/store');
 
@@ -15,5 +16,5 @@ exports.wrapRootElement = ({ element }) => {
     <Provider store={store}>
       { element }
     </Provider>
-  )
+  );
 };

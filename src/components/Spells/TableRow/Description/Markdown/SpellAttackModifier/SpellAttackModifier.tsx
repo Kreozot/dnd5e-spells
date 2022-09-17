@@ -21,7 +21,7 @@ const SpellAttackModifier: FC<Props> = (props) => {
       (<strong>+{ spellAttackModifier }</strong>)
     </Tooltip>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   spellAttackModifier: getSpellAttackModifier(state),

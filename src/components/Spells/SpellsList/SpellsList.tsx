@@ -1,6 +1,11 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/no-unstable-nested-components */
 import React, { FC, useMemo } from 'react';
-import { useTable, useExpanded, Column, Row, UseExpandedRowProps } from 'react-table';
+import {
+  useTable, useExpanded, Column, Row, UseExpandedRowProps,
+} from 'react-table';
 
+import RitualIcon from 'images/icon-ritual.svg';
 import ComponentsCell from './cells/ComponentsCell';
 import ConcentrationCell from './cells/ConcentrationCell';
 import TextWithUpgrades from '../TextWithUpgrades';
@@ -9,7 +14,6 @@ import TextWithHint from '../TextWithHint';
 import TableRow from '../TableRow';
 import SpellChoose from '../SpellChoose';
 
-import RitualIcon from 'images/icon-ritual.svg';
 import * as styles from './SpellsList.module.scss';
 import School from '../School';
 
@@ -24,7 +28,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'Active',
       accessor: 'title',
-      Cell: ({ row }) => <SpellChoose spell={ row.original }/>,
+      Cell: ({ row }) => <SpellChoose spell={row.original} />,
       id: 'isActive',
     },
     {
@@ -34,10 +38,10 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'School',
       accessor: 'school',
-      Cell: ({ value }) => <School value={ value } />,
+      Cell: ({ value }) => <School value={value} />,
     },
     {
-      Header: () => <div className={ styles.headerCenter }>Ritual</div>,
+      Header: () => <div className={styles.headerCenter}>Ritual</div>,
       accessor: 'ritual',
       Cell: ({ value }) => (
         value
@@ -46,9 +50,9 @@ const SpellsList: FC<Props> = (props) => {
       ),
     },
     {
-      Header: () => <div className={ styles.headerCenter }>Components</div>,
+      Header: () => <div className={styles.headerCenter}>Components</div>,
       accessor: 'components',
-      Cell: ({ value }) => <ComponentsCell components={ value }/>,
+      Cell: ({ value }) => <ComponentsCell components={value} />,
     },
     {
       Header: 'Casting time',
@@ -58,17 +62,17 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'Range',
       accessor: 'range',
-      Cell: ({ value, row }) => <TextWithUpgrades value={ value } spell={ row.original }/>,
+      Cell: ({ value, row }) => <TextWithUpgrades value={value} spell={row.original} />,
     },
     {
-      Header: () => <div className={ styles.headerCenter } title="Concentration">Conc.</div>,
+      Header: () => <div className={styles.headerCenter} title="Concentration">Conc.</div>,
       accessor: 'concentration',
       Cell: ConcentrationCell,
     },
     {
       Header: 'Duration',
       accessor: 'duration',
-      Cell: ({ value, row }) => <TextWithUpgrades value={ value } spell={ row.original }/>,
+      Cell: ({ value, row }) => <TextWithUpgrades value={value} spell={row.original} />,
     },
   ], []);
 
@@ -82,32 +86,32 @@ const SpellsList: FC<Props> = (props) => {
   } = useTable({ columns, data }, useExpanded);
 
   return (
-    <table { ...getTableProps() }>
+    <table {...getTableProps()}>
       <thead>
         { headerGroups.map((headerGroup) => (
-          <tr { ...headerGroup.getHeaderGroupProps() }>
+          <tr {...headerGroup.getHeaderGroupProps()}>
             { headerGroup.headers.map((column) => (
-              <th { ...column.getHeaderProps() }>
+              <th {...column.getHeaderProps()}>
                 { column.render('Header') }
               </th>
             )) }
           </tr>
         )) }
       </thead>
-      <tbody { ...getTableBodyProps() }>
+      <tbody {...getTableBodyProps()}>
         { rows.map((row) => {
           prepareRow(row);
           return (
             <TableRow
-              key={ row.original.title }
-              visibleColumns={ visibleColumns }
-              row={ row as Row<Spell> & UseExpandedRowProps<Spell> }
+              key={row.original.title}
+              visibleColumns={visibleColumns}
+              row={row as Row<Spell> & UseExpandedRowProps<Spell>}
             />
           );
         }) }
       </tbody>
     </table>
   );
-}
+};
 
 export default SpellsList;

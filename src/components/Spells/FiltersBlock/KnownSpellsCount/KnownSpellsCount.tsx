@@ -5,8 +5,8 @@ import {
   getKnownSpellsCount, State,
 } from 'common/store';
 
-import * as styles from '../FiltersBlock.module.scss';
 import { TextField } from '@mui/material';
+import * as styles from '../FiltersBlock.module.scss';
 
 const KnownSpellsCount: FC<ReduxProps> = (props) => {
   const {
@@ -19,18 +19,18 @@ const KnownSpellsCount: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <div className={ styles.field }>
+    <div className={styles.field}>
       <TextField
         label="Known spells"
-        value={ `${activeSpellsCount} / ${knownSpellsCount}` }
-        className={ styles.knownSpellsCount }
+        value={`${activeSpellsCount} / ${knownSpellsCount}`}
+        className={styles.knownSpellsCount}
         InputProps={{
-          disabled: true
+          disabled: true,
         }}
       />
     </div>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   knownSpellsCount: getKnownSpellsCount(state),

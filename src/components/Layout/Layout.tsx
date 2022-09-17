@@ -9,7 +9,6 @@ import React, { FC, PropsWithChildren } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-
 import SEO from './SEO';
 
 import './Layout.scss';
@@ -40,7 +39,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
       <SEO />
       { children }
     </ThemeProvider>
-  )
-}
+  );
+};
 
 export default Layout;

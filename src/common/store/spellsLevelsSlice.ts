@@ -17,9 +17,8 @@ export default createSlice({
           ...state,
           [item.title]: level,
         };
-      } else {
-        return omit(state, item.title);
       }
-    }
+      return omit(state, item.title);
+    },
   },
 });

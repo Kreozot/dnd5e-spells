@@ -5,8 +5,8 @@ import {
   getSpellAttackModifier, State,
 } from 'common/store';
 
-import * as styles from '../FiltersBlock.module.scss';
 import { TextField } from '@mui/material';
+import * as styles from '../FiltersBlock.module.scss';
 
 const SpellAttackModifier: FC<ReduxProps> = (props) => {
   const {
@@ -18,18 +18,18 @@ const SpellAttackModifier: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <div className={ styles.field }>
+    <div className={styles.field}>
       <TextField
         label="Spell attack modifier"
-        value={ spellAttackModifier }
-        className={ styles.spellAttackModifier }
+        value={spellAttackModifier}
+        className={styles.spellAttackModifier}
         InputProps={{
-          disabled: true
+          disabled: true,
         }}
       />
     </div>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   spellAttackModifier: getSpellAttackModifier(state),

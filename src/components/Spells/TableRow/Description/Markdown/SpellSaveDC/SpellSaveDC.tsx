@@ -17,7 +17,7 @@ const SpellSaveDC: FC<ReduxProps> = (props) => {
       <strong>DC { spellSaveDC }</strong>
     </Tooltip>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   spellSaveDC: getSpellSaveDC(state),

@@ -1,5 +1,5 @@
 import React, { ChangeEventHandler, FC, useCallback } from 'react';
-import { bindActionCreators } from 'redux';
+import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, ConnectedProps } from 'react-redux';
 import InputAdornment from '@mui/material/InputAdornment';
 
@@ -11,8 +11,8 @@ import {
   Dispatch,
 } from 'common/store';
 
-import * as styles from '../FiltersBlock.module.scss';
 import { TextField } from '@mui/material';
+import * as styles from '../FiltersBlock.module.scss';
 
 const SpellcastingAbilityValueSelector: FC<ReduxProps> = (props) => {
   const {
@@ -23,8 +23,8 @@ const SpellcastingAbilityValueSelector: FC<ReduxProps> = (props) => {
   } = props;
 
   const handleChange = useCallback<ChangeEventHandler<HTMLInputElement>>(({ target: { value } }) => {
-    let intValue = parseInt(value, 10);
-    setSpellcastingAbilityValue(isNaN(intValue) || (intValue < 1) ? undefined : intValue);
+    const intValue = parseInt(value, 10);
+    setSpellcastingAbilityValue(Number.isNaN(intValue) || (intValue < 1) ? undefined : intValue);
   }, [setSpellcastingAbilityValue]);
 
   if (!classRestrictions) {
@@ -32,20 +32,20 @@ const SpellcastingAbilityValueSelector: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <div className={ styles.field }>
+    <div className={styles.field}>
       <TextField
         label={classRestrictions.spellcastingAbility}
         type="number"
-        value={ spellcastingAbilityValue }
-        onChange={ handleChange }
-        className={ styles.spellcastingAbilityValueInput }
+        value={spellcastingAbilityValue}
+        onChange={handleChange}
+        className={styles.spellcastingAbilityValueInput}
         InputProps={{
-          endAdornment: <InputAdornment position="end">mod { spellcastingAbilityModifier }</InputAdornment>
+          endAdornment: <InputAdornment position="end">mod { spellcastingAbilityModifier }</InputAdornment>,
         }}
       />
     </div>
   );
-}
+};
 
 const mapStateToProps = (state: State) => ({
   spellcastingAbilityValue: state.filters.spellcastingAbilityValue,
@@ -53,7 +53,7 @@ const mapStateToProps = (state: State) => ({
   spellcastingAbilityModifier: getSpellcastingAbilityModifier(state),
 });
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
-  setSpellcastingAbilityValue: filtersSlice.actions.setSpellcastingAbilityValue
+  setSpellcastingAbilityValue: filtersSlice.actions.setSpellcastingAbilityValue,
 }, dispatch);
 
 const connector = connect(mapStateToProps, mapDispatchToProps);
