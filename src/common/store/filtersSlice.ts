@@ -17,14 +17,14 @@ export type FiltersSlice = {
 
 export default createSlice({
   name: 'filters',
-  initialState: <FiltersSlice>{
+  initialState: {
     spellsFilter: SpellsFilterOptions.All,
     titleFilter: '',
     currentLevel: undefined,
     class: undefined,
     classAdditional: undefined,
     spellcastingAbilityValue: undefined,
-  },
+  } as FiltersSlice,
   reducers: {
     setSpellsFilter(state, action: PayloadAction<SpellsFilter>): FiltersSlice {
       return {

@@ -1,7 +1,4 @@
 import React, { FC } from 'react';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
 import { connect, ConnectedProps } from 'react-redux';
 
 import {
@@ -9,6 +6,7 @@ import {
 } from 'common/store';
 
 import * as styles from '../FiltersBlock.module.scss';
+import { TextField } from '@mui/material';
 
 const SpellSaveDC: FC<ReduxProps> = (props) => {
   const {
@@ -20,19 +18,16 @@ const SpellSaveDC: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <FormControl className={ styles.field }>
-      <InputLabel
-        id="spell-save-dc-label"
-        className={ styles.knownSpellsCountLabel }
-      >
-        Spell save DC
-      </InputLabel>
-      <Input
+    <div className={ styles.field }>
+      <TextField
+        label="Spell save DC"
         value={ spellSaveDC }
-        className={ styles.knownSpellsCount }
-        disabled
+        className={ styles.spellSaveDC }
+        InputProps={{
+          disabled: true
+        }}
       />
-    </FormControl>
+    </div>
   );
 }
 

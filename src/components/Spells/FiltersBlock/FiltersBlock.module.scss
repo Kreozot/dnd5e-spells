@@ -14,8 +14,17 @@
   max-width: 130px;
 }
 
-.knownSpellsCount {
-  max-width: 90px;
+.knownSpellsCount,
+.spellSaveDC {
+  max-width: 100px;
+}
+
+.knownCantripsCount {
+  max-width: 110px;
+}
+
+.spellAttackModifier {
+  max-width: 140px;
 }
 
 .knownSpellsCountLabel {

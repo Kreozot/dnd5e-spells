@@ -2,8 +2,8 @@
   display: inline-block;
   margin-left: 4px;
   position: absolute;
-  top: 2px;
-  right: 4px;
+  top: 0;
+  right: 0;
 
   & > span {
     text-decoration: none;
@@ -18,4 +18,3 @@
   font-size: 0.8em;
   line-height: 1.3em;
 }
-

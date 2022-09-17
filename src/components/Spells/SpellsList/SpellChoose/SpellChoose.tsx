@@ -1,7 +1,7 @@
 import React, { useCallback, useState, useEffect, useMemo, FC, MouseEventHandler } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Checkbox from '@material-ui/core/Checkbox';
+import Checkbox from '@mui/material/Checkbox';
 import { Tooltip } from 'react-tippy';
 import { CellProps } from 'react-table';
 

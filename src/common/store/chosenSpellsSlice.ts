@@ -8,10 +8,10 @@ type ChosenSpellsSlice = {
 
 export default createSlice({
   name: 'chosenSpells',
-  initialState: <ChosenSpellsSlice>{
+  initialState: {
     spells: [],
     cantrips: []
-  },
+  } as ChosenSpellsSlice,
   reducers: {
     toggleSpellChosen(state, action: PayloadAction<{title: string, isSpellChosen: boolean}>): ChosenSpellsSlice {
       const { title, isSpellChosen } = action.payload;

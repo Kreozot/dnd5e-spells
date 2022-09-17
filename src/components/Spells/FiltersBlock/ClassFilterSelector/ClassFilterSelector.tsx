@@ -1,8 +1,8 @@
-import React, { ChangeEventHandler, FC, useCallback } from 'react';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
+import React, { FC, useCallback } from 'react';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
 import { bindActionCreators } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
 
@@ -17,7 +17,7 @@ const ClassFilterSelector: FC<ReduxProps> = (props) => {
     clearChosenSpells,
   } = props;
 
-  const handleClassChange = useCallback<ChangeEventHandler<{ name?: string; value: unknown; }>>((event) => {
+  const handleClassChange = useCallback((event: SelectChangeEvent<string>) => {
     setClass(event.target.value as Class || undefined);
     clearChosenSpells();
   }, [setClass, clearChosenSpells]);
@@ -29,6 +29,7 @@ const ClassFilterSelector: FC<ReduxProps> = (props) => {
         labelId="class-select-label"
         value={ classFilter || '' }
         onChange={ handleClassChange }
+        label="Class"
         className={ styles.classFilterSelect }
       >
         <MenuItem value="">

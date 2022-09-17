@@ -9,14 +9,15 @@
 }
 
 .input {
-  width: 80px;
+  width: 100px;
   transition: width 0.5s;
 
   &:global(.Mui-focused) {
     width: 160px;
   }
 
-  &:hover, &:global(.Mui-focused) {
+  &:hover,
+  &:global(.Mui-focused) {
     .icon {
       color: var(--color-font-primary);
     }

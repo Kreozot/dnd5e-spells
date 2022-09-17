@@ -1,10 +1,10 @@
 import React, { useCallback, useState, useEffect, FC, ChangeEventHandler } from 'react';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
 import { bindActionCreators } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import InputAdornment from '@mui/material/InputAdornment';
 import debounce from 'lodash/debounce';
 
 import {

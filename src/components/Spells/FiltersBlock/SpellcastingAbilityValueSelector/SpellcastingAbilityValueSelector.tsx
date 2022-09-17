@@ -1,10 +1,7 @@
 import React, { ChangeEventHandler, FC, useCallback } from 'react';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
 import { bindActionCreators } from 'redux';
 import { connect, ConnectedProps } from 'react-redux';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import InputAdornment from '@mui/material/InputAdornment';
 
 import {
   getClassRestrictions,
@@ -15,6 +12,7 @@ import {
 } from 'common/store';
 
 import * as styles from '../FiltersBlock.module.scss';
+import { TextField } from '@mui/material';
 
 const SpellcastingAbilityValueSelector: FC<ReduxProps> = (props) => {
   const {
@@ -34,16 +32,18 @@ const SpellcastingAbilityValueSelector: FC<ReduxProps> = (props) => {
   }
 
   return (
-    <FormControl className={ styles.field }>
-      <InputLabel id="spellcasting-ability-label">{ classRestrictions.spellcastingAbility }</InputLabel>
-      <Input
+    <div className={ styles.field }>
+      <TextField
+        label={classRestrictions.spellcastingAbility}
         type="number"
         value={ spellcastingAbilityValue }
         onChange={ handleChange }
         className={ styles.spellcastingAbilityValueInput }
-        endAdornment={ <InputAdornment position="end">mod { spellcastingAbilityModifier }</InputAdornment> }
+        InputProps={{
+          endAdornment: <InputAdornment position="end">mod { spellcastingAbilityModifier }</InputAdornment>
+        }}
       />
-    </FormControl>
+    </div>
   );
 }
 

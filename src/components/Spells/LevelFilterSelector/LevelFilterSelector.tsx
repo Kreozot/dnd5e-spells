@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
+import ButtonGroup from '@mui/material/ButtonGroup';
 import { connect, ConnectedProps } from 'react-redux';
 import { bindActionCreators } from '@reduxjs/toolkit';
 
