@@ -1,10 +1,9 @@
 import React, { FC } from 'react';
 
-import IconCell from 'components/Spells/IconCell';
-
+import Icon from 'components/Icon';
+import Components from 'components/Spells/details/Components';
+import Concentration from 'components/Spells/details/Concentration';
 import RitualIcon from 'images/icon-ritual.svg';
-import ComponentsCell from 'components/Spells/ComponentsCell';
-import ConcentrationCell from 'components/Spells/ConcentrationCell';
 
 import * as styles from './SpellTitleMobile.module.scss';
 
@@ -22,9 +21,9 @@ const SpellTitleMobile: FC<Props> = (props) => {
       </div>
       <div className={styles.icons}>
         {spell.ritual
-          && <IconCell title="Ritual"><RitualIcon /></IconCell>}
-        <ConcentrationCell value={spell.concentration} spell={spell} />
-        <ComponentsCell components={spell.components} isMobile />
+          && <Icon title="Ritual"><RitualIcon /></Icon>}
+        <Concentration value={spell.concentration} spell={spell} />
+        <Components components={spell.components} isMobile />
       </div>
     </div>
   );

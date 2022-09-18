@@ -2,22 +2,23 @@ import React, { FC, useMemo } from 'react';
 import classNames from 'classnames';
 
 import Tooltip from 'components/Tooltip';
+import Icon from 'components/Icon';
 
 import DiamondIcon from 'images/icon-diamond.svg';
 import VoiceIcon from 'images/icon-voice.svg';
 import HandIcon from 'images/icon-hand.svg';
-import IconCell from '../IconCell';
-import * as styles from './ComponentsCell.module.scss';
+
+import * as styles from './Components.module.scss';
 
 type Props = {
   components: SpellComponents;
   isMobile?: boolean;
 };
 
-const ComponentsCell: FC<Props> = (props) => {
+const Components: FC<Props> = (props) => {
   const { components, isMobile } = props;
 
-  const materialHtml = useMemo(() => {
+  const materialTooltip = useMemo(() => {
     const materialPrices = components.materialConsumed || components.materialSpecial
       ? (
         <div className={styles.specialTooltipBlock}>
@@ -49,26 +50,26 @@ const ComponentsCell: FC<Props> = (props) => {
     <div className={classNames(styles.container, { [styles.mobile]: isMobile })}>
       <span>
         { Boolean(components.V)
-          && <IconCell title="Verbal component"><VoiceIcon /></IconCell>}
+          && <Icon title="Verbal component"><VoiceIcon /></Icon>}
       </span>
       <span>
         { Boolean(components.S)
-          && <IconCell title="Somatic component"><HandIcon /></IconCell>}
+          && <Icon title="Somatic component"><HandIcon /></Icon>}
       </span>
       <span>
         { Boolean(components.M)
           && (
-            <IconCell>
-              <Tooltip text={materialHtml}>
+            <Icon>
+              <Tooltip text={materialTooltip}>
                 <div className={components.materialConsumed || components.materialSpecial ? styles.special : ''}>
                   <DiamondIcon />
                 </div>
               </Tooltip>
-            </IconCell>
+            </Icon>
           )}
       </span>
     </div>
   );
 };
 
-export default ComponentsCell;
+export default Components;

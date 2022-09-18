@@ -1,6 +1,6 @@
 import React, { FC, PropsWithChildren } from 'react';
 
-import * as styles from './IconCell.module.scss';
+import * as styles from './Icon.module.scss';
 
 type Props = PropsWithChildren<{
   title?: string;

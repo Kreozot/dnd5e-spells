@@ -7,7 +7,7 @@ import Tooltip from 'components/Tooltip';
 import ConcentrateIcon from 'images/icon-concentrate.svg';
 import { State } from 'common/store';
 import { isCertainLevelUpgrades } from 'types';
-import IconCell from '../IconCell';
+import IconCell from '../../../Icon';
 
 type Props = {
   value: boolean | CertainLevelUpgrades<boolean>;
@@ -15,7 +15,7 @@ type Props = {
   spell: Spell;
 };
 
-const ConcentrationCell: FC<Props & ReduxProps> = (props) => {
+const Concentration: FC<Props & ReduxProps> = (props) => {
   const { value, currentLevel } = props;
 
   const currentValue = useMemo(() => {
@@ -47,4 +47,4 @@ const mapStateToProps = (state: State, props: Props) => ({
 const connector = connect(mapStateToProps);
 type ReduxProps = ConnectedProps<typeof connector>;
 
-export default connector(ConcentrationCell);
+export default connector(Concentration);

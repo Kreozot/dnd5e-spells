@@ -9,7 +9,7 @@ type Props = {
   spell: Spell;
 };
 
-const TextCell: FC<Props> = (props) => {
+const TextWithUpgrades: FC<Props> = (props) => {
   const { value, spell } = props;
 
   if (!value) {
@@ -49,4 +49,4 @@ const TextCell: FC<Props> = (props) => {
   return null;
 };
 
-export default TextCell;
+export default TextWithUpgrades;

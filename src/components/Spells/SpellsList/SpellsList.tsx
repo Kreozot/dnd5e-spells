@@ -5,17 +5,17 @@ import {
   useTable, useExpanded, Column, Row, UseExpandedRowProps,
 } from 'react-table';
 
+import Icon from 'components/Icon';
+import TextWithUpgrades from 'components/TextWithUpgrades';
+import TextWithHint from 'components/TextWithHint';
+import Components from 'components/Spells/details/Components';
+import Concentration from 'components/Spells/details/Concentration';
+import School from 'components/Spells/details/School';
+import TableRow from 'components/Spells/TableRow';
+import SpellChoose from 'components/Spells/SpellChoose';
 import RitualIcon from 'images/icon-ritual.svg';
-import ComponentsCell from '../ComponentsCell';
-import ConcentrationCell from '../ConcentrationCell';
-import TextWithUpgrades from '../TextWithUpgrades';
-import IconCell from '../IconCell';
-import TextWithHint from '../TextWithHint';
-import TableRow from '../TableRow';
-import SpellChoose from '../SpellChoose';
 
 import * as styles from './SpellsList.module.scss';
-import School from '../School';
 
 type Props = {
   data: Spell[];
@@ -45,19 +45,19 @@ const SpellsList: FC<Props> = (props) => {
       accessor: 'ritual',
       Cell: ({ value }) => (
         value
-          ? <IconCell title="Ritual"><RitualIcon /></IconCell>
+          ? <Icon title="Ritual"><RitualIcon /></Icon>
           : null
       ),
     },
     {
       Header: () => <div className={styles.headerCenter}>Components</div>,
       accessor: 'components',
-      Cell: ({ value }) => <ComponentsCell components={value} />,
+      Cell: ({ value }) => <Components components={value} />,
     },
     {
       Header: 'Casting time',
       accessor: 'castingTime',
-      Cell: ({ value }) => <TextWithHint value={value} />,
+      Cell: ({ value }) => <TextWithHint text={value} />,
     },
     {
       Header: 'Range',
@@ -67,7 +67,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: () => <div className={styles.headerCenter} title="Concentration">Conc.</div>,
       accessor: 'concentration',
-      Cell: ({ value, row }) => <ConcentrationCell value={value} spell={row.original} />,
+      Cell: ({ value, row }) => <Concentration value={value} spell={row.original} />,
     },
     {
       Header: 'Duration',

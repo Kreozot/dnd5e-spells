@@ -1,5 +1,6 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
+import classNames from 'classnames';
 
 import { getClassRestrictions, State } from 'common/store';
 
@@ -12,15 +13,11 @@ type Props = {
 const SchoolCell: FC<Props & ReduxProps> = (props) => {
   const { value, classRestrictions } = props;
 
-  const cellStyle = useMemo(() => {
-    return classRestrictions && classRestrictions.schoolsEmphasis
-      && classRestrictions.schoolsEmphasis.includes(value)
-      ? styles.strongCell
-      : styles.cell;
-  }, [value, classRestrictions]);
-
   return (
-    <div className={cellStyle}>
+    <div className={classNames(styles.cell, {
+      [styles.strongCell]: classRestrictions?.schoolsEmphasis?.includes(value)
+    })}
+    >
       { value }
     </div>
   );

@@ -3,19 +3,22 @@ import React, { FC } from 'react';
 import Tooltip from 'components/Tooltip';
 
 type Props = {
-  value: SpellCastingTime;
+  text: string | {
+    value: string;
+    hint: string;
+  };
 };
 
 const TextWithHint: FC<Props> = (props) => {
-  const { value } = props;
+  const { text } = props;
 
-  if (typeof value === 'string') {
-    return <>{value}</>;
+  if (typeof text === 'string') {
+    return <>{text}</>;
   }
 
   return (
-    <Tooltip text={value.hint}>
-      { value.value }
+    <Tooltip text={text.hint}>
+      { text.value }
     </Tooltip>
   );
 };
