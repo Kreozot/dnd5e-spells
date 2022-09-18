@@ -588,83 +588,83 @@ paladin:
   levels:
     - spellSlots: []
     - spellSlots:
-      - 2
+        - 2
     - spellSlots:
-      - 3
+        - 3
     - spellSlots:
-      - 3
+        - 3
     - spellSlots:
-      - 4
-      - 2
+        - 4
+        - 2
     - spellSlots:
-      - 4
-      - 2
+        - 4
+        - 2
     - spellSlots:
-      - 4
-      - 3
+        - 4
+        - 3
     - spellSlots:
-      - 4
-      - 3
+        - 4
+        - 3
     - spellSlots:
-      - 4
-      - 3
-      - 2
+        - 4
+        - 3
+        - 2
     - spellSlots:
-      - 4
-      - 3
-      - 2
+        - 4
+        - 3
+        - 2
     - spellSlots:
-      - 4
-      - 3
-      - 3
+        - 4
+        - 3
+        - 3
     - spellSlots:
-      - 4
-      - 3
-      - 3
+        - 4
+        - 3
+        - 3
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 1
+        - 4
+        - 3
+        - 3
+        - 1
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 1
+        - 4
+        - 3
+        - 3
+        - 1
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 2
+        - 4
+        - 3
+        - 3
+        - 2
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 2
+        - 4
+        - 3
+        - 3
+        - 2
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 3
-      - 1
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 3
-      - 1
+        - 4
+        - 3
+        - 3
+        - 3
+        - 1
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 3
-      - 2
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
     - spellSlots:
-      - 4
-      - 3
-      - 3
-      - 3
-      - 2
+        - 4
+        - 3
+        - 3
+        - 3
+        - 2
 
 ranger:
   spellcastingAbility: Wisdom
@@ -781,96 +781,97 @@ rogueArcaneTrickster:
     - cantrips: 0
       knownSpells: 0
       spellSlots: []
-    - cantrips: 3
+    # Here and below one cantrip less than in the PHB table because "Mage hand" is already active
+    - cantrips: 2
       knownSpells: 3
       spellSlots:
         - 2
-    - cantrips: 3
+    - cantrips: 2
       knownSpells: 4
       spellSlots:
         - 3
-    - cantrips: 3
+    - cantrips: 2
       knownSpells: 4
       spellSlots:
         - 3
-    - cantrips: 3
+    - cantrips: 2
       knownSpells: 4
       spellSlots:
         - 3
-    - cantrips: 3
+    - cantrips: 2
       knownSpells: 5
       spellSlots:
         - 4
         - 2
-    - cantrips: 3
+    - cantrips: 2
+      knownSpells: 6
+      spellSlots:
+        - 4
+        - 2
+    - cantrips: 2
       knownSpells: 6
       spellSlots:
         - 4
         - 2
     - cantrips: 3
-      knownSpells: 6
-      spellSlots:
-        - 4
-        - 2
-    - cantrips: 4
       knownSpells: 7
       spellSlots:
         - 4
         - 3
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 8
       spellSlots:
         - 4
         - 3
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 8
       spellSlots:
         - 4
         - 3
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 9
       spellSlots:
         - 4
         - 3
         - 2
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 10
       spellSlots:
         - 4
         - 3
         - 2
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 10
       spellSlots:
         - 4
         - 3
         - 2
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 11
       spellSlots:
         - 4
         - 3
         - 3
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 11
       spellSlots:
         - 4
         - 3
         - 3
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 11
       spellSlots:
         - 4
         - 3
         - 3
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 12
       spellSlots:
         - 4
         - 3
         - 3
         - 1
-    - cantrips: 4
+    - cantrips: 3
       knownSpells: 13
       spellSlots:
         - 4

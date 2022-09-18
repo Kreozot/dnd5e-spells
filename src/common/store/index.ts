@@ -101,6 +101,9 @@ export const getAdditionalClassSpells = createSelector(
     if (classFilter && additionalKey && classAdditionalFilter) {
       return classSpellsData[classFilter][additionalKey][classAdditionalFilter];
     }
+    if (classFilter === 'rogueArcaneTrickster') {
+      return ['mage hand'];
+    }
     return undefined;
   }
 );
