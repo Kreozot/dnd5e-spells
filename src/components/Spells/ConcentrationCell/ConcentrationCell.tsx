@@ -5,12 +5,15 @@ import { getCurrentValueForCertainLevelUpgrade } from 'common/higherLevel';
 import Tooltip from 'components/Tooltip';
 
 import ConcentrateIcon from 'images/icon-concentrate.svg';
-import { CellProps } from 'react-table';
 import { State } from 'common/store';
 import { isCertainLevelUpgrades } from 'types';
 import IconCell from '../IconCell';
 
-type Props = CellProps<Spell, boolean | CertainLevelUpgrades<boolean>>;
+type Props = {
+  value: boolean | CertainLevelUpgrades<boolean>;
+  // eslint-disable-next-line react/no-unused-prop-types -- used in mapStateToProps
+  spell: Spell;
+};
 
 const ConcentrationCell: FC<Props & ReduxProps> = (props) => {
   const { value, currentLevel } = props;
@@ -38,7 +41,7 @@ const ConcentrationCell: FC<Props & ReduxProps> = (props) => {
 };
 
 const mapStateToProps = (state: State, props: Props) => ({
-  currentLevel: state.spellsLevels[props.row.original.title] || props.row.original.level,
+  currentLevel: state.spellsLevels[props.spell.title] || props.spell.level,
 });
 
 const connector = connect(mapStateToProps);

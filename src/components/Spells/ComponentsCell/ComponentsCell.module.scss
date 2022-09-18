@@ -5,7 +5,7 @@
   &.mobile {
     display: flex;
 
-    span > * {
+    & > span > div {
       margin-left: 4px;
     }
   }

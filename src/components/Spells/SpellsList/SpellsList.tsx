@@ -6,10 +6,10 @@ import {
 } from 'react-table';
 
 import RitualIcon from 'images/icon-ritual.svg';
-import ComponentsCell from './cells/ComponentsCell';
-import ConcentrationCell from './cells/ConcentrationCell';
+import ComponentsCell from '../ComponentsCell';
+import ConcentrationCell from '../ConcentrationCell';
 import TextWithUpgrades from '../TextWithUpgrades';
-import IconCell from './cells/IconCell';
+import IconCell from '../IconCell';
 import TextWithHint from '../TextWithHint';
 import TableRow from '../TableRow';
 import SpellChoose from '../SpellChoose';
@@ -57,7 +57,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: 'Casting time',
       accessor: 'castingTime',
-      Cell: TextWithHint,
+      Cell: ({ value }) => <TextWithHint value={value} />,
     },
     {
       Header: 'Range',
@@ -67,7 +67,7 @@ const SpellsList: FC<Props> = (props) => {
     {
       Header: () => <div className={styles.headerCenter} title="Concentration">Conc.</div>,
       accessor: 'concentration',
-      Cell: ConcentrationCell,
+      Cell: ({ value, row }) => <ConcentrationCell value={value} spell={row.original} />,
     },
     {
       Header: 'Duration',
