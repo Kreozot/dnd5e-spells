@@ -105,13 +105,25 @@ export const getAdditionalClassSpells = createSelector(
   }
 );
 
+/** Get known cantrips count for current class and spellcasting ability modifier */
+export const getKnownCantripsCount = createSelector(
+  getCurrentLevelClassRestrictions,
+  (currentLevelClassRestrictions) => {
+    if (!currentLevelClassRestrictions) {
+      return null;
+    }
+    return currentLevelClassRestrictions.cantrips;
+  }
+);
+
 /** Get all spells objects available to current class (including additional options) and level */
 export const getAvailableSpells = createSelector(
   (state: State) => state.filters.class,
   (state: State) => state.filters.currentLevel,
   getAvailableSpellLevel,
   getAdditionalClassSpells,
-  (classFilter, currentLevel, availableSpellLevel, additionalClassSpells) => {
+  getKnownCantripsCount,
+  (classFilter, currentLevel, availableSpellLevel, additionalClassSpells, knownCantripsCount) => {
     if (!classFilter) {
       return spellsData;
     }
@@ -126,6 +138,8 @@ export const getAvailableSpells = createSelector(
 
     return spellsData
       .filter((spell) => !currentLevel || spell.level === 'cantrip' || typeof availableSpellLevel === 'undefined' || spell.level <= availableSpellLevel)
+      // Hide cantrips if we know that character cannot use them yet
+      .filter((spell) => !(knownCantripsCount === 0 && spell.level === 'cantrip'))
       .filter((spell) => availableSpellList.some(
         (title) => title.toLowerCase() === spell.title.toLowerCase()
       ));
@@ -165,24 +179,13 @@ export const getKnownSpellsCount = createSelector(
     if (!currentLevel || !currentLevelClassRestrictions || spellcastingAbilityModifier === null) {
       return null;
     }
-    if (currentLevelClassRestrictions.knownSpells) {
+    if (typeof currentLevelClassRestrictions.knownSpells !== 'undefined') {
       return currentLevelClassRestrictions.knownSpells;
     }
     if (classFilter === 'paladin') {
       return Math.max(1, Math.floor(spellcastingAbilityModifier + currentLevel / 2));
     }
     return Math.max(1, spellcastingAbilityModifier + currentLevel);
-  }
-);
-
-/** Get known cantrips count for current class and spellcasting ability modifier */
-export const getKnownCantripsCount = createSelector(
-  getCurrentLevelClassRestrictions,
-  (currentLevelClassRestrictions) => {
-    if (!currentLevelClassRestrictions) {
-      return null;
-    }
-    return currentLevelClassRestrictions.cantrips;
   }
 );
 
