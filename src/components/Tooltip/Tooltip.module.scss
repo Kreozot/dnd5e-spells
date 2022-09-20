@@ -5,9 +5,10 @@
 .container {
   color: rgb(108, 108, 202);
   text-decoration: underline;
-  // text-decoration-style: dotted;
+  text-decoration-style: dotted;
 }
 
-:global(.tippy-tooltip [x-circle]) {
-  border-radius: 10px !important;
+:global(.MuiTooltip-tooltip) {
+  background-color: var(--color-background-tooltip);
+  font-size: 1em;
 }

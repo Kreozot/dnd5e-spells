@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import Checkbox from '@mui/material/Checkbox';
-import { Tooltip } from 'react-tippy';
+import Tooltip from '@mui/material/Tooltip';
 import { createSelector } from 'reselect';
 import { bindActionCreators } from '@reduxjs/toolkit';
 
@@ -83,10 +83,9 @@ const SpellChoose: FC<Props & ReduxProps> = (props) => {
   return (
     <Tooltip
       title={hintTitle}
-      position="right"
-      trigger="manual"
+      placement="right"
       open={isHintOpen}
-      onRequestClose={handleRequestClose}
+      onClose={handleRequestClose}
     >
       <Checkbox
         color="primary"

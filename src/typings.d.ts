@@ -95,5 +95,3 @@ declare module 'content/classSpells.yaml' {
 declare module '*.svg';
 declare module '*.yaml';
 declare module '*.scss';
-// TODO: Remove this hack after updating version of the library
-declare module 'react-tippy';
