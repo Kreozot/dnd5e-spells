@@ -30,7 +30,7 @@ const Concentration: FC<Props & ReduxProps> = (props) => {
   if (isCertainLevelUpgrades<boolean>(value)) {
     return (
       <Tooltip text="Depends on spell slot level">
-        <IconCell title="Concentration"><ConcentrateIcon /></IconCell>
+        <IconCell><ConcentrateIcon /></IconCell>
       </Tooltip>
     );
   }

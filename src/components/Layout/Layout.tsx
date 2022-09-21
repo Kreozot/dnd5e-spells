@@ -12,7 +12,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import SEO from './SEO';
 
 import './Layout.scss';
-import 'react-tippy/dist/tippy.css';
 
 const theme = createTheme({
   palette: {
