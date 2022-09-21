@@ -9,6 +9,6 @@
 }
 
 :global(.MuiTooltip-tooltip) {
-  background-color: var(--color-background-tooltip);
-  font-size: 1em;
+  background-color: var(--color-background-tooltip) !important;
+  font-size: 0.9em !important;
 }

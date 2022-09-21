@@ -4,12 +4,10 @@ import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, ConnectedProps } from 'react-redux';
 
 import {
-  Dispatch, filtersSlice, getCurrentLevelClassRestrictions, State,
+  Dispatch, filtersSlice, State,
 } from 'common/store';
-import Tooltip from 'components/Tooltip';
 
 import { SpellsFilter, SpellsFilterOptions } from 'common/store/filtersSlice';
-import * as styles from './LevelFilterButton.module.scss';
 
 const levelLabels = {
   [SpellsFilterOptions.All]: 'All levels',
@@ -26,8 +24,6 @@ const LevelFilterButton: FC<Props & ReduxProps> = (props) => {
     level,
     levelFilter,
     selectLevel,
-    currentLevel,
-    currentLevelClassRestrictions,
   } = props;
 
   const handleClick = useCallback(() => {
@@ -37,28 +33,6 @@ const LevelFilterButton: FC<Props & ReduxProps> = (props) => {
   const text = useMemo(() => {
     return levelLabels[level as (SpellsFilterOptions | 'cantrip')] || level;
   }, [level]);
-
-  const availableBadge = useMemo(() => {
-    if (currentLevelClassRestrictions
-      && currentLevel
-      && (level !== SpellsFilterOptions.All)
-      && (level !== SpellsFilterOptions.Active)
-    ) {
-      const value = level === 'cantrip'
-        ? currentLevelClassRestrictions.cantrips
-        : currentLevelClassRestrictions.spellSlots[level - 1];
-      return (
-        <div className={styles.spellSlotsBadgeWrapper}>
-          <Tooltip text="Spells slots available on current level">
-            <div className={styles.spellSlotsBadge}>
-              { value }
-            </div>
-          </Tooltip>
-        </div>
-      );
-    }
-    return null;
-  }, [currentLevelClassRestrictions, level, currentLevel]);
 
   const isSelected = useMemo(() => {
     return level === levelFilter;
@@ -71,15 +45,12 @@ const LevelFilterButton: FC<Props & ReduxProps> = (props) => {
       color="primary"
     >
       { text }
-      { availableBadge }
     </Button>
   );
 };
 
 const mapStateToProps = (state: State) => ({
-  currentLevel: state.filters.currentLevel,
   levelFilter: state.filters.spellsFilter,
-  currentLevelClassRestrictions: getCurrentLevelClassRestrictions(state),
 });
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
   selectLevel: filtersSlice.actions.setSpellsFilter,

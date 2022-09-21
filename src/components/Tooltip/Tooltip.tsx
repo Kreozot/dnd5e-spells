@@ -15,7 +15,9 @@ const Tooltip: FC<Props> = (props) => {
       title={<div className={styles.tooltip}>{ text }</div>}
       className={styles.container}
     >
-      { children as ReactElement }
+      <span>
+        { children as ReactElement }
+      </span>
     </MaterialTooltip>
   );
 };

@@ -17,6 +17,7 @@ import LevelFilterSelector from './LevelFilterSelector';
 import FiltersBlock from './FiltersBlock';
 
 import * as styles from './Spells.module.scss';
+import SpellSlotsCount from './SpellSlotsCount';
 
 const Spells: FC<ReduxProps> = (props) => {
   const {
@@ -87,6 +88,7 @@ const Spells: FC<ReduxProps> = (props) => {
       <div className={styles.header}>
         <FiltersBlock />
         <LevelFilterSelector />
+        <SpellSlotsCount />
       </div>
       { spellsList }
     </>
