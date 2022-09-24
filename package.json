@@ -36,6 +36,7 @@
     "classnames": "^2.3.2",
     "gatsby": "^4.23.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-emotion": "^7.23.0",
     "gatsby-plugin-manifest": "^4.23.0",
     "gatsby-plugin-material-ui": "^4.1.0",
     "gatsby-plugin-minify-classnames": "^4.1.3",
