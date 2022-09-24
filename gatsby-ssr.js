@@ -11,7 +11,7 @@ const { Provider } = require('react-redux');
 
 const { store } = require('./src/common/store');
 
-exports.wrapRootElement = ({ element }) => {
+export const wrapRootElement = ({ element }) => {
   return (
     <Provider store={store}>
       { element }

@@ -4,6 +4,9 @@ module.exports = {
     description: 'Interactive Spell List for "Dungeons & Dragons 5th edition" game',
     author: 'Sergey Sharov',
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-typescript-checker',
