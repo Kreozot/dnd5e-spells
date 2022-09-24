@@ -22,7 +22,7 @@ const { store, persistor } = require('./src/common/store');
 //   tracesSampleRate: 1.0,
 // });
 
-exports.wrapRootElement = ({ element }) => {
+export const wrapRootElement = ({ element }) => {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
