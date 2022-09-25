@@ -4,6 +4,7 @@ import React, { FC, useMemo } from 'react';
 import {
   useTable, useExpanded, Column, Row, UseExpandedRowProps,
 } from 'react-table';
+import { useElementSize } from 'usehooks-ts';
 
 import Icon from 'components/Icon';
 import TextWithUpgrades from 'components/TextWithUpgrades';
@@ -23,6 +24,8 @@ type Props = {
 
 const SpellsList: FC<Props> = (props) => {
   const { data } = props;
+
+  const [tableRef, { width }] = useElementSize();
 
   const columns: Array<Column<Spell>> = useMemo(() => [
     {
@@ -86,7 +89,7 @@ const SpellsList: FC<Props> = (props) => {
   } = useTable({ columns, data }, useExpanded);
 
   return (
-    <table {...getTableProps()}>
+    <table {...getTableProps()} ref={tableRef}>
       <thead>
         { headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
@@ -106,6 +109,7 @@ const SpellsList: FC<Props> = (props) => {
               key={row.original.title}
               visibleColumns={visibleColumns}
               row={row as Row<Spell> & UseExpandedRowProps<Spell>}
+              width={width}
             />
           );
         }) }

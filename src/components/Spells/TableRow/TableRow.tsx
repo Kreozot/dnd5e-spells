@@ -12,10 +12,11 @@ import * as styles from './TableRow.module.scss';
 type Props = {
   row: Row<Spell> & UseExpandedRowProps<Spell>;
   visibleColumns: ColumnInstance<Spell>[];
+  width?: number;
 };
 
 const TableRow: FC<Props> = (props) => {
-  const { row, visibleColumns } = props;
+  const { row, visibleColumns, width } = props;
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -63,13 +64,17 @@ const TableRow: FC<Props> = (props) => {
             </tr>
           )}
         <tr>
-          <td colSpan={visibleColumns.length} className={styles.descriptionCell}>
+          <td
+            colSpan={visibleColumns.length}
+            className={styles.descriptionCell}
+            style={{ width }}
+          >
             <Description item={row.original} />
           </td>
         </tr>
       </>
     );
-  }, [row.isExpanded, row.original, visibleColumns.length, isMobile]);
+  }, [row.isExpanded, row.original, visibleColumns.length, isMobile, width]);
 
   return (
     <>
