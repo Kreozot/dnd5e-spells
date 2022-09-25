@@ -14,6 +14,7 @@ const CurrentLevelSelector: FC<ReduxProps> = (props) => {
   const {
     currentLevel,
     setCurrentLevel,
+    classFilterChosen,
   } = props;
 
   const [fieldValue, setFieldValue] = useState(currentLevel);
@@ -26,6 +27,10 @@ const CurrentLevelSelector: FC<ReduxProps> = (props) => {
     setFieldValue(newValue);
     setCurrentLevelDebounced(newValue);
   }, [setCurrentLevelDebounced]);
+
+  if (!classFilterChosen) {
+    return null;
+  }
 
   return (
     <div className={styles.field}>
@@ -42,6 +47,7 @@ const CurrentLevelSelector: FC<ReduxProps> = (props) => {
 
 const mapStateToProps = (state: State) => ({
   currentLevel: state.filters.currentLevel,
+  classFilterChosen: Boolean(state.filters.class),
 });
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
   setCurrentLevel: filtersSlice.actions.setCurrentLevel,
