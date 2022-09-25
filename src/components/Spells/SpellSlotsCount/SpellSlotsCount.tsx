@@ -6,7 +6,7 @@ import SpellSlotsCountItem from './SpellSlotsCountItem';
 
 import * as styles from './SpellSlotsCount.module.scss';
 
-const LevelFilterButton: FC<ReduxProps> = (props) => {
+const SpellSlotsCount: FC<ReduxProps> = (props) => {
   const {
     currentLevelClassRestrictions,
   } = props;
@@ -17,9 +17,10 @@ const LevelFilterButton: FC<ReduxProps> = (props) => {
 
   const values = [
     currentLevelClassRestrictions.cantrips
-      && <SpellSlotsCountItem level="cantrip" count={currentLevelClassRestrictions.cantrips} />,
+      && <SpellSlotsCountItem level="cantrip" count={currentLevelClassRestrictions.cantrips} key="cantrip" />,
     ...currentLevelClassRestrictions.spellSlots
-      .map((value, i) => <SpellSlotsCountItem level={i + 1} count={value} />)
+      // eslint-disable-next-line react/no-array-index-key
+      .map((value, i) => <SpellSlotsCountItem level={i + 1} count={value} key={i} />)
   ]
     .filter((value) => value);
 
@@ -37,4 +38,4 @@ const mapStateToProps = (state: State) => ({
 const connector = connect(mapStateToProps);
 type ReduxProps = ConnectedProps<typeof connector>;
 
-export default connector(LevelFilterButton);
+export default connector(SpellSlotsCount);
