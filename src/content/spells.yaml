@@ -679,7 +679,7 @@
     V: true
     S: true
     M: for each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100 gp, all of which the spell consumes
-    materialConsumed: 100
+    materialConsumed: 1100
   duration: Special
   tags: []
   description: >
@@ -717,7 +717,7 @@
 
 
     The spell might also end early for you or one of your
-    companions. A successful dispel magic spell used
+    companions. A successful **dispel magic** spell used
     against an astral or physical body ends the spell for that
     creature. If a creature’s original body or its astral form
     drops to **0 hit points**, the spell ends for that creature. If
@@ -2787,6 +2787,7 @@
       - one clay pot filled with grave dirt
       - one clay pot filled with brackish water
       - one 150 gp black onyx stone for each corpse
+    materialSpecial: 150
   duration: Instantaneous
   tags: []
   description: >
@@ -4981,6 +4982,7 @@
       - a sprinkling of holy water
       - rare incense
       - powdered ruby worth at least 1,000 gp
+    materialSpecial: 1000
   duration: 1 day
   tags: []
   description: >
@@ -5596,6 +5598,7 @@
       - a knotted string
       - a small amount of umber hulk blood
       - a small silver rod worth at least 10 gp
+    materialSpecial: 10
   duration: 24 hours
   tags: []
   description: >
@@ -6328,6 +6331,7 @@
     M:
       - a pearl worth at least 100 gp
       - an owl feather
+    materialSpecial: 100
   duration: Instantaneous
   tags: []
   description: >
@@ -6391,6 +6395,7 @@
     M:
       - a vellum depiction or a carved statuette in the likeness of the target
       - a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target
+    materialSpecial: 500
   duration: Until dispelled
   tags: []
   description: >
@@ -6463,7 +6468,7 @@
     level, class, or hit points.
 
 
-    A dispel magic spell can end the spell only if it is cast
+    A **dispel magic** spell can end the spell only if it is cast
     as a **9th-level** spell, targeting either the prison or the
     special component used to create it.
 
@@ -6671,6 +6676,7 @@
     M:
       - an exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp
       - a Tiny replica made from the same materials worth at least 50 gp
+    materialSpecial: 5050
   duration: Instantaneous
   tags: []
   description: >
@@ -7876,6 +7882,7 @@
       - a miniature portal carved from ivory
       - a small piece of polished marble
       - a tiny silver spoon, each item worth at least 5 gp
+    materialSpecial: 15
   duration: 24 hours
   tags: []
   description: >
@@ -8835,35 +8842,35 @@
     wall, but an antimagic field has no effect on it.
 
 
-    1. Red. The creature takes **10d6** **fire damage** on a
+    1. **Red**. The creature takes **10d6** **fire damage** on a
     failed save, or half as much damage on a successful one.
     While this layer is in place, nonmagical ranged attacks
     can’t pass through the wall. The layer can be destroyed
-    by dealing at least 25 **cold damage** to it.
+    by dealing at least **25** **cold damage** to it.
 
-    2. Orange. The creature takes **10d6** **acid damage** on
+    2. **Orange**. The creature takes **10d6** **acid damage** on
     a failed save, or half as much damage on a successful
     one. While this layer is in place, magical ranged attacks
     can’t pass through the wall. The layer is destroyed by
     a strong wind.
 
-    3. Yellow. The creature takes **10d6** **lightning damage**
+    3. **Yellow**. The creature takes **10d6** **lightning damage**
     on a failed save, or half as much damage on a successful
-    one. This layer can be destroyed by dealing at least 60
+    one. This layer can be destroyed by dealing at least **60**
     **force damage** to it.
 
-    4. Green. The creature takes **10d6** **poison damage** on
+    4. **Green**. The creature takes **10d6** **poison damage** on
     a failed save, or half as much damage on a successful
     one. A Passwall spell, or another spell of equal or
     greater level that can open a portal on a solid surface,
     destroys this layer.
 
-    5. Blue. The creature takes **10d6** **cold damage** on a
+    5. **Blue**. The creature takes **10d6** **cold damage** on a
     failed save, or half as much damage on a successful one.
-    This layer can be destroyed by dealing at least 25 **fire
+    This layer can be destroyed by dealing at least **25** **fire
     damage** to it.
 
-    6. Indigo. On a failed save, the creature is restrained.
+    6. **Indigo**. On a failed save, the creature is restrained.
     It must then make a **Constitution saving throw** at the
     end of each of its turns. If it successfully saves three
     times, the spell ends. If it fails its save three times,
@@ -8874,10 +8881,10 @@
     <br>
     While this layer is in place, spells can’t be cast
     through the wall. The layer is destroyed by **bright light**
-    shed by a Daylight spell or a similar spell of equal or
+    shed by a **Daylight spell** or a similar spell of equal or
     higher level.
 
-    7. Violet. On a failed save, the creature is blinded. It
+    7. **Violet**. On a failed save, the creature is blinded. It
     must then make a **Wisdom saving throw** at the start of
     your next turn. A successful save ends the blindness. If
     it fails that save, the creature is transported to another
@@ -8885,7 +8892,7 @@
     (Typically, a creature that is on a plane that isn’t its
     home plane is banished home, while other creatures
     are usually cast into the Astral or Ethereal planes.) This
-    layer is destroyed by a dispel magic spell or a similar
+    layer is destroyed by a **dispel magic** spell or a similar
     spell of equal or higher level that can end spells and
     magical effects.
 
@@ -8929,6 +8936,7 @@
     M:
       - a bit of fleece
       - jade dust worth at least 25 gp
+    materialSpecial: 25
   duration: Until dispelled
   tags: []
   description: >
@@ -9991,6 +9999,7 @@
       - snow or ice in quantities sufficient to made a life-size copy of the duplicated creature
       - some hair, fingernail clippings, or other piece of that creature’s body placed inside the snow or ice
       - and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell
+    materialConsumed: 1500
   duration: Until dispelled
   tags: []
   description: >
