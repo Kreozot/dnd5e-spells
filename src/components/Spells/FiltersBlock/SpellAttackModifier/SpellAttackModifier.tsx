@@ -13,7 +13,7 @@ const SpellAttackModifier: FC<ReduxProps> = (props) => {
     spellAttackModifier,
   } = props;
 
-  if (!spellAttackModifier) {
+  if (spellAttackModifier === null) {
     return null;
   }
 

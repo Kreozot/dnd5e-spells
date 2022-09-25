@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import without from 'lodash/without';
 
-type ChosenSpellsSlice = {
+export type ChosenSpellsSlice = {
   spells: string[];
   cantrips: string[];
 };
@@ -13,6 +13,11 @@ export default createSlice({
     cantrips: [],
   } as ChosenSpellsSlice,
   reducers: {
+    replaceState(state, action: PayloadAction<ChosenSpellsSlice>): ChosenSpellsSlice {
+      return {
+        ...action.payload
+      };
+    },
     toggleSpellChosen(state, action: PayloadAction<{ title: string, isSpellChosen: boolean }>): ChosenSpellsSlice {
       const { title, isSpellChosen } = action.payload;
       if (isSpellChosen) {

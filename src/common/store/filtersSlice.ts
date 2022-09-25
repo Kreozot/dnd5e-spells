@@ -26,6 +26,11 @@ export default createSlice({
     spellcastingAbilityValue: undefined,
   } as FiltersSlice,
   reducers: {
+    replaceState(state, action: PayloadAction<FiltersSlice>): FiltersSlice {
+      return {
+        ...action.payload
+      };
+    },
     setSpellsFilter(state, action: PayloadAction<SpellsFilter>): FiltersSlice {
       return {
         ...state,

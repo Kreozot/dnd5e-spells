@@ -4,13 +4,13 @@
   --color-border-table: hsla(0, 0%, 0%, 0.12);
   --color-background-light: rgb(225, 239, 248);
 
-  --color-background-badge: rgb(102, 138, 255);
-  --color-font-badge: white;
-
   --color-font-secondary: rgb(185, 185, 185);
   --color-font-primary: #000;
 
   --color-background-tooltip: rgba(50, 50, 50, 0.9);
+
+  --border-badge: 1px solid rgb(204, 204, 204);
+  --color-background-badge: rgb(245, 245, 245);
 }
 
 html {

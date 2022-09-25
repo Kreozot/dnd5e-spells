@@ -1,7 +1,6 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
 import { createSelector } from 'reselect';
+import throttle from 'lodash/throttle';
 
 import spellsData from 'content/spells';
 import classSpellsData from 'content/classSpells.yaml';
@@ -11,25 +10,26 @@ import sortBy from 'lodash/sortBy';
 import chosenSpellsSlice from './chosenSpellsSlice';
 import filtersSlice from './filtersSlice';
 import spellsLevelsSlice from './spellsLevelsSlice';
-
-const persistConfig = {
-  key: 'root',
-  storage,
-  blacklist: ['spellsLevels'],
-};
+import { saveState, StorageKey } from './localStorageState';
 
 export { filtersSlice, chosenSpellsSlice, spellsLevelsSlice };
 
 export const store = configureStore({
-  reducer: persistReducer(persistConfig, combineReducers({
+  reducer: combineReducers({
     filters: filtersSlice.reducer,
     chosenSpells: chosenSpellsSlice.reducer,
     spellsLevels: spellsLevelsSlice.reducer,
-  })),
+  }),
   middleware: [],
 });
 export type State = ReturnType<typeof store.getState>;
 export type Dispatch = typeof store.dispatch;
+
+store.subscribe(throttle(() => {
+  const { filters, chosenSpells } = store.getState();
+  saveState(StorageKey.FILTERS_STORAGE_KEY, filters);
+  saveState(StorageKey.CHOSEN_SPELLS_STORAGE_KEY, chosenSpells);
+}, 1000));
 
 /** Get key (name) of class additional options (e.g. "Divine Domains" for Cleric) */
 export const getClassAdditionalKey = createSelector(
@@ -264,5 +264,3 @@ export const getSpellAttackModifier = createSelector(
     return proficiencyBonus + abilityModifier;
   }
 );
-
-export const persistor = persistStore(store);

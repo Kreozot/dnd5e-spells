@@ -66,11 +66,13 @@ const SEO: FC = () => {
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148393017-1" />
       <script>
         { `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
+        if (typeof window !== 'undefined'){
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){ dataLayer.push(arguments); }
+          gtag('js', new Date());
 
-        gtag('config', 'UA-148393017-1');
+          gtag('config', 'UA-148393017-1');
+        }
         ` }
       </script>
     </Helmet>
