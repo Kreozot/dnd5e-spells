@@ -66,7 +66,6 @@ const TableRow: FC<Props> = (props) => {
         <tr>
           <td
             colSpan={visibleColumns.length}
-            className={styles.descriptionCell}
             style={{ width }}
           >
             <Description item={row.original} />

@@ -111,7 +111,7 @@
 
     * **Natural Weapons.** You grow claws, fangs, spines,
     horns, or a different natural weapon of your choice. Your
-    unarm ed strikes deal **1d6** **bludgeoning**, **piercing**, or
+    unarmed strikes deal **1d6** **bludgeoning**, **piercing**, or
     **slashing damage**, as appropriate to the natural weapon
     you chose, and you are proficient with your unarmed
     strikes. Finally, the natural weapon is magic and you
@@ -1051,7 +1051,7 @@
     deal an extra **1d8** **necrotic damage** to the target.
 
 
-    A remove curse spell ends this effect. At the DM’s
+    A **remove curse** spell ends this effect. At the DM’s
     option, you may choose an alternative curse effect, but
     it should be no more powerful than those described
     above. The DM has final say on such a curse’s effect.
@@ -1441,7 +1441,7 @@
 
     Alternatively, you can make a target indifferent about
     creatures of your choice that it is hostile toward. This
-    indifference ends if the target is attacked or harm ed by
+    indifference ends if the target is attacked or harmed by
     a spell or if it witnesses any of its friends being harmed.
     When the spell ends, the creature becomes hostile
     again, unless the DM rules otherwise.
@@ -6789,8 +6789,8 @@
   tags: []
   description: >
     You touch one object that is no larger than **10 feet** in any
-    dimension. Until the spell ends, the object sheds bright
-    light in a **20-foot** radius and **dim light** for an additional
+    dimension. Until the spell ends, the object sheds **bright
+    light** in a **20-foot** radius and **dim light** for an additional
     **20 feet**. The light can be colored as you like. Completely
     covering the object with something opaque blocks the
     light. The spell ends if you cast it again or dismiss it
@@ -10703,7 +10703,7 @@
 
     **Hopelessness.** Each target must make a **Charisma
     saving throw**. On a failed save, the target is
-    overwhelm ed with despair for **1 minute**. During this
+    overwhelmed with despair for **1 minute**. During this
     time, it can’t attack or target any creature with harmful
     abilities, spells, or other magical effects.
     Insanity. Each target must make an **Intelligence saving
