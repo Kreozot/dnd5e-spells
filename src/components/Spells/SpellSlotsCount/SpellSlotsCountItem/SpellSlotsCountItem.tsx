@@ -26,6 +26,10 @@ const LevelFilterButton: FC<Props> = (props) => {
     return `${level}${ordinalMap[level as OrdinalKey] || ordinalMap.rest}`;
   }, [level]);
 
+  if (count === 0) {
+    return null;
+  }
+
   return (
     <span className={styles.item}>
       {title}: <strong>{count}</strong>
