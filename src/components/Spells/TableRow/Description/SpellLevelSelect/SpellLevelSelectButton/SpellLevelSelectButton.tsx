@@ -46,7 +46,17 @@ const SpellLevelSelectButton: FC<Props & ReduxProps> = (props) => {
 
 const isSpellLevelSelected = createSelector(
   (state: State, props: Props): boolean => {
-    const selectedSpellLevel = state.spellsLevels[props.item.title] || props.item.level;
+    let selectedSpellLevel = state.spellsLevels[props.item.title];
+    if (!selectedSpellLevel) {
+      if (state.filters.class === 'warlock') {
+        // Warlock casts always higher level, so it's chosen by default
+        selectedSpellLevel = Math.max(
+          ...getAvailableSpellLevels(state).filter((level): level is number => level !== 'cantrip')
+        );
+      } else {
+        selectedSpellLevel = props.item.level as number;
+      }
+    }
     return selectedSpellLevel === props.level;
   },
   (isSelected): boolean => isSelected
