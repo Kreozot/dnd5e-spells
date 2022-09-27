@@ -16,6 +16,9 @@ import './Layout.scss';
 const theme = createTheme({
   palette: {
     mode: 'light',
+    secondary: {
+      main: '#b9b9b9',
+    },
   },
   components: {
     MuiFormControl: {

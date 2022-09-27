@@ -4,7 +4,12 @@ import { bindActionCreators } from '@reduxjs/toolkit';
 import { connect, ConnectedProps } from 'react-redux';
 import { createSelector } from 'reselect';
 
-import { spellsLevelsSlice, State, Dispatch } from 'common/store';
+import {
+  spellsLevelsSlice,
+  State,
+  Dispatch,
+  getAvailableSpellLevels,
+} from 'common/store';
 
 import * as styles from './SpellLevelSelectButton.module.scss';
 
@@ -19,6 +24,7 @@ const SpellLevelSelectButton: FC<Props & ReduxProps> = (props) => {
     level,
     isSelected,
     chooseSpellLevel,
+    isAvailable,
   } = props;
 
   const handleClick = useCallback(() => {
@@ -29,7 +35,7 @@ const SpellLevelSelectButton: FC<Props & ReduxProps> = (props) => {
     <Button
       onClick={handleClick}
       variant={isSelected ? 'contained' : undefined}
-      color="primary"
+      color={isAvailable ? 'primary' : 'secondary'}
       size="small"
       className={styles.button}
     >
@@ -48,6 +54,7 @@ const isSpellLevelSelected = createSelector(
 
 const mapStateToProps = (state: State, props: Props) => ({
   isSelected: isSpellLevelSelected(state, props),
+  isAvailable: getAvailableSpellLevels(state).includes(props.level),
 });
 const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators({
   chooseSpellLevel: spellsLevelsSlice.actions.chooseSpellLevel,
