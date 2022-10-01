@@ -65,7 +65,7 @@ const Spells: FC<ReduxProps> = (props) => {
       }
       return (
         <div className={styles.container}>
-          <SpellsListComponent data={groupedSpells[levelFilter]} />
+          <SpellsListComponent data={groupedSpells[levelFilter]} level={levelFilter} />
         </div>
       );
     }
@@ -78,7 +78,7 @@ const Spells: FC<ReduxProps> = (props) => {
         >
           { level === 'cantrip' ? 'Cantrips' : `Level ${level}` }
         </h2>
-        <SpellsListComponent data={groupedSpells[level]} />
+        <SpellsListComponent data={groupedSpells[level]} level={level} />
       </div>
     ));
   }, [displayedLevels, groupedSpells, levelFilter, isMobile, SpellsListComponent]);

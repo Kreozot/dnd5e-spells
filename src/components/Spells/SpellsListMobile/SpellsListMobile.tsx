@@ -1,92 +1,104 @@
 /* eslint-disable react/no-unstable-nested-components */
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { FC, useMemo } from 'react';
-import {
-  useTable, useExpanded, Column, Row, UseExpandedRowProps,
-} from 'react-table';
-
-import SpellChoose from 'components/Spells/SpellChoose';
+import React, {
+  FC, useMemo, useState, useEffect
+} from 'react';
 import { connect, ConnectedProps } from 'react-redux';
+import {
+  ColumnDef,
+  createColumnHelper,
+  ExpandedState,
+  flexRender,
+  getCoreRowModel,
+  getExpandedRowModel,
+  useReactTable,
+  VisibilityState
+} from '@tanstack/react-table';
+
 import { getKnownSpellsCount, State } from 'common/store';
-import TableRow from '../TableRow';
+import SpellChoose from 'components/Spells/SpellChoose';
+import TableRow from 'components/Spells/TableRow';
+import SpellTitleMobile from './SpellTitleMobile';
 
 import * as styles from './SpellsListMobile.module.scss';
-import SpellTitleMobile from './SpellTitleMobile';
 
 type Props = {
   data: Spell[];
+  level: SpellLevel;
 };
 
+const columnHelper = createColumnHelper<Spell>();
+
 const SpellsList: FC<Props & ReduxProps> = (props) => {
-  const { data, haveSpellsCount } = props;
+  const { data, level, haveSpellsCount } = props;
 
-  const columns: Array<Column<Spell>> = useMemo(() => {
-    if (haveSpellsCount) {
-      return [
-        {
-          Header: 'Active',
-          accessor: 'title',
-          Cell: ({ row }) => <SpellChoose spell={row.original} />,
-          id: 'isActive',
-        },
-        {
-          Header: 'Title',
-          accessor: 'title',
-          Cell: ({ row }) => <SpellTitleMobile spell={row.original} />,
-        },
-      ];
-    }
+  const columns = useMemo<ColumnDef<Spell, any>[]>(() => {
     return [
-      {
-        Header: 'Title',
-        accessor: 'title',
-        Cell: ({ row }) => <SpellTitleMobile spell={row.original} />,
-      },
+      columnHelper.display({
+        header: 'Active',
+        cell: ({ row }) => <SpellChoose spell={row.original} />,
+        id: 'isActive',
+      }),
+      columnHelper.accessor('title', {
+        header: 'Title',
+        cell: ({ row }) => <SpellTitleMobile spell={row.original} />,
+      }),
     ];
-  }, [haveSpellsCount]);
+  }, []);
 
-  const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    rows,
-    visibleColumns,
-    prepareRow,
-  } = useTable({ columns, data }, useExpanded);
+  const [expanded, setExpanded] = useState<ExpandedState>({});
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>({
+    isActive: haveSpellsCount,
+  });
+  const table = useReactTable<Spell>({
+    columns,
+    data,
+    state: {
+      expanded,
+      columnVisibility,
+    },
+    onExpandedChange: setExpanded,
+    onColumnVisibilityChange: setColumnVisibility,
+    getCoreRowModel: getCoreRowModel(),
+    getExpandedRowModel: getExpandedRowModel(),
+  });
+
+  useEffect(() => {
+    table.setColumnVisibility({
+      isActive: haveSpellsCount,
+    });
+  }, [table, haveSpellsCount]);
+
+  useEffect(() => {
+    table.resetExpanded();
+  }, [table, level]);
 
   return (
-    <table {...getTableProps()} className={styles.table}>
+    <table className={styles.table}>
       <thead>
-        { headerGroups.map((headerGroup) => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
-            {haveSpellsCount
-              && (
-                <>
-                  <th {...headerGroup.headers[0].getHeaderProps()} className={styles.activeHeader}>
-                    { headerGroup.headers[0].render('Header') }
-                  </th>
-                  <th {...headerGroup.headers[1].getHeaderProps()} className={styles.titleHeader}>
-                    { headerGroup.headers[1].render('Header') }
-                  </th>
-                </>
-              )}
-            {!haveSpellsCount
-              && (
-                <th {...headerGroup.headers[0].getHeaderProps()} className={styles.titleHeader}>
-                  { headerGroup.headers[0].render('Header') }
-                </th>
-              )}
+        { table.getHeaderGroups().map((headerGroup) => (
+          <tr key={headerGroup.id}>
+            { headerGroup.headers.map((header) => (
+              <th key={header.id}>
+                {
+                  header.isPlaceholder
+                    ? null
+                    : flexRender(
+                      header.column.columnDef.header,
+                      header.getContext()
+                    )
+                }
+              </th>
+            )) }
           </tr>
         )) }
       </thead>
-      <tbody {...getTableBodyProps()}>
-        { rows.map((row) => {
-          prepareRow(row);
+      <tbody>
+        { table.getRowModel().rows.map((row) => {
           return (
             <TableRow
-              key={row.original.title}
-              visibleColumns={visibleColumns}
-              row={row as Row<Spell> & UseExpandedRowProps<Spell>}
+              key={row.id}
+              row={row}
             />
           );
         }) }

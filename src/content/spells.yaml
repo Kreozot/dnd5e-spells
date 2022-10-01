@@ -198,7 +198,7 @@
     Your magic turns others into beasts. Choose any
     number of willing creatures that you can see within
     range. You transform each target into the form of a
-    Large or smaller beast with a challenge rating of 4 or
+    Large or smaller beast with a challenge rating of **4** or
     lower. On subsequent turns, you can use your action to
     transform affected creatures into new forms.
 
@@ -2057,13 +2057,13 @@
     appears:
 
 
-    * <AtHigherLevels initial="1 beast" upgrades="5:2 beasts;7:3 beasts;9:4 beasts"/> of challenge rating 2 or lower
+    * <AtHigherLevels initial="1 beast" upgrades="5:2 beasts;7:3 beasts;9:4 beasts"/> of challenge rating **2** or lower
 
-    * <AtHigherLevels initial="2 beasts" upgrades="5:4 beasts;7:6 beasts;9:8 beasts"/> of challenge rating 1 or lower
+    * <AtHigherLevels initial="2 beasts" upgrades="5:4 beasts;7:6 beasts;9:8 beasts"/> of challenge rating **1** or lower
 
-    * <AtHigherLevels initial="4 beasts" upgrades="5:8 beasts;7:12 beasts;9:16 beasts"/> of challenge rating 1/2 or lower
+    * <AtHigherLevels initial="4 beasts" upgrades="5:8 beasts;7:12 beasts;9:16 beasts"/> of challenge rating **1/2** or lower
 
-    * <AtHigherLevels initial="8 beasts" upgrades="5:16 beasts;7:24 beasts;9:32 beasts"/> of challenge rating 1/4 or lower
+    * <AtHigherLevels initial="8 beasts" upgrades="5:16 beasts;7:24 beasts;9:32 beasts"/> of challenge rating **1/4** or lower
 
 
     Each beast is also considered fey, and it disappears
@@ -2199,7 +2199,7 @@
   duration: ≤ 1 hour
   tags: []
   description: >
-    You summon a fey creature of challenge rating 6 or
+    You summon a fey creature of challenge rating **6** or
     lower, or a fey spirit that takes the form of a beast of
     challenge rating <AtHigherLevels initial="6" eachLevelInc="1"/> or lower. It appears in an unoccupied
     space that you can see within range. The fey creature
@@ -2248,13 +2248,13 @@
     the following options for what appears:
 
 
-    * <AtHigherLevels initial="1 elemental" upgrades="6:2 elementals;8:3 elementals"/> of challenge rating 2 or lower
+    * <AtHigherLevels initial="1 elemental" upgrades="6:2 elementals;8:3 elementals"/> of challenge rating **2** or lower
 
-    * <AtHigherLevels initial="2 elementals" upgrades="6:4 elementals;8:6 elementals"/> of challenge rating 1 or lower
+    * <AtHigherLevels initial="2 elementals" upgrades="6:4 elementals;8:6 elementals"/> of challenge rating **1** or lower
 
-    * <AtHigherLevels initial="4 elementals" upgrades="6:8 elementals;8:12 elementals"/> of challenge rating 1/2 or lower
+    * <AtHigherLevels initial="4 elementals" upgrades="6:8 elementals;8:12 elementals"/> of challenge rating **1/2** or lower
 
-    * <AtHigherLevels initial="8 elementals" upgrades="6:16 elementals;8:24 elementals"/> of challenge rating 1/4 or lower.
+    * <AtHigherLevels initial="8 elementals" upgrades="6:16 elementals;8:24 elementals"/> of challenge rating **1/4** or lower.
 
 
     An elemental summoned by this spell disappears when
@@ -2317,13 +2317,13 @@
     following options for what appears:
 
 
-    * <AtHigherLevels initial="1 fey creature" upgrades="6:2 fey creatures;8:3 fey creatures"/> of challenge rating 2 or lower
+    * <AtHigherLevels initial="1 fey creature" upgrades="6:2 fey creatures;8:3 fey creatures"/> of challenge rating **2** or lower
 
-    * <AtHigherLevels initial="2 fey creatures" upgrades="6:4 fey creatures;8:6 fey creatures"/> of challenge rating 1 or lower
+    * <AtHigherLevels initial="2 fey creatures" upgrades="6:4 fey creatures;8:6 fey creatures"/> of challenge rating **1** or lower
 
-    * <AtHigherLevels initial="4 fey creatures" upgrades="6:8 fey creatures;8:12 fey creatures"/> of challenge rating 1/2 or lower
+    * <AtHigherLevels initial="4 fey creatures" upgrades="6:8 fey creatures;8:12 fey creatures"/> of challenge rating **1/2** or lower
 
-    * <AtHigherLevels initial="8 fey creatures" upgrades="6:16 fey creatures;8:24 fey creatures"/> of challenge rating 1/4 or lower.
+    * <AtHigherLevels initial="8 fey creatures" upgrades="6:16 fey creatures;8:24 fey creatures"/> of challenge rating **1/4** or lower
 
 
     A summoned creature disappears when it drops to 0 hit
@@ -3925,7 +3925,7 @@
     automatically collapse (see below).
 
 
-    **Structures.** The tremor deals 50 **bludgeoning damage**
+    **Structures.** The tremor deals **50** **bludgeoning damage**
     to any structure in contact with the ground in the area
     when you cast the spell and at the start of each of your
     turns until the spell ends. If a structure drops to 0 hit
@@ -11299,7 +11299,7 @@
     **Object into Creature.** You can turn an object into
     any kind of creature, as long as the creature’s size
     is no larger than the object’s size and the creature’s
-    challenge rating is 9 or lower. The creature is friendly to
+    challenge rating is **9** or lower. The creature is friendly to
     you and your companions. It acts on each of your turns.
     You decide what action it takes and how it moves. The
     DM has the creature’s statistics and resolves all of its
