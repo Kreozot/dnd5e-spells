@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useMediaQuery, useTheme } from '@mui/material';
 import React, { useMemo, useCallback, FC } from 'react';
-import { ColumnInstance, Row, UseExpandedRowProps } from 'react-table';
 import classNames from 'classnames';
+import { ExpandedRow, flexRender, Row } from '@tanstack/react-table';
 
 import Description from './Description';
 import SpellDetailsMobile from './SpellDetailsMobile';
@@ -10,47 +10,50 @@ import SpellDetailsMobile from './SpellDetailsMobile';
 import * as styles from './TableRow.module.scss';
 
 type Props = {
-  row: Row<Spell> & UseExpandedRowProps<Spell>;
-  visibleColumns: ColumnInstance<Spell>[];
+  row: Row<Spell> & ExpandedRow;
   width?: number;
 };
 
 const TableRow: FC<Props> = (props) => {
-  const { row, visibleColumns, width } = props;
+  const { row, width } = props;
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const handleClick = useCallback(
-    () => row.toggleRowExpanded(!row.isExpanded),
+    () => row.toggleExpanded(),
     [row]
   );
 
+  const isExpanded = row.getIsExpanded();
+  const visibleCells = row.getVisibleCells();
+
   const mainTR = useMemo(() => (
     <tr
-      {...row.getRowProps()}
+      key={row.id}
       onClick={handleClick}
       className={styles.row}
     >
-      { row.cells.map((cell) => {
+      { visibleCells.map((cell) => {
         return (
           <td
-            {...cell.getCellProps()}
+            key={cell.id}
             className={classNames(styles.cell, {
-              [styles.cellExpanded]: row.isExpanded,
+              [styles.cellExpanded]: isExpanded,
               [styles.checkboxCell]: cell.column.id === 'isActive',
             })}
           >
-            { cell.render('Cell') }
+            {flexRender(cell.column.columnDef.cell, cell.getContext())}
           </td>
         );
       }) }
     </tr>
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  ), [row, row.isExpanded, handleClick]);
+  ), [row.id, visibleCells, isExpanded, handleClick]);
+
+  const visibleCellsCount = row.getVisibleCells().length;
 
   const descriptionRow = useMemo(() => {
-    if (!row.isExpanded) {
+    if (!isExpanded) {
       return null;
     }
     return (
@@ -58,14 +61,14 @@ const TableRow: FC<Props> = (props) => {
         {isMobile
           && (
             <tr>
-              <td colSpan={visibleColumns.length} className={styles.detailsMobileCell}>
+              <td colSpan={visibleCellsCount} className={styles.detailsMobileCell}>
                 <SpellDetailsMobile item={row.original} />
               </td>
             </tr>
           )}
         <tr>
           <td
-            colSpan={visibleColumns.length}
+            colSpan={visibleCellsCount}
             style={{ width }}
           >
             <Description item={row.original} />
@@ -73,7 +76,7 @@ const TableRow: FC<Props> = (props) => {
         </tr>
       </>
     );
-  }, [row.isExpanded, row.original, visibleColumns.length, isMobile, width]);
+  }, [isExpanded, row.original, visibleCellsCount, isMobile, width]);
 
   return (
     <>
