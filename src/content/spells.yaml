@@ -180,7 +180,7 @@
     where you cast this spell.
   atHigherLevels: >
     If you cast this spell using a spell
-    slot of **3nd level** or higher, the duration of the spell
+    slot of **3rd level** or higher, the duration of the spell
     increases by **48 hours** for each slot level above **2nd**.
 
 - title: Animal Shapes
@@ -692,7 +692,7 @@
 
 
     Your astral body resembles your mortal form in
-    alm ost every way, replicating your game statistics and
+    almost every way, replicating your game statistics and
     possessions. The principal difference is the addition of
     a silvery cord that extends from between your shoulder
     blades and trails behind you, fading to invisibility after
@@ -970,7 +970,7 @@
     You touch a willing creature. Until the spell ends, the
     target’s skin has a rough, bark-like appearance, and the
     target’s AC can’t be less than 16, regardless of what kind
-    of arm or it is wearing.
+    of armor it is wearing.
 
 - title: Beacon of Hope
   level: 3
@@ -3550,7 +3550,7 @@
   duration: ≤ 1 minute
   tags: []
   description: >
-    Your prayer em powers you with divine radiance. Until
+    Your prayer empowers you with divine radiance. Until
     the spell ends, your weapon attacks deal an extra **1d4**
     **radiant damage** on a hit.
 
@@ -4577,9 +4577,9 @@
     language of your choice that you speak.
 
 
-    Your steed serves you as a mount, both in com bat and
+    Your steed serves you as a mount, both in combat and
     out, and you have an instinctive bond with it that allows
-    you to fight as a seam less unit. While mounted on your
+    you to fight as a seamless unit. While mounted on your
     steed, you can make any spell you cast that targets only
     you also target your steed.
 
@@ -5093,7 +5093,7 @@
   components:
     V: true
     S: true
-    M: a leather strap, bound around the arm or a similar appendage
+    M: a leather strap, bound around the armor a similar appendage
   duration: 1 hour
   tags: []
   description: >
@@ -5574,7 +5574,7 @@
     duration in an unoccupied space of your choice that you
     can see within range. The guardian occupies that space
     and is indistinct except for a gleaming sword and shield
-    em blazoned with the symbol of your deity.
+    emblazoned with the symbol of your deity.
 
 
     Any creature hostile to you that moves to a space
@@ -6439,7 +6439,7 @@
     miniature representation of the prison made from jade.
 
     * **Minimus Containment.** The target shrinks to a height
-    of **1 inch** and is imprisoned inside a gem stone or similar
+    of **1 inch** and is imprisoned inside a gemstone or similar
     object. Light can pass through the gemstone normally
     (allowing the target to see out and other creatures to see
     in), but nothing else can pass through, even by means of
@@ -6646,7 +6646,7 @@
   tags: []
   description: >
     Name or describe a person, place, or object. The spell
-    brings to your mind a brief sum mary of the significant
+    brings to your mind a brief summary of the significant
     lore about the thing you named. The lore might consist
     of current tales, forgotten stories, or even secret lore
     that has never been widely known. If the thing you
@@ -6984,7 +6984,7 @@
     and a protective magical force surrounds it until the
     spell ends. The target’s base AC becomes **13** + its
     Dexterity modifier. The spell ends if the target dons
-    arm or or if you dismiss the spell as an action.
+    armor or if you dismiss the spell as an action.
 
 - title: Mage Hand
   level: cantrip
@@ -9896,7 +9896,7 @@
     S: true
     M:
       - mistletoe
-      - a sham rock leaf
+      - a shamrock leaf
       - a club or quarterstaff
   duration: 1 minute
   tags: []
@@ -9924,7 +9924,7 @@
     Lightning springs from your hand to deliver a shock to
     a creature you try to touch. Make a melee spell attack <SpellAttackModifier/>
     against the target. You have advantage on the attack roll
-    if the target is wearing arm or made of metal. On a hit,
+    if the target is wearing armor made of metal. On a hit,
     the target takes **<LevelUpgrades initial="1d8" upgrades="5:2d8;11:3d8;17:4d8"/>** **lightning damage**, and it can’t take
     reactions until the start of its next turn.
 
