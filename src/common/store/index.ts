@@ -1,7 +1,7 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { createSelector } from 'reselect';
 
-import spellsData from 'content/spells';
+import spellsData from 'content/spellsFormated.json';
 import classSpellsData from 'content/classSpells.yaml';
 import classRestrictionsData from 'content/classRestrictions.yaml';
 import uniqBy from 'lodash/uniqBy';

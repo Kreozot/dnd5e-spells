@@ -1,8 +1,11 @@
-import { formatText, getSpellId } from 'common/format';
-import data from 'content/spells.yaml';
+import fs from 'fs';
+import path from 'path';
+import jsYaml from 'js-yaml';
+
+import { formatText, getSpellId } from '../src/common/format';
 
 function formatSpells(spells: RawSpell[]): Spell[] {
-  return spells.map((rawSpell) => {
+  const result = spells.map((rawSpell) => {
     const spell: Spell = { ...rawSpell, id: getSpellId(rawSpell.title) };
 
     spell.description = `${formatText(spell.description)}\n`;
@@ -24,6 +27,11 @@ function formatSpells(spells: RawSpell[]): Spell[] {
 
     return spell;
   });
+  console.log('Spells formatted successfully.');
+  return result;
 }
 
-export default formatSpells(data);
+const spellsFile = fs.readFileSync(path.join(__dirname, '../src/content/spells.yaml'));
+const spellsRaw = jsYaml.load(String(spellsFile)) as RawSpell[];
+const spells = formatSpells(spellsRaw);
+fs.writeFileSync(path.join(__dirname, '../src/content/spellsFormated.json'), JSON.stringify(spells));

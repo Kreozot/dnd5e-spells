@@ -92,6 +92,10 @@ declare module 'content/classSpells.yaml' {
   const obj: ClassSpells;
   export default obj;
 }
+declare module 'content/spellsFormated.json' {
+  const array: Spell[];
+  export default array;
+}
 declare module '*.svg';
 declare module '*.yaml';
 declare module '*.scss';
