@@ -101,6 +101,7 @@
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*",
+    "./netlify/**/*",
     "gatsby-ssr.tsx",
     "gatsby-browser.tsx"
   ],

@@ -2,9 +2,14 @@ import React, { FC, useEffect, useState } from 'react';
 import throttle from 'lodash/throttle';
 
 import Spells from 'components/Spells';
-import { loadState, saveState, StorageKey } from 'common/store/localStorageState';
-import filtersSlice, { FiltersSlice } from 'common/store/filtersSlice';
-import chosenSpellsSlice, { ChosenSpellsSlice } from 'common/store/chosenSpellsSlice';
+import {
+  loadChosenSpells,
+  loadFilters,
+  saveChosenSpells,
+  saveFilters,
+} from 'common/store/apiState';
+import filtersSlice from 'common/store/filtersSlice';
+import chosenSpellsSlice from 'common/store/chosenSpellsSlice';
 import { store } from 'common/store';
 import Loader from 'components/Loader';
 
@@ -12,20 +17,25 @@ const IndexPage: FC = () => {
   const [isLoaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const filtersSavedState = loadState<FiltersSlice>(StorageKey.FILTERS_STORAGE_KEY);
-    if (filtersSavedState) {
-      store.dispatch(filtersSlice.actions.replaceState(filtersSavedState));
-    }
-    const chosenSpellsSavedState = loadState<ChosenSpellsSlice>(StorageKey.CHOSEN_SPELLS_STORAGE_KEY);
-    if (chosenSpellsSavedState) {
-      store.dispatch(chosenSpellsSlice.actions.replaceState(chosenSpellsSavedState));
-    }
+    const loadState = async () => {
+      const filtersSavedState = await loadFilters();
+      if (filtersSavedState) {
+        store.dispatch(filtersSlice.actions.replaceState(filtersSavedState));
+      }
+      const chosenSpellsSavedState = await loadChosenSpells();
+      if (chosenSpellsSavedState) {
+        store.dispatch(chosenSpellsSlice.actions.replaceState(chosenSpellsSavedState));
+      }
+    };
 
-    store.subscribe(throttle(() => {
+    loadState();
+
+    store.subscribe(throttle(async () => {
       const { filters, chosenSpells } = store.getState();
-      saveState(StorageKey.FILTERS_STORAGE_KEY, filters);
-      saveState(StorageKey.CHOSEN_SPELLS_STORAGE_KEY, chosenSpells);
+      await saveFilters(filters);
+      await saveChosenSpells(chosenSpells);
     }, 1000));
+
     setLoaded(true);
   }, []);
 

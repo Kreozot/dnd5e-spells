@@ -80,6 +80,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // TODO: Doesn't invalidate cache properly
     // 'gatsby-plugin-offline',
-    // 'gatsby-plugin-netlify',
+    'gatsby-plugin-netlify',
   ],
 };
