@@ -12,6 +12,7 @@ import filtersSlice from 'common/store/filtersSlice';
 import chosenSpellsSlice from 'common/store/chosenSpellsSlice';
 import { store } from 'common/store';
 import Loader from 'components/Loader';
+import Auth from 'components/Auth';
 
 const IndexPage: FC = () => {
   const [isLoaded, setLoaded] = useState(false);
@@ -43,7 +44,12 @@ const IndexPage: FC = () => {
     return <Loader />;
   }
 
-  return <Spells />;
+  return (
+    <>
+      <Auth />
+      <Spells />
+    </>
+  );
 };
 
 export default IndexPage;
